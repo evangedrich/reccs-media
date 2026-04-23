@@ -3,11 +3,13 @@
 :root {
 	--background: #EDE9E3;
 	--foreground: #282828;
+	--middle: rgba(10,10,10,0.1);
 }
 
 @theme inline {
 	--color-back: var(--background);
 	--color-front: var(--foreground);
+	--color-mid: var(--middle);
 	--color-red: #d86064;
 	--color-orange: #eea97a;
 	--color-green: #69c598;
@@ -21,6 +23,7 @@
 	:root {
 		--background: #181818;
 		--foreground: #ededed;
+		--middle: rgba(255,255,255,0.1);
 	}
 }
 
@@ -28,4 +31,9 @@ body {
 	background: var(--background);
 	color: var(--foreground);
 	font-family: var(--font-julia-mono), Arial, Helvetica, sans-serif;
+}
+
+@keyframes map-scroll {
+	from { margin-left: -5px; }
+	to   { margin-left: -55px; }
 }
