@@ -1,0 +1,29 @@
+
+.title {
+    user-select: none;
+    transition: transform 80ms linear;
+}
+.title span {
+    display: inline-block;
+    transition: transform 100ms linear;
+}
+.title span:nth-child(odd) {
+    transform: translateY(-0.08em);
+}
+.title span:nth-child(even) {
+    transform: translateY(0.08em);
+}
+.title:hover span:nth-child(odd) {
+    transform: translateY(0.08em);
+}
+.title:hover span:nth-child(even) {
+    transform: translateY(-0.08em);
+}
+.title:active {
+    transform: scale(0.96);
+    opacity: 90%;
+}
+
+.flash {
+
+}
