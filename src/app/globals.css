@@ -4,6 +4,8 @@
 	--background: #EDE9E3;
 	--foreground: #282828;
 	--middle: rgba(10,10,10,0.1);
+	--header-h: 5.5rem;
+	--title-bar-h: 0px;
 }
 
 @theme inline {

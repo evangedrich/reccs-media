@@ -1,10 +1,10 @@
 
 
 export default function TinyMap() {
-    const land = { fill: "#ededed", stroke: "#ededed", strokeWidth: "0.5" }
+    const land = { fill: "var(--color-front)", stroke: "var(--color-front)", strokeWidth: "0.5" }
     return (
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2.1 24.91 964.2 502.17" preserveAspectRatio="xMinYMid slice">
-            <rect x="-2.1" y="24.91" width="964.2" height="502.17" fill="#181818"/>
+            <rect x="-2.1" y="24.91" width="964.2" height="502.17" fill="var(--color-back)"/>
             <g id="polygons">
                 <path d="M960,298.8L960,298.8L960,298.8Z" style={land} id="TV" title="Tuvalu"/>
                 <path d="M485.28,441.67L485.28,441.67L485.28,441.67Z" style={land} id="BV" title="Bouvet Island"/>
