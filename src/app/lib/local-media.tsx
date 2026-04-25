@@ -24,7 +24,10 @@ I've always believed that one of the greatest delights for a young lad, akin to 
 Reflecting on that encounter even now, I can't help but reminisce about the passing days... those days... each of them filled with contentment. Oh, if only today were as delightful as those bygone times...`,
     infoURL: "https://amazighworldnews.com/the-first-kabyle-novel-translated-into-english/",
     bioURL: "https://www-paris--iea-fr.translate.goog/fr/les-publications/lectures-croisees-des-ecrits-de-belaid-ait-ali-1909-1950?_x_tr_sl=fr&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=sc",
-    textURL: ""
+    textURL: "",
+    ref: [
+      {id: "aitali-1964", type: "book", title: "Lwali n udrar (All Rags' Journey to Sacred Heights)", contributors: [{firstName: "Belaïd", lastName: "Ait-Ali", role: "author"}], pubDate: {year: 1964}, publisher: "Fichier de Documentation Berbère", location: "Fort-National, Algeria", meta: {sortKey: "text", notes: "A pioneering work of Kabyle (Berber) literature."}}
+    ]
   },
   {
     region: "East Africa",
@@ -52,7 +55,10 @@ The people of Got Owaga believed that Olum Ochak had some charisma which made th
 They also believed that he had some supernatural ability by which he interpreted the messages that Were Nyakalaga sent through thunder, winds and the songs of the birds. He could also read the secrets that were carried by the clouds, the moon, and the stars. Above all, he was a genius at interpreting dreams.`,
     infoURL: "https://www.google.com/books/edition/The_Strange_Bride/Orb4rPhlyp4C",
     bioURL: "https://en.wikipedia.org/wiki/Grace_Ogot",
-    textURL: "https://archive.org/details/strangebride00grac"
+    textURL: "https://archive.org/details/strangebride00grac",
+    ref: [
+      {id: "ogot-1966", type: "book", title: "Miaha (Strange Bride)", contributors: [{firstName: "Grace", lastName: "Ogot", role: "author"}], pubDate: {year: 1966}, publisher: "East African Publishing House", location: "Nairobi, Kenya", meta: {sortKey: "text", notes: "Originally published in Dholuo as 'Nya-Dera'."}}
+    ]
   },
   {
     region: "Southern Africa",
@@ -77,7 +83,10 @@ The next day, as she is filling her water containers at the well, her lover sees
 After that, she lives as usual. She continues to work for her husband and works hard. Then, one day, she says, "I'm going to look for some firewood. Why don't you watch the pot of food that's cooking?" She leaves and walks far from the village, looking for wood. She meets her lover, lies down with him, and makes love. She leaves and returns to the village, carrying firewood. Her heart is happy because she's been with her lover and her husband doesn't know. And she lives on like that.`,
     bioURL: "",
     infoURL: "https://www.google.com/books/edition/Nisa/IQ5NWIQpXNkC?hl=en",
-    textURL: ""
+    textURL: "",
+    ref: [
+      {id: "nisa-1981", type: "book", title: "Nǂisa", contributors: [{lastName: "Nǂisa", role: "author"}], pubDate: {year: 1981}, publisher: "Harvard University Press", location: "Cambridge, MA", meta: {sortKey: "text", notes: "Cited as an oral autobiography."}}
+    ]
   },
   {
     region: "Central Africa",
@@ -111,7 +120,10 @@ Eyenga's father is really furious now and starts yelling at his wife, while Ebam
 The rain keeps pouring down, stubbornly, and it is now seeping through the roof in more and more places. People are running out of dry places to sit. The rain is coming down as if someone had opened a giant faucet and the family is frantically putting out more and more buckets to protect the carpet. And then, as the living room is so small and people have to shift around to stay out of the rain, the decision is made to resume negotiations once the rain stops.`,
     infoURL: "https://www.goodreads.com/book/show/30622619-mr-fix-it",
     bioURL: "https://www.deepvellum.org/authors/richard-ali",
-    textURL: ""
+    textURL: "",
+    ref: [
+      {id: "ali-2013", type: "book", title: "Ebamba: Mr. Fix-It", contributors: [{firstName: "Richard Ali", lastName: "A Mutu", role: "author"}], pubDate: {year: 2013}, publisher: "Mabiki", location: "Kinshasa", meta: {sortKey: "text", notes: "Significant modern Lingala novel."}}
+    ]
   },
   {
     region: "West Africa",
@@ -137,7 +149,10 @@ After they had dragged me in the bush for about five minutes, I lost their sight
     infoURL: ["https://en.wikipedia.org/wiki/%C3%8Cr%C3%A8k%C3%A9_On%C3%ADb%C3%B9d%C3%B3","https://sunshinebookseller.com/product/ireke-onibudo/?srsltid=AfmBOoo60eEFYqJFemGYg_jk-WWEump1xyjumvBZx2SxJlWKa_wEyt4T"],
     bioURL: ["https://en.wikipedia.org/wiki/Daniel_O._Fagunwa","https://www.ascleiden.nl/content/library-weekly/daniel-o-fagunwa"],
     textURL: "https://esploro.libs.uga.edu/esploro/outputs/doctoral/A-CRITICAL-INTRODUCTION-AND-ANNOTATED-TRANSLATION/9949366061602959",
-    playlistURL: "https://open.spotify.com/playlist/6ysko7CH9qaUpESJnPsoM9"
+    playlistURL: "https://open.spotify.com/playlist/6ysko7CH9qaUpESJnPsoM9",
+    ref: [
+      {id: "fagunwa-1949", type: "book", title: "Ìrèké Oníbùdó", contributors: [{firstName: "D.O.", lastName: "Fágúnwà", role: "author"}], pubDate: {year: 1949}, publisher: "Nelson", location: "Edinburgh/Lagos", meta: {sortKey: "text", notes: "Yoruba classic."}}
+    ]
   },
   {
     region: "Arctic America",
@@ -177,7 +192,10 @@ Sanaaq reached out and pulled her daughter close, to put her back to sleep.`,
     bioURL: "https://en.wikipedia.org/wiki/Mitiarjuk_Nappaaluk",
     infoURL: "https://en.wikipedia.org/wiki/Sanaaq",
     textURL: "https://archive.org/details/sanaaqinuitnovel0000napp",
-    playlistURL: "https://open.spotify.com/playlist/3LXFVWrK6bttZnfUkf5Vvw"
+    playlistURL: "https://open.spotify.com/playlist/3LXFVWrK6bttZnfUkf5Vvw",
+    ref: [
+      {id: "nappaaluk-1987", type: "book", title: "ᓴᓈᖅ (Sanaaq)", contributors: [{firstName: "Mitiarjuk", lastName: "Nappaaluk", role: "author"}], pubDate: {year: 1987}, publisher: "Association Inuksiutiit Katimajiit", location: "Québec", meta: {sortKey: "text", notes: "First novel in Inuktitut syllabics."}}
+    ]
   },
   {
     region: "Eastern Woodlands",
@@ -196,7 +214,10 @@ Quickly she raised her hand to her head, and from the top pulled out a long hair
 —<i>The Tale of Chahnameed</i> as told by Fidelia Fielding`,
     bioURL: "https://en.wikipedia.org/wiki/Gladys_Tantaquidgeon",
     infoURL: "",
-    textURL: "https://archive.org/details/medicinetraillif0000fawc"
+    textURL: "https://archive.org/details/medicinetraillif0000fawc",
+    ref: [
+      {id: "tantaquidgeon-1930", type: "book", title: "Medicine Trail", contributors: [{firstName: "Gladys", lastName: "Tantaquidgeon", role: "author"}], pubDate: {year: 1930}, publisher: "University of Pennsylvania", location: "Philadelphia", meta: {sortKey: "text", notes: "Mohegan medicinal and cultural records."}}
+    ]
   },
   {
     region: "American Southwest",
@@ -220,7 +241,10 @@ So that's why when we come through here, remember those rocks and the baby who w
 We listened to the story, and since that time we have told the story many times ourselves. Decades later, those particular rocks hold the haunting and lasting memory of a little baby girl. This land that may seem arid and forlorn to the newcomer is full of stories which hold the spirits of the people, those who live here today and those who lived centuries and other worlds ago. The nondescript rocks are not that at all, but rather a lasting and loving tribute to the death of a baby and the continuing memory of her family.`,
     infoURL: "https://www.google.com/books/edition/S%C3%A1anii_Dahataal_The_Women_Are_Singing/nvcOAQAAMAAJ",
     bioURL: "https://en.wikipedia.org/wiki/Luci_Tapahonso",
-    textURL: "https://archive.org/details/saaniidahataawom0000tapa"
+    textURL: "https://archive.org/details/saaniidahataawom0000tapa",
+    ref: [
+      {id: "tapahonso-1993", type: "book", title: "Sáanii Dahataał: The Women Are Singing", contributors: [{firstName: "Luci", lastName: "Tapahonso", role: "author"}], pubDate: {year: 1993}, publisher: "University of Arizona Press", location: "Tucson", meta: {sortKey: "text", notes: "Diné poetry."}}
+    ]
   },
   {
     region: "Pacific Northwest",
@@ -237,25 +261,11 @@ You know, this is the way it was. Then they would just get them by boat. This is
 The story of my fathers is always told, of when they migrated down the Stikine. At one place, there, in the' river, the river flowed under a glacier. This is where they tied a raft together. They put the elderly women on it. One's name was Awasti and the other Ḵoowasíkx, these elderly women. They are the first ones who were pushed under the glacier. Having drifted under it and through to the other side, they started singing. Floating under the glacier gave them their song. Based on this a raft was made. Some went on it. Under it, under the glacier, they floated, down the river. But many of them were afraid to float under the glacier. This is why they started over it, some started over the glacier. These are the ones who came down the Chilkat, the relatives of my fathers, the Da~l'aweidi. They became the Chilkats. The name that came from those who went over the glacier is Sit'ká indeed, those who came down through Chilkat, are named Sit'ká. Those of us who are Deisheetaan, still tell it like this, as coming from the South, from the south. I wonder where we came out, those of us. I wonder where we came out.`,
     bioURL: "https://en.wikipedia.org/wiki/Nora_Marks_Dauenhauer",
     infoURL: "",
-    textURL: "https://tlingitlanguage.com/wp-content/uploads/2015/01/Dauenhauer-1987-Haa-Shuk%C3%A1.pdf"
+    textURL: "https://tlingitlanguage.com/wp-content/uploads/2015/01/Dauenhauer-1987-Haa-Shuk%C3%A1.pdf",
+    ref: [
+      {id: "marks-1987", type: "book", title: "Haa Shuká, Our Ancestors", contributors: [{firstName: "Nora Keix̱wnéi", lastName: "Marks", role: "author"}], pubDate: {year: 1987}, publisher: "University of Washington Press", location: "Seattle", meta: {sortKey: "text", notes: "Tlingit oral literature."}}
+    ]
   },
-/*  {
-    region: "Great Plains",
-    label: "AMINMTN",
-    title: "The Way to Rainy Mountain",
-    author: "N. Scott Momaday",
-    group: {people: "Kiowa", language: "English", location: "Montana, US"},
-    info: `<i>The Way to Rainy Mountain</i> is a powerful blend of memoir, history, and folklore that explores the journey of the Kiowa people and the author's own connection to his heritage. It recounts the Kiowa migration from Montana to Oklahoma, interweaving personal reflections with Kiowa myths, legends, and historical accounts. The book uses three distinct voices—ancestral, historical, and contemporary—to create a unique narrative that celebrates the enduring power of storytelling.
-<b>N. SCOTT MOMADAY</b>, born 1934 in Lawton, Oklahoma, was a Pulitzer Prize-winning Kiowa author, poet, and essayist, celebrated for his exploration of Native American identity, culture, and the American landscape. His style of writing leans heavily on the Euro-American novel tradition and its associated perspectives.`,
-    excerpt: `A single knoll rises out of the plain in Oklahoma, north and west of the Wichita Range. For my people, the Kiowas, it is an old landmark, and they gave it the name Rainy Mountain. The hardest weather in the world is there. Winter brings blizzards, hot tornadic winds arise in the spring, and in summer the prairie is an anvil's edge. The grass turns brittle and brown, and it cracks beneath your feet. There are green belts along the rivers and creeks, linear groves of hickory and pecan, willow and witch hazel. At a distance in July or August the steaming foliage seems almost to writhe in fire. Great green and yellow grasshoppers are everywhere in the tall grass, popping up like corn to sting the flesh, and tortoises crawl about on the red earth, going nowhere in the plenty of time. Loneliness is an aspect of the land. All things in the plain are isolate; there is no confusion of objects in the eye, but one hill or one tree or one man. To look upon that landscape in the early morning, with the sun at your back, is to lose the sense of proportion. Your imagination comes to life, and this, you think, is where Creation was begun.
-I returned to Rainy Mountain in July. My grandmother had died in the spring, and I wanted to be at her grave. She had lived to be very old and at last infirm. Her only living daughter was with her when she died, and I was told that in death her face was that of a child.
-I like to think of her as a child. When she was born, the Kiowas were living the last great moment of their history. For more than a hundred years they had controlled the open range from the Smoky Hill River to the Red, from the headwaters of the Canadian to the fork of the Arkansas and Cimarron. In alliance with the Comanches, they had ruled the whole of the southern Plains. War was their sacred business, and they were among the finest horsemen the world has ever known. But warfare for the Kiowas was preeminently a matter of disposition rather than of survival, and they never understood the grim, unrelenting advance of the U.S. Cavalry. When at last, divided and illprovisioned, they were driven onto the Staked Plains in the cold rains of autumn, they fell into panic. In Palo Duro Canyon they abandoned their crucial stores to pillage and had nothing then but their lives. In order to save themselves, they surrendered to the soldiers at Fort Sill and were imprisoned in the old stone corral that now stands as a military museum. My grandmother was spared the humiliation of those high gray walls by eight or ten years, but she must have known from birth the affliction of defeat, the dark brooding of old warriors.
-Her name was Aho, and she belonged to the last culture to evolve in North America. Her forebears came down from the high country in western Montana nearly three centuries ago. They were a mountain people, a mysterious tribe of hunters whose language has never been positively classified in any major group. In the late seventeenth century they began a long migration to the south and east. It was a journey toward the dawn, and it led to a golden age. Along the way the Kiowas were befriended by the Crows, who gave them the culture and religion of the Plains. They acquired horses, and their ancient nomadic spirit was suddenly free of the ground. They acquired Tai-me, the sacred Sun Dance doll, from that moment the object and symbol of their worship, and so shared in the divinity of the sun. Not least, they acquired the sense of destiny, therefore courage and pride. When they entered upon the southern Plains they had been transformed. No longer were they slaves to the simple necessity of survival; they were a lordly and dangerous society of fighters and thieves, hunters and priests of the sun. According to their origin myth, they entered the world through a hollow log. From one point of view, their migration was the fruit of an old prophecy, for indeed they emerged from a sunless world.
-Although my grandmother lived out her long life in the shadow of Rainy Mountain, the immense landscape of the continental interior lay like memory in her blood. She could tell of the Crows, whom she had never seen, and of the Black Hills, where she had never been. I wanted to see in reality what she had seen more perfectly in the mind's eye, and traveled fifteen hundred miles to begin my pilgrimage.`,
-    bioURL: "",
-    infoURL: "",
-    textURL: "https://archive.org/details/waytorainymounta0000nsco"
-  }, */
   {
     region: "Great Plains",
     label: "AMINMTN",
@@ -296,7 +306,8 @@ Then Bear White Child told the whole camp about his dream and said that he had t
     infoURL: "",
     textURL: "https://archive.org/details/twoleggingsthema008451mbp",
     ref: [
-      {author: "Wildschut, William", year: "1919–1923", title: "[Field manuscript of Two Leggings]", pub: "National Museum of the American Indian Archive Center", location: "Smithsonian Institution, Washington, DC", url: "https://biblioteca.trabalhoindigenista.org.br/wp-content/uploads/2018/06/AYVU-RAPYTA-Textos-Misticos-de-los.pdf", sort: "text", grade: "B"}
+      {id: "wildschut-1919", type: "book", title: "[Field manuscript of Two Leggings]", contributors: [{lastName: "Issaatxalúash", role: "author"},{lastName: "Yellowtail", firstName: "Robert", role: "translator"},{lastName: "Wildschut", firstName: "William", role: "editor"},{lastName: "Nabokov", firstName: "Peter", role: "editor"}], pubDate: {year: 1919}, publisher: "National Museum of the American Indian Archive Center", location: "Smithsonian Institution, Washington, DC", medium: "[Field manuscript]", url: "https://biblioteca.trabalhoindigenista.org.br/wp-content/uploads/2018/06/AYVU-RAPYTA-Textos-Misticos-de-los.pdf", meta: {sortKey: "text"}},
+      {id: "nabokov-1967", type: "book", title: "Two Leggings: The Making of a Crow Warrior", contributors: [{lastName: "Nabokov", firstName: "Peter", role: "author"}], pubDate: {year: 1967}, publisher: "Thomas Y. Crowell Co.", location: "New York", meta: {sortKey: "text", notes: "Apitisée (Two Leggings) was the Crow narrator."}}
     ]
   },
   {
@@ -337,7 +348,10 @@ The morning frost had fallen. A cry shattered the great silence, crashing agains
 A boy had been born.`,
     infoURL: "https://www.goodreads.com/book/show/1148995.A_Mayan_Life",
     bioURL: "https://uwm.edu/clacs/wp-content/uploads/sites/329/2017/10/Gaspar-Pedro-Gonz%C3%A1lez-Bio.pdf",
-    textURL: "https://archive.org/details/mayanlife00gonz"
+    textURL: "https://archive.org/details/mayanlife00gonz",
+    ref: [
+      {id: "gonzalez-1992", type: "book", title: "La otra cara", contributors: [{firstName: "Gaspar Pedro", lastName: "González", role: "author"}], pubDate: {year: 1992}, publisher: "Ministerio de Cultura", location: "Guatemala", meta: {sortKey: "text", notes: "First novel by a Maya author."}}
+    ]
   },
   {
     region: "Caribbean",
@@ -369,7 +383,10 @@ What I do ask them is not to call me "cacique" so much, just "Panchito." But res
 For instance, I don't drink rum, I don't smoke, I'm not rude to anyone. So, when I'm going to talk to a person, I do it with that authority and popularity. And with the required respect people respond.`,
     bioURL: "",
     infoURL: "https://www.goodreads.com/book/show/40071549-dreaming-mother-earth",
-    textURL: ""
+    textURL: "",
+    ref: [
+      {id: "rojas-2006", type: "book", title: "Panchito: Kasike Wito", contributors: [{firstName: "Francisco Ramírez", lastName: "Rojas", role: "author"}], pubDate: {year: 2006}, publisher: "Editorial El Mar y la Montaña", location: "Guantánamo", meta: {sortKey: "text"}}
+    ]
   },
   {
     region: "Andean America",
@@ -402,7 +419,10 @@ Mama Inkarna, Libirata, Apolonio and Julia headed off on foot. They took out the
 `,
     infoURL: "https://www.goodreads.com/book/show/44413330-phuyup-yawar-waqaynin-the-bloody-tear-of-a-cloud",
     bioURL: "https://arts-sciences.buffalo.edu/linguistics/faculty/gladys-camacho-rios.html",
-    textURL: "https://bpb-us-e1.wpmucdn.com/wp.nyu.edu/dist/1/1567/files/2015/04/phuyup_yawar_waqaynin_translation_2014.pdf"
+    textURL: "https://bpb-us-e1.wpmucdn.com/wp.nyu.edu/dist/1/1567/files/2015/04/phuyup_yawar_waqaynin_translation_2014.pdf",
+    ref: [
+      {id: "camacho-2019", type: "book", title: "Phuyup Yawar Waqaynin", contributors: [{firstName: "Gladys Camacho", lastName: "Rios", role: "author"}], pubDate: {year: 2019}, publisher: "Editorial Kipus", location: "Cochabamba, Bolivia", meta: {sortKey: "text", notes: "Quechua narrative."}}
+    ]
   },
   {
     region: "Amazonia",
@@ -440,7 +460,10 @@ He quickly put the hot peppers in the fire, and my mother cried and put more hot
 I said that I was going to die, and finally, just when the smoke was too much and I couldn't take it any more, I said that I had eaten the agouti.`,
     infoURL: "https://www.nebraskapress.unl.edu/nebraska/9780803289888/alejandro-tsakimp/",
     bioURL: "",
-    textURL: "https://archive.org/details/alejandrotsakimp0000rube"
+    textURL: "https://archive.org/details/alejandrotsakimp0000rube",
+    ref: [
+      {id: "tsakimp-1996", type: "book", title: "Uwíshin: A Shuar Healer", contributors: [{firstName: "Alejandro", lastName: "Tsakimp", role: "author"}], pubDate: {year: 1996}, publisher: "Ediciones Abya-Yala", location: "Quito", meta: {sortKey: "text"}}
+    ]
   },
   {
     region: "Southern Cone",
@@ -463,7 +486,10 @@ There's this tightness in my throat, and I'm congested in a way that won't go aw
 I've had this miserable cold for weeks, which feels like some sort of misty plague lodged in my respiratory system. The dampness enters through my lungs, weighing them down as if a spider has spun its nest in my chest. I'm squatting on her territory; I'm overtaken. I dream about the sacred spider, pleading with her to please leave me be. She responds all proud, without opening her mouth, answering through symbols in her web: "Not even with all the wiracoya incense in the Andes." Just what I needed, a kusi kusi, an Andean spider.`,
     infoURL: "https://www.google.com/books/edition/Chilco/B6QsEQAAQBAJ?hl=en",
     bioURL: ["https://guides.lib.byu.edu/c.php?g=267613&p=6643135","https://wordswithoutborders.org/contributors/view/daniela-catrileo/"],
-    textURL: ""
+    textURL: "",
+    ref: [
+      {id: "catrileo-2024", type: "book", title: "Chilco", contributors: [{firstName: "Daniela", lastName: "Catrileo", role: "author"}], pubDate: {year: 2024}, publisher: "Seix Barral", location: "Santiago", meta: {sortKey: "text"}}
+    ]
   },
   {
     region: "North Asia",
@@ -501,7 +527,10 @@ With each passing day the tundra was bursting into bright vivid color. Nau's fee
     bioURL: "https://en.wikipedia.org/wiki/Yuri_Rytkheu",
     infoURL: "https://en.wikipedia.org/wiki/Yuri_Rytkheu#When_the_Whales_Leave",
     textURL: "",
-    playlistURL: "https://open.spotify.com/playlist/4yEmJGNFavfiPkQcjG1ZBC"
+    playlistURL: "https://open.spotify.com/playlist/4yEmJGNFavfiPkQcjG1ZBC",
+    ref: [
+      {id: "rytkheu-1975", type: "book", title: "Когда киты уходят", contributors: [{firstName: "Yuri", lastName: "Rytkheu", role: "author"}], pubDate: {year: 1975}, publisher: "Sovetsky Pisatel", location: "Leningrad", meta: {sortKey: "text"}}
+    ]
   },
   {
     region: "East Asia",
@@ -530,7 +559,10 @@ It's about getting a diploma and writing.`,
     infoURL: "https://en.wikipedia.org/wiki/Notes_of_a_Crocodile",
     bioURL: "https://en.wikipedia.org/wiki/Qiu_Miaojin",
     textURL: "https://archive.org/details/notesofcrocodile0000qium",
-    playlistURL: "https://open.spotify.com/playlist/6Skk6jwCC6hNGazj4EwyJ5"
+    playlistURL: "https://open.spotify.com/playlist/6Skk6jwCC6hNGazj4EwyJ5",
+    ref: [
+      {id: "qiu-1994", type: "book", title: "鱷魚手記", contributors: [{firstName: "Qiū", lastName: "Miàojīn", role: "author"}], pubDate: {year: 1994}, publisher: "China Times Publishing", location: "Taipei", meta: {sortKey: "text"}}
+    ]
   },
   {
     region: "Highland Asia",
@@ -564,7 +596,10 @@ Lham Yeshi can hear Tsomo breathing faster than normal. She must still be very e
 'Then what? She chased him out of her house last night and then she poured hot water on my plants this morning. But see how brazen this woman is! As l was leaving my house to come here, she was pulling down her hut and packing. I am sure she is going to follow the lame man and go and live with him. I used to be quite happy all by myself until this woman came sweet-talking me into sharing my plot of land to put up her hut.' Lham Yeshi knows that her plot of land is actually land that belongs to the municipality. The municipality is charged with the unpleasant task of evicting the migrants who construct their unauthorized huts in and around Thimphu town. All sorts of elderly people who would otherwise enjoy the power and respect warranted by their age in traditional extended rural families suddenly find themselves displaced.`,
     bioURL: "https://en.wikipedia.org/wiki/Kunzang_Choden",
     infoURL: "https://www.google.com/books/edition/The_Circle_of_Karma/96ha-lop9CEC?hl=en",
-    textURL: "https://archive.org/details/circleofkarma00kunz"
+    textURL: "https://archive.org/details/circleofkarma00kunz",
+    ref: [
+      {id: "choden-2005", type: "book", title: "Circle of Karma", contributors: [{firstName: "Kunzang", lastName: "Choden", role: "author"}], pubDate: {year: 2005}, publisher: "Zubaan", location: "New Delhi", meta: {sortKey: "text"}}
+    ]
   },
   {
     region: "Southeast Asia",
@@ -599,7 +634,10 @@ Indeed I don't believe in astrology. How could anyone believe in it? It has neve
 I put my trust in scientific understanding and in reason. With these, at least, there are certainties that can be grasped.`,
     bioURL: "https://en.wikipedia.org/wiki/Pramoedya_Ananta_Toer",
     infoURL: "https://en.wikipedia.org/wiki/This_Earth_of_Mankind",
-    textURL: "https://archive.org/details/thisearthofmanki0000toer_g3i3"
+    textURL: "https://archive.org/details/thisearthofmanki0000toer_g3i3",
+    ref: [
+      {id: "toer-1980", type: "book", title: "Bumi Manusia", contributors: [{firstName: "Pramoedya Ananta", lastName: "Toer", role: "author"}], pubDate: {year: 1980}, publisher: "Hasta Mitra", location: "Jakarta", meta: {sortKey: "text"}}
+    ]
   },
   {
     region: "South Asia",
@@ -622,7 +660,10 @@ From that day, people said that as night-time drew near, Muniyaandi would walk a
     bioURL: "https://en.wikipedia.org/wiki/Bama_(writer)",
     infoURL: "https://www.goodreads.com/book/show/43990.Karukku",
     textURL: "https://www.scribd.com/document/485947405/Karukku-by-Bama-pdf",
-    playlistURL: "https://open.spotify.com/playlist/39VuUqOk9cG2P3uZlPFy3F"
+    playlistURL: "https://open.spotify.com/playlist/39VuUqOk9cG2P3uZlPFy3F",
+    ref: [
+      {id: "bama-1992", type: "book", title: "கருக்கு (Karukku)", contributors: [{lastName: "Bama", role: "author"}], pubDate: {year: 1992}, publisher: "Ideas", location: "Madurai", meta: {sortKey: "text"}}
+    ]
   },
   {
     region: "West Asia",
@@ -644,7 +685,10 @@ Gamrah did not so much as see her husband until the evening of the next day, whe
     infoURL: "https://en.wikipedia.org/wiki/Girls_of_Riyadh",
     bioURL: "https://en.wikipedia.org/wiki/Rajaa_al-Sanea",
     textURL: "https://archive.org/details/girlsofriyadh0000alsa",
-    playlistURL: "https://open.spotify.com/playlist/59jaUpFiKwByMRmD2gNK98"
+    playlistURL: "https://open.spotify.com/playlist/59jaUpFiKwByMRmD2gNK98",
+    ref: [
+      {id: "alsanea-2005", type: "book", title: "بنات الرياض", contributors: [{firstName: "Rajaa", lastName: "al-Sanea", role: "author"}], pubDate: {year: 2005}, publisher: "Fig-Tree", location: "Beirut", meta: {sortKey: "text"}}
+    ]
   },
   {
     region: "Central Asia",
@@ -665,7 +709,10 @@ Only in the <i>chellakhona</i> did no candle burn that night. The chellakhona wa
 After the midnight prayer the boy, whom the Teacher was leading along the path of perfection of the spirit, tried to master the pillars of the formally simple Ikhlas Surah, about the One and Only who neither begetteth nor is begotten, and there is none like unto Him. The first thousand repetitions remained on the boy's tongue, not peeling away from the flesh; then a handful of raisins sent out sweet shoots between the dry, cracked words, and the Teacher told him that they were in the wilderness where the path begins.`,
     infoURL: ["https://en.wikipedia.org/wiki/The_Railway_(novel)","https://birdsbooks.peregrines.net/2007/06/13/translation-from-uzbekistan-the-railway/#:~:text=and%20was%20called%20%E2%80%98-,Arosat,-%E2%80%99%2C%20but%20my%20writer"],
     bioURL: ["https://en.wikipedia.org/wiki/Hamid_Ismailov","https://wordswithoutborders.org/read/article/2012-11/interview-with-hamid-ismailov/"],
-    textURL: ""
+    textURL: "",
+    ref: [
+      {id: "ismailov-2001", type: "book", title: "Arosat", contributors: [{firstName: "Hamid", lastName: "Ismailov", role: "author"}], pubDate: {year: 2001}, publisher: "Rossiyskiy Pisatel", location: "Moscow", meta: {sortKey: "text"}}
+    ]
   },
   {
     region: "Inner Asia",
@@ -694,7 +741,10 @@ I got scared and left. I thought more about it and decided it was not yet too la
 I walked a fair way from the <i>ail</i>. Then I turned to face the mouth of the river valley and spoke, enunciating each word as clearly as I could: IN MY DREAM, MY ARSYLANG HAS BEEN POISONED. HE CANNOT WALK OR STAND. HE STAGGERS, FALLS OVER, AND FOAMS AT THE MOUTH. HIS LIMBS ARE STIFF, HIS FUR STANDS ON END, HE IS DYING. OH-OH-OH!`,
     infoURL: "https://www.goodreads.com/book/show/1828552.The_Blue_Sky",
     bioURL: "https://en.wikipedia.org/wiki/Galsan_Tschinag",
-    textURL: "https://archive.org/details/blueskynovel00tsch"
+    textURL: "https://archive.org/details/blueskynovel00tsch",
+    ref: [
+      {id: "tschinag-1991", type: "book", title: "Der blaue Himmel", contributors: [{firstName: "Galsan", lastName: "Tschinag", role: "author"}], pubDate: {year: 1991}, publisher: "Suhrkamp", location: "Frankfurt", meta: {sortKey: "text"}}
+    ]
   },
   {
     region: "Australia",
@@ -702,7 +752,7 @@ I walked a fair way from the <i>ail</i>. Then I turned to face the mouth of the 
     title: {original: "Wangki Ngajukura Jiljingajangka", translation: "My Life in the Desert"},
     author: "Jukuna Mona Chuguna",
     group: {people: "Walmajarri", language: "Walmajarri", location: "Kimberley, AU"},
-    info: `Ngarta and Jukuna lived in the Great Sandy Desert. They traversed country according to the seasons, just as the Walmajarri people had done for thousands of years. But it was a time of change. Desert people who had lived with little knowledge of European settlement were now moving onto cattle stations. Those left behind were vulnerable and faced unimaginable challenges.
+    info: `Ngarta and Jukuna lived in the Great Sandy Desert. They traversed country according to the seasons, just as the Walmajarri people had done for thousands of years. But it was a time of change. Desert people who had lived with little concern for European settlement were now moving onto cattle stations. Those left behind were vulnerable and faced unimaginable challenges.
 Jukuna’s rich account may be the first autobiography written in an Aboriginal language. Presented in English and Walmajarri, her determination to see her language written has made her one of our most valued authors.
 <b>JUKUNA MONA CHUGUNA</b> was a Walmajarri woman from the Great Sandy Desert in Western Australia. She left the desert with her husband in the 1950s to live and work on cattle and sheep stations in the Kimberley's Fitzroy Valley. In middle age, Jukuna took up painting and became a well-regarded artist, holding exhibitions of her work around Australia and overseas. She was a natural teacher and great storyteller.`,
     excerpt: `When I was a child I lived in the sand dune country of the Great Sandy Desert to the south of Fitzroy Crossing. My father's birthplace is near the waterhole called Wirtuka. My father got his name, Kirikarrajarti, right there. It's a name that came from the ngarrangkarni. In the ngarrangkarni, two men came to Wirtuka and found the place overrun with possums. They were all fighting and biting each other, some up in the trees and others down in holes in the ground. As they fought they were hissing, 'Kkir! Kkir!' so the two men called the place Kirikarrajarti, because of the hissing noise the possums made. My father's jarriny is the possum, and he is called Kirikarraarti after this place where the possums were fighting.
@@ -720,7 +770,11 @@ In her grief, my mother hit herself on the head with a rock, making her head ble
     infoURL: "https://www.goodreads.com/book/show/31341967-two-sisters-a-true-story",
     bioURL: "https://magabala.com.au/collections/jukuna-mona-chuguna",
     textURL: "",
-    playlistURL: "https://open.spotify.com/playlist/6jrOmmaqLQ2npwSP3MdVAH"
+    playlistURL: "https://open.spotify.com/playlist/6jrOmmaqLQ2npwSP3MdVAH",
+    ref: [
+      {id: "chuguna-2002", type: "book", title: "Wangki Ngajukura Jiljingajangka", contributors: [{firstName: "Jukuna Mona", lastName: "Chuguna", role: "author"}], pubDate: {year: 2002}, publisher: "KALACC", location: "Fitzroy Crossing, WA", meta: {sortKey: "text"}},
+      {id: "lowe-2004", type: "book", title: "Two Sisters", contributors: [{firstName: "Jukuna Mona", lastName: "Chuguna", role: "author"},{firstName: "Ngarta Jinny", lastName: "Bent", role: "author"},{firstName: "Eirlys", lastName: "Richards", role: "author"},{firstName: "Pat", lastName: "Lowe", role: "author"}], pubDate: {year: 2004}, publisher: "Fremantle Arts Centre Press", location: "Fremantle, Australia", meta: {sortKey: "text"}}
+    ]
   },
   {
     region: "Eastern Europe",
@@ -741,7 +795,10 @@ VII<br>Lacking the lofty passion<br>not to spare life for the sake of sounds,<br
 VIII<br>All Eugene knew besides<br>I have no leisure to recount;<br>but where he was a veritable genius,<br>what he more firmly knew than all the arts,<br>what since his prime had been to him<br>toil, anguish, joy,<br>what occupied the livelong day<br>his fretting indolence—<br>was the art of soft passion<br>which Naso sang,<br>wherefore a sufferer he ended<br>his brilliant and tumultuous span<br>in Moldavia, in the wild depth of steppes,<br>far from his Italy.`,
     bioURL: "https://en.wikipedia.org/wiki/Alexander_Pushkin",
     infoURL: "https://en.wikipedia.org/wiki/Eugene_Onegin",
-    textURL: ""
+    textURL: "",
+    ref: [
+      {id: "pushkin-1833", type: "book", title: "Евгений Онегин", contributors: [{firstName: "Alexander", lastName: "Pushkin", role: "author"}], pubDate: {year: 1833}, publisher: "Alexander Smirdin", location: "Saint Petersburg", meta: {sortKey: "text"}}
+    ]
   },
   {
     region: "Western Europe",
@@ -763,7 +820,10 @@ She met Candide on reaching the castle and blushed; Candide blushed also; she wi
     bioURL: "https://en.wikipedia.org/wiki/Voltaire",
     infoURL: "https://en.wikipedia.org/wiki/Candide",
     textURL: "https://www.gutenberg.org/files/19942/19942-h/19942-h.htm",
-    playlistURL: "https://open.spotify.com/playlist/4OFcQ76jTyggZqEJdT7S3Z"
+    playlistURL: "https://open.spotify.com/playlist/4OFcQ76jTyggZqEJdT7S3Z",
+    ref: [
+      {id: "voltaire-1759", type: "book", title: "Candide", contributors: [{lastName: "Voltaire", role: "author"}], pubDate: {year: 1759}, publisher: "Cramer", location: "Geneva", meta: {sortKey: "text"}}
+    ]
   },
   {
     region: "Madagascar",
@@ -778,7 +838,10 @@ She met Candide on reaching the castle and blushed; Candide blushed also; she wi
 "You see," he said, "he knows you've completed a high school education, he knows you'll have money to spend ... these types will never hesitate to find any way to support you. And believe me, doctors are good at that, my child." I'd rather not answer him. I know what I'll do, I know what I'll be.`,
     bioURL: "https://en.wikipedia.org/wiki/Clarisse_Ratsifandrihamanana",
     infoURL: "https://www.google.com/books/edition/Lohataona_sy_ririnina/e9UiAQAAMAAJ",
-    textURL: ""
+    textURL: "",
+    ref: [
+      {id: "ratsifandrihamanana-1964", type: "book", title: "Lohataona sy Ririnina", contributors: [{firstName: "Clarisse", lastName: "Ratsifandrihamanana", role: "author"}], pubDate: {year: 1964}, publisher: "Imprimerie Nationale", location: "Antananarivo", meta: {sortKey: "text"}}
+    ]
   },
   {
     region: "Melanesia",
@@ -810,7 +873,10 @@ So you can imagine, strange events followed by sudden arrivals of white men with
 This was the society I was born into.`,
     infoURL: "https://www.goodreads.com/book/show/40815291-my-mother-calls-me-yaltep",
     bioURL: "https://en.wikipedia.org/wiki/Ignatius_Kilage",
-    textURL: ""
+    textURL: "",
+    ref: [
+      {id: "kilage-1980", type: "book", title: "My Mother Calls Me Yaltep", contributors: [{firstName: "Ignatius", lastName: "Kilage", role: "author"}], pubDate: {year: 1980}, publisher: "Institute of PNG Studies", location: "Boroko, PNG", meta: {sortKey: "text"}}
+    ]
   },
   {
     region: "Micronesia",
@@ -850,7 +916,10 @@ Her heart was breaking all over again. Every ounce of grief and anger that she c
 "You fainted."`,
     bioURL: "https://www.paulaq.com/heyheypaula.html",
     infoURL: "https://www.goodreads.com/book/show/53452804-stormed",
-    textURL: ""
+    textURL: "",
+    ref: [
+      {id: "quinene-2014", type: "book", title: "Stormed", contributors: [{firstName: "Paula", lastName: "Quinene", role: "author"}], pubDate: {year: 2014}, publisher: "PaulaQ Publishing", location: "Guam", meta: {sortKey: "text", notes: "Chamorro contemporary fiction."}}
+    ]
   },
   {
     region: "Polynesia",
@@ -866,7 +935,10 @@ Her heart was breaking all over again. Every ounce of grief and anger that she c
 Faleasa ripped all the mosquito nets from the strings that tied them to the rafters and hurled them out of the fale—the paepae was shrouded with white netting. He then gathered all the pillows, sleeping sheets, and mats and threw them out as well. Felefele sent some of the girls to bring her treasured possessions out of the rain but, as they approached, Falesa threatened to kill them if they touched anything, so they retreated to Felefele who, no longer worried about her husband's health but extremely angry with him, stood up arms akimbo and called to him to stop being childish and think about how their village would view his senile behaviour—she emphasised the word senile, which angered Faleasa more and made him grab the large wooden chest in which all their clothes were kept, pull it clattering across the pebble floor to the front paepae, take out armfuls of clothes and scatter them across the paepae and grass, all the time exclaiming loudly that his wife and children and relatives were a pack of greedy, gluttonous, uncouth, uncivilised dogs. When the chest was empty he rolled it down the paepae; it broke into large pieces. He then sat down cross-legged in the middle of the fale, arms folded across his heaving chest, head held high defiantly, the nausea gone. 'Stay like that for all we care!' Felefele called. Then she ordered their aiga not to pay any attention to their sick father but to go about their normal activities as if he wasn't there.`,
     bioURL: "https://en.wikipedia.org/wiki/Albert_Wendt",
     infoURL: "https://www.goodreads.com/book/show/1135796.Pouliuli",
-    textURL: "https://archive.org/details/pouliuli0000wend_g5p3"
+    textURL: "https://archive.org/details/pouliuli0000wend_g5p3",
+    ref: [
+      {id: "wendt-1977", type: "book", title: "Pōuliuli", contributors: [{firstName: "Albert", lastName: "Wendt", role: "author"}], pubDate: {year: 1977}, publisher: "Longman Paul", location: "Auckland", meta: {sortKey: "text"}}
+    ]
   }
 ];
 export const stirrPoetry = [
@@ -2789,7 +2861,7 @@ A truly excellent spell proved millions of times.
     mediaURL: "",
     textURL: ["https://www.africa.upenn.edu/Books/Papyrus_Ani.html","https://isac.uchicago.edu/sites/default/files/uploads/shared/docs/saoc37.pdf"],
     ref: [
-      {author: "Faulkner, Raymond O.", year: "2015", title: "The Egyptian Book of the Dead: The Book of Going Forth by Day: The Complete Papyrus of Ani Featuring Integrated Text and Full-Color Images", pub: "Chronicle Books", grade: "B", sort: "text"}
+      {id: "faulkner-2015", type: "book", title: "The Egyptian Book of the Dead: The Book of Going Forth by Day: The Complete Papyrus of Ani Featuring Integrated Text and Full-Color Images", contributors: [{lastName: "Faulkner", firstName: "Raymond O.", role: "author"}], pubDate: {year: 2015}, publisher: "Chronicle Books", meta: {sortKey: "text", grade: "B"}}
     ]
   },
   {
@@ -2864,9 +2936,9 @@ The men immediately went out and waited next to the road, waiting for her. And w
     mediaURL: "",
     textURL: "https://archive.org/details/dictionaryofafri00sche",
     ref: [
-      {author: "Wittenberg, Hermann", year: "2011", chapter: "Notes towards a history of Khoi literature", journal: "English Academy Review", vol: "28", iss: "1", pp: "6–22", url: "https://ibali.uct.ac.za/files/original/d58262950235cb005621b2d71f9c96191316eeff.pdf", sort: "info", grade: "B"},
-      {author: "Schultze, Leonhard", year: "1907", title: "Aus Namaland und Kalahari: Bericht an die Kgl. Preuss. Akademie der Wissenschaften zu Berlin über eine forschungsreise im westlichen und zentralen Südafrika, ausgeführt in den jahren 1903-1905", pub: "Gustav Fischer", url: "https://archive.org/details/ausnamalandundk00berlgoog", sort: "text", grade: "B"},
-      {author: "Bleek, Wilhelm Heinrich Immanuel", year: "1864", title: "Reynard the Fox in South Africa", pub: "Trübner and Co", url: "https://www.gutenberg.org/cache/epub/73413/pg73413.txt", sort: "text", grade: "D"}
+      {id: "wittenberg-2011", type: "article", title: "Notes towards a history of Khoi literature", contributors: [{lastName: "Wittenberg", firstName: "Hermann", role: "author"}], pubDate: {year: 2011}, containerTitle: "English Academy Review", volume: "28", issue: "1", pages: {start: "6", end: "22"}, url: "https://ibali.uct.ac.za/files/original/d58262950235cb005621b2d71f9c96191316eeff.pdf", meta: {sortKey: "info", grade: "B"}},
+      {id: "schultze-1907", type: "book", title: "Aus Namaland und Kalahari: Bericht an die Kgl. Preuss. Akademie der Wissenschaften zu Berlin über eine forschungsreise im westlichen und zentralen Südafrika, ausgeführt in den jahren 1903-1905", contributors: [{lastName: "Schultze", firstName: "Leonhard", role: "author"}], pubDate: {year: 1907}, publisher: "Gustav Fischer", url: "https://archive.org/details/ausnamalandundk00berlgoog", meta: {sortKey: "text", grade: "B"}},
+      {id: "bleek-1864", type: "book", title: "Reynard the Fox in South Africa", contributors: [{lastName: "Bleek", firstName: "Wilhelm Heinrich Immanuel", role: "author"}], pubDate: {year: 1864}, publisher: "Trübner and Co", url: "https://www.gutenberg.org/cache/epub/73413/pg73413.txt", meta: {sortKey: "text", grade: "D"}}
     ]
   },
   {
@@ -2962,13 +3034,13 @@ The contraption that we form<br>We pray that the result would be a child<br>The 
     mediaURL: "",
     textURL: "",
     ref: [
-      {author: "Salami, Ayọ̀", year: "2002", title: "Ifá: A Complete Divination", pub: "NIDD Publishing and Printing Limited", grade: "A", sort: "text"},
-      {author: "Gleason, Judith; Aworinde, Awotunde; Ogundipe, John Olaniyi", year: "1973", title: "A Recitation of Ifa, Oracle of the Yoruba", pub: "Grossman Publishers", grade: "B", sort: "text"}
+      {id: "salami-2002", type: "book", title: "Ifá: A Complete Divination", contributors: [{lastName: "Salami", firstName: "Ayọ̀", role: "author"}], pubDate: {year: 2002}, publisher: "NIDD Publishing and Printing Limited", meta: {sortKey: "text", grade: "A"}},
+      {id: "gleason-1973", type: "book", title: "A Recitation of Ifa, Oracle of the Yoruba", contributors: [{lastName: "Gleason", firstName: "Judith", role: "author"}, {lastName: "Aworinde", firstName: "Awotunde", role: "author"}, {lastName: "Ogundipe", firstName: "John Olaniyi", role: "author"}], pubDate: {year: 1973}, publisher: "Grossman Publishers", meta: {sortKey: "text", grade: "B"}}
     ]
   },
   {
     region: "Arctic America",
-    label: "AMNONORT",
+    label: "AMNOFRT",
     title: {original: "Ingilraqpaaluk", translation: "A Very Long Time Ago"},
     group: {people: "Inuvialuit", language: "Inuvialuktun", religion: "Angatkuqism", location: "NWT, CA"},
     info: `The <i>angatkuq</i> of long ago was a man or woman with magical powers. They were always private people and believed to have animal powers. The powers flowed through mystical amulets. It was said that they could watch and hear people by changing their form into that of a creature—at times, they seemed to be all around the camp using their supernatural powers.
@@ -3024,12 +3096,12 @@ At last night began to fall, and he said to his cousin, "Don't you think it's ti
     mediaURL: "https://youtu.be/1TINaxgWRYw",
     textURL: "",
     ref: [
-      {author: "Alunik, Ishmael", year: "2003", title: "Across Time and Tundra: the Inuvialuit of the Western Arctic", pub: "Raincoast Books", url: "https://archive.org/details/acrosstimetundra0000alun", sort: "text", grade: "A"}
+      {id: "alunik-2003", type: "book", title: "Across Time and Tundra: the Inuvialuit of the Western Arctic", contributors: [{lastName: "Alunik", firstName: "Ishmael", role: "author"}], pubDate: {year: 2003}, publisher: "Raincoast Books", url: "https://archive.org/details/acrosstimetundra0000alun", meta: {sortKey: "text", grade: "A"}}
     ]
   },
   {
     region: "Eastern Woodlands",
-    label: "AMEANORT",
+    label: "AMEAFRT",
     title: {original: "ᒥᑌᐐᒀᔅ", transliteration: "Mide-wiigwaas", translation: "Sacred Scrolls"},
     group: {people: "Ojibwe", language: "Ojibwe", religion: "Midéwiwin", location: "Michigan, US"},
     info: `The skies are filled with deities, and the whole forest awakens with their whispers. The lakes and streams are the places of their resort, and mountains and valleys alike their abode. Waterfalls are their sporting scenes. All the remarkable spots in the country, the peaks of rocky cliffs, the clefts of craggy mounts, are their favorite.
@@ -3128,14 +3200,14 @@ When she awoke, the storm was yet raging, and the voices of the gods were heard 
     mediaURL: "",
     textURL: ["https://www.academia.edu/43051692/A_Structural_Analysis_of_Midewiwin_Chants","https://www.gutenberg.org/files/19368/19368-h/19368-h.htm"],
     ref: [
-      {author: "Vecsey, Christopher", year: "1984", chapter: "Midewiwin Myths of Origin", compilation: "Algonquian Papers - Archive", vol: "15", url: "https://ojs.library.carleton.ca/index.php/ALGQP/article/view/889", sort: "info", grade: "B"},
-      {author: "Angel, Michael R.", year: "1997", title: "Discordant Voices, Conflicting Visions: Ojibwa and Euro-American Perspectives on the Midewiwin", pub: "University of Manitoba, PhD dissertation", url: "https://central.bac-lac.gc.ca/.item?id=nq23580&op=pdf&app=Library&oclc_number=1150882872", sort: "info", grade: "C"},
-      {author: "Copway, George", year: "1851", title: "The Traditional History and Characteristic Sketches of The Ojibway Nation", url: "https://archive.org/details/traditionalhisto00copw/page/146/mode/2up", sort: "text", grade: "A"}
+      {id: "vecsey-1984", type: "chapter", title: "Midewiwin Myths of Origin", contributors: [{lastName: "Vecsey", firstName: "Christopher", role: "author"}], pubDate: {year: 1984}, containerTitle: "Algonquian Papers - Archive", volume: "15", url: "https://ojs.library.carleton.ca/index.php/ALGQP/article/view/889", meta: {sortKey: "info", grade: "B"}},
+      {id: "angel-1997", type: "book", title: "Discordant Voices, Conflicting Visions: Ojibwa and Euro-American Perspectives on the Midewiwin", contributors: [{lastName: "Angel", firstName: "Michael R.", role: "author"}], pubDate: {year: 1997}, publisher: "University of Manitoba", medium: "[PhD dissertation]", url: "https://central.bac-lac.gc.ca/.item?id=nq23580&op=pdf&app=Library&oclc_number=1150882872", meta: {sortKey: "info", grade: "C"}},
+      {id: "copway-1851", type: "book", title: "The Traditional History and Characteristic Sketches of The Ojibway Nation", contributors: [{lastName: "Copway", firstName: "George", role: "author"}], pubDate: {year: 1851}, url: "https://archive.org/details/traditionalhisto00copw/page/146/mode/2up", meta: {sortKey: "text", grade: "A"}}
     ]
   },
   {
     region: "Great Plains",
-    label: "AMINNORT",
+    label: "AMINFRT",
     title: "Ceremonies of the Pawnee",
     group: {people: "Pawnee", language: "Pawnee", religion: "Pawnee religion", location: "Nebraska, US"},
     info: `At the sound of the first thunder in spring, the keeper of the sacred bundle (the <+><i>chúharipiru</i>[from "chuhuru" meaning rainstorm and "ripiru" meaning wrapped up]</+>) must immediately open it with the proper procedure and make an offering of dried bison meat to the west, the direction of the Evening Star, the home of the thunderers, from whence the powers of the bundle comes. This offering is burned, but after the ceremony the remaining meat is cooked and served from the ceremonial earth lodge (pictured).
@@ -3175,7 +3247,7 @@ The black beaver went through the same performance, only some of the sleight-of-
     mediaURL: "",
     textURL: "",
     ref: [
-      {author: "Murie, James R.", year: "1981", title: "Ceremonies of the Pawnee", pub: "Smithsonian Institution Press", url: "https://repository.si.edu/server/api/core/bitstreams/db5dec6a-c560-4393-a45c-22ef5b2aeffa/content", sort: "text", grade: "A"}
+      {id: "murie-1981", type: "book", title: "Ceremonies of the Pawnee", contributors: [{lastName: "Murie", firstName: "James R.", role: "author"}], pubDate: {year: 1981}, publisher: "Smithsonian Institution Press", url: "https://repository.si.edu/server/api/core/bitstreams/db5dec6a-c560-4393-a45c-22ef5b2aeffa/content", meta: {sortKey: "text", grade: "A"}}
     ]
   },
   {
@@ -3333,7 +3405,7 @@ And when the signs of the splendor and lordship of the Keeper of the Mat and Kee
     mediaURL: "",
     textURL: "",
     ref: [
-      {author: "Tedlock, Dennis Ernest", year: "1996", title: "Popol Vuh: The definitive edition of the Mayan book of the dawn of life and the glories of gods and kings", pub: "Touchstone", url: "https://yale.imodules.com/s/1667/images/gid6/editor_documents/flick_readings/tedlock-popul_vuh_text.pdf", sort: "text", grade: "B"}
+      {id: "tedlock-1996", type: "book", title: "Popol Vuh: The definitive edition of the Mayan book of the dawn of life and the glories of gods and kings", contributors: [{lastName: "Tedlock", firstName: "Dennis Ernest", role: "author"}], pubDate: {year: 1996}, publisher: "Touchstone", url: "https://yale.imodules.com/s/1667/images/gid6/editor_documents/flick_readings/tedlock-popul_vuh_text.pdf", meta: {sortKey: "text", grade: "B"}}
     ]
   },
   {
@@ -3362,12 +3434,12 @@ The zemi Opiyelguobinin has four feet, like a dog, and is made of wood, and ofte
     mediaURL: "",
     textURL: "",
     ref: [
-      {author: "Pané, Fray Ramón", year: "1988", circa: "1494–1498", title: "Relación Acerca De Las Antigüedades De Los Indios", pub: "Editora Corripio", url: "http://fundacioncorripio.org.do/wp-content/uploads/2023/01/fray-ramon-pane-relacion-acerca-de-las-antiguedades-delos-indios.pdf", sort: "text", grade: "C"}
+      {id: "pane-1988", type: "book", title: "Relación Acerca De Las Antigüedades De Los Indios", contributors: [{lastName: "Pané", firstName: "Fray Ramón", role: "author"}], pubDate: {year: 1988}, publisher: "Editora Corripio", url: "http://fundacioncorripio.org.do/wp-content/uploads/2023/01/fray-ramon-pane-relacion-acerca-de-las-antiguedades-delos-indios.pdf", meta: {sortKey: "text", grade: "C", notes: "Originally written c. 1494–1498"}}
     ]
   },
   {
     region: "Andean America",
-    label: "AMWESORT",
+    label: "AMWEFRT",
     title: "Huarochirí Manuscript",
     group: {people: "Quechua", language: "Quechua", religion: "Wakanism", country: "Peru"},
     info: `The religious landscape of the Andean region is influenced by a variety of overlapping traditions, including: <i>curanderismo</i>, organized around physicians and spirits and most illustratively at the center of religious practices in the rainforests of the east; ancient Huamanism, the cult of the sacred mountains, which emerged as a distinct tradition no later than 8000 BCE out of a deep relationship with the highland terrain; and Wakanism, which originated around 3000 BCE with the advent of urbanized, hierarchical civilization.
@@ -3411,12 +3483,12 @@ While she picked his lice, she caused a huge abyss to open up next to him, think
     mediaURL: "",
     textURL: "",
     ref: [
-      {author: "Salomon, Frank; Urioste, George L.", year: "1991", title: "The Huarochiri Manuscript: A Testament of Ancient and Colonial Andean Religion", pub: "University of Texas Press", sort: "text", grade: "B"}
+      {id: "salomon-1991", type: "book", title: "The Huarochiri Manuscript: A Testament of Ancient and Colonial Andean Religion", contributors: [{lastName: "Salomon", firstName: "Frank", role: "author"}, {lastName: "Urioste", firstName: "George L.", role: "author"}], pubDate: {year: 1991}, publisher: "University of Texas Press", meta: {sortKey: "text", grade: "B"}}
     ]
   },
   {
     region: "Amazonia",
-    label: "AMNESORT",
+    label: "AMNEFRT",
     title: {original: "Watunna", translation: "Retellings"},
     group: {people: "So'to", language: "So'to", religion: "So'to religion", location: "Amazonas, VE"},
     info: `The deeds of the Heavenly Ancestors are the models for correct behavior, the perfect expression of traditional law, the wisdom bequeathed to the Earth by the Primordial Beings. Such deeds have been recounted since the beginning of time in the rituals of the magico-religious festivals of <i>Wanwanna</i>, which are celebrated to inaugurate new gardens or communal houses.
@@ -3477,8 +3549,8 @@ Now that's how the old ones tell it. That's what they say.
     mediaURL: "https://vimeo.com/33329249",
     textURL: "",
     ref: [
-      {author: "de Civrieux, Marc", year: "1970", title: "Watunna: Mitología Makiritare", pub: "Monte Ávila Editores CA", place: "Caracas, Venezuela", url: "https://monteavilaeditores.com/wp-content/plugins/pdfjs-viewer-shortcode/pdfjs/web/viewer.php?download=true&print=true&openfile=false&file=https://monteavilaeditores.com%2Fdownload%2Fwatunna-un-ciclo-de-creacion-en-el-orinoco%2F%3Fwpdmdl%3D10723%26refresh%3D69328fb829ac11764921272", sort: "text", grade: "B"},
-      {author: "de Civrieux, Marc; Guss, David M.", year: "1997", title: "Watunna: An Orinoco creation cycle", pub: "University of Texas Press", url: "https://www.jstor.org/stable/10.7560/715899", sort: "text", grade: "B"}
+      {id: "decivrieux-1970", type: "book", title: "Watunna: Mitología Makiritare", contributors: [{lastName: "de Civrieux", firstName: "Marc", role: "author"}], pubDate: {year: 1970}, publisher: "Monte Ávila Editores CA", location: "Caracas, Venezuela", url: "https://monteavilaeditores.com/wp-content/plugins/pdfjs-viewer-shortcode/pdfjs/web/viewer.php?download=true&print=true&openfile=false&file=https://monteavilaeditores.com%2Fdownload%2Fwatunna-un-ciclo-de-creacion-en-el-orinoco%2F%3Fwpdmdl%3D10723%26refresh%3D69328fb829ac11764921272", meta: {sortKey: "text", grade: "B"}},
+      {id: "decivrieux-1997", type: "book", title: "Watunna: An Orinoco creation cycle", contributors: [{lastName: "de Civrieux", firstName: "Marc", role: "author"}, {lastName: "Guss", firstName: "David M.", role: "author"}], pubDate: {year: 1997}, publisher: "University of Texas Press", url: "https://www.jstor.org/stable/10.7560/715899", meta: {sortKey: "text", grade: "B"}}
     ]
   },
   {
@@ -3535,9 +3607,9 @@ Thus, when you inhabit the earth,<br>you must remember my beautiful abode.<br><v
     mediaURL: "",
     textURL: "https://garlandmag.com/article/ayvu-rapyta-selection/",
     ref: [
-      {author: "Cadogan, León", year: "1959", title: "Ayvu Rapyta: Textos míticos de los Mbyá-Guaraní del Guairá", pub: "Faculdade de Filosofia, Ciências e Letras da Universidade de São Paulo", url: "https://biblioteca.trabalhoindigenista.org.br/wp-content/uploads/2018/06/AYVU-RAPYTA-Textos-Misticos-de-los.pdf", sort: "text", grade: "B"},
-      {author: "Lambert, Peter; Nickson, Andrew", eds: "true", year: "2013", title: "The Paraguay Reader: History, Culture, Politics", pub: "Duke University Press", url: "https://www.jstor.org/stable/j.ctv1220gtb", sort: "info", grade: "C"},
-      {author: "Scappini, Gloria", year: "2011", title: "AYVU vs. ÑE'Ẽ: Los Mbya-Guarani y La Lengua Guaraní Del Paraguay", pub: "Independent Research", url: "https://www.academia.edu/73541056/AYVU_Vs_%C3%91E%E1%BA%BC_Los_Mbya_Guarani_y_la_lengua_guaran%C3%AD_del_Paraguay_1", sort: "info", grade: "C"}
+      {id: "cadogan-1959", type: "book", title: "Ayvu Rapyta: Textos míticos de los Mbyá-Guaraní del Guairá", contributors: [{lastName: "Cadogan", firstName: "León", role: "author"}], pubDate: {year: 1959}, publisher: "Faculdade de Filosofia, Ciências e Letras da Universidade de São Paulo", url: "https://biblioteca.trabalhoindigenista.org.br/wp-content/uploads/2018/06/AYVU-RAPYTA-Textos-Misticos-de-los.pdf", meta: {sortKey: "text", grade: "B"}},
+      {id: "lambert-2013", type: "book", title: "The Paraguay Reader: History, Culture, Politics", contributors: [{lastName: "Lambert", firstName: "Peter", role: "editor"}, {lastName: "Nickson", firstName: "Andrew", role: "editor"}], pubDate: {year: 2013}, publisher: "Duke University Press", url: "https://www.jstor.org/stable/j.ctv1220gtb", meta: {sortKey: "info", grade: "C"}},
+      {id: "scappini-2011", type: "book", title: "AYVU vs. ÑE'Ẽ: Los Mbya-Guarani y La Lengua Guaraní Del Paraguay", contributors: [{lastName: "Scappini", firstName: "Gloria", role: "author"}], pubDate: {year: 2011}, publisher: "Independent Research", url: "https://www.academia.edu/73541056/AYVU_Vs_%C3%91E%E1%BA%BC_Los_Mbya_Guarani_y_la_lengua_guaran%C3%AD_del_Paraguay_1", meta: {sortKey: "info", grade: "C"}}
     ]
   },
   {
@@ -3606,7 +3678,7 @@ The human girl went down the river crying. She was walking along the river for a
     mediaURL: "",
     textURL: "",
     ref: [
-      {author: "Jochelson, Waldemar Ilyich; Dolganoff, Aleksey", year: "1926", title: "The Yukaghir and the Yukaghirized Tungus", journal: "Memoirs of the AMNH", vol: "13", pub: "E. J. Brill", location: "Leiden", isbn: "9783942883900", url: "https://catalog.hathitrust.org/Record/001632378", sort: "text", grade: "C"}
+      {id: "jochelson-1926", type: "book", title: "The Yukaghir and the Yukaghirized Tungus", contributors: [{lastName: "Jochelson", firstName: "Waldemar Ilyich", role: "author"}, {lastName: "Dolganoff", firstName: "Aleksey", role: "author"}], pubDate: {year: 1926}, containerTitle: "Memoirs of the AMNH", volume: "13", publisher: "E. J. Brill", location: "Leiden", isbn: "9783942883900", url: "https://catalog.hathitrust.org/Record/001632378", meta: {sortKey: "text", grade: "C"}}
     ]
   },
   {
@@ -3728,7 +3800,7 @@ So he spoke and the Teacher replied:
     mediaURL: "",
     textURL: "https://archive.org/details/arrowandthespindlesamtenkarmayg.vol1studiesinhistorymythsritualsandbeliefsintibet_721_U",
     ref: [
-      {author: "Karmay, Samten Gyeltsen", year: "1972", title: "The Treasury of Good Sayings: A Tibetan History of Bon", pub: "Oxford University Press", url: "https://pahar.in/pahar/Books%20and%20Articles/Tibet%20and%20China/1972%20Treasury%20of%20Good%20Sayings--a%20Tibetan%20History%20of%20Bon%20by%20Karmay%20s.pdf", sort: "info", grade: "A"}
+      {id: "karmay-1972", type: "book", title: "The Treasury of Good Sayings: A Tibetan History of Bon", contributors: [{lastName: "Karmay", firstName: "Samten Gyeltsen", role: "author"}], pubDate: {year: 1972}, publisher: "Oxford University Press", url: "https://pahar.in/pahar/Books%20and%20Articles/Tibet%20and%20China/1972%20Treasury%20of%20Good%20Sayings--a%20Tibetan%20History%20of%20Bon%20by%20Karmay%20s.pdf", meta: {sortKey: "info", grade: "A"}}
     ]
   },
   {
@@ -3764,9 +3836,9 @@ After these instructions, an earthquake caused the four eggs to burst open. Out 
     mediaURL: "",
     textURL: ["https://www.researchgate.net/publication/307912234_Images_of_God_in_Toba_Batak_storytelling","https://brill.com/view/journals/bki/181/2-3/article-p191_2.xml"],
     ref: [
-      {author: "van der Tuuk, Herman Neubronner", year: "1862", title: "Bataksch Leesboek I-IV", pub: "Frederik Muller", url: "https://catalog.hathitrust.org/Record/001359493", sort: "text", grade: "B"},
-      {author: "Brakel-Papenhuyzen, Clara", year: "2016", article: "Dairi storytelling and stories in the Batak Reader of Herman Neubronner van der Tuuk", journal: "Wacana Journal of the Humanities of Indonesia", vol: "17", iss: "2", pp: "278", url: "https://www.researchgate.net/publication/307923443_Dairi_storytelling_and_stories_in_the_Batak_Reader_of_Herman_Neubronner_van_der_Tuuk", sort: "info", grade: "C"},
-      {author: "Tobing, Philip Lumban", year: "1956", article: "The Structure of the Toba-Batak Belief in the High God", pub: "J. van Campen", location: "Amsterdam", url: "https://catalog.hathitrust.org/Record/001879656", sort: "info", grade: "C"}
+      {id: "vandertuuk-1862", type: "book", title: "Bataksch Leesboek I-IV", contributors: [{lastName: "van der Tuuk", firstName: "Herman Neubronner", role: "author"}], pubDate: {year: 1862}, publisher: "Frederik Muller", url: "https://catalog.hathitrust.org/Record/001359493", meta: {sortKey: "text", grade: "B"}},
+      {id: "brakel-2016", type: "article", title: "Dairi storytelling and stories in the Batak Reader of Herman Neubronner van der Tuuk", contributors: [{lastName: "Brakel-Papenhuyzen", firstName: "Clara", role: "author"}], pubDate: {year: 2016}, containerTitle: "Wacana Journal of the Humanities of Indonesia", volume: "17", issue: "2", pages: {start: "278", end: "278"}, url: "https://www.researchgate.net/publication/307923443_Dairi_storytelling_and_stories_in_the_Batak_Reader_of_Herman_Neubronner_van_der_Tuuk", meta: {sortKey: "info", grade: "C"}},
+      {id: "tobing-1956", type: "book", title: "The Structure of the Toba-Batak Belief in the High God", contributors: [{lastName: "Tobing", firstName: "Philip Lumban", role: "author"}], pubDate: {year: 1956}, publisher: "J. van Campen", location: "Amsterdam", url: "https://catalog.hathitrust.org/Record/001879656", meta: {sortKey: "info", grade: "C"}}
     ]
   },
   {
@@ -3818,9 +3890,9 @@ If the sacrifice has been made at the right time, the tongues, emblem of the sol
     mediaURL: "",
     textURL: ["https://dn790008.ca.archive.org/0/items/yajurveda029670mbp/yajurveda029670mbp.pdf","https://archive.org/details/sAmaveda-theses/SamaVedaKashyapR.l.Saksi"],
     ref: [
-      {author: "Kashyap, Rangasami Lakshminarayan", year: "2003", title: "Secrets of Rig Veda: First 121 Suktas", pub: "Sri Aurobindo Kapali Sastry Institute of Vedic Culture", location: "Bengaluru", url: "https://archive.org/details/MmFD_secrets-of-rig-veda-first-121-suktas-by-r.-l.-kashyap-bengaluru-2003-sri-aurobin", sort: "text", grade: "A"},
-      {author: "Swāmi, Shree Purohit; Yeats, William Butler", year: "1938", title: "The Ten Principal Upanishads", pub: "Faber and Faber", url: "https://archive.org/details/in.ernet.dli.2015.238029", sort: "text", grade: "A"},
-      {author: "Vivekjivandas, Sadhu; Dave, Janakbhai", year: "2013", title: "Hinduism: Sacred texts: Vedas, Upanishads, Agamas, Puranas", pub: "Swaminarayan Aksharpith", sort: "info", grade: "A"}
+      {id: "kashyap-2003", type: "book", title: "Secrets of Rig Veda: First 121 Suktas", contributors: [{lastName: "Kashyap", firstName: "Rangasami Lakshminarayan", role: "author"}], pubDate: {year: 2003}, publisher: "Sri Aurobindo Kapali Sastry Institute of Vedic Culture", location: "Bengaluru", url: "https://archive.org/details/MmFD_secrets-of-rig-veda-first-121-suktas-by-r.-l.-kashyap-bengaluru-2003-sri-aurobin", meta: {sortKey: "text", grade: "A"}},
+      {id: "swami-1938", type: "book", title: "The Ten Principal Upanishads", contributors: [{lastName: "Swāmi", firstName: "Shree Purohit", role: "author"}, {lastName: "Yeats", firstName: "William Butler", role: "author"}], pubDate: {year: 1938}, publisher: "Faber and Faber", url: "https://archive.org/details/in.ernet.dli.2015.238029", meta: {sortKey: "text", grade: "A"}},
+      {id: "vivekjivandas-2013", type: "book", title: "Hinduism: Sacred texts: Vedas, Upanishads, Agamas, Puranas", contributors: [{lastName: "Vivekjivandas", firstName: "Sadhu", role: "author"}, {lastName: "Dave", firstName: "Janakbhai", role: "author"}], pubDate: {year: 2013}, publisher: "Swaminarayan Aksharpith", meta: {sortKey: "info", grade: "A"}}
     ]
   },
   {
@@ -3890,7 +3962,7 @@ Then I saw a Lamb, looking as if it had been slain, standing at the center of th
     mediaURL: "",
     textURL: "",
     ref: [
-      {author: "New International Version", year: "2011", title: "The Bible", pub: "Biblica", url: "https://www.biblegateway.com/versions/New-International-Version-NIV-Bible/", sort: "text", grade: "B"}
+      {id: "niv-2011", type: "book", title: "The Bible", contributors: [{organization: "New International Version", role: "author"}], pubDate: {year: 2011}, publisher: "Biblica", url: "https://www.biblegateway.com/versions/New-International-Version-NIV-Bible/", meta: {sortKey: "text", grade: "B"}}
     ]
   },
   {
@@ -3921,7 +3993,7 @@ What is the inside of the tent frame like? What is its smoke hole like? What is 
     mediaURL: "",
     textURL: "",
     ref: [
-      {author: "Tekin, Talat", year: "1993", title: "Irk Bitig: The Book of Omens", pub: "Harrassowitz Verlag", url: "http://altaica.ru/LIBRARY/Tekin%20Talat/Tekin_Irk%20Bitig%20-%20The%20Book%20of%20Omens%201993.pdf", sort: "text", grade: "A"}
+      {id: "tekin-1993", type: "book", title: "Irk Bitig: The Book of Omens", contributors: [{lastName: "Tekin", firstName: "Talat", role: "author"}], pubDate: {year: 1993}, publisher: "Harrassowitz Verlag", url: "http://altaica.ru/LIBRARY/Tekin%20Talat/Tekin_Irk%20Bitig%20-%20The%20Book%20of%20Omens%201993.pdf", meta: {sortKey: "text", grade: "A"}}
     ]
   },
   {
@@ -3968,9 +4040,9 @@ He took a servant to blow,<br>a hireling to press them down,<br>he looked undern
     mediaURL: "",
     textURL: "",
     ref: [
-      {author: "Lönnrot, Elias; Friberg, Eino", year: "1988", title: "Kalevala: The Epic of the Finnish People", pub: "Otava Publishing Company Ltd, University of Illinois Press", isbn: "9789511101376", url: "https://archive.org/details/kalevalaepicoffi0000unse/page/n3/mode/2up", sort: "text", grade: "A"},
-      {author: "Lönnrot, Elias", year: "1880", title: "Suomen kansan muinaisia loitsurunoja", pub: "Suomalaisen Kirjallisuuden Seuran", url: "https://www.gutenberg.org/ebooks/48751", sort: "text", grade: "B"},
-      {author: "Gant, Christina M.", year: "2023", article: "The Cooperative Spirit of Nature in the Kalevala Creation Myth: An Argument for Modern Animism", journal: "Challenges", vol: "14", iss: "1", url: "https://www.mdpi.com/2078-1547/14/1/2", sort: "info", grade: "B"}
+      {id: "lonnrot-1988", type: "book", title: "Kalevala: The Epic of the Finnish People", contributors: [{lastName: "Lönnrot", firstName: "Elias", role: "author"}, {lastName: "Friberg", firstName: "Eino", role: "translator"}], pubDate: {year: 1988}, publisher: "Otava Publishing Company Ltd, University of Illinois Press", isbn: "9789511101376", url: "https://archive.org/details/kalevalaepicoffi0000unse/page/n3/mode/2up", meta: {sortKey: "text", grade: "A"}},
+      {id: "lonnrot-1880", type: "book", title: "Suomen kansan muinaisia loitsurunoja", contributors: [{lastName: "Lönnrot", firstName: "Elias", role: "author"}], pubDate: {year: 1880}, publisher: "Suomalaisen Kirjallisuuden Seuran", url: "https://www.gutenberg.org/ebooks/48751", meta: {sortKey: "text", grade: "B"}},
+      {id: "gant-2023", type: "article", title: "The Cooperative Spirit of Nature in the Kalevala Creation Myth: An Argument for Modern Animism", contributors: [{lastName: "Gant", firstName: "Christina M.", role: "author"}], pubDate: {year: 2023}, containerTitle: "Challenges", volume: "14", issue: "1", url: "https://www.mdpi.com/2078-1547/14/1/2", meta: {sortKey: "info", grade: "B"}}
     ]
   },
   {
@@ -4183,9 +4255,9 @@ May the seed turn black as the night!<br><v>May the light of the sky scorch blac
     mediaURL: "",
     textURL: "",
     ref: [
-      {author: "Strehlow, Theodor George Henry", year: "1971", title: "Songs of Central Australia", pub: "Angus and Robertson", ISBN: "0207946574", sort: "text", grade: "B"},
-      {author: "Gibson, Jason M.", year: "2018", article: "Listening to the Anmatyerr Song Recordings of T.G.H. Strehlow", pub: "The Artefact", vol: "41", pp: "3–15", url: "https://www.academia.edu/39954265/Listening_to_the_Anmatyerr_Song_Recordings_of_T_G_H_Strehlow", sort: "info", grade: "B"},
-      {author: "Green, Jennifer", year: "2012", article: "The Altyerre Story—‘Suffering Badly by Translation’", pub: "The Australian Journal of Anthropology", vol: "23", iss: "2", url: `https://www.researchgate.net/publication/264414820_The_Altyerre_Story-'Suffering_Badly_by_Translation'`, sort: "info", grade: "C"}
+      {id: "strehlow-1971", type: "book", title: "Songs of Central Australia", contributors: [{lastName: "Strehlow", firstName: "Theodor George Henry", role: "author"}], pubDate: {year: 1971}, publisher: "Angus and Robertson", isbn: "0207946574", meta: {sortKey: "text", grade: "B"}},
+      {id: "gibson-2018", type: "article", title: "Listening to the Anmatyerr Song Recordings of T.G.H. Strehlow", contributors: [{lastName: "Gibson", firstName: "Jason M.", role: "author"}], pubDate: {year: 2018}, containerTitle: "The Artefact", volume: "41", pages: {start: "3", end: "15"}, url: "https://www.academia.edu/39954265/Listening_to_the_Anmatyerr_Song_Recordings_of_T_G_H_Strehlow", meta: {sortKey: "info", grade: "B"}},
+      {id: "green-2012", type: "article", title: "The Altyerre Story—‘Suffering Badly by Translation’", contributors: [{lastName: "Green", firstName: "Jennifer", role: "author"}], pubDate: {year: 2012}, containerTitle: "The Australian Journal of Anthropology", volume: "23", issue: "2", url: `https://www.researchgate.net/publication/264414820_The_Altyerre_Story-'Suffering_Badly_by_Translation'`, meta: {sortKey: "info", grade: "C"}}
     ]
   },
   {
@@ -4263,9 +4335,9 @@ And the eight sons went about their business. And the mother went about hers. An
     mediaURL: "",
     textURL: "https://journals.openedition.org/oceanindien/1403?lang=en",
     ref: [
-      {author: "Haring, Lee", year: "2013", title: "How to Read a Folktale: The Ibonia Epic from Madagascar", pub: "Open Book Publishers", url: "https://library.oapen.org/bitstream/handle/20.500.12657/30303/646721.pdf?sequence=1", sort: "text", grade: "B"},
-      {author: "Ottino, Paul", year: "1983", article: "Ancient Malagasy Dynastic Succession; The Merina Example", journal: "History in Africa", vol: "10", url: "https://doi.org/10.2307/3171698", sort: "info", grade: "C"},
-      {author: "Fee, Sarah", year: "2008", article: "Handicapped heroes, Sambilo the bull, and the treacherous terrain of polygynous relations in southern Madagascar", journal: "Études océan Indien", vol: "40-41", url: "https://doi.org/10.4000/oceanindien.1403", sort: "info", grade: "C"}
+      {id: "haring-2013", type: "book", title: "How to Read a Folktale: The Ibonia Epic from Madagascar", contributors: [{lastName: "Haring", firstName: "Lee", role: "author"}], pubDate: {year: 2013}, publisher: "Open Book Publishers", url: "https://library.oapen.org/bitstream/handle/20.500.12657/30303/646721.pdf?sequence=1", meta: {sortKey: "text", grade: "B"}},
+      {id: "ottino-1983", type: "article", title: "Ancient Malagasy Dynastic Succession; The Merina Example", contributors: [{lastName: "Ottino", firstName: "Paul", role: "author"}], pubDate: {year: 1983}, containerTitle: "History in Africa", volume: "10", doi: "10.2307/3171698", url: "https://doi.org/10.2307/3171698", meta: {sortKey: "info", grade: "C"}},
+      {id: "fee-2008", type: "article", title: "Handicapped heroes, Sambilo the bull, and the treacherous terrain of polygynous relations in southern Madagascar", contributors: [{lastName: "Fee", firstName: "Sarah", role: "author"}], pubDate: {year: 2008}, containerTitle: "Études océan Indien", volume: "40-41", doi: "10.4000/oceanindien.1403", url: "https://doi.org/10.4000/oceanindien.1403", meta: {sortKey: "info", grade: "C"}}
     ]
   },
   {
@@ -4297,8 +4369,8 @@ Bound, at one spring, to the top of the mountain;<br>Bound, at two springs, to t
     mediaURL: "",
     textURL: "https://kaidravuni.com/legends/",
     ref: [
-      {author: "Rokowaqa, Epeli", year: "2013", circa: "late 1800s", title: "Viti Makawa: na kedrai Tukutuku nai Taukei kei Viti", pub: "Dravucevua Enterprise", location: "Suva, Fiji", isbn: "9789829808615", sort: "text", grade: "A"},
-      {author: "Kolodisi, Timoci", year: "2007", article: "Prophetic Dialogue with Cultures and Religions in Fiji: A Pastoral Imperative", journal: "East Asian Pastoral Review", vol: "44", iss: "1", pp: "68–93", url: "https://files01.core.ac.uk/download/pdf/235950191.pdf", sort: "info", grade: "A"}
+      {id: "rokowaqa-2013", type: "book", title: "Viti Makawa: na kedrai Tukutuku nai Taukei kei Viti", contributors: [{lastName: "Rokowaqa", firstName: "Epeli", role: "author"}], pubDate: {year: 2013}, publisher: "Dravucevua Enterprise", location: "Suva, Fiji", isbn: "9789829808615", meta: {sortKey: "text", grade: "A", notes: "Originally written late 1800s"}},
+      {id: "kolodisi-2007", type: "article", title: "Prophetic Dialogue with Cultures and Religions in Fiji: A Pastoral Imperative", contributors: [{lastName: "Kolodisi", firstName: "Timoci", role: "author"}], pubDate: {year: 2007}, containerTitle: "East Asian Pastoral Review", volume: "44", issue: "1", pages: {start: "68", end: "93"}, url: "https://files01.core.ac.uk/download/pdf/235950191.pdf", meta: {sortKey: "info", grade: "A"}}
     ]
   },
   {

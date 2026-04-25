@@ -2,7 +2,7 @@ import { reccsData } from "@/app/lib/local-media";
 import Image from "next/image";
 import { notoEmoji } from "../fonts/fonts";
 import StickyTitleBar from "../components/stickyTitleBar";
-import ScrollTop from "../components/scrollTop";
+import MediaContent from "../components/mediaContent";
 
 export async function generateStaticParams() {
     return reccsData.flat().map(item => ({
@@ -22,9 +22,9 @@ export default async function DetailPage({ params }: { params: Promise<{ mediaID
     const { mediaID } = await params;
     const entry = reccsData.flat().find(item => item.label===mediaID);
     return (
-        <div className="w-full h-full flex flex-wrap border-b-2">
-            <div className="basis-full sm:basis-1/3 px-4 pt-4 sm:border-r-2 border-solid border-[var(--color-front)] flex flex-col items-end">
-                <Image src={`/posters/${entry?.label}.jpg`} alt="Media Image" width="300" height="400" className="w-full sm:w-[300px] sm:sticky sm:top-[calc(var(--header-h)+1rem)] transition-all" />
+        <div className="w-full h-full flex flex-wrap border-b-2 grow-1">
+            <div className="basis-full sm:basis-1/3 px-4 pt-4 sm:pb-4 sm:border-r-2 border-solid border-[var(--color-front)] flex flex-col items-end">
+                <Image src={`/posters/${entry?.label}.jpg`} alt="Media Image" width="300" height="400" className="w-full sm:w-[300px] h-auto sm:sticky sm:top-[calc(var(--header-h)+1rem)] transition-[top]" loading="eager" />
             </div>
             <div className="basis-full sm:basis-2/3 min-w-0">
                 <StickyTitleBar title={entry?.title?.original ?? entry?.title ?? entry?.genre?.original}>
@@ -43,17 +43,7 @@ export default async function DetailPage({ params }: { params: Promise<{ mediaID
                         </ul>
                     </div>
                 </StickyTitleBar>
-                <div className="h-[34px] border-b-2 border-solid border-[var(--color-front)] pl-3 pr-1 sticky top-[calc(var(--header-h)+var(--title-bar-h))] bg-[var(--color-back)] flex items-center justify-between transition-all">
-                    <ul className="flex gap-3">
-                        <li className="cursor-pointer px-1 hover:bg-[var(--color-front)] hover:text-[var(--color-back)] font-bold italic hover:ring-b-2">info</li>
-                        <li className="cursor-pointer px-1 hover:bg-[var(--color-front)] hover:text-[var(--color-back)]">excerpt</li>
-                    </ul>
-                    <ScrollTop />
-                </div>
-                <div className="p-4 max-w-[800px]">
-                    <p>{entry?.info}</p><br/>
-                    <p>{entry?.excerpt}</p>
-                </div>
+                <MediaContent entry={entry} />
             </div>
         </div>
     )

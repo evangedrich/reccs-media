@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from "react";
+import ScrollTop from "./scrollTop";
 
 const BAR_H = 34;
 
@@ -55,8 +56,9 @@ export default function StickyTitleBar({ title, children }: { title: string | un
                 <div ref={sentinelRef} aria-hidden="true" />
             </div>
             <div ref={barRef} style={{ height: 0, borderBottomWidth: 0, pointerEvents: 'none' }}
-                className="border-solid border-[var(--color-front)] px-4 sticky top-[var(--header-h)] bg-[var(--color-back)] flex items-center overflow-hidden transition-all">
+                className="border-solid border-[var(--color-front)] pl-4 pr-2 sticky top-[var(--header-h)] bg-[var(--color-back)] flex items-center justify-between overflow-hidden transition-[top]">
                 <span className="font-black truncate">{title}</span>
+                <ScrollTop />
             </div>
         </>
     );

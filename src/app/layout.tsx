@@ -18,7 +18,7 @@ export default function RootLayout({
 		<html lang="en" className={juliaMono.variable}>
 			<body className="antialiased flex flex-col min-h-screen">
 				<Header />
-				<main className="flex-grow mb-[-2px]">
+				<main className="flex-grow mb-[-2px] flex flex-col">
 					{children}
 				</main>
 				<Footer />

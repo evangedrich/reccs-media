@@ -1,4 +1,5 @@
 import { syncopate } from "@/app/fonts/fonts";
+import ColorLink from "./colorLink";
 
 export default function Footer() {
     return (
@@ -11,7 +12,7 @@ export default function Footer() {
             </div>
             <div>
                 <b className={syncopate.className}>External</b><br/>
-                <a>Film Reccs</a><br/>
+                <ColorLink to="https://film.reccs.media" text="Film Reccs" n="b" /><br/>
                 <a>Lit Reccs</a>
             </div>
         </div>

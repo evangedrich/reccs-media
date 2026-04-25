@@ -27,3 +27,17 @@
 .flash {
 
 }
+
+.citationContainer p {
+    margin-bottom: 0.5em;
+    text-indent: 2em hanging;
+}
+
+.shelfText h1 {
+    font-size: 1.5rem;
+    line-height: 1.2em;
+    padding-bottom: 0.5em;
+}
+.shelfText p {
+    padding-bottom: 0.5em;
+}

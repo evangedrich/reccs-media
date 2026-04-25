@@ -36,6 +36,6 @@ body {
 }
 
 @keyframes map-scroll {
-	from { margin-left: -5px; }
-	to   { margin-left: -55px; }
+	from { margin-left: -8px; }
+	to   { margin-left: -58px; }
 }
