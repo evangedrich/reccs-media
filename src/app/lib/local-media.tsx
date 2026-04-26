@@ -3555,7 +3555,7 @@ Now that's how the old ones tell it. That's what they say.
   },
   {
     region: "Southern Cone",
-    label: "AMSOSORT",
+    label: "AMSOFRT",
     title: {original: "Ayvu Rapyta", translation: "The Foundation of Human Language"},
     group: {people: "Mbyá", language: "Guaraní", religion: "Tekó marăngatú", country: "Paraguay"},
     info: `Much of identity arises from a shared language, a willingness to understand each other, and an adherence to a common system of belief. So important is language to identity that without a name, a human being ceases to be considered as such. This topic is central to the theological nature of the creation story presented in the sacred chants of the <i>Ayvu Rapyta</i>.
@@ -3805,7 +3805,7 @@ So he spoke and the Teacher replied:
   },
   {
     region: "Southeast Asia",
-    label: "AFSOEART",
+    label: "ASSEFRT",
     title: {original: "ᯇᯮᯘ᯲ᯖᯂ", transliteration: "Pustaha", translation: "Book of Magic"},
     group: {people: "Batak", language: "Toba Batak", religion: "Ugamo Malim", location: "Sumatra, ID"},
     info: `The folded bark books called <i>pustaha</i> are <+>grimoires[book of spells/magic]</+> containing divination techniques, ritual practices, narratives, and methods of protecting one’s community from adversaries. The <i>pustaha</i> are composed by <i>datu</i> ritual specialists, who use them as repositories of esoteric knowledge and ritual instruction for passing down through generations of teacher-student relationships.

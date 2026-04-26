@@ -3,6 +3,7 @@ import Image from "next/image";
 import { notoEmoji } from "../fonts/fonts";
 import StickyTitleBar from "../components/stickyTitleBar";
 import MediaContent from "../components/mediaContent";
+import { giveTitle } from "../functions/text";
 
 export async function generateStaticParams() {
     return reccsData.flat().map(item => ({
@@ -27,10 +28,10 @@ export default async function DetailPage({ params }: { params: Promise<{ mediaID
                 <Image src={`/posters/${entry?.label}.jpg`} alt="Media Image" width="300" height="400" className="w-full sm:w-[300px] h-auto sm:sticky sm:top-[calc(var(--header-h)+1rem)] transition-[top]" loading="eager" />
             </div>
             <div className="basis-full sm:basis-2/3 min-w-0">
-                <StickyTitleBar title={entry?.title?.original ?? entry?.title ?? entry?.genre?.original}>
+                <StickyTitleBar title={giveTitle(entry)}>
                     <div className="p-4 border-b-2 border-solid border-[var(--color-front)]">
                         <h1 className="sm:text-6xl text-4xl font-black leading-none hyphens-auto break-words mb-2 max-w-[800px]" lang="en">
-                            {entry?.title?.original ?? entry?.title ?? entry?.genre.original}
+                            {giveTitle(entry)}
                         </h1>
                         <h2 className="leading-none text-2xl mb-4">{entry?.title?.translation}</h2>
                         <ul className="sm:flex gap-x-6 gap-y-1 flex-wrap">

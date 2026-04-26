@@ -1,7 +1,7 @@
 import { Syncopate, Noto_Sans, Noto_Emoji } from 'next/font/google';
 import localFont from 'next/font/local';
 
-export const syncopate = Syncopate({ weight: ['700'], subsets: ['latin'] });
+export const syncopate = Syncopate({ weight: ['400','700'], subsets: ['latin'] });
 export const notoSans = Noto_Sans({ weight: ['300','400','500','600','700','800'], subsets: ['latin'] });
 export const notoEmoji = Noto_Emoji({ weight: ['400'] });
 

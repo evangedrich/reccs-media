@@ -1,19 +1,30 @@
 'use client';
 
 import { useState, useEffect } from "react";
+import { usePathname } from 'next/navigation'
 import Link from "next/link";
 import ColorLink from "./colorLink";
 import TinyMap from "./tinyMap";
 import styles from "@/app/ui/main.module.css";
 import { syncopate, notoEmoji } from "@/app/fonts/fonts";
+import { collections } from "../lib/collections";
+
+const navLinks = [
+    { id: "literature", color: "g" },
+    { id: "cinema", color: "o" },
+    { id: "theatre", color: "r" },
+    { id: "systems", color: "p" },
+];
 
 export default function Header() {
     const [showWidget, setShowWidget] = useState(false);
     const [isDark, setIsDark] = useState(true);
+    const [isOffline, setIsOffline] = useState(false);
     const [date, setDate] = useState("12 Itzcuintli");
     const [time, setTime] = useState(new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }));
     const [colonVisible, setColonVisible] = useState(true);
     const [calDropdown, setCalDropdown] = useState(false);
+    const pathname = usePathname();
     useEffect(() => {
         document.documentElement.style.setProperty('--header-h', showWidget ? '7.625rem' : '5.5rem');
     }, [showWidget]);
@@ -43,13 +54,12 @@ export default function Header() {
             </div>
             <div className={`w-full border-b-2 border-solid border-[var(--color-front)] ${showWidget ? "max-h-10" : "max-h-0 mt-[-2px]"} transition-[max-height]`}>
                 <div className={`flex justify-between px-1 h-8 transition-opacity ${showWidget ? "" : "opacity-0 pointer-events-none flex-wrap"}`}>
-                    <div className="m-1 items-center gap-4 hidden sm:flex">
+                    <div className="m-1 items-center sm:gap-10 gap-4 flex">
                         <div className="cursor-pointer" onClick={() => setIsDark(!isDark)}>{isDark?"light":<b className="font-extrabold">light</b>}/{isDark?<b className="font-extrabold">dark</b>:"dark"}</div>
-                        <div>online/offline</div>
-                    </div>
-                    <div className="m-1 flex items-center gap-4 sm:hidden">
-                        <div className="cursor-pointer" onClick={() => setIsDark(!isDark)}>⏾</div>
-                        <div>⏻ online</div>
+                        {isOffline
+                        ? <div className="sm:after:content-['offline'] sm:hover:after:content-['online'] sm:hover:italic cursor-pointer" onClick={() => setIsOffline(!isOffline)}>{colonVisible ? "⊛" : "∅"} </div>
+                        : <div className="sm:after:content-['online'] sm:hover:after:content-['offline'] sm:hover:italic cursor-pointer" onClick={() => setIsOffline(!isOffline)}>{colonVisible ? "⦾" : "⦿"} </div>
+                        }
                     </div>
                     <div className="relative m-1 flex items-center shrink-0 " onMouseLeave={() => setCalDropdown(false)}>
                         <span className="bg-[var(--color-front)] text-[var(--color-back)] px-2" suppressHydrationWarning>{date} {colonVisible ? time : time.replace(':', ' ')}</span>
@@ -71,10 +81,16 @@ export default function Header() {
                 </div>
             </div>
             <div className="w-full border-b-2 border-solid border-[var(--color-front)] p-1 flex gap-6 sm:gap-8 items-center justify-center">
-                <ColorLink to="/literature" text="LITERATURE" n="g" />
-                <ColorLink to="/cinema" text="CINEMA" n="o" />
-                <ColorLink to="/" text="THEATRE" n="r" />
-                <ColorLink to="/" text="SYSTEMS" n="p" />
+                {navLinks.map(itm => (
+                    <ColorLink 
+                        to={`/${itm.id}`} 
+                        text={itm.id} 
+                        c={itm.color} 
+                        caps={true} 
+                        bold={(pathname===`/${itm.id}` || pathname.slice(5,8)===(collections.find(coll => coll.type===itm.id)?.id ?? ""))} 
+                        key={`${itm.id}_nav`} 
+                    />
+                ))}
                 {/* <Link href="/" className={`${styles.navLink} bg-[var(--color-front)] text-[var(--color-back)] px-1`}>SUBMISSIONS</Link> */}
             </div>
             

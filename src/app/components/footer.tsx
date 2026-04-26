@@ -12,7 +12,7 @@ export default function Footer() {
             </div>
             <div>
                 <b className={syncopate.className}>External</b><br/>
-                <ColorLink to="https://film.reccs.media" text="Film Reccs" n="b" /><br/>
+                <ColorLink to="https://film.reccs.media" text="Film Reccs" c="b" /><br/>
                 <a>Lit Reccs</a>
             </div>
         </div>

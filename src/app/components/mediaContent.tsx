@@ -5,6 +5,7 @@ import styles from "@/app/ui/main.module.css";
 import Markdown from "react-markdown";
 import Share from "./share"
 import { getCitations } from "../functions/citations";
+import { giveTitle } from "../functions/text";
 
 const allTabs: { id: string, keys: string[] }[] = [
     { id: "info", keys: ["info"] },
@@ -49,7 +50,7 @@ export default function MediaContent({ entry }: { entry: any }) {
                         </li>
                     ))}
                 </ul>
-                <Share title={entry?.title.original ?? entry?.title} />
+                <Share title={giveTitle(entry)} />
             </div>
             <div className="p-4 max-w-[800px]">
                 {getContent()}
