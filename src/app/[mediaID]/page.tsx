@@ -3,7 +3,7 @@ import Image from "next/image";
 import { notoEmoji } from "../fonts/fonts";
 import StickyTitleBar from "../components/stickyTitleBar";
 import MediaContent from "../components/mediaContent";
-import { getTitle, getByline } from "../functions/text";
+import { getTitle, getByline, isMongol } from "../functions/text";
 
 export async function generateStaticParams() {
     return reccsData.flat().map(item => ({
@@ -34,8 +34,8 @@ export default async function DetailPage({ params }: { params: Promise<{ mediaID
             <div className="basis-full sm:basis-2/3 min-w-0">
                 <StickyTitleBar title={title}>
                     <div className="p-4 border-b-2 border-solid border-[var(--color-front)]">
-                        <h1 className="sm:text-6xl text-4xl font-black leading-none hyphens-auto break-words mb-2 max-w-[800px]" lang="en">
-                            {title}
+                        <h1 className={`sm:text-6xl text-4xl font-black leading-none hyphens-auto break-words mb-2 max-w-[800px] ${isMongol(title) ? "[writing-mode:vertical-rl] h-fit" : ""}`} lang="en">
+                            {isMongol(title) ? title.split(/\s+/).map((w: string, i: number) => <span key={i} className="block">{w}</span>) : title}
                         </h1>
                         <h2 className={`${(transliteration || translation) ? "" : "hidden"} leading-none text-2xl mb-4 opacity-50`}>
                             <span className={`${transliteration ? "" : "hidden"}`}>{transliteration}</span>

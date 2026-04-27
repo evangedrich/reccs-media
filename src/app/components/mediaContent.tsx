@@ -7,11 +7,11 @@ import Share from "./share"
 import { getCitations } from "../functions/citations";
 import { getTitle } from "../functions/text";
 import parse from 'html-react-parser';
+import { preParse } from "../functions/text";
 
 const allTabs: { id: string, keys: string[] }[] = [
     { id: "info", keys: ["info"] },
     { id: "excerpt", keys: ["excerpt"] },
-    { id: "text", keys: ["text"] },
     { id: "media", keys: ["mediaURL"] },
     { id: "trailer", keys: ["trailer"] },
     { id: "watch", keys: ["watch"] },
@@ -23,14 +23,16 @@ export default function MediaContent({ entry }: { entry: any }) {
     const [currentTab, setCurrentTab] = useState("info");
     const tabs: string[] = allTabs.map(cat => cat.id).filter((cat,i) => (
         allTabs[i].keys.some(
-            itm => Object.keys(entry).includes(itm) && entry[itm]!==""
+            key => Object.keys(entry).includes(key) && entry[key][0]!==""
         )
     ));
     const getContent = () => {
         let content;
-        if (currentTab==="info" || currentTab==="excerpt" || currentTab==="text") {
+        if (currentTab==="info" || currentTab==="excerpt") {
             const text = entry[currentTab];
-            content = Array.isArray(text) ? <>{text.map((x,i) => <p key={`p${i}`}>{parse(x)}</p>)}</> : <p>{parse(text)}</p>;
+            content = Array.isArray(text) ? <>{text.map((x,i) => <p key={`p${i}`}>{parse(preParse(x))}</p>)}</> : <p>{parse(text)}</p>;
+        } else if (currentTab==="media") {
+            /* content = newVideoMakerFunction(entry["mediaURL"]) */
         } else if (currentTab==="playlist") {
             content = <iframe style={{borderRadius:"32px",backgroundColor:"var(--color-mid)"}} src={"https://open.spotify.com/embed/playlist/"+entry.playlistURL.substring(34)+"?utm_source=generator&theme=0"} width="100%" height="352" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>;
         } else if (currentTab==="sources") {

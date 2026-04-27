@@ -5,6 +5,7 @@ import Markdown from "react-markdown";
 import styles from "@/app/ui/main.module.css";
 import CollectionShelfItems from "./collectionShelfItems";
 import ShelfItemsMobile from "./collectionShelfItemsMobile";
+import { preParse } from "../functions/text";
 
 export default function CollectionShelf({ 
     collections 
@@ -29,7 +30,7 @@ export default function CollectionShelf({
                             <div style={{width:`calc((100vw - (68px * ${collections.length})) / 2)`}} className={`${styles.shelfText} border-r-2 shrink-0 p-4 overflow-auto transition-all`}>
                                 <div>
                                     <Markdown>{"# "+coll.header}</Markdown>
-                                    <Markdown>{coll.info ?? ""}</Markdown>
+                                    <Markdown>{preParse(coll.info ?? "")}</Markdown>
                                 </div>
                             </div>
                             <CollectionShelfItems collections={collections} coll={coll} />
@@ -42,7 +43,7 @@ export default function CollectionShelf({
                 <ShelfItemsMobile collections={collections} collID={currColl} />
                 <div className="p-4">
                     <Markdown>{"# "+collections.find(coll => coll.id===currColl)?.header}</Markdown>
-                    <Markdown>{collections.find(coll => coll.id===currColl)?.info ?? ""}</Markdown>
+                    <Markdown>{preParse(collections.find(coll => coll.id===currColl)?.info ?? "")}</Markdown>
                 </div>
             </div>
         </>
