@@ -54,7 +54,7 @@ export default function MediaContent({ entry }: { entry: any }) {
                 </ul>
                 <Share title={getTitle(entry)} />
             </div>
-            <div className="p-4 max-w-[800px]">
+            <div className={`${styles.mediaContent} p-4 max-w-[800px]`}>
                 {getContent()}
             </div>
         </>
