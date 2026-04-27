@@ -23,6 +23,8 @@ export default async function DetailPage({ params }: { params: Promise<{ mediaID
     const { mediaID } = await params;
     const entry = reccsData.flat().find(item => item.label===mediaID);
     const title = getTitle(entry);
+    const transliteration = getTitle(entry,"transliteration");
+    const translation = getTitle(entry,"translation");
     const byline = getByline(entry);
     return (
         <div className="w-full h-full flex flex-wrap border-b-2 grow-1">
@@ -35,10 +37,14 @@ export default async function DetailPage({ params }: { params: Promise<{ mediaID
                         <h1 className="sm:text-6xl text-4xl font-black leading-none hyphens-auto break-words mb-2 max-w-[800px]" lang="en">
                             {title}
                         </h1>
-                        <h2 className="leading-none text-2xl mb-4">{entry?.title?.transliteration+" · "+entry?.title?.translation}</h2>
-                        <h2 className={`${byline ? "" : "hidden"} leading-none text-2xl mb-4`}>{byline}</h2>
+                        <h2 className={`${(transliteration || translation) ? "" : "hidden"} leading-none text-2xl mb-4 opacity-50`}>
+                            <span className={`${transliteration ? "" : "hidden"}`}>{transliteration}</span>
+                            <span className={`${(transliteration && translation) ? "" : "hidden"}`}>{" · "}</span>
+                            <span className={`${translation ? "" : "hidden"}`}>{translation}</span>
+                        </h2>
+                        <h2 className={`${(byline) ? "" : "hidden"} leading-none text-xl mb-4`}>{byline}</h2>
                         <ul className="sm:flex gap-x-6 gap-y-1 flex-wrap">
-                            {Object.keys(entry?.group).map(key => (
+                            {Object.keys(entry?.group ?? {}).map(key => (
                                 <li key={`${key}Text`}>
                                     <span className={`${notoEmoji.className} ${key==="location" ? "" : "mr-1"}`}>{groupIcons[key]}</span>
                                     {entry?.group[key]}

@@ -90,7 +90,7 @@ export default function Header() {
                         text={itm.id} 
                         c={itm.color} 
                         caps={true} 
-                        bold={(pathname===`/${itm.id}` || pathname.slice(5,8)===(collections.find(coll => coll.type===itm.id)?.id ?? ""))} 
+                        bold={(pathname===`/${itm.id}` || collections.filter(coll => coll.type===itm.id).map(coll => coll.id).includes(pathname.slice(5,8)) )} 
                         key={`${itm.id}_nav`} 
                     />
                 ))}

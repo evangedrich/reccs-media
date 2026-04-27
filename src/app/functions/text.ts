@@ -1,21 +1,13 @@
 
-
-export const getTitle = (selection: any) => {
-    let label = selection.title.original;
-    if ('piece' in selection) {
-        if ('work' in selection) {
-            label = selection.work.original+": “"+selection.title.original+'”';
-        } else if ('anthology' in selection) {
-            label = '“'+selection.title.original+'”'+", "+selection.anthology.original;
-        } else {
-            label = /^\p{Script=Latin}/u.test(selection.title.original) ? ('“'+selection.title.original+'”') : selection.title.original;
-        }
-    }
+export const getTitle = (selection: any, field?: string) => {
+    const label = ('work' in selection && selection.work[field ?? "original"])
+        ? `${selection.work[field ?? "original"]}: “${selection.title[field ?? "original"]}”`
+        : ('anthology' in selection && selection.anthology[field ?? "original"])
+        ? `“${selection.title[field ?? "original"]}”, ${selection.anthology[field ?? "original"]}`
+        : ('piece' in selection && /^(?!undefined)\p{Script=Latin}/u.test(selection.title[field ?? "original"]))
+        ? `“${selection.title[field ?? "original"]}”`
+        : selection.title[field ?? "original"];
     return label;
-};
-
-export const getSubtitle = (selection: any) => {
-    return ""
 };
 
 export const getByline = (selection: any): string | null => {
