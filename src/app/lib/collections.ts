@@ -28,8 +28,8 @@ export const collections: { id: string, name: string, type: string, header: stri
         id: "PMD",
         name: "Preserved Music Drama",
         type: "theatre",
-        header: "Music dramas carried into the present.",
-        info: "The following are genres of music drama—sophisticated narrative performing arts featuring song, dance, and poetry—descended from distinct classical performance repertoires."
+        header: "An all-embracing synthesis of art forms.",
+        info: "The following are genres of music drama—sophisticated narrative performing arts featuring song, dance, and poetry—descended from distinct classical performance repertoires.\n\nFrom libretto and score to costuming and choreography, that the production values of every one of these works are exceedingly spectacular is immediately evident."
     },
     {
         id: "FRT",

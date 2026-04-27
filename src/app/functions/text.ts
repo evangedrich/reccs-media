@@ -1,16 +1,27 @@
 
 
-export const giveTitle = (selection: any) => {
-    let label = '[UNTITLED]';
-    if ('genre' in selection) {
-        if (typeof selection.genre === 'object') { label = selection.genre.original; }
-        else { label = selection.genre; }
+export const getTitle = (selection: any) => {
+    let label = selection.title.original;
+    if ('piece' in selection) {
+        if ('work' in selection) {
+            label = selection.work.original+": “"+selection.title.original+'”';
+        } else if ('anthology' in selection) {
+            label = '“'+selection.title.original+'”'+", "+selection.anthology.original;
+        } else {
+            label = /^\p{Script=Latin}/u.test(selection.title.original) ? ('“'+selection.title.original+'”') : selection.title.original;
+        }
     }
-    else if (typeof selection.title === 'object') {
-        if ('piece' in selection.title) { label = selection.title.piece; }
-        else if (typeof selection.title.original === 'object') { label = selection.title.original.piece; }
-        else { label = selection.title.original; }
-    }
-    else { label = selection.title; }
     return label;
-}
+};
+
+export const getSubtitle = (selection: any) => {
+    return ""
+};
+
+export const getByline = (selection: any): string | null => {
+  let byline = null;
+  if ('author' in selection) { byline = `by ${selection.author}`; }
+  if ('intermediary' in selection) { byline = `via ${selection.intermediary}`; }
+  if ('author' in selection && 'intermediary' in selection) { byline = `by ${selection.author} via ${selection.intermediary}`; }
+  return byline;
+};

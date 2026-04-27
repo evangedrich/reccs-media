@@ -55,10 +55,13 @@ export default function Header() {
             <div className={`w-full border-b-2 border-solid border-[var(--color-front)] ${showWidget ? "max-h-10" : "max-h-0 mt-[-2px]"} transition-[max-height]`}>
                 <div className={`flex justify-between px-1 h-8 transition-opacity ${showWidget ? "" : "opacity-0 pointer-events-none flex-wrap"}`}>
                     <div className="m-1 items-center sm:gap-10 gap-4 flex">
-                        <div className="cursor-pointer" onClick={() => setIsDark(!isDark)}>{isDark?"light":<b className="font-extrabold">light</b>}/{isDark?<b className="font-extrabold">dark</b>:"dark"}</div>
+                        {isDark
+                        ? <div className="sm:after:content-['dark'] sm:hover:after:content-['light'] sm:hover:italic cursor-pointer" onClick={() => setIsDark(!isDark)}><span className="align-[2px]">{colonVisible ? "◒" : "◓"}</span> </div>
+                        : <div className="sm:after:content-['light'] sm:hover:after:content-['dark'] sm:hover:italic cursor-pointer" onClick={() => setIsDark(!isDark)}><span className="align-[2px]">{colonVisible ? "◐" : "◑"}</span> </div>
+                        }
                         {isOffline
-                        ? <div className="sm:after:content-['offline'] sm:hover:after:content-['online'] sm:hover:italic cursor-pointer" onClick={() => setIsOffline(!isOffline)}>{colonVisible ? "⊛" : "∅"} </div>
-                        : <div className="sm:after:content-['online'] sm:hover:after:content-['offline'] sm:hover:italic cursor-pointer" onClick={() => setIsOffline(!isOffline)}>{colonVisible ? "⦾" : "⦿"} </div>
+                        ? <div className="sm:after:content-['offline'] sm:hover:after:content-['online'] sm:hover:italic cursor-pointer" onClick={() => setIsOffline(!isOffline)}><span className="align-[2px]">{colonVisible ? "○" : "∅"}</span> </div>
+                        : <div className="sm:after:content-['online'] sm:hover:after:content-['offline'] sm:hover:italic cursor-pointer" onClick={() => setIsOffline(!isOffline)}><span className="align-[2px]">{colonVisible ? "⦾" : "⦿"}</span> </div>
                         }
                     </div>
                     <div className="relative m-1 flex items-center shrink-0 " onMouseLeave={() => setCalDropdown(false)}>

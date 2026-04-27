@@ -5,7 +5,8 @@ import styles from "@/app/ui/main.module.css";
 import Markdown from "react-markdown";
 import Share from "./share"
 import { getCitations } from "../functions/citations";
-import { giveTitle } from "../functions/text";
+import { getTitle } from "../functions/text";
+import parse from 'html-react-parser';
 
 const allTabs: { id: string, keys: string[] }[] = [
     { id: "info", keys: ["info"] },
@@ -28,7 +29,7 @@ export default function MediaContent({ entry }: { entry: any }) {
     const getContent = () => {
         let content;
         if (currentTab==="info" || currentTab==="excerpt" || currentTab==="text") {
-            content = <p>{entry[currentTab]}</p>;
+            content = <p>{parse(entry[currentTab])}</p>;
         } else if (currentTab==="playlist") {
             content = <iframe style={{borderRadius:"32px",backgroundColor:"var(--color-mid)"}} src={"https://open.spotify.com/embed/playlist/"+entry.playlistURL.substring(34)+"?utm_source=generator&theme=0"} width="100%" height="352" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>;
         } else if (currentTab==="sources") {
@@ -50,7 +51,7 @@ export default function MediaContent({ entry }: { entry: any }) {
                         </li>
                     ))}
                 </ul>
-                <Share title={giveTitle(entry)} />
+                <Share title={getTitle(entry)} />
             </div>
             <div className="p-4 max-w-[800px]">
                 {getContent()}

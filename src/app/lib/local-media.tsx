@@ -63,7 +63,7 @@ They also believed that he had some supernatural ability by which he interpreted
   {
     region: "Southern Africa",
     label: "AFSOMTN",
-    title: "Nǂisa",
+    title: { original: "Nǂisa" },
     author: "Nǂisa",
     group: {people: "!Kung", language: "Juǀ'hoan", country: "Botswana"},
     info: `“I’ll break open the story and tell you what is there. Then, like the others that have fallen out onto the sand, I will finish with it, and the wind will take it away.”
@@ -85,7 +85,7 @@ After that, she lives as usual. She continues to work for her husband and works 
     infoURL: "https://www.google.com/books/edition/Nisa/IQ5NWIQpXNkC?hl=en",
     textURL: "",
     ref: [
-      {id: "nisa-1981", type: "book", title: "Nǂisa", contributors: [{lastName: "Nǂisa", role: "author"}], pubDate: {year: 1981}, publisher: "Harvard University Press", location: "Cambridge, MA", meta: {sortKey: "text", notes: "Cited as an oral autobiography."}}
+      {id: "nisa-1981", type: "book", title: "Nǂisa: The Life and Words of a !Kung Woman", contributors: [{lastName: "Nǂisa", role: "author"},{firstName: "Marjorie",lastName: "Shostak", role: "editor"}], pubDate: {year: 1981}, publisher: "Harvard University Press", location: "Cambridge, MA", meta: {sortKey: "text", notes: "Cited as an oral autobiography."}}
     ]
   },
   {
@@ -200,7 +200,7 @@ Sanaaq reached out and pulled her daughter close, to put her back to sleep.`,
   {
     region: "Eastern Woodlands",
     label: "AMEAMTN",
-    title: "Medicine Trail",
+    title: {original: "Medicine Trail"},
     author: "Gladys Tantaquidgeon",
     group: {people: "Mohegan", language: "English", location: "Connecticut, US"},
     info: `Blending autobiography and history with traditional knowledge and ways of life, <i>Medicine Trail</i> presents a collage of events in Tantaquidgeon's life. We see her childhood spent learning Mohegan ceremonies and healing methods, her Ivy League education and career in the white-male-dominated field of anthropology, and her travels to other Indian communities on behalf of her own tribe and as an employee of the U.S. Bureau of Indian Affairs. Finally we see Tantaquidgeon's return to her beloved Mohegan Hill, where she cofounded America's oldest Indian-run museum, carrying on her life's commitment to cultural continuance and the renewal of Indian nations.
@@ -747,6 +747,55 @@ I walked a fair way from the <i>ail</i>. Then I turned to face the mouth of the 
     ]
   },
   {
+    region: "Eastern Europe",
+    label: "EUEAMTN",
+    title: {original: "Евгений Онегин", transliteration: "Yevgeniy Onegin", translation: "Eugene Onegin"},
+    author: "Alexander Pushkin",
+    group: {people: "Russian", language: "Russian", country: "Russia"},
+    info: `<i>Eugene Onegin</i> is a novel in verse by Alexander Pushkin, following the story of a bored and disillusioned aristocrat named Eugene Onegin. The novel explores themes of ennui, love, regret, and the social complexities of 19th-century Russia, with Onegin becoming a quintessential example of the "superfluous man" in Russian literature.
+<b>ALEXANDER SERGEYEVICH PUSHKIN</b>, born in Moscow in 1799, is widely regarded as Russia's greatest poet and the founder of modern Russian literature. He was a key figure in the Romantic movement, known for his poetry, novels, and plays, often exploring themes of love, social injustice, and political commentary. His works are celebrated for their linguistic innovation and enduring influence on Russian culture.`,
+    excerpt: `Not thinking to amuse the proud world,<br>having grown fond of friendship's attention,<br>I wish I could present you<br>with a gage worthier of you—<br>worthier of a fine soul<br>[full of a holy] dream,<br>of poetry, vivid and clear,<br>of high thoughts and simplicity.<br>But so be it. With partial hand<br>take this collection of variegated chapters:<br>half droll, half sad, plain-folk, ideal,<br>the careless fruit of my amusements,<br>insomnias, light inspirations,<br>unripe and withered years,<br>the intellect's cold observations,<br>and the heart's sorrowful remarks.
+I<br>"My uncle has most honest principles:<br>when taken ill in earnest,<br>he has made one respect him<br>and nothing better could invent.<br>To others his example is a lesson;<br>but, good God, what a bore<br>to sit by a sick man both day and night,<br>without moving a step away!<br>What base perfidiousness<br>the half-alive one to amuse,<br>adjust for him the pillows,<br>sadly present the medicine,<br>sigh—and think inwardly<br>when <i>will</i> the devil take you?"
+II<br>Thus a young scapegrace thought,<br>with posters flying in the dust,<br>by the most lofty will of Zeus<br>the heir of all his relatives.<br>Friends of Lyudmila and Ruslan!<br>The hero of my novel,<br>without preambles, forthwith,<br>I'd like to have you meet:<br>Onegin, a good pal of mine,<br>was born upon the Neva's banks,<br>where maybe you were born,<br>or used to shine, my reader!<br>There formerly I too promenaded—<br>but harmful is the North to me.
+III<br>Having served excellently, nobly,<br>his father lived by means of debts;<br>gave three balls yearly<br>and squandered everything at last.<br>Fate guarded Eugene:<br>at first, Madame looked after him;<br>later, Monsieur replaced her.<br>The child was boisterous but nice.<br>Monsieur l'Abbé, a poor wretch of a Frenchman,<br>not to wear out the infant,<br>would teach him everything in play,<br>bothered him not with stern moralization,<br>scolded him slightly for his pranks,<br>and to the Letniy Sad took him for walks.
+IV<br>Then, when tumultuous youth's<br>season for Eugene came,<br>season of hopes and tender melancholy,<br>Monsieur was ousted from the place.<br>Now my Onegin is at large:<br>hair cut after the latest fashion,<br>dressed like a London Dandy—<br>and finally he saw the World.<br>In French impeccably<br>he could express himself and write,<br>danced the mazurka lightly,<br>and bowed unconstrainedly—<br>what would you more? The World decided<br>he was clever and very nice.
+V<br>All of us had a bit of schooling<br>in something and somehow:<br>hence education, God be praised,<br>is in our midst not hard to flaunt.<br>Onegin was, in the opinion of many<br>(judges resolute and stern),<br>a learned fellow but a pedant.<br>He had the happy talent,<br>without constraint, in conversation<br>slightly to touch on everything,<br>with an expert's learned air<br>keep silent in a grave discussion,<br>and provoke the smile of ladies<br>with the fire of unexpected epigrams.
+VI<br>Latin has gone at present out of fashion;<br>still, to tell you the truth,<br>he had enough knowledge of Latin<br>to make out epigraphs,<br>descant on Juvenal,<br>put at the bottom of a letter <i>vale</i>,<br>and he remembered, though not without fault,<br>two lines from the <i>Aeneid</i>.<br>He had no urge to rummage<br>in the chronological dust<br>of the earth's historiography,<br>but anecdotes of days gone by,<br>from Romulus to our days,<br>he did keep in his memory.
+VII<br>Lacking the lofty passion<br>not to spare life for the sake of sounds,<br>an iamb from a trochee he could not—<br>no matter how we strove—distinguish;<br>dispraised Homer, Theocritus,<br>but read, in compensation, Adam Smith,<br>and was a deep economist:<br>that is, he could assess the way<br>a state grows rich,<br>and what it lives upon,<br>and why it needs not gold<br>when it has got the simple product.<br>His father could not understand him,<br>and mortgaged his lands.
+VIII<br>All Eugene knew besides<br>I have no leisure to recount;<br>but where he was a veritable genius,<br>what he more firmly knew than all the arts,<br>what since his prime had been to him<br>toil, anguish, joy,<br>what occupied the livelong day<br>his fretting indolence—<br>was the art of soft passion<br>which Naso sang,<br>wherefore a sufferer he ended<br>his brilliant and tumultuous span<br>in Moldavia, in the wild depth of steppes,<br>far from his Italy.`,
+    bioURL: "https://en.wikipedia.org/wiki/Alexander_Pushkin",
+    infoURL: "https://en.wikipedia.org/wiki/Eugene_Onegin",
+    textURL: "",
+    ref: [
+      {id: "pushkin-1833", type: "book", title: "Евгений Онегин", contributors: [{firstName: "Alexander", lastName: "Pushkin", role: "author"}], pubDate: {year: 1833}, publisher: "Alexander Smirdin", location: "Saint Petersburg", meta: {sortKey: "text"}}
+    ]
+  },
+  {
+    region: "Western Europe",
+    label: "EUWEMTN",
+    title: {original: "Candide"},
+    author: "Voltaire",
+    group: {people: "French", language: "French", country: "France"},
+    info: `We are living in the "best of all possible worlds" and everything that happens is "all for the best". This was the basis of Leibniz's optimistic philosophy. Voltaire, on the other hand, found these notions patently absurd and decided to show this absurdity through his satirical masterpiece Candide.
+Follow Candide and his friends through their series of misadventures where they experienced a variety of tragedies and reversal of fortunes. Ultimately, all is not for the best, but throughout his journey Candide discovers the meaning of life.
+<b>VOLTAIRE</b>, born François-Marie Arouet in 1694, was a prominent French Enlightenment writer, historian, and philosopher. He was a prolific author, known for his sharp wit and advocacy for civil liberties, particularly freedom of speech and religion.`,
+    excerpt: `In a castle of Westphalia, belonging to the Baron of Thunder-ten-Tronckh, lived a youth, whom nature had endowed with the most gentle manners. His countenance was a true picture of his soul. He combined a true judgment with simplicity of spirit, which was the reason, I apprehend, of his being called Candide. The old servants of the family suspected him to have been the son of the Baron's sister, by a good, honest gentleman of the neighborhood, whom that young lady would never marry because he had been able to prove only seventy-one quarterings, the rest of his genealogical tree having been lost through the injuries of time.
+The Baron was one of the most powerful lords in Westphalia, for his castle had not only a gate, but windows. His great hall, even, was hung with tapestry. All the dogs of his farm-yards formed a pack of hounds at need; his grooms were his huntsmen; and the curate of the village was his grand almoner. They called him "My Lord," and laughed at all his stories.
+The Baron's lady weighed about three hundred and fifty pounds, and was therefore a person of great consideration, and she did the honours of the house with a dignity that commanded still greater respect. Her daughter Cunegonde was seventeen years of age, fresh-coloured, comely, plump, and desirable. The Baron's son seemed to be in every respect worthy of his father. The Preceptor Pangloss was the oracle of the family, and little Candide heard his lessons with all the good faith of his age and character.
+Pangloss was professor of metaphysico-theologico-cosmolo-nigology. He proved admirably that there is no effect without a cause, and that, in this best of all possible worlds, the Baron's castle was the most magnificent of castles, and his lady the best of all possible Baronesses.
+"It is demonstrable," said he, "that things cannot be otherwise than as they are; for all being created for an end, all is necessarily for the best end. Observe, that the nose has been formed to bear spectacles-thus we have spectacles. Legs are visibly designed for stockings—and we have stockings. Stones were made to be hewn, and to construct castles—therefore my lord has a magnificent castle; for the greatest baron in the province ought to be the best lodged. Pigs were made to be eaten—therefore we eat pork all the year round. Consequently they who assert that all is well have said a foolish thing, they should have said all is for the best."
+Candide listened attentively and believed innocently; for he thought Miss Cunegonde extremely beautiful, though he never had the courage to tell her so. He concluded that after the happiness of being born of Baron of Thunder-ten-Tronckh, the second degree of happiness was to be Miss Cunegonde, the third that of seeing her every day, and the fourth that of hearing Master Pangloss, the greatest philosopher of the whole province, and consequently of the whole world.
+One day Cunegonde, while walking near the castle, in a little wood which they called a park, saw between the bushes, Dr. Pangloss giving a lesson in experimental natural philosophy to her mother's chamber-maid, a little brown wench, very pretty and very docile. As Miss Cunegonde had a great disposition for the sciences, she breathlessly observed the repeated experiments of which she was a witness; she clearly perceived the force of the Doctor's reasons, the effects, and the causes; she turned back greatly furried, quite pensive, and filled with the desire to be learned; dreaming that she might well be a sufficient reason for young Candide, and he for her.
+She met Candide on reaching the castle and blushed; Candide blushed also; she wished him good morrow in a faltering tone, and Candide spoke to her without knowing what he said. The next day after dinner, as they went from table, Cunegonde and Candide found themselves behind a screen; Cunegonde let fall her handkerchief, Candide picked it up, she took him innocently by the hand, the youth as innocently kissed the young lady's hand with particular vivacity, sensibility, and grace; their lips met, their eyes sparkled, their knees trembled, their hands strayed. Baron Thunder-ten-Tronckh passed near the screen and beholding this cause and effect chased Candide from the castle with great kicks on the backside; Cunegonde fainted away; she was boxed on the ears by the Baroness, as soon as she came to herself; and all was consternation in this most magnificent and most agreeable of all possible castles.`,
+    bioURL: "https://en.wikipedia.org/wiki/Voltaire",
+    infoURL: "https://en.wikipedia.org/wiki/Candide",
+    textURL: "https://www.gutenberg.org/files/19942/19942-h/19942-h.htm",
+    playlistURL: "https://open.spotify.com/playlist/4OFcQ76jTyggZqEJdT7S3Z",
+    ref: [
+      {id: "voltaire-1759", type: "book", title: "Candide", contributors: [{lastName: "Voltaire", role: "author"}], pubDate: {year: 1759}, publisher: "Cramer", location: "Geneva", meta: {sortKey: "text"}}
+    ]
+  },
+  {
     region: "Australia",
     label: "OCAUMTN",
     title: {original: "Wangki Ngajukura Jiljingajangka", translation: "My Life in the Desert"},
@@ -777,55 +826,6 @@ In her grief, my mother hit herself on the head with a rock, making her head ble
     ]
   },
   {
-    region: "Eastern Europe",
-    label: "EUEAMTN",
-    title: {original: "Евгений Онегин", transliteration: "Yevgeniy Onegin", translation: "Eugene Onegin"},
-    author: "Alexander Pushkin",
-    group: {people: "Russian", language: "Russian", country: "Russia"},
-    info: `<i>Eugene Onegin</i> is a novel in verse by Alexander Pushkin, following the story of a bored and disillusioned aristocrat named Eugene Onegin. The novel explores themes of ennui, love, regret, and the social complexities of 19th-century Russia, with Onegin becoming a quintessential example of the "superfluous man" in Russian literature.
-<b>ALEXANDER SERGEYEVICH PUSHKIN</b>, born in Moscow in 1799, is widely regarded as Russia's greatest poet and the founder of modern Russian literature. He was a key figure in the Romantic movement, known for his poetry, novels, and plays, often exploring themes of love, social injustice, and political commentary. His works are celebrated for their linguistic innovation and enduring influence on Russian culture.`,
-    excerpt: `Not thinking to amuse the proud world,<br>having grown fond of friendship's attention,<br>I wish I could present you<br>with a gage worthier of you—<br>worthier of a fine soul<br>[full of a holy] dream,<br>of poetry, vivid and clear,<br>of high thoughts and simplicity.<br>But so be it. With partial hand<br>take this collection of variegated chapters:<br>half droll, half sad, plain-folk, ideal,<br>the careless fruit of my amusements,<br>insomnias, light inspirations,<br>unripe and withered years,<br>the intellect's cold observations,<br>and the heart's sorrowful remarks.
-I<br>"My uncle has most honest principles:<br>when taken ill in earnest,<br>he has made one respect him<br>and nothing better could invent.<br>To others his example is a lesson;<br>but, good God, what a bore<br>to sit by a sick man both day and night,<br>without moving a step away!<br>What base perfidiousness<br>the half-alive one to amuse,<br>adjust for him the pillows,<br>sadly present the medicine,<br>sigh—and think inwardly<br>when <i>will</i> the devil take you?"
-II<br>Thus a young scapegrace thought,<br>with posters flying in the dust,<br>by the most lofty will of Zeus<br>the heir of all his relatives.<br>Friends of Lyudmila and Ruslan!<br>The hero of my novel,<br>without preambles, forthwith,<br>I'd like to have you meet:<br>Onegin, a good pal of mine,<br>was born upon the Neva's banks,<br>where maybe you were born,<br>or used to shine, my reader!<br>There formerly I too promenaded—<br>but harmful is the North to me.
-III<br>Having served excellently, nobly,<br>his father lived by means of debts;<br>gave three balls yearly<br>and squandered everything at last.<br>Fate guarded Eugene:<br>at first, Madame looked after him;<br>later, Monsieur replaced her.<br>The child was boisterous but nice.<br>Monsieur l'Abbé, a poor wretch of a Frenchman,<br>not to wear out the infant,<br>would teach him everything in play,<br>bothered him not with stern moralization,<br>scolded him slightly for his pranks,<br>and to the Letniy Sad took him for walks.
-IV<br>Then, when tumultuous youth's<br>season for Eugene came,<br>season of hopes and tender melancholy,<br>Monsieur was ousted from the place.<br>Now my Onegin is at large:<br>hair cut after the latest fashion,<br>dressed like a London Dandy—<br>and finally he saw the World.<br>In French impeccably<br>he could express himself and write,<br>danced the mazurka lightly,<br>and bowed unconstrainedly—<br>what would you more? The World decided<br>he was clever and very nice.
-V<br>All of us had a bit of schooling<br>in something and somehow:<br>hence education, God be praised,<br>is in our midst not hard to flaunt.<br>Onegin was, in the opinion of many<br>(judges resolute and stern),<br>a learned fellow but a pedant.<br>He had the happy talent,<br>without constraint, in conversation<br>slightly to touch on everything,<br>with an expert's learned air<br>keep silent in a grave discussion,<br>and provoke the smile of ladies<br>with the fire of unexpected epigrams.
-VI<br>Latin has gone at present out of fashion;<br>still, to tell you the truth,<br>he had enough knowledge of Latin<br>to make out epigraphs,<br>descant on Juvenal,<br>put at the bottom of a letter <i>vale</i>,<br>and he remembered, though not without fault,<br>two lines from the <i>Aeneid</i>.<br>He had no urge to rummage<br>in the chronological dust<br>of the earth's historiography,<br>but anecdotes of days gone by,<br>from Romulus to our days,<br>he did keep in his memory.
-VII<br>Lacking the lofty passion<br>not to spare life for the sake of sounds,<br>an iamb from a trochee he could not—<br>no matter how we strove—distinguish;<br>dispraised Homer, Theocritus,<br>but read, in compensation, Adam Smith,<br>and was a deep economist:<br>that is, he could assess the way<br>a state grows rich,<br>and what it lives upon,<br>and why it needs not gold<br>when it has got the simple product.<br>His father could not understand him,<br>and mortgaged his lands.
-VIII<br>All Eugene knew besides<br>I have no leisure to recount;<br>but where he was a veritable genius,<br>what he more firmly knew than all the arts,<br>what since his prime had been to him<br>toil, anguish, joy,<br>what occupied the livelong day<br>his fretting indolence—<br>was the art of soft passion<br>which Naso sang,<br>wherefore a sufferer he ended<br>his brilliant and tumultuous span<br>in Moldavia, in the wild depth of steppes,<br>far from his Italy.`,
-    bioURL: "https://en.wikipedia.org/wiki/Alexander_Pushkin",
-    infoURL: "https://en.wikipedia.org/wiki/Eugene_Onegin",
-    textURL: "",
-    ref: [
-      {id: "pushkin-1833", type: "book", title: "Евгений Онегин", contributors: [{firstName: "Alexander", lastName: "Pushkin", role: "author"}], pubDate: {year: 1833}, publisher: "Alexander Smirdin", location: "Saint Petersburg", meta: {sortKey: "text"}}
-    ]
-  },
-  {
-    region: "Western Europe",
-    label: "EUWEMTN",
-    title: "Candide",
-    author: "Voltaire",
-    group: {people: "French", language: "French", country: "France"},
-    info: `We are living in the "best of all possible worlds" and everything that happens is "all for the best". This was the basis of Leibniz's optimistic philosophy. Voltaire, on the other hand, found these notions patently absurd and decided to show this absurdity through his satirical masterpiece Candide.
-Follow Candide and his friends through their series of misadventures where they experienced a variety of tragedies and reversal of fortunes. Ultimately, all is not for the best, but throughout his journey Candide discovers the meaning of life.
-<b>VOLTAIRE</b>, born François-Marie Arouet in 1694, was a prominent French Enlightenment writer, historian, and philosopher. He was a prolific author, known for his sharp wit and advocacy for civil liberties, particularly freedom of speech and religion.`,
-    excerpt: `In a castle of Westphalia, belonging to the Baron of Thunder-ten-Tronckh, lived a youth, whom nature had endowed with the most gentle manners. His countenance was a true picture of his soul. He combined a true judgment with simplicity of spirit, which was the reason, I apprehend, of his being called Candide. The old servants of the family suspected him to have been the son of the Baron's sister, by a good, honest gentleman of the neighborhood, whom that young lady would never marry because he had been able to prove only seventy-one quarterings, the rest of his genealogical tree having been lost through the injuries of time.
-The Baron was one of the most powerful lords in Westphalia, for his castle had not only a gate, but windows. His great hall, even, was hung with tapestry. All the dogs of his farm-yards formed a pack of hounds at need; his grooms were his huntsmen; and the curate of the village was his grand almoner. They called him "My Lord," and laughed at all his stories.
-The Baron's lady weighed about three hundred and fifty pounds, and was therefore a person of great consideration, and she did the honours of the house with a dignity that commanded still greater respect. Her daughter Cunegonde was seventeen years of age, fresh-coloured, comely, plump, and desirable. The Baron's son seemed to be in every respect worthy of his father. The Preceptor Pangloss was the oracle of the family, and little Candide heard his lessons with all the good faith of his age and character.
-Pangloss was professor of metaphysico-theologico-cosmolo-nigology. He proved admirably that there is no effect without a cause, and that, in this best of all possible worlds, the Baron's castle was the most magnificent of castles, and his lady the best of all possible Baronesses.
-"It is demonstrable," said he, "that things cannot be otherwise than as they are; for all being created for an end, all is necessarily for the best end. Observe, that the nose has been formed to bear spectacles-thus we have spectacles. Legs are visibly designed for stockings—and we have stockings. Stones were made to be hewn, and to construct castles—therefore my lord has a magnificent castle; for the greatest baron in the province ought to be the best lodged. Pigs were made to be eaten—therefore we eat pork all the year round. Consequently they who assert that all is well have said a foolish thing, they should have said all is for the best."
-Candide listened attentively and believed innocently; for he thought Miss Cunegonde extremely beautiful, though he never had the courage to tell her so. He concluded that after the happiness of being born of Baron of Thunder-ten-Tronckh, the second degree of happiness was to be Miss Cunegonde, the third that of seeing her every day, and the fourth that of hearing Master Pangloss, the greatest philosopher of the whole province, and consequently of the whole world.
-One day Cunegonde, while walking near the castle, in a little wood which they called a park, saw between the bushes, Dr. Pangloss giving a lesson in experimental natural philosophy to her mother's chamber-maid, a little brown wench, very pretty and very docile. As Miss Cunegonde had a great disposition for the sciences, she breathlessly observed the repeated experiments of which she was a witness; she clearly perceived the force of the Doctor's reasons, the effects, and the causes; she turned back greatly furried, quite pensive, and filled with the desire to be learned; dreaming that she might well be a sufficient reason for young Candide, and he for her.
-She met Candide on reaching the castle and blushed; Candide blushed also; she wished him good morrow in a faltering tone, and Candide spoke to her without knowing what he said. The next day after dinner, as they went from table, Cunegonde and Candide found themselves behind a screen; Cunegonde let fall her handkerchief, Candide picked it up, she took him innocently by the hand, the youth as innocently kissed the young lady's hand with particular vivacity, sensibility, and grace; their lips met, their eyes sparkled, their knees trembled, their hands strayed. Baron Thunder-ten-Tronckh passed near the screen and beholding this cause and effect chased Candide from the castle with great kicks on the backside; Cunegonde fainted away; she was boxed on the ears by the Baroness, as soon as she came to herself; and all was consternation in this most magnificent and most agreeable of all possible castles.`,
-    bioURL: "https://en.wikipedia.org/wiki/Voltaire",
-    infoURL: "https://en.wikipedia.org/wiki/Candide",
-    textURL: "https://www.gutenberg.org/files/19942/19942-h/19942-h.htm",
-    playlistURL: "https://open.spotify.com/playlist/4OFcQ76jTyggZqEJdT7S3Z",
-    ref: [
-      {id: "voltaire-1759", type: "book", title: "Candide", contributors: [{lastName: "Voltaire", role: "author"}], pubDate: {year: 1759}, publisher: "Cramer", location: "Geneva", meta: {sortKey: "text"}}
-    ]
-  },
-  {
     region: "Madagascar",
     label: "OCMDMTN",
     title: {original: "Lohataona sy Ririnina", translation: "Spring & Winter"},
@@ -846,7 +846,7 @@ She met Candide on reaching the castle and blushed; Candide blushed also; she wi
   {
     region: "Melanesia",
     label: "OCMLMTN",
-    title: "My Mother Calls Me Yaltep",
+    title: {original: "My Mother Calls Me Yaltep"},
     author: "Ignatius Kilage",
     group: {people: "Kulkane", language: "English", location: "Chimbu, PNG"},
     info: `<i>My Mother Calls Me Yaltep</i> is the moving story of a man born into a Simbu community just before the coming of the <i>kiaps</i>.
@@ -881,7 +881,7 @@ This was the society I was born into.`,
   {
     region: "Micronesia",
     label: "OCMCMTN",
-    title: "Stormed",
+    title: {original: "Stormed"},
     author: "Paula Quinene",
     group: {people: "CHamoru", language: "English", country: "Guam"},
     info: `A medical doctor educated in the United States, passionate and fierce Liz Taimanglo must now fulfill her promise and return to her island home. Liz makes the long flight across the US and the North Pacific Ocean to Guam, uncertain of what her future holds. Heading into the epicenter of her family and prime typhoon season for the Mariana Islands chain, the disquiet of her heart threatens to do more damage than any typhoon might inflict on Guam. Little does Liz know, the man featured in the newspaper would indeed unleash delicious torment rivaling even a Category 5 super typhoon.
@@ -962,7 +962,8 @@ In the nights bathed in moonlight<br>He will call me, <i>Mririda</i>, <i>Mririda
   {
     region: "East Africa",
     label: "AFEASTP",
-    title: { original: {piece: "𐒖𐒐𐒐𐒗𐒕𐒐 𐒆𐒚𐒑𐒖𐒕"}, transliteration: {piece: "Alleyl dumay"}, translation: {piece: "As night falls"} },
+    title: { original: "𐒖𐒐𐒐𐒗𐒕𐒐 𐒆𐒚𐒑𐒖𐒕", transliteration: "Alleyl dumay", translation: "As night falls" },
+    piece: true,
     author: "Raage Ugaas",
     group: {people: "Somali", language: "Somali", location: "Sasabane, ET"},
     info: `Raage Ugaas was engaged to a girl, who was blessed by God with beauty. Raage was very fond of her and was in love with her. But, the girl was eventually married off to his rival Garaad Faarax Wiilwaal. When the news reached Raage, he became so upset, he recited this poem called Alleyl Dumay.
@@ -975,7 +976,8 @@ In the nights bathed in moonlight<br>He will call me, <i>Mririda</i>, <i>Mririda
   {
     region: "Southern Africa",
     label: "AFSOSTP",
-    title: { piece: "The broken string" },
+    title: {original: "The broken string"},
+    piece: true,
     author: "Xa:ä-tin",
     intermediary: "Diä!kwain",
     group: {people: "ǀXam-ka ǃʼē", language: "ǀXam", country: "South Africa"},
@@ -1002,7 +1004,7 @@ In the nights bathed in moonlight<br>He will call me, <i>Mririda</i>, <i>Mririda
   {
     region: "West Africa",
     label: "AFWESTP",
-    title: "Nocturnes",
+    title: {original: "Nocturnes"},
     author: "Léopold Sédar Senghor",
     group: {people: "Serer/Fula", language: "French", country: "Senegal"},
     info: `<i>Nocturnes</i> is the only book of verse that Senghor published after becoming President of Senegal following his country's independence in 1960. Senghor's poetry was associated with Africa's struggle for independence; it is perhaps logical that this volume seems to have marked the end of his career as a poet. 'Songs for Signare' are the eloquent love poems of a man who was once uncertain of his place in the world. The 'Elegies' are the easy, rhetorical, self-assured poems of the leader and the man who has reached his goal.
@@ -1013,12 +1015,16 @@ We were coming back from Dyonewar and our<br><tb>thoughts lingered by the mangro
 We were coming back from Dynewar by way of<br><tb>the mangrove swamps, and listlessly.<br>It was then that under its patina your face today<br><tb>had the dark beauty of the Eternal.`,
     infoURL: "https://www.poetryfoundation.org/poets/leopold-sedar-senghor",
     mediaURL: "https://youtu.be/l99Rs4kWUyw?si=9pQyRfqXFmShBcgM",
-    textURL: "https://davidevans.blog/2019/07/01/read-african-writers-nocturnes-by-leopold-sedar-senghor-translated-by-clive-wake-and-john-o-reed/"
+    textURL: "https://davidevans.blog/2019/07/01/read-african-writers-nocturnes-by-leopold-sedar-senghor-translated-by-clive-wake-and-john-o-reed/",
+    ref: [
+      { id: "senghor-1961", type: "book", title: "Nocturnes", contributors: [ { firstName: "Léopold Sédar", lastName: "Senghor", role: "author" } ], pubDate: { year: 1961 }, publisher: "Éditions du Seuil", location: "Paris, France", medium: "Print", meta: { sortKey: "text", notes: "First edition of this major collection, which expanded on his earlier 'Chants d'ombre' and won the Grand Prix de poésie de l'Académie française.", grade: "A", tags: ["Négritude", "Senegalese Literature", "Poetry"] } }
+    ]
   },
   {
     region: "Arctic America",
     label: "AMNOSTP",
-    title: { original: {piece: "ᐃᒪᕕᖕᒧᑦ ᓴᕐᕙᕗᖓ"}, transliteration:{piece: "Imavingmut sarvavunga"}, translation: {piece: "I dive into the ocean"} },
+    title: { original: "ᐃᒪᕕᖕᒧᑦ ᓴᕐᕙᕗᖓ", transliteration: "Imavingmut sarvavunga", translation: "I dive into the ocean" },
+    piece: true,
     author: "Uvavnuk",
     group: {people: "Inuit", language: "Inuktitut", location: "Nunavut, CA"},
     info: `Uvavnuk had gone outside one winter evening to make water. It was particularly dark that evening, as the moon was not visible. Then suddenly there appeared a glowing ball of fire in the sky, and it came rushing down to earth straight towards her. She would have got up and fled, but before she could move, the ball of fire struck her and entered into her. She perceived that all within her grew light, and she lost consciousness.
@@ -1082,7 +1088,8 @@ Aa from that side,<br>	to us, as he is walking.<br>From that side,<br>	to us, as
   {
     region: "Pacific Northwest",
     label: "AMNWSTP",
-    title: {original: {piece: "Spucwpuxlits'lhim"}, translation: {piece: "Milha dance song"}},
+    title: {original: "Spucwpuxlits'lhim", translation: "Milha dance song"},
+    piece: true,
     intermediary: "Bella Coola Archives",
     group: {people: "Nuxalk", language: "Nuxalk", location: "British Columbia, CA"},
     info: `Ancestrally, <i>Nuxalkmc</i> (Nuxalk people) would hire a song composer to create a new song anytime there was a special event—a birth or a death, in love or ceremony—creating music in many genres. The professional <i>Nununsyalmlh</i> (choir) used to compose almost a hundred songs a year. Singing was so vital to Nuxalk ceremony that special rites were administered to children during infancy to bring them musical success and ability.
@@ -1119,7 +1126,8 @@ Give me something to remember you by. (x4)<br>I will keep it to remember you by.
   {
     region: "Central America",
     label: "AMCESTP",
-    title: { original: {piece: "Xon Ahuiyacan"}, translation: {piece:"Be Joyful"} },
+    title: { original: "Xon Ahuiyacan", translation: "Be Joyful" },
+    piece: true,
     author: "Nezahualcoyōtl",
     group: {people: "Mexica/Acolhua", language: "Classical Nahuatl", location: "Texcoco, MX"},
     info: `The metaphor <i>in xochitl in cuicatl</i> (flower and song) is used to represent poetry, art, and truth in the Mesoamerican world, particularly within the Nahua cultural sphere of central Mexico. The corpus of Nahuatl songs composed within this creative tradition was recorded in the <i>amoxtli</i> (books) and oral literature of pre-colonial Mexico, including the likes of poets Tecayehuatzin, Macuilxochitzin, and, greatest of all, Nezahualcoyotl, and continues up through the present day with poets such as Natalio Hernández.
@@ -1135,7 +1143,7 @@ O lords, in this way<br>your sorrow is put to flight.<br>The Giver of Life inven
   {
     region: "Caribbean",
     label: "AMCRSTP",
-    title: "Kalinago Grammar",
+    title: {original: "Kalinago Grammar"},
     intermediary: "Joseph Numa Rat",
     group: {people: "Kalinago", language: "Kalinago", country: "Dominica"},
     info: `The text provided here does not strictly constitute material within the Kalinago poetic tradition of the Lesser Antilles, which though historically well-attested and even contemporarily demonstrated at the cultural center <i>Kalinago Barana Aute</i> on the island of Dominica, offers no English translation of truly traditional literature. While some pieces utlizing the reconstructed Kalinago language were found, it was determined that brief spoken phrases from 19th-century fluent speakers recorded in an early grammar of the language would provide a richer experience of the evocative aesthetic qualities of Kalinago. The judgement call resulting in this provisional selection is liable to change based on future research.`,
@@ -1166,7 +1174,8 @@ O lords, in this way<br>your sorrow is put to flight.<br>The Giver of Life inven
   {
     region: "Andean America",
     label: "AMWESTP",
-    title: { original: {piece: "Haray Harawi"}, translation: {piece:"Love Song"} },
+    title: { original: "Haray Harawi", translation: "Love Song" },
+    piece: true,
     intermediary: "Felipe Guamán Poma de Ayala",
     group: {people: "Quechua", language: "Classical Quechua", country: "Peru"},
     info: `A dominant feature of Quechua poetics, especially within the <i>harawi</i> (festive song) genre, is semantic parallelism, accomplished through the use of semantic doubles—pairs of related statements with identical structure that contrast their homologous terms. For example, in “Haray Harawi”, the symmetrical employment of ‘queen’ and ‘princess’ in the opening lines brings out the consistent identity of the subject across time through the irreconcilable concurrence of those terms. This poetic device adheres to the Andean philosophical model of <i>yanantin</i> (complementary dualism) premised upon interdependent opposites ordering the totality of thought.
@@ -1183,7 +1192,9 @@ You make me cry.<br>Is your heart a flower?<br>You are crying in the village.<br
   {
     region: "Amazonia",
     label: "AMNESTP",
-    title: { original: { work: "Nhiok", piece: "Min ngrere" }, translation: { work: "Nhiok", piece: "Crocodile's chant" } },
+    title: { original: "Min ngrere", translation: "Crocodile's chant" },
+    piece: true,
+    work: { original: "Nhiok", translation: "Nhiok" },
     intermediary: "Bemoti",
     group: {people: "Xikrin", language: "Mẽbêngôkre", location: "Pará, BR"},
     info: `The preparations for the <i>nhiok</i> female naming ritual begin on the day preceding the return of the men from their collective hunt.
@@ -1201,10 +1212,9 @@ The female name-recipients are painted in their houses by their mothers with the
   {
     region: "Southern Cone",
     label: "AMSOSTP",
-    title: {
-      original: { piece:"Apu", collection: "Ita ha'eñoso" },
-      translation: { piece:"Appear", collection: "Solitude Abandons Stone" }
-    },
+    title: { original: "Apu", translation: "Appear" },
+    piece: true,
+    anthology: { original: "Ita ha'eñoso", translation: "Solitude Abandons Stone" },
     author: "Miguelángel Meza",
     group: {people: "Mbyá", language: "Guaraní", country: "Paraguay"},
     info: `The writer and researcher Mario Castells says of <i>Dream Pattering Soles</i>, "Many words in avañe’ẽ [Guaraní] are micro-units of mythic narratives, ancient bridges that link Paraguayan society to their Guaraní ancestors." Cadogan began his compilation when he realized that the phrase "jasyra'ýnteko ojovaheihína" references both reality and myth. Its literal English translation, "the new moon is washing its face," alludes to "The Myth of the Twins: Genesis of the Sun and the Moon." Its metaphoric English translation, "torrential rain," alludes to the fact that heavy rainfall and the first lunar phase usually coincide. This phrase is a metaphor for a metonymy because the moon stands in for the rain, while their relationship renders them parts of a whole, the natural world and Mbyá Guaraní cosmology.
@@ -1242,7 +1252,8 @@ Those who had been poor but were now rich<br>Threw stones and bits of wood, but<
   {
     region: "East Asia",
     label: "ASEASTP",
-    title: { original: {piece: "听蜀僧濬弹琴"}, transliteration: {piece: "Tīng shǔ sēng jùn tán qín"}, translation: {piece: "Listening to the Monk Jun Play his Qin"} },
+    title: { original: "听蜀僧濬弹琴", transliteration: "Tīng shǔ sēng jùn tán qín", translation: "Listening to the Monk Jun Play his Qin" },
+    piece: true,
     altTitle: "听蜀僧濬弹琴",
     author: "Lǐ Bái",
     group: {people: "Han Chinese", language: "Classical Chinese", location: "Sichuan, CN"},
@@ -1345,7 +1356,8 @@ My soul is dead but on the outside I'm well.<br>I repeat to everyone I meet—<b
   {
     region: "Inner Asia",
     label: "ASINSTP",
-    title: { original: {piece: "ᠴᠠᠭᠠᠨ ᠡᠭᠦᠯᠡ"}, transliteration: {piece: "Tsagaan üül"}, translation: {piece: "White Cloud"} },
+    title: { original: "ᠴᠠᠭᠠᠨ ᠡᠭᠦᠯᠡ", transliteration: "Tsagaan üül", translation: "White Cloud" },
+    piece: true,
     author: "Vanchinbalyn Injinash",
     group: {people: "Tümed", language: "Mongolian", location: "Liaoning, CN"},
     info: `Before the 13th century, when the boundaries between written history and literature were less clear in the Mongol Empire, the practice of exaggerating historical events with artful embellishments was widespread among the Mongols. One of the people who worked within this tradition and initiated the development of Mongolian historical literature was the great Mongolian writer Vanchinbal Injinash.
@@ -1362,26 +1374,6 @@ Let the passing east wind blow at its own will,<br>Let the passing east wind blo
     infoURL: "https://todmedee.mn/4455.html",
     mediaURL: "https://youtu.be/krScqkiu6cY",
     textURL: ["https://wikisource.org/wiki/%D0%94%D0%BE%D1%80%D0%BD%D0%BE_%D1%81%D0%B0%D0%BB%D1%85%D0%B8%D0%BD_%D1%85%D0%B8%D0%B9%D1%81%D1%82%D2%AF%D0%B3%D1%8D%D0%B9","https://www.biirbeh.mn/index.php?sel=content&f=one&obj_id=6882"]
-  },
-  {
-    region: "Australia",
-    label: "OCAUSTP",
-    title: "Bulu Line",
-    author: "George Dyuŋgayan",
-    group: {people: "Nyigina", language: "Nyigina", location: "Kimberley, AU"},
-    info: `<i>The Bulu Line</i> is a collection of 17 <i>nurlu</i> songs, and 3 dances, from the West Kimberley. Nurlu songpoetry is one of three key genres of song in the West Kimberley region.
-The foremost consists of the poetry that forms part of ritual and contains vital knowledge about history, philosophy, and social and ecological relationships. A second major, and rapidly growing, genre consists of music like hip-hop and country & western. Like this second genre, nurlu are relatively ‘young’ songs. But they are distinguished from Western styles because they arrive in people’s dreams (i.e. they’re not ‘composed’ in the conventional sense of the term). Unlike the first genre, however, they don’t come from ancient times. Instead, their composition is attributed to various spirits, either <i>balangan</i> (spirits of the dead) or <i>rai</i> (child-like forms believed to cause pregnancy).
-The translation of this collection attempts to capture the dynamic phrasing in the lines of a nurlu performance that result from the same material being repeated with a shifting melodic start point, changing the way in which the words appear to be grouped and therefore the corresponding semantic meaning. So while a songpoem may feature only three lines of text, the variable groupings of those three lines in succession can result in a variety of meanings.
-<b>GEORGE DYUŊGAYAN</b>, born 1900 in Goolarabooloo, was a Nyigina lawman blessed with extraordinary gifts. As a <i>maban</i> (‘clever man’), Dyuŋgayan was not only able to produce songpoetry of incredible beauty and power, but he had the ability to see and control things that others couldn’t. <i>The Bulu Line</i> came from the spirit of his late father, Bulu, in a series of dreams across many years.`,
-    excerpt: `<i>5.</i>
-<i>mayarda dirbin yiŋana</i><br><i>dyidurrudurruy</i><br><i>ŋaŋal yindina</i>
-beaks<br>	(<tb><tb>)<br>		sticking out<br>from a straight line<br>		of pelicans<br>we see their heads out<br>		in all directions
-(<tb><tb>) of pelicans<br>		flying close together<br>one hiding<br>	behind the (<tb><tb>)<br>their beaks stuck out<br>		all mixed up
-pelicans<br>	flying close together<br>(<tb><tb>)<br>	behind one another<br>we see them<br>	sticking out from the line
-in all directions<br>		the beaks of the pelicans...`,
-    infoURL: "http://cordite.org.au/essays/sustaining-oral-tradition/",
-    mediaURL: "https://youtu.be/UmdHNyZ5pns",
-    textURL: "https://plumwoodmountain.com/book-review/phillip-hall-reviews-george-dyungayans-bulu-line-a-west-kimberley-song-cycle-by-stuart-cooke-and-eelahroo-long-ago-nyah-looking-mobo-mobo-future-by-lionel-fogarty/"
   },
   {
     region: "Eastern Europe",
@@ -1422,6 +1414,26 @@ And still, I never seem to find a path<br>too harsh, too wild for Love to always
     textURL: "https://cuny.manifoldapp.org/read/the-complete-canzoniere/section/67b7fe59-1bc2-4ecb-9004-6bc5b4914f02"
   },
   {
+    region: "Australia",
+    label: "OCAUSTP",
+    title: {original: "Bulu Line"},
+    author: "George Dyuŋgayan",
+    group: {people: "Nyigina", language: "Nyigina", location: "Kimberley, AU"},
+    info: `<i>The Bulu Line</i> is a collection of 17 <i>nurlu</i> songs, and 3 dances, from the West Kimberley. Nurlu songpoetry is one of three key genres of song in the West Kimberley region.
+The foremost consists of the poetry that forms part of ritual and contains vital knowledge about history, philosophy, and social and ecological relationships. A second major, and rapidly growing, genre consists of music like hip-hop and country & western. Like this second genre, nurlu are relatively ‘young’ songs. But they are distinguished from Western styles because they arrive in people’s dreams (i.e. they’re not ‘composed’ in the conventional sense of the term). Unlike the first genre, however, they don’t come from ancient times. Instead, their composition is attributed to various spirits, either <i>balangan</i> (spirits of the dead) or <i>rai</i> (child-like forms believed to cause pregnancy).
+The translation of this collection attempts to capture the dynamic phrasing in the lines of a nurlu performance that result from the same material being repeated with a shifting melodic start point, changing the way in which the words appear to be grouped and therefore the corresponding semantic meaning. So while a songpoem may feature only three lines of text, the variable groupings of those three lines in succession can result in a variety of meanings.
+<b>GEORGE DYUŊGAYAN</b>, born 1900 in Goolarabooloo, was a Nyigina lawman blessed with extraordinary gifts. As a <i>maban</i> (‘clever man’), Dyuŋgayan was not only able to produce songpoetry of incredible beauty and power, but he had the ability to see and control things that others couldn’t. <i>The Bulu Line</i> came from the spirit of his late father, Bulu, in a series of dreams across many years.`,
+    excerpt: `<i>5.</i>
+<i>mayarda dirbin yiŋana</i><br><i>dyidurrudurruy</i><br><i>ŋaŋal yindina</i>
+beaks<br>	(<tb><tb>)<br>		sticking out<br>from a straight line<br>		of pelicans<br>we see their heads out<br>		in all directions
+(<tb><tb>) of pelicans<br>		flying close together<br>one hiding<br>	behind the (<tb><tb>)<br>their beaks stuck out<br>		all mixed up
+pelicans<br>	flying close together<br>(<tb><tb>)<br>	behind one another<br>we see them<br>	sticking out from the line
+in all directions<br>		the beaks of the pelicans...`,
+    infoURL: "http://cordite.org.au/essays/sustaining-oral-tradition/",
+    mediaURL: "https://youtu.be/UmdHNyZ5pns",
+    textURL: "https://plumwoodmountain.com/book-review/phillip-hall-reviews-george-dyungayans-bulu-line-a-west-kimberley-song-cycle-by-stuart-cooke-and-eelahroo-long-ago-nyah-looking-mobo-mobo-future-by-lionel-fogarty/"
+  },
+  {
     region: "Madagascar",
     label: "OCMDSTP",
     title: {original: "Vieilles chansons des pays d'Imerina", translation: "Old Songs of Imerina Lands"},
@@ -1440,7 +1452,7 @@ Love, o my kin, has the perfume of the forest, like the lemon. And it is neither
   {
     region: "Melanesia",
     label: "OCMLSTP",
-    title: "Arosi Songs & Incantations",
+    title: {original: "Arosi Songs & Incantations"},
     intermediary: "John Saunana",
     group: {people: "Arosi", language: "Arosi", country: "Solomon Islands"},
     info: `<i>Dragon Tree: Arosi Incantations and Songs</i> is a collection of transcriptions and translations of traditional song texts in the Arosi language published in Port Moresby in 1972 as part of the prolific <i>Papua Pocket Poems</i> series distributed through the author's alma mater, the University of Papua New Guinea.
@@ -1456,7 +1468,9 @@ What do I say?<br>The maiden who fetches salt water runs an errand<br>she runs t
   {
     region: "Micronesia",
     label: "OCMCSTP",
-    title: { piece: "Luk-of-Heaven song", collection: "Book of Luelen" },
+    title: {original: "Luk-of-Heaven song"},
+    piece: true,
+    anthology: { original: "the Book of Luelen" },
     intermediary: "Luelen Bernart",
     group: {people: "Pohnpeian", language: "Pohnpeian", location: "Pohnpei, FSM"},
     info: `Luk-of-Heaven was a Uone man. Reportedly he was a master speaker who knew all the stories of olden times. When he became an old man he got sick, worsened, and died. Now when he had closed his eyes in death, those beside him did not decide to bury his body quickly.
@@ -1491,7 +1505,8 @@ Where is Lieniman’il<br>I should call her hither<br>She should come and apply<
   {
     region: "Polynesia",
     label: "OCPLSTP",
-    title: { original: {piece: "He Kanikau no Kaʻahumanu"}, translation: {piece: "A Lament for Kaʻahumanu"} },
+    title: { original: "He Kanikau no Kaʻahumanu", translation: "A Lament for Kaʻahumanu" },
+    piece: true,
     author: "Davida Malo",
     group: {people: "Hawaiian", language: "Hawaiian", location: "Hawaiian Islands"},
     info: `Kanikau are chants composed after the passing of a loved one. Though these laments come from moments of grief, they function as <i>oli</i> (recitations) to aid the soul on its traverse from this world into the place of <i>akua</i> (spirits) and <i>ʻaumākua</i> (deified ancestors). A kanikau could be a spontaneous expression of grief heard at funeral gatherings, or an oli labored over by skillful chanters to later be performed in public—kanikau told stories, honored the deceased, and in more recent times, expressed the deep affection and aloha felt for a beloved member of the family or community.
@@ -1533,7 +1548,7 @@ Though the film's significant ethnographic and outside observer components disqu
   {
     region: "East Africa",
     label: "AFEACFF",
-    title: "Supa Modo",
+    title: {original: "Supa Modo"},
     year: "2018",
     group: {language: "Swahili", country: "Kenya"},
     info: `Nine-year-old Jo loves action films and dreams of being a superhero. Her biggest wish: to make a film and star in it. In her fantasy she can forget that she is terminally ill. When Jo’s sister can no longer bear seeing the cheerful girl spend her precious remaining time in bed, she encourages Jo to believe in her magic powers, and the whole village to make Jo’s dream a reality.
@@ -1625,7 +1640,7 @@ Dir/Scr <b>DANIS GOULET</b> is a Cree-Métis filmmaker and screenwriter from Sas
       {
         region: "American Southwest",
         label: "AMSWCFF1",
-        title: "Drunktown's Finest",
+        title: {original: "Drunktown's Finest"},
         year: "2014",
         group: {people: "Diné", language: "English", location: "New Mexico, US"},
         info: `Three young Navajos—an adopted Native girl, a young father-to-be, and a trans woman who dreams of being a model—strive to escape the hardships of life on an Indian reservation. Nizhoni seeks out her past, well after being adopted by a white Christian family; Felixia pursues a spot in the "women of the tribe" calendar; and Sickboy is headed to basic training so he can take care of his soon-to-be-born child.
@@ -1652,7 +1667,7 @@ With input from Haida Gwaii residents, the screenplay was written in 2015 with a
   {
     region: "Great Plains",
     label: "AMINCFF",
-    title: "The Unknown Country",
+    title: {original: "The Unknown Country"},
     year: "2022",
     group: {people: "Oglala", language: "English", location: "South Dakota, US"},
     info: `A grieving woman embarks on a road trip through the American Midwest after receiving an unexpected invitation to reunite with her estranged Oglala Lakota family. Along the way, she uncovers her family history and a path to closure.
@@ -1666,7 +1681,7 @@ Dir/Scr <b>MORISSA MALTZ</b> assembled a council of women Lily Gladstone, Lainey
   {
     region: "Caribbean",
     label: "AMCRCFF",
-    title: "Garifuna in Peril",
+    title: {original: "Garifuna in Peril"},
     year: "2012",
     group: {people: "Garínagu", language: "Garifuna/English", country: "Honduras"},
     info: `A Garifuna-language teacher, Ricardo, struggles to preserve his endangered Afro-Amerindian culture by building a language school in his home village in Honduras. A business venture with his brother designed to raise money for the school’s construction becomes complicated by the expansion plans of a nearby tourist resort into indigenous territory. Historical parallels are invoked as Ricardo’s son rehearses a stage play about the Garifuna people’s last stand against British colonialism over 200 years ago in their motherland, the island of St. Vincent in the Caribbean.
@@ -1718,7 +1733,7 @@ Dir/Scr <b>ÓSCAR CATACORA</b> was an Aymara filmmaker, screenwriter, producer, 
   {
     region: "Southern Cone",
     label: "AMSOCFF",
-    title: "Eami",
+    title: {original: "Eami"},
     year: "2022",
     group: {people: "Ayoreo", language: "Ayoreo", country: "Paraguay"},
     info: `Eami's homeland is invaded by settlers. She embodies Asojá, the bird-god-woman, falling into a trance. She walks slowly and stunned through her beloved forest, preparing to leave it forever.
@@ -1902,19 +1917,6 @@ Dir/Scr <b>BYAMBASUREN DAVAA</b>, born 1971 in Ulaanbaatar, is a Mongolian filmm
     alt: []
   },
   {
-    region: "Australia",
-    label: "OCAUCFF",
-    title: {original: "Biniŋgili-gumbirri girrgili", translation: "Ten Canoes"},
-    year: "2006",
-    group: {people: "Yolŋu", language: "Djinba", location: "Arnhem Land, AU"},
-    info: `<i>Ten Canoes</i> tells an ancient Yolngu Aboriginal story, blending traditional myth with a modern-day narrative. The film follows a group of men on a goose egg hunt, where an elder tells a story from the past about a young man coveting his brother's wife, illustrating the consequences of wrong desires and tribal law. The film uses a unique storytelling structure, switching between black and white for the present-day hunt and color for the ancient story, all while showcasing the beauty of Arnhem Land and the Yolngu culture.
-The film's dialogue is in the Ganalbingu dialect of the Djinba language, with David Gulplil providing narration in English, though an alternate version of the film exists with narration in his Mandjalpingu dialect.`,
-    infoURL: "https://en.wikipedia.org/wiki/Ten_Canoes",
-    watch: "https://youtu.be/2AMmHrFdyBw",
-    trailer: "https://youtu.be/tH_MY8FJuYo",
-    alt: []
-  },
-  {
     region: "Eastern Europe",
     label: "EUEACFF",
     title: {original: "Trzy kolory: Biały", translation: "Three Colours: White"},
@@ -1941,6 +1943,19 @@ Dir/Scr <b>CÉLINE SCIAMMA</b> is a French filmmaker and screenwriter known for 
     alt: []
   },
   {
+    region: "Australia",
+    label: "OCAUCFF",
+    title: {original: "Biniŋgili-gumbirri girrgili", translation: "Ten Canoes"},
+    year: "2006",
+    group: {people: "Yolŋu", language: "Djinba", location: "Arnhem Land, AU"},
+    info: `<i>Ten Canoes</i> tells an ancient Yolngu Aboriginal story, blending traditional myth with a modern-day narrative. The film follows a group of men on a goose egg hunt, where an elder tells a story from the past about a young man coveting his brother's wife, illustrating the consequences of wrong desires and tribal law. The film uses a unique storytelling structure, switching between black and white for the present-day hunt and color for the ancient story, all while showcasing the beauty of Arnhem Land and the Yolngu culture.
+The film's dialogue is in the Ganalbingu dialect of the Djinba language, with David Gulplil providing narration in English, though an alternate version of the film exists with narration in his Mandjalpingu dialect.`,
+    infoURL: "https://en.wikipedia.org/wiki/Ten_Canoes",
+    watch: "https://youtu.be/2AMmHrFdyBw",
+    trailer: "https://youtu.be/tH_MY8FJuYo",
+    alt: []
+  },
+  {
     region: "Madagascar",
     label: "OCMDCFF",
     title: {original: "Rehefa mihaona ny ranomasina sy ny kintana", translation: "When the Stars Meet the Sea"},
@@ -1956,7 +1971,7 @@ Dir/Scr <b>RAYMOND RAJAONARIVELO</b> is a notable Malagasy film director best kn
   {
     region: "Melanesia",
     label: "OCMLCFF",
-    title: "Tanna",
+    title: {original: "Tanna"},
     year: "2015",
     group: {people: "Ni-Vanuatu", language: "Nivhaal/Nafe", country: "Vanuatu"},
     info: `Wawa, a young girl from Yakel on Tanna Island, falls in love with her community leader's grandson, Dain. When a war between factions escalates, Wawa is unknowingly betrothed as part of a peace deal. The lovers run away, but are pursued by enemies intent on killing them.
@@ -1995,7 +2010,7 @@ Dir/Scr <b>TUSI TAMASESE</b> is a Samoan filmmaker of high chiefly descent, of t
       {
         region: "Polynesia",
         label: "OCPLCFF1",
-        title: "Next Goal Wins",
+        title: {original: "Next Goal Wins"},
         year: "2023",
         group: {language: "English", location: "American Samoa, US"},
         info: `The story of the infamously terrible American Samoa soccer team, known for a brutal 2001 FIFA match they lost 31-0, and their attempt to turn around with a new coach.
@@ -2011,7 +2026,7 @@ export const presMusDrama = [
   {
     region: "North Africa",
     label: "AFNOPMD",
-    genre: {original: "ⵙⴱⵉⴱⴰ", transliteration: "Sebeïba"},
+    title: {original: "ⵙⴱⵉⴱⴰ", transliteration: "Sebeïba"},
     origin: "n.d.",
     group: {people: "Tuareg", language: "Tamahaq", location: "Djanet, DZ"},
     info: `The performances associated with Sebeïba are practised by two communities living in Djanet during ten days in the first month of the Islamic lunar calendar.
@@ -2031,7 +2046,7 @@ My thoughts become paralyzed, my gaze freezes<br>Let the guests taste your tea<b
   {
     region: "East Africa",
     label: "AFEAPMD",
-    genre: "Engilakinoto",
+    title: {original: "Engilakinoto"},
     origin: "n.d.",
     group: {people: "Maasai", language: "Maa", country: "Tanzania"},
     info: `Engilakinoto is call-and-response performing art form sung without instrumental accompaniment. A <i>olaranyani</i> (song leader) initiates the melody, and the chorus responds in unison, often with layered rhythms, deep throat-based chanting, and harmonies, while executing slow, leaning dance moves.
@@ -2067,7 +2082,7 @@ A patch stretches over the colobus monkey<br>That does not climb trees<br>Among 
   {
     region: "Southern Africa",
     label: "AFSOPMD",
-    genre: "Djxani",
+    title: {original: "Djxani"},
     origin: "n.d.",
     group: {people: "Juǀʼhoansi", language: "Juǀʼhoan", country: "Angola"},
     info: `Djxani is a form of sung dance with narrative elements typically performed around a fire by all members of the community. Dances involve choreographed shaking, stomping, and clapping, with dancers often taking on animal characteristics as they depict traditional stories. Every djxani includes an accompanying song that can be repeated indefinitely during the extended performances, while the <i>n</i><I>ǀ</I><i>um kxao</i> occasionally solos overtop.
@@ -2109,7 +2124,7 @@ on the small of his back<br>and knocked him down<br>mm<br>yes<br>yes<br>granddau
   {
     region: "Central Africa",
     label: "AFCEPMD",
-    genre: "Mvet",
+    title: {original: "Mvet"},
     origin: "c. 19th-c",
     group: {people: "Ekang", language: "Fang-Beti-Bulu", country: "Equatorial Guinea"},
     info: `The Mvet is an epic cycle of heroic tales encompassing music, storytelling, and dramatic performance. Shows are performed by a master storyteller known as the <i>mbom-mvet</i>, who simultaneously sings, recites, dances, and plays a stringed instrument called the <i>mvet</i>, a chordophone with calabash resonators, whose sounds accompany the intricate narratives.
@@ -2144,7 +2159,7 @@ He was a bald old man, imposing in stature with oversized arms. His wild eyes bl
   {
     region: "West Africa",
     label: "AFWEPMD",
-    genre: "Egúngún",
+    title: {original: "Egúngún"},
     origin: "c. 16th-c",
     group: {people: "Yorùbá", language: "Yorùbá", country: "Nigeria"},
     info: `The Egúngún ancestral masquerade is a spiritual and cultural tradition of the Yoruba people, manifesting the collective spirits of departed ancestors who periodically return to the human community. Performances involve elaborately costumed and masked figures who embody the spirits of ancestors, known as <i>Ará Ọ̀run</i> (the collective dead).
@@ -2158,7 +2173,7 @@ The Egúngún's appearance is a spectacle of pomp and pageantry, driven by inten
   {
     region: "Arctic America",
     label: "AMNOPMD",
-    genre: "Yuraq",
+    title: {original: "Yuraq"},
     origin: "n.d.",
     group: {people: "Yup'ik", language: "Yup'ik", location: "Alaska, US"},
     info: `Yuraq is the Yup'ik word for a style of narrative dance and song performed in southwestern Alaska and used for storytelling, communicating traditions, and as a form of prayer. Performances typically involve singing in the Yup'ik language, drumming, and specific dance movements choreographed to the songs.
@@ -2172,7 +2187,7 @@ The tradition is preserved through groups like Kassiglurmiut Yurartait, who hold
   {
     region: "Eastern Woodlands",
     label: "AMEAPMD",
-    genre: "Posketv",
+    title: {original: "Posketv"},
     origin: "c. 14th-c",
     group: {people: "Muscogee", language: "Muscogee", location: "Florida, US"},
     info: `Posketv, also known as the busk or Green Corn Ceremony, is a ritual cycle comprised of sung dances, including <i>opvnkv haco</i> (stomp dances), <i>hvsē opvnkv</i> (ribbon dance), and other ceremonial and social dances.
@@ -2208,7 +2223,7 @@ Mvto!`,
   {
     region: "Great Plains",
     label: "AMINPMD",
-    genre: "Wačípi",
+    title: {original: "Wačípi"},
     origin: "c. 17th-c",
     group: {people: "Sioux", language: "Sioux", location: "North Dakota, US"},
     info: `Wačípi is a traditional gathering at which singing, dancing, and celebration play a central role. Performers dance in elaborate regalia, accompanied by a <i>lowáŋ wičáša</i> drum group.
@@ -2231,7 +2246,7 @@ Grandfather, help me.<br>Help me, I am suffering.<br>Help me, I am suffering.<br
   {
     region: "American Southwest",
     label: "AMSWPMD",
-    genre: "Katsina",
+    title: {original: "Katsina"},
     origin: "c. 14th-c",
     group: {people: "Hopi", language: "Hopílavayi", location: "Arizona, US"},
     info: `In the Katsina ceremonies, an annual cycle of ritual performances timed to specific events in the lunisolar calendar, Hopi performers embody benevolent spirit messengers called <i>katsinam</i>. The katsinam—of which there are over 250 different types, representing various beings from animals to clouds—visit their people in physical form for six months of the year, singing and dancing in ceremonies, to bring gifts and teach appropriate behavior.
@@ -2252,7 +2267,7 @@ Through bright clusters of flowers<br>Yellow butterflies<br>Are chasing at play,
   {
     region: "Pacific Northwest",
     label: "AMNWPMD",
-    genre: "Hamats'a",
+    title: {original: "Hamats'a"},
     origin: "n.d.",
     group: {people: "Kwakwa̱ka̱ʼwakw", language: "Kwakʼwala", location: "Vancouver Island, CA"},
     info: `Of all the dances of the Kwakwaka’wakw, the Hamatsa is considered to be the most important. The right to perform this dance is owned by particular families whose members have been possessed generation after generation by Baxwbakwalanuksiwe’, the man-eating supernatural being. The dance acts out the capture, return, and calming of the initiate.
@@ -2272,7 +2287,7 @@ Making thunder<br>Around the world<br>Supernatural ones...`,
   {
     region: "Central America",
     label: "AMCEPMD",
-    genre: "Xajoj",
+    title: {original: "Xajoj"},
     origin: "c. 15th-c",
     group: {people: "Achí Maya", language: "Achí", country: "Guatemala"},
     info: `Xajoj is a genre of theatrical performance involving music, dance, and storytelling. It is most famously associated with the <i>Rabinal Achí</i>, a pre-Columbian Maya play also known as <i>Xajoj Tun</i>, the tun being a type of wooden drum used in its performance.
@@ -2296,7 +2311,7 @@ Listen!<br>Brave man<br>	prisoner, captive:<br>Should thanks be given to the sky
   {
     region: "Caribbean",
     label: "AMCRPMD",
-    genre: "Areíto",
+    title: {original: "Areíto"},
     origin: "c. 15th-c",
     group: {people: "Taíno", language: "Taíno", location: "Puerto Rico"},
     info: `The areíto is a multifaceted ceremonial performance encompassing song, dance, poetry, and storytelling, which serves as a vital repository of the worldview, history, and social structure of the Taíno people. Practiced across the Greater Antilles, this tradition is a dynamic and essential cultural practice for Taíno descendants, embodying their deep connection to ancestors, <i>zemís</i> (spirits), and the natural world.
@@ -2323,7 +2338,7 @@ You dwell everywhere,<br>over the sea, in the earth, in the sky,<br>and even in 
   {
     region: "Andean America",
     label: "AMWEPMD",
-    genre: "Wanka",
+    title: {original: "Wanka"},
     origin: "c. 15th-c",
     group: {people: "Quechua", language: "Quechua", country: "Peru"},
     info: `Until 1555, a series of plays were performed annually in Cuzco, the capital of the Inca Empire, as part of a strong Andean dramaturgical tradition that continued well into the colonial period. The shows were of two types: <i>wanka</i>, which were historical and memorial in character, and <i>aránway</i>, which typically depicted the everyday lives of the Quechua people.
@@ -2379,7 +2394,7 @@ O giver of all warmth and light<br>O Sun! I fall and worship thee.<br>For thee t
   {
     region: "Amazonia",
     label: "AMNEPMD",
-    genre: "Yaõkwa",
+    title: {original: "Yaõkwa"},
     origin: "n.d.",
     group: {people: "Enawenê-Nawê", language: "Enawenê-Nawê", location: "Mato Grosso, BR"},
     info: `The Enawenê-Nawê people live in the basin of the Juruena River in the southern Amazon rainforest. They perform the Yaõkwa ritual every year during the drought period to honour the Yakairiti spirits, thereby ensuring cosmic and social order for the different clans.
@@ -2406,7 +2421,7 @@ Calm down! That’s not all, there’s more…<br>That’s right, I’m doing <i
   {
     region: "Southern Cone",
     label: "AMSOPMD",
-    genre: "Hain",
+    title: {original: "Hain"},
     origin: "n.d.",
     group: {people: "Selk'nam", language: "Selk'nam", location: "Tierra del Fuego, CL/AR"},
     info: `The Hain was an initiation ceremony for young Selk’nam men, marking their transition into adulthood, that evolved out of an earlier ceremony of the same name for young women. It involved elaborate rituals, dramatic impersonations of spirits by masked and painted men, and teachings about Selk’nam traditions and social structure. The initiates, called <i>klóketen</i>, would participate in a series of performances that altogether could last anywhere from multiple days to months, or even as long as a year.
@@ -2457,7 +2472,7 @@ The father goes after them, excited.<br>He chases them,<br>following their footp
   {
     region: "North Asia",
     label: "ASNOPMD",
-    genre: {original: "Настунд", transliteration: "Ngastund"},
+    title: {original: "Настунд", transliteration: "Ngastund"},
     origin: "n.d.",
     group: {people: "Nivkh", language: "Nivkh", location: "Sakhalin, RU"},
     info: `Ngastund, also called <i>ngyzit</i> in the Amur dialect, is the East-Sakhalin Nivkh name for the sung epic tale tradition in which performers tell stories in an improvised, melodic style, to musical accompaniment. The instrumentation includes tambourines, ritual rattles, mouth harps, whistles, a one-stringed bowed instrument called a <i>tyngryn</i>, and <i>tyatya chxach</i>, the drum log.
@@ -2483,7 +2498,7 @@ It's been an eternity since then,<br>Yes, too many centuries for the mind to emb
   {
     region: "East Asia",
     label: "ASEAPMD",
-    genre: {original: "能楽", transliteration: "Nōgaku"},
+    title: {original: "能楽", transliteration: "Nōgaku"},
     origin: "c. 14th-c",
     group: {people: "Japanese", language: "Japanese", country: "Japan"},
     info: `Nōgaku theatre had its heyday in the fourteenth and fifteenth centuries, but actually originated in the eighth century when the Sangaku was transmitted from China to Japan. At the time, the term Sangaku referred to various types of performance featuring acrobats, song, and dance as well as comic sketches. Its subsequent adaption to Japanese society led to its assimilation of other traditional art forms.
@@ -2498,7 +2513,7 @@ Kyōgen, on the other hand, relies less on the use of masks and is derived from 
   {
     region: "Southeast Asia",
     label: "ASSEPMD",
-    genre: {original: "ᬕᬫ᭄ᬩᬸᬄ", transliteration: "Gambuh"},
+    title: {original: "ᬕᬫ᭄ᬩᬸᬄ", transliteration: "Gambuh"},
     origin: "c. 15th-c",
     group: {people: "Balinese", language: "Kawi/Balinese", location: "Bali, ID"},
     info: `Gambuh is a form of musical dance drama from Bali, Indonesia, that masterfully blends dance, music, acting, and drama into a captivating theatrical experience. Dating back to the late-Majapahit era (around the 15th century), Gambuh is considered the progenitor of many other forms of Balinese performing arts, including Legong, Topeng masked dance, and Arja opera.
@@ -2526,7 +2541,7 @@ Yes, yes… then be prepared…<br>`,
   {
     region: "Highland Asia",
     label: "ASHIPMD",
-    genre: {original: "ལྷ་མོ", transliteration: "Lhamo"},
+    title: {original: "ལྷ་མོ", transliteration: "Lhamo"},
     origin: "c. 14th-c",
     group: {people: "Tibetan", language: "Tibetan", location: "Tibet, CN"},
     info: `Ache Lhamo, also known as Lhamo, is a comprehensive performing art combining song, dance, storytelling, chant, acrobatics, and religious ritual. Most popular in the Qinghai-Tibetan Plateau, the performance begins with a prayer ceremony, including the cleansing of the stage by hunters and blessings by the elder, and concludes with another blessing.
@@ -2540,7 +2555,7 @@ Rooted in Buddhist teachings, the stories told in Lhamo recount the triumph of g
   {
     region: "South Asia",
     label: "ASSOPMD",
-    genre: {original: "കൂടിയാട്ടം", transliteration: "Kūṭiyāṭṭaṁ"},
+    title: {original: "കൂടിയാട്ടം", transliteration: "Kūṭiyāṭṭaṁ"},
     origin: "c. 15th-c",
     group: {people: "Malayali", language: "Sanskrit", location: "Kerala, IN"},
     info: `Kutiyattam is a traditional performing art from Kerala, India, representing a local Malayalam synthesis of classical Sanskrit theatre and Tamil Koothu drama. Its origins lie in the works of 9th-century playwright-king Kulasekhara, and it was further formalized in the 15th century to its contemporary form.
@@ -2557,7 +2572,7 @@ After a revival in the early 20th century, Kutiyattam is once again facing a lac
   {
     region: "West Asia",
     label: "ASWEPMD",
-    genre: {original: "تعزیه", transliteration: "Ta‘zīeh"},
+    title: {original: "تعزیه", transliteration: "Ta‘zīeh"},
     origin: "c. 17th-c",
     group: {people: "Persian", language: "Persian", country: "Iran"},
     info: `Ta‘zieh is a ritual dramatic art that recounts religious events, historical and mythical stories, and folk tales. Each performance has four elements: poetry, music, song, and movement.
@@ -2573,7 +2588,7 @@ Its flexibility has led it to become a common language for different communities
   {
     region: "Central Asia",
     label: "ASCEPMD",
-    genre: {original: "Дастан", transliteration: "Dastan"},
+    title: {original: "Дастан", transliteration: "Dastan"},
     origin: "c. 13th-c",
     group: {people: "Kyrgyz", language: "Kyrgyz", country: "Kyrgyzstan"},
     info: `Dastan, from the Persian word for a story or tale, is an ornate form of oral epic narrative maintained by the Kyrgyz, as well as other neighboring Central Asian peoples. The narrative form expresses the historical memory of the Kyrgyz people and survives thanks to a community of epic tellers, both women and men, of all ages.
@@ -2593,7 +2608,7 @@ Reaching with my right hand,<br>I grasped the sun for myself.<br>Reaching with m
   {
     region: "Inner Asia",
     label: "ASINPMD",
-    genre: {original: "ᡠᠶᡠᠨ", transliteration: "Uyun"},
+    title: {original: "ᡠᠶᡠᠨ", transliteration: "Uyun"},
     origin: "n.d.",
     group: {people: "Manchu", language: "Manchu", location: "Jilin, CN"},
     info: `The Manchu term for shamanistic song is <i>angga gisun</i>, usually sung while dancing and accompanied by percussion instruments, thus making it a total performing art that integrates music, dance, and poetry.
@@ -2622,9 +2637,55 @@ Flying Tiger God, you can no longer play; now you can come down and go back!`,
     textURL: ""
   },
   {
+    region: "Eastern Europe",
+    label: "EUEAPMD",
+    title: {original: "Leelo"},
+    origin: "c. 11th-c",
+    group: {people: "Seto", language: "Võro-Seto", country: "Estonia"},
+    info: `For the Seto community living in southeastern Estonia and the Pechory district of the Russian Federation, the tradition of <i>leelo</i>, an ancient polyphonic singing tradition, is a cornerstone of contemporary identity.
+Performed to traditional melodies and in traditional costume, leelo features a lead singer who delivers a verse line followed by a choir that joins in for the final syllables and then repeats the whole line. Although lyrics are sometimes learned from former great performers, skill in composition is the mark of an excellent lead singer. Most choirs are composed wholly of women, and the most notable lead singer is crowned on Seto Kingdom Day as the King’s “Mother of Song”.
+Singing formerly accompanied nearly all daily activities in the Seto’s rural communities; today, although it is increasingly restricted to stage performance, the tradition remains prominently alive in community events as a central, vibrant and highly valued element of Seto culture. Popular among tourists and a source of pride for the Seto, leelo choirs are the hubs of their community and the embodiment of local identity.`,
+    excerpt: `<s>Sõnolist (Lead)—</s>
+If I were to sing a song,
+<s>Torrõ (Choir)—</s>
+If I were to sing a song,
+<s>Sõnolist—</s>
+I would wash the night away,
+<s>Torrõ—</s>
+I would wash the night away,
+<i>(The </i><s>Sõnolist</s><i> and </i><s>Torrõ</s><i> repeat every line in this way, </i><s>Torrõ</s><i> harmonizing on the repetition.)</i>
+<s>Sõnolist—</s>
+I would sing a song on the sea,<br>Piusa would be on the perpája area,<br>the sea would be salty,<br>the sea would be buttery.
+What was on the sea bank,<br>what was on the Piusa bank?<br>Five trees grew there,<br>six trees grew there,<br>there was a <i>makõmar'a'</i>,<br>a <i>makõ-ks-mar'a'</i>, with a honey hole.
+What did the <i>makõmar'a'</i> taste like,<br>with a honey-<i>ka-ts'a'</i>, a <i>tsälgutölli</i>?<br>The face was in the air,<br>sitting on the air bank,<br>the moon was on the golden side.<br>Come two <i>makõmar'a</i>,<br>with a honey hole.
+[Whose house is the house of the savior,<br>whose house is the house of the savior?<br>The house of the savior,<br>the house of the savior.]
+I wonder, I say, from my heart,<br>I say, from my heart:<br>“Come home, you daughter,<br>Come home, you henhouse,<br>Come milk the cows,<br>Come milk the herd of cattle!”
+I say, from my heart,<br>I say, from my heart:<br>“Come, you gentle one,<br>Mother’s barn,<br>Let me milk the cow,<br>Let me get the black stallion –<br>Let me milk the cow,<br>Kill the black stallion!”
+Sit without me, I roll on,<br>On the moon, on the golden side.<br>Who will call you home,<br>"Come home, my dear, come in<br>The house is called by the lion,<br>the house is called by the lion:<br>“Come to the house, you <i>tsitshak</i>,<br>the house is called by the lion!<br>The house is called by the lion,<br>the house is called by the lion!”<br>“The house is called by the lion,<br>the house is called by the lion!”
+I am sitting on the floor without a wheel,<br>the moon is on the floor with a golden pole.<br>Who is the house called by the lion,<br>who is the house called by the lion?<br>The younger brother came to the house,<br>“Come home, you sister-in-law,<br>come home, you lover-in-law!”<br>The hummingbird caught the bird,<br>it caught our swill.<br>Come home, you two hours,<br>come home, you two years!”
+The younger brother,<br>the “Yes-ah, I'll go home,<br>go to your house, you little bitch!”`,
+    infoURL: "https://youtu.be/mSXcYph-ODc",
+    mediaURL: "https://youtu.be/wUAxUie5lqc",
+    textURL: "https://laul-setomaa-ee.translate.goog/en/song/uibonaeio?_x_tr_sl=et&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp"
+  },
+  {
+    region: "Western Europe",
+    label: "EUWEPMD",
+    title: {original: "Opera"},
+    origin: "c. 16th-c",
+    group: {people: "Italian", language: "Italian", country: "Italy"},
+    info: `Opera is a traditional Italian performing art, popular throughout Europe, featuring a combination of music, drama, acting, and staging. Its roots trace back to late-16th-century Florence, where a group of intellectuals, musicians, and poets called the Florentine Camerata sought to reconstruct ancient Greek theater on the premise that its works were all originally sung.
+The knowledge and skills related to Italian opera singing, a technique called <i>bel canto</i>, are transmitted orally between a <i>maestro</i> and pupil through vocal exercises and the gradual introduction of different musical repertoires and styles. Performances in recitals, singing schools, and workshops also contribute to the transmission of the practice, as well as formal education in conservatories and academies. Furthermore, the beginning of an opera season often coincides with local festivities and ceremonies.
+The practice promotes collective cohesion and sociocultural memory, and is closely linked with other cultural elements, such as acoustic places and poetry. It is also dependent on other professions such as stage and light design, costume tailoring, scenography, and makeup. A means of expression and intergenerational dialogue, its cultural value is recognized at national and international levels.`,
+    excerpt: ``,
+    infoURL: "https://youtu.be/7oMZKERz3fM",
+    mediaURL: "https://youtu.be/y3jgu-adx8w?start=12",
+    textURL: "https://youtu.be/5swPxWApL0A"
+  },
+  {
     region: "Australia",
     label: "OCAUPMD",
-    genre: "Buŋgul",
+    title: {original: "Buŋgul"},
     origin: "n.d.",
     group: {people: "Yolŋu", language: "Yolŋu Matha", location: "Arnhem Land, AU"},
     info: `Buŋgul is the name of both the Yolŋu ceremony comprised of <i>manikay</i> traditional songs, dances, and ritual practices, as well as the gathering place in which such performances are held.
@@ -2687,55 +2748,9 @@ Djiliwirri is standing, home for us all<br>Into my bark, the Lance<br>I am of th
     textURL: ["https://www.degruyterbrill.com/document/doi/10.1515/pdtc-2018-0027/html","https://ses.library.usyd.edu.au/bitstream/handle/2123/20376/CD6%20Walakandha%20Wangga.pdf#page=32"]
   },
   {
-    region: "Eastern Europe",
-    label: "EUEAPMD",
-    genre: "Leelo",
-    origin: "c. 11th-c",
-    group: {people: "Seto", language: "Võro-Seto", country: "Estonia"},
-    info: `For the Seto community living in southeastern Estonia and the Pechory district of the Russian Federation, the tradition of <i>leelo</i>, an ancient polyphonic singing tradition, is a cornerstone of contemporary identity.
-Performed to traditional melodies and in traditional costume, leelo features a lead singer who delivers a verse line followed by a choir that joins in for the final syllables and then repeats the whole line. Although lyrics are sometimes learned from former great performers, skill in composition is the mark of an excellent lead singer. Most choirs are composed wholly of women, and the most notable lead singer is crowned on Seto Kingdom Day as the King’s “Mother of Song”.
-Singing formerly accompanied nearly all daily activities in the Seto’s rural communities; today, although it is increasingly restricted to stage performance, the tradition remains prominently alive in community events as a central, vibrant and highly valued element of Seto culture. Popular among tourists and a source of pride for the Seto, leelo choirs are the hubs of their community and the embodiment of local identity.`,
-    excerpt: `<s>Sõnolist (Lead)—</s>
-If I were to sing a song,
-<s>Torrõ (Choir)—</s>
-If I were to sing a song,
-<s>Sõnolist—</s>
-I would wash the night away,
-<s>Torrõ—</s>
-I would wash the night away,
-<i>(The </i><s>Sõnolist</s><i> and </i><s>Torrõ</s><i> repeat every line in this way, </i><s>Torrõ</s><i> harmonizing on the repetition.)</i>
-<s>Sõnolist—</s>
-I would sing a song on the sea,<br>Piusa would be on the perpája area,<br>the sea would be salty,<br>the sea would be buttery.
-What was on the sea bank,<br>what was on the Piusa bank?<br>Five trees grew there,<br>six trees grew there,<br>there was a <i>makõmar'a'</i>,<br>a <i>makõ-ks-mar'a'</i>, with a honey hole.
-What did the <i>makõmar'a'</i> taste like,<br>with a honey-<i>ka-ts'a'</i>, a <i>tsälgutölli</i>?<br>The face was in the air,<br>sitting on the air bank,<br>the moon was on the golden side.<br>Come two <i>makõmar'a</i>,<br>with a honey hole.
-[Whose house is the house of the savior,<br>whose house is the house of the savior?<br>The house of the savior,<br>the house of the savior.]
-I wonder, I say, from my heart,<br>I say, from my heart:<br>“Come home, you daughter,<br>Come home, you henhouse,<br>Come milk the cows,<br>Come milk the herd of cattle!”
-I say, from my heart,<br>I say, from my heart:<br>“Come, you gentle one,<br>Mother’s barn,<br>Let me milk the cow,<br>Let me get the black stallion –<br>Let me milk the cow,<br>Kill the black stallion!”
-Sit without me, I roll on,<br>On the moon, on the golden side.<br>Who will call you home,<br>"Come home, my dear, come in<br>The house is called by the lion,<br>the house is called by the lion:<br>“Come to the house, you <i>tsitshak</i>,<br>the house is called by the lion!<br>The house is called by the lion,<br>the house is called by the lion!”<br>“The house is called by the lion,<br>the house is called by the lion!”
-I am sitting on the floor without a wheel,<br>the moon is on the floor with a golden pole.<br>Who is the house called by the lion,<br>who is the house called by the lion?<br>The younger brother came to the house,<br>“Come home, you sister-in-law,<br>come home, you lover-in-law!”<br>The hummingbird caught the bird,<br>it caught our swill.<br>Come home, you two hours,<br>come home, you two years!”
-The younger brother,<br>the “Yes-ah, I'll go home,<br>go to your house, you little bitch!”`,
-    infoURL: "https://youtu.be/mSXcYph-ODc",
-    mediaURL: "https://youtu.be/wUAxUie5lqc",
-    textURL: "https://laul-setomaa-ee.translate.goog/en/song/uibonaeio?_x_tr_sl=et&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp"
-  },
-  {
-    region: "Western Europe",
-    label: "EUWEPMD",
-    genre: "Opera",
-    origin: "c. 16th-c",
-    group: {people: "Italian", language: "Italian", country: "Italy"},
-    info: `Opera is a traditional Italian performing art, popular throughout Europe, featuring a combination of music, drama, acting, and staging. Its roots trace back to late-16th-century Florence, where a group of intellectuals, musicians, and poets called the Florentine Camerata sought to reconstruct ancient Greek theater on the premise that its works were all originally sung.
-The knowledge and skills related to Italian opera singing, a technique called <i>bel canto</i>, are transmitted orally between a <i>maestro</i> and pupil through vocal exercises and the gradual introduction of different musical repertoires and styles. Performances in recitals, singing schools, and workshops also contribute to the transmission of the practice, as well as formal education in conservatories and academies. Furthermore, the beginning of an opera season often coincides with local festivities and ceremonies.
-The practice promotes collective cohesion and sociocultural memory, and is closely linked with other cultural elements, such as acoustic places and poetry. It is also dependent on other professions such as stage and light design, costume tailoring, scenography, and makeup. A means of expression and intergenerational dialogue, its cultural value is recognized at national and international levels.`,
-    excerpt: ``,
-    infoURL: "https://youtu.be/7oMZKERz3fM",
-    mediaURL: "https://youtu.be/y3jgu-adx8w?start=12",
-    textURL: "https://youtu.be/5swPxWApL0A"
-  },
-  {
     region: "Madagascar",
     label: "OCMDPMD",
-    genre: "Hiragasy",
+    title: {original: "Hiragasy"},
     origin: "c. 18th-c",
     group: {people: "Merina", language: "Malagasy", country: "Madagascar"},
     info: `Hiragasy is a performing art composed of song, dance, and speech. Originating in the central highlands of Madagascar, the performance takes place in public spaces. It generally involves two troupes and lasts about one hour and thirty minutes, following a standard structure, including drumming, greetings, storytelling, dance, and folk songs.
@@ -2756,7 +2771,7 @@ We'll change the subject.<br>We'll talk about Hira Gasy.<br>We're here, the two 
   {
     region: "Melanesia",
     label: "OCMLPMD",
-    genre: "Kesawaga",
+    title: {original: "Kesawaga"},
     origin: "c. 20th-c",
     group: {language: "Tok Pisin", people: "Kiriwina", location: "Trobriand Islands, PNG"},
     info: `Kesawaga, also known as Kiriwina ballet or folk opera, is a form of musical dance drama developed by the Raun Raun Theatre in Port Moresby, Papua New Guinea, with Trobriand poet John Kasaipwalova, based on the Daio dances of the Morema villages on Fergusson Island in Milne Bay Province.
@@ -2798,7 +2813,7 @@ That is good.
   {
     region: "Micronesia",
     label: "OCMCPMD",
-    genre: "Chelitakl Rechuodel",
+    title: {original: "Chelitakl Rechuodel"},
     origin: "n.d.",
     group: {people: "Palauan", language: "Palauan", country: "Palau"},
     info: `Chelitakl Rechuodel, the traditional chants, music, and dances of Palau, encompass a vast and diverse body of oral tradition performed through <i>chelitakl</i> (song) and dance. Contrasted with <i>beches chelitakl</i> (modern music), these performances are distinguished by their ancient origins and distinctive vocal style.
@@ -2812,7 +2827,7 @@ The practitioners of Chelitakl Rechuodel are the Palauan community as a whole, w
   {
     region: "Polynesia",
     label: "OCPLPMD",
-    genre: "Haka",
+    title: {original: "Haka"},
     origin: "n.d.",
     group: {people: "Māori", language: "Māori", country: "New Zealand"},
     info: `Haka is a traditional Maori performing art, typically performed in unison by a <i>kapa haka</i> group. It is characterized by vigorous, rhythmic movements of the entire body, stamping of the feet, and stylized gestures. A central feature is the chanted vocal accompaniment, delivered with powerful rhythm and intonation.
@@ -3208,7 +3223,7 @@ When she awoke, the storm was yet raging, and the voices of the gods were heard 
   {
     region: "Great Plains",
     label: "AMINFRT",
-    title: "Ceremonies of the Pawnee",
+    title: {original: "Ceremonies of the Pawnee"},
     group: {people: "Pawnee", language: "Pawnee", religion: "Pawnee religion", location: "Nebraska, US"},
     info: `At the sound of the first thunder in spring, the keeper of the sacred bundle (the <+><i>chúharipiru</i>[from "chuhuru" meaning rainstorm and "ripiru" meaning wrapped up]</+>) must immediately open it with the proper procedure and make an offering of dried bison meat to the west, the direction of the Evening Star, the home of the thunderers, from whence the powers of the bundle comes. This offering is burned, but after the ceremony the remaining meat is cooked and served from the ceremonial earth lodge (pictured).
 Such is a common feature of spiritual life across the Skidí, Chauí, Kit'kaháxki, and Pítahauírata Pawnee. The songs and stories from Pawnee ceremonial rites were documented extensively in the 1921 book <i>Ceremonies of the Pawnee</i> by James Rolfe Murie, born Ri·tahkacihari' ("Young Eagle"), the son of a Skiri Pawnee mother and an uninvolved Scottish father. Murie was fluent in Pawnee, English, and Arikara.`,
@@ -3253,7 +3268,7 @@ The black beaver went through the same performance, only some of the sleight-of-
   {
     region: "American Southwest",
     label: "AMSWFRT",
-    title: "The Messiah Letter",
+    title: {original: "The Messiah Letter"},
     author: "Wovoka",
     group: {people: "Paiute", language: "Numu", religion: "Nanigukwa", location: "Nevada, US"},
     info: `Wovoka, who popularized the Nanigukwa (Ghost Dance, lit. "dance in a circle"), was born in western Nevada around 1856. His father Numu-tibo'o was a follower of Wodziwob, the founder of the Nanigukwa. At the age of about thirty, Wovoka began to make prophecies about the end of Euro-American dominance of the region and a return to an idyllic past. These prophecies centered on the actions of the movement's followers, whom Wovoka claimed must live a moral life and perform the Ghost Dance in order for his predictions to come true.
@@ -3440,7 +3455,7 @@ The zemi Opiyelguobinin has four feet, like a dog, and is made of wood, and ofte
   {
     region: "Andean America",
     label: "AMWEFRT",
-    title: "Huarochirí Manuscript",
+    title: {original: "Huarochirí Manuscript"},
     group: {people: "Quechua", language: "Quechua", religion: "Wakanism", country: "Peru"},
     info: `The religious landscape of the Andean region is influenced by a variety of overlapping traditions, including: <i>curanderismo</i>, organized around physicians and spirits and most illustratively at the center of religious practices in the rainforests of the east; ancient Huamanism, the cult of the sacred mountains, which emerged as a distinct tradition no later than 8000 BCE out of a deep relationship with the highland terrain; and Wakanism, which originated around 3000 BCE with the advent of urbanized, hierarchical civilization.
 The organized worship of <+><i>waka</i>[sacred places, abnormal beings, idols, sacred plants, the four elements; also written "huaca"]</+> coincided with the domestication of crops and animals and the emergence of monumental architecture in urban ceremonial centers like Caral-Supe and Kotosh. While its scriptures were originally recorded in <+><i>khipu</i>[knotted string writing and numeral system]</+>, 16th-century Christian evangelization efforts resulted in books like the <i>Huarochirí Manuscript</i>, a testament to Andean religion in the Latin script. Although the ongoing colonial period has led to a forcible shift in the terminology and imagery of Wakanist practices, many aspects of traditional religion nonetheless persist through syncretization.`,
@@ -4126,7 +4141,7 @@ Loki said:<br>"Do you recall it, Óðinn, when in ancient days<br>we two blended
   {
     region: "Australia",
     label: "OCAUFRT",
-    title: "Songs of Central Australia",
+    title: {original: "Songs of Central Australia"},
     group: {people: "Arrernte", language: "Arrernte", religion: "Altyerre", location: "Alice Springs, AU"},
     info: `At the creation of the world and through its present and eternal existence is <i>Altyerre</i>, the Dreaming. Just like nighttime dreaming, interpreted in the context of places and progenitors, mediates access to the spiritual and religious domains, Altyerre captures the complex and persistent relationship between the ancestral and dream realms. Such acts of dreaming constitute an objective experience in which time and space are no longer obstacles, and in which information of great importance is gained by the dreamer. The same is true for the sacred songs and narratives that describe the Dreaming, timeless stories of ancestral beings and country also called Altyerre.`,
     excerpt: [
@@ -4414,9 +4429,18 @@ One month later, Yarogonga's wife was with child. Yarogonga made medicine (<i>ta
 The next morning he told the family to cut some wood. They put the wood in his room and Yarogonga worked until he had finished making a fish trap—something that had never existed before. He gave it to his son to look at and told him, "Take this fish trap and put it in the lagoon. When a big log of driftwood comes along you make a different kind of fish trap." And so Yarogonga instructed him from inside his room about how to make another kind of fish trap called <i>uulimorouwel</i> that also had never existed before. After Yarogonga showed his son how to make this fish trap he taught him the chant to use to call drifting logs near the island. He also taught him the magic chant to use before tying the fish trap to the log to prevent sharks from biting him while he was in the water. Now Yarogonga's son understood how to make fish traps and the magic for using them.
 Soon, Yarogonga's brother, Etapwase, came in the form of a tornado to fetch Yarogonga back to his home. Etapwase came into the lagoon late in the day. He came near the island but Yarogonga stood on the beach and blew his shell horn to keep Etapwase from coming to shore. Yarogonga did this because he had not yet finished teaching his son everything that he wanted him to know. Since Yarogonga had no land to give him, he wanted to give his son sacred knowledge (<i>rong</i>). Etapwase came to the island four times, but each time Yarogonga blew on his shell horn and kept him away. All the people watched the tornado in amazement as it waited in the lagoon. Finally, Yarogonga instructed his son in making the proper medicine (<i>tafey</i>) to give to pregnant women. When Yarogonga had finished, Etapwase came to the beach and took Yarogonga away to their home in the sea between the islands.
 <c>(Metzgar 89-91)</c>`],
-    infoURL: ["https://www.micsem.org/pubs/books/Summoning-the-Powers-Beyond.pdf#page=145","https://tekinged.com/books/yapese_dict/dict.pdf","https://www.pacificworlds.com/yap/visitors/gods.cfm","https://www.jstor.org/stable/20703747","https://www.academia.edu/36113755/Traditional_Education_in_Micronesia_A_Case_Study_of_Lamotrek_Atoll_with_Comparative_Analysis_of_the_Literature_on_the_Trukic_Continuum","https://www.fs.usda.gov/psw/publications/documents/psw_gtr249/psw_gtr249.pdf#page=88"],
+    infoURL: "",
     mediaURL: "",
-    textURL: ["https://hdl.handle.net/2027/coo.31924092528151","https://archive.org/details/yap02ml"]
+    textURL: ["https://archive.org/details/yap02ml"],
+    ref: [
+      { id: "muller-yap-1917", type: "book", title: "Yap", shortTitle: "Yap", containerTitle: "Ergebnisse der Südsee-Expedition, 1908-1910", contributors: [ { firstName: "Wilhelm", lastName: "Müller", role: "author" }, { firstName: "Georg", lastName: "Thilenius", role: "editor" } ], pubDate: { year: 1917 }, publisher: "L. Friederichsen & Co.", location: "Hamburg, Germany", volume: "2", issue: "B", url: "https://hdl.handle.net/2027/coo.31924092528151", medium: "Print", meta: { notes: "Part of the 'Ethnographie: Mikronesien' sub-series of the expedition results.", grade: "B", sortKey: "text" } },
+      { id: "dobbin-2011-ch7", type: "chapter", title: "The Old Religion of Yap", containerTitle: "Summoning the Powers Beyond: Traditional Religions in Micronesia", contributors: [ { firstName: "Jay", lastName: "Dobbin", role: "author" } ], pubDate: { year: 2011 }, publisher: "University of Hawaiʻi Press", location: "Honolulu", pages: { start: "145", end: "165", literal: "145-165" }, url: "https://www.micsem.org/pubs/books/Summoning-the-Powers-Beyond.pdf#page=145", meta: { notes: "Chapter 7 of the main volume.", grade: "C", sortKey: "info" } },
+      { id: "jensen-1977", type: "book", title: "Yapese-English Dictionary", contributors: [ { firstName: "John Thayer", lastName: "Jensen", role: "author" }, { firstName: "John Baptist", lastName: "Iou", role: "author" }, { firstName: "Raphael", lastName: "Defeg", role: "author" }, { firstName: "Leo David", lastName: "Pugram", role: "author" } ], pubDate: { year: 1977 }, publisher: "The University Press of Hawaii", location: "Honolulu", isbn: "0824805178", url: "https://tekinged.com/books/yapese_dict/dict.pdf", medium: "Digital PDF Reprint", sortKey: "info" },
+      { id: "pacific-worlds-yap", type: "webpage", title: "Gods", containerTitle: "Pacific Worlds", contributors: [{ organization: "Pacific Worlds & Associates", role: "author" }], pubDate: { year: 2003 }, url: "https://www.pacificworlds.com/yap/visitors/gods.cfm", medium: "Website", meta: { notes: "Part of the indigenous geography project for Yap, Micronesia.", sortKey: "info" } },
+      { id: "aoyama-2001", type: "article", title: "Yapese Concepts of Power and Politics", containerTitle: "The Journal of the Polynesian Society", contributors: [{ firstName: "Toru", lastName: "Aoyama", role: "author" }], pubDate: { year: 2001, month: 6 }, volume: "110", issue: "2", pages: { start: "151", end: "188" }, url: "https://www.jstor.org/stable/20703747", publisher: "The Polynesian Society" },
+      { id: "metzgar-1991", type: "thesis", title: "Traditional Education in Micronesia: A Case Study of Lamotrek Atoll with Comparative Analysis of the Literature on the Trukic Continuum", contributors: [{ firstName: "Eric Harold", lastName: "Metzgar", role: "author" }], pubDate: { year: 1991 }, publisher: "University of California, Los Angeles", location: "Los Angeles, CA", url: "https://www.academia.edu/36113755/Traditional_Education_in_Micronesia...", medium: "Dissertation/PDF", meta: { sortKey: "info" } },
+      { id: "falanruw-2015", type: "report", title: "People, Trees, and Governance on Yap", containerTitle: "Restoring communities after disasters: case studies in the Pacific Islands", contributors: [{ firstName: "Margie", lastName: "Falanruw", role: "author" }], pubDate: { year: 2015 }, publisher: "U.S. Department of Agriculture, Forest Service", version: "General Technical Report PSW-GTR-249", pages: { start: "88", end: "100", literal: "88-100" }, url: "https://www.fs.usda.gov/psw/publications/documents/psw_gtr249/psw_gtr249.pdf#page=88", location: "Albany, CA", meta: { sortKey: "info"} }
+    ]
   },
   {
     region: "Polynesia",
@@ -4461,9 +4485,17 @@ Makemake went back and said to Haua: “Let us go drive the birds to the country
 The tale turns back to the old woman. She stayed in a house at a place called Vai-maho. She taught the people when they took the food out of the oven and when they brought the basket with sweet potatoes into the house that they must say: “Take for Haua, take for Makemake.” For sugar cane, fish, eels, tuna fish, and all the foods, they pronounced the names of Haua and Makemake.
 The tale goes back to the birds of the island. The men went to the island and saw many birds and eggs of the <i>manu-tara</i> (sooty tern). They turned back and landed ashore, they talked to the men, the women, the children. All the tribe went up and built houses at Orongo. They stayed there and celebrated the feast of the house, the feast of the finished house; they pronounced the names of Haua and Makemake. Time passed. The season for the sooty tern eggs arrived. The men went up to Orongo and stayed there. The servants went to the island, the masters remained at Mataveri. The <i>manu-tara</i> laid their eggs. The servant found the first egg of the bird, he took it, he went keeping his hand on the first egg, returning from the island. Therefore another feast of the egg was made after the first one when the birds were driven by Haua and Makemake.
 <c>(Makemake M312-13)</c>`],
-    infoURL: ["https://www.academia.edu/26367160/Ascension_Proposal_for_a_reconstruction_of_Ure_Vaeiko_s_Apai_recitation_Rapa_Nui_Journal_May_2014_","https://en.wikipedia.org/wiki/King_of_Easter_Island","https://en.wikipedia.org/wiki/Rapa_Nui_mythology","http://kohaumotu.org/rongorongo_org/vanaga/a.html","https://www.temarareo.org/TMR-Poroporo.html"],
+    infoURL: ["https://en.wikipedia.org/wiki/Rapa_Nui_mythology","http://kohaumotu.org/rongorongo_org/vanaga/a.html"],
     mediaURL: "",
-    textURL: ["http://kohaumotu.org/rongorongo_org/rosetta/mata0116.html","https://www.academia.edu/36551133/The_Bird_man_Cult_in_the_Rapanui_Rock_Art_and_Oral_Literature","https://babel.hathitrust.org/cgi/pt?id=mdp.39015012116151&seq=332"]
+    textURL: "",
+    ref: [
+      { id: "rjabchikov-rosetta", type: "webpage", title: "The Rosetta Tablet", containerTitle: "Rongorongo.org", contributors: [ { firstName: "Sergei V.", lastName: "Rjabchikov", role: "author" } ], pubDate: { year: 2000 }, url: "http://kohaumotu.org/rongorongo_org/rosetta/mata0116.html", medium: "Webpage / Research Notes", meta: { notes: "A digital decipherment analysis of the 'Mata' inscriptions on the Rosetta tablet.", grade: "C", sortKey: "text" } },
+      { id: "rjabchikov-2018", type: "article", title: "The Bird-man Cult in the Rapanui Rock Art and Oral Literature", containerTitle: "Polynesia Newsletter", contributors: [ { firstName: "Sergei V.", lastName: "Rjabchikov", role: "author" } ], pubDate: { year: 2018 }, volume: "16", pages: { start: "2", end: "32", literal: "2-32" }, url: "https://www.academia.edu/36551133/The_Bird_man_Cult_in_the_Rapanui_Rock_Art_and_Oral_Literature", publisher: "The Sergei Rjabchikov Foundation", medium: "Academic Newsletter", meta: { notes: "An extensive study on the Orongo bird-man cult petroglyphs.", grade: "C", sortKey: "text" } },
+      { id: "thompson-1891", type: "chapter", title: "Te Pito te Henua, or Easter Island", containerTitle: "Report of the United States National Museum for the Year Ending June 30, 1889", contributors: [ { firstName: "William J.", lastName: "Thompson", role: "author" } ], pubDate: { year: 1891 }, publisher: "Government Printing Office", location: "Washington, D.C.", pages: { start: "447", end: "552", literal: "447-552" }, url: "https://babel.hathitrust.org/cgi/pt?id=mdp.39015012116151&seq=332", medium: "Museum Report / Historic Document", meta: { notes: "Sequence 332 corresponds to the historic plates/text of Thompson's seminal 19th-century survey.", grade: "D", sortKey: "text" } },
+      { id: "de-latte-2014", type: "article", title: "Ascension: Proposal for a reconstruction of Ure Vaeiko’s Apai recitation", containerTitle: "Rapa Nui Journal", contributors: [ { firstName: "Martine", lastName: "De Latte", role: "author" } ], pubDate: { year: 2014, month: 5 }, volume: "28", issue: "1", pages: { start: "45", end: "62" }, url: "https://www.academia.edu/26367160/Ascension_Proposal_for_a_reconstruction_of_Ure_Vaeiko_s_Apai_recitation_Rapa_Nui_Journal_May_2014_", medium: "Journal Article", meta: { notes: "Analysis of the 'Apai' recitation recorded by Thompson in 1886.", grade: "B", sortKey: "info" } },
+      { id: "rjabchikov-dictionary-a", type: "webpage", title: "Rapanui-English Dictionary", containerTitle: "Rongorongo.org", contributors: [ { firstName: "Sergei V.", lastName: "Rjabchikov", role: "author" } ], pubDate: { year: 2000 }, url: "http://kohaumotu.org/rongorongo_org/vanaga/a.html", medium: "Webpage / Digital Dictionary", meta: { notes: "Part of the Vanaga section of the Rongorongo site archives.", sortKey: "info" } },
+      { id: "te-mara-reo-poroporo", type: "webpage", title: "Poroporo", containerTitle: "Te Māra Reo (The Language Garden)", contributors: [ { firstName: "Benton", lastName: "Richard", role: "editor" }, { firstName: "Nena", lastName: "Benton", role: "editor" } ], pubDate: { year: 2023 }, url: "https://www.temarareo.org/TMR-Poroporo.html", medium: "Webpage / Ethnobotanical Archive", meta: { notes: "Linguistic and cultural history of the Poroporo (Solanum aviculare/laciniatum) across Polynesia.", sortKey: "info" } }
+    ]
   }
 ];
 export const reccsData = [modTradNovels,stirrPoetry,cultFeatFilms,presMusDrama,foundRelTexts];
