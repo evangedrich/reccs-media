@@ -8,7 +8,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { getTitle } from "../functions/text";
 
-type Collection = { id: string, name: string, type: string, header: string, info?: string };
+type Collection = { id: string, name: string, shortName: string, type: string, header: string, info?: string };
 
 export default function CollectionShelfItems({
     collections,
