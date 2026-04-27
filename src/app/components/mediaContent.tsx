@@ -8,6 +8,7 @@ import { getCitations } from "../functions/citations";
 import { getTitle } from "../functions/text";
 import parse from 'html-react-parser';
 import { preParse } from "../functions/text";
+import { PrepVideo } from "../functions/video";
 
 const allTabs: { id: string, keys: string[] }[] = [
     { id: "info", keys: ["info"] },
@@ -18,9 +19,11 @@ const allTabs: { id: string, keys: string[] }[] = [
     { id: "playlist", keys: ["playlistURL"] },
     { id: "sources", keys: ["ref", "infoURL", "bioURL", "mediaURL", "textURL"] },
 ];
+const citationFormats: string[] = [ "APA", "MLA", "Chicago" ];
 
 export default function MediaContent({ entry }: { entry: any }) {
     const [currentTab, setCurrentTab] = useState("info");
+    const [citeFormat, setCiteFormat] = useState(citationFormats[0])
     const tabs: string[] = allTabs.map(cat => cat.id).filter((cat,i) => (
         allTabs[i].keys.some(
             key => Object.keys(entry).includes(key) && entry[key][0]!==""
@@ -31,12 +34,12 @@ export default function MediaContent({ entry }: { entry: any }) {
         if (currentTab==="info" || currentTab==="excerpt") {
             const text = entry[currentTab];
             content = Array.isArray(text) ? <>{text.map((x,i) => <p key={`p${i}`}>{parse(preParse(x))}</p>)}</> : <p>{parse(text)}</p>;
-        } else if (currentTab==="media") {
-            /* content = newVideoMakerFunction(entry["mediaURL"]) */
+        } else if (currentTab==="media" || currentTab==="trailer") {
+            content = <PrepVideo vid={entry[currentTab==="media"?"mediaURL":"trailer"]} />;
         } else if (currentTab==="playlist") {
             content = <iframe style={{borderRadius:"32px",backgroundColor:"var(--color-mid)"}} src={"https://open.spotify.com/embed/playlist/"+entry.playlistURL.substring(34)+"?utm_source=generator&theme=0"} width="100%" height="352" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>;
         } else if (currentTab==="sources") {
-            if (Object.keys(entry).includes("ref")) { content = <div className={styles.citationContainer}>{getCitations(entry.ref,"APA").map((src,i) => <Markdown key={`cit${i}`}>{src.citation}</Markdown>)}</div>; }
+            if (Object.keys(entry).includes("ref")) { content = <div className={styles.citationContainer}><ul className="flex gap-4 text-xs uppercase mb-3">{citationFormats.map((c,i) => <li key={`cite${i}`} onClick={() => setCiteFormat(c)} className={`${c===citeFormat?"font-extrabold":""} cursor-pointer hover:opacity-80`}>{c}</li>)}</ul>{getCitations(entry.ref,citeFormat).map((src,i) => <Markdown key={`cit${i}`}>{src.citation}</Markdown>)}</div>; }
         }
         return content;
     };

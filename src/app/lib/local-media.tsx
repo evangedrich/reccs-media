@@ -1391,7 +1391,11 @@ export const stirrPoetry = [
     ],
     infoURL: "https://roughghosts.com/2022/03/02/night-falls-slowly-dream-pattering-soles-by-miguelangel-meza/",
     mediaURL: ["https://youtu.be/MkbI5AbrZHc?start=128","https://youtu.be/CIs9yyuxpC8"],
-    textURL: "https://uglyducklingpresse.org/wp-content/uploads/2021/02/978-1-946433-87-9.pdf"
+    textURL: "https://uglyducklingpresse.org/wp-content/uploads/2021/02/978-1-946433-87-9.pdf",
+    ref: [
+      { id: "meza-1985", type: "book", title: "Ita Ha’eñoso (Solitude Abandons Stone)", contributors: [ { firstName: "Miguelángel", lastName: "Meza", role: "author" } ], pubDate: { year: 1985 }, publisher: "Ediciones Taller", location: "Asunción, Paraguay", medium: "Print", meta: { notes: "The first edition of Meza's groundbreaking bilingual poetry collection.", tags: ["Guarani Literature", "Paraguayan Poetry", "Ava Guarani"], sortKey: "text" } },
+      { id: "meza-2018", type: "book", title: "Dream-Pattering Soles (Trilingual Edition)", contributors: [ { firstName: "Miguelángel", lastName: "Meza", role: "author" }, { firstName: "Elisa", lastName: "Taber", role: "translator" } ], pubDate: { year: 2018 }, publisher: "Ugly Duckling Presse", location: "Brooklyn, NY", containerTitle: "2018 Segunda Oficina", isbn: "9781946433138", medium: "Print / Chapbook", meta: { notes: "Trilingual edition (Guaraní/Spanish/English). Includes an introduction by the translator.", tags: ["Indigenous Poetry", "Guaraní", "Brooklyn Publishing", "Chapbook"] } }
+    ]
   },
   {
     region: "North Asia",
@@ -1829,7 +1833,7 @@ export const cultFeatFilms = [
     ],
     infoURL: "https://en.wikipedia.org/wiki/Yeelen",
     watch: "https://www.kanopy.com/en/product/yeelen",
-    trailer: "https://youtu.be/GRlNG9lJ6rs",
+    trailer: "https://youtu.be/cnEUiJOVkiM",
     alt: []
   },
   {
@@ -2466,7 +2470,7 @@ export const presMusDrama = [
     ],
     works: [`<i>A Mvet</i> by Zwé Nguéma`,`<i>The Fang Mvet Epic</i> (Oveng Ndoumou Obame)`,`<i>Mvet Asseng Mbame Ona</i>`,`<i>The Mvet: Man, Death and Immortality</i><br>`],
     infoURL: [],
-    mediaURL: ["https://youtu.be/YKt4eHsTwXU?start=257","https://youtu.be/lVjHjdYeUWg"],
+    mediaURL: ["https://youtu.be/YKt4eHsTwXU?start=257","https://youtu.be/Wpn5L6kmdoY","https://youtu.be/lVjHjdYeUWg"],
     textURL: "",
     ref: [
       { id: "cursus-mvet-2023", type: "article", title: "Understanding the transmission of oral knowledge through the Mvet", containerTitle: "Cursus: L'actualité de la formation à distance", contributors: [ { firstName: "Narcisse", lastName: "Fomekong Djeugou", role: "author" } ], pubDate: { year: 2023, month: 1, day: 30 }, url: "https://cursus.edu/en/26528/understanding-the-transmission-of-oral-knowledge-through-the-mvet", medium: "Online Article", meta: { notes: "An educational overview of the Mvet as both a musical instrument and a pedagogical tool for oral history.", grade: "A", sortKey: "info" } },
