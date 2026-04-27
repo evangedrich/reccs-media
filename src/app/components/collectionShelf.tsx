@@ -12,13 +12,15 @@ export default function CollectionShelf({
     id: string, name: string, type: string, header: string, info?: string
 }[] }): React.ReactNode {
     const [currColl, setCurrColl] = useState(collections[0].id);
+    const bgPatternMobile = "bg-[repeating-linear-gradient(45deg,var(--color-mid)_0px,var(--color-mid)_1px,transparent_1px,transparent_8px)]";
+    const bgPattern = "sm:bg-[repeating-linear-gradient(45deg,transparent_0px,transparent_1px,transparent_1px,transparent_8px)]";
     return (
         <>
-            <div className="flex sm:grow-1 border-b-2 border-[var(--color-front)] sm:justify-start justify-center w-[100vw] overflow-x-hidden">
+            <div className={`flex sm:grow-1 border-b-2 border-[var(--color-front)] sm:justify-start justify-center w-[100vw] overflow-x-hidden ${bgPattern} ${bgPatternMobile}`}>
                 {collections.map((coll,i) => (
                     <React.Fragment key={`${coll.id}shelf`}>
                         <div 
-                            className={`border-x-2 ml-[-2px] border-solid border-[var(--color-front)] cursor-pointer ${i===collections.length-1 ? "mr-[-2px]" : ""} px-4 py-3 group hover:bg-[var(--color-mid)] z-10`} 
+                            className={`border-x-2 ml-[-2px] border-solid border-[var(--color-front)] cursor-pointer ${i===collections.length-1 ? "mr-[-2px]" : ""} px-4 py-3 group hover:bg-[var(--color-mid)] z-10 bg-[var(--color-back)]`} 
                             onClick={() => setCurrColl(coll.id)}
                         >
                             <h1 className={`[writing-mode:vertical-rl] px-2 rounded-sm sm:text-3xl text-xl font-bold ${coll.id===currColl ? /*"bg-[var(--color-front)] text-[var(--color-back)]"*/ "italic font-extrabold" : ""} group-active:opacity-80 truncate`}>{coll.name}</h1>
