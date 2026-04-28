@@ -10,7 +10,7 @@ import { preParse } from "../functions/text";
 export default function CollectionShelf({ 
     collections 
 }: { collections: {
-    id: string, name: string, type: string, header: string, info?: string
+    id: string, name: string, shortName: string, type: string, header: string, info?: string
 }[] }): React.ReactNode {
     const [currColl, setCurrColl] = useState(collections[0].id);
     const bgPatternMobile = "bg-[repeating-linear-gradient(45deg,var(--color-mid)_0px,var(--color-mid)_1px,transparent_1px,transparent_8px)]";

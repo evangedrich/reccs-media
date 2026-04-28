@@ -1,9 +1,8 @@
-import { Syncopate, Noto_Sans, Noto_Emoji } from 'next/font/google';
+import { Syncopate, Noto_Sans } from 'next/font/google';
 import localFont from 'next/font/local';
 
 export const syncopate = Syncopate({ weight: ['400','700'], subsets: ['latin'] });
 export const notoSans = Noto_Sans({ weight: ['300','400','500','600','700','800'], subsets: ['latin'] });
-export const notoEmoji = Noto_Emoji({ weight: ['400'] });
 
 export const juliaMono = localFont({
   src: [
@@ -28,3 +27,14 @@ export const juliaMono = localFont({
   display: 'swap',
 });
 
+export const notoEmoji = localFont({
+  src: [
+    { path: './NotoEmoji/noto-emoji-v62-emoji-300.woff2',     weight: '300', style: 'normal' },
+    { path: './NotoEmoji/noto-emoji-v62-emoji-regular.woff2', weight: '400', style: 'normal' },
+    { path: './NotoEmoji/noto-emoji-v62-emoji-500.woff2',     weight: '500', style: 'normal' },
+    { path: './NotoEmoji/noto-emoji-v62-emoji-600.woff2',     weight: '600', style: 'normal' },
+    { path: './NotoEmoji/noto-emoji-v62-emoji-700.woff2',     weight: '700', style: 'normal' },
+  ],
+  variable: '--font-noto-emoji',
+  display: 'swap',
+});

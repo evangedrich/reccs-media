@@ -6,8 +6,8 @@ import MediaContent from "../components/mediaContent";
 import { getTitle, getByline, isMongol } from "../functions/text";
 
 export async function generateStaticParams() {
-    return reccsData.flat().map(item => ({
-        mediaID: item.label,
+    return reccsData.map(item => ({
+        mediaID: item.id,
     }));
 }
 
@@ -21,7 +21,7 @@ const groupIcons: { people: string, language: string, location: string, country:
 
 export default async function DetailPage({ params }: { params: Promise<{ mediaID: string }> }) {
     const { mediaID } = await params;
-    const entry = reccsData.flat().find(item => item.label===mediaID);
+    const entry = reccsData.find(item => item.id===mediaID);
     const title = getTitle(entry);
     const transliteration = getTitle(entry,"transliteration");
     const translation = getTitle(entry,"translation");
@@ -29,7 +29,7 @@ export default async function DetailPage({ params }: { params: Promise<{ mediaID
     return (
         <div className="w-full h-full flex flex-wrap border-b-2 grow-1">
             <div className="basis-full sm:basis-1/3 px-4 pt-4 sm:pb-4 sm:border-r-2 border-solid border-[var(--color-front)] flex flex-col items-end">
-                <Image src={`/posters/${entry?.label}.jpg`} alt="Media Image" width="300" height="400" className="w-full sm:w-[300px] h-auto sm:sticky sm:top-[calc(var(--header-h)+1rem)] transition-[top]" loading="eager" />
+                <Image src={`/posters/${entry?.id}.jpg`} alt="Media Image" width="300" height="400" className="w-full sm:w-[300px] h-auto sm:sticky sm:top-[calc(var(--header-h)+1rem)] transition-[top]" loading="eager" />
             </div>
             <div className="basis-full sm:basis-2/3 min-w-0">
                 <StickyTitleBar title={title}>
@@ -46,7 +46,7 @@ export default async function DetailPage({ params }: { params: Promise<{ mediaID
                         <ul className="sm:flex gap-x-6 gap-y-1 flex-wrap">
                             {Object.keys(entry?.group ?? {}).map(key => (
                                 <li key={`${key}Text`}>
-                                    <span className={`${notoEmoji.className} ${key==="location" ? "" : "mr-1"}`}>{groupIcons[key]}</span>
+                                    <span className={`${notoEmoji.className} ${key==="location" ? "" : "mr-1"} font-bold`}>{groupIcons[key]}</span>
                                     {entry?.group[key]}
                                 </li>
                             ))}

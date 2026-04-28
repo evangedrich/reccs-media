@@ -4,6 +4,48 @@ import { useRef, useState } from "react";
 
 const externalLinkClass = "text-[var(--color-highlight)] underline";
 
+const platformName = (url: string): string => {
+    if (url.includes("kanopy")) return "Kanopy";
+    if (url.includes("netflix")) return "Netflix";
+    if (url.includes("tv.apple")) return "Apple TV";
+    if (url.includes("amazon")) return "Amazon Prime";
+    if (url.includes("youtu.be")) return "Youtube";
+    if (url.includes("klassiki")) return "Klassiki";
+    if (url.includes("max")) return "HBO Max";
+    if (url.includes("tubitv")) return "Tubi";
+    if (url.includes("vimeo")) return "Vimeo";
+    if (url.includes("archive")) return "Internet Archive";
+    if (url.includes("hoopla")) return "Hoopla";
+    if (url.includes("fawesome")) return "Fawesome";
+    if (url.includes("mubi")) return "MUBI";
+    if (url.includes("hulu")) return "Hulu";
+    if (url.includes("criterion")) return "Criterion";
+    if (url.includes("fandango")) return "Fandango";
+    if (url.includes("vudu")) return "Vudu";
+    if (url.includes("roku")) return "Roku";
+    return url;
+};
+
+export function PrepWatch({ watch }: { watch: string | string[] | undefined }) {
+    if (!watch || (Array.isArray(watch) && watch.length === 0)) {
+        return <div>This movie is not currently streaming.</div>;
+    }
+    const urls = Array.isArray(watch) ? watch : [watch];
+    const hasKanopy = urls.some(u => u.includes("kanopy"));
+    return (
+        <div>
+            This movie is available to watch on{" "}
+            {urls.map((url, i) => (
+                <span key={`wtw${i}`}>
+                    <a href={url} target="_blank" rel="noreferrer" className={externalLinkClass}>{platformName(url)}</a>
+                    {i < urls.length - 2 ? ", " : i === urls.length - 2 ? (urls.length > 2 ? ", and " : " and ") : ""}
+                </span>
+            ))}
+            .{hasKanopy && <> To access Kanopy, check with your local public library.</>}
+        </div>
+    );
+}
+
 const getEmbed = (url: string): React.ReactNode => {
     if (!url || url.length === 0) return <>No media found.</>;
     if (url.substring(8, 16) === "youtu.be") {
@@ -106,11 +148,11 @@ export function PrepVideo({ vid }: { vid: string | string[] }) {
     };
 
     if (urls.length === 1) {
-        return <div className="w-full aspect-video border-2 bg-[var(--color-mid)]">{getEmbed(urls[0])}</div>;
+        return <div className="w-full aspect-video border-2 bg-[var(--color-mid)] rounded-2xl overflow-hidden">{getEmbed(urls[0])}</div>;
     }
 
     return (
-        <div className="relative border-2 bg-[var(--color-mid)]">
+        <div className="relative border-2 bg-[var(--color-mid)] rounded-2xl overflow-hidden">
             <div
                 ref={seriesRef}
                 className="flex overflow-x-scroll snap-x snap-mandatory scroll-smooth"
@@ -145,3 +187,4 @@ export function PrepVideo({ vid }: { vid: string | string[] }) {
         </div>
     );
 }
+

@@ -1,7 +1,6 @@
 export const modTradNovels = [
   {
-    region: "North Africa",
-    label: "AFNOMTN",
+    id: "AFNOMTN",
     title: {original: "ⵍⵡⴰⵍⵉ ⵏ ⵓⴷⵔⴰⵔ", transliteration: "Lwali n udrar", translation: "Saint of the Mountain"},
     author: "Belaïd Ait-Ali",
     group: {people: "Kabyle", language: "Kabyle", country: "Algeria"},
@@ -34,8 +33,7 @@ export const modTradNovels = [
     ]
   },
   {
-    region: "East Africa",
-    label: "AFEAMTN",
+    id: "AFEAMTN",
     title: {original: "Miaha", translation: "Strange Bride"},
     author: "Grace Ogot",
     group: {people: "Luo", language: "Dholuo", country: "Kenya"},
@@ -69,8 +67,7 @@ export const modTradNovels = [
     ]
   },
   {
-    region: "Southern Africa",
-    label: "AFSOMTN",
+    id: "AFSOMTN",
     title: { original: "Nǂisa" },
     author: "Nǂisa",
     group: {people: "!Kung", language: "Juǀ'hoan", country: "Botswana"},
@@ -101,8 +98,7 @@ export const modTradNovels = [
     ]
   },
   {
-    region: "Central Africa",
-    label: "AFCEMTN",
+    id: "AFCEMTN",
     title: {original: "Ebamba", translation: "Mr. Fix-It"},
     author: "Richard Ali A Mutu",
     group: {people: "Congolese", language: "Lingala", country: "DRC"},
@@ -142,8 +138,7 @@ export const modTradNovels = [
     ]
   },
   {
-    region: "West Africa",
-    label: "AFWEMTN",
+    id: "AFWEMTN",
     title: {original: "Ìrèké Oníbùdó", translation: "The Sugarcane of the Guardian"},
     author: "D.O. Fágúnwà",
     group: {people: "Yorùbá", language: "Yorùbá", country: "Nigeria"},
@@ -175,8 +170,7 @@ export const modTradNovels = [
     ]
   },
   {
-    region: "Arctic America",
-    label: "AMNOMTN",
+    id: "AMNOMTN",
     title: {original: "ᓴᓈᖅ", transliteration: "Sanaaq"},
     author: "Mitiarjuk Nappaaluk",
     group: {people: "Inuit", language: "Inuktitut", location: "Nunavik, CA"},
@@ -222,8 +216,7 @@ export const modTradNovels = [
     ]
   },
   {
-    region: "Eastern Woodlands",
-    label: "AMEAMTN",
+    id: "AMEAMTN",
     title: {original: "Medicine Trail"},
     author: "Gladys Tantaquidgeon",
     group: {people: "Mohegan", language: "English", location: "Connecticut, US"},
@@ -248,8 +241,7 @@ export const modTradNovels = [
     ]
   },
   {
-    region: "American Southwest",
-    label: "AMSWMTN",
+    id: "AMSWMTN",
     title: {original: "Sáanii Dahataał", translation: "The Women Are Singing"},
     author: "Luci Tapahonso",
     group: {people: "Diné", language: "Navajo/English", location: "New Mexico, US"},
@@ -279,8 +271,7 @@ export const modTradNovels = [
     ]
   },
   {
-    region: "Pacific Northwest",
-    label: "AMNWMTN",
+    id: "AMNWMTN",
     title: {original: "Haa Shuká", translation: "Our Ancestors"},
     author: "Nora Keix̱wnéi Marks",
     group: {people: "Tlingit", language: "Tlingit", location: "Southeast Alaska, US"},
@@ -303,8 +294,7 @@ export const modTradNovels = [
     ]
   },
   {
-    region: "Great Plains",
-    label: "AMINMTN",
+    id: "AMINMTN",
     title: { original: "Issaatxalúash: Akdúxxiilee", translation: "Two Leggings: A Crow Warrior" },
     author: "Apitisée",
     intermediary: "Robert Yellowtail",
@@ -351,8 +341,7 @@ export const modTradNovels = [
     ]
   },
   {
-    region: "Central America",
-    label: "AMCEMTN",
+    id: "AMCEMTN",
     title: {original: "La otra cara", translation: "The Other Face"},
     author: "Gaspar Pedro González",
     group: {people: "Q'anjob'al Maya", language: "Q'anjob'al/Spanish", country: "Guatemala"},
@@ -398,8 +387,7 @@ export const modTradNovels = [
     ]
   },
   {
-    region: "Caribbean",
-    label: "AMCRMTN",
+    id: "AMCRMTN",
     title: {original: "Panchito: Kasike Wito", translation: "Panchito: Mountain Cacique"},
     author: "Francisco Ramírez Rojas",
     group: {people: "Taíno", language: "Spanish", country: "Cuba"},
@@ -437,8 +425,7 @@ export const modTradNovels = [
     ]
   },
   {
-    region: "Andean America",
-    label: "AMWEMTN",
+    id: "AMWEMTN",
     title: {original: "Phuyup Yawar Waqaynin", translation: "The Bloody Tear of a Cloud"},
     author: "Gladys Camacho Rios",
     group: {people: "Quechua", language: "Quechua II-C", country: "Bolivia"},
@@ -477,8 +464,7 @@ export const modTradNovels = [
     ]
   },
   {
-    region: "Amazonia",
-    label: "AMNEMTN",
+    id: "AMNEMTN",
     title: {original: "Uwíshin", translation: "A Shuar Healer"},
     author: "Alejandro Tsakimp",
     group: {people: "Shuar", language: "Shuar", country: "Ecuador"},
@@ -522,8 +508,7 @@ export const modTradNovels = [
     ]
   },
   {
-    region: "Southern Cone",
-    label: "AMSOMTN",
+    id: "AMSOMTN",
     title: {original: "Chilco", translation: "Wild Fuchsia"},
     author: "Daniela Catrileo",
     group: {people: "Mapuche", language: "Spanish", country: "Chile"},
@@ -552,8 +537,7 @@ export const modTradNovels = [
     ]
   },
   {
-    region: "North Asia",
-    label: "ASNOMTN",
+    id: "ASNOMTN",
     title: {original: "Когда киты уходят", transliteration: "Kogda kity ukhodyat", translation: "When the Whales Leave"},
     author: "Yuri Rytkheu",
     group: {people: "Chukchi", language: "Russian", location: "Chukotka, RU"},
@@ -597,8 +581,7 @@ export const modTradNovels = [
     ]
   },
   {
-    region: "East Asia",
-    label: "ASEAMTN",
+    id: "ASEAMTN",
     title: {
       original: "鱷魚手記",
       transliteration: "È yú shǒu jì",
@@ -633,8 +616,7 @@ export const modTradNovels = [
     ]
   },
   {
-    region: "Highland Asia",
-    label: "ASHIMTN",
+    id: "ASHIMTN",
     title: {original: "ཀར་མ་གི་འཁོར་ལོ་", transliteration: "Circle of Karma"},
     author: "Kunzang Choden",
     group: {people: "Bhutanese", language: "English", country: "Bhutan"},
@@ -674,8 +656,7 @@ export const modTradNovels = [
     ]
   },
   {
-    region: "Southeast Asia",
-    label: "ASSEMTN",
+    id: "ASSEMTN",
     title: {original: "Bumi Manusia", translation: "This Earth of Mankind"},
     author: "Pramoedya Ananta Toer",
     group: {people: "Javanese", language: "Indonesian", location: "Java, ID"},
@@ -716,8 +697,7 @@ export const modTradNovels = [
     ]
   },
   {
-    region: "South Asia",
-    label: "ASSOMTN",
+    id: "ASSOMTN",
     title: {original: "கருக்கு", transliteration: "Karukku"},
     author: "Bama",
     group: {people: "Tamil", language: "Tamil", location: "Tamil Nadu, IN"},
@@ -746,8 +726,7 @@ export const modTradNovels = [
     ]
   },
   {
-    region: "West Asia",
-    label: "ASWEMTN",
+    id: "ASWEMTN",
     title: {original: "بنات الرياض", transliteration: "Banāt al-Riyāḍ", translation: "Girls of Riyadh"},
     author: "Rajaa al-Sanea",
     group: {people: "Arab", language: "Arabic", country: "Saudi Arabia"},
@@ -775,8 +754,7 @@ export const modTradNovels = [
     ]
   },
   {
-    region: "Central Asia",
-    label: "ASCEMTN",
+    id: "ASCEMTN",
     title: {original: "Arosat", translation: "The Railway"},
     author: "Hamid Ismailov",
     group: {people: "Uzbek", language: "Uzbek", country: "Uzbekistan"},
@@ -803,8 +781,7 @@ export const modTradNovels = [
     ]
   },
   {
-    region: "Inner Asia",
-    label: "ASINMTN",
+    id: "ASINMTN",
     title: {original: "Der blaue Himmel", translation: "The Blue Sky"},
     author: "Galsan Tschinag",
     group: {people: "Tuvan", language: "German", country: "Mongolia"},
@@ -839,8 +816,7 @@ export const modTradNovels = [
     ]
   },
   {
-    region: "Eastern Europe",
-    label: "EUEAMTN",
+    id: "EUEAMTN",
     title: {original: "Евгений Онегин", transliteration: "Yevgeniy Onegin", translation: "Eugene Onegin"},
     author: "Alexander Pushkin",
     group: {people: "Russian", language: "Russian", country: "Russia"},
@@ -867,8 +843,7 @@ export const modTradNovels = [
     ]
   },
   {
-    region: "Western Europe",
-    label: "EUWEMTN",
+    id: "EUWEMTN",
     title: {original: "Candide"},
     author: "Voltaire",
     group: {people: "French", language: "French", country: "France"},
@@ -896,8 +871,7 @@ export const modTradNovels = [
     ]
   },
   {
-    region: "Australia",
-    label: "OCAUMTN",
+    id: "OCAUMTN",
     title: {original: "Wangki Ngajukura Jiljingajangka", translation: "My Life in the Desert"},
     author: "Jukuna Mona Chuguna",
     group: {people: "Walmajarri", language: "Walmajarri", location: "Kimberley, AU"},
@@ -930,8 +904,7 @@ export const modTradNovels = [
     ]
   },
   {
-    region: "Madagascar",
-    label: "OCMDMTN",
+    id: "OCMDMTN",
     title: {original: "Lohataona sy Ririnina", translation: "Spring & Winter"},
     author: "Clarisse Ratsifandrihamanana",
     group: {people: "Merina", language: "Malagasy", country: "Madagascar"},
@@ -952,8 +925,7 @@ export const modTradNovels = [
     ]
   },
   {
-    region: "Melanesia",
-    label: "OCMLMTN",
+    id: "OCMLMTN",
     title: {original: "My Mother Calls Me Yaltep"},
     author: "Ignatius Kilage",
     group: {people: "Kulkane", language: "English", location: "Chimbu, PNG"},
@@ -991,8 +963,7 @@ export const modTradNovels = [
     ]
   },
   {
-    region: "Micronesia",
-    label: "OCMCMTN",
+    id: "OCMCMTN",
     title: {original: "Stormed"},
     author: "Paula Quinene",
     group: {people: "CHamoru", language: "English", country: "Guam"},
@@ -1038,8 +1009,7 @@ export const modTradNovels = [
     ]
   },
   {
-    region: "Polynesia",
-    label: "OCPLMTN",
+    id: "OCPLMTN",
     title: {original: "Pōuliuli", translation: "Darkness"},
     author: "Albert Wendt",
     group: {people: "Samoan", language: "English", country: "Samoa"},
@@ -1063,8 +1033,7 @@ export const modTradNovels = [
 ];
 export const stirrPoetry = [
   {
-    region: "North Africa",
-    label: "AFNOSTP",
+    id: "AFNOSTP",
     title: { original: "ⵍⴻⵙ ⵛⵀⴰⵏⵜⵙ ⴷⴻ ⵍⴰ ⵜⴰⵙⵙⴰⵓⵓⵜ", transliteration: "Les chants de la Tassaout", translation: "Songs of the Shilha" },
     author: "Mririda n'Ait Attik",
     group: {people: "Shilha", language: "Tashelhiyt", country: "Morocco"},
@@ -1082,8 +1051,7 @@ export const stirrPoetry = [
     textURL: "https://archive-org.translate.goog/stream/les_chants_de_la_tassaout/book_djvu.txt?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en"
   },
   {
-    region: "East Africa",
-    label: "AFEASTP",
+    id: "AFEASTP",
     title: { original: "𐒖𐒐𐒐𐒗𐒕𐒐 𐒆𐒚𐒑𐒖𐒕", transliteration: "Alleyl dumay", translation: "As night falls" },
     piece: true,
     author: "Raage Ugaas",
@@ -1098,8 +1066,7 @@ export const stirrPoetry = [
     textURL: "https://citylore.org/wp-content/uploads/2022/01/Somalia_Poetry_Raage-Ugaas_Night-Has-Fallen.pdf"
   },
   {
-    region: "Southern Africa",
-    label: "AFSOSTP",
+    id: "AFSOSTP",
     title: {original: "The broken string"},
     piece: true,
     author: "Xa:ä-tin",
@@ -1115,8 +1082,7 @@ export const stirrPoetry = [
     textURL: "https://africanpoems.net/relationships/the-broken-string/"
   },
   {
-    region: "Central Africa",
-    label: "AFCESTP",
+    id: "AFCESTP",
     title: {original: "ꛞ꛰ ꛤ꛰ ꛜꛄ꛰ꛜꛄ꛰ꛄ꛰ꛑ ꛅꚧꚳ꛰ ꛰ꚳꛤꚩꚤꚳ꛰", transliteration: "Lo’ tù lu lulùre pon ntièn", translation: "From Resilient Shadows"},
     author: "Samuel Calvin Gbetnkom",
     group: {people: "Bamum", language: "Bamum", country: "Cameroon"},
@@ -1130,8 +1096,7 @@ export const stirrPoetry = [
     textURL: "https://brittlepaper.com/wp-content/uploads/2022/08/Poetry-Collection-Written-in-Cameroons-Bamum-Script-Translated-in-English-and-French-1.png"
   },
   {
-    region: "West Africa",
-    label: "AFWESTP",
+    id: "AFWESTP",
     title: {original: "Nocturnes"},
     author: "Léopold Sédar Senghor",
     group: {people: "Serer/Fula", language: "French", country: "Senegal"},
@@ -1153,8 +1118,7 @@ export const stirrPoetry = [
     ]
   },
   {
-    region: "Arctic America",
-    label: "AMNOSTP",
+    id: "AMNOSTP",
     title: { original: "ᐃᒪᕕᖕᒧᑦ ᓴᕐᕙᕗᖓ", transliteration: "Imavingmut sarvavunga", translation: "I dive into the ocean" },
     piece: true,
     author: "Uvavnuk",
@@ -1170,8 +1134,7 @@ export const stirrPoetry = [
     textURL: "https://singinghead.wordpress.com/2013/07/18/the-song-of-uvavnuk/"
   },
   {
-    region: "Eastern Woodlands",
-    label: "AMEASTP",
+    id: "AMEASTP",
     title: { original: `Hadíhí:dǫ:s`, translation: "Four Throwing Songs" },
     intermediary: "Chief Joseph Logan",
     group: {people: "Iroquois", language: "Onandaga", location: "New York, US"},
@@ -1210,8 +1173,7 @@ export const stirrPoetry = [
     textURL: "https://drumhop.com/music.php?page=182"
   },
   {
-    region: "American Southwest",
-    label: "AMSWSTP",
+    id: "AMSWSTP",
     title: {original: "Maso Bwikam", translation: "Deer Songs"},
     intermediary: "Felipe S. Molina",
     group: {people: "Yaqui", language: "Yoem Noki", location: "Sonora, MX"},
@@ -1228,8 +1190,7 @@ export const stirrPoetry = [
     textURL: "https://archive.org/details/yaquideersongsma00ever"
   },
   {
-    region: "Pacific Northwest",
-    label: "AMNWSTP",
+    id: "AMNWSTP",
     title: {original: "Spucwpuxlits'lhim", translation: "Milha dance song"},
     piece: true,
     intermediary: "Bella Coola Archives",
@@ -1254,8 +1215,7 @@ export const stirrPoetry = [
     textURL: "https://open.library.ubc.ca/media/stream/pdf/831/1.0094150/1"
   },
   {
-    region: "Great Plains",
-    label: "AMINSTP",
+    id: "AMINSTP",
     title: {original: "Eháŋk’ehaŋ lakȟóta olówaŋ", translation: "Traditional Lakota Songs"},
     intermediary: "Ben Black Bear Sr.",
     group: {people: "Lakȟóta", language: "Lakȟótiyapi", location: "South Dakota, US"},
@@ -1272,8 +1232,7 @@ export const stirrPoetry = [
     textURL: "https://static.wixstatic.com/media/c22729_2f8370f7336c4588b9ca17654cccb987~mv2.jpeg/v1/fill/w_1000,h_1334,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c22729_2f8370f7336c4588b9ca17654cccb987~mv2.jpeg"
   },
   {
-    region: "Central America",
-    label: "AMCESTP",
+    id: "AMCESTP",
     title: { original: "Xon Ahuiyacan", translation: "Be Joyful" },
     piece: true,
     author: "Nezahualcoyōtl",
@@ -1293,8 +1252,7 @@ export const stirrPoetry = [
     textURL: "https://lyricstranslate.com/en/xon-ahuiyacan-be-joyful.html"
   },
   {
-    region: "Caribbean",
-    label: "AMCRSTP",
+    id: "AMCRSTP",
     title: {original: "Kalinago Grammar"},
     intermediary: "Joseph Numa Rat",
     group: {people: "Kalinago", language: "Kalinago", country: "Dominica"},
@@ -1326,8 +1284,7 @@ export const stirrPoetry = [
     textURL: "https://tiboko.com/wp-content/uploads/2023/07/inbound2115691491.pdf"
   },
   {
-    region: "Andean America",
-    label: "AMWESTP",
+    id: "AMWESTP",
     title: { original: "Haray Harawi", translation: "Love Song" },
     piece: true,
     intermediary: "Felipe Guamán Poma de Ayala",
@@ -1348,8 +1305,7 @@ export const stirrPoetry = [
     textURL: "https://victormazzihuaycucho-blogspot-com.translate.goog/2011/04/poesia-quechua-en-guaman-poma-de-ayala.html?_x_tr_sl=es&_x_tr_tl=en&_x_tr_hl=en"
   },
   {
-    region: "Amazonia",
-    label: "AMNESTP",
+    id: "AMNESTP",
     title: { original: "Min ngrere", translation: "Crocodile's chant" },
     piece: true,
     work: { original: "Nhiok", translation: "Nhiok" },
@@ -1372,8 +1328,7 @@ export const stirrPoetry = [
     textURL: "https://folkways-media.si.edu/docs/folkways/artwork/SFW40433.pdf#page=29"
   },
   {
-    region: "Southern Cone",
-    label: "AMSOSTP",
+    id: "AMSOSTP",
     title: { original: "Apu", translation: "Appear" },
     piece: true,
     anthology: { original: "Ita ha'eñoso", translation: "Solitude Abandons Stone" },
@@ -1398,8 +1353,7 @@ export const stirrPoetry = [
     ]
   },
   {
-    region: "North Asia",
-    label: "ASNOSTP",
+    id: "ASNOSTP",
     title: { original: "アイヌ神謡集", transliteration: "Ainu Shin'yōshū", translation: "Ainu Songs of the Gods" },
     intermediary: "Chiri Yukie",
     group: {people: "Horobetsu Ainu", language: "Ainu", location: "Hokkaido, JP"},
@@ -1424,8 +1378,7 @@ export const stirrPoetry = [
     textURL: "https://apjjf.org/chiri-yukie/3026/article"
   },
   {
-    region: "East Asia",
-    label: "ASEASTP",
+    id: "ASEASTP",
     title: { original: "听蜀僧濬弹琴", transliteration: "Tīng shǔ sēng jùn tán qín", translation: "Listening to the Monk Jun Play his Qin" },
     piece: true,
     altTitle: "听蜀僧濬弹琴",
@@ -1448,8 +1401,7 @@ export const stirrPoetry = [
     textURL: "https://baike-baidu-com.translate.goog/item/%E5%90%AC%E8%9C%80%E5%83%A7%E6%BF%AC%E5%BC%B9%E7%90%B4/6964378?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en"
   },
   {
-    region: "Southeast Asia",
-    label: "ASSESTP",
+    id: "ASSESTP",
     title: {original: "โคลงนิราศหริภุญชัย", transliteration: "Khlong nirāt hariphunchai"},
     author: "Mueang Kaeo",
     group: {people: "Thai", language: "Kam Mueang", country: "Thailand"},
@@ -1474,8 +1426,7 @@ export const stirrPoetry = [
     textURL: "https://thesiamsociety.org/wp-content/uploads/1972/03/JSS_060_2g_ManasChitkasem_EmergenceAndDevelopmentOfNiratGenre.pdf"
   },
   {
-    region: "Highland Asia",
-    label: "ASHISTP",
+    id: "ASHISTP",
     title: { original: "मुनामदन", transliteration: "Muna Madan" },
     author: "Laxmi Prasad Devkota",
     group: {people: "Nepali", language: "Nepali", country: "Nepal"},
@@ -1489,8 +1440,7 @@ export const stirrPoetry = [
     textURL: "https://pdfcoffee.com/muna-madan-pdf-free.html"
   },
   {
-    region: "South Asia",
-    label: "ASSOSTP",
+    id: "ASSOSTP",
     title: {original: "कबीर के गीत", transliteration: "Kabīr ke gīt", translation: "Songs of Kabir"},
     author: "Kabīr",
     group: {language: "Sadhukkari", location: "Varanasi, IN"},
@@ -1507,8 +1457,7 @@ export const stirrPoetry = [
     textURL: "https://ajabshahar.com/songs/details/56/Kahaan-Se-Aaya-Kahaan-Jaaoge&title=Kahaan-Se-Aaya-Kahaan-Jaaoge"
   },
   {
-    region: "West Asia",
-    label: "ASWESTP",
+    id: "ASWESTP",
     title: {original: "دیوان حافظ", transliteration: "Dīvān-i Ḥāfiẓ", translation: "Collected Poems of Hāfez"},
     author: "Ḥāfeẓ",
     group: {people: "Persian", language: "Persian", location: "Shiraz, IR"},
@@ -1532,8 +1481,7 @@ export const stirrPoetry = [
     textURL: "https://ia803208.us.archive.org/13/items/HafizOfShirazThirtyPoems/Hafiz-of-shiraz-%20Thirty%20poems_text.pdf#page=23"
   },
   {
-    region: "Central Asia",
-    label: "ASCESTP",
+    id: "ASCESTP",
     title: {original: "Қара Сөздер", transliteration: "Qara Sözder", translation: "Book of Words"},
     author: "Abai",
     group: {people: "Kazakh", language: "Kazakh", country: "Kazakhstan"},
@@ -1550,8 +1498,7 @@ export const stirrPoetry = [
     textURL: "https://www.abaicenter.org/wp-content/uploads/2022/10/abai_selected_poems-1.pdf#page=76"
   },
   {
-    region: "Inner Asia",
-    label: "ASINSTP",
+    id: "ASINSTP",
     title: { original: "ᠴᠠᠭᠠᠨ ᠡᠭᠦᠯᠡ", transliteration: "Tsagaan üül", translation: "White Cloud" },
     piece: true,
     author: "Vanchinbalyn Injinash",
@@ -1576,8 +1523,7 @@ export const stirrPoetry = [
     textURL: ["https://wikisource.org/wiki/%D0%94%D0%BE%D1%80%D0%BD%D0%BE_%D1%81%D0%B0%D0%BB%D1%85%D0%B8%D0%BD_%D1%85%D0%B8%D0%B9%D1%81%D1%82%D2%AF%D0%B3%D1%8D%D0%B9","https://www.biirbeh.mn/index.php?sel=content&f=one&obj_id=6882"]
   },
   {
-    region: "Eastern Europe",
-    label: "EUEASTP",
+    id: "EUEASTP",
     title: {original: "Ύμνοι Θείας Αγάπης", transliteration: "Ímnōi Theíās Agápis", translation: "Hymns of Divine Love"},
     author: "Symeon the New Theologian",
     group: {people: "Byzantine", language: "Greek", location: "Ankara, TR"},
@@ -1601,8 +1547,7 @@ export const stirrPoetry = [
     textURL: "https://godaftergod.wordpress.com/2012/03/17/hymn-25-symeon-the-new-theologian/"
   },
   {
-    region: "Western Europe",
-    label: "EUWESTP",
+    id: "EUWESTP",
     title: {original: "Il Canzoniere", translation: "Song Book"},
     author: "Petrarch",
     group: {people: "Italian", language: "Italian", location: "Arezzo, IT"},
@@ -1622,8 +1567,7 @@ export const stirrPoetry = [
     textURL: "https://cuny.manifoldapp.org/read/the-complete-canzoniere/section/67b7fe59-1bc2-4ecb-9004-6bc5b4914f02"
   },
   {
-    region: "Australia",
-    label: "OCAUSTP",
+    id: "OCAUSTP",
     title: {original: "Bulu Line"},
     author: "George Dyuŋgayan",
     group: {people: "Nyigina", language: "Nyigina", location: "Kimberley, AU"},
@@ -1646,8 +1590,7 @@ export const stirrPoetry = [
     textURL: "https://plumwoodmountain.com/book-review/phillip-hall-reviews-george-dyungayans-bulu-line-a-west-kimberley-song-cycle-by-stuart-cooke-and-eelahroo-long-ago-nyah-looking-mobo-mobo-future-by-lionel-fogarty/"
   },
   {
-    region: "Madagascar",
-    label: "OCMDSTP",
+    id: "OCMDSTP",
     title: {original: "Vieilles chansons des pays d'Imerina", translation: "Old Songs of Imerina Lands"},
     author: "Jean-Joseph Rabearivelo",
     group: {people: "Malagasy", language: "French", country: "Madagascar"},
@@ -1666,8 +1609,7 @@ export const stirrPoetry = [
     textURL: "https://glli-us.org/2021/12/23/the-immortal-poetry-of-madagascars-jean-joseph-rabearivelo/#:~:text=From%20Veilles%20Chansos%20des%20pays%20d%E2%80%99Imerina%20%7CThe%20Old%20Songs%20of%20Imerina%20Lands"
   },
   {
-    region: "Melanesia",
-    label: "OCMLSTP",
+    id: "OCMLSTP",
     title: {original: "Arosi Songs & Incantations"},
     intermediary: "John Saunana",
     group: {people: "Arosi", language: "Arosi", country: "Solomon Islands"},
@@ -1681,13 +1623,16 @@ export const stirrPoetry = [
       `<b>incantation to round up a herd of wild pigs</b>`,
       `What do I say?<br>The maiden who fetches salt water runs an errand<br>she runs to the ridges of Anangari<br>She’ll bring back a herd of pigs.<br>What do I say?<br>The boy who shapes spears runs an errand<br>he runs to the mountain ridges;<br>you bring me a herd of pigs.<br>A herd of pigs, of prize pigs, a herd for slaughter.`
     ],
-    infoURL: ["https://en.wikipedia.org/wiki/John_Saunana","https://www.solomonencyclopaedia.net/biogs/E000675b.htm"],
+    infoURL: ["https://en.wikipedia.org/wiki/John_Saunana"],
     mediaURL: "https://youtu.be/Z0env3FI9Y0?start=201",
-    textURL: "https://png.athabascau.ca/docs/ppp25.pdf"
+    textURL: "",
+    ref: [
+      { id: "saunana-1971", type: "book", title: "Dragon Tree: Arosi Incantations and Songs", shortTitle: "Dragon Tree", contributors: [ { firstName: "John", lastName: "Saunana", role: "author" } ], pubDate: { year: 1971 }, url: "https://png.athabascau.ca/docs/ppp25.pdf", publisher: "Papua New Guinea Centre for Creative Arts", location: "Port Moresby", containerTitle: "Oral History", volume: "1", issue: "10", medium: "Monograph", meta: { notes: "A collection of traditional chants and songs from the Arosi-speaking region, documenting indigenous spiritual and social expressions.", grade: "A", tags: ["Solomon Islands", "Arosi", "Melanesian Folklore", "Incantations"], sortKey: "text" } },
+      { id: "saunana-bio", type: "webpage", title: "Biographical Entry: Saunana, John Selwyn (1945 - 2013)", containerTitle: "Solomon Islands Historical Encyclopaedia 1893-1978", contributors: [ { firstName: "Clive", lastName: "Moore", role: "editor" } ], pubDate: { year: 2013 }, url: "https://www.solomonencyclopaedia.net/biogs/E000675b.htm", publisher: "The University of Queensland", medium: "Online Biographical Entry", meta: { notes: "A comprehensive biography covering his education at UPNG, his political career as Minister for Education, and his literary legacy including the 1980 novel 'The Alternative'.", tags: ["Solomon Islands History", "John Saunana", "Pacific Literature", "Makira"], sortKey: "bio" } }
+    ]
   },
   {
-    region: "Micronesia",
-    label: "OCMCSTP",
+    id: "OCMCSTP",
     title: {original: "Luk-of-Heaven song"},
     piece: true,
     anthology: { original: "the Book of Luelen" },
@@ -1727,8 +1672,7 @@ export const stirrPoetry = [
     textURL: "https://hpo.pohnpeistate.gov.fm/wp-content/uploads/2025/03/The-Book-of-Luelen.pdf#page=63"
   },
   {
-    region: "Polynesia",
-    label: "OCPLSTP",
+    id: "OCPLSTP",
     title: { original: "He Kanikau no Kaʻahumanu", translation: "A Lament for Kaʻahumanu" },
     piece: true,
     author: "Davida Malo",
@@ -1745,8 +1689,7 @@ export const stirrPoetry = [
 ];
 export const cultFeatFilms = [
   {
-    region: "North Africa",
-    label: "AFNOCFF",
+    id: "AFNOCFF",
     title: {original: "ⵜⵉⴳⵎⵎⵉ ⵏ ⵉⴳⵔⴰⵏ", transliteration: "Tigmi n Igren", translation: "House in the Fields"},
     year: "2017",
     group: {people: "Shilha", language: "Tashelhiyt", country: "Morocco"},
@@ -1755,29 +1698,16 @@ export const cultFeatFilms = [
       `The film is a sensitive portrait of a Berber community whose social fabric and centuries-old traditions are gripped by change. With long, portrait-like takes, precise observations of daily life, and strikingly photographed images of the lush green surroundings and the majestic red of the massif, <i>Tigmi n Igren</i> manages to bring a faraway world up astonishingly close.`
     ],
     infoURL: "https://www.berlinale.de/en/2017/programme/201710215.html",
-    watch: "https://www.kanopy.com/en/product/house-fields",
+    watch: ["https://www.kanopy.com/en/product/house-fields","https://vimeo.com/ondemand/houseinthefields"],
     trailer: "https://youtu.be/dVunYbRl2hA",
-    alt: [
-      {
-        region: "North Africa",
-        label: "AFNOCFF1",
-        title: {original: "ⴰⴽⵓⵏⴰⴽ ⵜⴷⴰⵍⴰⵜ ⵜⴰⵀⴰ ⵜⴰⵣⵓⴳⵀⴰⵉ", transliteration: "Akounak Tedalat Taha Tazoughai", translation: "Rain the Color of Blue with A Little Red In It"},
-        year: "2015",
-        group: {people: "Tuareg", language: "Tamasheq", country: "Niger/USA"},
-        info: [
-          `<i>Akounak</i> tells the story of a musician trying to make it against all odds, set against the backdrop of the Tuareg <i>tishoumaren</i> desert blues music scene. The protagonist, real life musician Mdou Moctar, must battle fierce competition from jealous musicians, overcome family conflicts, endure the trials of love, and overcome his biggest rival—himself.`,
-          `An homage to Prince’s 1984 film <i>Purple Rain,</i> the story was written with and for a Tuareg audience by a Euro-American record label executive, drawing from the experiences of Mdou Moctar and his fellow musicians. Carried by stunning musical performances from Mdou, the film is equally a window into modern day Tuareg guitar in the city of Agadez, Niger as it is an experiment in new techniques of cross cultural collaboration, much like the genre of music being documented itself.`,
-          `Though the film’s significant ethnographic and outside observer components disqualify it from being a proper cultural film, its efforts toward honest depictions, its involvement of local (though non-traditional) musicians, and especially its extensive use of the Tamasheq language are sufficient to qualify it as an alternate selection.`
-        ],
-        infoURL: ["https://en.wikipedia.org/wiki/Akounak_Tedalat_Taha_Tazoughai","https://sahelsounds.com/films/akounak-tedalat-taha-tazoughai/"],
-        watch: "",
-        trailer: "https://youtu.be/QHgEuzv-zNA"
-      }
-    ]
+    location: {x: -7.9161, y: 31.0343, name: "High Atlas Mountains"},
+    runtime: 86,
+    genre: ["Drama","Observational"],
+    tags: ["bechdel test"],
+    color: "#8d796e"
   },
   {
-    region: "East Africa",
-    label: "AFEACFF",
+    id: "AFEACFF",
     title: {original: "Supa Modo"},
     year: "2018",
     group: {language: "Swahili", country: "Kenya"},
@@ -1786,28 +1716,32 @@ export const cultFeatFilms = [
       `This moving drama by Kenyan filmmaker Likarion Wainaina, created as part of a master class hosted by the German-Kenyan production collective One Fine Day Films/Ginger Ink, is about the power of the imagination.`
     ],
     infoURL: ["https://en.wikipedia.org/wiki/Supa_Modo","https://www.sinemafocus.com/a-love-letter-to-supa-modo-the-best-kenyan-film-yet/"],
-    watch: "https://www.kanopy.com/en/product/15088228",
+    watch: ["https://www.kanopy.com/en/product/15088228","https://www.hoopladigital.com/title/18660371","https://fawesome.tv/movies/10702648/supa-modo","https://www.amazon.com/gp/video/detail/B0FYQ638HB"],
     trailer: "https://youtu.be/G7ToKioHCoU",
-    alt: []
+    location: {x: 36.6700, y: -1.1600, name: "Kabuku Village"},
+    runtime: 74,
+    genre: ["Drama","Family","Fantasy","Superhero"],
+    tags: ["bechdel test"],
+    color: "#5a949c"
   },
   {
-    region: "Southern Africa",
-    label: "AFSOCFF",
-    title: {original: "Inxeba", translation: "The Wound"},
-    year: "2017",
-    group: {language: "Xhosa", country: "South Africa"},
+    id: "AFSOCFF",
+    title: {original: "Nǃai"},
+    year: "1980",
+    group: {people: "Juǀʼhoansi", language: "Juǀʼhoan", country: "Namibia"},
     info: [
-      `Xolani, a lonely factory worker, joins the men of his community in the mountains of the Eastern Cape to initiate a group of teenage boys into manhood in the Xhosa <i>Ulwaluko</i> ceremony. When a defiant initiate from the city discovers his best kept secret, Xolani’s entire existence begins to unravel.`,
-      `The film is based on a novel by Thando Mgqolozana, who also co-wrote the script, and stars non-binary musician, novelist, and actor Nakhane in a critically-acclaimed performance.`
+      `The Juǀʼhoansi <i>Boyhood</i>, this film depicts 27 years in the life of Nǃai and the changes experienced by her and the members of her ǃKung community across that time. Though ideally the film would have been directed and produced by a Juǀʼhoansi Richard Linklater to be a truly representative feature, the intimate portrayals and captioned translations presented in this work are personal enough to sincerely relate something of the spirit of the Kalahari region.`
     ],
-    infoURL: "https://en.wikipedia.org/wiki/The_Wound_(2017_film)",
-    watch: "https://www.kanopy.com/en/product/wound-0",
-    trailer: "https://youtu.be/ja1QEpgUszo",
-    alt: []
+    watch: ["https://www.kanopy.com/en/product/110328"],
+    trailer: "https://youtu.be/1nLWevhitPM",
+    location: {x: 20.5000, y: -19.6667, name: "Nyae Nyae Region"},
+    runtime: 59,
+    genre: ["Docudrama","Coming-of-Age"],
+    tags: [""],
+    color: "#3d2d2b"
   },
   {
-    region: "Central Africa",
-    label: "AFCECFF",
+    id: "AFCECFF",
     title: {original: "Le silence de la forêt", translation: "The Forest"},
     year: "2003",
     group: {people: "BaAka", language: "Aka/Sango/French", country: "CAF"},
@@ -1816,13 +1750,16 @@ export const cultFeatFilms = [
       `Much of the film was shot in a reconstructed BaAka village-studio near the location of the actual village in which the community that acted in the film resides. It should be noted that though the film features many BaAka actors, it is not itself a work of BaAka cinema but of post-colonial Central African cinema.`
     ],
     infoURL: ["https://en.wikipedia.org/wiki/Le_silence_de_la_for%C3%AAt","https://africultures.com/co-director-of-le-silence-de-la-foret-5698/?utm_source=newsletter&utm_medium=email&utm_campaign=565","https://woyingi.wordpress.com/2011/09/27/film-review-le-silence-de-la-foret-2003/"],
-    watch: "https://www.kanopy.com/en/product/silence-forest",
+    watch: ["https://www.kanopy.com/en/product/silence-forest","https://vimeo.com/ondemand/lesilencedelaforet"],
     trailer: "https://youtu.be/PVLfEqbquN8",
-    alt: []
+    location: {x: 16.3522, y: 2.9423, name: "Dzanga-Sangha Region"},
+    runtime: 93,
+    genre: ["Drama","Social Commentary"],
+    tags: [""],
+    color: "#1f3057"
   },
   {
-    region: "West Africa",
-    label: "AFWECFF",
+    id: "AFWECFF",
     title: {original: "ߦߋ߮ߟߋߣ", transliteration: "Yeelen", translation: "Brightness"},
     year: "1987",
     group: {people: "Bambara", language: "Bambara/Fula", country: "Mali"},
@@ -1832,13 +1769,16 @@ export const cultFeatFilms = [
       `Dir/Scr/Prod <b>SOULEYMANE CISSÉ</b> is regarded as among the first generation of West African filmmakers and has been called his region’s greatest living filmmaker.`
     ],
     infoURL: "https://en.wikipedia.org/wiki/Yeelen",
-    watch: "https://www.kanopy.com/en/product/yeelen",
+    watch: ["https://www.kanopy.com/en/product/yeelen"],
     trailer: "https://youtu.be/cnEUiJOVkiM",
-    alt: []
+    location: {x: -7.6686, y: 14.9961, name: "Dilli, Mali"},
+    runtime: 105,
+    genre: ["Fantasy","Myth","Drama"],
+    tags: [""],
+    color: "#d4a555"
   },
   {
-    region: "Arctic America",
-    label: "AMNOCFF",
+    id: "AMNOCFF",
     title: {original: "ᐊᑕᓈᕐᔪᐊᑦ", transliteration: "Atanarjuat", translation: "The Fast Runner"},
     year: "2001",
     group: {people: "Inuit", language: "Inuktitut", location: "Nunavut, CA"},
@@ -1848,13 +1788,16 @@ export const cultFeatFilms = [
       `Dir/Prod <b>ZACHARIAS KUNUK</b> is the renowned Inuk filmmaker responsible for an extensive Inuktitut-language media presence, with directing, writing, and producing credits on a great variety of North American indigenous cinema, including over 30 films, funding for the IsumaTV multimedia platform, and much more.`
     ],
     infoURL: "https://en.wikipedia.org/wiki/Atanarjuat:_The_Fast_Runner",
-    watch: "https://tv.apple.com/us/movie/umc.cmc.1co9m5b61l1hkihyksjodghe2",
-    trailer: "https://youtu.be/O7vbzmLueAY",
-    alt: []
+    watch: ["https://tv.apple.com/us/movie/umc.cmc.1co9m5b61l1hkihyksjodghe2"],
+    trailer: "https://youtu.be/Wqxjorhxx0Y",
+    location: {x: -81.8000, y: 69.3811, name: "Igloolik"},
+    runtime: 172,
+    genre: ["Epic","Historical Drama","Myth"],
+    tags: [""],
+    color: "#a09a96"
   },
   {
-    region: "Eastern Woodlands",
-    label: "AMEACFF",
+    id: "AMEACFF",
     title: {original: "ᑎᐯᐢᑳᐃ ᓇᑐᐸᓃᒐᑫᐘᐠ", transliteration: "Tipêskâi Natopanîcakêwak", translation: "Night Raiders"},
     year: "2021",
     group: {people: "Cree", language: "Cree/English", country: "Canada"},
@@ -1864,40 +1807,51 @@ export const cultFeatFilms = [
       `Dir/Scr <b>DANIS GOULET</b> is a Cree-Métis filmmaker and screenwriter from Saskatchewan, whose father grew up in the traditional Cree community of Cumberland House.`
     ],
     infoURL: "https://en.wikipedia.org/wiki/Night_Raiders_(2021_film)",
-    watch: "https://www.netflix.com/title/81470716",
+    watch: ["https://www.netflix.com/title/81470716"],
     trailer: "https://youtu.be/dZC_MimYhos",
-    alt: []
+    location: {x: -79.3832, y: 43.6532, name: "Toronto"},
+    runtime: 101,
+    genre: ["Sci-Fi","Thriller","Dystopian"],
+    tags: ["bechdel test"],
+    color: "#6b574e"
   },
   {
-    region: "American Southwest",
-    label: "AMSWCFF",
-    title: {original: "Béeso Dah Yiníłjaa'", translation: "Fistful of Dollars"},
-    year: "2021",
-    group: {people: "Diné", language: "Navajo", location: "Arizona, US"},
-    info: [`<i>Béeso Dah Yiníłjaa’</i> is a version of the 1964 Western film <i>A Fistful of Dollars</i> that has been dubbed entirely in the Navajo language. The project was spearheaded by the Navajo Nation Museum as an effort to preserve and revitalize the language, particularly among younger generations. The film, originally a “spaghetti Western” starring Clint Eastwood, was chosen partly because it does not feature any Native American characters, thus avoiding the often inaccurate or offensive portrayals found in many other films of the genre.`],
-    infoURL: "https://www.npr.org/2021/11/17/1055897665/dubbing-a-fistful-of-dollars-to-spread-the-navajo-language",
-    watch: "",
-    trailer: "https://youtu.be/qvK0_Lg95tg",
-    alt: [
-      {
-        region: "American Southwest",
-        label: "AMSWCFF1",
-        title: {original: "Drunktown's Finest"},
-        year: "2014",
-        group: {people: "Diné", language: "English", location: "New Mexico, US"},
-        info: [
-          `Three young Navajos—an adopted Native girl, a young father-to-be, and a trans woman who dreams of being a model—strive to escape the hardships of life on an Indian reservation. Nizhoni seeks out her past, well after being adopted by a white Christian family; Felixia pursues a spot in the “women of the tribe” calendar; and Sickboy is headed to basic training so he can take care of his soon-to-be-born child.`,
-          `Dir/Scr <b>SYDNEY FREELAND</b> is a Navajo filmmaker born in Gallup, NM, whose work often focuses on portraying authentic and complex stories about the queer and indigenous communities. She named her first feature-length film <i>Drunktown’s Finest</i> in response to a <i>20/20</i> segment on ABC News calling her hometown of Gallup “Drunktown, USA”.`
-        ],
-        infoURL: "https://www.drunktownsfinest.com/about/",
-        watch: "https://vimeo.com/groups/fms620/videos/241461186",
-        trailer: "https://youtu.be/Kl2Yh6YcMBU"
-      }
-    ]
+    id: "AMSWCFF",
+    title: {original: "Drunktown's Finest"},
+    year: "2014",
+    group: {people: "Diné", language: "English", location: "New Mexico, US"},
+    info: [
+      `Three young Navajos—an adopted Native girl, a young father-to-be, and a trans woman who dreams of being a model—strive to escape the hardships of life on an Indian reservation. Nizhoni seeks out her past, well after being adopted by a white Christian family; Felixia pursues a spot in the “women of the tribe” calendar; and Sickboy is headed to basic training so he can take care of his soon-to-be-born child.`,
+      `Dir/Scr <b>SYDNEY FREELAND</b> is a Navajo filmmaker born in Gallup, NM, whose work often focuses on portraying authentic and complex stories about the queer and indigenous communities. She named her first feature-length film <i>Drunktown’s Finest</i> in response to a <i>20/20</i> segment on ABC News calling her hometown of Gallup “Drunktown, USA”.`
+    ],
+    infoURL: "https://www.drunktownsfinest.com/about/",
+    watch: ["https://vimeo.com/groups/fms620/videos/241461186","https://www.amazon.com/gp/video/detail/B01BOD50ME","https://tv.apple.com/us/movie/umc.cmc.16y056hw6kh1w7rhk39069zp6","https://athome.fandango.com/content/browse/details/Drunktown-s-Finest/746741"],
+    trailer: "https://youtu.be/Kl2Yh6YcMBU",
+    location: {x: -108.7426, y: 35.5281, name: "Gallup"},
+    runtime: 95,
+    genre: ["Drama","Coming-of-Age","LGBTQ+"],
+    tags: ["queer","trans","bechdel test"],
+    color: "#b68650"
   },
   {
-    region: "Pacific Northwest",
-    label: "AMNWCFF",
+    id: "AMNWCFF",
+    title: {original: "Małni", translation: "Towards The Ocean, Towards The Shore"},
+    year: "2020",
+    group: {people: "Chinookan", language: "Chinuk Wawa", location: "Oregon, US"},
+    info: [
+      `<i>Małni</i> is poetic, experimental debut feature circling the origin of the death myth from the Chinookan people in the Pacific Northwest. At its center are Sweetwater Sahme and Jordan Mercier, who take separate paths contemplating their afterlife, rebirth, and death.`,
+      `Dir/Scr <b>SKY HOPINKA</b>’s probing questions about humanity’s place on earth and other worlds will have audiences thinking (and dreaming) long after.`
+    ],
+    watch: ["https://www.kanopy.com/en/product/malni-towards-ocean-towards-shore","https://tv.apple.com/us/movie/umc.cmc.3qdjcc9mu1ms5m6es9jyqr3ev","https://www.amazon.com/gp/video/detail/B0BVJSLBWD"],
+    trailer: "https://youtu.be/MiFeVvwkY6I",
+    location: {x: -123.5700, y: 46.1500, name: "Wimahl"},
+    runtime: 82,
+    genre: ["Poetic","Experimental"],
+    tags: [""],
+    color: "#182111"
+  },
+  {
+    id: "AMNWCFF1",
     title: {original: "SG̱aawaay Ḵ'uuna", translation: "Edge of the Knife"},
     year: "2018",
     group: {people: "Haida", language: "Haida", location: "Haida Gwaii, CA"},
@@ -1906,13 +1860,16 @@ export const cultFeatFilms = [
       `With input from Haida Gwaii residents, the screenplay was written in 2015 with an aim to preserve and teach the endangered Haida language.`
     ],
     infoURL: "https://en.wikipedia.org/wiki/Edge_of_the_Knife",
-    watch: "https://tv.apple.com/us/movie/edge-of-the-knife/umc.cmc.8rv2wrgfsz7pvph6aojlsat4",
+    watch: ["https://tv.apple.com/us/movie/edge-of-the-knife/umc.cmc.8rv2wrgfsz7pvph6aojlsat4"],
     trailer: "https://youtu.be/DnbOw5Nuq2U",
-    alt: []
+    location: {x: -132.0000, y: 53.0000, name: "Haida Gwaii"},
+    runtime: 100,
+    genre: ["Historical Drama","Thriller"],
+    tags: [""],
+    color: "#2d3940"
   },
   {
-    region: "Great Plains",
-    label: "AMINCFF",
+    id: "AMINCFF",
     title: {original: "The Unknown Country"},
     year: "2022",
     group: {people: "Oglala", language: "English", location: "South Dakota, US"},
@@ -1922,13 +1879,16 @@ export const cultFeatFilms = [
       `Dir/Scr <b>MORISSA MALTZ</b> assembled a council of women Lily Gladstone, Lainey Bearkiller Shangreaux, and Vanara Taing to devise and perform the story of <i>The Unknown Country</i>.`
     ],
     infoURL: "https://en.wikipedia.org/wiki/The_Unknown_Country",
-    watch: "https://www.amazon.com/gp/video/detail/B0B8PXWGSM/ref=atv_dp_share_cu_r",
+    watch: ["https://www.kanopy.com/en/product/16006763","https://www.amazon.com/gp/video/detail/B0B8PXWGSM","https://www.hoopladigital.com/title/19208197","https://mubi.com/en/us/films/the-unknown-country","https://www.hulu.com/movie/the-unknown-country-4ae7f515-2693-4d62-a75c-187d32f97219"],
     trailer: "https://youtu.be/enT3zQzvhGw",
-    alt: []
+    location: {x: -102.0911, y: 43.3444, name: "Pine Ridge Reservation"},
+    runtime: 85,
+    genre: ["Drama","Road Movie"],
+    tags: ["bechdel test"],
+    color: "#3a3b5c"
   },
   {
-    region: "Caribbean",
-    label: "AMCRCFF",
+    id: "AMCRCFF",
     title: {original: "Garifuna in Peril"},
     year: "2012",
     group: {people: "Garínagu", language: "Garifuna/English", country: "Honduras"},
@@ -1937,13 +1897,16 @@ export const cultFeatFilms = [
       `Naturalistically shot, with debut performances by nearly the entire cast, <i>Garifuna in Peril</i> is the first major feature film with the majority of dialogue in Garifuna, an Arawakan language (with a high number of loanwords from Carib and European languages) indigenous to the Caribbean islands of St. Vincent before its speakers (of mixed West/Central African, Arawakan, and Kalinago ancestry) were deported by the British to Honduras in 1797.`
     ],
     infoURL: "https://en.wikipedia.org/wiki/Garifuna_in_Peril",
-    watch: "https://tubitv.com/movies/341514/garifuna-in-peril",
+    watch: ["https://tubitv.com/movies/341514/garifuna-in-peril"],
     trailer: "https://youtu.be/NQs5m9haasM",
-    alt: []
+    location: {x: -61.2000, y: 13.2500, name: "St. Vincent"},
+    runtime: 99,
+    genre: ["Drama","Educational"],
+    tags: [""],
+    color: "#6e8079"
   },
   {
-    region: "Central America",
-    label: "AMCECFF",
+    id: "AMCECFF",
     title: {original: "Ixcanul", translation: "Volcano"},
     year: "2015",
     group: {people: "Kaqchikel Maya", language: "Kaqchikel", country: "Guatemala"},
@@ -1953,13 +1916,16 @@ export const cultFeatFilms = [
       `Dir/Scr <b>JAYRO BUSTAMENTE</b> is a mestizo filmmaker and screenwriter born and raised in the highlands of Guatemala. <i>Ixcanul</i> is his first feature film, followed by historical horror films <i>La Llorona</i> and <i>Rita</i>.`
     ],
     infoURL: "https://en.wikipedia.org/wiki/Ixcanul",
-    watch: "https://www.kanopy.com/en/product/ixcanul",
+    watch: ["https://www.kanopy.com/en/product/ixcanul","https://www.hoopladigital.com/title/18383725","https://www.amazon.com/gp/video/detail/B01MSYR3W9","https://tv.apple.com/us/movie/umc.cmc.77l4isuuy7250gxzkxlm1zvu4","https://athome.fandango.com/content/browse/details/Ixcanul/832536"],
     trailer: "https://youtu.be/EJfvKnLPqFM",
-    alt: []
+    location: {x: -90.6011, y: 14.3808, name: "Pacaya Volcano"},
+    runtime: 93,
+    genre: ["Drama","Coming-of-Age"],
+    tags: ["bechdel test"],
+    color: "#6d6d8d"
   },
   {
-    region: "Andean America",
-    label: "AMWECFF",
+    id: "AMWECFF",
     title: {original: "Wiñaypacha", translation: "Eternity"},
     year: "2018",
     group: {people: "Aymara", language: "Aymara", country: "Peru"},
@@ -1968,25 +1934,31 @@ export const cultFeatFilms = [
       `Dir/Scr <b>ÓSCAR CATACORA</b> was an Aymara filmmaker, screenwriter, producer, and cinematographer best known for the drama films <i>Wiñaypacha</i> and <i>Yana-Wara</i>. During the production of the latter, he tragically died of appendicitis at the age of 34. His uncle Tito Catacora, who had encouraged his nephew’s interests by accompanying him to filmmaking classes, completed work on Óscar’s two in-progress films posthumously.`
     ],
     infoURL: "https://en.wikipedia.org/wiki/Eternity_(2018_film)",
-    watch: "https://www.amazon.com/Eternity-Vicente-Catacora/dp/B07HR55PK5",
+    watch: ["https://www.amazon.com/Eternity-Vicente-Catacora/dp/B07HR55PK5"],
     trailer: "https://youtu.be/AA3Yo7kcPQ4",
-    alt: []
+    location: {x: -70.4200, y: -13.9100, name: "Allincapac"},
+    runtime: 86,
+    genre: ["Drama","Minimalist"],
+    tags: [""],
+    color: "#593f33"
   },
   {
-    region: "Amazonia",
-    label: "AMNECFF",
+    id: "AMNECFF",
     title: {original: "A Última Floresta", translation: "The Last Forest"},
     year: "2021",
     group: {people: "Yanomami", language: "Yanomamö", location: "Amazonas, BR"},
     info: [`In dense soundscapes and powerful images, alternating between documentary observation and staged sequences, Yanomami spokesperson Davi Kopenawa translates the ideas from his published literary works—especially the landmark <i>A Queda do Céu: Palavra de um Xamã Yanomami</i>—into cinematic form, attempting to combat the growing threats to his community and natural environment through the accessible depiction of traditional narratives and lifestyle.`],
     infoURL: "https://pt.m.wikipedia.org/wiki/A_%C3%9Altima_Floresta",
-    watch: "https://youtu.be/MsUAluISvgE",
+    watch: ["https://youtu.be/MsUAluISvgE"],
     trailer: "https://youtu.be/2tK-5dydqp8",
-    alt: []
+    location: {x: -62.7719, y: 0.4461, name: "Urihipë"},
+    runtime: 77,
+    genre: ["Docufiction","Hybrid","Poetic"],
+    tags: [""],
+    color: "#2A3829"
   },
   {
-    region: "Southern Cone",
-    label: "AMSOCFF",
+    id: "AMSOCFF",
     title: {original: "Eami"},
     year: "2022",
     group: {people: "Ayoreo", language: "Ayoreo", country: "Paraguay"},
@@ -1995,13 +1967,16 @@ export const cultFeatFilms = [
       `Dir/Scr/Prod <b>PAZ ENCINA</b> continues her work of remembrance with an intimate and sensorial approach to the recent history of Paraguay. Eami is a fragmented work, an immersive and hypnotic experience in which the mysticism of nature and its soundscape is interwoven with the perspective of a child.`
     ],
     infoURL: "https://en.wikipedia.org/wiki/Eami",
-    watch: "",
+    watch: ["https://www.amazon.com/gp/video/detail/B0FMQNRBP4"],
     trailer: "https://youtu.be/j_WZGMo9BXo",
-    alt: []
+    location: {x: -59.0000, y: -21.0000, name: "Gran Chaco"},
+    runtime: 83,
+    genre: ["Drama","Experimental","Mythic"],
+    tags: [""],
+    color: "#636341"
   },
   {
-    region: "North Asia",
-    label: "ASNOCFF",
+    id: "ASNOCFF",
     title: {original: "Тойон Кыыл", transliteration: "Toyon kyyl", translation: "The Lord Eagle"},
     year: "2018",
     group: {people: "Sakha", language: "Sakha", location: "Sakha, RU"},
@@ -2010,28 +1985,16 @@ export const cultFeatFilms = [
       `Dir. <b>EDUARD NOVIKOV</b> has made a name for himself as one of the Sakha Republic’s most impressive directors. He is a stalwart figure in the Sakhawood film industry, which outputs around 7-10 feature films per year and features local stories, actors, and culture.`
     ],
     infoURL: ["https://ru.wikipedia.org/wiki/%D0%A6%D0%B0%D1%80%D1%8C-%D0%BF%D1%82%D0%B8%D1%86%D0%B0","https://phmuseum.com/projects/sakhawood"],
-    watch: "https://films.klassiki.online/the-lord-eagle",
+    watch: ["https://films.klassiki.online/the-lord-eagle"],
     trailer: "https://youtu.be/5JVlgU_vV1E",
-    alt: [
-      {
-        region: "North Asia",
-        label: "ASNOCFF1",
-        title: {original: "Сэр' няда", transliteration: "Ser' nyada", translation: "White Moss"},
-        year: "2014",
-        group: {people: "Nenets", language: "Nenets", location: "Yamalia, RU"},
-        info: [
-          `<i>White Moss</i>, also known by its Russian title <i>Belyy yagel</i>, takes place in the Yamalo-Nenets Autonomous Okrug of Russia in Western Siberia, where the Nenets people lead a traditional way of life. A young Nenets man, waiting for his beloved from the mainland, is forced into marriage by his mother. It is a story about loyalty, tradition, and the difficulty of choice.`,
-          `The film is based on the novel of the same name by Nenets author Anna Nerkagi, and features primarily Kalmyk, Buryat, and Yakut lead actors, alongside supporting roles played by Nenets from Yamal, all speaking the Tundra Nenets langauge.`
-        ],
-        infoURL: "https://ru.wikipedia.org/wiki/%D0%91%D0%B5%D0%BB%D1%8B%D0%B9_%D1%8F%D0%B3%D0%B5%D0%BB%D1%8C",
-        watch: ["https://tubitv.com/movies/505928/the-white-moss-belyy-yagel","https://www.dailymotion.com/video/x9pnxk4"],
-        trailer: "https://youtu.be/KVKnN-9czbk"
-      }
-    ]
+    location: {x: 129.1500, y: 66.4166, name: "Yakutia"},
+    runtime: 80,
+    genre: ["Drama","Historical"],
+    tags: [""],
+    color: "#563229"
   },
   {
-    region: "East Asia",
-    label: "ASEACFF",
+    id: "ASEACFF",
     title: {original: "霸王別姬", transliteration: "Bà Wáng Bié Jī", translation: "Farewell, My Concubine"},
     year: "1992",
     group: {people: "Han Chinese", language: "Mandarin", country: "China"},
@@ -2040,57 +2003,52 @@ export const cultFeatFilms = [
       `Dir. <b>CHÉN KĂIGĒ</b> is a Chinese filmmaker and leading figure in the fifth generation of Chinese directors, known for his visual flair and epic storytelling.`
     ],
     infoURL: "https://en.wikipedia.org/wiki/Farewell_My_Concubine_(film)",
-    watch: "https://www.kanopy.com/en/product/farewell-my-concubine",
+    watch: ["https://www.criterionchannel.com/farewell-my-concubine","https://www.hoopladigital.com/movie/farewell-my-concubine-leslie-cheung/17969092","https://www.kanopy.com/en/product/farewell-my-concubine","https://tv.apple.com/us/movie/farewell-my-concubine/umc.cmc.g2avwzc9mvl1h7oo2hms3nfh"],
     trailer: "https://youtu.be/FFiHfDBt9lE",
-    alt: []
+    location: {x: 116.4074, y: 39.9042, name: "Beijing"},
+    runtime: 171,
+    genre: ["Romantic Drama","Historical Epic","LGBTQ+"],
+    tags: ["queer","gay"],
+    color: "#387DB5"
   },
   {
-    region: "Southeast Asia",
-    label: "ASSECFF",
-    title: {original: "Mùi đu đủ xanh", translation: "The Scent of Green Papaya"},
-    year: "1993",
-    group: {people: "Vietnamese", language: "Vietnamese", country: "France"},
+    id: "ASSECFF",
+    title: {original: "โหมโรง", transliteration: "Hom rong", translation: "The Overture"},
+    year: "2004",
+    group: {people: "Thai", language: "Thai", country: "Thailand"},
     info: [
-      `1950s Saigon through the eyes of Mui, a Vietnamese servant girl. At 10 years-old, Mui leaves her village to work for an affluent, troubled family. As she comes of age, Mui finds work in the household of a pianist she has admired since childhood, and finds their relationship growing in complexity.`,
-      `Dir/Scr <b>TRẦN ANH HÙNG</b> left Vietnam at age 12, but returned 16 years later to Hồ Chí Minh City with plans to shoot <i>Mùi đu đủ xanh</i> on location in Vietnam. When accomplishing this proved too cumbersome, the film was instead shot entirely on a soundstage reconstruction of downtown Saigon in Bry-sur-Marne, France.`
+      `<i>Hom rong</i> is a fictionalized account of the life of Luang Pradit Pairoh, a Thai classical music master who lived from the late 19th to mid-20th century. The story follows his journey from childhood to becoming a master of the <i>ranat-ek</i> (Thai xylophone), highlighting the challenges he faces as traditional Thai music struggles against modernization and government bans.`,
+      `Dir/Scr/Prod <b>ITTHISOONTORN VICHAILAK</b> is a Thai filmmaker known for <i>Hom rong</i> (2004), <i>Look Ba Teaw La Sud</i> (1993) and <i>Khon liang chang</i> (1987).`
     ],
-    infoURL: "https://en.wikipedia.org/wiki/The_Scent_of_Green_Papaya",
-    watch: ["https://www.kanopy.com/en/product/scent-green-papaya","https://archive.org/details/the.-scent.-of.-green.-papaya.-1993.1080p.-blu-ray.x-264.-aac-yts.-mx"],
-    trailer: "https://youtu.be/q2OfJYvjgQ8",
-    alt: [
-      {
-        region: "Southeast Asia",
-        label: "ASSECFF1",
-        title: {original: "โหมโรง", transliteration: "Hom rong", translation: "The Overture"},
-        year: "2004",
-        group: {people: "Thai", language: "Thai", country: "Thailand"},
-        info: [
-          `<i>Hom rong</i> is a fictionalized account of the life of Luang Pradit Pairoh, a Thai classical music master who lived from the late 19th to mid-20th century. The story follows his journey from childhood to becoming a master of the <i>ranat-ek</i> (Thai xylophone), highlighting the challenges he faces as traditional Thai music struggles against modernization and government bans.`,
-          `Dir/Scr/Prod <b>ITTHISOONTORN VICHAILAK</b> is a Thai filmmaker known for <i>Hom rong</i> (2004), <i>Look Ba Teaw La Sud</i> (1993) and <i>Khon liang chang</i> (1987).`
-        ],
-        infoURL: "https://en.wikipedia.org/wiki/The_Overture",
-        watch: "https://www.kanopy.com/en/product/overture",
-        trailer: "https://youtu.be/xW3yryL6vCw"
-      },
-      {
-        region: "Southeast Asia",
-        label: "ASSECFF2",
-        title: {original: "ប៊ូឌីញ ស", transliteration: "White Building"},
-        year: "2021",
-        group: {people: "Khmer", language: "Khmer", country: "Cambodia"},
-        info: [
-          `A 20-year-old faces the demolition of his lifelong home, the White Building in Phnom Penh, Cambodia, and the pressures from family, friends, and neighbors that arise and intersect in this moment of sudden change.`,
-          `Dir/Scr <b>KAVICH NEANG</b> is a Cambodian filmmaker known for <i>Last Night I Saw You Smiling</i> (2019), <i>White Building</i> (2021) and <i>Three Wheels</i> (2015).`
-        ],
-        infoURL: "https://en.wikipedia.org/wiki/White_Building_(film)",
-        watch: "https://www.amazon.com/gp/video/detail/amzn1.dv.gti.74051ffb-99bd-44e9-9ea9-6dcbdc1dd3de",
-        trailer: "https://youtu.be/Q5nR18GjjuA"
-      }
-    ]
+    infoURL: "https://en.wikipedia.org/wiki/The_Overture",
+    watch: ["https://www.kanopy.com/en/product/overture","https://athome.fandango.com/content/browse/details/The-Overture/4478","https://www.amazon.com/gp/video/detail/B004NSP9GU"],
+    trailer: "https://youtu.be/xW3yryL6vCw",
+    location: {x: 100.5018, y: 13.7563, name: "Bangkok"},
+    runtime: 103,
+    genre: ["Drama","Musical","Period Piece"],
+    tags: [""],
+    color: "#deae73"
   },
   {
-    region: "Highland Asia",
-    label: "ASHICFF",
+    id: "ASSECFF1",
+    title: {original: "ប៊ូឌីញ ស", transliteration: "White Building"},
+    year: "2021",
+    group: {people: "Khmer", language: "Khmer", country: "Cambodia"},
+    info: [
+      `A 20-year-old faces the demolition of his lifelong home, the White Building in Phnom Penh, Cambodia, and the pressures from family, friends, and neighbors that arise and intersect in this moment of sudden change.`,
+      `Dir/Scr <b>KAVICH NEANG</b> is a Cambodian filmmaker known for <i>Last Night I Saw You Smiling</i> (2019), <i>White Building</i> (2021) and <i>Three Wheels</i> (2015).`
+    ],
+    infoURL: "https://en.wikipedia.org/wiki/White_Building_(film)",
+    watch: ["https://www.kanopy.com/en/product/15659152","https://www.amazon.com/gp/video/detail/B0CVR4FXR6"],
+    trailer: "https://youtu.be/Q5nR18GjjuA",
+    location: {x: 104.9282, y: 11.5564, name: "Phnom Penh"},
+    runtime: 90,
+    genre: ["Drama","Urban"],
+    tags: [""],
+    color: "#4a3231"
+  },
+  {
+    id: "ASHICFF",
     title: {original: "ཤམ་བྷ་ལ།", transliteration: "Shambhala"},
     year: "2024",
     group: {people: "Nepali", language: "Nepali/Tibetan", country: "Nepal"},
@@ -2099,13 +2057,33 @@ export const cultFeatFilms = [
       `Dir/Scr <b>MIN BAHADUR BHAM</b> sought with <i>Shambhala</i>, originally titled <i>Chiso Barsha (A Year of Cold)</i>, to make a female-driven travelogue for his second feature film.`
     ],
     infoURL: "https://en.wikipedia.org/wiki/Shambhala_(2024_film)",
-    watch: "",
+    watch: [""],
     trailer: "https://youtu.be/IbT7lt8NZ6k",
-    alt: []
+    location: {x: 82.9167, y: 29.2333, name: "Dolpo Region"},
+    runtime: 150,
+    genre: ["Adventure","Drama","Spiritual"],
+    tags: [""],
+    color: "#a09ca1"
   },
   {
-    region: "South Asia",
-    label: "ASSOCFF",
+    id: "ASHICFF1",
+    title: {original: "ལྷགས་པ་དང་མཉམ་དུ་འགྲོ་བ།", transliteration: "Lhakpa-dang nyam-du dro-wa", translation: "Walking with the Wind"},
+    year: "2017",
+    group: {people: "Ladakhi", language: "Ladakhi", location: "Ladakh, India"},
+    info: [
+      `10-year-old Tsering lives in the Himalayas. One day he accidentally breaks his friend’s school chair. When he decides to bring the chair back to his village, the seven kilometres long journey back home in mountainous landscape on a donkey, becomes even more arduous than usual.`,
+      `During these four days of philosophical journey, the boy explores the social and political realities of adulthood, depicted in a metaphor for the awakening journey, the quest for inner truth and absolute reality.`
+    ],
+    watch: [""],
+    trailer: "https://youtu.be/Cl3-aUW_p54",
+    location: {x: 77.5770, y: 34.1526, name: "Ladakh"},
+    runtime: 79,
+    genre: ["Drama","Coming-of-Age","Minimalist"],
+    tags: [""],
+    color: "#717862"
+  },
+  {
+    id: "ASSOCFF",
     title: {original: "ఆర్‌ఆర్‌ఆర్‌ లేదా రౌద్రం రణం రుధిరంం", transliteration: "RRR: Roudram Ranam Rudhiram", translation: "RRR: Rise Roar Revolt"},
     year: "2022",
     group: {people: "Telugu", language: "Telugu", location: "Telangana, IN"},
@@ -2114,13 +2092,16 @@ export const cultFeatFilms = [
       `Dir/Scr <b>S. S. RAJAMOULI</b>, whose Telugu-language films rank among the most expensive and the highest grossing in India, delivers just about every possible mode of cinematic entertainment in this expansive period action drama.`
     ],
     infoURL: "https://en.wikipedia.org/wiki/RRR",
-    watch: "https://www.netflix.com/title/81476453",
-    trailer: "https://youtu.be/NgBoMJy386M",
-    alt: []
+    watch: ["https://www.netflix.com/title/81476453"],
+    trailer: "https://youtu.be/NgBoMJy386M?t=4",
+    location: {x: 78.6186, y: 19.4629, name: "Adilabad Forest"},
+    runtime: 182,
+    genre: ["Action","Period Drama","Musical Epic"],
+    tags: [""],
+    color: "#627147"
   },
   {
-    region: "West Asia",
-    label: "ASWECFF",
+    id: "ASWECFF",
     title: {original: "أنَاشِيْدُ آدَمَ", transliteration: "Anāshīdu Ādama", translation: "Songs of Adam"},
     year: "2024",
     group: {people: "Arab", language: "Arabic", country: "Iraq"},
@@ -2131,13 +2112,16 @@ export const cultFeatFilms = [
       `Dir/Scr <b>ODAY RASHEED</b>, born 1973, is an Iraqi-American filmmaker, screenwriter, and producer. He made his directorial debut with <i>Underexposure</i> in 2005, which is regarded as the first film filmed in Baghdad during the American occupation. <i>Songs of Adam</i> is his fourth feature film as a director.`
     ],
     infoURL: "https://www.arabiskefilmdager.no/en/film/2025/songs-of-adam",
-    watch: "",
+    watch: [""],
     trailer: "https://youtu.be/PgI2vnCUj2U",
-    alt: []
+    location: {x: 41.5000, y: 33.0000, name: "Anbar Province"},
+    runtime: 93,
+    genre: ["Drama","Spiritual"],
+    tags: [""],
+    color: "#8c735a"
   },
   {
-    region: "Central Asia",
-    label: "ASCECFF",
+    id: "ASCECFF",
     title: {
       original: "Әлемнің мейірімді парықсыздығы",
       transliteration: "Alemnin meyirimdi pariksyzdygy",
@@ -2150,42 +2134,52 @@ export const cultFeatFilms = [
       `Dir/Scr <b>ADILKHAN YERZHANOV</b>, Kazakhstan’s king of the offbeat and the absurd, is at his lyrical best in this tale of innocence corrupted. Yerzhanov’s trademarks—exquisite tableaux, deadpan humour, and humanist heart—are coupled here with a meta-cinematic riff on the western, the noir, and French New Wave.`
     ],
     infoURL: "https://en.wikipedia.org/wiki/The_Gentle_Indifference_of_the_World",
-    watch: "https://films.klassiki.online/the-gentle-indifference-of-the-world",
+    watch: ["https://films.klassiki.online/the-gentle-indifference-of-the-world"],
     trailer: "https://youtu.be/cuGLOAy6PUg",
-    alt: [
-      {
-        region: "Central Asia",
-        label: "ASCECFF1",
-        title: {original: "Бешкемпир", transliteration: "Beshkempir", translation: "Five Grannies"},
-        year: "1998",
-        group: {people: "Kyrgyz", language: "Kyrgyz", country: "Kyrgyzstan"},
-        info: [
-          `A young boy in a rural village discovers he is adopted. The film explores his coming-of-age journey as he navigates childhood mischief, his first crush, and the complex emotions surrounding his true parentage.`,
-          `Dir/Scr <b>AKTAN ABDYKALYKOV</b> is a Kyrgyz filmmaker. The story of <i>Beshkempir</i> is based on his own life, having learned that his mother and father were not his biological parents at age 13.`
-        ],
-        infoURL: "https://en.wikipedia.org/wiki/Beshkempir",
-        watch: "https://youtu.be/aLRTEUqa-q4",
-        trailer: "https://www.facebook.com/100052319903979/videos/beshkempir-1998/344696701371229/"
-      },
-      {
-        region: "Central Asia",
-        label: "ASCECFF2",
-        title: {original: "Мадина", transliteration: "Madina"},
-        year: "2023",
-        group: {people: "Kazakh", language: "Kazakh", country: "Kazakhstan/Pakistan/India"},
-        info: [
-          `In trying to earn a living for her small family—an old grandmother, a withdrawn little brother, and a two-year-old daughter—Madina is ready to go against her moral principles. Her feelings are frozen by a cold winter inside her that seems to never end, until one day her brother makes a shocking revelation. The knowledge of the abuse to which he was subjected as a child changes everything for Madina and breaks the ice that covers her soul. The story is based on the real experiences of lead actress Madina Akylbekov.`,
-          `Dir/Scr/Prod <b>AIZHAN KASSYMBEK</b> is a Kazakh filmmaker whose goal is to empower women in film, such as with the all-women crew of her first film <i>Fire</i> (2021).`
-        ],
-        infoURL: "https://2023.tiff-jp.net/en/lineup/film/3602ASF03",
-        watch: "",
-        trailer: "https://mubi.com/en/films/madina/trailer"
-      }
-    ]
+    location: {x: 77.1444, y: 43.3575, name: "Alatau Steppe"},
+    runtime: 100,
+    genre: ["Drama","Crime","Neo-Noir"],
+    tags: [""],
+    color: "#c46b3b"
   },
   {
-    region: "Inner Asia",
-    label: "ASINCFF",
+    id: "ASCECFF1",
+    title: {original: "Бешкемпир", transliteration: "Beshkempir", translation: "Five Grannies"},
+    year: "1998",
+    group: {people: "Kyrgyz", language: "Kyrgyz", country: "Kyrgyzstan"},
+    info: [
+      `A young boy in a rural village discovers he is adopted. The film explores his coming-of-age journey as he navigates childhood mischief, his first crush, and the complex emotions surrounding his true parentage.`,
+      `Dir/Scr <b>AKTAN ABDYKALYKOV</b> is a Kyrgyz filmmaker. The story of <i>Beshkempir</i> is based on his own life, having learned that his mother and father were not his biological parents at age 13.`
+    ],
+    infoURL: "https://en.wikipedia.org/wiki/Beshkempir",
+    watch: ["https://youtu.be/aLRTEUqa-q4","https://films.klassiki.online/beshkempir"],
+    trailer: "https://youtu.be/C_VoYtZ4hnA",
+    location: {x: 76.5861, y: 42.2472, name: "Bar-Bulak Village"},
+    runtime: 81,
+    genre: ["Drama","Coming-of-Age"],
+    tags: [""],
+    color: "#db8b40"
+  },
+  {
+    id: "ASCECFF2",
+    title: {original: "Мадина", transliteration: "Madina"},
+    year: "2023",
+    group: {people: "Kazakh", language: "Kazakh", country: "Kazakhstan/Pakistan/India"},
+    info: [
+      `In trying to earn a living for her small family—an old grandmother, a withdrawn little brother, and a two-year-old daughter—Madina is ready to go against her moral principles. Her feelings are frozen by a cold winter inside her that seems to never end, until one day her brother makes a shocking revelation. The knowledge of the abuse to which he was subjected as a child changes everything for Madina and breaks the ice that covers her soul. The story is based on the real experiences of lead actress Madina Akylbekov.`,
+      `Dir/Scr/Prod <b>AIZHAN KASSYMBEK</b> is a Kazakh filmmaker whose goal is to empower women in film, such as with the all-women crew of her first film <i>Fire</i> (2021).`
+    ],
+    infoURL: "https://2023.tiff-jp.net/en/lineup/film/3602ASF03",
+    watch: [""],
+    trailer: "https://youtu.be/AQSyLUDVihY",
+    location: {x: 51.1667, y: 43.6500, name: "Aktau City"},
+    runtime: 77,
+    genre: ["Drama","Social Realism"],
+    tags: [""],
+    color: "#49505c"
+  },
+  {
+    id: "ASINCFF",
     title: {original: "Шар нохойн там", transliteration: "Shar nokhoin tam", translation: "Cave of the Yellow Dog"},
     year: "2005",
     group: {people: "Khalkha", language: "Mongolian", country: "Mongolia"},
@@ -2194,13 +2188,16 @@ export const cultFeatFilms = [
       `Dir/Scr <b>BYAMBASUREN DAVAA</b>, born 1971 in Ulaanbaatar, is a Mongolian filmmaker who tells stories embedded in the traditional life of the nomads of her country. The subjects of her movies also serve as amateur actors, playing mostly themselves, which positions her work somewhere between documentary and fiction.`
     ],
     infoURL: "https://en.wikipedia.org/wiki/The_Cave_of_the_Yellow_Dog",
-    watch: "https://youtu.be/6RZlpZCzA3U",
+    watch: ["https://www.kanopy.com/en/product/cave-yellow-dog","https://tubitv.com/movies/294333/cave-of-the-yellow-dog","https://youtu.be/6RZlpZCzA3U"],
     trailer: "https://youtu.be/MRiD5B2rKOg",
-    alt: []
+    location: {x: 93.3000, y: 46.4000, name: "Altai Region"},
+    runtime: 93,
+    genre: ["Drama","Docudrama"],
+    tags: ["bechdel test"],
+    color: "#906b5f"
   },
   {
-    region: "Eastern Europe",
-    label: "EUEACFF",
+    id: "EUEACFF",
     title: {original: "Trzy kolory: Biały", translation: "Three Colours: White"},
     year: "1994",
     group: {people: "Polish", language: "Polish/French", country: "Poland"},
@@ -2209,13 +2206,16 @@ export const cultFeatFilms = [
       `Dir/Scr <b>KRZYSZTOF KIEŚLOWSKI</b> was a filmmaker and screenwriter best known internationally for his television miniseries <i>Dekalog</i> and <i>Three Colors</i> films.`
     ],
     infoURL: "https://en.wikipedia.org/wiki/Three_Colours:_White",
-    watch: "https://www.max.com/movies/three-colors-white/69b9622e-2c90-4694-90f9-feaec2e307c3",
+    watch: ["https://www.max.com/movies/three-colors-white/69b9622e-2c90-4694-90f9-feaec2e307c3","https://www.criterionchannel.com/three-colors-white"],
     trailer: "https://youtu.be/xECEAPfdqic",
-    alt: []
+    location: {x: 21.0122, y: 52.2297, name: "Warsaw"},
+    runtime: 92,
+    genre: ["Comedy-Drama","Mystery"],
+    tags: [""],
+    color: "#363033"
   },
   {
-    region: "Western Europe",
-    label: "EUWECFF",
+    id: "EUWECFF",
     title: {original: "Portrait de la jeune fille en feu", translation: "Portrait of a Lady on Fire"},
     year: "2019",
     group: {people: "French", language: "French", country: "France"},
@@ -2224,13 +2224,16 @@ export const cultFeatFilms = [
       `Dir/Scr <b>CÉLINE SCIAMMA</b> is a French filmmaker and screenwriter known for <i>Portrait de la jeune fille en feu</i> and <i>Petite Maman</i>. A  common theme in Sciamma’s films is the fluidity of gender, sexual identity among girls and women, and the female gaze.`
     ],
     infoURL: "https://en.wikipedia.org/wiki/Portrait_of_a_Lady_on_Fire",
-    watch: "https://www.kanopy.com/en/product/portrait-lady-fire-1",
+    watch: ["https://www.kanopy.com/en/product/portrait-lady-fire-1","https://www.hbomax.com/movies/a6fc9402-a8d2-4056-b309-232eaf78050e","https://tv.apple.com/us/movie/umc.cmc.6vs2ly3786rfgnwhiymmdu8h2","https://athome.fandango.com/content/browse/details/Portrait-of-a-Lady-on-Fire/1321025"],
     trailer: "https://youtu.be/R-fQPTwma9o",
-    alt: []
+    location: {x: -2.9326, y: 48.2020, name: "France"},
+    runtime: 121,
+    genre: ["Period Drama","Romance","LGBTQ+"],
+    tags: ["queer","lesbian","bechdel test"],
+    color: "#78463e"
   },
   {
-    region: "Australia",
-    label: "OCAUCFF",
+    id: "OCAUCFF",
     title: {original: "Biniŋgili-gumbirri girrgili", translation: "Ten Canoes"},
     year: "2006",
     group: {people: "Yolŋu", language: "Djinba", location: "Arnhem Land, AU"},
@@ -2239,13 +2242,16 @@ export const cultFeatFilms = [
       `The film’s dialogue is in the Ganalbingu dialect of the Djinba language, with David Gulplil providing narration in English, though an alternate version of the film exists with narration in his Mandjalpingu dialect.`
     ],
     infoURL: "https://en.wikipedia.org/wiki/Ten_Canoes",
-    watch: "https://youtu.be/2AMmHrFdyBw",
+    watch: ["https://youtu.be/2AMmHrFdyBw","https://www.amazon.com/gp/video/detail/B0F9LNDH49"],
     trailer: "https://youtu.be/tH_MY8FJuYo",
-    alt: []
+    location: {x: 135.0000, y: -12.5000, name: "Arafura Swamp"},
+    runtime: 90,
+    genre: ["Comedy","Drama","Myth"],
+    tags: [""],
+    color: "#6A4A33"
   },
   {
-    region: "Madagascar",
-    label: "OCMDCFF",
+    id: "OCMDCFF",
     title: {original: "Rehefa mihaona ny ranomasina sy ny kintana", translation: "When the Stars Meet the Sea"},
     year: "1996",
     group: {language: "Malagasy", country: "Madagascar"},
@@ -2254,13 +2260,16 @@ export const cultFeatFilms = [
       `Dir/Scr <b>RAYMOND RAJAONARIVELO</b> is a notable Malagasy film director best known for his films <i>Quand les étoiles rencontrent la mer</i> and <i>Taba Taba</i>.`
     ],
     infoURL: "https://letterboxd.com/film/when-the-stars-meet-the-sea",
-    watch: "https://www.kanopy.com/en/product/quand-les-etoiles-rencontrent-la-mer",
+    watch: ["https://www.kanopy.com/en/product/quand-les-etoiles-rencontrent-la-mer"],
     trailer: "https://youtu.be/WSId_DLWtIs",
-    alt: []
+    location: {x: 47.5079, y: -18.8792, name: "Antananarivo"},
+    runtime: 86,
+    genre: ["Fantasy","Myth","Drama"],
+    tags: [""],
+    color: "#a69577"
   },
   {
-    region: "Melanesia",
-    label: "OCMLCFF",
+    id: "OCMLCFF",
     title: {original: "Tanna"},
     year: "2015",
     group: {people: "Ni-Vanuatu", language: "Nivhaal/Nafe", country: "Vanuatu"},
@@ -2269,13 +2278,16 @@ export const cultFeatFilms = [
       `The cast of the film are all Ni-Vanuatu locals from the village of Yakel, and the film’s plot is based on events that ocurred there in the 1980s that changed the way the community keeps <i>Kastom</i> (traditional cultural practices) to this day.`
     ],
     infoURL: "https://en.m.wikipedia.org/wiki/Tanna_(film)",
-    watch: "https://www.kanopy.com/video/13866690",
+    watch: ["https://www.kanopy.com/video/13866690","https://tubitv.com/movies/100013347/tanna","https://athome.fandango.com/content/browse/details/Tanna/842756","https://www.amazon.com/gp/video/detail/B0CJMZMPZD","https://tv.apple.com/us/movie/umc.cmc.dk3imrvbun4dotif1bncdup8"],
     trailer: "https://youtu.be/Tb3Vslnviwo",
-    alt: []
+    location: {x: 169.3333, y: -19.5000, name: "Tanna, Vanuatu"},
+    runtime: 104,
+    genre: ["Romance","Drama","True Story"],
+    tags: ["bechdel test"],
+    color: "#313d22"
   },
   {
-    region: "Micronesia",
-    label: "OCMCCFF",
+    id: "OCMCCFF",
     title: {original: "Ña Noniep", translation: "I am the Good Fairy"},
     year: "2009",
     group: {people: "Marshallese", language: "Marshallese", country: "Marshall Islands"},
@@ -2285,13 +2297,16 @@ export const cultFeatFilms = [
       `The Marshallese language film, with English subtitles, stars Randon Jack, Lulani Ritok, Kyle Trevor, Netha Gideon, Matiti Johnson, Alson Kelen and Sarah Enyeart. All of the music in the film was performed by four eighth-grade girls—Kery Ann Lejjena, Carly Ann Note, Lulani Note and Cinderella Lajidrik—from the Majuro Cooperative School, a private, secular school presently serving grades pre-K through 9th.`
     ],
     infoURL: "https://www.microwavefilms.org/NaNoniep.html",
-    watch: "https://youtu.be/-bHfr11hfg8",
+    watch: ["https://youtu.be/-bHfr11hfg8"],
     trailer: "https://youtu.be/CMiJlDi5NaY",
-    alt: []
+    location: {x: 171.3803, y: 7.0897, name: "Majuro"},
+    runtime: 78,
+    genre: ["Mystery","Supernatural"],
+    tags: [""],
+    color: "#918e89"
   },
   {
-    region: "Polynesia",
-    label: "OCPLCFF",
+    id: "OCPLCFF",
     title: {original: "O Le Tulafale", translation: "The Orator"},
     year: "2011",
     group: {people: "Samoan", language: "Samoan", country: "Samoa"},
@@ -2300,30 +2315,18 @@ export const cultFeatFilms = [
       `Dir/Scr <b>TUSI TAMASESE</b> is a Samoan filmmaker of high chiefly descent, of the Tupua Tamasese lineage. His first feature film, <i>O Le Tulafale</i>, was financed in part by the Samoan government and depicts <i>Faʻa Sāmoa</i>, the Samoan Way.`
     ],
     infoURL: "https://en.wikipedia.org/wiki/The_Orator_(film)",
-    watch: "https://youtu.be/TfkjO-jcjSM",
+    watch: ["https://youtu.be/TfkjO-jcjSM","https://fawesome.tv/movies/10643457/the-orator","https://therokuchannel.roku.com/details/b673c8f7b44b589d96355f2691f62e05/the-orator","https://tv.apple.com/us/movie/umc.cmc.2ddyv8y0od32armh643ixrlmz"],
     trailer: "https://youtu.be/AGXopPdTAGs",
-    alt: [
-      {
-        region: "Polynesia",
-        label: "OCPLCFF1",
-        title: {original: "Next Goal Wins"},
-        year: "2023",
-        group: {language: "English", location: "American Samoa, US"},
-        info: [
-          `The story of the infamously terrible American Samoa soccer team, known for a brutal 2001 FIFA match they lost 31-0, and their attempt to turn around with a new coach.`,
-          `Though <i>Next Goal Wins</i> doesn’t qualify as a cultural feature film—both despite and because of its lampooning and unavoidable perpetuation of the white savior trope, as well as its mostly non-Polynesian creative team—its hilariously heartwarming and culturally didactic storytelling pushed the movie above the threshold of inclusion as an alternate.`
-        ],
-        infoURL: "https://en.wikipedia.org/wiki/Next_Goal_Wins_(2023_film)",
-        watch: "https://www.amazon.com/gp/video/detail/amzn1.dv.gti.5b099d27-081d-4506-96db-762dfe3f3760",
-        trailer: "https://youtu.be/pRH5u5lpArQ"
-      }
-    ]
+    location: {x: -171.7500, y: -13.9167, name: "Upolu"},
+    runtime: 110,
+    genre: ["Drama","Underdog","Redemption"],
+    tags: [""],
+    color: "#917146"
   }
 ];
 export const presMusDrama = [
   {
-    region: "North Africa",
-    label: "AFNOPMD",
+    id: "AFNOPMD",
     title: {original: "ⵙⴱⵉⴱⴰ", transliteration: "Sebeïba"},
     origin: "n.d.",
     group: {people: "Tuareg", language: "Tamahaq", location: "Djanet, DZ"},
@@ -2346,8 +2349,7 @@ export const presMusDrama = [
     textURL: "https://translate.google.com/?hl=en&sl=auto&tl=en&text=Puissions-nous%20vivre%20jusqu%E2%80%99au%20jour%20de%20l%E2%80%99ultime%20rencontre%0APour%20voir%20les%20k%C3%B4ra%20aux%20fils%20scintillants%2C%0APour%20entrevoir%20ces%20visages%20masqu%C3%A9s%20d%E2%80%99hommes%20vigoureux.%0ADis%20%C3%A0%20Fatima%20que%20ganga%20sera%20bient%C3%B4t%20%C3%A0%20Doughia&op=translate"
   },
   {
-    region: "East Africa",
-    label: "AFEAPMD",
+    id: "AFEAPMD",
     title: {original: "Engilakinoto"},
     origin: "n.d.",
     group: {people: "Maasai", language: "Maa", country: "Tanzania"},
@@ -2382,12 +2384,11 @@ export const presMusDrama = [
       `A patch stretches over the colobus monkey<br>That does not climb trees<br>Among thin oxen whose bells are wound twice<br>But mine had conquered the Ng’atet anthrax<br>That the Maasai fear.`
     ],
     infoURL: "https://100humanitarians.org/maasai-dance#:~:text=Traditional%20songs%2C%20known%20as%20%22engilakinoto%2C%22",
-    mediaURL: "https://youtu.be/JLDwn9Jo6Kg",
+    mediaURL: "https://youtu.be/CVS7rEkiEHQ",
     textURL: ""
   },
   {
-    region: "Southern Africa",
-    label: "AFSOPMD",
+    id: "AFSOPMD",
     title: {original: "Djxani"},
     origin: "n.d.",
     group: {people: "Juǀʼhoansi", language: "Juǀʼhoan", country: "Angola"},
@@ -2435,8 +2436,7 @@ export const presMusDrama = [
     ]
   },
   {
-    region: "Central Africa",
-    label: "AFCEPMD",
+    id: "AFCEPMD",
     title: {original: "Mvet"},
     origin: "c. 19th-c",
     group: {people: "Ekang", language: "Fang-Beti-Bulu", country: "Equatorial Guinea"},
@@ -2480,8 +2480,7 @@ export const presMusDrama = [
     ]
   },
   {
-    region: "West Africa",
-    label: "AFWEPMD",
+    id: "AFWEPMD",
     title: {original: "Egúngún"},
     origin: "c. 16th-c",
     group: {people: "Yorùbá", language: "Yorùbá", country: "Nigeria"},
@@ -2490,14 +2489,13 @@ export const presMusDrama = [
       `During the annual Ọdun Egúngún festivals, and at family rituals, these figures appear through dynamic performances of dance, drumming, and chanting. Their purpose is to bless, warn, and spiritually cleanse the community, while also strengthening the bonds that unite families and society.`,
       `The Egúngún’s appearance is a spectacle of pomp and pageantry, driven by intense drumming and singing of <i>òríkì</i> (praise poems). Through dramatic mimes and actions, the masquerade critiques or praises the community’s behavior, encouraging ethical conduct.`
     ],
-    excerpt: [``],
+    excerpt: [`https://youtu.be/T1yvGSA8QO4`],
     infoURL: "https://youtu.be/_16B1t8qDD8",
     mediaURL: "",
-    textURL: "https://youtu.be/T1yvGSA8QO4"
+    textURL: ""
   },
   {
-    region: "Arctic America",
-    label: "AMNOPMD",
+    id: "AMNOPMD",
     title: {original: "Yuraq"},
     origin: "n.d.",
     group: {people: "Yup'ik", language: "Yup'ik", location: "Alaska, US"},
@@ -2506,14 +2504,13 @@ export const presMusDrama = [
       `Yuraq performances often feature men in the front, kneeling, and women in the back, standing. Singers use the Yup’ik language to tell stories, and dancers follow the rhythm of the drums, incorporating specific movements.`,
       `The tradition is preserved through groups like Kassiglurmiut Yurartait, who hold the annual Cama’i Dance Festival featuring local and regional yuraq performances alongside national and international dance groups.`
     ],
-    excerpt: [``],
+    excerpt: [`https://youtu.be/DvYOQwei1ng`],
     infoURL: "https://www.ktoo.org/2020/05/11/the-stress-relieving-storytelling-art-of-yuraq-is-now-available-virtually/",
     mediaURL: ["https://youtu.be/91TtnRMTfnk","https://youtu.be/rYiS-jRJGME","https://youtu.be/MlHnGioVjhQ"],
-    textURL: "https://youtu.be/DvYOQwei1ng"
+    textURL: ""
   },
   {
-    region: "Eastern Woodlands",
-    label: "AMEAPMD",
+    id: "AMEAPMD",
     title: {original: "Posketv"},
     origin: "c. 14th-c",
     group: {people: "Muscogee", language: "Muscogee", location: "Florida, US"},
@@ -2552,8 +2549,7 @@ export const presMusDrama = [
     textURL: "https://s9.imslp.org/files/imglnks/usimg/0/0d/IMSLP222521-SIBLEY1802.21145.da1d-39087011973114score.pdf"
   },
   {
-    region: "Great Plains",
-    label: "AMINPMD",
+    id: "AMINPMD",
     title: {original: "Wačípi"},
     origin: "c. 17th-c",
     group: {people: "Sioux", language: "Sioux", location: "North Dakota, US"},
@@ -2579,8 +2575,7 @@ export const presMusDrama = [
     textURL: "https://www.matoska.com/cgi-bin/gencat.cgi?AC=gencat&PC=4&ST=5&S1=RR004&S2=NULL&RS=4,8,90,NULL,0,NULL&NO=0"
   },
   {
-    region: "American Southwest",
-    label: "AMSWPMD",
+    id: "AMSWPMD",
     title: {original: "Katsina"},
     origin: "c. 14th-c",
     group: {people: "Hopi", language: "Hopílavayi", location: "Arizona, US"},
@@ -2604,8 +2599,7 @@ export const presMusDrama = [
     textURL: "https://folkways-media.si.edu/docs/folkways/artwork/FW04394.pdf"
   },
   {
-    region: "Pacific Northwest",
-    label: "AMNWPMD",
+    id: "AMNWPMD",
     title: {original: "Hamats'a"},
     origin: "n.d.",
     group: {people: "Kwakwa̱ka̱ʼwakw", language: "Kwakʼwala", location: "Vancouver Island, CA"},
@@ -2628,8 +2622,7 @@ export const presMusDrama = [
     textURL: ""
   },
   {
-    region: "Central America",
-    label: "AMCEPMD",
+    id: "AMCEPMD",
     title: {original: "Xajoj"},
     origin: "c. 15th-c",
     group: {people: "Achí Maya", language: "Achí", country: "Guatemala"},
@@ -2656,8 +2649,7 @@ export const presMusDrama = [
     textURL: "https://api.pageplace.de/preview/DT0400.9780198031994_A23605408/preview-9780198031994_A23605408.pdf#page=32"
   },
   {
-    region: "Caribbean",
-    label: "AMCRPMD",
+    id: "AMCRPMD",
     title: {original: "Areíto"},
     origin: "c. 15th-c",
     group: {people: "Taíno", language: "Taíno", location: "Puerto Rico"},
@@ -2687,8 +2679,7 @@ export const presMusDrama = [
     textURL: "https://indigenouscaribbean.ning.com/group/caneycircle/page/songs-of-the-caney-circle"
   },
   {
-    region: "Andean America",
-    label: "AMWEPMD",
+    id: "AMWEPMD",
     title: {original: "Wanka"},
     origin: "c. 15th-c",
     group: {people: "Quechua", language: "Quechua", country: "Peru"},
@@ -2747,8 +2738,7 @@ export const presMusDrama = [
     textURL: "https://www.gutenberg.org/files/9068/9068-h/9068-h.htm#:~:text=is%20thus%20explained.-,OLLANTAY,-ACTS%20AND%20SCENES"
   },
   {
-    region: "Amazonia",
-    label: "AMNEPMD",
+    id: "AMNEPMD",
     title: {original: "Yaõkwa"},
     origin: "n.d.",
     group: {people: "Enawenê-Nawê", language: "Enawenê-Nawê", location: "Mato Grosso, BR"},
@@ -2778,8 +2768,7 @@ export const presMusDrama = [
     textURL: "https://translate.google.com/?hl=en&sl=auto&tl=en&text=Sem%20m%C3%BAsica%2C%20sem%20comida%2C%0ASem%20m%C3%BAsica%2C%20haveria%0Amuita%20dor%2C%20muita%20doen%C3%A7a%2C%0Aos%20Yakairiti%20ficariam%20enfurecidos%0ASem%20a%20m%C3%BAsica%20todos%20os%0AEnawene%20Nawe%20morreriam&op=translate"
   },
   {
-    region: "Southern Cone",
-    label: "AMSOPMD",
+    id: "AMSOPMD",
     title: {original: "Hain"},
     origin: "n.d.",
     group: {people: "Selk'nam", language: "Selk'nam", location: "Tierra del Fuego, CL/AR"},
@@ -2833,8 +2822,7 @@ export const presMusDrama = [
     textURL: "https://folkways-media.si.edu/docs/folkways/artwork/FW04179.pdf"
   },
   {
-    region: "North Asia",
-    label: "ASNOPMD",
+    id: "ASNOPMD",
     title: {original: "Настунд", transliteration: "Ngastund"},
     origin: "n.d.",
     group: {people: "Nivkh", language: "Nivkh", location: "Sakhalin, RU"},
@@ -2863,8 +2851,7 @@ export const presMusDrama = [
     textURL: ["https://science-education.ru/ru/article/view?id=395","https://sakhgu.ru/wp-content/uploads/page/record_85102/2019_12/%D0%98%D0%BA%D0%BE%D0%BD%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%95.-%D0%90.-%D0%9B%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%82%D1%83%D1%80%D0%BD%D0%BE%D0%B5-%D0%BA%D1%80%D0%B0%D0%B5%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5.pdf"]
   },
   {
-    region: "East Asia",
-    label: "ASEAPMD",
+    id: "ASEAPMD",
     title: {original: "能楽", transliteration: "Nōgaku"},
     origin: "c. 14th-c",
     group: {people: "Japanese", language: "Japanese", country: "Japan"},
@@ -2874,14 +2861,13 @@ export const presMusDrama = [
       `Nōgaku encompasses two types of theatre: Noh and Kyōgen, which are performed in the same space. The stage projects into the audience and is linked by a walkway to a “hall of mirrors” backstage. In Noh, emotions are represented by stylised conventional gestures. The hero is often a supernatural being who takes on human form to narrate a story. The distinctive masks for which Noh is renowned are used for the roles of ghosts, women, children, and old people.`,
       `Kyōgen, on the other hand, relies less on the use of masks and is derived from the humorous plays of the Sangaku, as reflected in its comic dialogue. The text is written in ancient language and vividly describes the ordinary people of the twelfth to sixteenth centuries.`
     ],
-    excerpt: [``],
+    excerpt: [`https://youtu.be/pZjJFKwoT-I`],
     infoURL: ["https://www.the-noh.com/en/world/","https://www2.ntj.jac.go.jp/unesco/noh/en/introduction/"],
     mediaURL: "https://youtu.be/54BBZEzYG9A",
-    textURL: "https://youtu.be/pZjJFKwoT-I"
+    textURL: ""
   },
   {
-    region: "Southeast Asia",
-    label: "ASSEPMD",
+    id: "ASSEPMD",
     title: {original: "ᬕᬫ᭄ᬩᬸᬄ", transliteration: "Gambuh"},
     origin: "c. 15th-c",
     group: {people: "Balinese", language: "Kawi/Balinese", location: "Bali, ID"},
@@ -2912,8 +2898,7 @@ export const presMusDrama = [
     textURL: "https://sloap.org/journals/index.php/ijllc/article/view/1589/1639#page=5"
   },
   {
-    region: "Highland Asia",
-    label: "ASHIPMD",
+    id: "ASHIPMD",
     title: {original: "ལྷ་མོ", transliteration: "Lhamo"},
     origin: "c. 14th-c",
     group: {people: "Tibetan", language: "Tibetan", location: "Tibet, CN"},
@@ -2922,14 +2907,13 @@ export const presMusDrama = [
       `The heart of the opera is a drama narrated by a single speaker and enacted by performers supported by groups of singers, dancers, and acrobats. Actors wear traditional masks of a variety of shapes and colours that contrast with their simple makeup. Performances may take place in public squares or temples (or, today, on proscenium-style stages), with the centre of the space marked by a tree placed on the ground, wrapped in colourful paper and surrounded by purified water and theatrical props.`,
       `Rooted in Buddhist teachings, the stories told in Lhamo recount the triumph of good and the punishment of evil and therefore serve a social teaching function for the community. This multifaceted representative of Tibetan art and cultural heritage also acts as a bridge among Tibetans living across national borders, promoting unity and historical pride.`
     ],
-    excerpt: [``],
+    excerpt: [`https://youtu.be/Kkzwg7CPPp8`],
     infoURL: "https://youtu.be/zSJ_HFap6TM",
     mediaURL: "https://youtu.be/asD8r62gv-I",
-    textURL: "https://youtu.be/Kkzwg7CPPp8"
+    textURL: ""
   },
   {
-    region: "South Asia",
-    label: "ASSOPMD",
+    id: "ASSOPMD",
     title: {original: "കൂടിയാട്ടം", transliteration: "Kūṭiyāṭṭaṁ"},
     origin: "c. 15th-c",
     group: {people: "Malayali", language: "Sanskrit", location: "Kerala, IN"},
@@ -2947,8 +2931,7 @@ export const presMusDrama = [
     textURL: ["https://youtu.be/xcPwhRP_me8","https://youtu.be/OZzo0xh_U2U"]
   },
   {
-    region: "West Asia",
-    label: "ASWEPMD",
+    id: "ASWEPMD",
     title: {original: "تعزیه", transliteration: "Ta‘zīeh"},
     origin: "c. 17th-c",
     group: {people: "Persian", language: "Persian", country: "Iran"},
@@ -2959,14 +2942,13 @@ export const presMusDrama = [
       `While Ta‘zieh has a prominent role in Iranian culture, literature, and art, everyday proverbs are also drawn from its ritual plays. Its performances help promote and reinforce religious and spiritual values, altruism, and friendship while preserving old traditions, national culture, and Iranian mythology. Ta‘zieh also plays a significant role in preserving associated crafts, such as costume-making, calligraphy, and instrument-making.`,
       `Its flexibility has led it to become a common language for different communities, promoting communication, unity, and creativity. Ta‘zieh is transmitted by example and word of mouth from tutor to pupil.`
     ],
-    excerpt: [``],
+    excerpt: [`https://youtu.be/mX0A-Dme93I`],
     infoURL: "https://youtu.be/PtMIjHteW9c",
     mediaURL: "https://youtu.be/cSShw1Oqcb0",
-    textURL: "https://youtu.be/mX0A-Dme93I"
+    textURL: ""
   },
   {
-    region: "Central Asia",
-    label: "ASCEPMD",
+    id: "ASCEPMD",
     title: {original: "Дастан", transliteration: "Dastan"},
     origin: "c. 13th-c",
     group: {people: "Kyrgyz", language: "Kyrgyz", country: "Kyrgyzstan"},
@@ -2989,8 +2971,7 @@ export const presMusDrama = [
     textURL: "https://www.elibrary.az/docs/jurnal/jrn2015_333.pdf"
   },
   {
-    region: "Inner Asia",
-    label: "ASINPMD",
+    id: "ASINPMD",
     title: {original: "ᡠᠶᡠᠨ", transliteration: "Uyun"},
     origin: "n.d.",
     group: {people: "Manchu", language: "Manchu", location: "Jilin, CN"},
@@ -3024,8 +3005,7 @@ export const presMusDrama = [
     textURL: ""
   },
   {
-    region: "Eastern Europe",
-    label: "EUEAPMD",
+    id: "EUEAPMD",
     title: {original: "Leelo"},
     origin: "c. 11th-c",
     group: {people: "Seto", language: "Võro-Seto", country: "Estonia"},
@@ -3060,8 +3040,7 @@ export const presMusDrama = [
     textURL: "https://laul-setomaa-ee.translate.goog/en/song/uibonaeio?_x_tr_sl=et&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp"
   },
   {
-    region: "Western Europe",
-    label: "EUWEPMD",
+    id: "EUWEPMD",
     title: {original: "Opera"},
     origin: "c. 16th-c",
     group: {people: "Italian", language: "Italian", country: "Italy"},
@@ -3070,14 +3049,13 @@ export const presMusDrama = [
       `The knowledge and skills related to Italian opera singing, a technique called <i>bel canto</i>, are transmitted orally between a <i>maestro</i> and pupil through vocal exercises and the gradual introduction of different musical repertoires and styles. Performances in recitals, singing schools, and workshops also contribute to the transmission of the practice, as well as formal education in conservatories and academies. Furthermore, the beginning of an opera season often coincides with local festivities and ceremonies.`,
       `The practice promotes collective cohesion and sociocultural memory, and is closely linked with other cultural elements, such as acoustic places and poetry. It is also dependent on other professions such as stage and light design, costume tailoring, scenography, and makeup. A means of expression and intergenerational dialogue, its cultural value is recognized at national and international levels.`
     ],
-    excerpt: [``],
+    excerpt: [`https://youtu.be/5swPxWApL0A`],
     infoURL: "https://youtu.be/7oMZKERz3fM",
     mediaURL: "https://youtu.be/y3jgu-adx8w?start=12",
-    textURL: "https://youtu.be/5swPxWApL0A"
+    textURL: ""
   },
   {
-    region: "Australia",
-    label: "OCAUPMD",
+    id: "OCAUPMD",
     title: {original: "Buŋgul"},
     origin: "n.d.",
     group: {people: "Yolŋu", language: "Yolŋu Matha", location: "Arnhem Land, AU"},
@@ -3145,8 +3123,7 @@ export const presMusDrama = [
     textURL: ["https://www.degruyterbrill.com/document/doi/10.1515/pdtc-2018-0027/html","https://ses.library.usyd.edu.au/bitstream/handle/2123/20376/CD6%20Walakandha%20Wangga.pdf#page=32"]
   },
   {
-    region: "Madagascar",
-    label: "OCMDPMD",
+    id: "OCMDPMD",
     title: {original: "Hiragasy"},
     origin: "c. 18th-c",
     group: {people: "Merina", language: "Malagasy", country: "Madagascar"},
@@ -3170,8 +3147,7 @@ export const presMusDrama = [
     textURL: "https://translate.google.com/?hl=en&sl=fr&tl=en&text=Lorsqu%27il%20est%20%C3%A0%20moiti%C3%A9%20ivre%2C%20il%20se%20dit%20le%20plus%20fort%E2%80%A6%0AIl%20a%20cherch%C3%A9%20et%20il%20a%20trouv%C3%A9.%0AIl%20a%20agress%C3%A9%20les%20personnes%20que%20tu%20as%20rencontr%C3%A9es.%0AIl%20a%20dis%20qu%27il%20est%20tr%C3%A8s%20fort%2C%20qu%E2%80%99il%20est%20boxeur%0Aet%20karat%C3%A9-ka.%0APire%20encore%2C%20il%20a%20agress%C3%A9%20m%C3%AAme%20sa%20famille.%0ALes%20voisins%20disent%3A%0Ail%20ne%20boit%20pas%2C%20il%20se%20drogue!%0ATout%20le%20monde%20s%27agite%3A%0Ail%20est%20dangereux%2C%20attachez-le!%0AOn%20fait%20appel%20aux%20gendarmes%20et%20policiers%0Al%27ivrogne%20est%20attach%C3%A9%2C%20emmen%C3%A9.%0ALorsqu%27il%20est%20en%20prison%2C%0AIl%20se%20souvient%20de%20sa%20maman%20h%C3%A9las%2C%20c%27est%20trop%20tard!%0AOn%20n%E2%80%99a%20plus%20le%20choix%2C%20on%20doit%20faire%20l%E2%80%99%C3%A9change%0Apour%20avoir%20du%20riz%20ou%20de%20l%E2%80%99argent.%0ACar%20quand%20on%20a%20faim%2C%20on%20a%20mal.%0AOn%20fait%20l%E2%80%99%C3%A9change%20des%20casseroles%2C%20v%C3%AAtements%0Aou%20poudre%20anti-puce.%0ATrouver%20de%20l%E2%80%99argent%20n%E2%80%99est%20pas%20facile.%0ATravailler%20pour%20vivre%20est%20dur.%0AIl%20y%20a%20ceux%20qui%20portent%20de%20gros%20sacs%20sur%20le%20dos.%0ALeur%20sueur%20tombe%20%C3%A0%20gros%20flots.%0AD%E2%80%99autres%20crient%20en%20vous%20distrayant%3A%0AEst-ce%20qu%E2%80%99il%20y%20a%20des%20bouteilles%20%C3%A0%20acheter%3F%0AOn%20se%20fatige%20pour%20r%C3%A9ussir%2C%20et%20celui%20qui%20cherche%0Ava%20trouver.%0AAvant%2C%20quand%20vous%20alliez%20travailler%2C%0Ac%E2%80%99%C3%A9taient%20les%20animaux%20qui%20gardaient%20le%20village.%0AMais%20maintenant%2C%20monsieur%2C%0Ac%E2%80%99est%20eux%20qui%20sont%20les%20premiers%20de%20tra%C3%AEtres.%0AQui%20de%20nous%20pouvait%20imaginer%20que%20m%C3%AAme%20les%20chiens%0Avolent%20le%20ma%C3%AFs%3F%0ANous%20allons%20changer%20de%20conversation.%0ANous%20allons%20parler%20de%20Hira%20Gasy.%0ANous%20sommes%20l%C3%A0%2C%20les%20deux%20troupes%2C%0Achacune%20est%20votre%20enfant.%0ALe%20motif%20du%20voyage%20c%E2%80%99est%20le%20Hira%20Gasy.%0AA%20vous%20de%20juger!&op=translate"
   },
   {
-    region: "Melanesia",
-    label: "OCMLPMD",
+    id: "OCMLPMD",
     title: {original: "Kesawaga"},
     origin: "c. 20th-c",
     group: {language: "Tok Pisin", people: "Kiriwina", location: "Trobriand Islands, PNG"},
@@ -3216,8 +3192,7 @@ export const presMusDrama = [
     textURL: ""
   },
   {
-    region: "Micronesia",
-    label: "OCMCPMD",
+    id: "OCMCPMD",
     title: {original: "Chelitakl Rechuodel"},
     origin: "n.d.",
     group: {people: "Palauan", language: "Palauan", country: "Palau"},
@@ -3226,14 +3201,13 @@ export const presMusDrama = [
       `Performances often take place at the <i>bai</i>, a traditional central meeting house. The bai is adorned with elaborate paintings and carvings depicting Palauan legends and history. These decorations provide a symbolic backdrop for the chants and dances, which themselves recount stories and genealogies.`,
       `The practitioners of Chelitakl Rechuodel are the Palauan community as a whole, with all members engaging with the tradition throughout their lives. <i>Lebuchel</i> (leaders) and elders play crucial roles in organizing performances and ensuring the accuracy of transmissions. The entire process, from informal learning to public performance, is community-driven, reinforcing the continuity of this vibrant performance tradition.`
     ],
-    excerpt: [``],
+    excerpt: [`https://youtu.be/5cN7q1iGIww`],
     infoURL: ["https://www.academia.edu/5326510/Sounds_of_Articulating_Identity_Tradition_and_Transition_in_the_Music_of_Palau_Micronesia","https://userxc.wordpress.com/2024/05/04/the-heart-of-palauan-culture/#:~:text=assistance%20when%20needed.-,The%20Bai%20Ceremony,-The%20Bai%20ceremony","https://library.oapen.org/bitstream/id/3283e671-4c06-41de-9975-2393bd5f7fe8/9789048550517.pdf#page=16"],
     mediaURL: "https://youtu.be/z0GeiyqP-Uw",
-    textURL: "https://youtu.be/5cN7q1iGIww"
+    textURL: ""
   },
   {
-    region: "Polynesia",
-    label: "OCPLPMD",
+    id: "OCPLPMD",
     title: {original: "Haka"},
     origin: "n.d.",
     group: {people: "Māori", language: "Māori", country: "New Zealand"},
@@ -3242,16 +3216,15 @@ export const presMusDrama = [
       `Fierce facial expressions, including <i>pūkana</i> (bulging eyes) and <i>whetero</i> (protruding tongues), are used to convey emotion and intensity, with the specific intent varying depending on the occasion. The quivering movements of the hands, known as <i>wiripapa</i>, are said to represent the dance of Tane-rore, the personification of shimmering, heat-hazed air, and are considered fundamental to the art form.`,
       `There is a wide variety of haka performed by both men and women, each with its own purpose, chant, and choreography. The specific words and actions of each haka often narrate a particular story, genealogy, or historical event. While some are highly traditional, featuring only vocals, body percussion, and <i>taonga pūoro</i> (traditional instruments) like Māori flutes and trumpets, others show influence from European-style music in harmony, melody, instrumentation, and lyrical content.`
     ],
-    excerpt: [``],
+    excerpt: [`https://youtu.be/LSdNQ-sbLdY`],
     infoURL: "https://en.wikipedia.org/wiki/Haka",
     mediaURL: "https://youtu.be/q4ABL34b75M",
-    textURL: "https://youtu.be/LSdNQ-sbLdY"
+    textURL: ""
   }
 ];
 export const foundRelTexts = [
   {
-    region: "North Africa",
-    label: "AFNOFRT",
+    id: "AFNOFRT",
     title: {original: "ⲣⲱ ⲛⲱ ⲡⲣⲧ ⲙ ϩⲣⲱ", transliteration: "Rw nw prt m hrw", translation: "Spells of Coming Forth by Day"},
     group: {people: "Egyptian", language: "Egyptian", religion: "Kemetism", country: "Egypt"},
     info: [
@@ -3294,8 +3267,7 @@ export const foundRelTexts = [
     ]
   },
   {
-    region: "East Africa",
-    label: "AFEAFRT",
+    id: "AFEAFRT",
     title: {original: "Cieŋ ë baai", translation: "Customs"},
     group: {people: "Dinka", language: "Dinka", religion: "Dinka religion", country: "South Sudan"},
     info: [
@@ -3340,8 +3312,7 @@ export const foundRelTexts = [
     ]
   },
   {
-    region: "Southern Africa",
-    label: "AFSOFRT",
+    id: "AFSOFRT",
     title: {original: "Aibe-gam-ǁäe-ǃgãis-kxũna", translation: "Things from the Back of Time"},
     group: {people: "Nama", language: "Khoekhoe", religion: "Nama religion", country: "Namibia"},
     info: [
@@ -3382,8 +3353,7 @@ export const foundRelTexts = [
     ]
   },
   {
-    region: "Central Africa",
-    label: "AFCEFRT",
+    id: "AFCEFRT",
     title: {original: "Ndura a lufu", translation: "The Forest is Talking"},
     group: {people: "Mbuti", language: "Asoa/Efé/Kango", religion: "Mbuti religion", country: "DRC"},
     info: [
@@ -3438,48 +3408,48 @@ export const foundRelTexts = [
     ]
   },
   {
-    region: "West Africa",
-    label: "AFWEFRT",
+    id: "AFWEFRT",
     title: {original: "Odù Ifá", translation: "Divination Verses"},
     group: {people: "Yorùbá", language: "Yorùbá", religion: "Ìṣẹ̀ṣe", country: "Nigeria"},
     info: [
       `<+>Ifá[Yorùbá oracle]</+> owns the world, the world as encapsulated in the face of the <i>ọpọ́n Ifá</i> divining tray (pictured), in the hands of Ọ̀rúnmìlà with Èṣù overlooking from the top. Ọ̀rúnmìlà is the custodian of divine, moral, economic, linguistic, and metaphysical order, and his teachings are kept by the <+><i>babaláwo</i>[“father of secrets”, high priest of the Ifá oracle]</+> elders.`,
       `As the life of man is enmeshed in many riddles, seen or unseen, the quest to know that which is obscured becomes juxtaposed against the fear of the unexpected and unknown. Clients consult the <i>babaláwo</i> who, by chanting oratory prayers and casting the <+>Ọ̀pẹ̀lẹ̀[divination chain]</+> or the <+>Ikin[sacred palm nuts]</+>, communicates with Ọ̀rúnmìlà to seek solutions to life’s numerous problems.`
     ],
-excerpt: [
-`Ogbè look back<br>In case your dog kills the <+><i>ikún</i>[Xerus erythropus, ground squirrel]</+> rat
-<v>The Babaláwo of the Hunter casts divination for the Hunter</v><v>The Hunter was going to seven renowned forests and bushes</v>They asked him to take care of the ground<br>He should offer sacrifice before his departure<br>The Hunter heard about the sacrifice and performed it
-Ogbè look back<br>In case your dog kills the <i>ikún</i> rat
-Cast divination for the Farmer<br><v>The one that was going to choose a new land for annual farming</v><v>They asked him to take care of the ground and perform sacrifice before his departure</v><v>The Farmer also heard about the sacrifice and performed it</v>
-The two of them went into the deep forests<br>The Hunter was hunting for games in the bushes<br>The Farmer also farming<br>They both had heard about the sacrifice and offered it<br>Offering of prescribed sacrifices and free gifts to <+>Èṣù[primordial divinity best known as the enforcer of natural and divine laws, messenger of Olódùmarè]</+>
-Come and meet us with good tidings<br><v>One is usually found with good tidings at the feet of the king of <+>Òrìṣàs[divine spirits sent by Olódùmarè to assist humanity and to teach them to be successful on earth]</+></v><v>Let us combine hunting with farming for our world to be better</v>
-The farmer was returning from the farm<br>He gave a small piece of yam to the hunter<br>The Hunter was coming back from the deep forest<br>He brought out a small piece of meat<br>And gave it to the farmer<br><v>Please let us combine hunting with farming for life to be better for us</v>
-Offering of prescribed sacrifices and free gifts to Èṣù<br>Life so please us aplenty!
->>(Ogbè Ìwòrì A:1-29 ASV)`,
-`<...>`,
-`<i>Greetings for the sacrifice!</i>
-Now I, Awotunde, praise Osa Meji;<br>&emsp;&emsp;do you see the road Ifá took to be so-called?<br>When elephant’s malevolent,<br>&emsp;&emsp;bush cow better quite the scene;<br>Red bulging eyes responds<br>&emsp;&emsp;to pounding of mortar’s children:<br>&emsp;&emsp;pulverize, pulverize<br>made Ifá for<br>&emsp;&emsp;Mistress of slim turbulence<br>&emsp;&emsp;Child born to deepest of mothers.<br>Both told to sacrifice for living<br>&emsp;&emsp;one he-goat, one cock,<br>&emsp;&emsp;eleven bags of cowries,<br>Neither complied.<br>It’s water we call Mistress-of-slim-turbulence;<br>fish, Born-of-the-deepest-mother.<br>When water died,<br>&emsp;&emsp;fish, formerly hidden,<br>&emsp;&emsp;was found out and arrested.<br>When water no longer covered her child,<br>&emsp;&emsp;slim fins flopped and was taken;<br>So the diviner predicted:<br>&emsp;&emsp;exposure brings fishers;<br>They said, don’t you know?<br>&emsp;&emsp;No one harms a child that’s protected;<br><v>The day deep waters dried, that’s when turbulence surfaced;</v>Meaning Osa Meji, understand?
-<i>We have sacrificed, efficaciously.</i>
->>(Ọ̀sá Méjì 10:131-2 JGV)`,
-`<...>`,
-`Ọ̀tọ́ọ́tọtọ́<br>Ọ̀rọ́ọ́rọrọ́
-Separately, one has to eat groundnuts<br>Separately, one has to eat cherries<br><v>In separate feedings, one has to put <+><i>olú-esunsun</i>[Termitomyces clypeatus, an edible mushroom]</+> into the mouth</v>
-Entities of orírí belongs to orírí<br>Entities of òrìrì belongs to òrìrì<br><v>It is the facts of orírí and òrìrì that one has to relate to the king Mọ̀kín in the city of Ìrànjé</v><v>Such that Onírànje would give to one, a special person as a gift</v>
-When soldier ants lay siege to something and sting it<br>They would move in an army trailing each other<br>And unleash terror on their captive
-Cast divination for Ògo tẹ́ẹ́rẹ<br><v>The one that was taking his warfare to ìlú gbẹ̀ǹdù gbẹndu ẹ̀yìn ọ̀wọnràn</v>
-They asked Ògo tẹ́ẹ́rẹ to offer sacrifice<br>Ògo tẹ́ẹ́rẹ heard about the sacrifice<br>And performed it<br>He also heard about the offering of free booties<br>He gave it out
-Ògo tẹ́ẹ́rẹ is with the male<br>Ilu gbẹ̀ǹdù gbẹndu is with the female<br>The back of one female<br>Is a separate coinage of another city
-<v>They asked Ògo tẹ́ẹ́rẹ to go and wage war in Ìlu gbẹ̀ǹdù gbẹndu</v>He should wage war relentlessly<br>He should arrest males as captive<br>He should wage war relentlessly<br>He should arrest females as captive<br><v>He should go and bring to the earth as captives, people from the toothless city</v>
-He should also form contraptions<br>These contraptions that are formed however<br>They would bring forth for us children<br>It is the same contraption that men form in women
-Till date<br><v>Olódùmarè would give each and everyone of us good wives</v>And would also give us good children<br>They continued in this order<br>And life became pleasant for them
-They then started to dance and rejoice<br>They were praising their Babaláwos<br>Their Babaláwos were praising Ifá<br>They said it was exactly as their Babaláwos said
-Ọ̀tọ́ọ́tọtọ́<br>Ọ̀rọ́ọ́rọrọ́
-Separately, one has to eat groundnuts<br>Separately, one has to eat cherries<br><v>In separate feedings, one has to put <i>olú-esunsun</i> into the mouth</v>
-Entities of orírí belongs to orírí<br>Entities of òrìrì belongs to òrìrì<br><v>It is the facts of orírí and òrìrì that one has to relate to the king Mọ̀kín in the city of Ìrànjé</v><v>Such that Onírànje would give to one, a special person as a gift</v>
-When soldier ants lay siege to something and sting it<br>They would move in an army trailing each other<br>And unleash terror on their captives
-Cast divination for Ògo tẹ́ẹ́rẹ<br><v>The one that was taking his warfare to ìlú gbẹ̀ǹdù gbẹndu ẹ̀yìn ọ̀wọnràn</v>He would go to combat<br>He would arrest males as captives<br>He would go to battle<br>He would arrest females as captives<br><v>He would go and bring to the earth as captives, people from the toothless city</v>
-The contraption that we form<br>We pray that the result would be a child<br>The contraption that we form
->>(Ogbè Méjì A:1-63 ASV)`],
+    excerpt: [
+      `Ogbè look back<br>In case your dog kills the <+><i>ikún</i>[Xerus erythropus, ground squirrel]</+> rat`,
+      `<v>The Babaláwo of the Hunter casts divination for the Hunter</v><v>The Hunter was going to seven renowned forests and bushes</v>They asked him to take care of the ground<br>He should offer sacrifice before his departure<br>The Hunter heard about the sacrifice and performed it`,
+      `Ogbè look back<br>In case your dog kills the <i>ikún</i> rat`,
+      `Cast divination for the Farmer<br><v>The one that was going to choose a new land for annual farming</v><v>They asked him to take care of the ground and perform sacrifice before his departure</v><v>The Farmer also heard about the sacrifice and performed it</v>`,
+      `The two of them went into the deep forests<br>The Hunter was hunting for games in the bushes<br>The Farmer also farming<br>They both had heard about the sacrifice and offered it<br>Offering of prescribed sacrifices and free gifts to <+>Èṣù[primordial divinity best known as the enforcer of natural and divine laws, messenger of Olódùmarè]</+>`,
+      `Come and meet us with good tidings<br><v>One is usually found with good tidings at the feet of the king of <+>Òrìṣàs[divine spirits sent by Olódùmarè to assist humanity and to teach them to be successful on earth]</+></v><v>Let us combine hunting with farming for our world to be better</v>`,
+      `The farmer was returning from the farm<br>He gave a small piece of yam to the hunter<br>The Hunter was coming back from the deep forest<br>He brought out a small piece of meat<br>And gave it to the farmer<br><v>Please let us combine hunting with farming for life to be better for us</v>`,
+      `Offering of prescribed sacrifices and free gifts to Èṣù<br>Life so please us aplenty!`,
+      `>>(Ogbè Ìwòrì A:1-29 ASV)`,
+      `<...>`,
+      `<i>Greetings for the sacrifice!</i>`,
+      `Now I, Awotunde, praise Osa Meji;<br>&emsp;&emsp;do you see the road Ifá took to be so-called?<br>When elephant’s malevolent,<br>&emsp;&emsp;bush cow better quite the scene;<br>Red bulging eyes responds<br>&emsp;&emsp;to pounding of mortar’s children:<br>&emsp;&emsp;pulverize, pulverize<br>made Ifá for<br>&emsp;&emsp;Mistress of slim turbulence<br>&emsp;&emsp;Child born to deepest of mothers.<br>Both told to sacrifice for living<br>&emsp;&emsp;one he-goat, one cock,<br>&emsp;&emsp;eleven bags of cowries,<br>Neither complied.<br>It’s water we call Mistress-of-slim-turbulence;<br>fish, Born-of-the-deepest-mother.<br>When water died,<br>&emsp;&emsp;fish, formerly hidden,<br>&emsp;&emsp;was found out and arrested.<br>When water no longer covered her child,<br>&emsp;&emsp;slim fins flopped and was taken;<br>So the diviner predicted:<br>&emsp;&emsp;exposure brings fishers;<br>They said, don’t you know?<br>&emsp;&emsp;No one harms a child that’s protected;<br><v>The day deep waters dried, that’s when turbulence surfaced;</v>Meaning Osa Meji, understand?`,
+      `<i>We have sacrificed, efficaciously.</i>`,
+      `>>(Ọ̀sá Méjì 10:131-2 JGV)`,
+      `<...>`,
+      `Ọ̀tọ́ọ́tọtọ́<br>Ọ̀rọ́ọ́rọrọ́`,
+      `Separately, one has to eat groundnuts<br>Separately, one has to eat cherries<br><v>In separate feedings, one has to put <+><i>olú-esunsun</i>[Termitomyces clypeatus, an edible mushroom]</+> into the mouth</v>`,
+      `Entities of orírí belongs to orírí<br>Entities of òrìrì belongs to òrìrì<br><v>It is the facts of orírí and òrìrì that one has to relate to the king Mọ̀kín in the city of Ìrànjé</v><v>Such that Onírànje would give to one, a special person as a gift</v>`,
+      `When soldier ants lay siege to something and sting it<br>They would move in an army trailing each other<br>And unleash terror on their captive`,
+      `Cast divination for Ògo tẹ́ẹ́rẹ<br><v>The one that was taking his warfare to ìlú gbẹ̀ǹdù gbẹndu ẹ̀yìn ọ̀wọnràn</v>`,
+      `They asked Ògo tẹ́ẹ́rẹ to offer sacrifice<br>Ògo tẹ́ẹ́rẹ heard about the sacrifice<br>And performed it<br>He also heard about the offering of free booties<br>He gave it out`,
+      `Ògo tẹ́ẹ́rẹ is with the male<br>Ilu gbẹ̀ǹdù gbẹndu is with the female<br>The back of one female<br>Is a separate coinage of another city`,
+      `<v>They asked Ògo tẹ́ẹ́rẹ to go and wage war in Ìlu gbẹ̀ǹdù gbẹndu</v>He should wage war relentlessly<br>He should arrest males as captive<br>He should wage war relentlessly<br>He should arrest females as captive<br><v>He should go and bring to the earth as captives, people from the toothless city</v>`,
+      `He should also form contraptions<br>These contraptions that are formed however<br>They would bring forth for us children<br>It is the same contraption that men form in women`,
+      `Till date<br><v>Olódùmarè would give each and everyone of us good wives</v>And would also give us good children<br>They continued in this order<br>And life became pleasant for them`,
+      `They then started to dance and rejoice<br>They were praising their Babaláwos<br>Their Babaláwos were praising Ifá<br>They said it was exactly as their Babaláwos said`,
+      `Ọ̀tọ́ọ́tọtọ́<br>Ọ̀rọ́ọ́rọrọ́`,
+      `Separately, one has to eat groundnuts<br>Separately, one has to eat cherries<br><v>In separate feedings, one has to put <i>olú-esunsun</i> into the mouth</v>`,
+      `Entities of orírí belongs to orírí<br>Entities of òrìrì belongs to òrìrì<br><v>It is the facts of orírí and òrìrì that one has to relate to the king Mọ̀kín in the city of Ìrànjé</v><v>Such that Onírànje would give to one, a special person as a gift</v>`,
+      `When soldier ants lay siege to something and sting it<br>They would move in an army trailing each other<br>And unleash terror on their captives`,
+      `Cast divination for Ògo tẹ́ẹ́rẹ<br><v>The one that was taking his warfare to ìlú gbẹ̀ǹdù gbẹndu ẹ̀yìn ọ̀wọnràn</v>He would go to combat<br>He would arrest males as captives<br>He would go to battle<br>He would arrest females as captives<br><v>He would go and bring to the earth as captives, people from the toothless city</v>`,
+      `The contraption that we form<br>We pray that the result would be a child<br>The contraption that we form`,
+      `>>(Ogbè Méjì A:1-63 ASV)`
+    ],
     infoURL: ["https://en.wikipedia.org/wiki/If%C3%A1","https://en.wikipedia.org/wiki/Yoruba_religion","https://research.auctr.edu/Ifa/Chap9Intro"],
     mediaURL: "",
     textURL: "",
@@ -3489,8 +3459,7 @@ The contraption that we form<br>We pray that the result would be a child<br>The 
     ]
   },
   {
-    region: "Arctic America",
-    label: "AMNOFRT",
+    id: "AMNOFRT",
     title: {original: "Ingilraqpaaluk", translation: "A Very Long Time Ago"},
     group: {people: "Inuvialuit", language: "Inuvialuktun", religion: "Angatkuqism", location: "NWT, CA"},
     info: [
@@ -3553,8 +3522,7 @@ The contraption that we form<br>We pray that the result would be a child<br>The 
     ]
   },
   {
-    region: "Eastern Woodlands",
-    label: "AMEAFRT",
+    id: "AMEAFRT",
     title: {original: "ᒥᑌᐐᒀᔅ", transliteration: "Mide-wiigwaas", translation: "Sacred Scrolls"},
     group: {people: "Ojibwe", language: "Ojibwe", religion: "Midéwiwin", location: "Michigan, US"},
     info: [
@@ -3664,8 +3632,7 @@ The contraption that we form<br>We pray that the result would be a child<br>The 
     ]
   },
   {
-    region: "Great Plains",
-    label: "AMINFRT",
+    id: "AMINFRT",
     title: {original: "Ceremonies of the Pawnee"},
     group: {people: "Pawnee", language: "Pawnee", religion: "Pawnee religion", location: "Nebraska, US"},
     info: [
@@ -3712,8 +3679,7 @@ The contraption that we form<br>We pray that the result would be a child<br>The 
     ]
   },
   {
-    region: "American Southwest",
-    label: "AMSWFRT",
+    id: "AMSWFRT",
     title: {original: "The Messiah Letter"},
     author: "Wovoka",
     group: {people: "Paiute", language: "Numu", religion: "Nanigukwa", location: "Nevada, US"},
@@ -3736,8 +3702,7 @@ The contraption that we form<br>We pray that the result would be a child<br>The 
     textURL: ""
   },
   {
-    region: "Pacific Northwest",
-    label: "AMNWFRT",
+    id: "AMNWFRT",
     title: {original: "Adaawx", translation: "True Tellings"},
     group: {people: "Tsimshian", language: "Sm'algya̱x", religion: "Naxnoxism", location: "BC, CA"},
     info: [
@@ -3807,8 +3772,7 @@ The contraption that we form<br>We pray that the result would be a child<br>The 
     textURL: ["https://www.smalgyax.ca/adaawx","https://nebula.wsimg.com/4c62c0e6924cd2d79f8b43edc04be5f0?AccessKeyId=E516E8F6836C59D9D9E9&disposition=0&alloworigin=1","https://archive.org/details/tsimshiannarrati0000unse/mode/2up","https://aashley.weebly.com/uploads/4/3/8/2/4382474/tsimshian_narratives_vol_2.pdf","https://www.smalgyax.ca/gyemk"]
   },
   {
-    region: "Central America",
-    label: "AMCEFRT",
+    id: "AMCEFRT",
     title: {original: "Popol Vuh", translation: "Book of Counsel"},
     group: {people: "K’iche’ Maya", language: "K’iche’", religion: "Costumbre", country: "Guatemala"},
     info: [
@@ -3877,7 +3841,6 @@ The contraption that we form<br>We pray that the result would be a child<br>The 
       `And then they came before the lord named Nacxit, the great lord and sole judge over a populous domain.`,
       `And he was the one who gave out the signs of lordship, all the emblems; the signs of the Keeper of the Mat and the Keeper of the Reception House Mat were set forth.`,
       `And when the signs of the splendor and lordship of the Keeper of the Mat and Keeper of the Reception House Mat were set forth, Nacxit gave a complete set of the emblems of lordship. Here are their names:`,
-      ``,
       `&emsp;&emsp;Canopy, throne.<br>&emsp;&emsp;Bone flute, bird whistle.<br>&emsp;&emsp;Sparkling powder, yellow ocher.<br>&emsp;&emsp;Puma’s paw, jaguar’s paw.<br>&emsp;&emsp;Head and hoof of deer.<br>&emsp;&emsp;Leather armband, snail-shell rattle.<br>&emsp;&emsp;Tobacco gourd, food bowl.<br>&emsp;&emsp;Parrot feathers, egret feathers.`,
       `>>(Popul Vuh 5:2 DET179-80)`
     ],
@@ -3889,8 +3852,7 @@ The contraption that we form<br>We pray that the result would be a child<br>The 
     ]
   },
   {
-    region: "Caribbean",
-    label: "AMCRFRT",
+    id: "AMCRFRT",
     title: {original: "Relación acerca de las antigüedades de los indios", translation: "An Account of the Antiquities of the Indians"},
     group: {people: "Taíno", language: "Taíno", religion: "Zemiism", location: "Hispaniola, HT/DR"},
     info: [
@@ -3921,8 +3883,7 @@ The contraption that we form<br>We pray that the result would be a child<br>The 
     ]
   },
   {
-    region: "Andean America",
-    label: "AMWEFRT",
+    id: "AMWEFRT",
     title: {original: "Huarochirí Manuscript"},
     group: {people: "Quechua", language: "Quechua", religion: "Wakanism", country: "Peru"},
     info: [
@@ -3973,8 +3934,7 @@ The contraption that we form<br>We pray that the result would be a child<br>The 
     ]
   },
   {
-    region: "Amazonia",
-    label: "AMNEFRT",
+    id: "AMNEFRT",
     title: {original: "Watunna", translation: "Retellings"},
     group: {people: "So'to", language: "So'to", religion: "So'to religion", location: "Amazonas, VE"},
     info: [
@@ -4044,8 +4004,7 @@ The contraption that we form<br>We pray that the result would be a child<br>The 
     ]
   },
   {
-    region: "Southern Cone",
-    label: "AMSOFRT",
+    id: "AMSOFRT",
     title: {original: "Ayvu Rapyta", translation: "The Foundation of Human Language"},
     group: {people: "Mbyá", language: "Guaraní", religion: "Tekó marăngatú", country: "Paraguay"},
     info: [
@@ -4106,8 +4065,7 @@ The contraption that we form<br>We pray that the result would be a child<br>The 
     ]
   },
   {
-    region: "North Asia",
-    label: "ASNOFRT",
+    id: "ASNOFRT",
     title: {original: "Шангар шорилэ", transliteration: "Shangar shorile", translation: "Writing on a Tree’s Skin"},
     group: {people: "Yukaghir", language: "Yukaghir", religion: "A'lmanism", location: "Sakha, RU"},
     info: [
@@ -4178,8 +4136,7 @@ The contraption that we form<br>We pray that the result would be a child<br>The 
     ]
   },
   {
-    region: "Inner Asia",
-    label: "ASINFRT",
+    id: "ASINFRT",
     title: {original: "ᠺᠾᠠᠷ ᠪᠥᠥᠭᠢᠢᠨ ᠽᠠᠨ ᠦᠢᠯ", transliteration: "Khar böögiin zan üil", translation: "Rites of the Black Shaman"},
     group: {people: "Darkhad", language: "Mongolian", religion: "Böö Mörgöl", country: "Mongolia"},
     info: [`Mongolian shamanism, or <i>Böö Mörgöl</i>, contains many features common to the religious systems of the surrounding regions, including the Tungusic šamanism (also) of Inner Asia, the Turkic Tengrism of Central Asia, and the Tibetan Buddhism of Highland Asia. Distinctions are drawn between two or three primary varieties of Böö Mörgöl: yellow shamanism, named for the yellow hats of the Gelug school buddhists whose influence is yellow shamanism’s dominant feature; black shamanism, which is largely void of buddhist influence; and sometimes white shamanism, whose practitioners place greater emphasis on the worship of <i>tenger</i> sky deities. The Darkhad of northern Mongolia, shielded by the rugged surroundings of the remote Darkhad valley, have a reputation in Ulaanbaatar for their numinous powers as practitioners of the most traditional black shamanism.`],
@@ -4207,8 +4164,7 @@ The contraption that we form<br>We pray that the result would be a child<br>The 
     textURL: ["https://www.academia.edu/40395941/Birtalan_%C3%81gnes_Delden_Mend_The_Darkhad_Shaman_and_Outlaw","https://www.academia.edu/31011925/Translation_of_Mongolian_Shamanic_Praises_A_Study_of_most_Frequent_Errors","https://www.isars.org/wp-content/uploads/2021/01/ShamanVol12_2004_dld.pdf#page=25","https://www.researchgate.net/publication/275759078_Sacral_communication_of_Darkhad_shamans","https://www.academia.edu/1476926/Shamanic_Traditions_Rites_and_Songs_Among_the_Mongolian_Buryats","https://www.academia.edu/33587931/Pedersen_2007_Multiplicity_Without_Myth_Theorising_Darhad_Perspectivism"]
   },
   {
-    region: "East Asia",
-    label: "ASEAFRT",
+    id: "ASEAFRT",
     title: {original: "四書五經", transliteration: "Sìshū Wǔjīng", translation: "4 Books & 5 Classics"},
     group: {people: "Chinese", language: "Chinese", religion: "Ruism", country: "China"},
     info: [
@@ -4273,8 +4229,7 @@ The contraption that we form<br>We pray that the result would be a child<br>The 
     textURL: ["http://wengu.tartarie.com/wg/wengu.php?l=bienvenue","https://ctext.org/confucianism","https://laits.utexas.edu/~mr56267/HIST_301J/Sources/Daxue-Zhongyong.pdf","https://warwick.ac.uk/fac/arts/classics/intranets/students/modules/ancientglobalhistory/syllabus/analects_of_confucius_eno-2015.pdf","https://scholarworks.iu.edu/iuswrrest/api/core/bitstreams/265d73a0-6bfa-45df-92ff-4e7d3f8be4b1/content"]
   },
   {
-    region: "Highland Asia",
-    label: "ASHIFRT",
+    id: "ASHIFRT",
     title: {original: "བཀའ་འགྱུར་དང་བསྟན་འགྱུར", transliteration: "Kangyur & Tengyur", translation: "Translated Words & Treatises"},
     group: {people: "Tibetan", language: "Tibetan/Zhangzhung", religion: "Bön", location: "Tibet, CN"},
     info: [`Like pleasant rain for the wise, the <i>Precious Treasury of Good Sayings</i>, as translated from Tibetan to English by Samten Gyeltsen Karmay, provides a history of the Bön religion and its treasure texts, the various discoveries of which constituted the requisite step in the codification of indigenous Bön traditions as distinct from the Buddhist practices introduced to Tibet. Though most of the texts were rediscovered by <+><i>tertöns</i>[discoverers of ancient hidden texts]</+> over a millennium ago, the unwritten traditions they capture are much older, predating the 7th-century introduction of Buddhism by yet another millennium. The origins of Bön lie in the Zhangzhung Kingdom of western Tibet; the founder of Bön, Tonpa Shenrab Miwoche, is credited with creating Zhangzhung culture, including crafts, linguistics, medicine, astronomy, and inner Bön doctrine.`],
@@ -4305,8 +4260,7 @@ The contraption that we form<br>We pray that the result would be a child<br>The 
     ]
   },
   {
-    region: "Southeast Asia",
-    label: "ASSEFRT",
+    id: "ASSEFRT",
     title: {original: "ᯇᯮᯘ᯲ᯖᯂ", transliteration: "Pustaha", translation: "Book of Magic"},
     group: {people: "Batak", language: "Toba Batak", religion: "Ugamo Malim", location: "Sumatra, ID"},
     info: [
@@ -4346,8 +4300,7 @@ The contraption that we form<br>We pray that the result would be a child<br>The 
     ]
   },
   {
-    region: "South Asia",
-    label: "ASSOFRT",
+    id: "ASSOFRT",
     title: {original: "वेदः", transliteration: "Vedas", translation: "Knowledge"},
     group: {people: "Vedic", language: "Sanskrit", religion: "Hinduism", country: "India"},
     info: [`The four holy <i>Vedas</i> were composed during the Vedic period (c. 1500–500 BCE) in the northwest of the Indian subcontinent by the ancient sages who heard the eternal <+><i>apauruṣeyā</i>[not of human origin, impersonal, authorless]</+> knowledge. They contain prayers to <+>devās[deities, supraphysical beings without physical bodies endowed with consciousness, knowledge, and power; they carry out actions directly from their consciousness without the need for a body]</+> or personified forces of nature and the Ultimate Reality. They also contain <i>yajña</i> rituals—<i>yajña</i> is variously defined as a <+>journey[every action in life is a step in our journey towards realising the goal, namely bliss, an all-sided perfection of not only the physical body, but the vital and mental bodies, not only an individual perfection but perfection of the entire society]</+>, <+>climbing a hill[climbing from one peak to another, from one degree of perfection to another]</+>, a <+>battle[against the powers that hinder our journey towards perfection]</+>, and also worship or <+>rite[a symbolic physical representation of the various steps involved in collaboration]</+>; the ritual action is not performed by a human but by devās at the request of a human—and philosophical discourses on the nature of Paramātmā, the soul, and the world. These discourses include the Upanishads, literally “sitting down near” a teacher, vedantic knowledge appended to the end of each Veda.`],
@@ -4401,8 +4354,7 @@ The contraption that we form<br>We pray that the result would be a child<br>The 
     ]
   },
   {
-    region: "West Asia",
-    label: "ASWEFRT",
+    id: "ASWEFRT",
     title: {original: "τὰ βιβλία", transliteration: "Ta Biblia", translation: "The Bible", literal: "The Books"},
     group: {people: "Jewish", language: "Aramaic", religion: "Christianity", country: "Palestine"},
     info: [
@@ -4437,10 +4389,8 @@ The contraption that we form<br>We pray that the result would be a child<br>The 
       `Then he took a cup, and when he had given thanks, he gave it to them, saying, “Drink from it, all of you. This is my blood of the covenant, which is poured out for many for the forgiveness of sins. I tell you, I will not drink from this fruit of the vine from now on until that day when I drink it new with you in my Father’s kingdom.”`,
       `When they had sung a hymn, they went out to the Mount of Olives.`,
       `Then Jesus told them, “This very night you will all fall away on account of me, for it is written:`,
-      ``,
       `&emsp;&emsp;‘I will strike the shepherd,<br>&emsp;&emsp;and the sheep of the flock will be scattered.’`,
       `But after I have risen, I will go ahead of you into Galilee.”`,
-      ``,
       `Peter replied, “Even if all fall away on account of you, I never will.”`,
       `“Truly I tell you,” Jesus answered, “this very night, before the rooster crows, you will disown me three times.”`,
       `But Peter declared, “Even if I have to die with you, I will never disown you.” And all the other disciples said the same.`,
@@ -4477,8 +4427,7 @@ The contraption that we form<br>We pray that the result would be a child<br>The 
     ]
   },
   {
-    region: "Central Asia",
-    label: "ASCEFRT",
+    id: "ASCEFRT",
     title: {original: "𐰃𐰺𐰴 𐰋𐰃𐱅𐰃𐰏", transliteration: "Irk Bitig", translation: "Book of Omens"},
     group: {people: "Uyghur", language: "Old Turkic", religion: "Tengrism", location: "Xinjiang, CN"},
     info: [
@@ -4512,8 +4461,7 @@ The contraption that we form<br>We pray that the result would be a child<br>The 
     ]
   },
   {
-    region: "Eastern Europe",
-    label: "EUEAFRT",
+    id: "EUEAFRT",
     title: {original: "Kalevala", translation: "Land of Heroes"},
     group: {people: "Finnish", language: "Finnic", religion: "Suomenusko", country: "Finland"},
     info: [
@@ -4564,8 +4512,7 @@ The contraption that we form<br>We pray that the result would be a child<br>The 
     ]
   },
   {
-    region: "Western Europe",
-    label: "EUWEFRT",
+    id: "EUWEFRT",
     title: {original: "Edda Sæmundar", translation: "Poetic Edda"},
     group: {people: "Norse", language: "Old Norse", religion: "Norse paganism", country: "Iceland"},
     info: [`The <i>Poetic Edda</i> is a collection of narrative poetry relating the stories of the old Germanic gods and heroes in mythical and material realms across the dense forests, stark mountains, and powerful rivers of Scandinavia and Germany. The primary source for the written text of the <i>Elder Edda</i>, so called for its relation to the later <i>Prose Edda</i>, that has survived into the present is the 13th-century Icelandic manuscript <i>Konungsbók</i> (pictured), also called the <i>Codex Regius</i>, although the complete body of Eddic poetry also incorporates other 14th-century manuscripts, like the <i>Hauksbók</i> and AM 748 I 4to, and even earlier runic inscriptions like the Eggja and Fyrby runestones.`],
@@ -4643,8 +4590,7 @@ The contraption that we form<br>We pray that the result would be a child<br>The 
     textURL: "https://books.openbookpublishers.com/10.11647/obp.0308/"
   },
   {
-    region: "Australia",
-    label: "OCAUFRT",
+    id: "OCAUFRT",
     title: {original: "Songs of Central Australia"},
     group: {people: "Arrernte", language: "Arrernte", religion: "Altyerre", location: "Alice Springs, AU"},
     info: [`At the creation of the world and through its present and eternal existence is <i>Altyerre</i>, the Dreaming. Just like nighttime dreaming, interpreted in the context of places and progenitors, mediates access to the spiritual and religious domains, Altyerre captures the complex and persistent relationship between the ancestral and dream realms. Such acts of dreaming constitute an objective experience in which time and space are no longer obstacles, and in which information of great importance is gained by the dreamer. The same is true for the sacred songs and narratives that describe the Dreaming, timeless stories of ancestral beings and country also called Altyerre.`],
@@ -4720,30 +4666,23 @@ The contraption that we form<br>We pray that the result would be a child<br>The 
       `The serpent Ljắļțakalbắla also emerged out of the pool at Emī́aŋa. When he was still young he went to Kặṇṭowắḷa, north-east of Tū́na and not far from it, where the Finke River takes a bend. There he stayed and grew, and reached full growth. He never wandered very far; he always remained at home: he grew to his full size. Having lived there and lived there, he lay there stretched out over a huge area, a real monster. Back at Emī́aŋa the willy wagtail woman spoke—“Listen, I am going to visit our nephew.” The others replied—“By all means, go and see him, and bring back your nephew.” Then the willy wagtail woman went to visit her nephew, who had left the pool as a little red-tailed snake.`,
       `The woman rested at <+>Dḗtjerakắņas[a place south of Owen Springs, meaning “place of the willy wagtails”]</+> and proceeded to gather ljā́ū́a seed. She went on again; for it had grown light, and she had risen. She caught sight of her nephew and brought the seed to him in a large wooden dish. Then she proceeded to grind it for him at that spot. Having ground it, she gave him the uncooked meal-cake. In the evening she says, “Listen, let us return to the cooked meal-cakes, to the ripe ljā́ū́a seed.” “Very well, I’ll go first thing in the morning; and I mean it.”`,
       `The following morning the ljắļțakalbắla serpent was lying coiled up when the woman said, “We should set out right away—it’s time for you to get up.” He did not move. He lay there lazily, and the sun was getting quite high. The woman <+>circled[as willy wagtails are accustomed to do before diving upon their quarry]</+> around him. She could not rouse him—the serpent was too obstinate. So the woman went further back, and then dived upon him at full speed. She struck his forehead with the palms of both her hands, while the serpent kept on wriggling his head. At last he sent a quiver through the whole of his body and proceeded to glide away at a leisurely pace. He did his gliding to the accompaniment of the following verses—`,
-      ``,
       `<V>She is swaying ceaselessly from side to side before his head:</V><br><V>The willy wagtail keeps on pecking at him, she keeps on pecking at him.</V>`,
-      `&emsp;&emsp;Let him scar the ground as with a stick:<br>&emsp;&emsp;Let him glide along in the snake furrow!`,
-      `&emsp;&emsp;The snake’s tail is hissing through the air:<br><V>The broad back of the snake is hissing through the air.</V>`,
-      ``,
-      `&emsp;&emsp;He went along, he crossed the Finke River; after that he kept continually to the bank without descending into the river bed. Late in the evening he halted. He opened his jaws, and the name of the place is Where-the-snake-yawned (Pmā́la Rắlkaka). On the high ground he stiffened his body and lay there stiffly. The willy wagtail woman, on the other hand, gathered ljā́ū́a seed for her nephew. Having gathered it, she brought it home, she winnowed it, she placed it on the grinding stone, she drew water and wetted it. Then she ground it; having ground it, she gave it to the serpent. After she had given it, the snake coiled himself up, glutted. He was lying down, as is told in the well-known verse—`,
-      `&emsp;&emsp;In the serpent hollow may his head gleam black:<br>&emsp;&emsp;Between his two eyes may his head gleam black!`,
-      ``,
+      `<V>Let him scar the ground as with a stick:</V><V>Let him glide along in the snake furrow!</V>`,
+      `<V>The snake’s tail is hissing through the air:</V><V>The broad back of the snake is hissing through the air.</V>`,
+      `He went along, he crossed the Finke River; after that he kept continually to the bank without descending into the river bed. Late in the evening he halted. He opened his jaws, and the name of the place is Where-the-snake-yawned (Pmā́la Rắlkaka). On the high ground he stiffened his body and lay there stiffly. The willy wagtail woman, on the other hand, gathered ljā́ū́a seed for her nephew. Having gathered it, she brought it home, she winnowed it, she placed it on the grinding stone, she drew water and wetted it. Then she ground it; having ground it, she gave it to the serpent. After she had given it, the snake coiled himself up, glutted. He was lying down, as is told in the well-known verse—`,
+      `<V>In the serpent hollow may his head gleam black:</V><V>Between his two eyes may his head gleam black!</V>`,
       `Again the earth grew light, and at early dawn she set out to rouse him. The woman circled around him, and again she could not awaken him. The woman again walks further away, while he is still lying coiled up. Having turned right around, she hits his head as before. He rises. Then the woman, as usual, went on ahead; the serpent continued to glide along behind her in a different furrow.`,
       `They went a very great distance. He crossed a <+>river bed[the Hugh River]</+> and then climbed up a <+>range[the James Range]</+>; the name of the place is Where-the-snake-ascended (Pmā́lintjī́ka). From the top of the pass he listens and hears how the echidna men are singing on their circumcision ground. He waits— “There are many men here.” His aunt, the willy wagtail, goes ahead and tells the echidna men, “Listen, a corpse-devouring serpent has come into the vicinity: you had better watch out for yourselves!” The echidna men say, “We are going to kill him today, hungry as we are for meat, so that we can eat this snake.” The aunt returns to the mountain where she had built a shelter for the serpent. Upon arrival she says, “They have been talking about killing you,—they have been talking about eating you in their hunger for meat: you had better watch out!”`,
       `The serpent answers, “What, have I come here as meat for angry men?” He then placed a bunch of eagles feathers into the belt at his back, and shook himself violently—“What, are these the men who are going to kill me?” He went forth in anger: his head remained on the ground motionless, only his sides, his body, and his tail went out. The tail tip, the tail, the lower portion of his body, went forth and turned back in a curve: again the lower end went on, again it turned back in a curve, and so forth. Finally, it came to <+>rest[the tail portion of the snake goes out in a series of wriggling curves until the whole party of echidna men has been surrounded; the tail tip finishes up against the head of the serpent]</+>. One echidna man rises and attempts to hit the snake with his stick and with his spear. He merely swallows him: stick and all, spear and all, he disappears down his throat. A further number of men rose up: he swallowed them, complete with all their gear. The rest fled in terror, but the body of the serpent, which had surrounded their camp, frightened them back, and chased them towards the mouth. He ended by swallowing them all. Men, women, children, spears, shields, hairstring pads, spearthrowers—he swallowed everything. The name of the place is Rḗlbila.`,
       `The willy wagtail woman alone remained alive. Towards evening she again collected seed, winnowed it and gave it to him, whereupon he gulped it down. Glutted with food he proceeded to roll about, to toss about as if in pain. From his mouth he split open to the very tip of his tail. Out fell the bones. as well as the shields, the wooden vessels, the spears, and everything else. Then he stretched himself out, after all the bones of his victims had fallen out. He now began to sing charms. Not a scar remained on him: the flesh of his body became whole again as it had been originally. These were the verses that he chanted—`,
-      ``,
       `<V>”My tail tip is healing without a scar, is healing without a scar;</V><br><V>My mouth is healing without a scar, is healing without a scar.”</V>`,
       `<V>”My mouth is healing without a scar, is healing without a scar;</V><br><V>My mouth is growing whole again, is growing whole again.”</V>`,
       `<V>”My mouth is growing whole again, is growing whole again;</V><br><V>My tail tip is growing whole again, is growing whole again.”</V>`,
-      ``,
       `When the earth grew bright, he went on without any scars, and advanced in a <+>deep furrow[he cut this deep furrow as he dragged his enormous bulk over the plain]</+>, close to <+>Njḗnkugŭ́ņa[means “of the diamond sparrows”; it was the home of the diamond sparrows in Central Arrernte tradition; its English name is Owen Springs]</+>. Before resting time has come, he advances slowly; he continues to advance steadily. Again he proceeds to cross the river bed. He ascends the Waterhouse Range: the name of the place as before is Where-the-snake-ascended (Pmā́lintjı̆́ka). He coiled himself up at Snake-headgear (Pmā́kaṇṭa). Having rested here he travels along the eastern bank of the river. In the evening he casts himself down nearby, north of Njḗnkugŭ́ņa.`,
       `On the following morning he resumes his journey; he keeps on travelling east of the river, he takes no rest. And then the woman looked down upon something—“Listen, there are carpet-snake men over there: you had better make yourself small and creep away quietly.” “Certainly, I’ll go over yonder.” He proceeded like a frightened thing, keeping to the east, still cutting a furrow. When evening descended, he made a halt at Willy Wagtail (Dḗtjeratjĕ́ra). The woman again went out gathering seed.`,
       `In the morning he rose and went uphill; he proceeded to climb over low ridges. He descended on the other side, and then ascended a range. From here he caught sight of something: the yam men were singing at their ceremonies at <+>Iwŏ́pațắka[“the cobweb covered it”, important yam clan center]</+>. They were singing and singing, while he was looking down at them from this hill, whose name is Sire’s Forehead (Knắritj’ Uḷū́ṭṇa): “What a large number of men there are here!” Having seen the men, he changed his course westward; he crossed the creek here, he climbed over a hill. Then his tail tip as before went forth and turned back in a curve, and so forth, till his tail was resting alongside his head. His aunt proceeds to speak thus to the yam men—“Attack this red-tailed snake,—you who are meat-hungry after living only on yams!” One man went and inspected the serpent carefully; he threw his stick at the serpent, but the latter swallowed the stick. He threw a stone, and the latter swallowed the stone. Then he went back to summon his mates. Spearthrowers, spears, sticks, hairstring bands, wooden vessels—all these were swallowed by the snake; the men, too, were swallowed, and so were the women and the children. And then, having gorged his fill, he proceeded to draw long and tired <+>curves[i.e. he crawled from the waterhole to a plain situated about a mile east of the scene of the slaughter; he proceeded there in a series of huge curves, shaped like horseshoes, like a very tired snake]</+> on the plain east of Iwŏ́pațắka. At <+>Nkā́ritjṓa[“Meat Juice/Blood/Fat”, so called because the body of the serpent here split open, and the blood, bones, and fat of the dead men were poured out all over the plain]</+> he flung himself down to rest. Then he proceeded to toss about as though in pain. His belly again split open, from his mouth to his tail tip; and the juice and the bones of his victims were poured out in all directions. Again he sang, using the same verses—`,
-      ``,
       `<V>”My tail tip is healing without a scar, is healing without a scar;</V><br><V>My mouth is healing without a scar, is healing without a scar.”</V>`,
       `<V>”My tail tip is growing whole again, is growing whole again;</V><br><V>My mouth is growing whole again, is growing whole again.”</V>`,
-      ``,
       `With these verses he made himself whole once more, and his body lost its scars for the second time.`,
       `&emsp;&emsp;In the morning he again proceeded to glide uphill in a furrow—`,
       `&emsp;&emsp;Let him scar the ground as with a stick;<br>&emsp;&emsp;Let him glide along in the snake furrow!`,
@@ -4787,8 +4726,7 @@ The contraption that we form<br>We pray that the result would be a child<br>The 
     ]
   },
   {
-    region: "Madagascar",
-    label: "OCMDFRT",
+    id: "OCMDFRT",
     title: {original: "Andriambahoaka", translation: "Lord of the People"},
     group: {people: "Malagasy", language: "Malagasy", religion: "Fomba Gasy", country: "Madagascar"},
     info: [
@@ -4869,8 +4807,7 @@ The contraption that we form<br>We pray that the result would be a child<br>The 
     ]
   },
   {
-    region: "Melanesia",
-    label: "OCMLFRT",
+    id: "OCMLFRT",
     title: {original: "Viti Makawa", translation: "Ancient Fiji"},
     group: {people: "iTaukei", language: "Fijian", religion: "Vanua", country: "Fiji"},
     info: [
@@ -4906,8 +4843,7 @@ The contraption that we form<br>We pray that the result would be a child<br>The 
     ]
   },
   {
-    region: "Micronesia",
-    label: "OCMCFRT",
+    id: "OCMCFRT",
     title: {original: "Piig ma machmaach", translation: "Ritual Words & Actions"},
     group: {people: "Yapese", language: "Yapese", religion: "Rong", location: "Yap, FSM"},
     info: [
@@ -4963,8 +4899,7 @@ The contraption that we form<br>We pray that the result would be a child<br>The 
     ]
   },
   {
-    region: "Polynesia",
-    label: "OCPLFRT",
+    id: "OCPLFRT",
     title: {original: "Kōhau motu mo rongorongo", translation: "Lines Incised for Chanting Out"},
     group: {people: "Rapa Nui", language: "Rapa Nui", religion: "Ivi Atua", location: "Rapa Nui, CL"},
     info: [
@@ -5021,4 +4956,218 @@ The contraption that we form<br>We pray that the result would be a child<br>The 
     ]
   }
 ];
-export const reccsData = [modTradNovels,stirrPoetry,cultFeatFilms,presMusDrama,foundRelTexts];
+export const globFeatFilms = [
+  {
+    id: "AFNOGFF",
+    title: {original: "ⴰⴽⵓⵏⴰⴽ ⵜⴷⴰⵍⴰⵜ ⵜⴰⵀⴰ ⵜⴰⵣⵓⴳⵀⴰⵉ", transliteration: "Akounak Tedalat Taha Tazoughai", translation: "Rain the Color of Blue with A Little Red In It"},
+    year: "2015",
+    group: {people: "Tuareg", language: "Tamasheq", country: "Niger/USA"},
+    info: [
+      `<i>Akounak</i> tells the story of a musician trying to make it against all odds, set against the backdrop of the Tuareg <i>tishoumaren</i> desert blues music scene. The protagonist, real life musician Mdou Moctar, must battle fierce competition from jealous musicians, overcome family conflicts, endure the trials of love, and overcome his biggest rival—himself.`,
+      `An homage to Prince’s 1984 film <i>Purple Rain,</i> the story was written with and for a Tuareg audience by a Euro-American record label executive, drawing from the experiences of Mdou Moctar and his fellow musicians. Carried by stunning musical performances from Mdou, the film is equally a window into modern day Tuareg guitar in the city of Agadez, Niger as it is an experiment in new techniques of cross cultural collaboration, much like the genre of music being documented itself.`,
+      `Though the film’s significant ethnographic and outside observer components disqualify it from being a proper cultural film, its efforts toward honest depictions, its involvement of local (though non-traditional) musicians, and especially its extensive use of the Tamasheq language are sufficient to qualify it as an alternate selection.`
+    ],
+    infoURL: ["https://en.wikipedia.org/wiki/Akounak_Tedalat_Taha_Tazoughai","https://sahelsounds.com/films/akounak-tedalat-taha-tazoughai/"],
+    watch: ["https://archive.org/details/rain_the_color_of_blue"],
+    trailer: "https://youtu.be/QHgEuzv-zNA?t=2",
+    location: {x: 7.9911, y: 16.9733, name: "Agadez, Niger"},
+    runtime: 75,
+    genre: ["Drama","Musical","Romance"],
+    tags: [""],
+    color: "#4f3457"
+  },
+  {
+    id: "AFSOGFF",
+    title: {original: "Inxeba", translation: "The Wound"},
+    year: "2017",
+    group: {language: "Xhosa", country: "South Africa"},
+    info: [
+      `Xolani, a lonely factory worker, joins the men of his community in the mountains of the Eastern Cape to initiate a group of teenage boys into manhood in the Xhosa <i>Ulwaluko</i> ceremony. When a defiant initiate from the city discovers his best kept secret, Xolani’s entire existence begins to unravel.`,
+      `The film is based on a novel by Thando Mgqolozana, who also co-wrote the script, and stars non-binary musician, novelist, and actor Nakhane in a critically-acclaimed performance.`
+    ],
+    infoURL: "https://en.wikipedia.org/wiki/The_Wound_(2017_film)",
+    watch: ["https://www.kanopy.com/en/product/wound-0","https://www.amazon.com/gp/video/detail/B076FC4399","https://tv.apple.com/us/movie/umc.cmc.51jd1jc67gg1lyzlpqyumbmxb","https://athome.fandango.com/content/browse/details/The-Wound/906495"],
+    trailer: "https://youtu.be/ja1QEpgUszo",
+    location: {x: 26.4194, y: -32.2968, name: "eMpuma-Kapa"},
+    runtime: 88,
+    genre: ["Drama","LGBTQ+","Romance"],
+    tags: ["queer","gay"],
+    color: "#8a3b36"
+  },
+  {
+    id: "AMSWGFF",
+    title: {original: "Béeso Dah Yiníłjaa'", translation: "Fistful of Dollars"},
+    year: "2021",
+    group: {people: "Diné", language: "Navajo", location: "Arizona, US"},
+    info: [`<i>Béeso Dah Yiníłjaa’</i> is a version of the 1964 Western film <i>A Fistful of Dollars</i> that has been dubbed entirely in the Navajo language. The project was spearheaded by the Navajo Nation Museum as an effort to preserve and revitalize the language, particularly among younger generations. The film, originally a “spaghetti Western” starring Clint Eastwood, was chosen partly because it does not feature any Native American characters, thus avoiding the often inaccurate or offensive portrayals found in many other films of the genre.`],
+    infoURL: "https://www.npr.org/2021/11/17/1055897665/dubbing-a-fistful-of-dollars-to-spread-the-navajo-language",
+    watch: [""],
+    trailer: "https://youtu.be/Rp_UIamM2kU",
+    location: {x: -110.9343, y: 31.3404, name: "Nogales"},
+    runtime: 99,
+    genre: ["Western","Action"],
+    tags: [""],
+    color: "#a87d4f"
+  },
+  {
+    id: "AMSOGFF",
+    title: {original: "La vida en común", translation: "Living All Together"},
+    year: "2019",
+    group: {people: "Rankülche", language: "Spanish", country: "Argentina"},
+    info: [
+      `A puma is stalking Pueblo Ranquel, an indigenous community settled in the northern Argentinian desert, in a modern camp built to accommodate them. As if to break free of their youth, some young boys start stalking the animal, a traditional rite of passage.`,
+      `Most often leaving adults out of the frame, the filmmaker interweaves history with small stories, to trace the contours of complex identities: adolescents evolving between the ancestral and the future, between tradition and homogenization.`
+    ],
+    watch: [""],
+    trailer: "https://youtu.be/enegHoLKKI4",
+    location: {x: -65.7169, y: -34.6082, name: "Ranquel Nation"},
+    runtime: 70,
+    genre: ["Docudrama","Coming-of-Age"],
+    tags: [""],
+    color: "#a9998d"
+  },
+  {
+    id: "ASNOGFF",
+    title: {original: "Сэр' няда", transliteration: "Ser' nyada", translation: "White Moss"},
+    year: "2014",
+    group: {people: "Nenets", language: "Nenets", location: "Yamalia, RU"},
+    info: [
+      `<i>White Moss</i>, also known by its Russian title <i>Belyy yagel</i>, takes place in the Yamalo-Nenets Autonomous Okrug of Russia in Western Siberia, where the Nenets people lead a traditional way of life. A young Nenets man, waiting for his beloved from the mainland, is forced into marriage by his mother. It is a story about loyalty, tradition, and the difficulty of choice.`,
+      `The film is based on the novel of the same name by Nenets author Anna Nerkagi, and features primarily Kalmyk, Buryat, and Yakut lead actors, alongside supporting roles played by Nenets from Yamal, all speaking the Tundra Nenets langauge.`
+    ],
+    infoURL: "https://ru.wikipedia.org/wiki/%D0%91%D0%B5%D0%BB%D1%8B%D0%B9_%D1%8F%D0%B3%D0%B5%D0%BB%D1%8C",
+    watch: ["https://tubitv.com/movies/505928/the-white-moss-belyy-yagel","https://fawesome.tv/movies/10616980/white-moss"],
+    trailer: "https://youtu.be/KVKnN-9czbk",
+    location: {x: 72.0000, y: 70.0000, name: "Yamalia"},
+    runtime: 100,
+    genre: ["Drama","Romance"],
+    tags: [""],
+    color: "#81777b"
+  },
+  {
+    id: "ASSEGFF",
+    title: {original: "Mùi đu đủ xanh", translation: "The Scent of Green Papaya"},
+    year: "1993",
+    group: {people: "Vietnamese", language: "Vietnamese", country: "France"},
+    info: [
+      `1950s Saigon through the eyes of Mui, a Vietnamese servant girl. At 10 years-old, Mui leaves her village to work for an affluent, troubled family. As she comes of age, Mui finds work in the household of a pianist she has admired since childhood, and finds their relationship growing in complexity.`,
+      `Dir/Scr <b>TRẦN ANH HÙNG</b> left Vietnam at age 12, but returned 16 years later to Hồ Chí Minh City with plans to shoot <i>Mùi đu đủ xanh</i> on location in Vietnam. When accomplishing this proved too cumbersome, the film was instead shot entirely on a soundstage reconstruction of downtown Saigon in Bry-sur-Marne, France.`
+    ],
+    infoURL: "https://en.wikipedia.org/wiki/The_Scent_of_Green_Papaya",
+    watch: ["https://www.kanopy.com/en/product/scent-green-papaya","https://www.amazon.com/gp/video/detail/B08BF8VC38","https://tv.apple.com/us/movie/umc.cmc.3hmh1smmnu8ut670mv43h269g","https://athome.fandango.com/content/browse/details/The-Scent-of-Green-Papaya/24058","https://archive.org/details/the.-scent.-of.-green.-papaya.-1993.1080p.-blu-ray.x-264.-aac-yts.-mx"],
+    trailer: "https://youtu.be/q2OfJYvjgQ8",
+    location: {x: 106.6297, y: 10.8231, name: "Ho Chi Minh City"},
+    runtime: 104,
+    genre: ["Drama","Romance"],
+    tags: ["bechdel test"],
+    color: "#504134"
+  },
+  {
+    id: "ASHIGFF",
+    title: {original: "ལུང་ནག་ན", transliteration: "Lung nag na", translation: "Lunana: A Yak in the Classroom"},
+    year: "2019",
+    group: {people: "Ngalop", language: "Dzongkha", country: "Bhutan"},
+    info: [
+      `<i>Lunana</i> follows Ugyen, a discontented, aspiring singer living in Thimphu who dreams of moving to Australia to become a rock star. He is sent to finish his mandatory teaching service in Lunana, a village of 56 people, 4,800 meters above sea level with no electricity or internet.`,
+      `Filmed on location in the Himalayas, the film showcases stunning, panoramic mountain scenery, and includes acting performances from many of the residents of the actual village of Lunana.`
+    ],
+    watch: ["https://tubitv.com/movies/100018429/lunana-a-yak-in-the-classroom","https://www.amazon.com/gp/video/detail/amzn1.dv.gti.2617c909-646d-4c96-aa0d-ca44f34ed961"],
+    trailer: "https://youtu.be/1W8m1IjLJB8",
+    location: {x: 89.8333, y: 28.0000, name: "Gasa District"},
+    runtime: 110,
+    genre: ["Drama","Comedy-Drama"],
+    tags: [""],
+    color: "#9e603a"
+  },
+  {
+    id: "OCAUGFF",
+    title: {original: "Samson and Delilah"},
+    year: "2009",
+    group: {people: "Warlpiri", language: "Warlpiri", location: "Central Australian desert"},
+    info: [
+      `Samson and Delilah are 14-year-olds who live in the Aboriginal community of Iwupataka, or Jay Creek, near Alice Springs in Central Australia. Samson is mute and addicted to sniffing petrol, and Delilah takes care of her grandmother, with whom she creates dot paintings.`,
+      `Dir/Scr <b>WARWICK THORNTON</b> calls the film a “survival love story” of overcoming the bleak circumstances of an impoverished, government-run Aboriginal settlement. He is best known for this, his award-winning debut feature film, and four and counting features since.`
+    ],
+    watch: ["https://therokuchannel.roku.com/details/1c9922336caf5e27b8339493022f5c90/samson-and-delilah"],
+    trailer: "https://youtu.be/kcLDCNSqimA",
+    location: {x: 135.3330, y: -24.1350, name: "Iwupataka"},
+    runtime: 101,
+    genre: ["Drama","Addiction","Romance","Bleak","Emotional"],
+    tags: [""],
+    color: "#8f562e"
+  },
+  {
+    id: "OCMDGFF",
+    title: {original: "Tantara malagasy", translation: "Disco Afrika: A Malagasy Story"},
+    year: "2023",
+    group: {people: "Betsimisaraka", language: "Malagasy", country: "Madagascar"},
+    info: [
+      `After a traumatic event forces him to leave the sapphire mines, Kwame returns to his hometown, where he reconnects with his mother and old friends. While there, he confronts the harsh realities of corruption and societal decay, forcing him to choose between the temptation of easy money and a tougher path toward political awakening and integrity.`,
+      `Dir <b>LUCK RAZANAJAONA</b> seeks to depict the contemporary political cycles of his country, and takes an interest in engaging Madagascar in neighboring Pan-Africanism.`
+    ],
+    watch: [""],
+    trailer: "https://youtu.be/EB4VECA1MdM",
+    location: {x: 49.4023, y: -18.1417, name: "Toamasina"},
+    runtime: 81,
+    genre: ["Drama","Political","Coming-of-Age"],
+    tags: [""],
+    color: "#725449"
+  },
+  {
+    id: "OCPLGFF",
+    title: {original: "Next Goal Wins"},
+    year: "2023",
+    group: {language: "English", location: "American Samoa, US"},
+    info: [
+      `The story of the infamously terrible American Samoa soccer team, known for a brutal 2001 FIFA match they lost 31-0, and their attempt to turn around with a new coach.`,
+      `Though <i>Next Goal Wins</i> doesn’t qualify as a cultural feature film—both despite and because of its lampooning and unavoidable perpetuation of the white savior trope, as well as its mostly non-Polynesian creative team—its hilariously heartwarming and culturally didactic storytelling pushed the movie above the threshold of inclusion as an alternate.`
+    ],
+    infoURL: "https://en.wikipedia.org/wiki/Next_Goal_Wins_(2023_film)",
+    watch: ["https://www.amazon.com/gp/video/detail/amzn1.dv.gti.5b099d27-081d-4506-96db-762dfe3f3760","https://tv.apple.com/us/movie/umc.cmc.2049p35ohuitytmjqn12fswvt","https://athome.fandango.com/content/browse/details/Next-Goal-Wins/548137"],
+    trailer: "https://youtu.be/pRH5u5lpArQ",
+    location: {x: -170.1322, y: -14.2710, name: "Amerika Sāmoa"},
+    runtime: 104,
+    genre: ["Comedy","Sport","Feel-Good","LGBTQ-inclusive"],
+    tags: ["trans","non-binary","funny"],
+    color: "#366e37"
+  }
+];
+
+export const cultShortFilms = [
+  {
+    id: "AMLOCSF",
+    title: {original: "Imbé Gikegü", translation: "The Scent of Pequi Fruit"},
+    year: "2006",
+    group: {people: "Kuikuro", language: "Kuikúro", location: "Mato Grosso, BR"},
+    info: [
+      `As the dry season comes to an end, so begins the festive time of year in the Alto Xingu. The smell of the damp earth is mixed with the sweet perfume of pequi, and Kuikuro filmmakers <b>TAKUMÃ KUIKURO</b> and <b>MARICÃ KUIKURO</b> give us a re-enactment of the story of the fruit.`,
+      `Pequi, with its sexual and reproductive symbolic meanings, used to belong to the alligator, but a man named Marika killed him out of jealousy when he found out that his wives have been unfaithful to him, and the hummingbird is now in charge of the pequi. The film interweaves this story with the celebration of the Hugagu festival, which involves singing, dancing, and the making of wooden bird sculptures, as well as explanations of the importance of pequi.`
+    ],
+    watch: ["https://vimeo.com/ondemand/cheirodepequi/220915396"],
+    trailer: "https://youtu.be/GF49vlg9y5A",
+    location: {x: -53.1333, y: -12.4333, name: "Ipatse Village"},
+    runtime: 36,
+    genre: ["Dramedy","Symbolist"],
+    tags: [""],
+    color: "#dba839"
+  },
+  {
+    id: "AMSOCSF",
+    title: {original: "Lafken ñi az", translation: "The Ocean Reveals Its Knowledge"},
+    year: "2016",
+    group: {people: "Lafkenche Mapuche", language: "Mapudungun", country: "Chile"},
+    info: [
+      `The sea… its colours, its sounds, and its strength imbue the dialogue between two girls and their grandparents with its spirit and wisdom. The Mapuche Lafkenche, one of the major territorial divisions of the Mapuche people, observe the Lafkenmapu Az to enter its dynamics and maintain a balance with Lafkenmapu, the land of the sea.`,
+      `The short film was made by the Mapuche School of Filmmaking and Communication of the Aylla Rewe Budi, which focuses on <i>tukulpa kimvn</i>, bringing knowledge to the present through reflecting on traditional values.`
+    ],
+    watch: ["https://youtu.be/ZGI_KDOmOts"],
+    trailer: "https://youtu.be/23FowJvS9W4",
+    location: {x: -73.0000, y: -38.0000, name: "Lafkenmapu Territory"},
+    runtime: 8,
+    genre: ["Docufiction","Children's"],
+    tags: [""],
+    color: "#423327"
+  }
+];
+
+export const reccsData = [modTradNovels,stirrPoetry,cultFeatFilms,presMusDrama,foundRelTexts,globFeatFilms].flat();
