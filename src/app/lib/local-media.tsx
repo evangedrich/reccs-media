@@ -1063,7 +1063,10 @@ export const stirrPoetry = [
     excerpt: [`Night had fallen and behind closed doors everyone was sleeping<br>Thunder called out with a clamour of rain like shots from a thousand rifles<br>So was my wailing heard that they thought it a lion approaching<br>For men the spine and ribsides are the body’s central support<br>I am shut away now from the eyes through which I used to see<br>Only God knows the source of my lamentations<br>The vulture with an injury to his shoulder cannot fly<br>The horse who has lost his spine cannot gallop<br>The man injured in eye and ribs cannot seek revenge<br>A man whose heart aches cannot take a bride home<br>When the camels are thirsty their outcries increase<br>Like a small girl whose mother now lives in the hereafter<br>Whose father has brought another woman to sleep in the <i>aqal</i><br>I grieve constantly from the sorrow deep in my belly<br>I’m the man whose fiancée has been given to another<br>I’m the man who sees springs but whose thirst remains unquenched<br>I’m the man whose brother is clan leader and yet is accused<br>I am that silent man who sits, slowly patting his mouth again and again`],
     infoURL: ["https://www.ethnorema.it/wp-content/uploads/18-06-Orwin.pdf","https://somalinet.com/forums/viewtopic.php?t=304369#gsc.tab=0"],
     mediaURL: "https://youtu.be/p-L9f9TkVFE",
-    textURL: "https://citylore.org/wp-content/uploads/2022/01/Somalia_Poetry_Raage-Ugaas_Night-Has-Fallen.pdf"
+    textURL: "https://citylore.org/wp-content/uploads/2022/01/Somalia_Poetry_Raage-Ugaas_Night-Has-Fallen.pdf",
+    ref: [
+      { id: "andrzejewski-1993", type: "book", title: "An Anthology of Somali Poetry", contributors: [ { firstName: "Bogumil W.", lastName: "Andrzejewski", role: "author" }, { firstName: "Sheila", lastName: "Andrzejewski", role: "author" } ], pubDate: { year: 1993 }, publisher: "Indiana University Press", location: "Bloomington, IN", version: "Republished by Hassell Street Press, 2021", isbn: "9780253304635", medium: "Print", meta: { notes: "A definitive collection covering the major genres of Somali poetry, including the Gabay, Jiifto, and Geeraar. Features translations of works by Sayyid Mohamed Abdille Hassan and others.", grade: "B", tags: ["Somali Literature", "Oral Tradition", "Horn of Africa", "Poetry Anthology"] } }
+    ]
   },
   {
     id: "AFSOSTP",
@@ -1093,7 +1096,10 @@ export const stirrPoetry = [
     excerpt: [`A dark night has fallen on the world!<br>A veil of sadness covers humanity;<br>But I have hope.<br>I have hope<br>That the earth will return from death to life,<br>To give back to humans the strength and joy<br>of laughing out loud again,<br>When the evil, which strikes almose all hearts,<br>will be taken prisoner<br>to be annihilated, by the divine will.<br>And when a new day dawns,<br>its Sun will shine brighter than ever.<br>And if a new night falls,<br>It would no longer be moonless,<br>And its stars would twinkle,<br>to make all this dark globe luminous.<br>Then life will come back to life,<br>The air will become pure again;<br>Because I keep Hope in the torment of horror<br>That the sea of difficulties imposes on us,<br>Where every human being swims today,<br>That the future days<br>Are likely to be happier.`],
     infoURL: "https://brittlepaper.com/2022/08/poetry-collection-written-in-cameroons-bamum-script-translated-in-english-and-french/",
     mediaURL: "https://youtu.be/PrlWF8hv4Zw",
-    textURL: "https://brittlepaper.com/wp-content/uploads/2022/08/Poetry-Collection-Written-in-Cameroons-Bamum-Script-Translated-in-English-and-French-1.png"
+    textURL: "",
+    ref: [
+      { id: "gbetnkom-2022", type: "book", title: "ꛞ꛰ ꛤ꛰ ꛜꛄ꛰ꛜꛄ꛰ꛄ꛰ꛑ ꛅꚧꚳ꛰ ꛰ꚳꛤꚩꚤꚳ꛰ [Lo’ tù lu lulùre pon ntièn] (From Resilient Shadows)", contributors: [ { firstName: "Samuel Calvin", lastName: "Gbetnkom", role: "author" } ], pubDate: { year: 2022 }, url: "https://brittlepaper.com/wp-content/uploads/2022/08/Poetry-Collection-Written-in-Cameroons-Bamum-Script-Translated-in-English-and-French-1.png", publisher: "Generis Publishing", location: "Chisinau, Moldova", isbn: "9798886762396", medium: "Print / Trilingual Edition", meta: { notes: "A trilingual poetry collection in Shü-mom (Bamum), French, and English. It utilizes the modern Bamum script, which was originally developed by King Njoya in the late 19th century.", tags: ["Bamum", "Cameroonian Literature", "Shü-mom", "Indigenous Scripts", "African Poetry"] } }
+    ]
   },
   {
     id: "AFWESTP",
@@ -1602,7 +1608,7 @@ export const stirrPoetry = [
       `<i>8.</i>`,
       `That tree there, on the crest of dreams; its leaves are intertwined, its branches are joined, its twisted roots are not visible, and its fruits are fragrant with memory; I have been thinking of you, my Lasy, since we parted, long ago.`,
       `<sp><i>21.</i><br>`,
-      `Love, o my kin, has the perfume of the forest, like the lemon. And it is neither from coquetry nor from caprice that I say this to you, but because I want to possess you completely.`
+      `Love, o my kin, has the perfume of the forest, like the lemon. And it is neither from <+>coquetry[flirtatious behavior]</+> nor from <+>caprice[a sudden and unaccountable change of mood]</+> that I say this to you, but because I want to possess you completely.`
     ],
     infoURL: "https://en.wikipedia.org/wiki/Jean-Joseph_Rabearivelo",
     mediaURL: "https://youtu.be/M_U95bFk1U4",
@@ -2180,7 +2186,7 @@ export const cultFeatFilms = [
   },
   {
     id: "ASINCFF",
-    title: {original: "Шар нохойн там", transliteration: "Shar nokhoin tam", translation: "Cave of the Yellow Dog"},
+    title: {original: "ᠰᠢᠷ᠎ᠠ ᠨᠣᠬᠠᠢ ᠶᠢᠨ ᠲᠠᠮᠤ", transliteration: "Shar nokhoin tam", translation: "Cave of the Yellow Dog"},
     year: "2005",
     group: {people: "Khalkha", language: "Mongolian", country: "Mongolia"},
     info: [
@@ -3896,7 +3902,7 @@ export const foundRelTexts = [
       `When a great number of people had filled the land, they lived really miserably, scratching and digging the rock faces and ledges to make terraced fields. These fields, some small, others large, are still visible today on all the rocky heights. And all the birds of that age were perfectly beautiful, parrots and toucans all yellow and red.`,
       `Later, at the time when another <i>huaca</i> named Paria Caca appeared, these beings and all their works were cast out to the hot Anti lands by Paria Caca’s actions. Further on we’ll speak of Paria Caca’s emergence and his victories.`,
       `Also, as we know, there was another <i>huaca</i> named Cuni Raya. Regarding him, we’re not sure where he existed before Paria Caca or maybe after him. However, Cuni Raya’s essential nature almost matches Vira Cocha’s. For when people worshipped this <i>huaca</i>, they would invoke him, saying,`,
-      `&emsp;&emsp;”Cuni Raya Vira Cocha,<br>&emsp;&emsp;You who animate mankind,<br>&emsp;&emsp;Who charge the world with being,<br>&emsp;&emsp;All things are yours!<br>&emsp;&emsp;Yours the fields and yours the people.”`,
+      `&emsp;&emsp;”Cuni Raya Vira Cocha,<br>&emsp;&emsp;You who animate mankind,<br>&emsp;&emsp;Who charge the world with being,<br>&emsp;&emsp;All things are yours!<br><V>Yours the fields and yours the people.”</V>`,
       `&emsp;&emsp;And so, long ago, when beginning anything difficult, the ancients, even though they couldn’t see Vira Cocha, used to throw coca leaves to the ground, talk to him, and worship him before all others, saying,`,
       `&emsp;&emsp;”Help me remember how,<br>&emsp;&emsp;Help me work it out,<br>&emsp;&emsp;Cuni Raya Vira Cocha!”`,
       `&emsp;&emsp;And the master weaver would worship and call on him whenever it was hard for him to weave. For that reason, we’ll write first about this <i>huaca</i> and about his life, and later on about Paria Caca.`,
@@ -4652,7 +4658,7 @@ export const foundRelTexts = [
       `“I, Tjḗnterắma, have now grown lame,<br>Yes, lame; and the wŏ́rawŏ́ra flowers are clinging to me.”`,
       `Nodding sleepily he keeps on listening:<br>Fast asleep he is resting without a stir.`,
       `<sp><i>I.</i>`,
-      `Raging and irresistible—<br>Like a whirlwind he attempts to overwhelm him.`,
+      `Raging and irresistible—<br><v>Like a whirlwind he attempts to overwhelm him.</v>`,
       `<v>The sound of the bullroarers, the sound of the bullroarers is drawing near:</v><br><v>Covered with bullroarers, covered with bullroarers, they are drawing near.</v>`,
       `<sp><i>J.</i>`,
       `The sweet dark juice is flowing forth;<br>From the centre of the chalice it is flowing forth.`,
@@ -4684,10 +4690,10 @@ export const foundRelTexts = [
       `<V>”My tail tip is healing without a scar, is healing without a scar;</V><br><V>My mouth is healing without a scar, is healing without a scar.”</V>`,
       `<V>”My tail tip is growing whole again, is growing whole again;</V><br><V>My mouth is growing whole again, is growing whole again.”</V>`,
       `With these verses he made himself whole once more, and his body lost its scars for the second time.`,
-      `&emsp;&emsp;In the morning he again proceeded to glide uphill in a furrow—`,
-      `&emsp;&emsp;Let him scar the ground as with a stick;<br>&emsp;&emsp;Let him glide along in the snake furrow!`,
+      `In the morning he again proceeded to glide uphill in a furrow—`,
+      `<V>Let him scar the ground as with a stick;</V><V>Let him glide along in the snake furrow!</V>`,
       `He was now rushing along. While rushing along he caught sight of a ļắlbalanắņa snake. The ljắļțakalbắla serpent crept around him in a wide loop. Having climbed up another gully he went ahead, and his aunt, too, travelled up the same gully. Then he grew to his full size again and slithered forward.`,
-      `He proceeded to glide uphill on a narrow bluff ridge. He was going along ignoring everything, when he caught sight of a second ļắlbalanắņa snake at <+>Emī́aŋa[this is the different Emī́aŋa from the northern place of the same name where the serpent and laua women originated]</+>: here there was living a local snake ancestor. The ljắļțakalbắla serpent made himself as small as possible in order to creep further, and thus he went past within a few paces of the ļắlbalanắņa snake. From Emī́aŋa he went down a river bed; he kept on going downstream past Inḗnaŋa; and when evening was falling he stopped at Wooden Dish (Ark ŭ́ltumba). The woman as before shakes down <+>ljā́ū́a</+> seed and winnows it thoroughly. She gathers up a grinding stone: she pours the seed on the stone, she wets it with water, she pours it into a dish. Having ground it, she offers it to her nephew: holding it forward she places herself before him so that her nephew can drink the gruel.`,
+      `He proceeded to glide uphill on a narrow bluff ridge. He was going along ignoring everything, when he caught sight of a second ļắlbalanắņa snake at <+>Emī́aŋa[this is the different Emī́aŋa from the northern place of the same name where the serpent and laua women originated]</+>: here there was living a local snake ancestor. The ljắļțakalbắla serpent made himself as small as possible in order to creep further, and thus he went past within a few paces of the ļắlbalanắņa snake. From Emī́aŋa he went down a river bed; he kept on going downstream past Inḗnaŋa; and when evening was falling he stopped at Wooden Dish (Ark ŭ́ltumba). The woman as before shakes down ljā́ū́a seed and winnows it thoroughly. She gathers up a grinding stone: she pours the seed on the stone, she wets it with water, she pours it into a dish. Having ground it, she offers it to her nephew: holding it forward she places herself before him so that her nephew can drink the gruel.`,
       `Then she saw that the earth had grown bright: in the morning she desired to resume the journey. As before, the woman encircled him and slapped him. “We shall have to get away: the next place is a good distance from here.” The aunt went ahead while he rose and slithered along behind. Again he follows the creek bed. He takes the wrong direction: soon he sees something—“Why, we are right up against the <+>camp[they have come upon the home of the emu ancestors, who as Pắļțara-Kŋuā́rea men are cross-cousins by class to the serpent]</+> of our cousins!” Having caught sight of them, he climbs up on the bank. He ascends to the top of the hill and goes straight north from here. On top of the hill he stopped; he coiled himself up among heaps of smooth stones. His aunt again shook down seed in the evening. Again she gathered up a grinding stone and winnowed the seed as before. She made a hollow in the ground to receive a wooden vessel, ground the seed into this vessel, and having filled the vessel, gave it to him. Having drunk and drunk, he pushed the vessel away for his aunt to take from him. Then he went to sleep.`,
       `The earth was growing bright. “Let us hurry away again!” As before she slapped him and roused him, “Get up, and let us move on!” He resumed his journey and went over the stony gravel without descending to soft ground. He made a path for himself, he made a saddle over the range. He stopped, still on the gravel, and coiled himself up. Evening came. Again she gave him seed, having ground it into a vessel and having filled the vessel. During the night he lay in a deep sleep.`,
       `The sun rose over him. Again she made a hollow, and ground more seed at daybreak into the vessel till the sun had risen fairly high. Again she had to slap him for a long time. Then the aunt went on ahead, and he began to glide forward, slipping down into the creek bed. Without a move in his body he lay in the creek: only his neck and head shot out westward, and he yawned. After lying motionless, he turned right about and faced eastwards: his head alone shot out. Having <+>yawned[there are two places here called “Where-the-serpent-yawned” (=Pmā́la Rā́lkaka), one on the eastern and one on the western bank of the creek]</+> a second time, he now turned his head around once more and slithered uphill, still following the creek bed. He kept on slithering uphill, keeping always in the creek bed, going directly north. He climbed up in a hurry. He halted once more. Having left him here, his aunt went on and built him a brush shelter. In this brush shelter he began to coil himself up. Leaving him here his aunt went on; she went on to Emī́aŋa. She looked down at the ljā́ū́a women. She flew down.`,
@@ -4699,16 +4705,16 @@ export const foundRelTexts = [
       `>>(Emī́aŋa I:147-154 TGH)`,
       `<...>`,
       `<i>A.</i> <b>The Emī́aŋa pool</b>`,
-      `In the crooked gorge may his head gleam black;<br>In the serpent lake may his head gleam black!`,
-      `Into the serpent lake may he glide down;<br>Into the serpent hollow may he glide down!`,
+      `<v>In the crooked gorge may his head gleam black;</v><v>In the serpent lake may his head gleam black!</v>`,
+      `<v>Into the serpent lake may he glide down;</v><v>Into the serpent hollow may he glide down!</v>`,
       `<sp><i>B.</i> <b>The ljā́ū́a women</b>`,
-      `The ripening ljā́ū́a plant is heavy with seed:<br><v>The breasts of the ljā́ū́a plant are heavy with seed, are heavy with seed.</v>`,
-      `The breasts of the ljā́ū́a plant are full and ready to burst:<br><v>The breasts of the ljā́ū́a plant are heavy with seed, are heavy with seed.</v>`,
-      `<v>In the decaying leafage the male ljā́ū́a plants are heavy with seed:</v><br>They are heavy with seed, they are heavy with seed.`,
-      `The forks of the ljā́ū́a plants are reddening with the seed;<br>The forks of the ljā́ū́a plants are casting down their seed.`,
-      `It is being poured out in profusion,—<br>On the hard ground it is being poured out in profusion.`,
-      `The forks of the ljata plants are rising upwards again—<br><v>From the hard ground the forks of the ljata plants are rising upwards again.</v>`,
-      `May the seed turn black as the night!<br><v>May the light of the sky scorch black the forks of the plants!</v>`,
+      `<v>The ripening ljā́ū́a plant is heavy with seed:</v><v>The breasts of the ljā́ū́a plant are heavy with seed, are heavy with seed.</v>`,
+      `<v>The breasts of the ljā́ū́a plant are full and ready to burst:</v><v>The breasts of the ljā́ū́a plant are heavy with seed, are heavy with seed.</v>`,
+      `<v>In the decaying leafage the male ljā́ū́a plants are heavy with seed:</v><v>They are heavy with seed, they are heavy with seed.</v>`,
+      `<v>The forks of the ljā́ū́a plants are reddening with the seed;<br>The forks of the ljā́ū́a plants are casting down their seed.</v>`,
+      `<v>It is being poured out in profusion,—</v><v>On the hard ground it is being poured out in profusion.</v>`,
+      `<v>The forks of the ljata plants are rising upwards again—</v><v>From the hard ground the forks of the ljata plants are rising upwards again.</v>`,
+      `<v>May the seed turn black as the night!</v><v>May the light of the sky scorch black the forks of the plants!</v>`,
       `<sp><i>C.</i> <b>The willy wagtail women</b>`,
       `<v>She is swaying ceaselessly from side to side before his head:</v><br><v>The willy wagtail keeps on pecking at him, she keeps on pecking at him.</v>`,
       `<v>The willy wagtail keeps on flitting around him, she keeps on flitting around him:</v><br><v>The willy wagtail keeps on pecking at him, she keeps on pecking at him.</v>`,

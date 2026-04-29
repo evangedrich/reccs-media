@@ -170,7 +170,7 @@ export function PrepVideo({ vid }: { vid: string | string[] }) {
                 <button
                     onClick={() => scroll(-1)}
                     aria-label="Previous video"
-                    className="absolute left-0 top-1/2 -translate-y-1/2 w-10 h-10 text-xl flex items-center justify-center bg-[var(--color-back)] border-2 border-l-0 border-[var(--color-front)] cursor-pointer active:opacity-85"
+                    className="absolute left-0 top-1/2 -translate-y-1/2 w-10 h-10 text-xl flex items-center justify-center bg-[var(--color-back)] border-2 border-l-0 border-[var(--color-front)] cursor-pointer active:opacity-85 z-10"
                 >
                     <span className="w-full h-full hover:bg-[var(--color-mid)] flex items-center justify-center">&lt;</span>
                 </button>
@@ -179,7 +179,7 @@ export function PrepVideo({ vid }: { vid: string | string[] }) {
                 <button
                     onClick={() => scroll(1)}
                     aria-label="Next video"
-                    className="absolute right-0 top-1/2 -translate-y-1/2 w-10 h-10 text-xl flex items-center justify-center bg-[var(--color-back)] border-2 border-r-0 border-[var(--color-front)] cursor-pointer active:opacity-85"
+                    className="absolute right-0 top-1/2 -translate-y-1/2 w-10 h-10 text-xl flex items-center justify-center bg-[var(--color-back)] border-2 border-r-0 border-[var(--color-front)] cursor-pointer active:opacity-85 z-10"
                 >
                     <span className="w-full h-full hover:bg-[var(--color-mid)] flex items-center justify-center">&gt;</span>
                 </button>

@@ -24,8 +24,12 @@
     opacity: 90%;
 }
 
-.flash {
-
+.hoverMap path {
+    opacity: 0%;
+    cursor: pointer;
+}
+.hoverMap path:hover {
+    opacity: 100%;
 }
 
 .citationContainer p {

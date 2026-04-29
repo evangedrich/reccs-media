@@ -40,7 +40,7 @@ export default function Header() {
             <div className="w-full border-b-2 border-solid border-[var(--color-front)] flex items-center justify-between overflow-hidden">
                 {/* <div className={`${notoEmoji.className} text-2xl w-13 h-13 text-center leading-13`}>🌎</div> */}
                 <div className={`w-13 h-13 text-center leading-13 flex items-center justify-center active:scale-90 transition-all`}>
-                    <div className="w-6 h-6 rounded-full overflow-hidden ring-[1.8px] ring-[var(--color-front)] cursor-pointer group">
+                    <div className="w-6 h-6 rounded-full overflow-hidden ring-[1.8px] ring-[var(--color-front)] cursor-pointer group" onClick={() => alert("switch")}>
                         <div className="flex h-6 animate-[map-scroll_800ms_linear_infinite] [animation-play-state:paused] group-hover:[animation-play-state:running] ml-[-5px]">
                             <div className="shrink-0 w-[50px] h-6"><TinyMap /></div>
                             <div className="shrink-0 w-[50px] h-6"><TinyMap /></div>

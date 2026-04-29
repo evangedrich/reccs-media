@@ -54,9 +54,9 @@ export default function CollectionShelfItems({
         <div className="relative">
             <div ref={scrollRef} onScroll={measure} style={{width:`calc((100vw - (68px * ${collections.length})) / 2)`}} className={`shrink-0 overflow-x-auto overscroll-x-none h-full grid grid-rows-[repeat(auto-fill,minmax(16rem,1fr))] grid-flow-col auto-cols-[minmax(12rem,1fr)] gap-[2px] ${entries.length>0 ? "bg-[var(--color-front)]" : "bg-[var(--color-back)]"} ${collections.length>1?"pr-[6px]":""} snap-x snap-mandatory`}>
                 {entries.map(entry => (
-                    <Link href={`/${entry.id}`} className="block bg-[var(--color-back)] snap-start" key={`${entry.id}_card`}>
+                    <Link href={`/${entry.id}`} className="block bg-[var(--color-back)] snap-start group" key={`${entry.id}_card`}>
                         <div className="w-full h-full hover:bg-[var(--color-mid)] px-4 flex flex-col gap-1 flex flex-col justify-center">
-                            <div className="shrink-1 bg-[var(--color-mid)]">
+                            <div className="shrink-1 bg-[var(--color-mid)] group-hover:opacity-90">
                                 <Image src={`/posters/${entry?.id}.jpg`} alt="Media Image" width="300" height="400" className="w-full" loading="eager" />
                             </div>
                             <h2 className={`shrink-0 ${syncopate.className} leading-none uppercase font-bold text-[0.47rem] opacity-50 pt-1`}>{subregions.find(subr => subr.id===entry.id.slice(0,4))?.name}</h2>
@@ -68,12 +68,12 @@ export default function CollectionShelfItems({
                     <div key={`pad_${idx}`} className="bg-[var(--color-back)]" />
                 ))}
             </div>
-            <div onClick={() => scrollShelf(-1)} className={`absolute top-0 left-0 w-10 h-full flex items-center ${edges.atStart ? "opacity-0 pointer-events-none" : ""}`}>
+            <div onClick={() => scrollShelf(-1)} className={`absolute top-1/2 -translate-y-1/2 left-0 w-10 h-10 flex items-center ${edges.atStart ? "opacity-0 pointer-events-none" : ""}`}>
                 <div className="w-10 h-10 bg-[var(--color-back)] border-2 border-l-0 cursor-pointer group">
                     <div className="w-full h-full group-hover:bg-[var(--color-mid)] font-light text-xl flex justify-center items-center select-none">{"<"}</div>
                 </div>
             </div>
-            <div onClick={() => scrollShelf(1)} className={`absolute top-0 right-0 w-10 ${isLast ? "" : "mr-[4px]"} h-full flex items-center ${edges.atEnd ? "opacity-0 pointer-events-none" : ""}`}>
+            <div onClick={() => scrollShelf(1)} className={`absolute top-1/2 -translate-y-1/2 right-0 w-10 ${isLast ? "" : "mr-[4px]"} h-10 flex items-center ${edges.atEnd ? "opacity-0 pointer-events-none" : ""}`}>
                 <div className={`w-10 h-10 bg-[var(--color-back)] border-2 ${isOnly ? "border-r-0" : ""} cursor-pointer group`}>
                     <div className="w-full h-full group-hover:bg-[var(--color-mid)] font-light text-xl flex justify-center items-center select-none">{">"}</div>
                 </div>

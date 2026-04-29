@@ -6,9 +6,8 @@ import Markdown from "react-markdown";
 import Share from "./share"
 import { getCitations } from "../functions/citations";
 import { getTitle } from "../functions/text";
-import parse from 'html-react-parser';
-import { preParse } from "../functions/text";
 import { PrepVideo, PrepWatch } from "../functions/video";
+import { parseWithAbbr } from "../functions/abbr";
 
 const allTabs: { id: string, keys: string[] }[] = [
     { id: "info", keys: ["info"] },
@@ -23,7 +22,9 @@ const citationFormats: string[] = [ "APA", "MLA", "Chicago" ];
 
 export default function MediaContent({ entry }: { entry: any }) {
     const [currentTab, setCurrentTab] = useState("info");
-    const [citeFormat, setCiteFormat] = useState(citationFormats[0])
+    const [citeFormat, setCiteFormat] = useState(citationFormats[0]);
+    const [abbrOpen, setAbbrOpen] = useState(false);
+    const [currAbbr, setCurrAbbr] = useState(['',''])
     const tabs: string[] = allTabs.map(cat => cat.id).filter((cat,i) => (
         allTabs[i].keys.some(
             key => Object.keys(entry).includes(key) && entry[key]!=="" && entry[key][0]!==""
@@ -33,7 +34,7 @@ export default function MediaContent({ entry }: { entry: any }) {
         let content;
         if (currentTab==="info" || currentTab==="excerpt") {
             const text = entry[currentTab];
-            content = (entry[currentTab][0].includes("youtu.be")) ? <PrepVideo vid={text} /> : <>{text.map((x,i) => <p key={`p${i}`}>{parse(preParse(x))}</p>)}</>;
+            content = (entry[currentTab][0].includes("youtu.be")) ? <PrepVideo vid={text} /> : <>{text.map((x,i) => <p key={`p${i}`}>{parseWithAbbr(x, (title, content) => { setCurrAbbr([content, title]); setAbbrOpen(true); })}</p>)}</>;
         } else if (currentTab==="media" || currentTab==="trailer") {
             content = <PrepVideo vid={entry[currentTab==="media"?"mediaURL":"trailer"]} />;
         } else if (currentTab==="watch") {
@@ -61,8 +62,15 @@ export default function MediaContent({ entry }: { entry: any }) {
                 </ul>
                 <Share title={getTitle(entry)} />
             </div>
-            <div className={`${styles.mediaContent} p-4 max-w-[800px]`}>
+            <div className={`${styles.mediaContent} p-4 max-w-[800px]`} onScroll={() => setAbbrOpen(false)}>
                 {getContent()}
+            </div>
+            <div className={`sm:hidden fixed -bottom-10 left-0 w-full bg-[var(--color-back)] border-t-2 ${abbrOpen?"max-h-[50vh]":"max-h-0"} transform translate-y-1 transition-[max-height] duration-400 overflow-y-auto overscroll-y-none z-10`} onMouseLeave={() => setAbbrOpen(false)}>
+                <div className="absolute right-0 top-0 text-right text-xs p-3 flex items-center" onClick={() => setAbbrOpen(false)}>CLOSE Ｘ</div>
+                <div className="p-6 pb-26">
+                    <h3 className="italic pb-2">{currAbbr[0]}:</h3>
+                    <p>{currAbbr[1]}</p>
+                </div>
             </div>
         </>
     )
