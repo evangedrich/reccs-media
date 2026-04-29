@@ -3,6 +3,7 @@ import { juliaMono } from "./fonts/fonts";
 import "./globals.css";
 import Header from "@/app/components/header";
 import Footer from "@/app/components/footer";
+import { ViewProvider } from "@/app/lib/viewContext";
 
 export const metadata: Metadata = {
 	title: "Reccs",
@@ -17,11 +18,13 @@ export default function RootLayout({
 	return (
 		<html lang="en" className={juliaMono.variable}>
 			<body className="antialiased flex flex-col min-h-screen">
-				<Header />
-				<main className="flex-grow mb-[-2px] flex flex-col">
-					{children}
-				</main>
-				<Footer />
+				<ViewProvider>
+					<Header />
+					<main className="flex-grow mb-[-2px] flex flex-col">
+						{children}
+					</main>
+					<Footer />
+				</ViewProvider>
 			</body>
 		</html>
 	);

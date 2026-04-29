@@ -5,13 +5,16 @@ import Map, { HoverMap } from "@/app/components/map";
 import { subregions } from "@/app/lib/subregions";
 import { reccsData } from "../lib/local-media";
 import { collections } from "../lib/collections";
-import { getTitle } from "../functions/text";
+import { getTitle, preParse } from "../functions/text";
 import Globe from "@/app/components/globe";
 import styles from '@/app/ui/main.module.css';
 import Link from "next/link";
 import Image from "next/image";
+import { useView } from "@/app/lib/viewContext";
+import SubrInfoWindow from "./subrInfoWindow";
 
-export default function Geoscheme({ round }: { round?: string }) {
+export default function Geoscheme() {
+    const { showGlobe } = useView();
     const [currSubr,setCurrSubr] = useState<string>("X");
     const [hovered,setHovered] = useState<string>("");
     const entriesRef = useRef<HTMLDivElement>(null);
@@ -22,33 +25,23 @@ export default function Geoscheme({ round }: { round?: string }) {
     const entries = reccsData.filter(itm => itm.id.startsWith(currSubr));
     return (
         <div>
-            <div className={`${round ? "hidden" : ""} relative border-b-2 p-4`}>
+            <div className={`${showGlobe ? "hidden" : ""} relative border-b-2 p-4`}>
 				<div className="relative max-w-[900px] mx-auto">
 					<div className=""><Map /></div>
 					<div className={`${styles.hoverMap} absolute top-0 left-0 w-full`}>
                         <HoverMap currSubr={currSubr} setCurrSubr={setCurrSubr} setHovered={setHovered} />
                     </div>
+                    <SubrInfoWindow currSubr={currSubr} setCurrSubr={setCurrSubr} hoveredSubr={hoveredSubr} />
 				</div>
-                <div className={`${currSubr==="X"&&!hoveredSubr?"opacity-50":""} absolute top-0 left-0 border-2 m-2 hidden sm:flex flex-col text-xs bg-[var(--color-back)]`}>
-                    <div className="flex justify-between">
-                        <div className="p-1 px-2">
-                            {currSubr==="X"
-                        ? <span>{!hoveredSubr ? <i>select region</i> : <b>{hoveredSubr}</b>}</span>
-                        : <span><b>{subregions.find(subr => subr.id===currSubr)?.name}</b></span>}
-                        </div>
-                        <div className={`${currSubr==="X"?"hidden":""} w-[2em] h-[2em] leading-[2em] flex items-center justify-center border-l-2 cursor-pointer hover:bg-[var(--color-mid)]`} onClick={() => setCurrSubr("X")}>Ｘ</div>
-                    </div>
-                    <p className={`border-t-2 max-w-80 w-fit ${currSubr==="X"?"max-h-0 p-0":"max-h-40 px-2 pt-1 pb-2"} transition-[max-height] duration-200 overflow-hidden`}>{subregions.find(subr => subr.id===currSubr)?.description}</p>
-                </div>
 			</div>
-            <div className={`${round ? "" : "hidden"} p-4`}>
-				<div className="border-2 rounded-full aspect-square"><Globe /></div>
+            <div className={`${showGlobe ? "" : "hidden"} p-4 border-b-2`}>
+				<div className="border-2 rounded-full aspect-square max-w-[500px] mx-auto"><Globe /></div>
 			</div>
             <div className="sm:hidden flex justify-center border-b-2 p-1">
                 <h1 className={`${currSubr==="X"?"italic":"font-extrabold"}`}>{currSubr==="X" ? "select region above" : subregions.find(subr => subr.id===currSubr)?.name}</h1>
             </div>
             <div className={`${currSubr==="X" ? "hidden" : ""} sm:hidden border-b-2 p-4`}>
-                <p className="max-w-[800px] mx-auto text-sm">{subregions.find(subr => subr.id===currSubr)?.description}</p>
+                <p className="max-w-[800px] mx-auto text-sm">{preParse(subregions.find(subr => subr.id===currSubr)?.description ?? "")}</p>
             </div>
             <div ref={entriesRef} className="border-b-2 mt-[-2px] overflow-x-auto">
                 <div className="flex w-max mx-auto">{entries.map((entry,i) => (

@@ -8,6 +8,7 @@ import TinyMap from "./tinyMap";
 import styles from "@/app/ui/main.module.css";
 import { syncopate, notoEmoji } from "@/app/fonts/fonts";
 import { collections } from "../lib/collections";
+import { useView } from "../lib/viewContext";
 
 const navLinks = [
     { id: "literature", color: "g" },
@@ -17,6 +18,7 @@ const navLinks = [
 ];
 
 export default function Header() {
+    const { showGlobe, toggleGlobe } = useView();
     const [showWidget, setShowWidget] = useState(false);
     const [isDark, setIsDark] = useState(true);
     const [isOffline, setIsOffline] = useState(false);
@@ -39,8 +41,8 @@ export default function Header() {
         <div className="w-full sticky top-0 bg-[var(--color-back)] z-30">
             <div className="w-full border-b-2 border-solid border-[var(--color-front)] flex items-center justify-between overflow-hidden">
                 {/* <div className={`${notoEmoji.className} text-2xl w-13 h-13 text-center leading-13`}>🌎</div> */}
-                <div className={`w-13 h-13 text-center leading-13 flex items-center justify-center active:scale-90 transition-all`}>
-                    <div className="w-6 h-6 rounded-full overflow-hidden ring-[1.8px] ring-[var(--color-front)] cursor-pointer group" onClick={() => alert("switch")}>
+                <div className={`w-13 h-13 text-center leading-13 flex items-center ${showGlobe?"justify-end":"justify-center"} active:scale-90 transition-all`}>
+                    <div className={`h-6 ${showGlobe?"rounded w-10":"rounded-full w-6"} overflow-hidden ring-[1.8px] ring-[var(--color-front)] cursor-pointer group`} onClick={toggleGlobe}>
                         <div className="flex h-6 animate-[map-scroll_800ms_linear_infinite] [animation-play-state:paused] group-hover:[animation-play-state:running] ml-[-5px]">
                             <div className="shrink-0 w-[50px] h-6"><TinyMap /></div>
                             <div className="shrink-0 w-[50px] h-6"><TinyMap /></div>
