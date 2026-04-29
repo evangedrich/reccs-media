@@ -9,12 +9,12 @@ import { preParse } from "../functions/text";
 
 const getColor = (id) => {
     if (id==="MTN") { return "group-hover:text-[var(--color-blue)]"; }
-    else if (id==="STP") { return "group-hover:text-[var(--color-red)]"; }
-    else if (id==="FRT") { return "group-hover:text-[var(--color-purple)]"; }
+    else if (id==="STP") { return "group-hover:text-[var(--color-yellow)]"; }
+    else if (id==="FRT") { return "group-hover:text-[var(--color-red)]"; }
     else if (id==="CFF") { return "group-hover:text-[var(--color-green)]"; }
-    else if (id==="GFF") { return "group-hover:text-[var(--color-blue)]"; }
-    else if (id==="CSF") { return "group-hover:text-[var(--color-red)]"; }
-    else if (id==="PMD") { return "group-hover:text-[var(--color-purple)]"; }
+    else if (id==="GFF") { return "group-hover:text-[var(--color-orange)]"; }
+    else if (id==="CSF") { return "group-hover:text-[var(--color-purple)]"; }
+    else if (id==="PMD") { return "group-hover:text-[var(--color-blue)]"; }
     else if (id==="OGM") { return "group-hover:text-[var(--color-red)]"; }
     else if (id==="UQC") { return "group-hover:text-[var(--color-orange)]"; }
     else { return "group-hover:text-[var(--color-purple)]"; }
@@ -37,10 +37,10 @@ export default function CollectionShelf({
                             className={`border-x-2 ml-[-2px] border-solid border-[var(--color-front)] cursor-pointer ${i===collections.length-1 ? "mr-[-2px]" : ""} px-4 py-3 group z-10 bg-[var(--color-back)]`} 
                             onClick={() => setCurrColl(coll.id)}
                         >
-                            <h1 className={`[writing-mode:vertical-rl] px-2 rounded-sm sm:text-3xl text-xl font-bold ${coll.id===currColl ? "italic font-extrabold" : ""} group-active:opacity-80 ${getColor(coll.id)} truncate`}>{coll.name}</h1>
+                            <h1 className={`[writing-mode:vertical-rl] px-2 rounded-sm sm:text-3xl text-xl font-bold ${coll.id===currColl ? "italic" : ""} group-active:opacity-80 ${getColor(coll.id)} truncate`}>{coll.name}</h1>
                         </div>
                         <div style={{maxWidth: currColl===coll.id ? `calc(100vw - (68px * ${collections.length}))` : "0"}} className={`transition-[max-width] sm:flex hidden transition-500 overflow-hidden max-h-[calc(100vh_-_var(--header-h)_-_126px)] min-h-[34rem]`}>
-                            <div style={{width:`calc((100vw - (68px * ${collections.length})) / 2)`}} className={`${styles.shelfText} border-r-2 shrink-0 p-4 overflow-auto transition-all`}>
+                            <div style={{width:`calc((100vw - (68px * ${collections.length})) / 2)`}} className={`${styles.shelfText} border-r-2 shrink-0 p-4 overflow-auto transition-[height]]`}>
                                 <div>
                                     <Markdown>{"# "+coll.header}</Markdown>
                                     <Markdown>{preParse(coll.info ?? "")}</Markdown>

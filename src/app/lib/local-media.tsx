@@ -2771,7 +2771,11 @@ export const presMusDrama = [
     infoURL: "https://youtu.be/8ZGDyjULWZg",
     bioURL: "https://pib.socioambiental.org/en/Povo:Enawen%C3%AA-naw%C3%AA",
     mediaURL: ["https://youtu.be/gr_PeBxxuWY","https://youtu.be/8ZGDyjULWZg"],
-    textURL: "https://translate.google.com/?hl=en&sl=auto&tl=en&text=Sem%20m%C3%BAsica%2C%20sem%20comida%2C%0ASem%20m%C3%BAsica%2C%20haveria%0Amuita%20dor%2C%20muita%20doen%C3%A7a%2C%0Aos%20Yakairiti%20ficariam%20enfurecidos%0ASem%20a%20m%C3%BAsica%20todos%20os%0AEnawene%20Nawe%20morreriam&op=translate"
+    textURL: "https://translate.google.com/?hl=en&sl=auto&tl=en&text=Sem%20m%C3%BAsica%2C%20sem%20comida%2C%0ASem%20m%C3%BAsica%2C%20haveria%0Amuita%20dor%2C%20muita%20doen%C3%A7a%2C%0Aos%20Yakairiti%20ficariam%20enfurecidos%0ASem%20a%20m%C3%BAsica%20todos%20os%0AEnawene%20Nawe%20morreriam&op=translate",
+    ref: [
+      { id: "iphan-yaokwa-2018", type: "book", title: "Ritual Yaokwa do Povo Enawene Nawe", contributors: [ { firstName: "Yêda", lastName: "Barbosa", role: "editor" }, { firstName: "Diego", lastName: "Simas", role: "editor" }, { organization: "IPHAN", role: "publisher" } ], pubDate: { year: 2018 }, publisher: "Instituto do Patrimônio Histórico e Artístico Nacional (IPHAN)", location: "Brasília, DF", containerTitle: "Dossiê Iphan", volume: "18", pages: { total: "144" }, medium: "Print / PDF", meta: { notes: "Documentação técnica para o registro do ritual Yaokwa como Patrimônio Cultural do Brasil. Inclui ilustrações coloridas e análises sobre a cosmologia Enawene Nawe.", grade: "B", tags: ["Enawene Nawe", "Yaokwa", "Patrimônio Imaterial", "IPHAN", "Povos Indígenas", "Mato Grosso"], sortKey: "text" } },
+      { id: "unesco-yaokwa-2011", type: "webpage", title: "Yaokwa, the Enawene Nawe people's ritual for the maintenance of social and cosmic order", containerTitle: "Intangible Cultural Heritage", contributors: [ { organization: "UNESCO", role: "author" } ], pubDate: { year: 2011 }, url: "https://ich.unesco.org/en/USL/yaokwa-the-enawene-nawe-people-s-ritual-for-the-maintenance-of-social-and-cosmic-order-00521", publisher: "UNESCO", location: "Paris, France", medium: "Online Database Entry", meta: { notes: "Inscribed in 2011 on the List of Intangible Cultural Heritage in Need of Urgent Safeguarding. The ritual is essential for the Enawene Nawe's social organization and spiritual life.", grade: "B", tags: ["UNESCO", "Enawene Nawe", "Yaokwa", "Brazil", "Cultural Heritage", "Mato Grosso"] } }
+    ]
   },
   {
     id: "AMSOPMD",
@@ -2823,9 +2827,17 @@ export const presMusDrama = [
       `Thus the daughters sang the lament<br>after their father’s death.`,
       `The father goes after them, excited.<br>He chases them,<br>following their footprints, urinating,<br>The old, macho Guanaco, Guanaco...`
     ],
-    infoURL: ["https://www.explora.com/2022/03/14/hain-ceremony/","https://www.memoriachilena.gob.cl/602/w3-article-3687.html","https://www.tandfonline.com/doi/full/10.1080/08164649.2020.1774865"],
+    infoURL: [""],
     mediaURL: ["https://youtu.be/264SiZdzCvs","https://youtu.be/Ahf3s0Cxs8w?start=9","https://youtu.be/ILOh8VobrPY","https://youtu.be/SSIwt4GDwpY","https://youtu.be/ns6mIK1eYN0?start=111"],
-    textURL: "https://folkways-media.si.edu/docs/folkways/artwork/FW04179.pdf"
+    textURL: "",
+    ref: [
+      { id: "chapman-flores-2019", type: "book", title: "Cantos chamánicos selknam", contributors: [ { firstName: "Lola", lastName: "Kiepja", role: "author" }, { firstName: "Anne", lastName: "Chapman", role: "author" }, { firstName: "Enrique", lastName: "Flores", role: "author" } ], pubDate: { year: 2019 }, publisher: "Universidad Nacional Autónoma de México, Instituto de Investigaciones Filológicas", location: "Ciudad de México", isbn: "9786073020048", containerTitle: "Colección: Cartografías de la memoria", medium: "Print / Book with Audio Reference", meta: { notes: "A significant reissue and expansion of the 1977 study. Part of the 'Cartografías de la memoria' series. ISBN (Collección): 978-607-30-1797-8.", grade: "B", tags: ["Selk'nam", "Tierra del Fuego", "UNAM", "Ethnomusicology", "Indigenous Memory"], sortKey: "text" } },
+      { id: "chapman-2002-cuerpos", type: "book", title: "Los Selknam: La vida de los onas", contributors: [ { firstName: "Anne", lastName: "Chapman", role: "author" } ], pubDate: { year: 2002 }, publisher: "Taller Experimental Cuerpos Pintados", location: "Santiago, Chile", isbn: "9568136592", medium: "Print", meta: { notes: "A definitive large-format edition. Includes extensive ethnographic photography and maps. Often associated with the project's focus on the human body and cultural memory.", grade: "C", tags: ["Selk'nam", "Patagonia", "Cuerpos Pintados", "Ethnography", "Visual History"], sortKey: "text" } },
+      { id: "chapman-1966", type: "report", title: "The Selk'nam (Ona) of Tierra del Fuego, Argentina", contributors: [ { firstName: "Anne", lastName: "Chapman", role: "author" } ], pubDate: { year: 1966 }, publisher: "Folkways Records / Smithsonian Folkways", location: "New York / Washington, D.C.", url: "https://folkways-media.si.edu/docs/folkways/artwork/FW04179.pdf", medium: "Digital Booklet / Liner Notes", meta: { notes: "Primary source documentation of the last surviving Selk'nam chanters, including Lola Kiepja. Contains transcriptions and cultural explanations of the 'Hain' ritual songs.", grade: "C", tags: ["Selk'nam", "Tierra del Fuego", "Ethnomusicology", "Lola Kiepja", "Patagonia"], sortKey: "text" } },
+      { id: "memoria-chilena-selknam", type: "webpage", title: "Rito, chamanismo y música Selknam", containerTitle: "Memoria Chilena: Biblioteca Nacional de Chile", contributors: [ { organization: "Biblioteca Nacional de Chile", role: "author" } ], pubDate: { year: 2018 }, url: "https://www.memoriachilena.gob.cl/602/w3-article-3687.html", publisher: "Dirección de Bibliotecas, Archivos y Museos (DIBAM)", location: "Santiago, Chile", medium: "Portal Cultural Digital", meta: { notes: "Provee una síntesis sobre el Hain (rito de iniciación), la figura del Kon o chamán y la estructura de los cantos chamánicos vinculados a la naturaleza.", grade: "B", tags: ["Selk'nam", "Etnomusicología", "Chamanismo", "Tierra del Fuego", "Patrimonio Chileno"], sortKey: "info" } },
+      { id: "molina-vargas-2020", type: "article", title: "Decolonising Mourning: World-Making with the Selk’nam People of Karokynka/Tierra del Fuego", containerTitle: "Australian Feminist Studies", contributors: [ { firstName: "Hema’ny", lastName: "Molina Vargas", role: "author" }, { firstName: "Camila", lastName: "Marambio", role: "author" }, { firstName: "Nina", lastName: "Lykke", role: "author" } ], pubDate: { year: 2020 }, volume: "35", issue: "104", pages: { start: "186", end: "201", literal: "186-201" }, doi: "10.1080/08164649.2020.1774865", url: "https://doi.org/10.1080/08164649.2020.1774865", medium: "Journal Article", meta: { notes: "A co-authored piece between a Selk'nam community leader and academic researchers. It discusses the Covadonga Ongolmo community's fight for legal recognition in Chile.", grade: "B", tags: ["Selk'nam", "Tierra del Fuego", "Decolonization", "Indigenous Rights", "Karokynka"], sortKey: "info" } },
+      { id: "explora-2022-hain", type: "webpage", title: "The Hain Ceremony: The Sacred Secret of the Selk’nam", containerTitle: "Explora Blog", contributors: [ { organization: "Explora", role: "author" } ], pubDate: { year: 2022, month: 3, day: 14 }, url: "https://www.explora.com/2022/03/14/hain-ceremony/", medium: "Blog Post / Online Article", meta: { notes: "Describes the 1923 expedition of Martin Gusinde and the symbolic structure of the Hain ceremony, including the roles of spirits like Xalpen and Tanu.", grade: "C", tags: ["Hain", "Selk'nam", "Tierra del Fuego", "Patagonia", "Spirituality"], sortKey: "info" } }
+    ]
   },
   {
     id: "ASNOPMD",
@@ -2950,8 +2962,11 @@ export const presMusDrama = [
     ],
     excerpt: [`https://youtu.be/mX0A-Dme93I`],
     infoURL: "https://youtu.be/PtMIjHteW9c",
-    mediaURL: "https://youtu.be/cSShw1Oqcb0",
-    textURL: ""
+    mediaURL: ["https://youtu.be/cSShw1Oqcb0","https://youtu.be/TgujPyzX48w"],
+    textURL: "",
+    ref: [
+      { id: "taghvai-2005", type: "video", title: "Dress Rehearsal: The Brave Hurr's Ta'zieh", shortTitle: "Dress Rehearsal", contributors: [ { firstName: "Nasser", lastName: "Taghvai", role: "director" } ], pubDate: { year: 2005 }, publisher: "Nasser Taghvai Productions", location: "Iran", medium: "Documentary Film", meta: { notes: "A study of the Ta'zieh of 'Hurr ibn Yazid al-Riyahi.' Focuses on the ritualistic aspects, the distinction between 'shabih-khani' (singing roles), and the interaction between performers and the community.", grade: "A", sortKey: "text", tags: ["Iranian Cinema", "Ta'zieh", "Persian Culture", "Ritual Theater"] } }
+    ]
   },
   {
     id: "ASCEPMD",
@@ -3681,7 +3696,8 @@ export const foundRelTexts = [
     mediaURL: "",
     textURL: "",
     ref: [
-      {id: "murie-1981", type: "book", title: "Ceremonies of the Pawnee", contributors: [{lastName: "Murie", firstName: "James R.", role: "author"}], pubDate: {year: 1981}, publisher: "Smithsonian Institution Press", url: "https://repository.si.edu/server/api/core/bitstreams/db5dec6a-c560-4393-a45c-22ef5b2aeffa/content", meta: {sortKey: "text", grade: "A"}}
+      { id: "murie-1981", type: "book", title: "Ceremonies of the Pawnee", contributors: [{lastName: "Murie", firstName: "James R.", role: "author"}], pubDate: {year: 1981}, publisher: "Smithsonian Institution Press", url: "https://repository.si.edu/server/api/core/bitstreams/db5dec6a-c560-4393-a45c-22ef5b2aeffa/content", meta: {sortKey: "text", grade: "A"}},
+      { id: "parks-pratt-2008", type: "book", title: "A Dictionary of Skiri Pawnee", contributors: [ { firstName: "Lula Nora", lastName: "Pratt", role: "author" }, { firstName: "Douglas R.", lastName: "Parks", role: "author" } ], pubDate: { year: 2008 }, publisher: "University of Nebraska Press", location: "Lincoln, NE", containerTitle: "Studies in the Anthropology of North American Indians", isbn: "9780803271227", medium: "Print / Monograph", meta: { notes: "A comprehensive dictionary including grammatical sketches and cultural notes. It is organized by Pawnee roots and includes a significant English-to-Pawnee index.", tags: ["Pawnee", "Skiri", "Caddoan Languages", "Great Plains", "Lexicography"], grade: "A", sortKey: "info" } }
     ]
   },
   {

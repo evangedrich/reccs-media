@@ -48,7 +48,7 @@ export default function MediaContent({ entry }: { entry: any }) {
     };
     return (
         <>
-            <div className="h-[34px] border-b-2 border-solid border-[var(--color-front)] pl-3 pr-2 sticky top-[calc(var(--header-h)+var(--title-bar-h))] bg-[var(--color-back)] flex items-center justify-between transition-all">
+            <div className="h-[34px] border-b-2 border-solid border-[var(--color-front)] pl-3 pr-2 sticky top-[calc(var(--header-h)+var(--title-bar-h))] bg-[var(--color-back)] flex items-center justify-between">
                 <ul className="flex gap-3 overflow-x-scroll">
                     {tabs.map(tab => (
                         <li 

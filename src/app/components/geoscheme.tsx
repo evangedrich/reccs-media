@@ -43,7 +43,7 @@ export default function Geoscheme() {
             <div className={`${currSubr==="X" ? "hidden" : ""} sm:hidden border-b-2 p-4`}>
                 <p className="max-w-[800px] mx-auto text-sm">{preParse(subregions.find(subr => subr.id===currSubr)?.description ?? "")}</p>
             </div>
-            <div ref={entriesRef} className="border-b-2 mt-[-2px] overflow-x-auto">
+            <div ref={entriesRef} className={`border-b-2 mt-[-2px] overflow-x-auto overflow-y-hidden ${currSubr==="X"?"max-h-0":"max-h-[221px]"} transition-[max-height]`}>
                 <div className="flex w-max mx-auto">{entries.map((entry,i) => (
                     <Link 
                         key={`card_${entry.id}`} 

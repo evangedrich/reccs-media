@@ -7,7 +7,7 @@ export default function ColorLink({ to, text, c, caps, bold }: { to: string, tex
             {
                 to.startsWith('http')
                 ? <a href={to} target="_blank" className={`${hoverColor} hover:font-extrabold`}>{text}</a>
-                : <Link href={to} className={`${hoverColor} hover:font-extrabold ${caps?"uppercase":""} ${bold?"font-extrabold":""}`}>{text}</Link>
+                : <Link href={to} className={`${hoverColor} hover:font-extrabold ${caps?"uppercase":""} ${bold?"font-extrabold":""} active:opacity-80`}>{text}</Link>
             }
         </>
     )

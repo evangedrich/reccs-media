@@ -14,6 +14,7 @@ export const getByline = (selection: any): string | null => {
   if ('author' in selection) { byline = `by ${selection.author}`; }
   if ('intermediary' in selection) { byline = `via ${selection.intermediary}`; }
   if ('author' in selection && 'intermediary' in selection) { byline = `by ${selection.author} via ${selection.intermediary}`; }
+  if ('year' in selection && 'runtime' in selection) { byline = `${selection.year} · ${selection.runtime}min` }
   return byline;
 };
 export const isMongol = (str: string): boolean => {

@@ -31,6 +31,9 @@
 .hoverMap path:hover {
     opacity: 100%;
 }
+.hoverMap path:active {
+    filter: brightness(0.6);
+}
 
 .citationContainer p {
     margin-bottom: 0.5em;
