@@ -35,10 +35,17 @@ export default function Geoscheme() {
 				</div>
 			</div>
             <div className={`${showGlobe ? "" : "hidden"} p-4 border-b-2`}>
-				<div className="border-2 rounded-full aspect-square max-w-[500px] mx-auto"><Globe /></div>
+				<div className="relative max-w-[450px] mx-auto">
+                    <div className="relative border-2 rounded-full aspect-square w-full overflow-hidden">
+                        <Globe currSubr={currSubr} setCurrSubr={setCurrSubr} setHovered={setHovered} hovered={hovered} />
+                    </div>
+                    <SubrInfoWindow currSubr={currSubr} setCurrSubr={setCurrSubr} hoveredSubr={hoveredSubr} />
+                </div>
+                
 			</div>
-            <div className="sm:hidden flex justify-center border-b-2 p-1">
+            <div className="relative sm:hidden flex justify-center border-b-2 p-1">
                 <h1 className={`${currSubr==="X"?"italic":"font-extrabold"}`}>{currSubr==="X" ? "select region above" : subregions.find(subr => subr.id===currSubr)?.name}</h1>
+                <div className={`${currSubr==="X"?"hidden":""} absolute right-0 top-0 h-full aspect-square flex items-center justify-center border-l-2`} onClick={() => setCurrSubr("X")}>Ｘ</div>
             </div>
             <div className={`${currSubr==="X" ? "hidden" : ""} sm:hidden border-b-2 p-4`}>
                 <p className="max-w-[800px] mx-auto text-sm">{preParse(subregions.find(subr => subr.id===currSubr)?.description ?? "")}</p>

@@ -27,12 +27,13 @@
 .hoverMap path {
     opacity: 0%;
     cursor: pointer;
+    filter: blur(1px);
 }
 .hoverMap path:hover {
     opacity: 100%;
 }
 .hoverMap path:active {
-    filter: brightness(0.6);
+    filter: blur(1px) brightness(0.6);
 }
 
 .citationContainer p {

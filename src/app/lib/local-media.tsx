@@ -2549,10 +2549,12 @@ export const presMusDrama = [
       `<s>Men—</s>`,
       `Mvto!`
     ],
-    infoURL: ["https://en.wikipedia.org/wiki/Green_Corn_Ceremony","https://www.researchgate.net/profile/Ryan-Koons-2/publication/331482090_Dancing_Breath_Ceremonial_Performance_Practice_Environment_and_Personhood_in_a_Muskogee_Creek_Community/links/5c7c40ada6fdcc4715ac9d31/Dancing-Breath-Ceremonial-Performance-Practice-Environment-and-Personhood-in-a-Muskogee-Creek-Community.pdf",
-    "https://www.researchgate.net/profile/Ryan-Koons-2/publication/331482090_Dancing_Breath_Ceremonial_Performance_Practice_Environment_and_Personhood_in_a_Muskogee_Creek_Community/links/5c7c40ada6fdcc4715ac9d31/Dancing-Breath-Ceremonial-Performance-Practice-Environment-and-Personhood-in-a-Muskogee-Creek-Community.pdf"],
+    infoURL: ["https://en.wikipedia.org/wiki/Green_Corn_Ceremony"],
     mediaURL: ["https://youtu.be/fzh-_BQbP2o","https://youtu.be/5QqJ7RqsxbM?start=490","https://youtu.be/mE89GV6jPfQ?start=465"],
-    textURL: "https://s9.imslp.org/files/imglnks/usimg/0/0d/IMSLP222521-SIBLEY1802.21145.da1d-39087011973114score.pdf"
+    textURL: "https://s9.imslp.org/files/imglnks/usimg/0/0d/IMSLP222521-SIBLEY1802.21145.da1d-39087011973114score.pdf",
+    ref: [
+      { id: "koons-2016", type: "thesis", title: "Dancing Breath: Ceremonial Performance Practice, Environment, and Personhood in a Muskogee Creek Community", contributors: [ { firstName: "Ryan Abel", lastName: "Koons", role: "author" } ], pubDate: { year: 2016 }, publisher: "University of California, Los Angeles", location: "Los Angeles, CA", medium: "Doctoral Dissertation", url: "https://www.researchgate.net/publication/331482090_Dancing_Breath_Ceremonial_Performance_Practice_Environment_and_Personhood_in_a_Muskogee_Creek_Community", meta: { notes: "A PhD dissertation in Ethnomusicology. It utilizes 'ecomusicology' and 'indigenous ontologies' to analyze the Stomp Dance. Focuses on the relationship between breath, song, and the medicinal properties of the ceremonial space.", grade: "B", tags: ["Muskogee", "Creek", "Stomp Dance", "Ethnomusicology", "Ecomusicology", "Indigenous Ontology"], sortKey: "info" } }
+    ]
   },
   {
     id: "AMINPMD",

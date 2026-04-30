@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import styles from "@/app/ui/main.module.css";
-import Markdown from "react-markdown";
+import MarkdownCitation from "./markdownCitation";
 import Share from "./share"
 import { getCitations } from "../functions/citations";
 import { getTitle } from "../functions/text";
@@ -16,7 +16,7 @@ const allTabs: { id: string, keys: string[] }[] = [
     { id: "trailer", keys: ["trailer"] },
     { id: "watch", keys: ["watch"] },
     { id: "playlist", keys: ["playlistURL"] },
-    { id: "sources", keys: ["ref", "infoURL", "bioURL", "mediaURL", "textURL"] },
+    { id: "sources", keys: ["ref", /*"infoURL", "bioURL", "mediaURL", "textURL"*/] },
 ];
 const citationFormats: string[] = [ "APA", "MLA", "Chicago" ];
 
@@ -42,7 +42,7 @@ export default function MediaContent({ entry }: { entry: any }) {
         } else if (currentTab==="playlist") {
             content = <div className="border-2 bg-[var(--color-mid)] rounded-4xl overflow-hidden"><iframe src={"https://open.spotify.com/embed/playlist/"+entry.playlistURL.substring(34)+"?utm_source=generator&theme=0"} width="100%" height="352" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>;
         } else if (currentTab==="sources") {
-            if (Object.keys(entry).includes("ref")) { content = <div className={styles.citationContainer}><ul className="flex gap-4 text-xs uppercase mb-3">{citationFormats.map((c,i) => <li key={`cite${i}`} onClick={() => setCiteFormat(c)} className={`hover:opacity-80 ${c===citeFormat?"font-extrabold hover:opacity-100":""} cursor-pointer`}>{c}</li>)}</ul>{getCitations(entry.ref,citeFormat).map((src,i) => <Markdown key={`cit${i}`}>{src.citation}</Markdown>)}</div>; }
+            if (Object.keys(entry).includes("ref")) { content = <div className={styles.citationContainer}><ul className="flex gap-4 text-xs uppercase mb-3">{citationFormats.map((c,i) => <li key={`cite${i}`} onClick={() => setCiteFormat(c)} className={`hover:opacity-80 ${c===citeFormat?"font-extrabold hover:opacity-100":""} cursor-pointer`}>{c}</li>)}</ul>{getCitations(entry.ref,citeFormat).map((src,i) => <MarkdownCitation key={`cit${i}`} markdownContent={src.citation} url={src.url}></MarkdownCitation>)}</div>; }
         }
         return content;
     };
