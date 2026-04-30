@@ -1,4 +1,3 @@
-import earcut from "earcut";
 import { regionDots, regionPolygons } from "./mapPaths";
 
 const MAP_W = 1440;
@@ -6,7 +5,6 @@ const MAP_H = 720;
 const X_SCALE = 1.014;
 const TOP_LAT_DEG = 90;
 const BOTTOM_LAT_DEG = -60;
-const SUBDIVIDE_PX = 4;
 const SPHERE_RADIUS = 1;
 
 const AA = [
@@ -80,55 +78,6 @@ function parseDotPath(d: string): [number, number][] {
     return out;
 }
 
-function parsePolygonPath(d: string): [number, number][][] {
-    const rings: [number, number][][] = [];
-    let current: [number, number][] = [];
-    const tokens = d.match(/[MLZ]|-?\d+(?:\.\d+)?/g) ?? [];
-    let i = 0;
-    while (i < tokens.length) {
-        const t = tokens[i];
-        if (t === "M" || t === "L") {
-            i++;
-            const x = parseFloat(tokens[i++]);
-            const y = parseFloat(tokens[i++]);
-            if (t === "M" && current.length > 0) {
-                rings.push(current);
-                current = [];
-            }
-            current.push([x, y]);
-        } else if (t === "Z") {
-            i++;
-            if (current.length > 0) {
-                rings.push(current);
-                current = [];
-            }
-        } else {
-            i++;
-        }
-    }
-    if (current.length > 0) rings.push(current);
-    return rings;
-}
-
-function subdivideRing(ring: [number, number][], maxSpacing: number): [number, number][] {
-    const out: [number, number][] = [];
-    const n = ring.length;
-    for (let i = 0; i < n; i++) {
-        const [x0, y0] = ring[i];
-        const [x1, y1] = ring[(i + 1) % n];
-        out.push([x0, y0]);
-        const dx = x1 - x0;
-        const dy = y1 - y0;
-        const dist = Math.hypot(dx, dy);
-        const segments = Math.ceil(dist / maxSpacing);
-        for (let s = 1; s < segments; s++) {
-            const t = s / segments;
-            out.push([x0 + dx * t, y0 + dy * t]);
-        }
-    }
-    return out;
-}
-
 export type RegionMesh = {
     id: string;
     color: string;
@@ -157,28 +106,33 @@ function buildDotData(): { positions: Float32Array; regionIndex: Uint16Array; re
     };
 }
 
+const DOT_HALF_SPACING_PX = 4;
+
 function buildRegionMeshes(): RegionMesh[] {
-    return regionPolygons.map((poly) => {
-        const rings = parsePolygonPath(poly.d);
+    const polyColorById = new Map(regionPolygons.map(p => [p.id, p.color]));
+    return regionDots.map((entry) => {
+        const dots = parseDotPath(entry.d);
         const positions: number[] = [];
         const indices: number[] = [];
-        let centroidX = 0, centroidY = 0, centroidZ = 0, centroidCount = 0;
-        for (const ring of rings) {
-            const subdivided = subdivideRing(ring, SUBDIVIDE_PX);
-            const flat: number[] = [];
-            for (const [x, y] of subdivided) flat.push(x, y);
-            const tris = earcut(flat);
-            const baseVertex = positions.length / 3;
-            for (const [px, py] of subdivided) {
-                const [x, y, z] = pixelToUnitVec(px, py);
+        let centroidX = 0, centroidY = 0, centroidZ = 0;
+        dots.forEach(([px, py], i) => {
+            const corners: [number, number][] = [
+                [px - DOT_HALF_SPACING_PX, py - DOT_HALF_SPACING_PX],
+                [px + DOT_HALF_SPACING_PX, py - DOT_HALF_SPACING_PX],
+                [px + DOT_HALF_SPACING_PX, py + DOT_HALF_SPACING_PX],
+                [px - DOT_HALF_SPACING_PX, py + DOT_HALF_SPACING_PX],
+            ];
+            const base = i * 4;
+            for (const [cx, cy] of corners) {
+                const [x, y, z] = pixelToUnitVec(cx, cy);
                 positions.push(x * SPHERE_RADIUS, y * SPHERE_RADIUS, z * SPHERE_RADIUS);
                 centroidX += x;
                 centroidY += y;
                 centroidZ += z;
-                centroidCount++;
             }
-            for (const idx of tris) indices.push(baseVertex + idx);
-        }
+            indices.push(base, base + 1, base + 2);
+            indices.push(base, base + 2, base + 3);
+        });
         const cn = Math.hypot(centroidX, centroidY, centroidZ) || 1;
         const centroid: [number, number, number] = [
             (centroidX / cn) * SPHERE_RADIUS,
@@ -186,11 +140,11 @@ function buildRegionMeshes(): RegionMesh[] {
             (centroidZ / cn) * SPHERE_RADIUS,
         ];
         return {
-            id: poly.id,
-            color: poly.color,
+            id: entry.id,
+            color: polyColorById.get(entry.id) ?? "#888888",
             positions: new Float32Array(positions),
             indices: new Uint32Array(indices),
-            centroid: centroidCount === 0 ? [0, 0, 1] : centroid,
+            centroid: dots.length === 0 ? [0, 0, 1] : centroid,
         };
     });
 }
@@ -202,3 +156,4 @@ export const dotRegionIds = dotData.regionIds;
 export const dotCount = dotData.regionIndex.length;
 
 export const regionMeshes: RegionMesh[] = buildRegionMeshes();
+
