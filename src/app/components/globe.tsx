@@ -1,6 +1,6 @@
 "use client";
 
-import { Canvas, ThreeEvent, useFrame } from "@react-three/fiber";
+import { Canvas, ThreeEvent, useFrame, useThree } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { Dispatch, SetStateAction, Suspense, useEffect, useMemo, useRef, useState } from "react";
 import * as THREE from "three";
@@ -71,6 +71,19 @@ function useResolvedColors() {
         return () => obs.disconnect();
     }, []);
     return { colors, bg, graticule };
+}
+
+function ResponsiveZoom() {
+    const camera = useThree(s => s.camera);
+    const size = useThree(s => s.size);
+    useEffect(() => {
+        if (camera instanceof THREE.OrthographicCamera) {
+            const fit = Math.min(size.width, size.height);
+            camera.zoom = fit / (SPHERE_RADIUS * 1.96);
+            camera.updateProjectionMatrix();
+        }
+    }, [camera, size.width, size.height]);
+    return null;
 }
 
 function BackgroundSphere({ color }: { color: THREE.Color }) {
@@ -333,6 +346,7 @@ export default function Globe(props: GlobeProps) {
                 flat
             >
                 <ambientLight intensity={1} />
+                <ResponsiveZoom />
                 <Suspense fallback={null}>
                     <GlobeScene {...props} />
                 </Suspense>
