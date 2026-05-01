@@ -24,7 +24,8 @@
 		"react": "19.1.5",
 		"react-dom": "19.1.5",
 		"react-markdown": "^10.1.0",
-		"three": "0.182.0"
+		"three": "0.182.0",
+		"three-stdlib": "^2.36.1"
 	},
 	"devDependencies": {
 		"@eslint/eslintrc": "^3",
