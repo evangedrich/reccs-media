@@ -34,7 +34,7 @@ export default function MediaContent({ entry }: { entry: any }) {
         let content;
         if (currentTab==="info" || currentTab==="excerpt") {
             const text = entry[currentTab];
-            content = (entry[currentTab][0].includes("youtu.be")) ? <PrepVideo vid={text} /> : <>{text.map((x,i) => <p key={`p${i}`}>{parseWithAbbr(x, (title, content) => { setCurrAbbr([content, title]); setAbbrOpen(true); })}</p>)}</>;
+            content = (entry[currentTab][0].includes("youtu.be")) ? <PrepVideo vid={text} /> : <>{text.map((x: string, i: number) => <p key={`p${i}`}>{parseWithAbbr(x, (title, content) => { setCurrAbbr([content, title]); setAbbrOpen(true); })}</p>)}</>;
         } else if (currentTab==="media" || currentTab==="trailer") {
             content = <PrepVideo vid={entry[currentTab==="media"?"mediaURL":"trailer"]} />;
         } else if (currentTab==="watch") {

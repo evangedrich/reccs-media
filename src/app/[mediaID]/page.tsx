@@ -44,10 +44,10 @@ export default async function DetailPage({ params }: { params: Promise<{ mediaID
                         </h2>
                         <h2 className={`${(byline) ? "" : "hidden"} leading-none text-xl mb-4`}>{byline}</h2>
                         <ul className="sm:flex gap-x-6 gap-y-1 flex-wrap">
-                            {Object.keys(entry?.group ?? {}).map(key => (
+                            {(Object.keys(entry?.group ?? {}) as Array<keyof typeof groupIcons>).map(key => (
                                 <li key={`${key}Text`}>
                                     <span className={`${notoEmoji.className} ${key==="location" ? "sm:mr-0" : ""} mr-1 font-bold`}>{groupIcons[key]}</span>
-                                    {entry?.group[key]}
+                                    {entry?.group[key as keyof typeof entry.group]}
                                 </li>
                             ))}
                         </ul>

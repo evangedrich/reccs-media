@@ -7,7 +7,7 @@ import CollectionShelfItems from "./collectionShelfItems";
 import ShelfItemsMobile from "./collectionShelfItemsMobile";
 import { preParse } from "../functions/text";
 
-const getColor = (id) => {
+const getColor = (id: string) => {
     if (id==="MTN") { return "group-hover:text-[var(--color-blue)]"; }
     else if (id==="STP") { return "group-hover:text-[var(--color-yellow)]"; }
     else if (id==="FRT") { return "group-hover:text-[var(--color-red)]"; }
