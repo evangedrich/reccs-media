@@ -60,7 +60,7 @@ export default function CollectionShelfItems({
                 {entries.map(entry => (
                     <Link href={`/${entry.id}`} className="block bg-[var(--color-back)] snap-start group" key={`${entry.id}_card`}>
                         <div className="shrink-1 w-full h-full hover:bg-[var(--color-mid)] px-4 flex flex-col gap-1 flex flex-col justify-center">
-                            <div className="shrink-1 bg-[var(--color-mid)] group-hover:opacity-90">
+                            <div className="shrink-1 aspect-3/4 bg-[var(--color-mid)] group-hover:opacity-90">
                                 <Image src={`/posters/${entry?.id}.jpg`} alt="Media Image" width="300" height="400" loading="eager" />
                             </div>
                             <h2 className={`shrink-0 ${syncopate.className} leading-none uppercase font-bold text-[0.47rem] opacity-50 pt-1`}>{subregions.find(subr => subr.id===entry.id.slice(0,4))?.name}</h2>

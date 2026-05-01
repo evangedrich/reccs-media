@@ -458,7 +458,7 @@ export const calendars = [
     {
         id: "AMCE",
         name: "Tonalpohualli",
-        group: "Aztec",
+        group: "Mexica",
         function: (x: Date) => getTonalpohualli(x).toString()
     },
     {
@@ -494,7 +494,7 @@ export const calendars = [
     {
         id: "AMWE",
         name: "Intihuatana",
-        group: "Andean",
+        group: "Quechua",
         function: (x: Date) => `${toIncaDate(x).day} ${toIncaDate(x).monthName}`
     },
     {

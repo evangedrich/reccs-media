@@ -57,7 +57,7 @@ export default function Geoscheme() {
                         href={`/${entry.id}`}
                         className={`shrink-0 flex flex-col gap-1 sm:w-[9rem] w-[7.7rem] p-3 border-r-2 ${i===0 ? "border-l-2 ml-[-2px]" : ""} hover:bg-[var(--color-mid)] group`}
                     >
-                        <div className="bg-[var(--color-mid)] group-hover:opacity-90"><Image src={`/posters/${entry.id}.jpg`} alt="Media Image" width="300" height="400" className="w-full" loading="eager" /></div>
+                        <div className="bg-[var(--color-mid)] group-hover:opacity-90 aspect-3/4"><Image src={`/posters/${entry.id}.jpg`} alt="Media Image" width="300" height="400" className="w-full" loading="eager" /></div>
                         <h2 className="uppercase text-[0.55rem] leading-none mt-1 opacity-50 font-bold">{collections.find(coll => coll.id===entry.id.slice(4,7))?.shortName}</h2>
                         <h1 className="text-xs font-bold truncate">{getTitle(entry)}</h1>
                     </Link>

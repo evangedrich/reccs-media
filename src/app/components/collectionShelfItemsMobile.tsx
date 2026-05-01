@@ -24,7 +24,7 @@ export default function ShelfItemsMobile({
                 {entries.map(entry => (
                     <Link key={`mobile_${entry?.id}`} href={`/${entry.id}`} className="block bg-[var(--color-back)]">
                         <div className="p-2">
-                            <div className="mb-1">
+                            <div className="mb-1 bg-[var(--color-mid)] aspect-3/4">
                                 <Image src={`/posters/${entry?.id}.jpg`} alt="Media Image" width="300" height="400" className="w-full" />
                             </div>
                             <h4 className="text-[0.5rem] font-bold opacity-50 truncate">{subregions.find(subr => subr.id===entry.id.slice(0,4))?.name}</h4>
