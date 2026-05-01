@@ -25,6 +25,7 @@ export default function Header() {
     const [time, setTime] = useState(new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }));
     const [colonVisible, setColonVisible] = useState(true);
     const [calDropdown, setCalDropdown] = useState(false);
+    const [calSelection, setCalSelection] = useState("EUWE");
     const pathname = usePathname();
     useEffect(() => {
         document.documentElement.style.setProperty('--header-h', showWidget ? '7.625rem' : '5.5rem');
@@ -67,12 +68,15 @@ export default function Header() {
                         }
                     </div>
                     <div className="relative m-1 flex items-center shrink-0 " onMouseLeave={() => setCalDropdown(false)}>
-                        <span className="bg-[var(--color-front)] text-[var(--color-back)] px-2" suppressHydrationWarning>{calendars[0].function(date).toString()} {colonVisible ? time : time.replace(':', ' ')}</span>
-                        <button className="w-6 h-6 inline-block ring-1 ring-inset ring-[var(--color-front)] text-center cursor-pointer active:bg-[var(--color-mid)]" onClick={() => setCalDropdown(!calDropdown)}>
-                            <span className={`inline-block transform text-4xl leading-[0] ${!calDropdown ? "rotate-0 align-[0.5em]" : "rotate-180 align-[-0.5em]"}`}>{"⌄"}</span>
+                        <span className="bg-[var(--color-front)] text-[var(--color-back)] px-2" suppressHydrationWarning>{calendars.find(cal => cal.id===calSelection)?.function(date)} {colonVisible ? time : time.replace(':', ' ')}</span>
+                        <button className="w-6 h-6 inline-block ring-1 ring-inset ring-[var(--color-front)] text-center cursor-pointer active:bg-[var(--color-mid)] group overflow-hidden" onClick={() => setCalDropdown(!calDropdown)}>
+                            <span className={`inline-block transform text-4xl leading-[0] ${!calDropdown ? "rotate-0 align-[0.5em]" : "rotate-180 align-[-0.5em]"} group-hover:opacity-85`}>{"⌄"}</span>
                         </button>
                         <ul className={`absolute w-full max-w-full min-h-7 max-h-36 overflow-y-scroll left-0 top-6 bg-[var(--color-back)] ring-1 ring-inset ring-[var(--color-front)] ${calDropdown ? "" : "hidden"} z-50`}>
-                            <li className="p-1 pl-2 cursor-pointer hover:bg-[var(--color-mid)]">Calendar (Gregorian)</li>
+                            {calendars.map(cal => (
+                                <li key={`select_${cal.id}`} className={`p-1 pl-2 cursor-pointer hover:bg-[var(--color-mid)] leading-none py-2 ${cal.id===calSelection?"font-extrabold":""}`} onClick={() => {setCalSelection(cal.id); setCalDropdown(false); }}>{cal.name}</li>
+                            ))}
+                            {/* <li className="p-1 pl-2 cursor-pointer hover:bg-[var(--color-mid)]">Calendar (Gregorian)</li>
                             <li className="p-1 pl-2 cursor-pointer hover:bg-[var(--color-mid)] font-bold"><i>Tonalpohualli (Aztec)</i></li>
                             <li className="p-1 pl-2 cursor-pointer hover:bg-[var(--color-mid)]">Al-taqwīm (Islamic)</li>
                             <li className="p-1 pl-2 cursor-pointer hover:bg-[var(--color-mid)]">Maramataka (Māori)</li>
@@ -80,7 +84,7 @@ export default function Header() {
                             <li className="p-1 pl-2 cursor-pointer hover:bg-[var(--color-mid)]">Bôṅgābdô (Bengali)</li>
                             <li className="p-1 pl-2 cursor-pointer hover:bg-[var(--color-mid)]">Intihuantana (Andean)</li>
                             <li className="p-1 pl-2 cursor-pointer hover:bg-[var(--color-mid)]">Nónglì (Chinese)</li>
-                            <li className="p-1 pl-2 cursor-pointer hover:bg-[var(--color-mid)]">Ọ̀gụ́àfọ̀ (Igbo)</li>
+                            <li className="p-1 pl-2 cursor-pointer hover:bg-[var(--color-mid)]">Ọ̀gụ́àfọ̀ (Igbo)</li> */}
                         </ul>
                     </div>
                 </div>

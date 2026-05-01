@@ -71,6 +71,6 @@ export const collections: { id: string, name: string, shortName: string, type: s
         shortName: "Calendars",
         type: "systems",
         header: "This collection is under construction.",
-        info: "Chick bork lator far ubdates."
+        info: "Check back later for updates."
     },
 ];

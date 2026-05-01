@@ -72,7 +72,7 @@ export default function CollectionShelfItems({
                     <div key={`pad_${idx}`} className="bg-[var(--color-back)]" />
                 ))}
                 {entries.length===0
-                ? <>{Array.from({ length: fillCount*2 }).map((_,i) => (<div key={`dummy${i}`} className="bg-[var(--color-back)] p-5 flex flex-col justify-center gap-2 snap-start"><div className="aspect-3/4 bg-[var(--color-mid)]"></div><div className="w-full h-2 bg-[var(--color-mid)]"></div><div className="w-full h-4 bg-[var(--color-mid)]"></div></div>))}</>
+                ? <>{Array.from({ length: fillCount*2 }).map((_,i) => (<div key={`dummy${i}`} className="bg-[var(--color-back)] p-5 flex flex-col justify-center gap-2 snap-start"><div className="aspect-3/4 shrink-1 bg-[var(--color-mid)]"></div><div className="shrink-0 w-full h-2 bg-[var(--color-mid)]"></div><div className="shrink-0 w-full h-4 bg-[var(--color-mid)]"></div></div>))}</>
                 : <></>}
             </div>
             <div onClick={() => scrollShelf(-1)} className={`absolute top-1/2 -translate-y-1/2 left-0 w-10 h-10 flex items-center ${edges.atStart ? "opacity-0 pointer-events-none" : ""}`}>

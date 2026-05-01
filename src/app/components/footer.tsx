@@ -3,7 +3,7 @@ import ColorLink from "./colorLink";
 
 export default function Footer() {
     return (
-        <div className="w-full border-t-2 border-solid border-[var(--color-front)] p-4 flex gap-8">
+        <div className="w-full border-t-2 border-solid border-[var(--color-front)] p-4 flex gap-8 cursor-default">
             <div>
                 <b className={`${syncopate.className} opacity-50 uppercase text-xs mb-1 block`}>Details</b>
                 <a>About</a><br/>
