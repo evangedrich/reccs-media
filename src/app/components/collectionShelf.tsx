@@ -33,11 +33,11 @@ export default function CollectionShelf({
             <div className={`flex sm:grow-1 border-b-2 border-[var(--color-front)] sm:justify-start justify-center w-[100vw] overflow-x-hidden ${bgPattern} ${bgPatternMobile}`}>
                 {collections.map((coll,i) => (
                     <React.Fragment key={`${coll.id}shelf`}>
-                        <div 
-                            className={`border-x-2 ml-[-2px] border-solid border-[var(--color-front)] cursor-pointer ${i===collections.length-1 ? "mr-[-2px]" : ""} px-4 py-3 group z-10 bg-[var(--color-back)]`} 
+                        <div
+                            className={`w-[68px] shrink-0 border-x-2 ml-[-2px] border-solid border-[var(--color-front)] cursor-pointer ${i===collections.length-1 ? "mr-[-2px]" : ""} px-4 py-3 group z-10 bg-[var(--color-back)] flex justify-center`}
                             onClick={() => setCurrColl(coll.id)}
                         >
-                            <h1 className={`[writing-mode:vertical-rl] px-2 rounded-sm sm:text-3xl text-xl font-bold ${coll.id===currColl ? "italic" : ""} group-active:opacity-80 ${getColor(coll.id)} truncate`}>{coll.name}</h1>
+                            <h1 className={`[writing-mode:vertical-rl] px-2 rounded-sm sm:text-3xl text-xl font-bold ${coll.id===currColl ? "italic" : ""} group-active:opacity-80 ${getColor(coll.id)}`}>{coll.name}</h1>
                         </div>
                         <div style={{maxWidth: currColl===coll.id ? `calc(100vw - (68px * ${collections.length}))` : "0"}} className={`transition-[max-width] sm:flex hidden transition-500 overflow-hidden max-h-[calc(100vh_-_var(--header-h)_-_126px)] min-h-[34rem]`}>
                             <div style={{width:`calc((100vw - (68px * ${collections.length})) / 2)`}} className={`${styles.shelfText} border-r-2 shrink-0 p-4 overflow-auto transition-[height]]`}>

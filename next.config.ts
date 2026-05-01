@@ -1,7 +1,19 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-	/* config options here */
+	serverExternalPackages: ["@vercel/og"],
+	webpack: (config, { isServer }) => {
+		if (isServer) {
+			const externals = Array.isArray(config.externals) ? config.externals : [];
+			config.externals = [
+				...externals,
+				"next/dist/compiled/@vercel/og",
+				"@vercel/og",
+				"next/og",
+			];
+		}
+		return config;
+	},
 };
 
 export default nextConfig;
