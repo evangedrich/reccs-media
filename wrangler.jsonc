@@ -4,9 +4,9 @@
  */
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "<WORKER_NAME>",
+	"name": "reccs-media",
 	"main": ".open-next/worker.js",
-	"compatibility_date": "<COMPATIBILITY_DATE>",
+	"compatibility_date": "2026-05-01",
 	"compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
 	"assets": {
 		"binding": "ASSETS",
@@ -22,7 +22,7 @@
 			// Self-reference service binding, the service name must match the worker name
 			// see https://opennext.js.org/cloudflare/caching
 			"binding": "WORKER_SELF_REFERENCE",
-			"service": "<WORKER_NAME>"
+			"service": "reccs-media"
 		}
 	],
 	"observability": {
