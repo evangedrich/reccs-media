@@ -34,7 +34,7 @@ export default function CollectionShelf({
                 {collections.map((coll,i) => (
                     <React.Fragment key={`${coll.id}shelf`}>
                         <div
-                            className={`w-[68px] shrink-0 border-x-2 ml-[-2px] border-solid border-[var(--color-front)] cursor-pointer ${i===collections.length-1 ? "mr-[-2px]" : ""} px-4 py-3 group z-10 bg-[var(--color-back)] flex justify-center`}
+                            className={`w-[68px] sm:w-auto shrink-0 border-x-2 ml-[-2px] border-solid border-[var(--color-front)] cursor-pointer ${i===collections.length-1 ? "mr-[-2px]" : ""} px-4 py-3 group z-10 bg-[var(--color-back)] flex sm:block justify-center`}
                             onClick={() => setCurrColl(coll.id)}
                         >
                             <h1 className={`[writing-mode:vertical-rl] px-2 rounded-sm sm:text-3xl text-xl font-bold ${coll.id===currColl ? "italic" : ""} group-active:opacity-80 ${getColor(coll.id)}`}>{coll.name}</h1>
