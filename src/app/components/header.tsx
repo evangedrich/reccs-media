@@ -9,6 +9,7 @@ import styles from "@/app/ui/main.module.css";
 import { syncopate, notoEmoji } from "@/app/fonts/fonts";
 import { collections } from "../lib/collections";
 import { useView } from "../lib/viewContext";
+import { calendars } from "../functions/calendars";
 
 const navLinks = [
     { id: "literature", color: "g" },
@@ -20,7 +21,7 @@ const navLinks = [
 export default function Header() {
     const { showGlobe, toggleGlobe, isDark, toggleDark, isOffline, toggleOffline } = useView();
     const [showWidget, setShowWidget] = useState(false);
-    const [date, setDate] = useState("12 Itzcuintli");
+    const [date, setDate] = useState<Date>(new Date());
     const [time, setTime] = useState(new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }));
     const [colonVisible, setColonVisible] = useState(true);
     const [calDropdown, setCalDropdown] = useState(false);
@@ -30,6 +31,7 @@ export default function Header() {
     }, [showWidget]);
     useEffect(() => {
         const timer = setInterval(() => {
+            setDate(new Date());
             setTime(new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }));
             setColonVisible(v => !v);
         }, 500);
@@ -65,14 +67,14 @@ export default function Header() {
                         }
                     </div>
                     <div className="relative m-1 flex items-center shrink-0 " onMouseLeave={() => setCalDropdown(false)}>
-                        <span className="bg-[var(--color-front)] text-[var(--color-back)] px-2" suppressHydrationWarning>{date} {colonVisible ? time : time.replace(':', ' ')}</span>
+                        <span className="bg-[var(--color-front)] text-[var(--color-back)] px-2" suppressHydrationWarning>{calendars[0].function(date).toString()} {colonVisible ? time : time.replace(':', ' ')}</span>
                         <button className="w-6 h-6 inline-block ring-1 ring-inset ring-[var(--color-front)] text-center cursor-pointer active:bg-[var(--color-mid)]" onClick={() => setCalDropdown(!calDropdown)}>
                             <span className={`inline-block transform text-4xl leading-[0] ${!calDropdown ? "rotate-0 align-[0.5em]" : "rotate-180 align-[-0.5em]"}`}>{"⌄"}</span>
                         </button>
                         <ul className={`absolute w-full max-w-full min-h-7 max-h-36 overflow-y-scroll left-0 top-6 bg-[var(--color-back)] ring-1 ring-inset ring-[var(--color-front)] ${calDropdown ? "" : "hidden"} z-50`}>
                             <li className="p-1 pl-2 cursor-pointer hover:bg-[var(--color-mid)]">Calendar (Gregorian)</li>
                             <li className="p-1 pl-2 cursor-pointer hover:bg-[var(--color-mid)] font-bold"><i>Tonalpohualli (Aztec)</i></li>
-                            <li className="p-1 pl-2 cursor-pointer hover:bg-[var(--color-mid)]">Al-hijrī (Islamic)</li>
+                            <li className="p-1 pl-2 cursor-pointer hover:bg-[var(--color-mid)]">Al-taqwīm (Islamic)</li>
                             <li className="p-1 pl-2 cursor-pointer hover:bg-[var(--color-mid)]">Maramataka (Māori)</li>
                             <li className="p-1 pl-2 cursor-pointer hover:bg-[var(--color-mid)]">Cokv-walv (Cahokian)</li>
                             <li className="p-1 pl-2 cursor-pointer hover:bg-[var(--color-mid)]">Bôṅgābdô (Bengali)</li>

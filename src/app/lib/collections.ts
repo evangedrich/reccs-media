@@ -62,13 +62,15 @@ export const collections: { id: string, name: string, shortName: string, type: s
         name: "Original Maths",
         shortName: "Maths",
         type: "systems",
-        header: "",
+        header: "This collection is under construction.",
+        info: "Check back later for updates."
     },
     {
         id: "UQC",
         name: "Unique Calendars",
         shortName: "Calendars",
         type: "systems",
-        header: "",
+        header: "This collection is under construction.",
+        info: "Chick bork lator far ubdates."
     },
 ];
