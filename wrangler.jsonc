@@ -7,16 +7,24 @@
 	"name": "reccs-media",
 	"main": ".open-next/worker.js",
 	"compatibility_date": "2026-05-01",
-	"compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+	"compatibility_flags": [
+		"nodejs_compat",
+		"global_fetch_strictly_public"
+	],
 	"assets": {
 		"binding": "ASSETS",
 		"directory": ".open-next/assets"
 	},
-	"images": {
-		// Enable image optimization
-		// see https://opennext.js.org/cloudflare/howtos/image
-		"binding": "IMAGES"
-	},
+	"r2_buckets": [
+		{
+			"binding": "NEXT_INC_CACHE_R2_BUCKET",
+			"bucket_name": "reccs-media-cache"
+		},
+		{
+			"bucket_name": "reccs-media-cache",
+			"binding": "reccs_media_cache"
+		}
+	],
 	"services": [
 		{
 			// Self-reference service binding, the service name must match the worker name

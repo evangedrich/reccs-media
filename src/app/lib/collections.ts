@@ -49,7 +49,7 @@ export const collections: { id: string, name: string, shortName: string, type: s
         shortName: "Feature Film",
         type: "cinema",
         header: "What is the relationship between film and globalization?",
-        info: "Check back later for updates."
+        info: "This collection is under construction. Some films are available already, but please check back later for updates."
     },
     {
         id: "CSF",
@@ -57,7 +57,7 @@ export const collections: { id: string, name: string, shortName: string, type: s
         shortName: "Short Film",
         type: "cinema",
         header: "Like a feature film with less barrier to entry.",
-        info: "Check back later for updates."
+        info: "This collection is under construction. Check back later for updates."
     },
     {
         id: "OGM",

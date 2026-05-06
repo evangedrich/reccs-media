@@ -6,8 +6,8 @@ export default function Footer() {
         <div className="w-full border-t-2 border-solid border-[var(--color-front)] p-4 flex gap-8 cursor-default">
             <div>
                 <h1 className={`opacity-50 uppercase text-xs mb-1 block`}>Details</h1>
-                <a>About</a><br/>
-                <a>Privacy</a><br/>
+                <ColorLink to="/about" text="About" c="y"/><br/>
+                <ColorLink to="/privacy-policy" text="Privacy" c="p"/><br/>
                 <a>Landing</a>
             </div>
             <div>

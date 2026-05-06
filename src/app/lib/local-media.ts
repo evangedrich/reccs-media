@@ -1048,7 +1048,10 @@ export const stirrPoetry = [
     ],
     infoURL: "https://en.wikipedia.org/wiki/Mririda_n%27Ait_Attik",
     mediaURL: "https://youtu.be/WWDjS_xWyr0",
-    textURL: "https://archive-org.translate.goog/stream/les_chants_de_la_tassaout/book_djvu.txt?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en"
+    textURL: "",
+    ref: [
+      { id: "mririda-1974-songs", type: "book", title: "Songs of Mririda: Courtesan of the High Atlas", contributors: [ { firstName: "Mririda", lastName: "n’Ait Attik", role: "author" }, { firstName: "Daniel", lastName: "Halpern", role: "translator" }, { firstName: "Paula", lastName: "Paley", role: "translator" }, { firstName: "René", lastName: "Euloge", role: "editor" } ], pubDate: { year: 1974 }, url: "https://archive-org.translate.goog/stream/les_chants_de_la_tassaout/book_djvu.txt?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en", publisher: "Unicorn Press", location: "Greensboro, NC", medium: "Print (Hardcover/Paperback)", meta: { notes: "A translation of 'Les Chants de la Tassaout'. Mririda was a renowned performer in the Azilal region. Her poetry is noted for its sharp wit and subversion of traditional gender roles, captured through the Tashelhit oral tradition.", grade: "C", pages: "54", isbn: "0877750629", tags: ["Amazigh", "Berber", "Morocco", "High Atlas", "Tashelhit", "Oral Tradition", "Women's Poetry"], sortKey: "text" } }
+    ]
   },
   {
     id: "AFEASTP",
@@ -1080,9 +1083,14 @@ export const stirrPoetry = [
       `<b>XA:Ä-TIN</b>, Diä!kwain’s father, was the pupil of a shaman, !Nuin-/kuïten, who taught him such skills as how to lead the Rain Bull across the sky and how to make his enemies sick. Xa:ä-tin would hear his teacher calling him by plucking the strings of his bow, but with the teacher’s death the string of shamanic succession ended.`
     ],
     excerpt: [`&emsp;&emsp;People were those<br>who broke for me the string<br>&emsp;&emsp;therefore<br>the place became like this to me<br>&emsp;&emsp;on account of it<br>because they’ve broken the string<br>I no longer hear the ringing sound through the sky<br>&emsp;&emsp;therefore<br>the place does not feel to me<br>as the place used to feel to me<br>&emsp;&emsp;on account of it<br>&emsp;&emsp;&emsp;&emsp;for<br>the place feels as if it stood open before me<br>because the string has broken for me<br>&emsp;&emsp;therefore<br>the place feels strange to me<br>&emsp;&emsp;on account of it`],
-    infoURL: "https://www.poetryfoundation.org/poetrymagazine/articles/145726/translator39s-note-the-broken-string-by-diakwain",
+    infoURL: "",
     mediaURL: "https://youtu.be/e12MUnOU5YI",
-    textURL: "https://africanpoems.net/relationships/the-broken-string/"
+    textURL: "https://africanpoems.net/relationships/the-broken-string/",
+    ref: [
+      { id: "krog-2004-stars-say-tsau", type: "book", title: "The Stars Say 'Tsau': /Xam Poetry of Diä!kwain, Kweiten-ta-⫽ken, ⫽Kabbo, /Han≠kass'o and !Kweiten-ta-⫽ken", contributors: [ { firstName: "", lastName: "Diä!kwain", role: "author" }, { firstName: "", lastName: "Kweiten-ta-⫽ken", role: "author" }, { firstName: "Antjie", lastName: "Krog", role: "author" }, { firstName: "Wilhelm", lastName: "Bleek", role: "editor" }, { firstName: "Lucy", lastName: "Lloyd", role: "editor" } ], pubDate: { year: 2004 }, url: "https://archive.org/details/starssaytsauxamp0000diak", publisher: "Kwela Books", location: "Cape Town, South Africa", medium: "Poetry Anthology", meta: { notes: "A poetic rendering of the Bleek and Lloyd Collection. Focuses on the San concept of 'The First Times.' The title refers to the sound the stars make (Tsau), reflecting the San belief in a sentient, audible universe.", grade: "B", tags: ["San", "|Xam", "South Africa", "Oral Tradition", "Antjie Krog", "Cosmology", "Indigenous Poetry"], sortKey: "text" } },
+      { id: "farmer-xam-2009", type: "article", title: "Translator’s Note: 'The Broken String' by Dia!kwain", containerTitle: "Poetry", contributors: [ { firstName: "Harold", lastName: "Farmer", role: "author" } ], pubDate: { year: 2009, month: 4 }, url: "https://www.poetryfoundation.org/poetrymagazine/articles/145726/translator39s-note-the-broken-string-by-diakwain", publisher: "Poetry Foundation", location: "Chicago, IL", medium: "Digital Magazine / Essay", meta: { notes: "Explains the 're-versification' process of |Xam oral narratives. Krog discusses the profound metaphor of the 'broken string' as a symbol for the loss of cultural connection and the silence that follows the death of a singer/shaman.", grade: "C", tags: ["|Xam", "San", "Antjie Krog", "Translation Theory", "Oral Tradition", "South Africa", "Lament"], sortKey: "info" } },
+      { id: "bleek-lloyd-1911-specimens", type: "book", title: "Specimens of Bushman Folklore", contributors: [ { firstName: "W. H. I.", lastName: "Bleek", role: "author" }, { firstName: "L. C.", lastName: "Lloyd", role: "author" }, { firstName: "George McCall", lastName: "Theal", role: "editor" } ], pubDate: { year: 1911 }, url: "https://archive.org/details/specimensofbushm00blee", publisher: "George Allen & Company, Ltd.", location: "London", medium: "Print / Digital Archive", meta: { notes: "The primary source for |Xam and !Kun mythology. Features side-by-side transcriptions of the native languages and English translations. Includes the stories of |Kabbo, Han≠kass'o, and Dia!kwain regarding the Mantis (Cagn), the Moon, and the origin of death.", grade: "D", tags: ["|Xam", "San", "South Africa", "Folklore", "Philology", "Bleek and Lloyd", "Primary Source"], sortKey: "text" } }
+    ]
   },
   {
     id: "AFCESTP",
@@ -1255,7 +1263,11 @@ export const stirrPoetry = [
     ],
     infoURL: "https://en.wikipedia.org/wiki/Nezahualcoyotl_(tlatoani)",
     mediaURL: "https://youtu.be/ewYRvbD8zAM",
-    textURL: "https://lyricstranslate.com/en/xon-ahuiyacan-be-joyful.html"
+    textURL: "https://lyricstranslate.com/en/xon-ahuiyacan-be-joyful.html",
+    ref: [
+      { id: "leon-portilla-1992-fifteen-poets", type: "book", title: "Fifteen Poets of the Aztec World", contributors: [ { firstName: "Miguel", lastName: "León-Portilla", role: "author" }, { firstName: "Grace", lastName: "Lobanov", role: "translator" } ], pubDate: { year: 1992, month: 9 }, url: "https://archive.org/details/fifteenpoetsofaz0000unse", publisher: "University of Oklahoma Press", location: "Norman, Oklahoma", medium: "Print (Hardcover/Paperback)", meta: { notes: "An expanded English translation of 'Trece poetas del mundo azteca'. Documents the lives and 'flower and song' (In xóchitl in cuicatl) of 15 Nahua poets, including Nezahualcoyotl and the female poet Macuilxochitzin. Sources include the Cantares Mexicanos and Romances de los señores de la Nueva España.", grade: "A", tags: ["Aztec", "Nahuatl", "Poetry", "Mexico", "Nezahualcoyotl", "Mesoamerican Literature", "Indigenous Oral Tradition"], sortKey: "text" } },
+      { id: "bierhorst-1985-cantares-mexicanos", type: "book", title: "Cantares Mexicanos: Songs of the Aztecs", contributors: [ { firstName: "John", lastName: "Bierhorst", role: "author" } ], pubDate: { year: 1985 }, url: "https://archive.org/details/cantaresmexicano0000unse", publisher: "Stanford University Press", location: "Stanford, California", medium: "Academic Edition / Translation", meta: { notes: "The primary source for Aztec poetry. Bierhorst provides a transcription of the original Nahuatl alongside his English translation. He introduces the controversial 'Ghost Song' theory, positing that the poems were part of a post-conquest revitalization movement.", grade: "C", tags: ["Nahuatl", "Aztec", "Cantares Mexicanos", "Manuscript Studies", "Ghost Songs", "Mesoamerican Ritual", "Poetry"], sortKey: "text" } }
+    ]
   },
   {
     id: "AMCRSTP",
@@ -1287,7 +1299,10 @@ export const stirrPoetry = [
     ],
     infoURL: "",
     mediaURL: "",
-    textURL: "https://tiboko.com/wp-content/uploads/2023/07/inbound2115691491.pdf"
+    textURL: "",
+    ref: [
+      { id: "rat-1898-carib-language-dominica", type: "article", title: "The Carib Language as now spoken in Dominica, West Indies", containerTitle: "The Journal of the Anthropological Institute of Great Britain and Ireland", contributors: [ { firstName: "Joseph Numa", lastName: "Rat", role: "author" } ], pubDate: { year: 1898 }, url: "https://tiboko.com/wp-content/uploads/2023/07/inbound2115691491.pdf", publisher: "Anthropological Institute of Great Britain and Ireland", location: "London, UK", medium: "Academic Journal", meta: { notes: "A primary linguistic source for the Kalinago language. Includes a grammatical sketch and a vocabulary list. Notable for its early ethnographic observations on the differences between 'men's language' and 'women's language' among the Island Carib.", grade: "B", pages: "293-315", tags: ["Kalinago", "Carib Language", "Dominica", "Linguistics", "Antillean History", "Island Carib"] } }
+    ]
   },
   {
     id: "AMWESTP",
@@ -2352,7 +2367,10 @@ export const presMusDrama = [
     ],
     infoURL: "https://youtu.be/rJEVz5muJoA",
     mediaURL: "https://youtu.be/APBKLCzHwMQ",
-    textURL: "https://translate.google.com/?hl=en&sl=auto&tl=en&text=Puissions-nous%20vivre%20jusqu%E2%80%99au%20jour%20de%20l%E2%80%99ultime%20rencontre%0APour%20voir%20les%20k%C3%B4ra%20aux%20fils%20scintillants%2C%0APour%20entrevoir%20ces%20visages%20masqu%C3%A9s%20d%E2%80%99hommes%20vigoureux.%0ADis%20%C3%A0%20Fatima%20que%20ganga%20sera%20bient%C3%B4t%20%C3%A0%20Doughia&op=translate"
+    textURL: "https://translate.google.com/?hl=en&sl=auto&tl=en&text=Puissions-nous%20vivre%20jusqu%E2%80%99au%20jour%20de%20l%E2%80%99ultime%20rencontre%0APour%20voir%20les%20k%C3%B4ra%20aux%20fils%20scintillants%2C%0APour%20entrevoir%20ces%20visages%20masqu%C3%A9s%20d%E2%80%99hommes%20vigoureux.%0ADis%20%C3%A0%20Fatima%20que%20ganga%20sera%20bient%C3%B4t%20%C3%A0%20Doughia&op=translate",
+    ref: [
+      { id: "touchi-benmansour-2015-sebeiba", type: "article", title: "La traduisibilité du sens et de la signifiance dans la poésie orale de la Sebeiba", containerTitle: "Revue Internationale d'Études en Langues Modernes Appliquées (RIELMA)", contributors: [ { firstName: "Lynda", lastName: "Touchi-Benmansour", role: "author" } ], pubDate: { year: 2015 }, volume: "8", pages: { start: "173", end: "180", literal: "173-180" }, url: "https://www.ceeol.com/search/article-detail?id=723037", publisher: "International Review of Studies in Applied Modern Languages", medium: "Journal Article", meta: { notes: "A linguistic and semiotic analysis of Tuareg oral poetry. Discusses the untranslatable elements of the Sebeiba ritual and the transition from oral performance to written text.", grade: "C", tags: ["Tuareg", "Sebeiba", "Oral Poetry", "Algeria", "Tamasheq", "Translation Studies", "Kel Ajjer"], sortKey: "text" } }
+    ]
   },
   {
     id: "AFEAPMD",
@@ -2389,9 +2407,13 @@ export const presMusDrama = [
       `I have an ox that is camouflaged by patches and who<br>has not declined to grow<br>And whose mighty bell overweighs those oxen`,
       `A patch stretches over the colobus monkey<br>That does not climb trees<br>Among thin oxen whose bells are wound twice<br>But mine had conquered the Ng’atet anthrax<br>That the Maasai fear.`
     ],
-    infoURL: "https://100humanitarians.org/maasai-dance#:~:text=Traditional%20songs%2C%20known%20as%20%22engilakinoto%2C%22",
+    infoURL: "",
     mediaURL: "https://youtu.be/CVS7rEkiEHQ",
-    textURL: ""
+    textURL: "",
+    ref: [
+      { id: "kipuri-1983-maasai", type: "book", title: "Oral Literature of the Maasai", contributors: [ { firstName: "Naomi", lastName: "Kipuri", role: "author" } ], pubDate: { year: 1983 }, publisher: "East African Educational Publishers Ltd.", location: "Nairobi, Kenya", isbn: "9966463136", medium: "Print", meta: { notes: "A seminal collection of Maasai oral texts including folk tales, songs, and riddles. Provides the original Maa text alongside English translations and extensive socio-cultural commentary.", grade: "A", tags: ["Maasai", "Oral Tradition", "Kenya", "Folklore", "Maa Language", "Ethnography"] } },
+      { id: "humanitarians-maasai-dance", type: "webpage", title: "Maasai Dance and Traditional Songs", containerTitle: "100 Humanitarians International", contributors: [ { organization: "100 Humanitarians International", role: "author" } ], url: "https://100humanitarians.org/maasai-dance#:~:text=Traditional%20songs%2C%20known%20as%20%22engilakinoto%2C%22", pubDate: { year: 2025 }, publisher: "100 Humanitarians International", location: "Salt Lake City, UT / Kenya", medium: "Online Educational Resource", meta: { notes: "Provides ethnographic details on 'Engilakinoto' (victory songs) and the 'Adumu' (the iconic jumping dance). Explains the vocal structure of Maasai music, which lacks traditional instruments and relies on polyphonic throat singing and rhythmic grunts.", grade: "D", tags: ["Maasai", "Engilakinoto", "Adumu", "Kenya", "Tanzania", "Warrior Culture", "Ethnomusicology"] } }
+    ]
   },
   {
     id: "AFSOPMD",
@@ -2511,9 +2533,12 @@ export const presMusDrama = [
       `The tradition is preserved through groups like Kassiglurmiut Yurartait, who hold the annual Cama’i Dance Festival featuring local and regional yuraq performances alongside national and international dance groups.`
     ],
     excerpt: [`https://youtu.be/DvYOQwei1ng`],
-    infoURL: "https://www.ktoo.org/2020/05/11/the-stress-relieving-storytelling-art-of-yuraq-is-now-available-virtually/",
+    infoURL: "",
     mediaURL: ["https://youtu.be/91TtnRMTfnk","https://youtu.be/rYiS-jRJGME","https://youtu.be/MlHnGioVjhQ"],
-    textURL: ""
+    textURL: "",
+    ref: [
+      { id: "ross-2020-yuraq", type: "webpage", title: "The stress-relieving, storytelling art of yuraq is now available virtually", containerTitle: "KTOO", contributors: [ { firstName: "Isabelle", lastName: "Ross", role: "author" } ], pubDate: { year: 2020, month: 5, day: 11 }, url: "https://www.ktoo.org/2020/05/11/the-stress-relieving-storytelling-art-of-yuraq-is-now-available-virtually/", publisher: "KTOO / KDLG", location: "Juneau / Dillingham, AK", medium: "Online News Article", meta: { notes: "Features Atkiq Ilutsik-Snyder and her efforts to teach yuraq virtually via the Facebook group 'Bristol Bay-am Qasgia/Na qenq’a'. Discusses the song 'Ellamta Nunanirqutii' (Our World’s Inner Beauty) composed by Ossie Assanaaq Kairaiuak.", grade: "C", tags: ["Yup'ik", "Yuraq", "Indigenous Dance", "Digital Heritage", "Bristol Bay", "COVID-19 Response"] } }
+    ]
   },
   {
     id: "AMEAPMD",
@@ -2580,7 +2605,10 @@ export const presMusDrama = [
     ],
     infoURL: "",
     mediaURL: ["https://youtu.be/oEG9sLpkv8o?start=4","https://youtu.be/jGaj0Z27Q1s","https://youtu.be/sCrObPuHcm8","https://youtu.be/OupTwCYDkDM"],
-    textURL: "https://www.matoska.com/cgi-bin/gencat.cgi?AC=gencat&PC=4&ST=5&S1=RR004&S2=NULL&RS=4,8,90,NULL,0,NULL&NO=0"
+    textURL: "",
+    ref: [
+      { id: "mitakuye-oyasin-1993", type: "audio", title: "Mitakuye Oyasin: Lakota Sundance Songs", contributors: [ { organization: "Various Artists", role: "performer" } ], pubDate: { year: 1993 }, url: "https://www.matoska.com/cgi-bin/gencat.cgi?AC=gencat&PC=4&ST=5&S1=RR004&S2=NULL&RS=4,8,90,NULL,0,NULL&NO=0", publisher: "Red Records / Matoska Trading Company", medium: "Compact Disc", meta: { notes: "A primary source for Sundance liturgy. Features traditional Lakota drumming and chanting. Accompanied by an 8-page linguistic resource containing original Lakota lyrics and English translations.", grade: "A", tags: ["Lakota", "Sundance", "Sacred Music", "Great Plains", "Native American Church", "Ethnomusicology"] } }
+    ]
   },
   {
     id: "AMSWPMD",
@@ -2652,9 +2680,15 @@ export const presMusDrama = [
       `Listen!<br>Brave man<br>&emsp;&emsp;prisoner, captive:<br>Should thanks be given to the sky<br>&emsp;&emsp;to the earth?<br>Has the sky really given you up?<br>&emsp;&emsp;Has the earth given you up?<br>So now you’re under the power of my weapon<br>&emsp;&emsp;under the power of my shield<br>and my upraised ax handle<br>&emsp;&emsp;my upraised ax blade<br>my snail-shell bracelet<br>&emsp;&emsp;my armband<br>&emsp;&emsp;&emsp;&emsp;my white paint<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;my gourd of tobacco.<br>Speak now:<br>Where are your mountains?<br>&emsp;&emsp;Where are your valleys?<br>Where were you born<br>&emsp;&emsp;on the slope of a mountain<br>&emsp;&emsp;&emsp;&emsp;on the floor of a valley?<br>Weren’t you born of clouds?<br>&emsp;&emsp;Weren’t you born of mist?<br>Aren’t you on the run<br>&emsp;&emsp;in the face of violence<br>&emsp;&emsp;&emsp;&emsp;in the face of war?<br>So say my words<br>&emsp;&emsp;before the face of the sky<br>&emsp;&emsp;&emsp;&emsp;before the face of the earth<br>since we haven’t many words<br>&emsp;&emsp;to speak with you.<br>May the sky and the earth be with you<br>&emsp;&emsp;prisoner, captive!`,
       `<i>(Fanfare during which </i><s>Rabinal</s><i> and </i><s>Kʼicheʼ</s><i> turn their backs to one another, as before, while </i><s>13 Eagles</s><i> and </i><s>13 Jaguars</s><i> stand still at the sides of the stage.)</i>`
     ],
-    infoURL: "https://www.critical-stages.org/23/creating-in-between-times-and-identities-expressions-of-contemporary-theatre-in-guatemala/#:~:text=Xajoj%3A%20An%20Approach%20to%20Mayan%20Theatrical%20Poetics",
+    infoURL: "",
     mediaURL: ["https://youtu.be/KR8PyhFshu8","https://youtu.be/nF8NhZOFjOA?start=12"],
-    textURL: "https://api.pageplace.de/preview/DT0400.9780198031994_A23605408/preview-9780198031994_A23605408.pdf#page=32"
+    textURL: "",
+    ref: [
+      { id: "miranda-rodriguez-2021", type: "article", title: "Creating In-between Times and Identities: Expressions of Contemporary Theatre in Guatemala", containerTitle: "Critical Stages/Scènes critiques", contributors: [ { firstName: "Regina Solis", lastName: "Miranda", role: "author" }, { firstName: "Luis Antonio", lastName: "Morales Rodríguez", role: "author" } ], pubDate: { year: 2021, month: 6 }, issue: "23", url: "https://www.critical-stages.org/23/creating-in-between-times-and-identities-expressions-of-contemporary-theatre-in-guatemala/#:~:text=Xajoj%3A%20An%20Approach%20to%20Mayan%20Theatrical%20Poetics", publisher: "International Association of Theatre Critics (IATC)", medium: "Journal Article / Online", meta: { notes: "Part of the 'National Reports' section. Highlights 'Xajoj' as a foundational approach to Mayan theatrical poetics and discusses theatre as a space for decolonizing identity in Guatemala.", grade: "B", tags: ["Guatemala", "Mayan Theatre", "Xajoj", "Contemporary Theatre", "Postcolonialism", "Ladino Identity"], sortKey: "info" } },
+      { id: "tedlock-2003-rabinal", type: "book", title: "Rabinal Achí: A Mayan Drama of War and Sacrifice", contributors: [ { firstName: "Dennis", lastName: "Tedlock", role: "translator" } ], url: "https://api.pageplace.de/preview/DT0400.9780198031994_A23605408/preview-9780198031994_A23605408.pdf#page=32", pubDate: { year: 2003 }, publisher: "Oxford University Press", location: "New York", isbn: "0195139755", medium: "Print / Hardcover", meta: { notes: "A comprehensive translation of the Xajoj Tun (Dance of the Trumpets). Includes historical context, analysis of Mayan poetics, and detailed stage directions based on actual performances in Rabinal, Guatemala.", grade: "B", tags: ["Mayan Drama", "Rabinal Achí", "Kʼicheʼ", "Indigenous Theatre", "Ethno-poetics", "Guatemala"], sortKey: "text" } },
+      { id: "leon-portilla-2001-language-kings", type: "book", title: "In the Language of Kings: An Anthology of Mesoamerican Literature—Pre-Columbian to the Present", contributors: [ { firstName: "Miguel", lastName: "León-Portilla", role: "author" }, { firstName: "Earl", lastName: "Shorris", role: "author" } ], pubDate: { year: 2001 }, isbn: "9780393020106", publisher: "W. W. Norton & Company", location: "New York, NY", medium: "Print / Hardcover", meta: { notes: "A comprehensive 700+ page anthology tracing Mesoamerican literature from pre-Columbian codices and the Popol Vuh to colonial chronicles and modern-day Zapatista manifestos. Focuses on the endurance of the indigenous 'Word' across five centuries.", grade: "A", tags: ["Mesoamerica", "Aztec", "Maya", "Nahua", "Popol Vuh", "Literature", "History", "Indigenous Voices"], sortKey: "text" } },
+      { id: "unesco-rabinal-achi-2008", type: "webpage", title: "Rabinal Achí dance drama tradition", containerTitle: "Intangible Cultural Heritage", contributors: [ { organization: "UNESCO", role: "author" } ], pubDate: { year: 2008 }, url: "https://ich.unesco.org/en/RL/rabinal-achi-dance-drama-tradition-00144", publisher: "UNESCO", location: "Paris, France", medium: "Online Database Entry", meta: { notes: "Originally proclaimed in 2005. The entry highlights the drama's role in communal identity and its unique survival of colonial suppression. It details the use of wooden masks, musical instruments (tun and trumpets), and the specific spatial layout of the performance.", grade: "C", tags: ["UNESCO", "Rabinal Achí", "Guatemala", "Mayan Culture", "Intangible Heritage", "Performance Art"], sortKey: "info" } }
+    ]
   },
   {
     id: "AMCRPMD",
@@ -2684,7 +2718,11 @@ export const presMusDrama = [
     ],
     infoURL: "https://en.wikipedia.org/wiki/Are%C3%ADto",
     mediaURL: ["https://youtu.be/zta5Xi__O7c","https://youtu.be/5ijG1sPKAeU"],
-    textURL: "https://indigenouscaribbean.ning.com/group/caneycircle/page/songs-of-the-caney-circle"
+    textURL: "",
+    ref: [
+      { id: "sague-caney-songs", type: "webpage", title: "Songs of the Caney Circle", containerTitle: "Indigenous Caribbean Network", contributors: [ { firstName: "Miguel", lastName: "Sagué Jr.", role: "author" } ], pubDate: { year: 2021 }, url: "https://indigenouscaribbean.ning.com/group/caneycircle/page/songs-of-the-caney-circle", publisher: "Caney Indigenous Spiritual Circle", location: "Pittsburgh, PA", medium: "Online Multimedia Archive", meta: { notes: "A collection of liturgical chants and songs in the Caney Circle dialect of the Taino language. Includes lyrics, English translations, and instructional videos for ceremonial use. Central to the Taino Resurgence Movement.", grade: "C", tags: ["Taino", "Indigenous Spirituality", "Ceremonial Music", "Caribbean", "Miguel Sague Jr", "Areyto"] } },
+      { id: "simmons-1960-preconquest", type: "article", title: "Pre-Conquest Narrative Songs in Spanish America", containerTitle: "The Journal of American Folklore", contributors: [ { firstName: "Merle L.", lastName: "Simmons", role: "author" } ], pubDate: { year: 1960 }, volume: "73", issue: "288", pages: { start: "103", end: "111", literal: "103–111" }, doi: "10.2307/537891", url: "https://doi.org/10.2307/537891", publisher: "American Folklore Society", medium: "Journal Article", meta: { notes: "Examines the historiography of indigenous narrative poetry. Argues that while the Spanish 'romance' influenced later forms, the Aztecs and Incas had robust pre-existing traditions of sung history and epic narrative.", grade: "C", tags: ["Ethnomusicology", "Indigenous Literature", "Folklore", "Aztec", "Inca", "Narrative Song"], sortKey: "info" } }
+    ]
   },
   {
     id: "AMWEPMD",
@@ -2741,9 +2779,14 @@ export const presMusDrama = [
       `<s>OLLANTAY—</s>`,
       `...I hate that ancient conjurer<br>Who prophesies of evil things,<br>I feel the evils he predicts;<br>It’s he who always brings bad luck.`
     ],
-    infoURL: "https://www.scielo.br/j/bgoeldi/a/TWpkhLWHcqsXZQMdwGs8rPj/?lang=en#:~:text=It%20is%20known%20that%20the%20Incas%20had%20in%20fact%20two%20kinds%20of%20theatrical%20genres%3A%20wanka%20and%20ar%C3%A1nway",
+    infoURL: "",
     mediaURL: "https://youtu.be/KCYg801U_Ps?start=7",
-    textURL: "https://www.gutenberg.org/files/9068/9068-h/9068-h.htm#:~:text=is%20thus%20explained.-,OLLANTAY,-ACTS%20AND%20SCENES"
+    textURL: "",
+    ref: [
+      { id: "markham-1871-ollanta", type: "book", title: "Ollanta, an Ancient Ynca Drama: Translated from the Original Quichua", contributors: [ { firstName: "Clements R.", lastName: "Markham", role: "translator" } ], url: "https://www.gutenberg.org/files/9068/9068-h/9068-h.htm#:~:text=is%20thus%20explained.-,OLLANTAY,-ACTS%20AND%20SCENES", pubDate: { year: 1871 }, publisher: "Trübner & Co.", location: "London, UK", medium: "Print", meta: { notes: "The first full English translation of the play. Includes Markham's 'Introduction' which argues for the purely Indigenous origin of the work, and a Quichua-English vocabulary.", grade: "C", tags: ["Primary Translation", "Quechua Drama", "Inca Empire", "Victorian Ethnography", "Ollanta"], sortKey: "text" } },
+      { id: "bertazoni-2014-apu", type: "article", title: '"Apu Ollantay": Inca Theatre as an example of the modes of interaction between the Incas and Western Amazonian societies', containerTitle: "Boletim do Museu Paraense Emílio Goeldi. Ciências Humanas", contributors: [ { firstName: "Cristiana", lastName: "Bertazoni", role: "author" } ], pubDate: { year: 2014, month: 4 }, volume: "9", issue: "1", pages: { start: "111", end: "120", literal: "111-120" }, doi: "10.1590/S1981-81222014000100003", url: "https://doi.org/10.1590/S1981-81222014000100003", medium: "Journal Article", meta: { notes: "Search: It is known that the Incas had in fact two kinds of theatrical genres: wanka and aránway", grade: "C", tags: ["Inca", "Quechua Theatre", "Antisuyu", "Apu Ollantay", "Amazonia", "Imperialism"], sortKey: "info" } },
+      { id: "garcilaso-livermore-2006", type: "book", title: "The Royal Commentaries of the Incas and General History of Peru, Abridged", containerTitle: "Hackett Classics", contributors: [ { firstName: "Inca Garcilaso", lastName: "de la Vega", role: "author" }, { firstName: "Harold V.", lastName: "Livermore", role: "translator" }, { firstName: "Karen", lastName: "Spalding", role: "editor" } ], pubDate: { year: 2006 }, publisher: "Hackett Publishing Company, Inc.", location: "Indianapolis, IN", isbn: "0872208435", medium: "Print / Paperback", meta: { notes: "An abridgment of the definitive 1966 Livermore translation. Includes an introduction by Karen Spalding that contextualizes Garcilaso's 'Mestizo' identity and the political climate of 17th-century Peru.", grade: "A", tags: ["Inca", "Colonial Peru", "Primary Source", "Abridged Edition", "Ethnohistory", "Quechua"], sortKey: "info" } }
+    ]
   },
   {
     id: "AMNEPMD",
@@ -2759,7 +2802,7 @@ export const presMusDrama = [
       `<i>(From the courtyard and inside the House of Yaõkwa.)</i>`,
       `<s>Hosts—</s>`,
       `Wake up Dokoi, son of Dataware. Go catch the fish!<br>As in the past, the cashew has already fallen into the water and the fish ate it, a lot of fish will eat it.<br>As in the past, the cashew fell into the water<br>&emsp;&emsp;and the <i>matrinxan</i> ate it.<br>As in the past the cashew fell into the water<br>&emsp;&emsp;and the <i>pacu</i> ate it.<br>As in the past the cashew fell into the water<br>&emsp;&emsp;and the …<br>`,
-      `<i>(several species are named in the same verse structure as it is repeats)</i>`,
+      `<i>(several species are named in the same verse structure as it repeats)</i>`,
       `First I will fish for the <i>piau</i>, I will go by the shore.<br>If Dokoi died, now it is my turn.<br>I will catch a lot of fish: I will catch <i>pacu</i>…<br>Stand up to listen…<br>Listen, <i>wayato</i>. Do not be sad, be happy.<br>When I return,<br>&emsp;&emsp;it will be the turn of another way.<br>My time will come to an end,<br>&emsp;&emsp;there will be another Yaõkwa.<br>You will harvest from the new bush,<br>&emsp;&emsp;the old bush is coming to an end.`,
       `<s>Dataware—</s>`,
       `Wake up Dorinero, Yaõkwa has already begun.<br>Come make <i>oloyti</i>, <i>ketera</i>…<br>Don’t do little, do a lot for my ritual.`,
@@ -3366,13 +3409,15 @@ export const foundRelTexts = [
       `The men immediately went out and waited next to the road, waiting for her. And when she came past, they shot her dead.`,
       `>>(ǂAiǃgãmũchab 5:401-402 HW)`
     ],
-    infoURL: "http://khoisan.org/religion.htm",
+    infoURL: "",
     mediaURL: "",
-    textURL: "https://archive.org/details/dictionaryofafri00sche",
+    textURL: "",
     ref: [
-      {id: "wittenberg-2011", type: "article", title: "Notes towards a history of Khoi literature", contributors: [{lastName: "Wittenberg", firstName: "Hermann", role: "author"}], pubDate: {year: 2011}, containerTitle: "English Academy Review", volume: "28", issue: "1", pages: {start: "6", end: "22"}, url: "https://ibali.uct.ac.za/files/original/d58262950235cb005621b2d71f9c96191316eeff.pdf", meta: {sortKey: "info", grade: "B"}},
-      {id: "schultze-1907", type: "book", title: "Aus Namaland und Kalahari: Bericht an die Kgl. Preuss. Akademie der Wissenschaften zu Berlin über eine forschungsreise im westlichen und zentralen Südafrika, ausgeführt in den jahren 1903-1905", contributors: [{lastName: "Schultze", firstName: "Leonhard", role: "author"}], pubDate: {year: 1907}, publisher: "Gustav Fischer", url: "https://archive.org/details/ausnamalandundk00berlgoog", meta: {sortKey: "text", grade: "B"}},
-      {id: "bleek-1864", type: "book", title: "Reynard the Fox in South Africa", contributors: [{lastName: "Bleek", firstName: "Wilhelm Heinrich Immanuel", role: "author"}], pubDate: {year: 1864}, publisher: "Trübner and Co", url: "https://www.gutenberg.org/cache/epub/73413/pg73413.txt", meta: {sortKey: "text", grade: "D"}}
+      { id: "wittenberg-2011", type: "article", title: "Notes towards a history of Khoi literature", contributors: [{lastName: "Wittenberg", firstName: "Hermann", role: "author"}], pubDate: {year: 2011}, containerTitle: "English Academy Review", volume: "28", issue: "1", pages: {start: "6", end: "22"}, url: "https://ibali.uct.ac.za/files/original/d58262950235cb005621b2d71f9c96191316eeff.pdf", meta: {sortKey: "info", grade: "B"}},
+      { id: "schultze-1907", type: "book", title: "Aus Namaland und Kalahari: Bericht an die Kgl. Preuss. Akademie der Wissenschaften zu Berlin über eine forschungsreise im westlichen und zentralen Südafrika, ausgeführt in den jahren 1903-1905", contributors: [{lastName: "Schultze", firstName: "Leonhard", role: "author"}], pubDate: {year: 1907}, publisher: "Gustav Fischer", url: "https://archive.org/details/ausnamalandundk00berlgoog", meta: {sortKey: "text", grade: "B"}},
+      { id: "bleek-1864", type: "book", title: "Reynard the Fox in South Africa", contributors: [{lastName: "Bleek", firstName: "Wilhelm Heinrich Immanuel", role: "author"}], pubDate: {year: 1864}, publisher: "Trübner and Co", url: "https://www.gutenberg.org/cache/epub/73413/pg73413.txt", meta: {sortKey: "text", grade: "D"}},
+      { id: "scheub-2000-dictionary", type: "book", title: "A Dictionary of African Mythology: The Mythmaker as Storyteller", contributors: [ { firstName: "Harold", lastName: "Scheub", role: "author" } ], pubDate: { year: 2000 }, publisher: "Oxford University Press", location: "New York / Oxford", isbn: "0195124561", url: "https://archive.org/details/dictionaryofafri00sche", medium: "Print / Digital Archive", meta: { notes: "Contains myths from hundreds of African cultures (San, Yoruba, Zulu, Dogon, etc.). Organized alphabetically by deity, hero, or theme, with a focus on the creative process of the storyteller.", grade: "D", tags: ["African Mythology", "Oral Tradition", "Folklore", "Storytelling", "Comparative Mythology", "Ethnography"] } },
+      { id: "boyce-khoisan-religion", type: "webpage", title: "Reconstructing the Past - the Khoikhoi: Religion and Nature", containerTitle: "The Khoisan Pages", contributors: [ { firstName: "David", lastName: "Boyce", role: "publisher" } ], url: "http://khoisan.org/religion.htm", pubDate: { year: "2000" }, publisher: "David Boyce / Future Perfect Corporation", location: "South Africa", medium: "Online Educational Resource", meta: { notes: "Part of 'The Khoisan Pages' project. Focuses on the Khoikhoi (Khoekhoe) perspective on divinity, specifically the interplay between the supreme being and natural phenomena.", grade: "C", tags: ["Khoikhoi", "Khoekhoe", "African Religion", "Nature Worship", "Indigenous History", "South Africa"], sortKey: "info" } }
     ]
   },
   {
@@ -3422,7 +3467,7 @@ export const foundRelTexts = [
       `That is why I returned empty-handed.`,
       `>>(Keti 1-62)`
     ],
-    infoURL: "https://folkways-media.si.edu/docs/folkways/artwork/SFW40401.pdf",
+    infoURL: "",
     mediaURL: "",
     textURL: "",
     ref: [
@@ -3477,8 +3522,9 @@ export const foundRelTexts = [
     mediaURL: "",
     textURL: "",
     ref: [
-      {id: "salami-2002", type: "book", title: "Ifá: A Complete Divination", contributors: [{lastName: "Salami", firstName: "Ayọ̀", role: "author"}], pubDate: {year: 2002}, publisher: "NIDD Publishing and Printing Limited", meta: {sortKey: "text", grade: "A"}},
-      {id: "gleason-1973", type: "book", title: "A Recitation of Ifa, Oracle of the Yoruba", contributors: [{lastName: "Gleason", firstName: "Judith", role: "author"}, {lastName: "Aworinde", firstName: "Awotunde", role: "author"}, {lastName: "Ogundipe", firstName: "John Olaniyi", role: "author"}], pubDate: {year: 1973}, publisher: "Grossman Publishers", meta: {sortKey: "text", grade: "B"}}
+      { id: "salami-2002", type: "book", title: "Ifá: A Complete Divination", contributors: [{lastName: "Salami", firstName: "Ayọ̀", role: "author"}], pubDate: {year: 2002}, publisher: "NIDD Publishing and Printing Limited", meta: {sortKey: "text", grade: "A"}},
+      { id: "gleason-1973", type: "book", title: "A Recitation of Ifa, Oracle of the Yoruba", contributors: [{lastName: "Gleason", firstName: "Judith", role: "author"}, {lastName: "Aworinde", firstName: "Awotunde", role: "author"}, {lastName: "Ogundipe", firstName: "John Olaniyi", role: "author"}], pubDate: {year: 1973}, publisher: "Grossman Publishers", meta: {sortKey: "text", grade: "B"}},
+      { id: "fatunmbi-ifa-chap9", type: "chapter", title: "Chapter 9. The Holy Odus: 256 Sacred Parables, Proverbs and Prescriptions", containerTitle: "African Traditional Religions Textbook: Ifá", contributors: [ { firstName: "Awo Fa’lokun", lastName: "Fatunmbi", role: "author" } ], url: "https://research.auctr.edu/Ifa/Chap9Intro", publisher: "Atlanta University Center (AUC) Robert W. Woodruff Library", pubDate: { year: 2019 }, medium: "Digital Textbook / Research Archive", meta: { notes: "Part of a digitized curriculum on African Traditional Religions (ATR). Detail the 16 principal Odù and their 240 sub-combinations (Omo Odù), totaling 256. Each Odù is treated as a living energy with associated myths (Èjì-Ogbè, Òyèkú Méjì, etc.).", grade: "A", tags: ["Ifá", "Yoruba", "Odù", "Divination", "African Philosophy", "Orisha", "Digital Humanities"] } }
     ]
   },
   {
@@ -3537,11 +3583,12 @@ export const foundRelTexts = [
       `“It’s a bit early yet. Wait until everyone is asleep before we eat their dry fish and muktuk.” He was speaking of the whale hunters along the coast. But when everyone was asleep, Tulugak and his cousin ate until the early hours of the morning. Tulugak thought again of the Owl, and laughed and said, “Cousin, if only you could come back with me and visit me at home.” But he knew his cousin wouldn’t, because he was from the coast and liked to stay where he was, safe in his home territory. But what a tale of his adventures Tulugak would have to tell his children and friends when he got back. And what other adventures would he have before he got there? “Kow-kow, kow-kow,” Tulugak cried as he flew back towards his home.`,
       `>>(Tulugak 2:1-12)`
     ],
-    infoURL: "https://irc.inuvialuit.com/about-irc/culture/oral-traditions/",
+    infoURL: "",
     mediaURL: "https://youtu.be/1TINaxgWRYw",
     textURL: "",
     ref: [
-      {id: "alunik-2003", type: "book", title: "Across Time and Tundra: the Inuvialuit of the Western Arctic", contributors: [{lastName: "Alunik", firstName: "Ishmael", role: "author"}], pubDate: {year: 2003}, publisher: "Raincoast Books", url: "https://archive.org/details/acrosstimetundra0000alun", meta: {sortKey: "text", grade: "A"}}
+      {id: "alunik-2003", type: "book", title: "Across Time and Tundra: the Inuvialuit of the Western Arctic", contributors: [{lastName: "Alunik", firstName: "Ishmael", role: "author"}], pubDate: {year: 2003}, publisher: "Raincoast Books", url: "https://archive.org/details/acrosstimetundra0000alun", meta: {sortKey: "text", grade: "A"}},
+      { id: "irc-inuvialuit-oral-tradition", type: "webpage", title: "Oral Traditions", containerTitle: "Inuvialuit Regional Corporation (IRC)", contributors: [ { organization: "Inuvialuit Regional Corporation", role: "author" } ], pubDate: { year: 2020 }, url: "https://irc.inuvialuit.com/about-irc/culture/oral-traditions/", publisher: "Inuvialuit Regional Corporation", location: "Inuvik, Northwest Territories, Canada", medium: "Online Educational Resource / Institutional Archive", meta: { notes: "Details the role of Elders in maintaining cultural continuity. Highlights the Inuvialuit Digital Library and the importance of drum dancing, storytelling, and the preservation of Inuvialuktun dialects (Inuinnaqtun, Siglitun, and Uummarmiutun).", grade: "A", tags: ["Inuvialuit", "Western Arctic", "Inuit Culture", "Oral History", "Inuvialuktun", "Traditional Knowledge", "Northwest Territories"] } }
     ]
   },
   {
@@ -3635,9 +3682,7 @@ export const foundRelTexts = [
       `The next morning, when her mother came, and, as before, wished her to accompany her, she determined that if on her next visit she should refuse, she would take her from the cave by force.`,
       `In her last dream she saw a canoe sailing upon Lake Superior. It came to where she stood, and she was asked to enter it. She did so, when one of her visitors began to chant a song:`,
       ``,
-      ``,
       `&emsp;&emsp;“I walk on the waves of the sea,<br>&emsp;&emsp;I travel o’er hill and dale.”`,
-      ``,
       ``,
       `They proceeded in the canoe till they were far from the sight of land, and the waters around them were unmoved.`,
       `“When <+>becalmed[i.e. when your boat is unable to move for lack of wind]</+>,” said they, “sing this, and you will hear us whisper to you.” They then returned her to the shore.`,
@@ -3645,13 +3690,15 @@ export const foundRelTexts = [
       `“By my fasting I have received the favor of the gods,” said she to the friends who crowded around her. “I have travelled the journey of life, and have learned that I shall not die until half of my hair has turned white.”`,
       `>>(Gaagigegaabaw 150-158)`
     ],
-    infoURL: ["https://en.wikipedia.org/wiki/Wiigwaasabak","https://en.wikipedia.org/wiki/Midewiwin","https://www.anishinaabe.ca/the-midewiwin-society-today/"],
+    infoURL: ["https://en.wikipedia.org/wiki/Wiigwaasabak","https://en.wikipedia.org/wiki/Midewiwin"],
     mediaURL: "",
-    textURL: ["https://www.academia.edu/43051692/A_Structural_Analysis_of_Midewiwin_Chants","https://www.gutenberg.org/files/19368/19368-h/19368-h.htm"],
+    textURL: ["https://www.gutenberg.org/files/19368/19368-h/19368-h.htm"],
     ref: [
-      {id: "vecsey-1984", type: "chapter", title: "Midewiwin Myths of Origin", contributors: [{lastName: "Vecsey", firstName: "Christopher", role: "author"}], pubDate: {year: 1984}, containerTitle: "Algonquian Papers - Archive", volume: "15", url: "https://ojs.library.carleton.ca/index.php/ALGQP/article/view/889", meta: {sortKey: "info", grade: "B"}},
-      {id: "angel-1997", type: "book", title: "Discordant Voices, Conflicting Visions: Ojibwa and Euro-American Perspectives on the Midewiwin", contributors: [{lastName: "Angel", firstName: "Michael R.", role: "author"}], pubDate: {year: 1997}, publisher: "University of Manitoba", medium: "[PhD dissertation]", url: "https://central.bac-lac.gc.ca/.item?id=nq23580&op=pdf&app=Library&oclc_number=1150882872", meta: {sortKey: "info", grade: "C"}},
-      {id: "copway-1851", type: "book", title: "The Traditional History and Characteristic Sketches of The Ojibway Nation", contributors: [{lastName: "Copway", firstName: "George", role: "author"}], pubDate: {year: 1851}, url: "https://archive.org/details/traditionalhisto00copw/page/146/mode/2up", meta: {sortKey: "text", grade: "A"}}
+      { id: "vecsey-1984", type: "chapter", title: "Midewiwin Myths of Origin", contributors: [{lastName: "Vecsey", firstName: "Christopher", role: "author"}], pubDate: {year: 1984}, containerTitle: "Algonquian Papers - Archive", volume: "15", url: "https://ojs.library.carleton.ca/index.php/ALGQP/article/view/889", meta: {sortKey: "info", grade: "B"}},
+      { id: "angel-1997", type: "book", title: "Discordant Voices, Conflicting Visions: Ojibwa and Euro-American Perspectives on the Midewiwin", contributors: [{lastName: "Angel", firstName: "Michael R.", role: "author"}], pubDate: {year: 1997}, publisher: "University of Manitoba", medium: "[PhD dissertation]", url: "https://central.bac-lac.gc.ca/.item?id=nq23580&op=pdf&app=Library&oclc_number=1150882872", meta: {sortKey: "info", grade: "C"}},
+      { id: "copway-1851", type: "book", title: "The Traditional History and Characteristic Sketches of The Ojibway Nation", contributors: [{lastName: "Copway", firstName: "George", role: "author"}], pubDate: {year: 1851}, url: "https://archive.org/details/traditionalhisto00copw/page/146/mode/2up", meta: {sortKey: "text", grade: "A"}},
+      { id: "fulford-1990-midewiwin", type: "article", title: "A Structural Analysis of Midewiwin Chants", containerTitle: "Papers of the Twenty-First Algonquian Conference", contributors: [ { firstName: "George", lastName: "Fulford", role: "author" } ], url: "https://www.academia.edu/43051692/A_Structural_Analysis_of_Midewiwin_Chants", pubDate: { year: 1990 }, publisher: "Carleton University", location: "Ottawa, Ontario", medium: "Print / Journal", meta: { notes: "Explores the relationship between the visual pictography of birch bark scrolls and the vocal performance of ritual chants. Uses structuralism to decode the sequence and meaning of the mnemonic symbols used by the Grand Medicine Society.", grade: "C", tags: ["Anishinaabe", "Ojibwe", "Midewiwin", "Algonquian Studies", "Pictography", "Ethnomusicology", "Structuralism"], sortKey: "info" } },
+      { id: "goulais-midewiwin-today", type: "webpage", title: "The Midewiwin Society Today", containerTitle: "Anishinaabe.ca", contributors: [ { firstName: "Bob", lastName: "Goulais", role: "author" }, { organization: "Anishinaabeg of Kabapikotawangag Resource Council (AKRC)", role: "publisher" } ], pubDate: { year: 2018 }, url: "https://www.anishinaabe.ca/the-midewiwin-society-today/", publisher: "Anishinaabe.ca / Bob Goulais", location: "Ontario, Canada", medium: "Personal/Community Blog & Resource", meta: { notes: "Authored by Bob Goulais, an initiate of the Three Fires Midewiwin Lodge. The text serves as both a historical overview and a personal testament to the persistence of the lodge's spiritual authority in the 21st century.", grade: "A", tags: ["Anishinaabe", "Three Fires Lodge", "Bob Goulais", "Indigenous Knowledge", "Midewiwin", "Spirituality"], sortKey: "info" } }
     ]
   },
   {
@@ -3694,12 +3741,13 @@ export const foundRelTexts = [
       `Above this is what they said.<br>Above this is what they said.<br>He took it out of the earth; yonder he comes.<br>Power it was taken out; yonder he is coming.<br>Timber, waters, seeds,<br>&emsp;&emsp;fog, dew, rain,<br>&emsp;&emsp;rainstorm, wind, night,<br>&emsp;&emsp;lodge, bedding, bedroom,<br>&emsp;&emsp;altar, aisle, aphorism,<br>&emsp;&emsp;mantle, hearth, spark,<br>&emsp;&emsp;flame, entrance, shout<br>it was taken out; yonder he is coming.`,
       `>>(Skiri Genesis 43-44)`
     ],
-    infoURL: ["https://archive.org/details/pawneeindiansoci0011muri","https://en.wikipedia.org/wiki/James_Rolfe_Murie#Ceremonies_of_the_Pawnee_(1981)","https://en.wikipedia.org/wiki/Pawnee_mythology"],
+    infoURL: ["https://en.wikipedia.org/wiki/James_Rolfe_Murie#Ceremonies_of_the_Pawnee_(1981)","https://en.wikipedia.org/wiki/Pawnee_mythology"],
     mediaURL: "",
     textURL: "",
     ref: [
       { id: "murie-1981", type: "book", title: "Ceremonies of the Pawnee", contributors: [{lastName: "Murie", firstName: "James R.", role: "author"}], pubDate: {year: 1981}, publisher: "Smithsonian Institution Press", url: "https://repository.si.edu/server/api/core/bitstreams/db5dec6a-c560-4393-a45c-22ef5b2aeffa/content", meta: {sortKey: "text", grade: "A"}},
-      { id: "parks-pratt-2008", type: "book", title: "A Dictionary of Skiri Pawnee", contributors: [ { firstName: "Lula Nora", lastName: "Pratt", role: "author" }, { firstName: "Douglas R.", lastName: "Parks", role: "author" } ], pubDate: { year: 2008 }, publisher: "University of Nebraska Press", location: "Lincoln, NE", containerTitle: "Studies in the Anthropology of North American Indians", isbn: "9780803271227", medium: "Print / Monograph", meta: { notes: "A comprehensive dictionary including grammatical sketches and cultural notes. It is organized by Pawnee roots and includes a significant English-to-Pawnee index.", tags: ["Pawnee", "Skiri", "Caddoan Languages", "Great Plains", "Lexicography"], grade: "A", sortKey: "info" } }
+      { id: "parks-pratt-2008", type: "book", title: "A Dictionary of Skiri Pawnee", contributors: [ { firstName: "Lula Nora", lastName: "Pratt", role: "author" }, { firstName: "Douglas R.", lastName: "Parks", role: "author" } ], pubDate: { year: 2008 }, publisher: "University of Nebraska Press", location: "Lincoln, NE", containerTitle: "Studies in the Anthropology of North American Indians", isbn: "9780803271227", medium: "Print / Monograph", meta: { notes: "A comprehensive dictionary including grammatical sketches and cultural notes. It is organized by Pawnee roots and includes a significant English-to-Pawnee index.", tags: ["Pawnee", "Skiri", "Caddoan Languages", "Great Plains", "Lexicography"], grade: "A", sortKey: "info" } },
+      { id: "murie-1914-pawnee-societies", type: "book", title: "Pawnee Indian Societies", containerTitle: "Anthropological Papers of the American Museum of Natural History, Vol. XI, Part VII", contributors: [ { firstName: "James R.", lastName: "Murie", role: "author" }, { firstName: "Clark", lastName: "Wissler", role: "editor" } ], pubDate: { year: 1914 }, url: "https://archive.org/details/pawneeindiansoci0011muri", publisher: "The Trustees of the American Museum of Natural History", location: "New York", medium: "Digital Archive / Research Paper", meta: { notes: "Detailed classification of the 'Skidi' and 'South Bands' societies. Includes the 'Bear Society', 'Buffalo Dance', and 'Irushka' (Smoke Offering) ceremonies. Distinguishes between hereditary and non-hereditary roles.", grade: "A", tags: ["Pawnee", "Plains Indians", "Warrior Societies", "James Murie", "Animal Lodges", "Ethnography"], sortKey: "info" } }
     ]
   },
   {
@@ -3721,9 +3769,13 @@ export const foundRelTexts = [
       `Do not refuse to work for the whites and do not make any trouble with them until you leave them. When the earth shakes [at the coming of the new world] do not be afraid. It will not hurt you.`,
       `I want you to dance every six weeks. Make a feast at the dance and have food that everybody may eat. Then bathe in the water. That is all. You will receive good words again from me some time. Do not tell lies.`
     ],
-    infoURL: "https://www.ebsco.com/research-starters/history/analysis-messiah-letter-wovoka",
+    infoURL: "",
     mediaURL: "",
-    textURL: ""
+    textURL: "",
+    ref: [
+      { id: "mooney-1896-ghost-dance", type: "article", title: "The Ghost-dance Religion and the Sioux Outbreak of 1890", containerTitle: "Fourteenth Annual Report of the Bureau of Ethnology to the Secretary of the Smithsonian Institution, 1892-93, Part 2", contributors: [ { firstName: "James", lastName: "Mooney", role: "author" } ], pubDate: { year: 1896 }, publisher: "Government Printing Office", location: "Washington, D.C.", medium: "Government Report / Ethnographic Study", url: "https://archive.org/details/ghostdancereligi0000moon", meta: { notes: "Contains the 'Messiah Letter' delivered by Wovoka (Jack Wilson) to a joint Cheyenne-Arapaho delegation in 1891. Transcribed by a Carlisle Indian School student and later rendered by Mooney. This 1896 publication is the primary source for the Ghost Dance doctrine.", grade: "C", tags: ["Wovoka", "Ghost Dance", "James Mooney", "Bureau of Ethnology", "Messiah Letter", "Plains Indians"] } },
+      { id: "danver-2021-wovoka-analysis", type: "article", title: "Analysis: The Messiah Letter (Wovoka)", containerTitle: "Research Starters: History", contributors: [ { firstName: "Steven L.", lastName: "Danver", role: "author" } ], pubDate: { year: 2021 }, url: "https://www.ebsco.com/research-starters/history/analysis-messiah-letter-wovoka", publisher: "EBSCO Information Services", medium: "Digital Educational Resource / Reference", meta: { notes: "Part of the Research Starters series. Analyzes the cultural and political climate of the 1890s that allowed the Ghost Dance to spread. Breaks down the letter's moral commands: peaceful coexistence, hard work, and the promise of a restored world.", grade: "C", tags: ["Wovoka", "Ghost Dance", "Steven Danver", "Native American History", "Messiah Letter", "Plains Indians"] } }
+    ]
   },
   {
     id: "AMNWFRT",
@@ -3872,7 +3924,8 @@ export const foundRelTexts = [
     mediaURL: "",
     textURL: "",
     ref: [
-      {id: "tedlock-1996", type: "book", title: "Popol Vuh: The definitive edition of the Mayan book of the dawn of life and the glories of gods and kings", contributors: [{lastName: "Tedlock", firstName: "Dennis Ernest", role: "author"}], pubDate: {year: 1996}, publisher: "Touchstone", url: "https://yale.imodules.com/s/1667/images/gid6/editor_documents/flick_readings/tedlock-popul_vuh_text.pdf", meta: {sortKey: "text", grade: "B"}}
+      {id: "tedlock-1996", type: "book", title: "Popol Vuh: The definitive edition of the Mayan book of the dawn of life and the glories of gods and kings", contributors: [{lastName: "Tedlock", firstName: "Dennis Ernest", role: "author"}], pubDate: {year: 1996}, publisher: "Touchstone", url: "https://yale.imodules.com/s/1667/images/gid6/editor_documents/flick_readings/tedlock-popul_vuh_text.pdf", meta: {sortKey: "text", grade: "B"}},
+      { id: "leon-portilla-2001-language-kings", type: "book", title: "In the Language of Kings: An Anthology of Mesoamerican Literature—Pre-Columbian to the Present", contributors: [ { firstName: "Miguel", lastName: "León-Portilla", role: "author" }, { firstName: "Earl", lastName: "Shorris", role: "author" } ], pubDate: { year: 2001 }, isbn: "9780393020106", publisher: "W. W. Norton & Company", location: "New York, NY", medium: "Print / Hardcover", meta: { notes: "A comprehensive 700+ page anthology tracing Mesoamerican literature from pre-Columbian codices and the Popol Vuh to colonial chronicles and modern-day Zapatista manifestos. Focuses on the endurance of the indigenous 'Word' across five centuries.", grade: "A", tags: ["Mesoamerica", "Aztec", "Maya", "Nahua", "Popol Vuh", "Literature", "History", "Indigenous Voices"], sortKey: "text" } }
     ]
   },
   {
@@ -3899,11 +3952,14 @@ export const foundRelTexts = [
       `The zemi Opiyelguobinin has four feet, like a dog, and is made of wood, and often at night he leaves the house and goes into the jungle. They went to look for him there, and when they brought him home, they would tie him up with rope, but he would return to the jungle. And they tell that after the invasion of the Island of Hispaniola, this zemi escaped and went into a lagoon; and they followed his tracks as far as the lagoon, but they never saw him again, nor did they hear anything about him. As I buy, so also do I sell.`,
       `>>(Antigüedades XIX-XXI)`
     ],
-    infoURL: ["https://en.wikipedia.org/wiki/Ta%C3%ADno#Spirituality","https://tiboko.com/wp-content/uploads/2023/07/Classic-Taino-Spiritual-Beliefs.pdf","http://www.hartford-hwp.com/archives/41/013.html","https://www.americanindianmagazine.org/story/idol-patana","https://www.researchgate.net/publication/339487879_Notes_on_the_Native_History_of_Cuba_and_the_Dominican_Republic"],
+    infoURL: ["https://en.wikipedia.org/wiki/Ta%C3%ADno#Spirituality","http://www.hartford-hwp.com/archives/41/013.html"],
     mediaURL: "",
     textURL: "",
     ref: [
-      {id: "pane-1988", type: "book", title: "Relación Acerca De Las Antigüedades De Los Indios", contributors: [{lastName: "Pané", firstName: "Fray Ramón", role: "author"}], pubDate: {year: 1988}, publisher: "Editora Corripio", url: "http://fundacioncorripio.org.do/wp-content/uploads/2023/01/fray-ramon-pane-relacion-acerca-de-las-antiguedades-delos-indios.pdf", meta: {sortKey: "text", grade: "C", notes: "Originally written c. 1494–1498"}}
+      { id: "pane-1988", type: "book", title: "Relación Acerca De Las Antigüedades De Los Indios", contributors: [{lastName: "Pané", firstName: "Fray Ramón", role: "author"}], pubDate: {year: 1988}, publisher: "Editora Corripio", url: "http://fundacioncorripio.org.do/wp-content/uploads/2023/01/fray-ramon-pane-relacion-acerca-de-las-antiguedades-delos-indios.pdf", meta: {sortKey: "text", grade: "C", notes: "Originally written c. 1494–1498"}},
+      { id: "barreiro-2019-idol-patana", type: "article", title: "The Idol of Patana: The Troubled History of the Taíno Deity of Boinayel", containerTitle: "American Indian Magazine", contributors: [ { firstName: "José", lastName: "Barreiro", role: "author" } ], pubDate: { year: 2019, season: "Summer", volume: 20, issue: 2 }, url: "https://www.americanindianmagazine.org/story/idol-patana", publisher: "National Museum of the American Indian (NMAI), Smithsonian Institution", location: "Washington, D.C.", medium: "Magazine Article", meta: { notes: "Follows the history of a major Taíno Zemi representing Boinayel. Discusses the spiritual significance of the 'crying' deity (rain) and the complex ethics of repatriation, private ownership, and the display of sacred Indigenous objects.", grade: "B", tags: ["Taíno", "Boinayel", "Cuba", "Zemi", "Repatriation", "Caribbean Art", "Indigenous Sovereignty"], sortKey: "info" } },
+      { id: "guitar-2023-taino-beliefs", type: "article", title: "Classic Taino Spiritual Beliefs and Practices", contributors: [ { firstName: "Lynne", lastName: "Guitar", role: "author" } ], pubDate: { year: 2023 }, url: "https://tiboko.com/wp-content/uploads/2023/07/Classic-Taino-Spiritual-Beliefs.pdf", publisher: "Tiboko / Taíno Tribal Council", location: "Caribbean / Hispaniola", medium: "Educational Resource / Digital Archive", meta: { notes: "Detailed analysis of Taíno cosmology, focusing on the deities Yúcahu (growth/cassava) and Atabey (water/fertility). Describes the function of Zemis as both physical artifacts and spiritual entities, and the social role of the Caciques in spiritual mediation.", grade: "C", tags: ["Taíno", "Caribbean", "Arawak", "Zemis", "Cosmology", "Hispaniola", "Indigenous History"], sortKey: "info" } },
+      { id: "torano-2020-native-history-antilles", type: "article", title: "Notes on the Native History of Cuba and the Dominican Republic", containerTitle: "Advanced Journal of Social Science", contributors: [ { firstName: "Randle Sloan", lastName: "Toraño", role: "author" } ], pubDate: { year: 2020, month: 2 }, url: "https://doi.org/10.21467/ajss.7.1.14-26", publisher: "AIJR Publisher", location: "India / Caribbean Context", medium: "Academic Journal", meta: { notes: "Synthesizes archaeological and linguistic evidence to trace the relationship between the Taíno of Cuba and the Dominican Republic. Discusses the Guanahatabey and the socio-political complexities of the cacicazgos (chiefdoms) across the Greater Antilles.", grade: "B", pages: "14-26", tags: ["Cuba", "Dominican Republic", "Taíno", "Native History", "Caribbean Archaeology", "Antillean Migration", "Ethnohistory"], sortKey: "info" } }
     ]
   },
   {
@@ -3950,11 +4006,12 @@ export const foundRelTexts = [
       `While she picked his lice, she caused a huge abyss to open up next to him, thinking to herself, “I’ll knock Cuni Raya down into it.” But Cuni Raya in his cleverness realized this, saying, “Sister, I’ve got to go off for a moment to relieve myself,” he made his getaway to these villages. He traveled around this area for a long, long time, tricking lots of local <i>huacas</i> and people, too.`,
       `>>(Huarochirí 2:9-28)`
     ],
-    infoURL: ["https://www.researchgate.net/publication/353565246_WAKANISMO_EL_MODELO_DEL_ENFOQUE_TEORICO_ANDINO","https://en.wikipedia.org/wiki/Huarochir%C3%AD_Manuscript","https://en.wikipedia.org/wiki/Religion_in_the_Inca_Empire"],
+    infoURL: ["https://en.wikipedia.org/wiki/Huarochir%C3%AD_Manuscript","https://en.wikipedia.org/wiki/Religion_in_the_Inca_Empire"],
     mediaURL: "",
     textURL: "",
     ref: [
-      {id: "salomon-1991", type: "book", title: "The Huarochiri Manuscript: A Testament of Ancient and Colonial Andean Religion", contributors: [{lastName: "Salomon", firstName: "Frank", role: "author"}, {lastName: "Urioste", firstName: "George L.", role: "author"}], pubDate: {year: 1991}, publisher: "University of Texas Press", meta: {sortKey: "text", grade: "B"}}
+      {id: "salomon-1991", type: "book", title: "The Huarochiri Manuscript: A Testament of Ancient and Colonial Andean Religion", contributors: [{lastName: "Salomon", firstName: "Frank", role: "author"}, {lastName: "Urioste", firstName: "George L.", role: "author"}], pubDate: {year: 1991}, publisher: "University of Texas Press", meta: {sortKey: "text", grade: "B"}},
+      { id: "altamirano-2015-wakanismo", type: "article", title: "Wakanismo: El Modelo del Enfoque Teórico Andino", containerTitle: "Arqueología y Sociedad", contributors: [ { firstName: "Alfredo José", lastName: "Altamirano Enciso", role: "author" }, { firstName: "José María", lastName: "Arguedas Altamirano", role: "author" } ], pubDate: { year: 2015, month: 12 }, url: "https://doi.org/10.15381/arqueolsoc.2015n30.e12274", publisher: "Museo de Arqueología y Antropología de la Universidad Nacional Mayor de San Marcos", location: "Lima, Peru", medium: "Academic Journal", meta: { notes: "Proposes a theoretical framework (Wakanismo) based on the 'Waka' as the fundamental unit of Andean socio-cosmological organization. Altamirano Enciso argues that the Waka is not merely a religious site, but a cognitive and political node that dictates the flow of energy and social relations.", grade: "A", tags: ["Andean Archaeology", "Waka", "Quechua", "Aymara", "Social Theory", "Peru", "Inca Cosmology"], sortKey: "info" } }
     ]
   },
   {
@@ -4079,13 +4136,15 @@ export const foundRelTexts = [
       `Thus, when you inhabit the earth,<br>you must remember my beautiful abode.<br><v>I will inspire the crown of your head with beautiful, sacred words</v><v>and no one will equal you in the earthly abode of imperfections.</v>`,
       `>>(Ayvu Rapyta 4:3-6 AFV)`
     ],
-    infoURL: ["https://en.wikipedia.org/wiki/Ayvu_Rapyta","https://en.wikipedia.org/wiki/Guarani_mythology","https://pib.socioambiental.org/en/Povo:Guarani_Mbya","https://garlandmag.com/article/hummingbirds/"],
+    infoURL: ["https://en.wikipedia.org/wiki/Ayvu_Rapyta","https://en.wikipedia.org/wiki/Guarani_mythology","https://pib.socioambiental.org/en/Povo:Guarani_Mbya"],
     mediaURL: "",
-    textURL: "https://garlandmag.com/article/ayvu-rapyta-selection/",
+    textURL: "",
     ref: [
       {id: "cadogan-1959", type: "book", title: "Ayvu Rapyta: Textos míticos de los Mbyá-Guaraní del Guairá", contributors: [{lastName: "Cadogan", firstName: "León", role: "author"}], pubDate: {year: 1959}, publisher: "Faculdade de Filosofia, Ciências e Letras da Universidade de São Paulo", url: "https://biblioteca.trabalhoindigenista.org.br/wp-content/uploads/2018/06/AYVU-RAPYTA-Textos-Misticos-de-los.pdf", meta: {sortKey: "text", grade: "B"}},
       {id: "lambert-2013", type: "book", title: "The Paraguay Reader: History, Culture, Politics", contributors: [{lastName: "Lambert", firstName: "Peter", role: "editor"}, {lastName: "Nickson", firstName: "Andrew", role: "editor"}], pubDate: {year: 2013}, publisher: "Duke University Press", url: "https://www.jstor.org/stable/j.ctv1220gtb", meta: {sortKey: "info", grade: "C"}},
-      {id: "scappini-2011", type: "book", title: "AYVU vs. ÑE'Ẽ: Los Mbya-Guarani y La Lengua Guaraní Del Paraguay", contributors: [{lastName: "Scappini", firstName: "Gloria", role: "author"}], pubDate: {year: 2011}, publisher: "Independent Research", url: "https://www.academia.edu/73541056/AYVU_Vs_%C3%91E%E1%BA%BC_Los_Mbya_Guarani_y_la_lengua_guaran%C3%AD_del_Paraguay_1", meta: {sortKey: "info", grade: "C"}}
+      {id: "scappini-2011", type: "book", title: "AYVU vs. ÑE'Ẽ: Los Mbya-Guarani y La Lengua Guaraní Del Paraguay", contributors: [{lastName: "Scappini", firstName: "Gloria", role: "author"}], pubDate: {year: 2011}, publisher: "Independent Research", url: "https://www.academia.edu/73541056/AYVU_Vs_%C3%91E%E1%BA%BC_Los_Mbya_Guarani_y_la_lengua_guaran%C3%AD_del_Paraguay_1", meta: {sortKey: "info", grade: "C"}},
+      { id: "ferrari-2022-ayvu-rapyta", type: "article", title: "Ayvu Rapyta (selection)", containerTitle: "Garland Magazine", contributors: [ { firstName: "Andrea", lastName: "Ferrari", role: "author" }, { firstName: "León", lastName: "Cadogan", role: "author" } ], pubDate: { year: 2022, month: 6, day: 30 }, url: "https://garlandmag.com/article/ayvu-rapyta-selection/", publisher: "Garland Cultural Assets", location: "Australia / South America", medium: "Digital Magazine / Translation", meta: { notes: "Excerpts from the Guaraní 'Genesis'. Highlights the core tenet that the 'word-soul' is the primary element of creation. Describes the First Father (Ñamandu) emerging from the original darkness and creating the 'divine palms' and 'divine ears' through which the world is perceived.", grade: "C", tags: ["Guaraní", "Mbyá", "Paraguay", "Cosmology", "Oral Tradition", "Ayvu Rapyta", "Indigenous Language"] } },
+      { id: "ferrari-2022-hummingbirds", type: "article", title: "The hummingbird that refreshes the world", containerTitle: "Garland Magazine", contributors: [ { firstName: "Andrea", lastName: "Ferrari", role: "author" } ], pubDate: { year: 2022, month: 6, day: 30 }, url: "https://garlandmag.com/article/hummingbirds/", publisher: "Garland Cultural Assets", location: "South America / Australia", medium: "Digital Magazine / Cultural Essay", meta: { notes: "Explores the hummingbird's role in Mbyá-Guaraní mythology as the creature that nourished the First Father (Ñamandu) with nectar during the primordial darkness. Discusses the bird as a symbol of the word-soul (Ayvu) and its ability to traverse spiritual realms.", grade: "C", tags: ["Guaraní", "Mbyá", "Mythology", "Hummingbird", "Mainumby", "Symbolism", "Ethno-ornithology"] } }
     ]
   },
   {
@@ -4183,9 +4242,19 @@ export const foundRelTexts = [
       `Once, there was a Tsaatan shaman called Nyav Zairan, who owned only very few reindeer. But then one morning, he placed them on the sunny side of a mountain, from where they had disappeared when he returned in the evening. Some days later, they turned up again, healthy-looking and with beautiful and rare flowers on their antlers. The <i>badagshin</i> had taken Nyav Zairan’s reindeer and decorated them. After that, his stock of reindeer shot up and he became a rich man.`,
       `>>(Domog 184)`
     ],
-    infoURL: ["https://www.researchgate.net/publication/233088535_Contemporary_shamanisms_in_Mongolia","https://en.wikipedia.org/wiki/Ongon","https://en.wikipedia.org/wiki/Black_shamanism","https://austriaca.at/0xc1aa5572%200x00358456.pdf"],
+    infoURL: ["https://en.wikipedia.org/wiki/Ongon","https://en.wikipedia.org/wiki/Black_shamanism","https://austriaca.at/0xc1aa5572%200x00358456.pdf"],
     mediaURL: "",
-    textURL: ["https://www.academia.edu/40395941/Birtalan_%C3%81gnes_Delden_Mend_The_Darkhad_Shaman_and_Outlaw","https://www.academia.edu/31011925/Translation_of_Mongolian_Shamanic_Praises_A_Study_of_most_Frequent_Errors","https://www.isars.org/wp-content/uploads/2021/01/ShamanVol12_2004_dld.pdf#page=25","https://www.researchgate.net/publication/275759078_Sacral_communication_of_Darkhad_shamans","https://www.academia.edu/1476926/Shamanic_Traditions_Rites_and_Songs_Among_the_Mongolian_Buryats","https://www.academia.edu/33587931/Pedersen_2007_Multiplicity_Without_Myth_Theorising_Darhad_Perspectivism"]
+    textURL: [""],
+    ref: [
+      { id: "birtalan-2003-delden-mend", type: "article", title: "Delden Mend: The Darkhad Shaman and Outlaw", containerTitle: "Altaica Budapestinensia 2002", contributors: [{ firstName: "Ágnes", lastName: "Birtalan", role: "author" }], pubDate: { year: 2003 }, url: "https://www.academia.edu/40395941/Birtalan_Ágnes_Delden_Mend_The_Darkhad_Shaman_and_Outlaw", publisher: "Eötvös Loránd University", location: "Budapest", medium: "Academic Paper / Folklore Study", meta: { notes: "A biographical and mythological analysis of Delden Mend, a historical Darkhad shaman whose life entered the realm of legend as an 'outlaw' figure. Discusses the intersection of social rebellion and spiritual power.", grade: "C", tags: ["Darkhad", "Mongolia", "Shamanism", "Folklore", "Heroic Legends"] } },
+      { id: "birtalan-2015-shamanic-praises", type: "article", title: "Translation of Mongolian Shamanic Praises: A Study of most Frequent Errors", containerTitle: "The Black Master: Essays on Central Eurasia", contributors: [{ firstName: "Ágnes", lastName: "Birtalan", role: "author" }], pubDate: { year: 2015 }, url: "https://www.academia.edu/31011925/Translation_of_Mongolian_Shamanic_Praises_A_Study_of_most_Frequent_Errors", publisher: "Harrassowitz Verlag", location: "Wiesbaden", medium: "Linguistic Study", meta: { notes: "Critically examines the difficulties in translating 'Magtaal' (praises). Focuses on the loss of meaning in metaphorical language and the specific technical errors common in Western ethnographic translations.", grade: "C", tags: ["Linguistics", "Translation Theory", "Magtaal", "Mongolian Language", "Sacred Texts"] } },
+      { id: "birtalan-2004-spirit-owner", type: "article", title: "The Spirit-Owner of the Mountain: A Mongolian Shamanic Ritual Text", containerTitle: "Shaman: Journal of the International Society for Shamanistic Research", contributors: [{ firstName: "Ágnes", lastName: "Birtalan", role: "author" }], pubDate: { year: 2004 }, url: "https://www.isars.org/wp-content/uploads/2021/01/ShamanVol12_2004_dld.pdf#page=25", publisher: "Molnár & Kelemen Oriental Publishers", location: "Budapest", medium: "Academic Journal", meta: { notes: "Analysis of a ritual text dedicated to the 'spirit-owner' (gazriin ezen). Includes transcription and translation of the invocation used to appease local landscape deities.", grade: "C", pages: "25-46", tags: ["Ritual Texts", "Tengerism", "Landscape Spirits", "Darkhad", "Spirit-Owners"] } },
+      { id: "pedersen-2007-multiplicity-myth", type: "article", title: "Multiplicity Without Myth: Theorising Darhad Perspectivism", containerTitle: "Anthropological Theory", contributors: [{ firstName: "Morten Axel", lastName: "Pedersen", role: "author" }], pubDate: { year: 2007 }, url: "https://www.academia.edu/33587931/Pedersen_2007_Multiplicity_Without_Myth_Theorising_Darhad_Perspectivism", publisher: "SAGE Publications", location: "London", medium: "Academic Journal", meta: { notes: "A theoretical landmark in the 'ontological turn' of anthropology. Pedersen applies Viveiros de Castro's perspectivism to the Darkhad, arguing that shamanism is a way of navigating multiple, conflicting realities.", grade: "C", pages: "311–337", tags: ["Perspectivism", "Ontology", "Darkhad", "Anthropological Theory", "Morten Axel Pedersen"] } },
+      { id: "birtalan-2011-sacral-communication", type: "article", title: "Sacral communication of Darkhad shamans", containerTitle: "Shaman: Journal of the International Society for Shamanistic Research", contributors: [{ firstName: "Ágnes", lastName: "Birtalan", role: "author" }], pubDate: { year: 2011 }, url: "https://www.researchgate.net/publication/275759078_Sacral_communication_of_Darkhad_shamans", publisher: "Molnár & Kelemen Oriental Publishers", location: "Budapest", medium: "Academic Journal", meta: { notes: "Explores the specific linguistic registers used by Darkhad shamans when communicating with the spirit world, including the use of archaic vocabulary and onomatopoeia.", grade: "C", tags: ["Sociolinguistics", "Darkhad", "Sacral Language", "Invocation", "Mongolia"] } },
+      { id: "birtalan-2003-buryat-traditions", type: "article", title: "Shamanic Traditions, Rites and Songs Among the Mongolian Buryats", containerTitle: "Shaman: Journal of the International Society for Shamanistic Research", contributors: [{ firstName: "Ágnes", lastName: "Birtalan", role: "author" }], pubDate: { year: 2003 }, url: "https://www.academia.edu/1476926/Shamanic_Traditions_Rites_and_Songs_Among_the_Mongolian_Buryats", publisher: "Molnár & Kelemen Oriental Publishers", location: "Budapest", medium: "Ethnographic Study", meta: { notes: "Focuses on the Buryat diaspora in Northern Mongolia. Documents specific song structures and rites that distinguish Buryat shamanism from Khalkha or Darkhad traditions.", grade: "C", tags: ["Buryat", "Song Analysis", "Ritual Practice", "Migration", "Mongolia"] } },
+      { id: "balogh-2010-mongolian-shamanism", type: "article", title: "Contemporary shamanisms in Mongolia", containerTitle: "Asian Ethnicity", contributors: [ { firstName: "Mátyás", lastName: "Balogh", role: "author" } ], pubDate: { year: 2010 }, url: "https://www.researchgate.net/publication/233088535_Contemporary_shamanisms_in_Mongolia", publisher: "Routledge", medium: "Academic Journal", meta: { notes: "Analyzes the resurgence of shamanism in post-1990 Mongolia. Balogh categorizes the movement into three distinct types: ethnic shamanism (Buryat and Darkhad), reconstructed Khalkha shamanism, and urban/institutionalized shamanism in Ulaanbaatar.", grade: "C", pages: "229-238", tags: ["Mongolia", "Shamanism", "Tengerism", "Buryat", "Darkhad", "Post-Socialism", "Eurasian Culture"], sortKey: "info" } },
+      { id: "birtalan-2011-himalayas-inner-asia", type: "article", title: "Between the Himalayas and Inner Asia: The Mongolian Case", containerTitle: "Cultural Transfers in Dispute: Representations in Asia, Europe and the Arab World since the Middle Ages", contributors: [ { firstName: "Ágnes", lastName: "Birtalan", role: "author" }, { firstName: "Jörg", lastName: "Schriewer", role: "editor" } ], pubDate: { year: 2011 }, url: "https://austriaca.at/0xc1aa5572%200x00358456.pdf", publisher: "Austrian Academy of Sciences Press (Verlag der Österreichischen Akademie der Wissenschaften)", location: "Vienna, Austria", medium: "Academic Research Paper / PDF", meta: { notes: "Explores the 'Tibetanization' of Mongolian culture and the reciprocal influence of Mongolian nomadic structures on the Gelugpa school of Buddhism. Analyzes the transformation of local spirits into Buddhist protectors.", grade: "C", pages: "215-236", tags: ["Mongolia", "Tibet", "Buddhism", "Shamanism", "Cultural Transfer", "Inner Asia", "Himalayas"] } }
+    ]
   },
   {
     id: "ASEAFRT",
@@ -4265,7 +4334,7 @@ export const foundRelTexts = [
     group: {people: "Tibetan", language: "Tibetan/Zhangzhung", religion: "Bön", location: "Tibet, CN"},
     info: [`Like pleasant rain for the wise, the <i>Precious Treasury of Good Sayings</i>, as translated from Tibetan to English by Samten Gyeltsen Karmay, provides a history of the Bön religion and its treasure texts, the various discoveries of which constituted the requisite step in the codification of indigenous Bön traditions as distinct from the Buddhist practices introduced to Tibet. Though most of the texts were rediscovered by <+><i>tertöns</i>[discoverers of ancient hidden texts]</+> over a millennium ago, the unwritten traditions they capture are much older, predating the 7th-century introduction of Buddhism by yet another millennium. The origins of Bön lie in the Zhangzhung Kingdom of western Tibet; the founder of Bön, Tonpa Shenrab Miwoche, is credited with creating Zhangzhung culture, including crafts, linguistics, medicine, astronomy, and inner Bön doctrine.`],
     excerpt: [
-      `First there was nothing. All was emptiness.<br>Within this emptiness, life gradually began to form.<br>Within this life, light and a ray appeared.<br>Light is the father and the ray is the mother.<br><v>Within the light and the ray darkness and obscurity became manifest.</v>Within them a sofft breeze like breath appeared.<br>Then within this breeze, a whitish frost,<br>And within this frost a whitish dew,<br>From the union of the frost and the dew,<br>A lake, like a mirror, emerged.`,
+      `First there was nothing. All was emptiness.<br>Within this emptiness, life gradually began to form.<br>Within this life, light and a ray appeared.<br>Light is the father and the ray is the mother.<br><v>Within the light and the ray darkness and obscurity became manifest.</v>Within them a soft breeze like breath appeared.<br>Then within this breeze, a whitish frost,<br>And within this frost a whitish dew,<br>From the union of the frost and the dew,<br>A lake, like a mirror, emerged.`,
       `A layer formed on the lake and rolled itself into an egg.<br><v>Out of this egg, two eagles emerged, one white and the other black.</v>The white eagle became the <+>Luminous Appearance[sNang-ba ‘od-Idan]</+>,<br>And the black eagle became the <+>Dark Ray[Mun-pa zer-Idan]</+>.<br>The union of these two eagles produced three eggs:<br>One white, one black, and one multi-colored.<br>The white egg burst.<br>Its shell became a white boulder.`,
       `Its membrane produced the god ‘Od-kyi khri-lde.<br><v>The white of the egg became the goddess mDzo-mo dkar-mo.</v>From the yolk of the egg emerged three gods:<br><v>Srid-Iha ‘Od-dkar, Cang-shes Mi-mgon dkar-po and Dung-gi mig-Idan dkar-po.</v>The black egg burst.<br>Two black men emerged:<br>Ngam-mi nag-po and Tril-nag dpung-bkra.<br>The multi-coloured egg burst.<br>A being named sMon lam-lam lum-lum emerged.`,
       `This being had no eyes to see,<br>No ears to hear,<br>No nose to smell,<br>No tongue to taste,<br>No hands to grasp,<br>No legs to walk.<br>He only posessed a mind to think.<br>Then appeared eyes to see,<br>Ears to hear,<br>A nose to smell,<br>A tongue to taste,<br>Hands to grasp,<br>Feet to walk.<br>He named himself Srid-pa Sangs-po ‘bum-khri.<br><v>He is equally called Ye-smon rgyal-po, the King of the Primeval Wish.</v>`,
@@ -4283,11 +4352,13 @@ export const foundRelTexts = [
       `“Listen Tshad-med gTsug-phud, listen!<br>This precious thing, the Thought of Enlightenment,<br>the state of primeval buddhahood,<br>the essence of knowledge in its natural state,<br>the absolute purity of the unconditioned,<br>void of any basis whatsoever in physical and metaphysical notions,<br>unaffected in any way, this Great Unmoved<br>has no first existing origin,<br>has no intermediate way and progressive stages,<br>and has no final attainable stage,<br>for it lacks characteristics of going and coming.<br>But although it is thus inexpressible in words,<br>in order to avoid the extreme notions of eternity and nihilism,<br>and to give guidance to ignorant beings,<br>it has to be explained and expressed in words.<br>In general it is explained in three parts,<br>as Basis, as Way, and as Result.<br>In a special way it is explained in four parts,<br>as Insight, as Contemplation, as Practice,<br>&emsp;&emsp;and as the Result of supreme achievement.<br>Divided into its separate distinctions,<br>it spreads out into 84,000 parts,<br>but in its compressed form it becomes a single dot.”`,
       `>>(Ṅa 85A:1-36)`
     ],
-    infoURL: ["https://en.wikipedia.org/wiki/B%C3%B6n_Kangyur_and_Tengyur","https://en.wikipedia.org/wiki/Bon","https://www.wisdomlib.org/history/essay/tibet-myth-religion-and-history/d/doc1146082.html"],
+    infoURL: ["https://en.wikipedia.org/wiki/B%C3%B6n_Kangyur_and_Tengyur","https://en.wikipedia.org/wiki/Bon"],
     mediaURL: "",
-    textURL: "https://archive.org/details/arrowandthespindlesamtenkarmayg.vol1studiesinhistorymythsritualsandbeliefsintibet_721_U",
+    textURL: "",
     ref: [
-      {id: "karmay-1972", type: "book", title: "The Treasury of Good Sayings: A Tibetan History of Bon", contributors: [{lastName: "Karmay", firstName: "Samten Gyeltsen", role: "author"}], pubDate: {year: 1972}, publisher: "Oxford University Press", url: "https://pahar.in/pahar/Books%20and%20Articles/Tibet%20and%20China/1972%20Treasury%20of%20Good%20Sayings--a%20Tibetan%20History%20of%20Bon%20by%20Karmay%20s.pdf", meta: {sortKey: "info", grade: "A"}}
+      {id: "karmay-1972", type: "book", title: "The Treasury of Good Sayings: A Tibetan History of Bon", contributors: [{lastName: "Karmay", firstName: "Samten Gyeltsen", role: "author"}], pubDate: {year: 1972}, publisher: "Oxford University Press", url: "https://pahar.in/pahar/Books%20and%20Articles/Tibet%20and%20China/1972%20Treasury%20of%20Good%20Sayings--a%20Tibetan%20History%20of%20Bon%20by%20Karmay%20s.pdf", meta: {sortKey: "info", grade: "A"}},
+      { id: "karmay-1998-arrow-v1", type: "book", title: "The Arrow and the Spindle: Studies in History, Myths, Rituals and Beliefs in Tibet, Vol. 1", contributors: [ { firstName: "Samten G.", lastName: "Karmay", role: "author" } ], url: "https://archive.org/details/arrowandthespindlesamtenkarmayg.vol1studiesinhistorymythsritualsandbeliefsintibet_721_U", pubDate: { year: 1998 }, publisher: "Mandala Book Point", location: "Kathmandu, Nepal", isbn: "9994655019", medium: "Print", meta: { notes: "A collection of 21 essays previously published in various scholarly journals. Focuses on the 'religion of the people' (mi-chos) as opposed to formal monastic Buddhism. Key chapters discuss the origin of the world, mountain deities (lha), and the Bon tradition.", grade: "A", tags: ["Tibetan Studies", "Bon Religion", "Cosmology", "Anthropology", "Himalayan Rituals", "Mythology"] } },
+      { id: "arya-2019-tibet", type: "article", title: "Tibet (Myth, Religion and History)", containerTitle: "WisdomLib", contributors: [ { firstName: "Tsewang Gyalpo", lastName: "Arya", role: "author" } ], pubDate: { year: 2019, month: 11, day: 7 }, url: "https://www.wisdomlib.org/history/essay/tibet-myth-religion-and-history/d/doc1146082.html", publisher: "WisdomLib / Central Tibetan Administration", medium: "Online Essay", meta: { notes: "Explores the legend of Pha Trelgen Changchup Sampa (the monkey ancestor) and Ma Drag Sinmo (the rock ogress). Outlines the transition from Bon shamanism to the 'Chos' (Dharma) era.", grade: "A", tags: ["Tibetan History", "Creation Myths", "Yarlung Dynasty", "Avalokiteshvara", "Cultural Identity", "Buddhism"], sortKey: "info" } }
     ]
   },
   {
@@ -4323,11 +4394,13 @@ export const foundRelTexts = [
     ],
     infoURL: ["https://en.wikipedia.org/wiki/Pustaha","https://en.wikipedia.org/wiki/Batak_mythology","https://en.wikipedia.org/wiki/Parmalim"],
     mediaURL: "",
-    textURL: ["https://www.researchgate.net/publication/307912234_Images_of_God_in_Toba_Batak_storytelling","https://brill.com/view/journals/bki/181/2-3/article-p191_2.xml"],
+    textURL: [""],
     ref: [
       {id: "vandertuuk-1862", type: "book", title: "Bataksch Leesboek I-IV", contributors: [{lastName: "van der Tuuk", firstName: "Herman Neubronner", role: "author"}], pubDate: {year: 1862}, publisher: "Frederik Muller", url: "https://catalog.hathitrust.org/Record/001359493", meta: {sortKey: "text", grade: "B"}},
       {id: "brakel-2016", type: "article", title: "Dairi storytelling and stories in the Batak Reader of Herman Neubronner van der Tuuk", contributors: [{lastName: "Brakel-Papenhuyzen", firstName: "Clara", role: "author"}], pubDate: {year: 2016}, containerTitle: "Wacana Journal of the Humanities of Indonesia", volume: "17", issue: "2", pages: {start: "278", end: "278"}, url: "https://www.researchgate.net/publication/307923443_Dairi_storytelling_and_stories_in_the_Batak_Reader_of_Herman_Neubronner_van_der_Tuuk", meta: {sortKey: "info", grade: "C"}},
-      {id: "tobing-1956", type: "book", title: "The Structure of the Toba-Batak Belief in the High God", contributors: [{lastName: "Tobing", firstName: "Philip Lumban", role: "author"}], pubDate: {year: 1956}, publisher: "J. van Campen", location: "Amsterdam", url: "https://catalog.hathitrust.org/Record/001879656", meta: {sortKey: "info", grade: "C"}}
+      {id: "tobing-1956", type: "book", title: "The Structure of the Toba-Batak Belief in the High God", contributors: [{lastName: "Tobing", firstName: "Philip Lumban", role: "author"}], pubDate: {year: 1956}, publisher: "J. van Campen", location: "Amsterdam", url: "https://catalog.hathitrust.org/Record/001879656", meta: {sortKey: "info", grade: "C"}},
+      { id: "anger-2016-batak-storytelling", type: "article", title: "Images of God in Toba Batak storytelling", containerTitle: "Wacana, Journal of the Humanities of Indonesia", contributors: [ { firstName: "Johann", lastName: "Angerler", role: "author" } ], pubDate: { year: 2016 }, url: "https://doi.org/10.17510/wacana.v17i2.444", publisher: "Faculty of Humanities, Universitas Indonesia", location: "Depok, Indonesia", medium: "Academic Journal", meta: { notes: "Examines the Toba Batak concepts of 'Mula Jadi Na Bolon' (The Great Originator). Discusses the three-tiered cosmology (Banua Ginjjang, Banua Tonga, Banua Toru) and how storytelling acts as a vessel for these theological structures in a post-missionary era.", grade: "C", pages: "215-233", tags: ["Toba Batak", "Sumatra", "Indonesia", "Cosmology", "Storytelling", "Oral Tradition", "Southeast Asian Media"] } },
+      { id: "kozok-2025-looted-pustaha", type: "article", title: "A Batak Pustaha Looted from the Last Singamangaraja", containerTitle: "Bijdragen tot de taal-, land- en volkenkunde / Journal of the Humanities and Social Sciences of Southeast Asia", contributors: [ { firstName: "Uli", lastName: "Kozok", role: "author" } ], pubDate: { year: 2025 }, url: "https://doi.org/10.1163/22134379-bja10068", publisher: "Brill", location: "Leiden, Netherlands", medium: "Academic Journal", meta: { notes: "Examines a specific manuscript (Pustaha) associated with the last priest-king of the Batak, Sisingamangaraja XII. Discusses the Dutch expedition of 1907, the physical structure of the alim-bark book, and the ethics of colonial collections.", grade: "C", pages: "191-225", tags: ["Toba Batak", "Pustaha", "Sisingamangaraja XII", "Looted Art", "Indonesian History", "Manuscript Studies", "Batak Script"] } }
     ]
   },
   {
@@ -4618,7 +4691,10 @@ export const foundRelTexts = [
     ],
     infoURL: ["https://en.wikipedia.org/wiki/Poetic_Edda","https://en.wikipedia.org/wiki/Old_Norse_religion"],
     mediaURL: "",
-    textURL: "https://books.openbookpublishers.com/10.11647/obp.0308/"
+    textURL: "",
+    ref: [
+      { id: "pettit-2023-poetic-edda", type: "book", title: "The Poetic Edda: A Dual-Language Edition", contributors: [ { firstName: "Edward", lastName: "Pettit", role: "author" } ], pubDate: { year: 2023 }, url: "https://doi.org/10.11647/OBP.0308", publisher: "Open Book Publishers", location: "Cambridge, UK", medium: "Open Access Digital Archive / Print", meta: { notes: "A single-volume parallel Old Norse edition and English translation of 36 medieval poems. Covers Norse cosmogony, the pantheon (Óðinn, Þórr, Loki), and heroic legends of the Sigurðr cycle.", grade: "B", tags: ["Old Norse", "Poetic Edda", "Icelandic Mythology", "Codex Regius", "Edward Pettit", "Folklore", "Eurasian Legend"] } }
+    ]
   },
   {
     id: "OCAUFRT",
@@ -4746,14 +4822,14 @@ export const foundRelTexts = [
       `>>(Emī́aŋa II:154-7 TGH)`
     ],
     infoURL: ["https://www.thebookmerchantjenkins.com/product/songs-of-central-australia/",
-    "https://en.wikipedia.org/wiki/Australian_Aboriginal_religion_and_mythology",
-    "https://bibleandcriticaltheory.com/wp-content/uploads/2018/05/vol6-no2-2010-simulating-the-sacred-jorgensen-307-1208-1-PB-1asifs1.pdf"],
+    "https://en.wikipedia.org/wiki/Australian_Aboriginal_religion_and_mythology"],
     mediaURL: "",
     textURL: "",
     ref: [
       {id: "strehlow-1971", type: "book", title: "Songs of Central Australia", contributors: [{lastName: "Strehlow", firstName: "Theodor George Henry", role: "author"}], pubDate: {year: 1971}, publisher: "Angus and Robertson", isbn: "0207946574", meta: {sortKey: "text", grade: "B"}},
       {id: "gibson-2018", type: "article", title: "Listening to the Anmatyerr Song Recordings of T.G.H. Strehlow", contributors: [{lastName: "Gibson", firstName: "Jason M.", role: "author"}], pubDate: {year: 2018}, containerTitle: "The Artefact", volume: "41", pages: {start: "3", end: "15"}, url: "https://www.academia.edu/39954265/Listening_to_the_Anmatyerr_Song_Recordings_of_T_G_H_Strehlow", meta: {sortKey: "info", grade: "B"}},
-      {id: "green-2012", type: "article", title: "The Altyerre Story—‘Suffering Badly by Translation’", contributors: [{lastName: "Green", firstName: "Jennifer", role: "author"}], pubDate: {year: 2012}, containerTitle: "The Australian Journal of Anthropology", volume: "23", issue: "2", url: `https://www.researchgate.net/publication/264414820_The_Altyerre_Story-’Suffering_Badly_by_Translation’`, meta: {sortKey: "info", grade: "C"}}
+      {id: "green-2012", type: "article", title: "The Altyerre Story—‘Suffering Badly by Translation’", contributors: [{lastName: "Green", firstName: "Jennifer", role: "author"}], pubDate: {year: 2012}, containerTitle: "The Australian Journal of Anthropology", volume: "23", issue: "2", url: `https://www.researchgate.net/publication/264414820_The_Altyerre_Story-’Suffering_Badly_by_Translation’`, meta: {sortKey: "info", grade: "C"}},
+      { id: "jorgensen-2010-simulating-sacred", type: "article", title: "Simulating the Sacred in Theodore Strehlow's Songs of Central Australia", containerTitle: "Bible and Critical Theory", contributors: [ { firstName: "Darren", lastName: "Jorgensen", role: "author" } ], pubDate: { year: 2010 }, url: "https://bibleandcriticaltheory.com/index.php/bct/article/view/307", publisher: "Monash University Publishing", location: "Melbourne, Australia", medium: "Academic Journal", meta: { notes: "Explores the tension between Strehlow's high-modernist literary framing and the lived spiritual reality of the Arrernte. Jorgensen argues that Strehlow's work serves as a 'monument' that both preserves and distances the reader from the actual 'Songlines' or 'Dreaming' tracks.", grade: "C", tags: ["Arrernte", "Australian Aboriginal", "Theodore Strehlow", "Central Australia", "Songlines", "Postmodernism", "Simulacra"], sortKey: "info" } }
     ]
   },
   {
@@ -4830,7 +4906,7 @@ export const foundRelTexts = [
     ],
     infoURL: "https://en.wikipedia.org/wiki/Malagasy_mythology",
     mediaURL: "",
-    textURL: "https://journals.openedition.org/oceanindien/1403?lang=en",
+    textURL: "",
     ref: [
       {id: "haring-2013", type: "book", title: "How to Read a Folktale: The Ibonia Epic from Madagascar", contributors: [{lastName: "Haring", firstName: "Lee", role: "author"}], pubDate: {year: 2013}, publisher: "Open Book Publishers", url: "https://library.oapen.org/bitstream/handle/20.500.12657/30303/646721.pdf?sequence=1", meta: {sortKey: "text", grade: "B"}},
       {id: "ottino-1983", type: "article", title: "Ancient Malagasy Dynastic Succession; The Merina Example", contributors: [{lastName: "Ottino", firstName: "Paul", role: "author"}], pubDate: {year: 1983}, containerTitle: "History in Africa", volume: "10", doi: "10.2307/3171698", url: "https://doi.org/10.2307/3171698", meta: {sortKey: "info", grade: "C"}},
@@ -4865,12 +4941,14 @@ export const foundRelTexts = [
       `Bound, at one spring, to the top of the mountain;<br>Bound, at two springs, to the top of the mountain;<br>Let us gaze on the ocean returned to its fountain.<br>&emsp;&emsp;The low tides, ye!`,
       `>>(Kauvandra 240 TWV)`
     ],
-    infoURL: ["https://en.wikipedia.org/wiki/Religion_in_Fiji#Ancient_religion","https://www.academia.edu/25537812/Theologies_of_Mana_and_Sau_in_Fiji"],
+    infoURL: ["https://en.wikipedia.org/wiki/Religion_in_Fiji#Ancient_religion"],
     mediaURL: "",
-    textURL: "https://kaidravuni.com/legends/",
+    textURL: "",
     ref: [
-      {id: "rokowaqa-2013", type: "book", title: "Viti Makawa: na kedrai Tukutuku nai Taukei kei Viti", contributors: [{lastName: "Rokowaqa", firstName: "Epeli", role: "author"}], pubDate: {year: 2013}, publisher: "Dravucevua Enterprise", location: "Suva, Fiji", isbn: "9789829808615", meta: {sortKey: "text", grade: "A", notes: "Originally written late 1800s"}},
-      {id: "kolodisi-2007", type: "article", title: "Prophetic Dialogue with Cultures and Religions in Fiji: A Pastoral Imperative", contributors: [{lastName: "Kolodisi", firstName: "Timoci", role: "author"}], pubDate: {year: 2007}, containerTitle: "East Asian Pastoral Review", volume: "44", issue: "1", pages: {start: "68", end: "93"}, url: "https://files01.core.ac.uk/download/pdf/235950191.pdf", meta: {sortKey: "info", grade: "A"}}
+      { id: "rokowaqa-2013", type: "book", title: "Viti Makawa: na kedrai Tukutuku nai Taukei kei Viti", contributors: [{lastName: "Rokowaqa", firstName: "Epeli", role: "author"}], pubDate: {year: 2013}, publisher: "Dravucevua Enterprise", location: "Suva, Fiji", isbn: "9789829808615", meta: {sortKey: "text", grade: "A", notes: "Originally written late 1800s"}},
+      { id: "tavola-2025-dravuni-legends", type: "webpage", title: "Legends", containerTitle: "Kaidravuni: The People of Dravuni", contributors: [ { firstName: "Kaliopate", lastName: "Tavola", role: "author" } ], pubDate: { year: 2025 }, url: "https://kaidravuni.com/legends/", publisher: "kaidravuni.wordpress.com", location: "Dravuni Island, Kadavu, Fiji", medium: "Digital Archive / Personal Research Blog", meta: { notes: "Authored by Kaliopate Tavola. This section serves as a digital repository for the 'Tukuni' (oral traditions) of Dravuni, ensuring these narratives are preserved for the diaspora and future generations.", grade: "A", tags: ["Fiji", "Dravuni", "Kadavu", "Kaliopate Tavola", "Oral History", "Melanesian Folklore"], sortKey: "text" } },
+      { id: "kolodisi-2007", type: "article", title: "Prophetic Dialogue with Cultures and Religions in Fiji: A Pastoral Imperative", contributors: [{lastName: "Kolodisi", firstName: "Timoci", role: "author"}], pubDate: {year: 2007}, containerTitle: "East Asian Pastoral Review", volume: "44", issue: "1", pages: {start: "68", end: "93"}, url: "https://files01.core.ac.uk/download/pdf/235950191.pdf", meta: {sortKey: "info", grade: "A"}},
+      { id: "tomlinson-2006-mana-sau", type: "article", title: "Theologies of Mana and Sau in Fiji", containerTitle: "Oceania", contributors: [ { firstName: "Matt", lastName: "Tomlinson", role: "author" } ], pubDate: { year: 2006 }, url: "https://www.academia.edu/25537812/Theologies_of_Mana_and_Sau_in_Fiji", publisher: "Wiley / Oceania Publications", medium: "Academic Journal", meta: { notes: "A pivotal study in Fijian anthropology. Tomlinson analyzes how the traditional concept of 'sau' (punitive, chiefly power) and 'mana' (efficacious spiritual power) were affected by colonial and missionary activity.", grade: "C", tags: ["Fiji", "Melanesia", "Mana", "Sau", "Anthropology", "Christianity", "Oceania"], sortKey: "info" } }
     ]
   },
   {

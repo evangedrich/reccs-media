@@ -34,7 +34,7 @@ const smallCaps = (txt: string): string => {
 }
 const indent = (txt: string): string => {
     txt = txt.replace(/<v>([\s\S]*?)<\/v>/g, (_, inner: string) =>
-        `<span style="display:inline-block;padding-left:1em;text-indent:-1em">${inner}</span>`
+        `<span style="display:block;padding-left:1em;text-indent:-1em">${inner}</span>`
     );
     txt = txt.replace(/<V>([\s\S]*?)<\/V>/g, (_, inner: string) =>
         `<span style="display:inline-block;padding-left:3em;text-indent:-1em">${inner}</span>`

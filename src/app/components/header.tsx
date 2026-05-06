@@ -5,11 +5,11 @@ import { usePathname } from 'next/navigation'
 import Link from "next/link";
 import ColorLink from "./colorLink";
 import TinyMap from "./tinyMap";
+import Clock from "./clock";
 import styles from "@/app/ui/main.module.css";
 import { syncopate, notoEmoji } from "@/app/fonts/fonts";
 import { collections } from "../lib/collections";
 import { useView } from "../lib/viewContext";
-import { calendars } from "../functions/calendars";
 
 const navLinks = [
     { id: "literature", color: "g" },
@@ -24,8 +24,7 @@ export default function Header() {
     const [date, setDate] = useState<Date>(new Date());
     const [time, setTime] = useState(new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }));
     const [colonVisible, setColonVisible] = useState(true);
-    const [calDropdown, setCalDropdown] = useState(false);
-    const [calSelection, setCalSelection] = useState("EUWE");
+    
     const pathname = usePathname();
     useEffect(() => {
         document.documentElement.style.setProperty('--header-h', showWidget ? '7.625rem' : '5.5rem');
@@ -38,6 +37,7 @@ export default function Header() {
         }, 500);
         return () => clearInterval(timer);
     }, []);
+    
     return (
         <div className="w-full sticky top-0 bg-[var(--color-back)] z-30">
             <div className="w-full border-b-2 border-solid border-[var(--color-front)] flex items-center justify-between overflow-hidden">
@@ -57,7 +57,7 @@ export default function Header() {
             </div>
             <div className={`w-full border-b-2 border-solid border-[var(--color-front)] ${showWidget ? "max-h-10" : "max-h-0 mt-[-2px]"} transition-[max-height]`}>
                 <div className={`flex justify-between px-1 h-8 transition-opacity ${showWidget ? "" : "opacity-0 pointer-events-none flex-wrap"}`}>
-                    <div className="m-1 sm:pl-1 pl-2 items-center sm:gap-8 gap-5 flex">
+                    <div className="m-1 pl-1 items-center sm:gap-8 gap-4 flex">
                         {isDark
                         ? <div className="sm:after:content-['dark'] sm:hover:after:content-['light'] sm:hover:italic cursor-pointer" onClick={() => toggleDark()}><span className="align-[0.2em] inline-block transform sm:scale-100 scale-150">{colonVisible ? "◒" : "◓"}</span> </div>
                         : <div className="sm:after:content-['light'] sm:hover:after:content-['dark'] sm:hover:italic cursor-pointer" onClick={() => toggleDark()}><span className="align-[0.2em] inline-block transform sm:scale-100 scale-150">{colonVisible ? "◐" : "◑"}</span> </div>
@@ -67,29 +67,7 @@ export default function Header() {
                         : <div className="sm:after:content-['online'] sm:hover:after:content-['offline'] sm:hover:italic cursor-pointer" onClick={() => toggleOffline()}><span className="align-[0.2em] inline-block transform sm:scale-100 scale-150">{colonVisible ? "⦾" : "⦿"}</span> </div>
                         }
                     </div>
-                    <div className="relative m-1 flex items-center shrink-0 " onMouseLeave={() => setCalDropdown(false)}>
-                        <span className="bg-[var(--color-front)] text-[var(--color-back)] px-2" suppressHydrationWarning>{calendars.find(cal => cal.id===calSelection)?.function(date)} {colonVisible ? time : time.replace(':', ' ')}</span>
-                        <button className="w-6 h-6 inline-block ring-1 ring-inset ring-[var(--color-front)] text-center cursor-pointer active:bg-[var(--color-mid)] group overflow-hidden" onClick={() => setCalDropdown(!calDropdown)}>
-                            <span className={`inline-block transform text-4xl leading-[0] ${!calDropdown ? "rotate-0 align-[0.5em]" : "rotate-180 align-[-0.5em]"} group-hover:opacity-85`}>{"⌄"}</span>
-                        </button>
-                        <ul className={`absolute w-full max-w-full min-h-7 max-h-56 overflow-y-scroll left-0 top-6 bg-[var(--color-back)] ring-1 ring-inset ring-[var(--color-front)] ${calDropdown ? "" : "hidden"} z-50`}>
-                            {calendars.map(cal => (
-                                <li key={`select_${cal.id}`} className={`p-1 pl-2 cursor-pointer hover:bg-[var(--color-mid)] leading-none py-2`} onClick={() => { setCalSelection(cal.id); setCalDropdown(false); }}>
-                                    <span className={`${cal.id===calSelection?"font-extrabold":""}`}>{cal.name}</span>
-                                    <span className="block opacity-50 text-[0.7rem] uppercase mt-1">{cal.group}</span>
-                                </li>
-                            ))}
-                            {/* <li className="p-1 pl-2 cursor-pointer hover:bg-[var(--color-mid)]">Calendar (Gregorian)</li>
-                            <li className="p-1 pl-2 cursor-pointer hover:bg-[var(--color-mid)] font-bold"><i>Tonalpohualli (Aztec)</i></li>
-                            <li className="p-1 pl-2 cursor-pointer hover:bg-[var(--color-mid)]">Al-taqwīm (Islamic)</li>
-                            <li className="p-1 pl-2 cursor-pointer hover:bg-[var(--color-mid)]">Maramataka (Māori)</li>
-                            <li className="p-1 pl-2 cursor-pointer hover:bg-[var(--color-mid)]">Cokv-walv (Cahokian)</li>
-                            <li className="p-1 pl-2 cursor-pointer hover:bg-[var(--color-mid)]">Bôṅgābdô (Bengali)</li>
-                            <li className="p-1 pl-2 cursor-pointer hover:bg-[var(--color-mid)]">Intihuantana (Andean)</li>
-                            <li className="p-1 pl-2 cursor-pointer hover:bg-[var(--color-mid)]">Nónglì (Chinese)</li>
-                            <li className="p-1 pl-2 cursor-pointer hover:bg-[var(--color-mid)]">Ọ̀gụ́àfọ̀ (Igbo)</li> */}
-                        </ul>
-                    </div>
+                    <Clock date={date} time={time} colonVisible={colonVisible} />
                 </div>
             </div>
             <div className="w-full border-b-2 border-solid border-[var(--color-front)] p-1 flex gap-6 sm:gap-8 items-center justify-center">

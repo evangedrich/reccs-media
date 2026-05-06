@@ -1,4 +1,25 @@
+function getGregorianTranslation(date: Date) {
+    const literalMonths = [
+        "Transitions",      // January (Month of Janus)
+        "Purification", // February (Month of Februa/purification)
+        "War",       // March (Month of Mars)
+        "Opening",    // April (Month of Aperire/opening - as in buds)
+        "Growth",       // May (Month of Maia)
+        "Marriage",       // June (Month of Juno)
+        "Julius",     // July (Named after Julius Caesar)
+        "Augustus",   // August (Named after Augustus Caesar)
+        "Month 7",      // September (7th month)
+        "Month 8",      // October (8th month)
+        "Month 9",       // November (9th month)
+        "Month 10"         // December (10th month)
+    ];
 
+    const day = String(date.getDate()); //.padStart(2, '0');
+    const monthName = literalMonths[date.getMonth()];
+    const year = date.getFullYear();
+
+    return `${day} ${monthName} ${year}`;
+}
 
 function getTonalpohualli(targetDate: Date) {
     const daySigns = [
@@ -7,86 +28,155 @@ function getTonalpohualli(targetDate: Date) {
         "Ozomahtli", "Malinalli", "Acatl", "Ocelotl", "Cuauhtli", 
         "Cozcaquauhtli", "Ollin", "Tecpatl", "Quiahuitl", "Xochitl"
     ];
+    const daySignsEn = [
+        "Crocodile", "Wind", "House", "Lizard", "Snake", 
+        "Death", "Deer", "Rabbit", "Water", "Dog", 
+        "Monkey", "Grass", "Reed", "Jaguar", "Eagle", 
+        "Vulture", "Movement", "Flint", "Rain", "Flower"
+    ];
 
-    // Anchor: Aug 23, 1521 (Gregorian) = 1 Coatl
-    // Coatl is the 5th sign (index 4)
+    const yearBearers = ["Tochtli", "Acatl", "Tecpatl", "Calli"];
+    const yearBearersEn = ["Rabbit", "Reed", "Flint", "House"];
+
     const anchorDate = new Date(1521, 7, 23); 
-    
-    // Normalize both dates to UTC midnight to avoid DST/timezone shifts
     const d1 = Date.UTC(anchorDate.getFullYear(), anchorDate.getMonth(), anchorDate.getDate());
     const d2 = Date.UTC(targetDate.getFullYear(), targetDate.getMonth(), targetDate.getDate());
-    
     const diffDays = Math.floor((d2 - d1) / (24 * 60 * 60 * 1000));
 
-    // Calculate Tonalpohualli Number (1-13)
-    // Anchor was 1. (1 - 1 + diff) % 13 + 1
+    // 1. Tonalpohualli (260-day cycle)
     const tonNumber = ((diffDays % 13) + 13) % 13 + 1;
-
-    // Calculate Tonalpohualli Sign (1-20)
-    // Anchor was index 4 (Coatl). (4 + diff) % 20
     const tonSignIndex = (((4 + diffDays) % 20) + 20) % 20;
     const tonSign = daySigns[tonSignIndex];
+    const tonSignEn = daySignsEn[tonSignIndex];
+
+    // 2. Xiuhmolpilli (52-year cycle)
+    // The Aztec year typically starts in February. 
+    // If the date is before Feb 1st, we treat it as the previous Aztec year.
+    const yearShift = targetDate.getMonth() < 1 ? -1 : 0;
+    const currentYear = targetDate.getFullYear() + yearShift;
+
+    // Anchor: 1521 was a "3 Calli" year.
+    // 3 Calli is the 26th year in the 1 Tochtli -> 13 Calli sequence.
+    const diffYears = currentYear - 1521;
+    
+    // Position in the 52-year cycle (1-52)
+    // (Start index 26 + diff) mod 52
+    const cycleIndex = (((25 + diffYears) % 52) + 52) % 52 + 1;
+
+    // Calculate Year Name (Number + Bearer)
+    // Number (1-13): Anchor was 3.
+    const yearNumber = (((2 + diffYears) % 13) + 13) % 13 + 1;
+    // Bearer (0-3): Anchor was "Calli" (index 3).
+    const yearBearer = yearBearers[(((3 + diffYears) % 4) + 4) % 4];
+    const yearBearerEn = yearBearersEn[(((3 + diffYears) % 4) + 4) % 4];
 
     return {
         number: tonNumber,
         sign: tonSign,
-        toString: () => `${tonNumber} ${tonSign}`
+        cycleYear: cycleIndex,
+        yearName: `${yearNumber} ${yearBearer}`,
+        toString: () => `${tonNumber}-${tonSign} ${yearNumber}-${yearBearer}`,
+        toStringEn: () => `${tonNumber}-${tonSignEn} ${yearNumber}-${yearBearerEn}`
     };
 }
 
-function toIslamicDate(date: Date): { day: number, month: string, year: number} {
-  // Use 'long' for the month name
+function toIslamicDate(date: Date) {
   const formatter = new Intl.DateTimeFormat('en-u-ca-islamic-umalqura-nu-latn', {
     day: 'numeric',
     month: 'long',
     year: 'numeric',
   });
 
+  // Literal translations of the Hijri month names
+  const monthTranslations: { [key: string]: string } = {
+    "Muharram": "Forbidden",               // Sacred month where fighting was forbidden
+    "Safar": "Void",                       // Empty (houses were empty as people gathered food)
+    "Rabiʻ I": "Spring 1",         // First month of grazing/spring
+    "Rabiʻ II": "Spring 2",       // Second month of grazing/spring
+    "Jumada I": "Parched Land 1",  // First month of dry/frozen water
+    "Jumada II": "Parched Land 2",// Second month of dry/frozen water
+    "Rajab": "Respect",                    // A month of honor/removing spearheads
+    "Shaʻban": "Scattered",                // Tribes dispersed to find water
+    "Ramadan": "Scorching Heat",           // Intense heat/burning of sins
+    "Shawwal": "Lifted",                   // She-camels lifting tails (breeding season)
+    "Dhuʻl-Qiʻdah": "Truce Month",    // The month of sitting/staying at home
+    "Dhuʻl-Hijjah": "Pilgrimage Month" // The month of the Hajj
+  };
+  const monthArabic: { [key: string]: string } = {
+    "Muharram": "محرم", "Safar": "صفر", "Rabiʻ I": "ربيع الأول", "Rabiʻ II": "ربيع الآخر", "Jumada I": "جمادى الأولى", "Jumada II": "جمادى الآخرة",
+    "Rajab": "رجب", "Shaʻban": "شعبان", "Ramadan": "رمضان", "Shawwal": "شوال", "Dhuʻl-Qiʻdah": "ذو القعدة", "Dhuʻl-Hijjah": "ذو الحجة"
+  };
+
   const parts = formatter.formatToParts(date);
-  
-  const getPart = (type: string) => 
-    parts.find(part => part.type === type)?.value || '';
+  const getPart = (type: string) => parts.find(part => part.type === type)?.value || '';
+
+  const day = parseInt(getPart('day'), 10);
+  const month = getPart('month');
+  const year = parseInt(getPart('year'), 10);
+  const literalMonth = monthTranslations[month] || month;
+  const arabicMonth = monthArabic[month] || month;
 
   return {
-    day: parseInt(getPart('day'), 10),
-    month: getPart('month'), // e.g., "Ramadan" or "Shawwal"
-    year: parseInt(getPart('year'), 10),
+    day,
+    month,
+    year,
+    toStringEn: () => `${day} ${literalMonth} ${year}`,
+    toStringArab: () => `${day.toLocaleString('ar-EG')} ${arabicMonth} ${year.toLocaleString('ar-EG')}`
   };
 }
 
-function toIgboDate(date: Date): { marketDay: string; month: string; monthIndex: number; } {
-  // 4-day Market Cycle (Izu)
+function toIgboDate(date: Date) {
   const IGBO_MARKET_DAYS = ["Eke", "Orie", "Afọ", "Nkwọ"];
   
-  // 13 Lunar Months of the Igbo Calendar
+  // Literal translations for the 4-day cycle
+  const marketDayTranslations: { [key: string]: string } = {
+    "Eke": "Creation",    // Associated with the East and Fire
+    "Orie": "Limitation", // Associated with the West and Water (also 'Boundary')
+    "Afọ": "Life/Belly",  // Associated with the North and Earth
+    "Nkwọ": "Rest/End",   // Associated with the South and Air
+  };
+
   const IGBO_MONTHS = [
     "Ọnwa Mbụ", "Ọnwa Abụo", "Ọnwa Ife Eke", "Ọnwa Anọ", "Ọnwa Agwụ",
     "Ọnwa Ifejiọkụ", "Ọnwa Alọm Chi", "Ọnwa Ilo Mmụọ", "Ọnwa Ana",
     "Ọnwa Okike", "Ọnwa Ajana", "Ọnwa Ede Ajana", "Ọnwa Ụzọ Alụsị"
   ];
 
-  // Reference Point: Jan 1, 2000 was an 'Eke' market day.
-  // We use UTC to avoid daylight savings shifts interfering with the day count.
+  const monthTranslations = [
+    "Month 1",               
+    "Month 2",              
+    "Eke Offering", 
+    "Month 4",              
+    "Agwụ Spirit",  
+    "Yam Deity",    
+    "Returning to Chi", 
+    "Honoring Spirits", 
+    "Earth Deity",  
+    "Creation",         
+    "Ajana Spirit", 
+    "Cocoyam Harvest",  
+    "Shrine Path"
+  ];
+
   const referenceDate = Date.UTC(2000, 0, 1);
   const targetDate = Date.UTC(date.getFullYear(), date.getMonth(), date.getDate());
-  
   const diffInMs = targetDate - referenceDate;
   const diffInDays = Math.floor(diffInMs / (1000 * 60 * 60 * 24));
 
-  // 1. Calculate Market Day (Modulo 4)
   const marketDayIndex = ((diffInDays % 4) + 4) % 4;
-
-  // 2. Calculate Month (Simplified 28-day cycle)
-  // Traditional Igbo years often start in late January/February.
-  // This calculates the month relative to the start of the current Gregorian year.
   const yearStart = Date.UTC(date.getFullYear(), 0, 1);
   const dayOfYear = Math.floor((targetDate - yearStart) / (1000 * 60 * 60 * 24));
   const monthIndex = Math.min(Math.floor(dayOfYear / 28), 12);
 
+  const marketDay = IGBO_MARKET_DAYS[marketDayIndex];
+  const literalMarketDay = marketDayTranslations[marketDay];
+  const literalMonth = monthTranslations[monthIndex];
+
   return {
-    marketDay: IGBO_MARKET_DAYS[marketDayIndex],
+    marketDay,
     month: IGBO_MONTHS[monthIndex],
-    monthIndex: monthIndex + 1
+    monthIndex: monthIndex + 1,
+    toStringEn: () => `${literalMarketDay}, ${literalMonth}`
   };
 }
 
@@ -95,57 +185,95 @@ interface TransliteratedLunarDate {
   lunarYear: string;  // e.g., "Bǐngwǔnián"
   lunarMonth: string; // e.g., "Zhèngyuè"
   lunarDay: number;
+  toStringTranslit: () => string;
+  toStringEnglish: () => string;
+  toStringChinese: () => string;
 }
 
 /**
- * Converts a Date to the Chinese Lunar Calendar with Pinyin diacritics.
- * Uses a stable offset calculation to ensure 2026 maps correctly to Bǐngwǔnián.
+ * Converts a Date to the Chinese Lunar Calendar with Pinyin, 
+ * Hanzi, and the Yellow Emperor era year.
  */
-function toTransliteratedChineseDate(date: Date): TransliteratedLunarDate {
+function toChineseDate(date: Date): TransliteratedLunarDate {
   const PINYIN_MONTHS = [
     "Zhèngyuè", "Èryuè", "Sānyuè", "Sìyuè", "Wǔyuè", "Liùyuè",
     "Qīyuè", "Bāyuè", "Jiǔyuè", "Shíyuè", "Shíyīyuè", "Làyuè"
   ];
 
-  const STEMS = ["Jiǎ", "Yǐ", "Bǐng", "Dīng", "Wù", "Jǐ", "Gēng", "Xīn", "Rén", "Guǐ"];
-  const BRANCHES = ["Zǐ", "Chǒu", "Yín", "Mǎo", "Chén", "Sì", "Wǔ", "Wèi", "Shēn", "Yǒu", "Xū", "Hài"];
+  const HANZI_MONTHS = [
+    "正月", "二月", "三月", "四月", "五月", "六月", 
+    "七月", "八月", "九月", "十月", "十一月", "腊月"
+  ];
+  
+  const ENGLISH_MONTHS = [
+    "First Month", "Second Month", "Third Month", "Fourth Month", "Fifth Month", "Sixth Month",
+    "Seventh Month", "Eighth Month", "Ninth Month", "Tenth Month", "Eleventh Month", "Preserved Month"
+  ];
 
-  // Intl handles the lunar month and day transitions (including leap months)
+  const STEMS_PINYIN = ["Jiǎ", "Yǐ", "Bǐng", "Dīng", "Wù", "Jǐ", "Gēng", "Xīn", "Rén", "Guǐ"];
+  const BRANCHES_PINYIN = ["Zǐ", "Chǒu", "Yín", "Mǎo", "Chén", "Sì", "Wǔ", "Wèi", "Shēn", "Yǒu", "Xū", "Hài"];
+  
+  const STEMS_HANZI = ["甲", "乙", "丙", "丁", "戊", "己", "庚", "辛", "壬", "癸"];
+  const BRANCHES_HANZI = ["子", "丑", "寅", "卯", "辰", "巳", "午", "未", "申", "酉", "戌", "亥"];
+
   const formatter = new Intl.DateTimeFormat('en-u-ca-chinese', {
-    year: 'numeric',
-    month: 'numeric',
+    month: 'numeric', 
     day: 'numeric',
   });
 
   const parts = formatter.formatToParts(date);
   const getPart = (type: string) => parts.find(p => p.type === type)?.value || '';
 
-  // The 'year' part in Intl can be inconsistent across browsers (returning 4663, 2026, or cycles).
-  // We extract the base Gregorian year and adjust if the lunar month is currently in the 'previous' Gregorian year.
   const gYear = date.getFullYear();
+  const gMonth = date.getMonth(); 
   const monthNum = parseInt(getPart('month'), 10);
+  const dayNum = parseInt(getPart('day'), 10);
+
+  // Determine correct Lunar Year boundary
+  let lunarYearNum = gYear;
+  if (gMonth <= 1 && monthNum >= 11) {
+    lunarYearNum = gYear - 1;
+  }
+
+  // Yellow Emperor Year (Current Gregorian Year + 2697)
+  const yellowEmperorYear = lunarYearNum + 2697;
+
+  // Sexagenary Cycle (4 AD was Jiazi)
+  const stemIdx = (((lunarYearNum - 4) % 10) + 10) % 10;
+  const branchIdx = (((lunarYearNum - 4) % 12) + 12) % 12;
   
-  // If the lunar date's "related Gregorian year" is different from the calendar year,
-  // it means we are in that awkward Jan/Feb gap.
-  const rawYearString = getPart('year');
-  const relatedGregorian = parseInt(rawYearString.match(/\d+/)?.[0] || gYear.toString(), 10);
+  const yearName = `${STEMS_PINYIN[stemIdx]}${BRANCHES_PINYIN[branchIdx].toLowerCase()}nián`;
+  const yearHanzi = `${STEMS_HANZI[stemIdx]}${BRANCHES_HANZI[branchIdx]}年`;
 
-  // Standard Sexagenary Formula using 4 AD as the Jiǎzǐ (0,0) starting point
-  const stemIdx = (((relatedGregorian - 4) % 10) + 10) % 10;
-  const branchIdx = (((relatedGregorian - 4) % 12) + 12) % 12;
+  const isLeap = parts.some(p => p.type === 'month' && p.value.toLowerCase().includes('leap'));
+  
+  let transliteratedMonth = PINYIN_MONTHS[monthNum - 1];
+  let chineseMonth = HANZI_MONTHS[monthNum - 1];
+  let englishMonth = ENGLISH_MONTHS[monthNum - 1];
 
-  const yearName = `${STEMS[stemIdx]}${BRANCHES[branchIdx].toLowerCase()}nián`;
-
-  const isLeap = parts.some(p => p.type === 'month' && p.value.includes('Leap'));
-  let transliteratedMonth = PINYIN_MONTHS[monthNum - 1] || `Month ${monthNum}`;
   if (isLeap) {
     transliteratedMonth = `Rùn ${transliteratedMonth}`;
+    chineseMonth = `闰${chineseMonth}`;
+    englishMonth = `Leap ${englishMonth}`;
   }
+
+  const getChineseDay = (d: number) => {
+    const units = ["", "一", "二", "三", "四", "五", "六", "七", "八", "九", "十"];
+    if (d <= 10) return d === 10 ? "初十" : `初${units[d]}`;
+    if (d < 20) return `十${units[d % 10]}`;
+    if (d === 20) return "二十";
+    if (d < 30) return `廿${units[d % 10]}`;
+    if (d === 30) return "三十";
+    return `${d}`;
+  };
 
   return {
     lunarYear: yearName,
     lunarMonth: transliteratedMonth,
-    lunarDay: parseInt(getPart('day'), 10),
+    lunarDay: dayNum,
+    toStringTranslit: () => `${dayNum} ${transliteratedMonth} ${yearName}`,
+    toStringEnglish: () => `${dayNum} ${englishMonth} ${yellowEmperorYear}`,
+    toStringChinese: () => `${yearHanzi}${chineseMonth}${getChineseDay(dayNum)}`
   };
 }
 
@@ -153,6 +281,7 @@ interface HawaiianLunarDate {
   moonPhase: string;
   anahulu: string; // The 10-day "week"
   dayOfCycle: number;
+  toStringEn: () => string;
 }
 function toHawaiianLunarDate(date: Date): HawaiianLunarDate {
   const MOON_PHASES = [
@@ -160,6 +289,36 @@ function toHawaiianLunarDate(date: Date): HawaiianLunarDate {
     "Hua", "Akua", "Hoku", "Māhealani", "Kulu", "Lāʻaukūkahi", "Lāʻaukūlua", "Lāʻaupau", "ʻOlekūkahi", "ʻOlekūlua",
     "ʻOlekūpau", "Kāloakūkahi", "Kāloakūlua", "Kāloapau", "Kāne", "Lono", "Mauli", "Muku"
   ];
+  const moonPhasesEn = [
+    "Faint Streak",       // Hilo (First sighting of the moon)
+    "Crescent",            // Hoaka (Crest/Arch)
+    "First Kū",            // Kūkahi (Rising/Upright)
+    "Second Kū",           // Kūlua
+    "Final Kū",            // Kūpau
+    "First Ole",           // Olekūkahi (Unproductive/Non-planting)
+    "Second Ole",          // Olekūlua
+    "Final Ole",           // Olekūpau
+    "Hidden",              // Huna (Moon is small/hidden)
+    "Spreading",           // Mohalu (Blooms/Opening)
+    "Fruit",               // Hua (Productive/Egg-shaped)
+    "God",                 // Akua (Fullness/Divine)
+    "Star",                // Hoku (Completely round)
+    "Full Moon",           // Māhealani (The peak of fullness)
+    "Dropping",            // Kulu (Dew/To drop)
+    "First Lāʻau",         // Lāʻaukūkahi (Wood/Planting)
+    "Second Lāʻau",        // Lāʻaukūlua
+    "Final Lāʻau",         // Lāʻaupau
+    "First Ole Reprise",   // ʻOlekūkahi (The second set of unproductive days)
+    "Second Ole Reprise",  // ʻOlekūlua
+    "Final Ole Reprise",   // ʻOlekūpau
+    "First Kāloa",         // Kāloakūkahi (Kanaloa/Deep sea)
+    "Second Kāloa",        // Kāloakūlua
+    "Final Kāloa",         // Kāloapau
+    "Kāne",                // Kāne (Named for the deity of life/fresh water)
+    "Lono",                // Lono (Named for the deity of agriculture/rain)
+    "Last Breath",         // Mauli (Fading life/Ghost)
+    "Cut Off"              // Muku (New Moon/Extinguished)
+];
 
   // A known New Moon reference (e.g., Jan 11, 2024)
   const newMoonRef = new Date(2024, 0, 11).getTime();
@@ -176,7 +335,8 @@ function toHawaiianLunarDate(date: Date): HawaiianLunarDate {
   return {
     moonPhase: MOON_PHASES[dayOfCycle] || "Muku",
     anahulu: anahulu,
-    dayOfCycle: dayOfCycle + 1
+    dayOfCycle: dayOfCycle + 1,
+    toStringEn: () => `${dayOfCycle + 1} ${moonPhasesEn[dayOfCycle]}`
   };
 }
 
@@ -185,6 +345,9 @@ interface TraditionalBengaliDate {
   month: string;
   year: number;
   era: string; // "Bangabda" or "BS"
+  toString: () => string;
+  toStringBangla: () => string;
+  toStringStar: () => string;
 }
 
 /**
@@ -195,6 +358,14 @@ function toTraditionalBengali(date: Date): TraditionalBengaliDate {
   const MONTHS = [
     "Boishakh", "Jaishtha", "Ashar", "Srabon", "Bhadro", "Ashshin",
     "Kartik", "Agrahayan", "Poush", "Magh", "Falgun", "Chaitra"
+  ];
+  const MONTHS_BNG = [
+    "বৈশাখ", "জ্যৈষ্ঠ", "আষাঢ়", "শ্রাবণ", "ভাদ্র", "আশ্বিন", 
+    "কার্তিক", "অগ্রহায়ণ", "পৌষ", "মাঘ", "ফাল্গুন", "চৈত্র" 
+  ];
+  const MONTHS_STAR = [
+    "Branched", "Eldest", "Invincible", "Hearing", "Blessed Steps", "Horse-Headed",
+    "Krittika", "Start of Year", "Prosper", "Mighty", "Fig Tree", "Brilliant"
   ];
 
   const gYear = date.getFullYear();
@@ -259,11 +430,19 @@ function toTraditionalBengali(date: Date): TraditionalBengaliDate {
     bDay = (prevMonthLastDay - prevTransition + 1) + gDay;
   }
 
+  function convertN(n: number) {
+    const bengaliDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
+    return n.toString().replace(/\d/g, (digit: string) => bengaliDigits[Number(digit)]);
+  }
+
   return {
     day: bDay,
     month: MONTHS[bMonthIndex],
     year: bYear,
-    era: "Bangabda"
+    era: "Bangabda",
+    toString: () => `${bDay} ${MONTHS[bMonthIndex]} ${bYear}`,
+    toStringBangla: () => `${convertN(bDay)} ${MONTHS_BNG[bMonthIndex]} ${convertN(bYear)}`,
+    toStringStar: () => `${bDay} ${MONTHS_STAR[bMonthIndex]} ${bYear}`,
   };
 }
 
@@ -274,6 +453,7 @@ interface IncaDate {
   weekTranslation: string; // The English translation
   festival: string;
   meaning: string;
+  toStringEn: () => string;
 }
 
 /**
@@ -283,14 +463,14 @@ interface IncaDate {
 function toIncaDate(date: Date): IncaDate {
   const INCA_MONTHS = [
     { name: "Capac Raymi", festival: "Great Feast of the Sun", meaning: "Summer solstice; coming-of-age rituals." },
-    { name: "Zamay", festival: "Month of Creation", meaning: "Penances and fasts; time to see the corn." },
+    { name: "Zamay", festival: "Creation Month", meaning: "Penances and fasts; time to see the corn." },
     { name: "Jatunpucuy", festival: "Great Ripening", meaning: "Crops begin to mature; offerings of gold and silver." },
     { name: "Pachapucuy", festival: "Earth's Maturity", meaning: "First harvests; animal sacrifices for fertility." },
-    { name: "Ariway", festival: "Harvest of Maize", meaning: "Ripening of corn and potatoes." },
+    { name: "Ariway", festival: "Corn Harvest", meaning: "Ripening of corn and potatoes." },
     { name: "Aymoray", festival: "Harvest Month", meaning: "Principal harvest month; storing of crops." },
-    { name: "Inti Raymi", festival: "Festival of the Sun", meaning: "Winter solstice; honors the sun god Inti." },
+    { name: "Inti Raymi", festival: "Sun Festival", meaning: "Winter solstice; honors the sun god Inti." },
     { name: "Chaguahuarquis", festival: "Land Distribution", meaning: "Dividing land; preparing for new planting." },
-    { name: "Yapaquis", festival: "Month of Sowing", meaning: "Main sowing season; renewal of the earth." },
+    { name: "Yapaquis", festival: "Sowing Month", meaning: "Main sowing season; renewal of the earth." },
     { name: "Coya Raymi", festival: "Queen’s Festival", meaning: "Honors the queen; warding off evil spirits." },
     { name: "Uma Raymi", festival: "Water Invocation", meaning: "Season to ask for rain for the new crops." },
     { name: "Ayamarca", festival: "Feast of the Dead", meaning: "Worshipping and honoring ancestors." }
@@ -326,7 +506,8 @@ function toIncaDate(date: Date): IncaDate {
     weekName: week.quechua,
     weekTranslation: week.english,
     festival: month.festival,
-    meaning: month.meaning
+    meaning: month.meaning,
+    toStringEn: () => `${dayOfMonth} ${month.festival}`
   };
 }
 
@@ -451,62 +632,62 @@ function toFijianAlmanac(date: Date): FijianAlmanacDate {
 export const calendars = [
     {
         id: "EUWE",
-        name: "Gregorian Calendar",
+        name: { original: "Gregorian calendar", translation: "Gregorian calendar" },
         group: "Italian",
-        function: (x: Date) => x.toLocaleString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })
+        function: (x: Date) => ( { original: x.toLocaleString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }), translation: getGregorianTranslation(x) } )
     },
     {
         id: "AMCE",
-        name: "Tonalpohualli",
+        name: { original: "Tonalpohualli", translation: "Count of Days" },
         group: "Mexica",
-        function: (x: Date) => getTonalpohualli(x).toString()
+        function: (x: Date) => ( { original: getTonalpohualli(x).toString(), translation: getTonalpohualli(x).toStringEn() } )
     },
     {
         id: "ASWE",
-        name: "Al-taqwīm al-hijrī",
+        name: { original: "ٱلتَّقْوِيم ٱلْهِجْرِيّ", transliteration: "Al-taqwīm al-hijrī", reverseTransliteration: "هجري كاليندر", translation: "Hijri calendar" },
         group: "Arabic",
-        function: (x: Date) => `${toIslamicDate(x).day} ${toIslamicDate(x).month} ${toIslamicDate(x).year}`
+        function: (x: Date) => ( { original: toIslamicDate(x).toStringArab(), transliteration: `${toIslamicDate(x).day} ${toIslamicDate(x).month} ${toIslamicDate(x).year}`, translation: toIslamicDate(x).toStringEn() } )
     },
     {
         id: "AFWE",
-        name: "Ọ̀gụ́àfọ̀ Ị̀gbò",
+        name: { original: "Ọ̀gụ́àfọ̀ Ị̀gbò", translation: "Igbo calendar" },
         group: "Igbo",
-        function: (x: Date) => `${toIgboDate(x).marketDay} ${toIgboDate(x).month}`
+        function: (x: Date) => ( { original: `${toIgboDate(x).marketDay} ${toIgboDate(x).month}`, translation: toIgboDate(x).toStringEn() } )
     },
     {
         id: "ASEA",
-        name: "Nónglì",
+        name: { original: "農曆", transliteration: "Nónglì", reverseTransliteration: "艾格里卡爾卓羅 凱倫德", translation: "Agricultural calendar" },
         group: "Chinese",
-        function: (x: Date) => `${toTransliteratedChineseDate(x).lunarDay} ${toTransliteratedChineseDate(x).lunarMonth}`
+        function: (x: Date) => ( { original: toChineseDate(x).toStringChinese(), transliteration: toChineseDate(x).toStringTranslit(), translation: toChineseDate(x).toStringEnglish() } )
     },
     {
         id: "OCPL",
-        name: "Kaulana Mahina",
+        name: { original: "Kaulana Mahina", translation: "Position of the Moon" },
         group: "Hawaiian",
-        function: (x: Date) => `${toHawaiianLunarDate(x).dayOfCycle} ${toHawaiianLunarDate(x).moonPhase}`
+        function: (x: Date) => ( { original: `${toHawaiianLunarDate(x).dayOfCycle} ${toHawaiianLunarDate(x).moonPhase}`, translation: toHawaiianLunarDate(x).toStringEn() } )
     },
     {
         id: "ASSO",
-        name: "Bôṅgābdô",
+        name: { original: "বঙ্গাব্দ", transliteration: "Bôṅgābdô", reverseTransliteration: "বেঙ্গলি এরা", translation: "Bengali era" },
         group: "Bengali",
-        function: (x: Date) => `${toTraditionalBengali(x).day} ${toTraditionalBengali(x).month} ${toTraditionalBengali(x).year}`
+        function: (x: Date) => ( { original: toTraditionalBengali(x).toStringBangla(), transliteration: toTraditionalBengali(x).toString(), translation: toTraditionalBengali(x).toStringStar() } )
     },
     {
         id: "AMWE",
-        name: "Intihuatana",
+        name: { original: "Intihuatana", translation: "Anchor of the Sun" },
         group: "Quechua",
-        function: (x: Date) => `${toIncaDate(x).day} ${toIncaDate(x).monthName}`
+        function: (x: Date) => ( { original: `${toIncaDate(x).day} ${toIncaDate(x).monthName}`, translation: toIncaDate(x).toStringEn() } )
     },
     {
         id: "AFNO",
-        name: "Taswast Tamaziɣt",
+        name: { original: "Taswast Tamaziɣt", translation: "Amazigh calendar" },
         group: "Amazigh",
-        function: (x: Date) => `${toBerberDate(x).day} ${toBerberDate(x).month} ${toBerberDate(x).year}`
+        function: (x: Date) => ( { original: `${toBerberDate(x).day} ${toBerberDate(x).month} ${toBerberDate(x).year}` } )
     },
     {
         id: "OCML",
-        name: "Vula Vakaviti",
+        name: { original: "Vula Vakaviti", translation: "Fijian Months" },
         group: "Fijian",
-        function: (x: Date) => `${toFijianAlmanac(x).translation}`
+        function: (x: Date) => ( { original: toFijianAlmanac(x).monthName, translation: toFijianAlmanac(x).translation } )
     },
 ];

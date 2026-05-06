@@ -5,12 +5,40 @@ export default function Home() {
 	return (
 		<div>
 			<Geoscheme />
-			<div className="min-h-40 p-4 border-b-2 border-solid border-[var(--color-front)]">
+			<div className="p-4 border-b-2 border-solid border-[var(--color-front)]">
 				<div className="max-w-[1000px] m-auto">
-					<p className="mb-2">{preParse("Reccs is an archive of collections of literary, cinematic, and theatrical works from each of the United Nations geoscheme subregions (modified slightly to better conform the subregions, devised for statistical purposes, to their corresponding culturally-affiliated regions). Click around the geoscheme to explore works by region, or navigate above for the complete collections.")}</p>
-					<p>{preParse("These selections are limited to works that have been translated into English, a considerable bottleneck (like the act of translation—and writing, for that matter—itself) in capturing the full extent of human literary output, but at the same time a noteworthy asset in allowing some degree of access to a plurality of worldviews for the extensive native and non-native English-speaking populations of the world (at present the most prevalent of all speech communities). For every selection, I include a brief description of the work or genre, sources for further reading, and other relevant media, such as text excerpts, playlists, or related videos.")}</p>
+					<p className="mb-2">{preParse("Reccs is an archive of collections of literary, cinematic, theatrical, and rational compositions from each of the United Nations geoscheme subregions (modified slightly to better conform the subregions, devised for statistical purposes, to their corresponding culturally-affiliated regions). Click around the geoscheme above to explore works by region, or browse the complete collections from the navigation.")}</p>
 				</div>
 			</div>
+			{/* <div className="w-160 h-160 bg-[#181818] p-15 m-4">
+				<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+					<text 
+						textAnchor="middle" 
+						alignmentBaseline="middle" 
+						fontFamily="syncopate" 
+						fontWeight="700"
+						x="50" y="45"
+						fontSize="40"
+						fill="white"
+					>
+						<tspan dx="-1" dy="-4">R</tspan>
+						<tspan dx="-3" dy="8">E</tspan>
+						<tspan dx="-3" dy="-8">C</tspan>
+					</text>
+					<text 
+						textAnchor="middle" 
+						alignmentBaseline="middle" 
+						fontFamily="syncopate" 
+						fontWeight="700"
+						x="50" y="80"
+						fontSize="40"
+						fill="white"
+					>
+						<tspan dy="-1">C</tspan>
+						<tspan dx="-3" dy="8">S</tspan>
+					</text>
+				</svg>
+			</div> */}
 		</div>
 	);
 }

@@ -44,7 +44,7 @@ export default function Geoscheme() {
                 
 			</div>
             <div className="relative sm:hidden flex justify-center border-b-2 p-1">
-                <h1 className={`${currSubr==="X"?"italic":"font-extrabold"}`}>{currSubr==="X" ? "select region above" : subregions.find(subr => subr.id===currSubr)?.name}</h1>
+                <h1 className={`${currSubr==="X"?"italic font-light":"font-extrabold"}`}>{currSubr==="X" ? "select region above" : subregions.find(subr => subr.id===currSubr)?.name}</h1>
                 <div className={`${currSubr==="X"?"hidden":""} absolute right-0 top-0 h-full aspect-square flex items-center justify-center border-l-2`} onClick={() => setCurrSubr("X")}>Ｘ</div>
             </div>
             <div className={`${currSubr==="X" ? "hidden" : ""} sm:hidden border-b-2 p-4`}>
@@ -57,9 +57,9 @@ export default function Geoscheme() {
                         href={`/${entry.id}`}
                         className={`shrink-0 flex flex-col gap-1 sm:w-[9rem] w-[7.7rem] p-3 border-r-2 ${i===0 ? "border-l-2 ml-[-2px]" : ""} hover:bg-[var(--color-mid)] group`}
                     >
-                        <div className="bg-[var(--color-mid)] group-hover:opacity-90 aspect-3/4"><Image src={`/posters/${entry.id}.jpg`} alt="Media Image" width="300" height="400" className="w-full" loading="eager" /></div>
+                        <div className="bg-[var(--color-mid)] group-hover:opacity-90 aspect-3/4"><Image src={`/posters/${entry.id}.webp`} alt="Media Image" width="300" height="400" className="w-full h-full" unoptimized /></div>
                         <h2 className="uppercase text-[0.55rem] leading-none mt-1 opacity-50 font-bold">{collections.find(coll => coll.id===entry.id.slice(4,7))?.shortName}</h2>
-                        <h1 className="text-xs font-bold truncate">{getTitle(entry)}</h1>
+                        <h1 className="text-xs font-semibold truncate">{getTitle(entry)}</h1>
                     </Link>
                 ))}</div>
             </div>
