@@ -1,5 +1,4 @@
 import { reccsData } from "@/app/lib/local-media";
-import { subregions } from "../lib/subregions";
 import Image from "next/image";
 import { notoEmoji } from "../fonts/fonts";
 import StickyTitleBar from "../components/stickyTitleBar";
@@ -27,7 +26,6 @@ export default async function DetailPage({ params }: { params: Promise<{ mediaID
     const transliteration = getTitle(entry,"transliteration");
     const translation = getTitle(entry,"translation");
     const byline = getByline(entry);
-    const regionName = subregions.find(subr => subr.id===mediaID.slice(0,4))?.name ?? "";
     return (
         <div className="w-full h-full flex flex-wrap border-b-2 grow-1">
             <div className="basis-full sm:basis-1/3 px-4 pt-4 sm:pb-4 sm:border-r-2 border-solid border-[var(--color-front)] flex flex-col items-end">
@@ -36,7 +34,6 @@ export default async function DetailPage({ params }: { params: Promise<{ mediaID
             <div className="basis-full sm:basis-2/3 min-w-0">
                 <StickyTitleBar title={title}>
                     <div className="p-4 border-b-2 border-solid border-[var(--color-front)]">
-                        <h3 className="text-xs uppercase opacity-40 mb-2 tracking-widest hidden">{regionName}</h3>
                         <h1 className={`sm:text-6xl text-4xl font-black leading-none hyphens-auto break-words mb-2 max-w-[800px] ${isMongol(title) ? "[writing-mode:vertical-rl] h-fit" : ""}`} lang="en">
                             {isMongol(title) ? title.split(/\s+/).map((w: string, i: number) => <span key={i} className="block">{w}</span>) : title}
                         </h1>

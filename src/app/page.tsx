@@ -7,7 +7,7 @@ export default function Home() {
 			<Geoscheme />
 			<div className="p-4 border-b-2 border-solid border-[var(--color-front)]">
 				<div className="max-w-[1000px] m-auto">
-					<p className="mb-2">{preParse("Reccs is an archive of collections of literary, cinematic, theatrical, and rational compositions from each of the United Nations geoscheme subregions (modified slightly to better conform the subregions, devised for statistical purposes, to their corresponding culturally-affiliated regions). Click around the geoscheme above to explore works by region, or browse the complete collections from the navigation.")}</p>
+					<p className="mb-2">{preParse("Reccs is an archive of collections of literary, cinematic, theatrical, and quantitative compositions from each of the United Nations geoscheme subregions (modified slightly to better conform the subregions, devised for statistical purposes, to their corresponding culturally-affiliated regions). Click around the geoscheme above to explore works by region, or browse the complete collections from the navigation menu.")}</p>
 				</div>
 			</div>
 			{/* <div className="w-160 h-160 bg-[#181818] p-15 m-4">

@@ -30,7 +30,7 @@ export default function CollectionShelf({
     const bgPattern = "sm:bg-[repeating-linear-gradient(45deg,transparent_0px,transparent_1px,transparent_1px,transparent_8px)]";
     return (
         <>
-            <div className={`flex sm:grow-1 border-b-2 border-[var(--color-front)] sm:justify-start justify-center w-[100vw] overflow-x-hidden ${bgPattern} ${bgPatternMobile}`}>
+            <div className={`flex max-sm:hidden sm:grow-1 border-b-2 border-[var(--color-front)] sm:justify-start justify-center w-[100vw] overflow-x-hidden ${bgPattern} ${bgPatternMobile}`}>
                 {collections.map((coll,i) => (
                     <React.Fragment key={`${coll.id}shelf`}>
                         <div
@@ -52,6 +52,11 @@ export default function CollectionShelf({
                     </React.Fragment>
                 ))}
             </div>
+            <div className="sm:hidden border-b-2 p-2 flex flex-col gap-2">{collections.map((coll,i) => (
+                <div key={`mobileColl${i}`} className="border-2 p-1 active:opacity-80" onClick={() => setCurrColl(coll.id)}>
+                    <div className={`text-center p-1 font-bold ${currColl===coll.id ? "bg-[var(--color-front)] text-[var(--color-back)]" : ""}`}>{coll.name}</div>
+                </div>
+            ))}</div>
             <div className={`${styles.shelfText} sm:hidden flex flex-col`}>
                 <ShelfItemsMobile collections={collections} collID={currColl} />
                 <div className="p-4">
