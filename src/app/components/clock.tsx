@@ -30,20 +30,20 @@ export default function Clock ({ date, time, colonVisible }: { date: Date, time:
                     <div className="sticky top-0 w-full flex justify-around p-2 bg-[var(--color-back)] z-60">
                         <div className="flex flex-col items-center cursor-pointer opacity-75 hover:opacity-100" onClick={() => setCalIsRoman(!calIsRoman)}>
                             <div className="uppercase text-[0.5rem] mb-[1px]">Romanize</div>
-                            <button className="rounded-full w-7 h-4 border-2 bg-[var(--color-front)] cursor-pointer">
-                                <div className={`rounded-full w-3 h-3 bg-[var(--color-back)] ${calIsRoman ? "ml-3" : "left-0"} transition-[margin-left]`}></div>
+                            <button className="rounded-[3px] w-7 h-4 border-2 bg-[var(--color-front)] cursor-pointer">
+                                <div className={`rounded-[1.5px] w-3 h-3 bg-[var(--color-back)] ${calIsRoman ? "ml-3" : "left-0"} transition-[margin-left]`}></div>
                             </button>
                         </div>
                         <div className="flex flex-col items-center cursor-pointer opacity-75 hover:opacity-100" onClick={() => setCalIsTrans(!calIsTrans)}>
                             <div className="uppercase text-[0.5rem] mb-[1px]">Translate</div>
-                            <button className="rounded-full w-7 h-4 border-2 bg-[var(--color-front)] cursor-pointer">
-                                <div className={`rounded-full w-3 h-3 bg-[var(--color-back)] ${calIsTrans ? "ml-3" : "left-0"} transition-[margin-left]`}></div>
+                            <button className="rounded-[3px] w-7 h-4 border-2 bg-[var(--color-front)] cursor-pointer">
+                                <div className={`rounded-[1.5px] w-3 h-3 bg-[var(--color-back)] ${calIsTrans ? "ml-3" : "left-0"} transition-[margin-left]`}></div>
                             </button>
                         </div>
                         <div className="flex flex-col items-center cursor-pointer opacity-75 hover:opacity-100" onClick={() => setCalIsShort(!calIsShort)}>
                             <div className="uppercase text-[0.5rem] mb-[1px]">Shorten</div>
-                            <button className="rounded-full w-7 h-4 border-2 bg-[var(--color-front)] cursor-pointer">
-                                <div className={`rounded-full w-3 h-3 bg-[var(--color-back)] ${calIsShort ? "ml-3" : "left-0"} transition-[margin-left]`}></div>
+                            <button className="rounded-[3px] w-7 h-4 border-2 bg-[var(--color-front)] cursor-pointer">
+                                <div className={`rounded-[1.5px] w-3 h-3 bg-[var(--color-back)] ${calIsShort ? "ml-3" : "left-0"} transition-[margin-left]`}></div>
                             </button>
                         </div>
                     </div>

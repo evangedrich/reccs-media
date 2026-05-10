@@ -5,7 +5,7 @@ import { preParse } from "@/app/functions/text";
 const stats: [string, string][] = [
     ["30",  "subregions"],
     ["9",   "collections"],
-    ["380", "entries"],
+    ["157", "entries"],
     ["10",  "calendars"],
     ["3",   "citation formats"],
     ["2",   "render modes"],
@@ -75,9 +75,9 @@ export default function LandingPage() {
         <div>
             <div className="border-b-2 border-solid border-[var(--color-front)]">
                 <div className="max-w-[1000px] mx-auto px-4 py-6 sm:py-10">
-                    <h1 className={`${syncopate.className} font-black text-4xl sm:text-6xl`}>RECCS</h1>
-                    <p className="mt-2 text-xs uppercase opacity-50 tracking-widest">a geoscheme-based media library</p>
-                    <p className="mt-6 max-w-[720px]">{preParse("Reccs is an archive of literary, cinematic, theatrical, and quantitative compositions, organized by a modified UN geoscheme of 30 culturally-affiliated subregions—an attempt to present a way of understanding the world that sits between physical geography and contemporary political borders.")}</p>
+                    {/* <h1 className={`${syncopate.className} font-black text-4xl sm:text-6xl`}>RECCS</h1> */}
+                    <p className="mt-0 text-xs uppercase opacity-50 tracking-widest">a geoscheme-based media library</p>
+                    <p className="mt-4 max-w-[720px]">{preParse("Reccs is an archive of literary, cinematic, theatrical, and quantitative compositions, organized by a modified UN geoscheme of 30 culturally-affiliated subregions—an attempt to present a way of understanding the world that sits between physical geography and contemporary political borders.")}</p>
                     <p className="mt-4 text-sm">
                         <ColorLink to="/" text="explore the geoscheme" c="r" /> · <ColorLink to="/about" text="about" c="o" /> · <ColorLink to="/literature" text="literature" c="y" /> · <ColorLink to="/cinema" text="cinema" c="g" /> · <ColorLink to="/theatre" text="theatre" c="b" /> · <ColorLink to="/systems" text="systems" c="p" />
                     </p>

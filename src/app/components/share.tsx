@@ -15,9 +15,9 @@ const shareIcons: React.ReactElement[] = [
 
 const share = async (label: string) => {
     const url = (typeof window !== 'undefined') ? window.location.href : '';
-    const title = 'Reccs: '+label;
+    const title = 'Reccs - '+label;
     if (navigator.share) {
-        try { await navigator.share({title:title,text:'Learn more about '+label+' on evangedrich.com!',url:url}); console.log('Content shared successfully'); }
+        try { await navigator.share({title:title,text:'Learn more about '+label+' at reccs.media!',url:url}); console.log('Content shared successfully'); }
         catch (error) { if ((error as Error).name !== 'AbortError') console.error('Error sharing content:', error); }
     }
 };

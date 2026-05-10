@@ -88,11 +88,11 @@ const getEmbed = (url: string): React.ReactNode => {
     }
     if (url.substring(12, 16) === "ictv") {
         return (
-            <>
-                This video is from ICTV Australia; click{" "}
-                <a href={url} target="_blank" rel="noreferrer" className={externalLinkClass}>here</a>{" "}
-                to watch.
-            </>
+            <div className="w-full h-full flex items-center justify-center">
+                This video is from ICTV Australia; click&nbsp;
+                <a href={url} target="_blank" rel="noreferrer" className={externalLinkClass}>here</a>
+                &nbsp;to watch.
+            </div>
         );
     }
     if (url.substring(12, 17) === "isuma") {
@@ -155,7 +155,7 @@ export function PrepVideo({ vid }: { vid: string | string[] }) {
         <div className="relative border-2 bg-[var(--color-mid)] rounded-2xl overflow-hidden">
             <div
                 ref={seriesRef}
-                className="flex overflow-x-scroll snap-x snap-mandatory scroll-smooth"
+                className="flex overflow-x-scroll no-scrollbar snap-x snap-mandatory scroll-smooth"
             >
                 {urls.map((url, i) => (
                     <div

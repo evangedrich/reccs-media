@@ -1,0 +1,15 @@
+# Cloudflare Workers Assets _headers file.
+# Browsers cache posters/textures for 1 day without revalidating, then serve
+# stale for up to 7 more days while refetching in the background.
+# Trade-off: if a poster is redeployed under the same filename, users may see
+# the old image for up to ~1 day after deploy.
+#
+# To roll back to revalidate-on-every-load (the previous behavior), either
+# delete this file, or replace the Cache-Control lines with:
+#   Cache-Control: public, max-age=0, must-revalidate
+
+/posters/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/textures/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800

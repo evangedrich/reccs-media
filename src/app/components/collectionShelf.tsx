@@ -34,13 +34,13 @@ export default function CollectionShelf({
                 {collections.map((coll,i) => (
                     <React.Fragment key={`${coll.id}shelf`}>
                         <div
-                            className={`w-[68px] sm:w-auto shrink-0 border-x-2 ml-[-2px] border-solid border-[var(--color-front)] cursor-pointer ${i===collections.length-1 ? "mr-[-2px]" : ""} px-4 py-3 group z-10 bg-[var(--color-back)] flex sm:block justify-center`}
+                            className={`w-[72px] shrink-0 border-x-2 ml-[-2px] border-solid border-[var(--color-front)] cursor-pointer ${i===collections.length-1 ? "mr-[-2px]" : ""} px-4 py-3 group z-10 bg-[var(--color-back)] flex sm:block justify-center`}
                             onClick={() => setCurrColl(coll.id)}
                         >
-                            <h1 className={`[writing-mode:vertical-rl] px-2 rounded-sm sm:text-3xl text-xl font-bold ${coll.id===currColl ? "italic" : ""} group-active:opacity-80 ${getColor(coll.id)}`}>{coll.name}</h1>
+                            <h1 className={`[writing-mode:vertical-rl] px-2 rounded-sm sm:text-3xl text-xl font-bold ${coll.id===currColl ? "italic" : ""} group-active:opacity-80 ${getColor(coll.id)} whitespace-nowrap`}>{coll.name}</h1>
                         </div>
                         <div style={{maxWidth: currColl===coll.id ? `calc(100vw - (68px * ${collections.length}))` : "0"}} className={`transition-[max-width] sm:flex hidden transition-500 overflow-hidden max-h-[calc(100vh_-_var(--header-h)_-_126px)] min-h-[34rem]`}>
-                            <div style={{width:`calc((100vw - (68px * ${collections.length})) / 2)`}} className={`${styles.shelfText} border-r-2 shrink-0 p-4 overflow-auto transition-[height]]`}>
+                            <div style={{width:`calc((100vw - (68px * ${collections.length})) / 2)`}} className={`${styles.shelfText} border-r-2 shrink-0 p-4 overflow-y-auto no-scrollbar transition-[height]]`}>
                                 <div>
                                     <Markdown>{"# "+coll.header}</Markdown>
                                     <Markdown>{preParse(coll.info ?? "")}</Markdown>
@@ -54,7 +54,7 @@ export default function CollectionShelf({
             </div>
             <div className="sm:hidden border-b-2 p-2 flex flex-col gap-2">{collections.map((coll,i) => (
                 <div key={`mobileColl${i}`} className="border-2 p-1 active:opacity-80" onClick={() => setCurrColl(coll.id)}>
-                    <div className={`text-center p-1 font-bold ${currColl===coll.id ? "bg-[var(--color-front)] text-[var(--color-back)]" : ""}`}>{coll.name}</div>
+                    <div className={`text-center p-1 font-bold ${currColl===coll.id ? "bg-[var(--color-front)] text-[var(--color-back)] font-extrabold" : ""}`}>{coll.name}</div>
                 </div>
             ))}</div>
             <div className={`${styles.shelfText} sm:hidden flex flex-col`}>

@@ -29,7 +29,7 @@ export default async function DetailPage({ params }: { params: Promise<{ mediaID
     return (
         <div className="w-full h-full flex flex-wrap border-b-2 grow-1">
             <div className="basis-full sm:basis-1/3 px-4 pt-4 sm:pb-4 sm:border-r-2 border-solid border-[var(--color-front)] flex flex-col items-end">
-                <Image src={`/posters/${entry?.id}.webp`} alt="Media Image" width="300" height="400" className="w-full sm:w-[300px] h-auto sm:sticky sm:top-[calc(var(--header-h)+1rem)] transition-[top]" priority unoptimized />
+                <Image src={`/posters/${entry?.id}.webp`} alt="Media Image" width="300" height="400" className="w-full sm:w-[300px] h-auto sm:sticky sm:top-[calc(var(--header-h)+1rem)] transition-[top] aspect-3/4 bg-[var(--color-mid)]" priority unoptimized />
             </div>
             <div className="basis-full sm:basis-2/3 min-w-0">
                 <StickyTitleBar title={title}>

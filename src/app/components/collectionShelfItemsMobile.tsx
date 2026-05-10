@@ -20,7 +20,7 @@ export default function ShelfItemsMobile({
     const padCount = (tracks - (entries.length % tracks)) % tracks;
     return (
         <div className="relative">
-            <div className={`border-b-2 w-[100vw] grid gap-[2px] bg-[var(--color-front)] ${(isExpanded || entries.length===0) ? "grid-cols-3" : "overflow-x-auto grid-rows-2 grid-flow-col auto-cols-[7.5rem] auto-rows-[10rem]"}`}>
+            <div className={`border-b-2 w-[100vw] grid gap-[2px] bg-[var(--color-front)] ${(isExpanded || entries.length===0) ? "grid-cols-3" : "overflow-x-auto no-scrollbar grid-rows-2 grid-flow-col auto-cols-[7.5rem] auto-rows-[10rem]"} overscroll-x-none`}>
                 {entries.map(entry => (
                     <Link key={`mobile_${entry?.id}`} href={`/${entry.id}`} className="block bg-[var(--color-back)]">
                         <div className="p-2">

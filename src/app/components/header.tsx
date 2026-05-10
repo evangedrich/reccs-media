@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from "react";
-import { usePathname } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 import Link from "next/link";
 import ColorLink from "./colorLink";
 import TinyMap from "./tinyMap";
@@ -26,6 +26,7 @@ export default function Header() {
     const [colonVisible, setColonVisible] = useState(true);
     
     const pathname = usePathname();
+    const router = useRouter();
     useEffect(() => {
         document.documentElement.style.setProperty('--header-h', showWidget ? '7.625rem' : '5.5rem');
     }, [showWidget]);
@@ -43,7 +44,7 @@ export default function Header() {
             <div className="w-full border-b-2 border-solid border-[var(--color-front)] flex items-center justify-between overflow-hidden">
                 {/* <div className={`${notoEmoji.className} text-2xl w-13 h-13 text-center leading-13`}>🌎</div> */}
                 <div className={`w-13 h-13 text-center leading-13 flex items-center ${showGlobe?"justify-end max-sm:justify-center":"justify-center max-sm:justify-center"} active:scale-90 transition-[scale]`}>
-                    <div className={`h-6 ${showGlobe?"rounded-[1px] w-10 max-sm:rounded-full max-sm:w-6":"rounded-full w-6 max-sm:rounded-[1px] max-sm:w-6"} overflow-hidden ring-[1.8px] ring-[var(--color-front)] cursor-pointer group hover:opacity-80`} onClick={toggleGlobe}>
+                    <div className={`h-6 ${showGlobe?"rounded-[1px] w-10 max-sm:rounded-full max-sm:w-6":"rounded-full w-6 max-sm:rounded-[1px] max-sm:w-6"} overflow-hidden ring-[1.8px] ring-[var(--color-front)] cursor-pointer group hover:opacity-80`} onClick={() => pathname==="/" ? toggleGlobe() : router.push('/')}>
                         <div className={`flex h-6 ${showGlobe?"":"animate-[map-scroll_800ms_linear_infinite] max-sm:animate-none"} [animation-play-state:paused] group-hover:[animation-play-state:running] ml-[-5px]`}>
                             <div className={`${showGlobe?"ml-[-1.5px] max-sm:ml-[-3px]":"max-sm:ml-[-5px]"} shrink-0 w-[50px] h-6`}><TinyMap /></div>
                             <div className="shrink-0 w-[50px] h-6"><TinyMap /></div>
