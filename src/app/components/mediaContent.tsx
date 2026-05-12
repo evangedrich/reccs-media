@@ -27,7 +27,7 @@ export default function MediaContent({ entry }: { entry: any }) {
     const [currAbbr, setCurrAbbr] = useState(['',''])
     const tabs: string[] = allTabs.map(cat => cat.id).filter((cat,i) => (
         allTabs[i].keys.some(
-            key => Object.keys(entry).includes(key) && entry[key]!=="" && entry[key][0]!==""
+            key => Object.keys(entry).includes(key) && entry[key]!=="" && entry[key][0]!=="" && entry[key][0]
         )
     ));
     const getContent = () => {

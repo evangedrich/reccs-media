@@ -25,11 +25,13 @@ export const modTradNovels = [
       `I’ve always believed that one of the greatest delights for a young lad, akin to the pleasure of a well-prepared couscous with butter, is to be asked about his homeland by a visitor passing through for the first time. It’s a simple joy, but one that holds immense significance.`,
       `Reflecting on that encounter even now, I can’t help but reminisce about the passing days... those days... each of them filled with contentment. Oh, if only today were as delightful as those bygone times...`
     ],
-    infoURL: "https://amazighworldnews.com/the-first-kabyle-novel-translated-into-english/",
-    bioURL: "https://www-paris--iea-fr.translate.goog/fr/les-publications/lectures-croisees-des-ecrits-de-belaid-ait-ali-1909-1950?_x_tr_sl=fr&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=sc",
+    infoURL: "",
+    bioURL: "",
     textURL: "",
     ref: [
-      {id: "aitali-1964", type: "book", title: "Lwali n udrar (All Rags' Journey to Sacred Heights)", contributors: [{firstName: "Belaïd", lastName: "Ait-Ali", role: "author"}], pubDate: {year: 1964}, publisher: "Fichier de Documentation Berbère", location: "Fort-National, Algeria", meta: {sortKey: "text", notes: "A pioneering work of Kabyle (Berber) literature."}}
+      {id: "aitali-1964", type: "book", title: "Lwali n udrar (All Rags' Journey to Sacred Heights)", contributors: [{firstName: "Belaïd", lastName: "Ait-Ali", role: "author"}], pubDate: {year: 1964}, publisher: "Fichier de Documentation Berbère", location: "Fort-National, Algeria", meta: {sortKey: "text", notes: "A pioneering work of Kabyle (Berber) literature."}},
+      { id: "salhi-2026-ait-ali-iea", type: "article", title: "Lectures croisées des écrits de Belaïd Aït Ali (1909-1950)", contributors: [ { firstName: "Mohand Akli", lastName: "Salhi", role: "author" }, { firstName: "Tassadit", lastName: "Yacine", role: "editor/preface" } ], pubDate: { year: 2026 }, url: "https://www-paris--iea-fr.translate.goog/fr/les-publications/lectures-croisees-des-ecrits-de-belaid-ait-ali-1909-1950?_x_tr_sl=fr&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=sc", publisher: "Paris Institute for Advanced Study / L'Harmattan", location: "Algeria / France", medium: "Scholarly Publication", meta: { notes: "Mohand Akli Salhi provides a rigorous analysis of Belaïd Aït Ali's literary innovation, focusing on how he transformed Kabyle oral genres into modern written prose. Salhi's work is essential for understanding the 'internal' logic of Kabyle literature beyond its colonial-era transcriptions.", grade: "A", tags: ["Mohand Akli Salhi", "Belaïd Aït Ali", "Kabyle Literature", "Amazigh", "Literary Theory", "Algeria", "Taqbaylit", "Post-Colonialism"] } },
+      { id: "bouzeboudja-2024-all-rags-ait-ali", type: "webpage", title: "The First Kabyle Novel Translated into English: All Rags’ Journey to Sacred Heights", contributors: [ { firstName: "", lastName: "Amazigh World News", role: "author" }, { firstName: "Noufel", lastName: "Bouzeboudja", role: "translator" } ], pubDate: { year: 2024, month: 5, day: 22 }, url: "https://amazighworldnews.com/the-first-kabyle-novel-translated-into-english/", publisher: "AXXAM N TMUSNI (The House of Knowledge)", medium: "Literary News / Digital Feature", meta: { notes: "A landmark record documenting the 2024 English translation of 'Lwali n Wedrar' (The Saint of the Mountain), written in 1947. The novel follows 'All Rags,' a kind-hearted giant, and his wife 'Thumbelina' (Taḍadect). It is the earliest known novel written in the Kabyle language, predating the author's posthumous 1950s 'Cahiers'.", grade: "A", tags: ["Belaïd Aït Ali", "Noufel Bouzeboudja", "Kabyle Literature", "Lwali n Wedrar", "All Rags", "Thumbelina", "Amazigh", "1947", "Translation"] } }
     ]
   },
   {
@@ -61,9 +63,9 @@ export const modTradNovels = [
     ],
     infoURL: "https://www.google.com/books/edition/The_Strange_Bride/Orb4rPhlyp4C",
     bioURL: "https://en.wikipedia.org/wiki/Grace_Ogot",
-    textURL: "https://archive.org/details/strangebride00grac",
+    textURL: "",
     ref: [
-      {id: "ogot-1966", type: "book", title: "Miaha (Strange Bride)", contributors: [{firstName: "Grace", lastName: "Ogot", role: "author"}], pubDate: {year: 1966}, publisher: "East African Publishing House", location: "Nairobi, Kenya", meta: {sortKey: "text", notes: "Originally published in Dholuo as 'Nya-Dera'."}}
+      {id: "ogot-1966", type: "book", title: "Miaha (Strange Bride)", contributors: [{firstName: "Grace", lastName: "Ogot", role: "author"}], url: "https://archive.org/details/strangebride00grac", pubDate: {year: 1966}, publisher: "East African Publishing House", location: "Nairobi, Kenya", meta: {sortKey: "text", notes: "Originally published in Dholuo as 'Nya-Dera'."}}
     ]
   },
   {
@@ -209,10 +211,10 @@ export const modTradNovels = [
     ],
     bioURL: "https://en.wikipedia.org/wiki/Mitiarjuk_Nappaaluk",
     infoURL: "https://en.wikipedia.org/wiki/Sanaaq",
-    textURL: "https://archive.org/details/sanaaqinuitnovel0000napp",
+    textURL: "",
     playlistURL: "https://open.spotify.com/playlist/3LXFVWrK6bttZnfUkf5Vvw",
     ref: [
-      {id: "nappaaluk-1987", type: "book", title: "ᓴᓈᖅ (Sanaaq)", contributors: [{firstName: "Mitiarjuk", lastName: "Nappaaluk", role: "author"}], pubDate: {year: 1987}, publisher: "Association Inuksiutiit Katimajiit", location: "Québec", meta: {sortKey: "text", notes: "First novel in Inuktitut syllabics."}}
+      {id: "nappaaluk-1987", type: "book", title: "ᓴᓈᖅ (Sanaaq)", contributors: [{firstName: "Mitiarjuk", lastName: "Nappaaluk", role: "author"}], url: "https://archive.org/details/sanaaqinuitnovel0000napp", pubDate: {year: 1987}, publisher: "Association Inuksiutiit Katimajiit", location: "Québec", meta: {sortKey: "text", notes: "First novel in Inuktitut syllabics."}}
     ]
   },
   {
@@ -235,9 +237,9 @@ export const modTradNovels = [
     ],
     bioURL: "https://en.wikipedia.org/wiki/Gladys_Tantaquidgeon",
     infoURL: "",
-    textURL: "https://archive.org/details/medicinetraillif0000fawc",
+    textURL: "",
     ref: [
-      {id: "tantaquidgeon-1930", type: "book", title: "Medicine Trail", contributors: [{firstName: "Gladys", lastName: "Tantaquidgeon", role: "author"}], pubDate: {year: 1930}, publisher: "University of Pennsylvania", location: "Philadelphia", meta: {sortKey: "text", notes: "Mohegan medicinal and cultural records."}}
+      {id: "tantaquidgeon-1930", type: "book", title: "Medicine Trail", contributors: [{firstName: "Gladys", lastName: "Tantaquidgeon", role: "author"}], url: "https://archive.org/details/medicinetraillif0000fawc", pubDate: {year: 1930}, publisher: "University of Pennsylvania", location: "Philadelphia", meta: {sortKey: "text", notes: "Mohegan medicinal and cultural records."}}
     ]
   },
   {
@@ -265,9 +267,9 @@ export const modTradNovels = [
     ],
     infoURL: "https://www.google.com/books/edition/S%C3%A1anii_Dahataal_The_Women_Are_Singing/nvcOAQAAMAAJ",
     bioURL: "https://en.wikipedia.org/wiki/Luci_Tapahonso",
-    textURL: "https://archive.org/details/saaniidahataawom0000tapa",
+    textURL: "",
     ref: [
-      {id: "tapahonso-1993", type: "book", title: "Sáanii Dahataał: The Women Are Singing", contributors: [{firstName: "Luci", lastName: "Tapahonso", role: "author"}], pubDate: {year: 1993}, publisher: "University of Arizona Press", location: "Tucson", meta: {sortKey: "text", notes: "Diné poetry."}}
+      {id: "tapahonso-1993", type: "book", title: "Sáanii Dahataał: The Women Are Singing", contributors: [{firstName: "Luci", lastName: "Tapahonso", role: "author"}], url: "https://archive.org/details/saaniidahataawom0000tapa", pubDate: {year: 1993}, publisher: "University of Arizona Press", location: "Tucson", meta: {sortKey: "text", notes: "Diné poetry."}}
     ]
   },
   {
@@ -288,9 +290,9 @@ export const modTradNovels = [
     ],
     bioURL: "https://en.wikipedia.org/wiki/Nora_Marks_Dauenhauer",
     infoURL: "",
-    textURL: "https://tlingitlanguage.com/wp-content/uploads/2015/01/Dauenhauer-1987-Haa-Shuk%C3%A1.pdf",
+    textURL: "",
     ref: [
-      {id: "marks-1987", type: "book", title: "Haa Shuká, Our Ancestors", contributors: [{firstName: "Nora Keix̱wnéi", lastName: "Marks", role: "author"}], pubDate: {year: 1987}, publisher: "University of Washington Press", location: "Seattle", meta: {sortKey: "text", notes: "Tlingit oral literature."}}
+      {id: "marks-1987", type: "book", title: "Haa Shuká, Our Ancestors", contributors: [{firstName: "Nora Keix̱wnéi", lastName: "Marks", role: "author"}], url: "https://tlingitlanguage.com/wp-content/uploads/2015/01/Dauenhauer-1987-Haa-Shuk%C3%A1.pdf", pubDate: {year: 1987}, publisher: "University of Washington Press", location: "Seattle", meta: {sortKey: "text", notes: "Tlingit oral literature."}}
     ]
   },
   {
@@ -334,10 +336,10 @@ export const modTradNovels = [
     ],
     bioURL: "",
     infoURL: "",
-    textURL: "https://archive.org/details/twoleggingsthema008451mbp",
+    textURL: "",
     ref: [
       {id: "wildschut-1919", type: "book", title: "[Field manuscript of Two Leggings]", contributors: [{lastName: "Issaatxalúash", role: "author"},{lastName: "Yellowtail", firstName: "Robert", role: "translator"},{lastName: "Wildschut", firstName: "William", role: "editor"},{lastName: "Nabokov", firstName: "Peter", role: "editor"}], pubDate: {year: 1919}, publisher: "National Museum of the American Indian Archive Center", location: "Smithsonian Institution, Washington, DC", medium: "[Field manuscript]", url: "https://biblioteca.trabalhoindigenista.org.br/wp-content/uploads/2018/06/AYVU-RAPYTA-Textos-Misticos-de-los.pdf", meta: {sortKey: "text"}},
-      {id: "nabokov-1967", type: "book", title: "Two Leggings: The Making of a Crow Warrior", contributors: [{lastName: "Nabokov", firstName: "Peter", role: "author"}], pubDate: {year: 1967}, publisher: "Thomas Y. Crowell Co.", location: "New York", meta: {sortKey: "text", notes: "Apitisée (Two Leggings) was the Crow narrator."}}
+      {id: "nabokov-1967", type: "book", title: "Two Leggings: The Making of a Crow Warrior", contributors: [{lastName: "Nabokov", firstName: "Peter", role: "author"}], url: "https://archive.org/details/twoleggingsthema008451mbp", pubDate: {year: 1967}, publisher: "Thomas Y. Crowell Co.", location: "New York", meta: {sortKey: "text", notes: "Apitisée (Two Leggings) was the Crow narrator."}}
     ]
   },
   {
@@ -381,9 +383,9 @@ export const modTradNovels = [
     ],
     infoURL: "https://www.goodreads.com/book/show/1148995.A_Mayan_Life",
     bioURL: "https://uwm.edu/clacs/wp-content/uploads/sites/329/2017/10/Gaspar-Pedro-Gonz%C3%A1lez-Bio.pdf",
-    textURL: "https://archive.org/details/mayanlife00gonz",
+    textURL: "",
     ref: [
-      {id: "gonzalez-1992", type: "book", title: "La otra cara", contributors: [{firstName: "Gaspar Pedro", lastName: "González", role: "author"}], pubDate: {year: 1992}, publisher: "Ministerio de Cultura", location: "Guatemala", meta: {sortKey: "text", notes: "First novel by a Maya author."}}
+      {id: "gonzalez-1992", type: "book", title: "La otra cara", contributors: [{firstName: "Gaspar Pedro", lastName: "González", role: "author"}], url: "https://archive.org/details/mayanlife00gonz", pubDate: {year: 1992}, publisher: "Ministerio de Cultura", location: "Guatemala", meta: {sortKey: "text", notes: "First novel by a Maya author."}}
     ]
   },
   {
@@ -458,9 +460,9 @@ export const modTradNovels = [
     ],
     infoURL: "https://www.goodreads.com/book/show/44413330-phuyup-yawar-waqaynin-the-bloody-tear-of-a-cloud",
     bioURL: "https://arts-sciences.buffalo.edu/linguistics/faculty/gladys-camacho-rios.html",
-    textURL: "https://bpb-us-e1.wpmucdn.com/wp.nyu.edu/dist/1/1567/files/2015/04/phuyup_yawar_waqaynin_translation_2014.pdf",
+    textURL: "",
     ref: [
-      {id: "camacho-2019", type: "book", title: "Phuyup Yawar Waqaynin", contributors: [{firstName: "Gladys Camacho", lastName: "Rios", role: "author"}], pubDate: {year: 2019}, publisher: "Editorial Kipus", location: "Cochabamba, Bolivia", meta: {sortKey: "text", notes: "Quechua narrative."}}
+      {id: "camacho-2019", type: "book", title: "Phuyup Yawar Waqaynin", contributors: [{firstName: "Gladys Camacho", lastName: "Rios", role: "author"}], url: "https://bpb-us-e1.wpmucdn.com/wp.nyu.edu/dist/1/1567/files/2015/04/phuyup_yawar_waqaynin_translation_2014.pdf", pubDate: {year: 2019}, publisher: "Editorial Kipus", location: "Cochabamba, Bolivia", meta: {sortKey: "text", notes: "Quechua narrative."}}
     ]
   },
   {
@@ -502,9 +504,9 @@ export const modTradNovels = [
     ],
     infoURL: "https://www.nebraskapress.unl.edu/nebraska/9780803289888/alejandro-tsakimp/",
     bioURL: "",
-    textURL: "https://archive.org/details/alejandrotsakimp0000rube",
+    textURL: "",
     ref: [
-      {id: "tsakimp-1996", type: "book", title: "Uwíshin: A Shuar Healer", contributors: [{firstName: "Alejandro", lastName: "Tsakimp", role: "author"}], pubDate: {year: 1996}, publisher: "Ediciones Abya-Yala", location: "Quito", meta: {sortKey: "text"}}
+      {id: "tsakimp-1996", type: "book", title: "Uwíshin: A Shuar Healer", contributors: [{firstName: "Alejandro", lastName: "Tsakimp", role: "author"}], url: "https://archive.org/details/alejandrotsakimp0000rube", pubDate: {year: 1996}, publisher: "Ediciones Abya-Yala", location: "Quito", meta: {sortKey: "text"}}
     ]
   },
   {
@@ -609,10 +611,10 @@ export const modTradNovels = [
     ],
     infoURL: "https://en.wikipedia.org/wiki/Notes_of_a_Crocodile",
     bioURL: "https://en.wikipedia.org/wiki/Qiu_Miaojin",
-    textURL: "https://archive.org/details/notesofcrocodile0000qium",
+    textURL: "",
     playlistURL: "https://open.spotify.com/playlist/6Skk6jwCC6hNGazj4EwyJ5",
     ref: [
-      {id: "qiu-1994", type: "book", title: "鱷魚手記", contributors: [{firstName: "Qiū", lastName: "Miàojīn", role: "author"}], pubDate: {year: 1994}, publisher: "China Times Publishing", location: "Taipei", meta: {sortKey: "text"}}
+      {id: "qiu-1994", type: "book", title: "鱷魚手記", contributors: [{firstName: "Qiū", lastName: "Miàojīn", role: "author"}], url: "https://archive.org/details/notesofcrocodile0000qium", pubDate: {year: 1994}, publisher: "China Times Publishing", location: "Taipei", meta: {sortKey: "text"}}
     ]
   },
   {
@@ -650,9 +652,9 @@ export const modTradNovels = [
     ],
     bioURL: "https://en.wikipedia.org/wiki/Kunzang_Choden",
     infoURL: "https://www.google.com/books/edition/The_Circle_of_Karma/96ha-lop9CEC?hl=en",
-    textURL: "https://archive.org/details/circleofkarma00kunz",
+    textURL: "",
     ref: [
-      {id: "choden-2005", type: "book", title: "Circle of Karma", contributors: [{firstName: "Kunzang", lastName: "Choden", role: "author"}], pubDate: {year: 2005}, publisher: "Zubaan", location: "New Delhi", meta: {sortKey: "text"}}
+      {id: "choden-2005", type: "book", title: "Circle of Karma", contributors: [{firstName: "Kunzang", lastName: "Choden", role: "author"}], url: "https://archive.org/details/circleofkarma00kunz", pubDate: {year: 2005}, publisher: "Zubaan", location: "New Delhi", meta: {sortKey: "text"}}
     ]
   },
   {
@@ -691,9 +693,9 @@ export const modTradNovels = [
     ],
     bioURL: "https://en.wikipedia.org/wiki/Pramoedya_Ananta_Toer",
     infoURL: "https://en.wikipedia.org/wiki/This_Earth_of_Mankind",
-    textURL: "https://archive.org/details/thisearthofmanki0000toer_g3i3",
+    textURL: "",
     ref: [
-      {id: "toer-1980", type: "book", title: "Bumi Manusia", contributors: [{firstName: "Pramoedya Ananta", lastName: "Toer", role: "author"}], pubDate: {year: 1980}, publisher: "Hasta Mitra", location: "Jakarta", meta: {sortKey: "text"}}
+      {id: "toer-1980", type: "book", title: "Bumi Manusia", contributors: [{firstName: "Pramoedya Ananta", lastName: "Toer", role: "author"}], url: "https://archive.org/details/thisearthofmanki0000toer_g3i3", pubDate: {year: 1980}, publisher: "Hasta Mitra", location: "Jakarta", meta: {sortKey: "text"}}
     ]
   },
   {
@@ -719,10 +721,10 @@ export const modTradNovels = [
     ],
     bioURL: "https://en.wikipedia.org/wiki/Bama_(writer)",
     infoURL: "https://www.goodreads.com/book/show/43990.Karukku",
-    textURL: "https://www.scribd.com/document/485947405/Karukku-by-Bama-pdf",
+    textURL: "",
     playlistURL: "https://open.spotify.com/playlist/39VuUqOk9cG2P3uZlPFy3F",
     ref: [
-      {id: "bama-1992", type: "book", title: "கருக்கு (Karukku)", contributors: [{lastName: "Bama", role: "author"}], pubDate: {year: 1992}, publisher: "Ideas", location: "Madurai", meta: {sortKey: "text"}}
+      {id: "bama-1992", type: "book", title: "கருக்கு (Karukku)", contributors: [{lastName: "Bama", role: "author"}], url: "https://www.scribd.com/document/485947405/Karukku-by-Bama-pdf", pubDate: {year: 1992}, publisher: "Ideas", location: "Madurai", meta: {sortKey: "text"}}
     ]
   },
   {
@@ -747,10 +749,10 @@ export const modTradNovels = [
     ],
     infoURL: "https://en.wikipedia.org/wiki/Girls_of_Riyadh",
     bioURL: "https://en.wikipedia.org/wiki/Rajaa_al-Sanea",
-    textURL: "https://archive.org/details/girlsofriyadh0000alsa",
+    textURL: "",
     playlistURL: "https://open.spotify.com/playlist/59jaUpFiKwByMRmD2gNK98",
     ref: [
-      {id: "alsanea-2005", type: "book", title: "بنات الرياض", contributors: [{firstName: "Rajaa", lastName: "al-Sanea", role: "author"}], pubDate: {year: 2005}, publisher: "Fig-Tree", location: "Beirut", meta: {sortKey: "text"}}
+      {id: "alsanea-2005", type: "book", title: "بنات الرياض", contributors: [{firstName: "Rajaa", lastName: "al-Sanea", role: "author"}], url: "https://archive.org/details/girlsofriyadh0000alsa", pubDate: {year: 2005}, publisher: "Fig-Tree", location: "Beirut", meta: {sortKey: "text"}}
     ]
   },
   {
@@ -810,9 +812,9 @@ export const modTradNovels = [
     ],
     infoURL: "https://www.goodreads.com/book/show/1828552.The_Blue_Sky",
     bioURL: "https://en.wikipedia.org/wiki/Galsan_Tschinag",
-    textURL: "https://archive.org/details/blueskynovel00tsch",
+    textURL: "",
     ref: [
-      {id: "tschinag-1991", type: "book", title: "Der blaue Himmel", contributors: [{firstName: "Galsan", lastName: "Tschinag", role: "author"}], pubDate: {year: 1991}, publisher: "Suhrkamp", location: "Frankfurt", meta: {sortKey: "text"}}
+      {id: "tschinag-1991", type: "book", title: "Der blaue Himmel", contributors: [{firstName: "Galsan", lastName: "Tschinag", role: "author"}], url: "https://archive.org/details/blueskynovel00tsch", pubDate: {year: 1991}, publisher: "Suhrkamp", location: "Frankfurt", meta: {sortKey: "text"}}
     ]
   },
   {
@@ -864,10 +866,10 @@ export const modTradNovels = [
     ],
     bioURL: "https://en.wikipedia.org/wiki/Voltaire",
     infoURL: "https://en.wikipedia.org/wiki/Candide",
-    textURL: "https://www.gutenberg.org/files/19942/19942-h/19942-h.htm",
+    textURL: "",
     playlistURL: "https://open.spotify.com/playlist/4OFcQ76jTyggZqEJdT7S3Z",
     ref: [
-      {id: "voltaire-1759", type: "book", title: "Candide", contributors: [{lastName: "Voltaire", role: "author"}], pubDate: {year: 1759}, publisher: "Cramer", location: "Geneva", meta: {sortKey: "text"}}
+      {id: "voltaire-1759", type: "book", title: "Candide", contributors: [{lastName: "Voltaire", role: "author"}], url: "https://www.gutenberg.org/files/19942/19942-h/19942-h.htm", pubDate: {year: 1759}, publisher: "Cramer", location: "Geneva", meta: {sortKey: "text"}}
     ]
   },
   {
@@ -942,7 +944,8 @@ export const modTradNovels = [
       `Watching these and sitting in the cold, crisp mountain air made me feel momentarily quiet, but then a wave of sudden pain engulfed me, I gave a cry at which your aunties came to my rescue and brought me into the house!`,
       `After what seemed an everlasting agony of pain, I was conscious and unconscious in turns, and at one moment the pain stopped, and I heard a sharp wailing cry, that was the end.`,
       `When I came to, in the early hours of the next day, your aunties placed you in my arms, I remember saying, boy or girl? They told me in the traditional indirect way saying <i>Kua si nenga</i> in other words they said that “I killed a bird or that you were a boy”!`,
-      `\n \nIf you will bear with me, we shall pause to hear about the society into which I was born. This will give us the total picture of the people from whom I got what I have. The following are descriptions of my people from whom I got what I have about a decade before my arrival.`,
+      `<...>`,
+      `If you will bear with me, we shall pause to hear about the society into which I was born. This will give us the total picture of the people from whom I got what I have. The following are descriptions of my people from whom I got what I have about a decade before my arrival.`,
       `My birth, even though insignificant in itself, was preceded by an extraordinary event.`,
       `As it was related to me, an extraordinary white bird making thunderous and booming sounds suddenly appeared over the eastern horizon disappearing into the west.`,
       `The timid ran for cover while a few tried to shoot it down, but the strange bird went so fast and flew so high that everyone was baffled.`,
@@ -1025,9 +1028,9 @@ export const modTradNovels = [
     ],
     bioURL: "https://en.wikipedia.org/wiki/Albert_Wendt",
     infoURL: "https://www.goodreads.com/book/show/1135796.Pouliuli",
-    textURL: "https://archive.org/details/pouliuli0000wend_g5p3",
+    textURL: "",
     ref: [
-      {id: "wendt-1977", type: "book", title: "Pōuliuli", contributors: [{firstName: "Albert", lastName: "Wendt", role: "author"}], pubDate: {year: 1977}, publisher: "Longman Paul", location: "Auckland", meta: {sortKey: "text"}}
+      {id: "wendt-1977", type: "book", title: "Pōuliuli", contributors: [{firstName: "Albert", lastName: "Wendt", role: "author"}], url: "https://archive.org/details/pouliuli0000wend_g5p3", pubDate: {year: 1977}, publisher: "Longman Paul", location: "Auckland", meta: {sortKey: "text"}}
     ]
   }
 ];
@@ -1047,7 +1050,7 @@ export const stirrPoetry = [
       `In the nights bathed in moonlight<br>He will call me, <i>Mririda</i>, <i>Mririda</i>,<br>Sweet nickname that I love,<br>And for him I will release my piercing call,<br>Shrill and drawn out,<br>Bringing wonder from men<br>And jealousy from women,<br>Nothing like it ever heard in this valley.`
     ],
     infoURL: "https://en.wikipedia.org/wiki/Mririda_n%27Ait_Attik",
-    mediaURL: "https://youtu.be/WWDjS_xWyr0",
+    mediaURL: ["https://youtu.be/WWDjS_xWyr0"],
     textURL: "",
     ref: [
       { id: "mririda-1974-songs", type: "book", title: "Songs of Mririda: Courtesan of the High Atlas", contributors: [ { firstName: "Mririda", lastName: "n’Ait Attik", role: "author" }, { firstName: "Daniel", lastName: "Halpern", role: "translator" }, { firstName: "Paula", lastName: "Paley", role: "translator" }, { firstName: "René", lastName: "Euloge", role: "editor" } ], pubDate: { year: 1974 }, url: "https://archive-org.translate.goog/stream/les_chants_de_la_tassaout/book_djvu.txt?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en", publisher: "Unicorn Press", location: "Greensboro, NC", medium: "Print (Hardcover/Paperback)", meta: { notes: "A translation of 'Les Chants de la Tassaout'. Mririda was a renowned performer in the Azilal region. Her poetry is noted for its sharp wit and subversion of traditional gender roles, captured through the Tashelhit oral tradition.", grade: "C", pages: "54", isbn: "0877750629", tags: ["Amazigh", "Berber", "Morocco", "High Atlas", "Tashelhit", "Oral Tradition", "Women's Poetry"], sortKey: "text" } }
@@ -1064,11 +1067,12 @@ export const stirrPoetry = [
       `<b>RAAGE UGAAS WARFAA</b> was a chief, poet, and Somali military warrior who lived around the middle of the 19th century. Considered by many Somali to be the best <i>halabuur</i>, Raage Ugaas is remembered for his poems, stories, and interesting events. He was the first to employ <i>guudmaar</i>, an allegorical technique that old poets used to send and convey secret messages.`
     ],
     excerpt: [`Night had fallen and behind closed doors everyone was sleeping<br>Thunder called out with a clamour of rain like shots from a thousand rifles<br>So was my wailing heard that they thought it a lion approaching<br>For men the spine and ribsides are the body’s central support<br>I am shut away now from the eyes through which I used to see<br>Only God knows the source of my lamentations<br>The vulture with an injury to his shoulder cannot fly<br>The horse who has lost his spine cannot gallop<br>The man injured in eye and ribs cannot seek revenge<br>A man whose heart aches cannot take a bride home<br>When the camels are thirsty their outcries increase<br>Like a small girl whose mother now lives in the hereafter<br>Whose father has brought another woman to sleep in the <i>aqal</i><br>I grieve constantly from the sorrow deep in my belly<br>I’m the man whose fiancée has been given to another<br>I’m the man who sees springs but whose thirst remains unquenched<br>I’m the man whose brother is clan leader and yet is accused<br>I am that silent man who sits, slowly patting his mouth again and again`],
-    infoURL: ["https://www.ethnorema.it/wp-content/uploads/18-06-Orwin.pdf","https://somalinet.com/forums/viewtopic.php?t=304369#gsc.tab=0"],
-    mediaURL: "https://youtu.be/p-L9f9TkVFE",
+    infoURL: ["https://www.ethnorema.it/wp-content/uploads/18-06-Orwin.pdf"],
+    mediaURL: ["https://youtu.be/p-L9f9TkVFE"],
     textURL: "https://citylore.org/wp-content/uploads/2022/01/Somalia_Poetry_Raage-Ugaas_Night-Has-Fallen.pdf",
     ref: [
-      { id: "andrzejewski-1993", type: "book", title: "An Anthology of Somali Poetry", contributors: [ { firstName: "Bogumil W.", lastName: "Andrzejewski", role: "author" }, { firstName: "Sheila", lastName: "Andrzejewski", role: "author" } ], pubDate: { year: 1993 }, publisher: "Indiana University Press", location: "Bloomington, IN", version: "Republished by Hassell Street Press, 2021", isbn: "9780253304635", medium: "Print", meta: { notes: "A definitive collection covering the major genres of Somali poetry, including the Gabay, Jiifto, and Geeraar. Features translations of works by Sayyid Mohamed Abdille Hassan and others.", grade: "B", tags: ["Somali Literature", "Oral Tradition", "Horn of Africa", "Poetry Anthology"] } }
+      { id: "andrzejewski-1993", type: "book", title: "An Anthology of Somali Poetry", contributors: [ { firstName: "Bogumil W.", lastName: "Andrzejewski", role: "author" }, { firstName: "Sheila", lastName: "Andrzejewski", role: "author" } ], pubDate: { year: 1993 }, publisher: "Indiana University Press", location: "Bloomington, IN", version: "Republished by Hassell Street Press, 2021", isbn: "9780253304635", medium: "Print", meta: { notes: "A definitive collection covering the major genres of Somali poetry, including the Gabay, Jiifto, and Geeraar. Features translations of works by Sayyid Mohamed Abdille Hassan and others.", grade: "B", tags: ["Somali Literature", "Oral Tradition", "Horn of Africa", "Poetry Anthology"] } },
+      { id: "somalinet-2012-guudmar-raage-ugaas", type: "forum_post", title: "The use of guudmar In Somali poems", contributors: [ { firstName: "", lastName: "metamorphosis", role: "author/forum member" }, { firstName: "Raage", lastName: "Ugaas", role: "subject/poet" } ], pubDate: { year: 2012, month: 4, day: 25 }, url: "https://somalinet.com/forums/viewtopic.php?t=304369#gsc.tab=0", publisher: "SomaliNet Forums", location: "Ogaden - Soomaali Galbeed / Digital", medium: "Digital Forum Thread", meta: { notes: "An informal but culturally vital record detailing 'guudmar' (allegory) in Somali oral tradition. It recounts how Raage Ugaas used coded verbal messages to communicate his starvation, and how his father replied with a similarly coded message that functioned as a tamper-evident seal, exposing the messenger's theft of the food in transit.", grade: "A", tags: ["Somali", "Guudmar", "Raage Ugaas", "Oral Tradition", "Allegory", "Cryptography", "Horn of Africa", "Digital Diaspora"] } }
     ]
   },
   {
@@ -1084,7 +1088,7 @@ export const stirrPoetry = [
     ],
     excerpt: [`&emsp;&emsp;People were those<br>who broke for me the string<br>&emsp;&emsp;therefore<br>the place became like this to me<br>&emsp;&emsp;on account of it<br>because they’ve broken the string<br>I no longer hear the ringing sound through the sky<br>&emsp;&emsp;therefore<br>the place does not feel to me<br>as the place used to feel to me<br>&emsp;&emsp;on account of it<br>&emsp;&emsp;&emsp;&emsp;for<br>the place feels as if it stood open before me<br>because the string has broken for me<br>&emsp;&emsp;therefore<br>the place feels strange to me<br>&emsp;&emsp;on account of it`],
     infoURL: "",
-    mediaURL: "https://youtu.be/e12MUnOU5YI",
+    mediaURL: ["https://youtu.be/e12MUnOU5YI"],
     textURL: "https://africanpoems.net/relationships/the-broken-string/",
     ref: [
       { id: "krog-2004-stars-say-tsau", type: "book", title: "The Stars Say 'Tsau': /Xam Poetry of Diä!kwain, Kweiten-ta-⫽ken, ⫽Kabbo, /Han≠kass'o and !Kweiten-ta-⫽ken", contributors: [ { firstName: "", lastName: "Diä!kwain", role: "author" }, { firstName: "", lastName: "Kweiten-ta-⫽ken", role: "author" }, { firstName: "Antjie", lastName: "Krog", role: "author" }, { firstName: "Wilhelm", lastName: "Bleek", role: "editor" }, { firstName: "Lucy", lastName: "Lloyd", role: "editor" } ], pubDate: { year: 2004 }, url: "https://archive.org/details/starssaytsauxamp0000diak", publisher: "Kwela Books", location: "Cape Town, South Africa", medium: "Poetry Anthology", meta: { notes: "A poetic rendering of the Bleek and Lloyd Collection. Focuses on the San concept of 'The First Times.' The title refers to the sound the stars make (Tsau), reflecting the San belief in a sentient, audible universe.", grade: "B", tags: ["San", "|Xam", "South Africa", "Oral Tradition", "Antjie Krog", "Cosmology", "Indigenous Poetry"], sortKey: "text" } },
@@ -1103,7 +1107,7 @@ export const stirrPoetry = [
     ],
     excerpt: [`A dark night has fallen on the world!<br>A veil of sadness covers humanity;<br>But I have hope.<br>I have hope<br>That the earth will return from death to life,<br>To give back to humans the strength and joy<br>of laughing out loud again,<br>When the evil, which strikes almose all hearts,<br>will be taken prisoner<br>to be annihilated, by the divine will.<br>And when a new day dawns,<br>its Sun will shine brighter than ever.<br>And if a new night falls,<br>It would no longer be moonless,<br>And its stars would twinkle,<br>to make all this dark globe luminous.<br>Then life will come back to life,<br>The air will become pure again;<br>Because I keep Hope in the torment of horror<br>That the sea of difficulties imposes on us,<br>Where every human being swims today,<br>That the future days<br>Are likely to be happier.`],
     infoURL: "https://brittlepaper.com/2022/08/poetry-collection-written-in-cameroons-bamum-script-translated-in-english-and-french/",
-    mediaURL: "https://youtu.be/PrlWF8hv4Zw",
+    mediaURL: ["https://youtu.be/PrlWF8hv4Zw"],
     textURL: "",
     ref: [
       { id: "gbetnkom-2022", type: "book", title: "ꛞ꛰ ꛤ꛰ ꛜꛄ꛰ꛜꛄ꛰ꛄ꛰ꛑ ꛅꚧꚳ꛰ ꛰ꚳꛤꚩꚤꚳ꛰ [Lo’ tù lu lulùre pon ntièn] (From Resilient Shadows)", contributors: [ { firstName: "Samuel Calvin", lastName: "Gbetnkom", role: "author" } ], pubDate: { year: 2022 }, url: "https://brittlepaper.com/wp-content/uploads/2022/08/Poetry-Collection-Written-in-Cameroons-Bamum-Script-Translated-in-English-and-French-1.png", publisher: "Generis Publishing", location: "Chisinau, Moldova", isbn: "9798886762396", medium: "Print / Trilingual Edition", meta: { notes: "A trilingual poetry collection in Shü-mom (Bamum), French, and English. It utilizes the modern Bamum script, which was originally developed by King Njoya in the late 19th century.", tags: ["Bamum", "Cameroonian Literature", "Shü-mom", "Indigenous Scripts", "African Poetry"] } }
@@ -1125,7 +1129,7 @@ export const stirrPoetry = [
       `We were coming back from Dynewar by way of<br>&emsp;&emsp;the mangrove swamps, and listlessly.<br>It was then that under its patina your face today<br>&emsp;&emsp;had the dark beauty of the Eternal.`
     ],
     infoURL: "https://www.poetryfoundation.org/poets/leopold-sedar-senghor",
-    mediaURL: "https://youtu.be/l99Rs4kWUyw?si=9pQyRfqXFmShBcgM",
+    mediaURL: ["https://youtu.be/l99Rs4kWUyw?si=9pQyRfqXFmShBcgM"],
     textURL: "https://davidevans.blog/2019/07/01/read-african-writers-nocturnes-by-leopold-sedar-senghor-translated-by-clive-wake-and-john-o-reed/",
     ref: [
       { id: "senghor-1961", type: "book", title: "Nocturnes", contributors: [ { firstName: "Léopold Sédar", lastName: "Senghor", role: "author" } ], pubDate: { year: 1961 }, publisher: "Éditions du Seuil", location: "Paris, France", medium: "Print", meta: { sortKey: "text", notes: "First edition of this major collection, which expanded on his earlier 'Chants d'ombre' and won the Grand Prix de poésie de l'Académie française.", grade: "A", tags: ["Négritude", "Senegalese Literature", "Poetry"] } }
@@ -1144,7 +1148,7 @@ export const stirrPoetry = [
     ],
     excerpt: [`The great sea moves me, sets me adrift.<br>It moves me like algae on stones in running brook water.<br>The vault of heaven moves me.<br>Mighty weather storms through my soul.<br>It carries me with it.<br>Trembling with joy.`],
     infoURL: ["https://www.worldprayers.org/archive/prayers/celebrations/the_great_sea_moves_me.html"],
-    mediaURL: "https://www.isuma.tv/node/167911",
+    mediaURL: ["https://www.isuma.tv/node/167911"],
     textURL: "https://singinghead.wordpress.com/2013/07/18/the-song-of-uvavnuk/",
     ref: [
       { id: "rasmussen-1929-intellectual-culture-iglulik", type: "book", title: "Intellectual Culture of the Iglulik Eskimos", containerTitle: "Report of the Fifth Thule Expedition 1921-24 (Vol. VII, No. 1)", contributors: [ { firstName: "Knud", lastName: "Rasmussen", role: "author" } ], pubDate: { year: 1929 }, url: "https://en.wikisource.org/wiki/Intellectual_Culture_of_the_Iglulik_Eskimos/Chapter_5", publisher: "Gyldendalske Boghandel, Nordisk Forlag", location: "Copenhagen, Denmark", medium: "Print (First Edition)", meta: { notes: "A primary source for Inuit mythology, shamanism (Aua), and oral poetry. It details the 'taboos' and spiritual laws (Pittailiniq) that governed daily life. Essential for understanding the conceptual roots of the 'Uaajeerneq' and Arctic drum traditions recorded in later works.", grade: "A", tags: ["Inuit", "Iglulik", "Shamanism", "Aua", "Knud Rasmussen", "Fifth Thule Expedition", "Oral Poetry", "Arctic Mythology"] } },
@@ -1188,7 +1192,7 @@ export const stirrPoetry = [
       `<i>gagwegongi’ he’keyadele’a’a wa’aga’anonhsayendondye’ a’a’</i><br>All my grandchildren’s houses stretched out in a row.`
     ],
     infoURL: "",
-    mediaURL: "https://archive.org/details/78_the-creators-songs-the-great-feather-dance-ostowegowa_chancey-johnny-john-william-n_gbia0524825a",
+    mediaURL: ["https://archive.org/details/78_the-creators-songs-the-great-feather-dance-ostowegowa_chancey-johnny-john-william-n_gbia0524825a"],
     textURL: "https://drumhop.com/music.php?page=182",
     ref: [
       { id: "fenton-1942-songs-iroquois-longhouse", type: "book", title: "Songs from the Iroquois longhouse: program notes for an album of American Indian music from the eastern woodlands", contributors: [ { firstName: "William N.", lastName: "Fenton", role: "author" }, { firstName: "", lastName: "Archive of American Folk Song", role: "contributor" } ], pubDate: { year: 1942 }, url: "https://catalog.hathitrust.org/Record/102161232", publisher: "Smithsonian Institution (Publication 3691) / Library of Congress", location: "Washington, D.C.", medium: "Print (First Edition) / Program Notes", meta: { notes: "A primary ethnomusicological resource for the Haudenosaunee. It covers the 'Great Feather Dance', 'Midwinter Festival Chants', and 'Medicine Man’s Celebration'. It explains the use of the water drum and horn rattle and the specific ceremonial protocols of the Seneca, Onondaga, and Cayuga nations.", grade: "D", tags: ["Haudenosaunee", "Iroquois", "Longhouse", "Seneca", "Onondaga", "Cayuga", "William Fenton", "Ethnomusicology", "Water Drum", "Midwinter Festival"] } },
@@ -1237,7 +1241,7 @@ export const stirrPoetry = [
       `<i>Iha slhiixwnuclhits ay.</i><br>My cherished one.`
     ],
     infoURL: [""],
-    mediaURL: "https://youtu.be/dyt840-cKGs",
+    mediaURL: ["https://youtu.be/dyt840-cKGs"],
     textURL: "",
     ref: [
       { id: "kolstee-1977-bella-coola-music", type: "thesis", title: "Bella Coola Indian music: a study of the interaction between Northwest Coast Indian musical structures and their functional context", contributors: [ { firstName: "Anton Frederik", lastName: "Kolstee", role: "author" } ], pubDate: { year: 1977 }, url: "https://open.library.ubc.ca/media/stream/pdf/831/1.0094150/1", publisher: "University of British Columbia", location: "Vancouver, BC", medium: "Digital Thesis (PDF)", meta: { notes: "A formal analysis of Nuxalk music. Kolstee examines the relationship between musical form (rhythm, pitch, contour) and its use in the potlatch and other social institutions. It includes transcriptions of songs and a discussion on the preservation of melodic integrity across generations.", grade: "D", tags: ["Nuxalk", "Bella Coola", "Northwest Coast", "Ethnomusicology", "Indigenous Music", "Potlatch", "Rhythm", "UBC"] } },
@@ -1259,7 +1263,7 @@ export const stirrPoetry = [
       `Give me something to remember you by. (x4)<br>I will keep it to remember you by.<br>Give me something to remember you by. (x2)<br>Give me a ring.<br>I will keep it to remember you.`
     ],
     infoURL: "https://lakhota.org/history-of-ehankehan-lak%C8%9Fota-olowan-traditional-lakota-songs-book/",
-    mediaURL: "https://www.sintegleska.edu/songs--dances-music.html",
+    mediaURL: ["https://www.sintegleska.edu/songs--dances-music.html"],
     textURL: "https://static.wixstatic.com/media/c22729_2f8370f7336c4588b9ca17654cccb987~mv2.jpeg/v1/fill/w_1000,h_1334,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c22729_2f8370f7336c4588b9ca17654cccb987~mv2.jpeg",
     ref: [
       { id: "blackbear-theisz-1976-songs-dances-lakota", type: "book", title: "Songs and Dances of the Lakota (Eháŋk’ehaŋ lakȟóta olówaŋ)", contributors: [ { firstName: "Ben", lastName: "Black Bear Sr.", role: "author" }, { firstName: "R.D.", lastName: "Theisz", role: "editor" } ], pubDate: { year: 1976 }, url: "https://worldcat.org/title/2845422", publisher: "Sinte Gleska College / North Plains Press", location: "Rosebud, South Dakota", medium: "Print (First Edition)", meta: { notes: "The definitive 20th-century instructional text for Lakota song poetry. It provides the musical structures for 36 songs, including the Omaha Dance and Rabbit Dance. Distinguishes between the 'Lead' (Abašlokapi) and 'Tail' (Sinte) of the Lakota song form.", grade: "A", tags: ["Lakota", "Ben Black Bear Sr", "Sinte Gleska", "Song Poetry", "Powwow", "Omaha Dance", "Ethnomusicology", "Great Plains"] } }
@@ -1282,7 +1286,7 @@ export const stirrPoetry = [
       `O lords, in this way<br>your sorrow is put to flight.<br>The Giver of Life invents them,<br>he has sent them down,<br>the Inventor of Himself,<br>the joyous flowers,<br>with these your sorrow is put to flight.`
     ],
     infoURL: "https://en.wikipedia.org/wiki/Nezahualcoyotl_(tlatoani)",
-    mediaURL: "https://youtu.be/ewYRvbD8zAM",
+    mediaURL: ["https://youtu.be/ewYRvbD8zAM"],
     textURL: "https://lyricstranslate.com/en/xon-ahuiyacan-be-joyful.html",
     ref: [
       { id: "leon-portilla-1992-fifteen-poets", type: "book", title: "Fifteen Poets of the Aztec World", contributors: [ { firstName: "Miguel", lastName: "León-Portilla", role: "author" }, { firstName: "Grace", lastName: "Lobanov", role: "translator" } ], pubDate: { year: 1992, month: 9 }, url: "https://archive.org/details/fifteenpoetsofaz0000unse", publisher: "University of Oklahoma Press", location: "Norman, Oklahoma", medium: "Print (Hardcover/Paperback)", meta: { notes: "An expanded English translation of 'Trece poetas del mundo azteca'. Documents the lives and 'flower and song' (In xóchitl in cuicatl) of 15 Nahua poets, including Nezahualcoyotl and the female poet Macuilxochitzin. Sources include the Cantares Mexicanos and Romances de los señores de la Nueva España.", grade: "A", tags: ["Aztec", "Nahuatl", "Poetry", "Mexico", "Nezahualcoyotl", "Mesoamerican Literature", "Indigenous Oral Tradition"], sortKey: "text" } },
@@ -1321,7 +1325,7 @@ export const stirrPoetry = [
       `<i>Nha bunáhai lubuyékua</i><br>They buried him in his own house.`
     ],
     infoURL: "",
-    mediaURL: "",
+    mediaURL: [],
     textURL: "",
     ref: [
       { id: "rat-1898", type: "article", title: "The Carib Language as now spoken in Dominica, West Indies", containerTitle: "The Journal of the Anthropological Institute of Great Britain and Ireland", contributors: [ { firstName: "Joseph Numa", lastName: "Rat", role: "author" } ], pubDate: { year: 1898 }, url: "https://tiboko.com/wp-content/uploads/2023/07/inbound2115691491.pdf", publisher: "Anthropological Institute of Great Britain and Ireland", location: "London, UK", medium: "Academic Journal", meta: { notes: "A primary linguistic source for the Kalinago language. Includes a grammatical sketch and a vocabulary list. Notable for its early ethnographic observations on the differences between 'men's language' and 'women's language' among the Island Carib.", grade: "B", pages: "293-315", tags: ["Kalinago", "Carib Language", "Dominica", "Linguistics", "Antillean History", "Island Carib"] } }
@@ -1345,7 +1349,7 @@ export const stirrPoetry = [
       `You make me cry.<br>Is your heart a flower?<br>You are crying in the village.<br>On Cantur hill,<br>in Saphi ravine,<br>I await you, flower, my love.`
     ],
     infoURL: "https://en.wikipedia.org/wiki/Harawi_(genre)",
-    mediaURL: "https://youtu.be/DtnzHxh5x38",
+    mediaURL: ["https://youtu.be/DtnzHxh5x38"],
     textURL: "",
     ref: [
       { id: "guaman-poma-1615-nueva-coronica", type: "manuscript", title: "El primer nueva corónica y buen gobierno", contributors: [ { firstName: "Felipe", lastName: "Guamán Poma de Ayala", role: "author" } ], pubDate: { year: 1615 }, publisher: "The Royal Library (Det Kongelige Bibliotek)", location: "Copenhagen, Denmark (Original Manuscript GKS 2232 4º)", medium: "Digital Manuscript Archive / 17th-century Autograph", meta: { notes: "A massive Quechua-Spanish hybrid text. Guamán Poma utilized Andean concepts of 'pacha' (time-space) to structure his history. The manuscript was lost for centuries until its rediscovery in the Royal Library of Denmark in 1908 by Richard Pietschmann.", grade: "A", tags: ["Inca", "Andean", "Peru", "Quechua", "Colonial History", "Indigenous Protest", "Visual Ethnography"], sortKey: "text" } },
@@ -1373,7 +1377,7 @@ export const stirrPoetry = [
     ],
     infoURL: "https://folkways.si.edu/traditional-music-of-the-world-vol-7-ritual-music-of-the-kayapo-xikrin-brazil/american-indian-world/album/smithsonian",
     bioURL: "https://pib.socioambiental.org/en/Povo:Kayap%C3%B3_Xikrin",
-    mediaURL: "https://youtu.be/zRs3fEQpcbI",
+    mediaURL: ["https://youtu.be/zRs3fEQpcbI"],
     textURL: "",
     ref: [
       { id: "sfw-1995-ritual-music-kayapo", type: "article", title: "Ritual Music of the Kayapó-Xikrin, Brazil (Booklet Notes)", containerTitle: "Traditional Music of the World, Vol. 7", contributors: [ { firstName: "Lux", lastName: "Vidal", role: "author" }, { firstName: "Isabelle", lastName: "Giannini", role: "author" } ], pubDate: { year: 1995 }, url: "https://folkways-media.si.edu/docs/folkways/artwork/SFW40433.pdf#page=29", publisher: "Smithsonian Folkways Recordings", location: "Washington, D.C.", medium: "Digital PDF / Booklet", meta: { notes: "Documentation of the Kwèry-kàn (naming ritual) and other ceremonial cycles. Page 29 specifically contextulizes the relationship between collective singing and the social structure of the village. The notes provide deep insight into how music functions as a means of social memory and territorial claim for the Kayapó.", grade: "C", tags: ["Kayapó", "Xikrin", "Brazil", "Amazon", "Ethnomusicology", "Indigenous Ritual", "Gê Languages"] } }
@@ -1427,7 +1431,7 @@ export const stirrPoetry = [
       `Those who had been poor but were now rich<br>Threw stones and bits of wood, but<br>The boy ignored them, and<br>Raising a blizzard of dust he ran until<br>He arrived outside a little house.<br>…`
     ],
     infoURL: "https://en.wikipedia.org/wiki/Yukie_Chiri",
-    mediaURL: "https://youtu.be/L-feG_5k4fc?start=320",
+    mediaURL: ["https://youtu.be/L-feG_5k4fc?start=320"],
     textURL: "",
     ref: [
       { id: "chiri-2013-owl-god-sang", type: "book", title: "The Song the Owl God Sang: The Collected Ainu Legends of Chiri Yukie", contributors: [ { firstName: "Yukie", lastName: "Chiri", role: "author" }, { firstName: "Benjamin", lastName: "Peterson", role: "translator" } ], pubDate: { year: 2013, month: 6 }, publisher: "BJS Books", location: "United Kingdom", medium: "Print (Paperback) / Translation", meta: { notes: "The first English translation of Chiri Yukie’s 'Ainu Shin’yōshū'. Contains 13 'kamui yukar' (songs of gods) featuring the Owl God (Kotankor Kamui), the Fox, and the Sea Spirit. Notable for its preservation of Ainu cosmology and the 'Silver Drops' refrain, which captures the rhythmic nature of Ainu oral performance.", grade: "B", isbn: "9780992600600", tags: ["Ainu", "Hokkaido", "Indigenous Japan", "Kamui Yukar", "Oral Tradition", "Chiri Yukie", "Eurasian Folklore"] } },
@@ -1438,7 +1442,6 @@ export const stirrPoetry = [
     id: "ASEASTP",
     title: { original: "听蜀僧濬弹琴", transliteration: "Tīng shǔ sēng jùn tán qín", translation: "Listening to the Monk Jun Play his Qin" },
     piece: true,
-    altTitle: "听蜀僧濬弹琴",
     author: "Lǐ Bái",
     group: {people: "Han Chinese", language: "Classical Chinese", location: "Sichuan, CN"},
     info: [
@@ -1454,7 +1457,7 @@ export const stirrPoetry = [
       `autumn clouds<br>darkening<br>who knows how many layers.`
     ],
     infoURL: "https://en.wikipedia.org/wiki/Li_Bai",
-    mediaURL: "https://youtu.be/Kpbiz8J9BWE",
+    mediaURL: ["https://youtu.be/Kpbiz8J9BWE"],
     textURL: "",
     ref: [
       { id: "young-1990-five-tang-poets", type: "book", title: "Five T'ang Poets", contributors: [ { firstName: "David", lastName: "Young", role: "translator" }, { firstName: "Wang", lastName: "Wei", role: "author" }, { firstName: "Li", lastName: "Po", role: "author" }, { firstName: "Tu", lastName: "Fu", role: "author" }, { firstName: "Li", lastName: "Ho", role: "author" }, { firstName: "Li", lastName: "Shang-yin", role: "author" } ], pubDate: { year: 1990, month: 11 }, publisher: "Oberlin College Press", location: "Oberlin, Ohio", medium: "Print (Paperback) / Translation", meta: { notes: "Selections from five masters of the T'ang Dynasty. Includes Wang Wei's 'Wang River Sequence', Li Po's energetic lyrics, Tu Fu's rigorous social observation, Li Ho's surrealist imagery, and Li Shang-yin's hermetic 'Untitled' poems. David Young provides a general introduction and brief biographies for each poet.", grade: "B", isbn: "9780932440556", tags: ["Chinese Poetry", "T'ang Dynasty", "Wang Wei", "Li Po", "Tu Fu", "Li Ho", "Li Shang-yin", "Translation Theory", "Eurasian Literature"] } },
@@ -1483,7 +1486,7 @@ export const stirrPoetry = [
       `…`
     ],
     infoURL: "https://en.wikipedia.org/wiki/Nirat_Hariphunchai",
-    mediaURL: "https://youtu.be/vo6AV-2ZbqM",
+    mediaURL: ["https://youtu.be/vo6AV-2ZbqM"],
     textURL: "",
     ref: [
       { id: "baker-2024-nirat-ocean", type: "book", title: "Nirat Hariphunchai & Ocean Lament: Two classic Thai poems of love, loss, and landscape", contributors: [ { firstName: "Chris", lastName: "Baker", role: "translator" }, { firstName: "Pasuk", lastName: "Phongpaichit", role: "translator" } ], pubDate: { year: 2024, month: 2 }, publisher: "Silkworm Books", location: "Thailand", medium: "Print (Paperback) / Translation", meta: { notes: "First English translation of two foundational Thai 'nirat' poems from circa 1500 CE. 'Nirat Hariphunchai' follows a pilgrimage to a Buddhist reliquary in Lamphun, blending religious devotion with romantic longing. 'Ocean Lament' (Kamsuan Samut) documents a dramatic flight from Ayutthaya down the Chaophraya River.", grade: "B", isbn: "9786162152078", tags: ["Thai Literature", "Nirat", "Poetry", "Southeast Asia", "Ayutthaya", "Chaophraya River", "Travel Literature"] } },
@@ -1501,7 +1504,7 @@ export const stirrPoetry = [
     ],
     excerpt: [`How sweet and lovely is this jhyaure song<br>of Nepal. I have planted a sapling<br>in this field which I have not seen tilled.<br>Let it bloom or wilt as God desires.<br>Do not tread it under your feet, brother.<br>I beg this of you. May it bloom and flourish,<br>inviting spring! O dear, good people<br>scorn not the jhyaure song.<br>May it soften you, may it lift you up<br>to the highest summit, may it move its lips<br>like the limpid streams and brooks, may it strike<br>against the breast of the mountain, may hills<br>echo, may the mind and the wilds resound,<br>may cascades resonate, may it brighten<br>sequestered city rooms, and may it light up<br>hearts inside huts. Can the Nepali close<br>their eyes to this sweet, amorous song<br>born of Nepali seed and Nepali grains<br>soaked in Nepali sap? Should inspiration<br>cascade down, will it not stir the heart?<br>Currents of hyaure songs flow in hills,<br>ravines and plains. The nation’s soil awakens<br>and speaks in simple strains. Birds in poor huts<br>and damsels of the forest spill their hearts.<br>Every beat of folk speech colors the atmosphere.<br>Artificiality and wily art<br>have no place here. Charged with feelings,<br>emotions gush forth from people’s hearts.<br>The primal poet, the mountain spring<br>with clear lips, scatters all over Himal<br>the first shower of music. Currents gurgle<br>down slopes towards the ocean of life.<br>Buds, attempting to speak, bring fragrance<br>to their lips; but the bird, grasping the new sprout<br>in its beak, sweetly sings of nature’s glory<br>with the cascade’s voice. Their friends, the Nepali race,<br>in sun and shower, their dove-hearts awakened,<br>coo in jhyaure songs. In this blue heaven,<br>the maternal home of Parvati,<br>the shadow-scattered forest,<br>the strings of life resonate and the bird<br>of the heart sings. Nature’s glow turns colorful<br>in the heart splashed with feelings. Cool sprays<br>of the waterfall rise with the voice.<br>Pains and pleasures blend and melt<br>into life’s liquid emotions. We flow in songs.<br>True Nepali national life speaks in jhyaure song<br>to the tune of the spade and the motion<br>of the ploughshare. The blood in the Nepali vein<br>throbs in it. Amidst such natural meters<br>this lovely garden is delectable.<br>The bird in the people’s heart coos with ease,<br>the waves of the people’s river of life<br>swell to this tune. Nurtured in Himal,<br>splashed with the colors of flowers, the voice<br>of the twilight forest and the hillside air<br>are sweetly scented. The ambrosia<br>of labor, the nectar of love, people’s tongue,<br>the steep path of joys and sorrows,<br>the memory of light on water,<br>jhyaure is our waterway, a tale of tears.<br>This is the flashing stream of dancing ripples,<br>of tears and smiles; this the true literature<br>of the people, the beating of their pulse.<br>Here, the goddess of poetry cascades down<br>within the natural banks of rhythm.<br>The vast land here is uncared for;<br>I prepare myself to plough and till<br>this virgin soil. I will be infamous<br>as a jhyaure poet and this folk song,<br>the beloved moon of the people, will be stained.<br>But the Age shall take another turn,<br>felings shall return, shriveled up hearts shall swell,<br>blindness shall be cured.<br>Give me a small, leafy village<br>beside the stream of the mountain where the waters<br>speak like the call of a small, wild bird.<br>In the blue, enchanting corner<br>far from the city, let Nepali gandharvas?<br>and apsaras resonate with the magic<br>of nature’s charms. Let the heart guide the language,<br>evoking meaning. Let it flash enchantingly<br>with the magic of natural feelings.<br>I love the beatings of the heart, the tremors<br>of the flesh; I love the sweet speech of youth,<br>the tingling of the nerves.<br>The poet’s sensitivity benumbs his calling.<br>Words cut to the quick, soul-deceiving rhymes<br>cause night to descend. Everyone shall hear<br>my public testament. They shall weigh<br>the worth of this primordial but new thing.<br>Having perused this jhyaure narrative,<br>gentle reader, please forgive the blemishes.`],
     infoURL: "https://en.wikipedia.org/wiki/Laxmi_Prasad_Devkota",
-    mediaURL: "https://youtu.be/NW46cmSh8VM",
+    mediaURL: ["https://youtu.be/NW46cmSh8VM"],
     textURL: "",
     ref: [
       { id: "devkota-2018-muna-madan", type: "book", title: "Muna Madan", contributors: [ { firstName: "Laxmi Prasad", lastName: "Devkota", role: "author" }, { firstName: "Padma", lastName: "Devkota", role: "translator" } ], pubDate: { year: 2018 }, url: "https://pdfcoffee.com/muna-madan-pdf-free.html", publisher: "Adarsh Books", location: "New Delhi, India / Nepal", medium: "Print (Paperback) / Translation", meta: { notes: "The best-selling epic in Nepali history. Written in the traditional 'jhyaure' folk meter, it subverted elite literary norms. The narrative follows Madan's journey to Lhasa for wealth and his subsequent rescue by a Bhote (Tibetan) man, famously challenging the Hindu caste system with the line: 'A man is said to be great not by caste but by a heart full of love.'", isbn: "9788183631396", tags: ["Nepali", "Muna Madan", "Epic Poetry", "Himalayas", "Jhyaure Meter", "Laxmi Prasad Devkota", "Caste Dynamics"] } }
@@ -1546,10 +1549,10 @@ export const stirrPoetry = [
       `Ask your own eye whose is the murderous glance;<br>O friend, this is not Fate’s crime, nor the stars.`,
       `Pure eyes discern him like the crescent moon;<br>But not all eyes have scope to see that splendor.`,
       `Seize the chance offered by the drunkard’s road:<br>Like the clue on the treasure-track, not all can find it.`,
-      `You are not moved, witnessing Hafiz’s tears?<br>l cannot understand that heart, harder than stone.`
+      `You are not moved, witnessing Hafiz’s tears?<br>I cannot understand that heart, harder than stone.`
     ],
     infoURL: "https://en.wikipedia.org/wiki/Hafez",
-    mediaURL: "https://aparat.com/v/ngnf298",
+    mediaURL: ["https://aparat.com/v/ngnf298"],
     textURL: "",
     ref: [
       { id: "avery-heathstubbs-1952-hafiz-thirty-poems", type: "book", title: "Thirty Poems by Hafiz of Shiraz", contributors: [ { firstName: "Peter", lastName: "Avery", role: "translator" }, { firstName: "John", lastName: "Heath-Stubbs", role: "translator" }, { firstName: "Hafiz", lastName: "Shirazi", role: "author" } ], pubDate: { year: 1952 }, url: "https://ia803208.us.archive.org/13/items/HafizOfShirazThirtyPoems/Hafiz-of-shiraz-%20Thirty%20poems_text.pdf#page=23", publisher: "John Murray", location: "London, UK", medium: "Print (First Edition) / Wisdom of the East Series", meta: { notes: "A refined selection of ghazals from the Divan. The translation emphasizes the 'disjointed' nature of the Persian ghazal, where each couplet contains a complete thought. The notes explore the dual-coded nature of Hafiz’s language—simultaneously erotic and divine.", grade: "C", tags: ["Hafiz", "Persian Poetry", "Ghazal", "Shiraz", "Sufism", "Translation", "Literary Criticism"] } }
@@ -1569,7 +1572,7 @@ export const stirrPoetry = [
       `My soul is dead but on the outside I’m well.<br>I repeat to everyone I meet—<br>friend today, enemy tomorrow.<br>Oh my God, what can I do?<br>Arguments in your home<br>thunder like a waterfall.<br>In front of strangers you’re timid and quiet,<br>confused, submissive, inert.<br>Is that what you were like last time?<br>How’s this for a champion?<br>Three days only you’ve been free<br>and you’re already unusually restive.<br>When need presses down,<br>you are loving, you will melt any heart.<br>But why are you so inaccessible and sullen,<br>when your soul again acquires peace?<br>You decided, without a backward look,<br>on robbery and cunning.<br>If you give, you give five,<br>if you take, you take six.<br>Under serious tests,<br>where the arguments are waged in a hundred ways,<br>those like you, as a result,<br>fall into bloody discord.<br>Don’t slam the door<br>through which you have to return.<br>Whether you bloom or fall into disaster,<br>a day will come when you need it.`
     ],
     infoURL: "",
-    mediaURL: "https://youtu.be/8O0rq3UZbVI",
+    mediaURL: ["https://youtu.be/8O0rq3UZbVI"],
     textURL: "",
     ref: [
       { id: "abai-1995-book-of-words", type: "book", title: "Book of Words", contributors: [ { firstName: "Abai", lastName: "Kunanbaev", role: "author" } ], pubDate: { year: 1995 }, publisher: "EL Bureau", location: "Almaty, Kazakhstan", medium: "Print (First English Edition from Kazakhstan)", meta: { notes: "A seminal work of Kazakh philosophy. Abai addresses the importance of education, justice, and the preservation of Kazakh identity within the Russian Empire. The 'Words' function as a moral compass, moving from scathing social critique to profound theological reflection.", grade: "A", tags: ["Abai", "Kazakhstan", "Central Asia", "Philosophy", "Kazakh Literature", "Ethical Treatises", "Decolonization"] } },
@@ -1599,7 +1602,7 @@ export const stirrPoetry = [
       `Let the passing east wind blow at its own will,<br>Let the passing east wind blow at its own will.`
     ],
     infoURL: "",
-    mediaURL: "https://youtu.be/krScqkiu6cY",
+    mediaURL: ["https://youtu.be/krScqkiu6cY"],
     textURL: ["https://wikisource.org/wiki/%D0%94%D0%BE%D1%80%D0%BD%D0%BE_%D1%81%D0%B0%D0%BB%D1%85%D0%B8%D0%BD_%D1%85%D0%B8%D0%B9%D1%81%D1%82%D2%AF%D0%B3%D1%8D%D0%B9"],
     ref: [
       { id: "todmedee-2019", type: "webpage", title: "Монгол хэл соёлын түүхэн дэх агуу нэгэн гэр бүлийн тухай", contributors: [ { firstName: "Гоо", lastName: "Г.", role: "author" } ], pubDate: { year: 2019, month: 6, day: 9 }, url: "https://todmedee.mn/4455.html", publisher: "Tod Medee", location: "Ulaanbaatar, Mongolia", medium: "Digital Web Article", meta: { notes: "Explores the historical impact of a prominent family on Mongolian linguistic identity. The text highlights the transmission of cultural knowledge across generations, focusing on the preservation of the Mongolian script and scholarly traditions within the domestic sphere.", grade: "A", tags: ["Mongolia", "Linguistics", "Cultural History", "Genealogy", "Mongolian Script", "Ulaanbaatar", "Eurasian Studies"] } },
@@ -1627,7 +1630,7 @@ export const stirrPoetry = [
       `O awesome wonder which I see doubly,<br>with my two sets of eyes,<br>of the body and of the soul.`
     ],
     infoURL: "https://en.wikipedia.org/wiki/Symeon_the_New_Theologian",
-    mediaURL: "https://youtu.be/Y3g2AJk-lwU",
+    mediaURL: ["https://youtu.be/Y3g2AJk-lwU"],
     textURL: "",
     ref: [
       { id: "symeon-1980-discourses-paulist", type: "book", title: "The Discourses", containerTitle: "The Classics of Western Spirituality", contributors: [ { firstName: "Symeon the New", lastName: "Theologian", role: "author" }, { firstName: "C.J.", lastName: "de Catanzaro", role: "translator" }, { firstName: "George A.", lastName: "Maloney", role: "introduction" } ], url: "https://godaftergod.wordpress.com/2012/03/17/hymn-25-symeon-the-new-theologian/", pubDate: { year: 1980 }, publisher: "Paulist Press", location: "New York, NY", medium: "Print (Hardcover/Paperback)", meta: { notes: "A primary source for Hesychastic theology. Symeon's 'Discourses' (Katecheseis) focus on the necessity of tears, repentance, and the vision of the Uncreated Light. This volume is essential for understanding the transition of Eastern monastic spirituality into the later Palamite synthesis.", grade: "A", tags: ["Byzantine", "Mysticism", "Hesychasm", "Symeon the New Theologian", "Orthodox", "Constantinople", "Patristics"] } },
@@ -1651,7 +1654,7 @@ export const stirrPoetry = [
       `And still, I never seem to find a path<br>too harsh, too wild for Love to always join<br>me and to speak to me, and I to him!`
     ],
     infoURL: "",
-    mediaURL: "https://youtu.be/ZJlj1uy8cSA",
+    mediaURL: ["https://youtu.be/ZJlj1uy8cSA"],
     textURL: "",
     ref: [
       { id: "petrarch-1985-canzoniere-musa", type: "book", title: "Selections from the Canzoniere and other works", contributors: [ { firstName: "Francesco", lastName: "Petrarch", role: "author" }, { firstName: "Mark", lastName: "Musa", role: "translator/editor" } ], url: "https://archive.org/details/isbn_9780192817075", pubDate: { year: 1985 }, publisher: "Oxford University Press", location: "Oxford; New York", medium: "Print (World's Classics)", meta: { notes: "A curated selection of the Rerum vulgarium fragmenta (Canzoniere) alongside letters and other prose. This edition is noted for Musa's ability to translate the strict Petrarchan sonnet structure into readable English verse while maintaining the psychological complexity of the 'Laura' cycle.", grade: "A", tags: ["Humanism", "Renaissance", "Sonnet", "Italian Literature", "Petrarch", "Canzoniere", "Lyric Poetry"] } },
@@ -1679,7 +1682,7 @@ export const stirrPoetry = [
       `in all directions<br>&emsp;&emsp;&emsp;&emsp;the beaks of the pelicans...`
     ],
     infoURL: "",
-    mediaURL: "https://youtu.be/UmdHNyZ5pns",
+    mediaURL: ["https://youtu.be/UmdHNyZ5pns"],
     textURL: "",
     ref: [
       { id: "dyungayan-2014-bulu-line", type: "book", title: "George Dyungayan's Bulu Line: A West Kimberley Song Cycle", contributors: [ { firstName: "George", lastName: "Dyungayan", role: "author" }, { firstName: "Stuart", lastName: "Cooke", role: "translator" } ], pubDate: { year: 2014, month: 6 }, publisher: "Puncher & Wattmann", location: "Glebe, NSW, Australia", medium: "Print (Paperback) / Translation", meta: { notes: "A collection of 17 verses comprising a Nyigina song cycle. The poems describe journeys with ancestors and encounters with rainbow serpents and storms across the Roebuck Plains. Notable for its 'multi-vocal' layout, which invites readers to participate in the performance of the translation.", grade: "B", isbn: "9781922186539", tags: ["Nyigina", "West Kimberley", "Aboriginal Australian", "Song Cycle", "Dreaming", "Oral Poetry", "Stuart Cooke"] } },
@@ -1703,7 +1706,7 @@ export const stirrPoetry = [
       `Love, o my kin, has the perfume of the forest, like the lemon. And it is neither from <+>coquetry[flirtatious behavior]</+> nor from <+>caprice[a sudden and unaccountable change of mood]</+> that I say this to you, but because I want to possess you completely.`
     ],
     infoURL: "https://en.wikipedia.org/wiki/Jean-Joseph_Rabearivelo",
-    mediaURL: "https://youtu.be/M_U95bFk1U4",
+    mediaURL: ["https://youtu.be/M_U95bFk1U4"],
     textURL: "",
     ref: [
       { id: "rabearivelo-1939-old-songs", type: "book", title: "Vieilles chansons des pays d'Imerina (Old songs from the lands of Imerina)", contributors: [ { firstName: "Jean-Joseph", lastName: "Rabearivelo", role: "author" } ], pubDate: { year: 1939 }, url: "https://www.bibliothequemalgache.com/fiches/BME56.htm", publisher: "Éditions de la Revue de Madagascar", location: "Antananarivo, Madagascar", medium: "Print / Digital Archive", meta: { notes: "A collection of Malagasy 'Hainteny'. The text is a 'translation-creation' that attempts to preserve the proverbs, riddles, and metaphors of the Merina oral tradition. It reflects the intersection of French Symbolism and traditional Malagasy lyricism.", grade: "A", tags: ["Madagascar", "Imerina", "Hainteny", "Malagasy Literature", "Jean-Joseph Rabearivelo", "Oral Tradition", "Post-Colonial Literature"], sortKey: "text" } },
@@ -1726,7 +1729,7 @@ export const stirrPoetry = [
       `What do I say?<br>The maiden who fetches salt water runs an errand<br>she runs to the ridges of Anangari<br>She’ll bring back a herd of pigs.<br>What do I say?<br>The boy who shapes spears runs an errand<br>he runs to the mountain ridges;<br>you bring me a herd of pigs.<br>A herd of pigs, of prize pigs, a herd for slaughter.`
     ],
     infoURL: ["https://en.wikipedia.org/wiki/John_Saunana"],
-    mediaURL: "https://youtu.be/Z0env3FI9Y0?start=201",
+    mediaURL: ["https://youtu.be/Z0env3FI9Y0?start=201"],
     textURL: "",
     ref: [
       { id: "saunana-1971", type: "book", title: "Dragon Tree: Arosi Incantations and Songs", shortTitle: "Dragon Tree", contributors: [ { firstName: "John", lastName: "Saunana", role: "author" } ], pubDate: { year: 1971 }, url: "https://png.athabascau.ca/docs/ppp25.pdf", publisher: "Papua New Guinea Centre for Creative Arts", location: "Port Moresby", containerTitle: "Oral History", volume: "1", issue: "10", medium: "Monograph", meta: { notes: "A collection of traditional chants and songs from the Arosi-speaking region, documenting indigenous spiritual and social expressions.", grade: "A", tags: ["Solomon Islands", "Arosi", "Melanesian Folklore", "Incantations"], sortKey: "text" } },
@@ -1770,7 +1773,7 @@ export const stirrPoetry = [
     ],
     infoURL: "",
     bioURL: "",
-    mediaURL: "https://youtu.be/CZrIOywygLY",
+    mediaURL: ["https://youtu.be/CZrIOywygLY"],
     textURL: "https://hpo.pohnpeistate.gov.fm/wp-content/uploads/2025/03/The-Book-of-Luelen.pdf#page=63",
     ref: [
       { id: "bernart-1977-book-of-luelen", type: "book", title: "The Book of Luelen", containerTitle: "Pacific History Series No. 8", contributors: [ { firstName: "Luelen", lastName: "Bernart", role: "author" }, { firstName: "John L.", lastName: "Fischer", role: "editor" }, { firstName: "Saul H.", lastName: "Riesenberg", role: "editor" }, { firstName: "Marjorie G.", lastName: "Whiting", role: "editor" } ], pubDate: { year: 1977 }, url: "https://catalog.hathitrust.org/Record/000260939", publisher: "University Press of Hawaii / Australian National University Press", location: "Honolulu / Canberra", medium: "Print / Digital Archive", meta: { notes: "The foundational text of Pohnpeian historiography. It details the arrival of the first settlers, the construction of the megalithic city of Nan Madol, and the eventual overthrow of the tyrannical Saudeleur rulers. It is a 'hallowed' text that functions as both a spiritual genealogy and a political history.", grade: "A", tags: ["Pohnpei", "Micronesia", "Nan Madol", "Oral Tradition", "Luelen Bernart", "Oceanian History", "Indigenous Historiography"], sortKey: "text" } },
@@ -1801,7 +1804,7 @@ export const cultFeatFilms = [
   {
     id: "AFNOCFF",
     title: {original: "ⵜⵉⴳⵎⵎⵉ ⵏ ⵉⴳⵔⴰⵏ", transliteration: "Tigmi n Igren", translation: "House in the Fields"},
-    year: "2017",
+    year: 2017,
     group: {people: "Shilha", language: "Tashelhiyt", country: "Morocco"},
     info: [
       `In a remote village in the High Atlas Mountains of Morocco, at the crossroad between tradition and change, two sisters experience the last seasons of childhood.`,
@@ -1819,7 +1822,7 @@ export const cultFeatFilms = [
   {
     id: "AFEACFF",
     title: {original: "Supa Modo"},
-    year: "2018",
+    year: 2018,
     group: {language: "Swahili", country: "Kenya"},
     info: [
       `Nine-year-old Jo loves action films and dreams of being a superhero. Her biggest wish: to make a film and star in it. In her fantasy she can forget that she is terminally ill. When Jo’s sister can no longer bear seeing the cheerful girl spend her precious remaining time in bed, she encourages Jo to believe in her magic powers, and the whole village to make Jo’s dream a reality.`,
@@ -1837,7 +1840,7 @@ export const cultFeatFilms = [
   {
     id: "AFSOCFF",
     title: {original: "Nǃai"},
-    year: "1980",
+    year: 1980,
     group: {people: "Juǀʼhoansi", language: "Juǀʼhoan", country: "Namibia"},
     info: [
       `The Juǀʼhoansi <i>Boyhood</i>, this film depicts 27 years in the life of Nǃai and the changes experienced by her and the members of her ǃKung community across that time. Though ideally the film would have been directed and produced by a Juǀʼhoansi Richard Linklater to be a truly representative feature, the intimate portrayals and captioned translations presented in this work are personal enough to sincerely relate something of the spirit of the Kalahari region.`
@@ -1853,7 +1856,7 @@ export const cultFeatFilms = [
   {
     id: "AFCECFF",
     title: {original: "Le silence de la forêt", translation: "The Forest"},
-    year: "2003",
+    year: 2003,
     group: {people: "BaAka", language: "Aka/Sango/French", country: "CAF"},
     info: [
       `Gonaba is a Central African intellectual fresh from Europe and driven by the foolish belief that western curriculum and pedagogy are necessary assets to bring positive change back home to the Central African Republic. Failing to “liberate” his own countrymen on these grounds, he tries the same tactics on the BaAka people of the Congolian rainforests, where he’s confronted with the unavoidable limitations of his supremacist ideologies.`,
@@ -1871,7 +1874,7 @@ export const cultFeatFilms = [
   {
     id: "AFWECFF",
     title: {original: "ߦߋ߮ߟߋߣ", transliteration: "Yeelen", translation: "Brightness"},
-    year: "1987",
+    year: 1987,
     group: {people: "Bambara", language: "Bambara/Fula", country: "Mali"},
     info: [
       `Set in the powerful Mali Empire of the 13th century, <i>Yeelen</i> follows the journey of Nianankoro, a young warrior who must battle the powerful Komo cult. Nianankoro’s greatest enemy is his own father, a dangerous and corrupt wizard who uses his dark magic to try and destroy his son. Traveling over the arid Bambara, Fulani, and Dogan lands of ancient West Africa, Nianankoro eventually comes face to face with his father in a final fatal showdown.`,
@@ -1890,7 +1893,7 @@ export const cultFeatFilms = [
   {
     id: "AMNOCFF",
     title: {original: "ᐊᑕᓈᕐᔪᐊᑦ", transliteration: "Atanarjuat", translation: "The Fast Runner"},
-    year: "2001",
+    year: 2001,
     group: {people: "Inuit", language: "Inuktitut", location: "Nunavut, CA"},
     info: [
       `Igloolik is a community of 1,200 people located on a small island in the north Baffin region of the Canadian Arctic with archeological evidence of 4,000 years of continuous habitation. Throughout these millennia, with no written language, untold numbers of nomadic Inuit renewed their culture and traditional knowledge for every generation entirely through storytelling.`,
@@ -1909,7 +1912,7 @@ export const cultFeatFilms = [
   {
     id: "AMEACFF",
     title: {original: "ᑎᐯᐢᑳᐃ ᓇᑐᐸᓃᒐᑫᐘᐠ", transliteration: "Tipêskâi Natopanîcakêwak", translation: "Night Raiders"},
-    year: "2021",
+    year: 2021,
     group: {people: "Cree", language: "Cree/English", country: "Canada"},
     info: [
       `In a dystopian future, a military government separates children from their parents and puts them in schools, where they say the pledge of allegiance and speak one language. Niska, a Cree woman, joins an underground resistance movement to rescue her daughter.`,
@@ -1928,7 +1931,7 @@ export const cultFeatFilms = [
   {
     id: "AMSWCFF",
     title: {original: "Drunktown's Finest"},
-    year: "2014",
+    year: 2014,
     group: {people: "Diné", language: "English", location: "New Mexico, US"},
     info: [
       `Three young Navajos—an adopted Native girl, a young father-to-be, and a trans woman who dreams of being a model—strive to escape the hardships of life on an Indian reservation. Nizhoni seeks out her past, well after being adopted by a white Christian family; Felixia pursues a spot in the “women of the tribe” calendar; and Sickboy is headed to basic training so he can take care of his soon-to-be-born child.`,
@@ -1946,7 +1949,7 @@ export const cultFeatFilms = [
   {
     id: "AMNWCFF",
     title: {original: "Małni", translation: "Towards The Ocean, Towards The Shore"},
-    year: "2020",
+    year: 2020,
     group: {people: "Chinookan", language: "Chinuk Wawa", location: "Oregon, US"},
     info: [
       `<i>Małni</i> is poetic, experimental debut feature circling the origin of the death myth from the Chinookan people in the Pacific Northwest. At its center are Sweetwater Sahme and Jordan Mercier, who take separate paths contemplating their afterlife, rebirth, and death.`,
@@ -1963,7 +1966,7 @@ export const cultFeatFilms = [
   {
     id: "AMNWCFF1",
     title: {original: "SG̱aawaay Ḵ'uuna", translation: "Edge of the Knife"},
-    year: "2018",
+    year: 2018,
     group: {people: "Haida", language: "Haida", location: "Haida Gwaii, CA"},
     info: [
       `Set in 19th-century Haida Gwaii, <i>SG̱aawaay Ḵ’uuna</i> tells the classic Haida story of a traumatized and stranded man transformed into Gaagiixiid, the wildman. It is the first feature film spoken only in the Haida language.`,
@@ -1981,7 +1984,7 @@ export const cultFeatFilms = [
   {
     id: "AMINCFF",
     title: {original: "The Unknown Country"},
-    year: "2022",
+    year: 2022,
     group: {people: "Oglala", language: "English", location: "South Dakota, US"},
     info: [
       `A grieving woman embarks on a road trip through the American Midwest after receiving an unexpected invitation to reunite with her estranged Oglala Lakota family. Along the way, she uncovers her family history and a path to closure.`,
@@ -2000,7 +2003,7 @@ export const cultFeatFilms = [
   {
     id: "AMCRCFF",
     title: {original: "Garifuna in Peril"},
-    year: "2012",
+    year: 2012,
     group: {people: "Garínagu", language: "Garifuna/English", country: "Honduras"},
     info: [
       `A Garifuna-language teacher, Ricardo, struggles to preserve his endangered Afro-Amerindian culture by building a language school in his home village in Honduras. A business venture with his brother designed to raise money for the school’s construction becomes complicated by the expansion plans of a nearby tourist resort into indigenous territory. Historical parallels are invoked as Ricardo’s son rehearses a stage play about the Garifuna people’s last stand against British colonialism over 200 years ago in their motherland, the island of St. Vincent in the Caribbean.`,
@@ -2018,7 +2021,7 @@ export const cultFeatFilms = [
   {
     id: "AMCECFF",
     title: {original: "Ixcanul", translation: "Volcano"},
-    year: "2015",
+    year: 2015,
     group: {people: "Kaqchikel Maya", language: "Kaqchikel", country: "Guatemala"},
     info: [
       `In a village at the foot of an active volcano, seventeen-year-old María and her parents cultivate coffee. They practice a mixture of Catholicism and the traditional Maya religion, praying to the Christian God and making offerings to the deity of the volcano. She is arranged to be married to the coffee plantation foreman in a traditional ceremony, but problems arise when her desire to know more of the world beyond the volcano causes unforeseen consequences.`,
@@ -2037,7 +2040,7 @@ export const cultFeatFilms = [
   {
     id: "AMWECFF",
     title: {original: "Wiñaypacha", translation: "Eternity"},
-    year: "2018",
+    year: 2018,
     group: {people: "Aymara", language: "Aymara", country: "Peru"},
     info: [
       `An elderly couple named Willka and Phaxsi (Sun and Moon) live in a remote part of the Peruvian Andes. They await the return of their son who has left for the city.`,
@@ -2055,7 +2058,7 @@ export const cultFeatFilms = [
   {
     id: "AMNECFF",
     title: {original: "A Última Floresta", translation: "The Last Forest"},
-    year: "2021",
+    year: 2021,
     group: {people: "Yanomami", language: "Yanomamö", location: "Amazonas, BR"},
     info: [`In dense soundscapes and powerful images, alternating between documentary observation and staged sequences, Yanomami spokesperson Davi Kopenawa translates the ideas from his published literary works—especially the landmark <i>A Queda do Céu: Palavra de um Xamã Yanomami</i>—into cinematic form, attempting to combat the growing threats to his community and natural environment through the accessible depiction of traditional narratives and lifestyle.`],
     infoURL: "https://pt.m.wikipedia.org/wiki/A_%C3%9Altima_Floresta",
@@ -2070,7 +2073,7 @@ export const cultFeatFilms = [
   {
     id: "AMSOCFF",
     title: {original: "Eami"},
-    year: "2022",
+    year: 2022,
     group: {people: "Ayoreo", language: "Ayoreo", country: "Paraguay"},
     info: [
       `Eami’s homeland is invaded by settlers. She embodies Asojá, the bird-god-woman, falling into a trance. She walks slowly and stunned through her beloved forest, preparing to leave it forever.`,
@@ -2088,7 +2091,7 @@ export const cultFeatFilms = [
   {
     id: "ASNOCFF",
     title: {original: "Тойон Кыыл", transliteration: "Toyon kyyl", translation: "The Lord Eagle"},
-    year: "2018",
+    year: 2018,
     group: {people: "Sakha", language: "Sakha", location: "Sakha, RU"},
     info: [
       `Yakutia, 1930. Old Mikipper and his wife Oppuos live their days in the thick taiga. Cows, hunting, and fishing make up the simple everyday lives of the old people. Once, early in the winter, an eagle flies into their garden. The old people dare not drive it away because eagles are sacred.`,
@@ -2106,7 +2109,7 @@ export const cultFeatFilms = [
   {
     id: "ASEACFF",
     title: {original: "霸王別姬", transliteration: "Bà Wáng Bié Jī", translation: "Farewell, My Concubine"},
-    year: "1992",
+    year: 1992,
     group: {people: "Han Chinese", language: "Mandarin", country: "China"},
     info: [
       `In 1924, young Cheng Dieyi begins training at the Beijing Opera House at the same time as Duan Xiaolou. Cheng specializes in playing female parts, often against Duan’s commanding male leads. Over the next 50 years, the two men maintain a complicated relationship as China undergoes turbulent changes.`,
@@ -2124,7 +2127,7 @@ export const cultFeatFilms = [
   {
     id: "ASSECFF",
     title: {original: "โหมโรง", transliteration: "Hom rong", translation: "The Overture"},
-    year: "2004",
+    year: 2004,
     group: {people: "Thai", language: "Thai", country: "Thailand"},
     info: [
       `<i>Hom rong</i> is a fictionalized account of the life of Luang Pradit Pairoh, a Thai classical music master who lived from the late 19th to mid-20th century. The story follows his journey from childhood to becoming a master of the <i>ranat-ek</i> (Thai xylophone), highlighting the challenges he faces as traditional Thai music struggles against modernization and government bans.`,
@@ -2142,7 +2145,7 @@ export const cultFeatFilms = [
   {
     id: "ASSECFF1",
     title: {original: "ប៊ូឌីញ ស", transliteration: "White Building"},
-    year: "2021",
+    year: 2021,
     group: {people: "Khmer", language: "Khmer", country: "Cambodia"},
     info: [
       `A 20-year-old faces the demolition of his lifelong home, the White Building in Phnom Penh, Cambodia, and the pressures from family, friends, and neighbors that arise and intersect in this moment of sudden change.`,
@@ -2160,7 +2163,7 @@ export const cultFeatFilms = [
   {
     id: "ASHICFF",
     title: {original: "ཤམ་བྷ་ལ།", transliteration: "Shambhala"},
-    year: "2024",
+    year: 2024,
     group: {people: "Nepali", language: "Nepali/Tibetan", country: "Nepal"},
     info: [
       `In the heart of the Nepalese Himalayas, the spirited Pema embraces a polyandrous marriage with Tashi and his two younger brothers. They initially lead a harmonious life, but when Tashi fails to return from a trading trip to Lhasa, the legitimacy of Pema’s unborn child is questioned by her community. Determined to prove her love and purity, she embarks on a quest to find Tashi.`,
@@ -2178,7 +2181,7 @@ export const cultFeatFilms = [
   {
     id: "ASHICFF1",
     title: {original: "ལྷགས་པ་དང་མཉམ་དུ་འགྲོ་བ།", transliteration: "Lhakpa-dang nyam-du dro-wa", translation: "Walking with the Wind"},
-    year: "2017",
+    year: 2017,
     group: {people: "Ladakhi", language: "Ladakhi", location: "Ladakh, India"},
     info: [
       `10-year-old Tsering lives in the Himalayas. One day he accidentally breaks his friend’s school chair. When he decides to bring the chair back to his village, the seven kilometres long journey back home in mountainous landscape on a donkey, becomes even more arduous than usual.`,
@@ -2195,7 +2198,7 @@ export const cultFeatFilms = [
   {
     id: "ASSOCFF",
     title: {original: "ఆర్‌ఆర్‌ఆర్‌ లేదా రౌద్రం రణం రుధిరంం", transliteration: "RRR: Roudram Ranam Rudhiram", translation: "RRR: Rise Roar Revolt"},
-    year: "2022",
+    year: 2022,
     group: {people: "Telugu", language: "Telugu", location: "Telangana, IN"},
     info: [
       `An epic tale of a fearless Gōṇḍī revolutionary leader on a dangerous mission, who confronts a steely Indian Imperial Police officer serving the British Raj. <i>RRR</i> is a historical fiction film featuring characters inspired by two real-life Indian freedom fighters.`,
@@ -2213,7 +2216,7 @@ export const cultFeatFilms = [
   {
     id: "ASWECFF",
     title: {original: "أنَاشِيْدُ آدَمَ", transliteration: "Anāshīdu Ādama", translation: "Songs of Adam"},
-    year: "2024",
+    year: 2024,
     group: {people: "Arab", language: "Arabic", country: "Iraq"},
     info: [
       `Mesopotamia, 1946. Adam and Ali are forced to watch the washing of their grandfather’s body. The experience affects Adam so deeply that he decides never to grow up—and stops aging.`,
@@ -2237,7 +2240,7 @@ export const cultFeatFilms = [
       transliteration: "Alemnin meyirimdi pariksyzdygy",
       translation: "The Gentle Indifference of the World"
     },
-    year: "2018",
+    year: 2018,
     group: {people: "Kazakh", language: "Kazakh", country: "Kazakhstan"},
     info: [
       `When her father commits suicide, country girl Saltanat is forced to travel to the city in search of the money that will spare her mother from jail. Accompanied by her childhood friend (and ardent admirer) Kuandyk, Saltanat soon learns how wide the gap between her ideals and the reality of contemporary Kazakhstan truly is.`,
@@ -2255,7 +2258,7 @@ export const cultFeatFilms = [
   {
     id: "ASCECFF1",
     title: {original: "Бешкемпир", transliteration: "Beshkempir", translation: "Five Grannies"},
-    year: "1998",
+    year: 1998,
     group: {people: "Kyrgyz", language: "Kyrgyz", country: "Kyrgyzstan"},
     info: [
       `A young boy in a rural village discovers he is adopted. The film explores his coming-of-age journey as he navigates childhood mischief, his first crush, and the complex emotions surrounding his true parentage.`,
@@ -2273,7 +2276,7 @@ export const cultFeatFilms = [
   {
     id: "ASCECFF2",
     title: {original: "Мадина", transliteration: "Madina"},
-    year: "2023",
+    year: 2023,
     group: {people: "Kazakh", language: "Kazakh", country: "Kazakhstan/Pakistan/India"},
     info: [
       `In trying to earn a living for her small family—an old grandmother, a withdrawn little brother, and a two-year-old daughter—Madina is ready to go against her moral principles. Her feelings are frozen by a cold winter inside her that seems to never end, until one day her brother makes a shocking revelation. The knowledge of the abuse to which he was subjected as a child changes everything for Madina and breaks the ice that covers her soul. The story is based on the real experiences of lead actress Madina Akylbekov.`,
@@ -2291,7 +2294,7 @@ export const cultFeatFilms = [
   {
     id: "ASINCFF",
     title: {original: "ᠰᠢᠷ᠎ᠠ ᠨᠣᠬᠠᠢ ᠶᠢᠨ ᠲᠠᠮᠤ", transliteration: "Shar nokhoin tam", translation: "Cave of the Yellow Dog"},
-    year: "2005",
+    year: 2005,
     group: {people: "Khalkha", language: "Mongolian", country: "Mongolia"},
     info: [
       `Nansal finds a small dog and names him Zochor. Her father refuses to let her keep it, believing it will bring the family bad luck and lead wolves to their sheep. Nansal decides to hide her four-legged friend, but things get complicated as winter approaches and the family prepares to move camps.`,
@@ -2309,7 +2312,7 @@ export const cultFeatFilms = [
   {
     id: "EUEACFF",
     title: {original: "Trzy kolory: Biały", translation: "Three Colours: White"},
-    year: "1994",
+    year: 1994,
     group: {people: "Polish", language: "Polish/French", country: "Poland"},
     info: [
       `<i>Biały</i>, the second in the Polish <i>Trzy kolory</i> film trilogy themed on French Revolutionary ideals, is a psychological comedy-drama depicting the humiliating circumstances in the life of Polish immigrant Karol Karol.`,
@@ -2327,7 +2330,7 @@ export const cultFeatFilms = [
   {
     id: "EUWECFF",
     title: {original: "Portrait de la jeune fille en feu", translation: "Portrait of a Lady on Fire"},
-    year: "2019",
+    year: 2019,
     group: {people: "French", language: "French", country: "France"},
     info: [
       `France, 1770. Marianne, a painter, is commissioned to do the wedding portrait of Héloïse, a young woman who has just left the convent. Héloïse is a reluctant bride-to-be and Marianne must paint without her knowing. She observes her by day, to paint the portrait in secret.`,
@@ -2345,7 +2348,7 @@ export const cultFeatFilms = [
   {
     id: "OCAUCFF",
     title: {original: "Biniŋgili-gumbirri girrgili", translation: "Ten Canoes"},
-    year: "2006",
+    year: 2006,
     group: {people: "Yolŋu", language: "Djinba", location: "Arnhem Land, AU"},
     info: [
       `<i>Ten Canoes</i> tells an ancient Yolngu Aboriginal story, blending traditional myth with a modern-day narrative. The film follows a group of men on a goose egg hunt, where an elder tells a story from the past about a young man coveting his brother’s wife, illustrating the consequences of wrong desires and tribal law. The film uses a unique storytelling structure, switching between black and white for the present-day hunt and color for the ancient story, all while showcasing the beauty of Arnhem Land and the Yolngu culture.`,
@@ -2363,7 +2366,7 @@ export const cultFeatFilms = [
   {
     id: "OCMDCFF",
     title: {original: "Rehefa mihaona ny ranomasina sy ny kintana", translation: "When the Stars Meet the Sea"},
-    year: "1996",
+    year: 1996,
     group: {language: "Malagasy", country: "Madagascar"},
     info: [
       `This contemplative and poetic film traces the destiny of Kapila, an outcast child who had been deemed to have supernatural powers of destruction because of the timing of his solar eclipse birth.`,
@@ -2381,7 +2384,7 @@ export const cultFeatFilms = [
   {
     id: "OCMLCFF",
     title: {original: "Tanna"},
-    year: "2015",
+    year: 2015,
     group: {people: "Ni-Vanuatu", language: "Nivhaal/Nafe", country: "Vanuatu"},
     info: [
       `Wawa, a young girl from Yakel on Tanna Island, falls in love with her community leader’s grandson, Dain. When a war between factions escalates, Wawa is unknowingly betrothed as part of a peace deal. The lovers run away, but are pursued by enemies intent on killing them.`,
@@ -2399,7 +2402,7 @@ export const cultFeatFilms = [
   {
     id: "OCMCCFF",
     title: {original: "Ña Noniep", translation: "I am the Good Fairy"},
-    year: "2009",
+    year: 2009,
     group: {people: "Marshallese", language: "Marshallese", country: "Marshall Islands"},
     info: [
       `An original feature film made in the Marshall Islands, performed by island residents, and produced to support local education, interweaves Marshallese folklore with the challenges faced by youth in the islands today.`,
@@ -2418,7 +2421,7 @@ export const cultFeatFilms = [
   {
     id: "OCPLCFF",
     title: {original: "O Le Tulafale", translation: "The Orator"},
-    year: "2011",
+    year: 2011,
     group: {people: "Samoan", language: "Samoan", country: "Samoa"},
     info: [
       `<i>O Le Tulafale</i> is a contemporary drama about courage, forgiveness, and love. Saili lives a humble life with his beloved wife and daughter in an isolated traditional village on the islands of Samoa, but everything changes when he is denied his father’s chiefly status and his family plantation is threatened.`,
@@ -2438,7 +2441,7 @@ export const presMusDrama = [
   {
     id: "AFNOPMD",
     title: {original: "ⵙⴱⵉⴱⴰ", transliteration: "Sebeïba"},
-    origin: "n.d.",
+    century: null,
     group: {people: "Tuareg", language: "Tamahaq", location: "Djanet, DZ"},
     info: [
       `The performances associated with Sebeïba are practised by two communities living in Djanet during ten days in the first month of the Islamic lunar calendar.`,
@@ -2464,7 +2467,7 @@ export const presMusDrama = [
   {
     id: "AFEAPMD",
     title: {original: "Engilakinoto"},
-    origin: "n.d.",
+    century: null,
     group: {people: "Maasai", language: "Maa", country: "Tanzania"},
     info: [
       `Engilakinoto is call-and-response performing art form sung without instrumental accompaniment. A <i>olaranyani</i> (song leader) initiates the melody, and the chorus responds in unison, often with layered rhythms, deep throat-based chanting, and harmonies, while executing slow, leaning dance moves.`,
@@ -2497,7 +2500,7 @@ export const presMusDrama = [
       `A patch stretches over the colobus monkey<br>That does not climb trees<br>Among thin oxen whose bells are wound twice<br>But mine had conquered the Ng’atet anthrax<br>That the Maasai fear.`
     ],
     infoURL: "",
-    mediaURL: "https://youtu.be/CVS7rEkiEHQ",
+    mediaURL: ["https://youtu.be/CVS7rEkiEHQ"],
     textURL: "",
     ref: [
       { id: "kipuri-1983-maasai", type: "book", title: "Oral Literature of the Maasai", contributors: [ { firstName: "Naomi", lastName: "Kipuri", role: "author" } ], pubDate: { year: 1983 }, publisher: "East African Educational Publishers Ltd.", location: "Nairobi, Kenya", isbn: "9966463136", medium: "Print", meta: { notes: "A seminal collection of Maasai oral texts including folk tales, songs, and riddles. Provides the original Maa text alongside English translations and extensive socio-cultural commentary.", grade: "A", tags: ["Maasai", "Oral Tradition", "Kenya", "Folklore", "Maa Language", "Ethnography"] } },
@@ -2507,7 +2510,7 @@ export const presMusDrama = [
   {
     id: "AFSOPMD",
     title: {original: "Djxani"},
-    origin: "n.d.",
+    century: null,
     group: {people: "Juǀʼhoansi", language: "Juǀʼhoan", country: "Angola"},
     info: [
       `Djxani is a form of sung dance with narrative elements typically staged around a fire, performed by all members of the community. Dances involve choreographed shaking, stomping, and clapping, with dancers often taking on animal characteristics as they depict traditional stories. Every djxani includes an accompanying song that can be repeated indefinitely during the extended performances, while the <i>n</i><I>ǀ</I><i>um kxao</i> occasionally solos overtop.`,
@@ -2555,7 +2558,7 @@ export const presMusDrama = [
   {
     id: "AFCEPMD",
     title: {original: "Mvet"},
-    origin: "c. 19th-c",
+    century: 19,
     group: {people: "Ekang", language: "Fang-Beti-Bulu", country: "Equatorial Guinea"},
     info: [
       `The Mvet is an epic cycle of heroic tales encompassing music, storytelling, and dramatic performance. Shows are performed by a master storyteller known as the <i>mbom-mvet</i>, who simultaneously sings, recites, dances, and plays a stringed instrument called the <i>mvet</i>, a chordophone with calabash resonators, whose sounds accompany the intricate narratives.`,
@@ -2599,7 +2602,7 @@ export const presMusDrama = [
   {
     id: "AFWEPMD",
     title: {original: "Egúngún"},
-    origin: "c. 16th-c",
+    century: 16,
     group: {people: "Yorùbá", language: "Yorùbá", country: "Nigeria"},
     info: [
       `The Egúngún ancestral masquerade is a spiritual and cultural tradition of the Yoruba people, manifesting the collective spirits of departed ancestors who periodically return to the human community. Performances involve elaborately costumed and masked figures who embody the spirits of ancestors, known as <i>Ará Ọ̀run</i> (the collective dead).`,
@@ -2607,14 +2610,14 @@ export const presMusDrama = [
       `The Egúngún’s appearance is a spectacle of pomp and pageantry, driven by intense drumming and singing of <i>òríkì</i> (praise poems). Through dramatic mimes and actions, the masquerade critiques or praises the community’s behavior, encouraging ethical conduct.`
     ],
     excerpt: [`https://youtu.be/T1yvGSA8QO4`],
-    infoURL: "https://youtu.be/_16B1t8qDD8",
-    mediaURL: "",
+    infoURL: "",
+    mediaURL: ["https://youtu.be/_16B1t8qDD8"],
     textURL: ""
   },
   {
     id: "AMNOPMD",
     title: {original: "Yuraq"},
-    origin: "n.d.",
+    century: null,
     group: {people: "Yup'ik", language: "Yup'ik", location: "Alaska, US"},
     info: [
       `Yuraq is the Yup’ik word for a style of narrative dance and song performed in southwestern Alaska and used for storytelling, communicating traditions, and as a form of prayer. Performances typically involve singing in the Yup’ik language, drumming, and specific dance movements choreographed to the songs.`,
@@ -2632,7 +2635,7 @@ export const presMusDrama = [
   {
     id: "AMEAPMD",
     title: {original: "Posketv"},
-    origin: "c. 14th-c",
+    century: 14,
     group: {people: "Muscogee", language: "Muscogee", location: "Florida, US"},
     info: [
       `Posketv, also known as the busk or Green Corn Ceremony, is a ritual cycle comprised of sung dances, including <i>opvnkv haco</i> (stomp dances), <i>hvsē opvnkv</i> (ribbon dance), and other ceremonial and social dances.`,
@@ -2673,7 +2676,7 @@ export const presMusDrama = [
   {
     id: "AMINPMD",
     title: {original: "Wačípi"},
-    origin: "c. 17th-c",
+    century: 17,
     group: {people: "Sioux", language: "Sioux", location: "North Dakota, US"},
     info: [
       `Wačípi is a traditional gathering at which singing, dancing, and celebration play a central role. Performers dance in elaborate regalia, accompanied by a <i>lowáŋ wičáša</i> drum group.`,
@@ -2702,7 +2705,7 @@ export const presMusDrama = [
   {
     id: "AMSWPMD",
     title: {original: "Katsina"},
-    origin: "c. 14th-c",
+    century: 14,
     group: {people: "Hopi", language: "Hopílavayi", location: "Arizona, US"},
     info: [
       `In the Katsina ceremonies, an annual cycle of ritual performances timed to specific events in the lunisolar calendar, Hopi performers embody benevolent spirit messengers called <i>katsinam</i>. The katsinam—of which there are over 250 different types, representing various beings from animals to clouds—visit their people in physical form for six months of the year, singing and dancing in ceremonies, to bring gifts and teach appropriate behavior.`,
@@ -2726,7 +2729,7 @@ export const presMusDrama = [
   {
     id: "AMNWPMD",
     title: {original: "Hamats'a"},
-    origin: "n.d.",
+    century: null,
     group: {people: "Kwakwa̱ka̱ʼwakw", language: "Kwakʼwala", location: "Vancouver Island, CA"},
     info: [
       `Of all the dances of the Kwakwaka’wakw, the Hamatsa is considered to be the most important. The right to perform this dance is owned by particular families whose members have been possessed generation after generation by Baxwbakwalanuksiwe’, the man-eating supernatural being. The dance acts out the capture, return, and calming of the initiate.`,
@@ -2754,7 +2757,7 @@ export const presMusDrama = [
   {
     id: "AMCEPMD",
     title: {original: "Xajoj"},
-    origin: "c. 15th-c",
+    century: 15,
     group: {people: "Achí Maya", language: "Achí", country: "Guatemala"},
     info: [
       `Xajoj is a genre of theatrical performance involving music, dance, and storytelling. It is most famously associated with the <i>Rabinal Achí</i>, a pre-Columbian Maya play also known as <i>Xajoj Tun</i>, the tun being a type of wooden drum used in its performance.`,
@@ -2787,7 +2790,7 @@ export const presMusDrama = [
   {
     id: "AMCRPMD",
     title: {original: "Areíto"},
-    origin: "c. 15th-c",
+    century: 15,
     group: {people: "Taíno", language: "Taíno", location: "Puerto Rico"},
     info: [
       `The areíto is a multifaceted ceremonial performance encompassing song, dance, poetry, and storytelling, which serves as a vital repository of the worldview, history, and social structure of the Taíno people. Practiced across the Greater Antilles, this tradition is a dynamic and essential cultural practice for Taíno descendants, embodying their deep connection to ancestors, <i>zemís</i> (spirits), and the natural world.`,
@@ -2821,7 +2824,7 @@ export const presMusDrama = [
   {
     id: "AMWEPMD",
     title: {original: "Wanka"},
-    origin: "c. 15th-c",
+    century: 15,
     group: {people: "Quechua", language: "Quechua", country: "Peru"},
     info: [
       `Until 1555, a series of plays were performed annually in Cuzco, the capital of the Inca Empire, as part of a strong Andean dramaturgical tradition that continued well into the colonial period. The shows were of two types: <i>wanka</i>, which were historical and memorial in character, and <i>aránway</i>, which typically depicted the everyday lives of the Quechua people.`,
@@ -2874,7 +2877,7 @@ export const presMusDrama = [
       `...I hate that ancient conjurer<br>Who prophesies of evil things,<br>I feel the evils he predicts;<br>It’s he who always brings bad luck.`
     ],
     infoURL: "",
-    mediaURL: "https://youtu.be/KCYg801U_Ps?start=7",
+    mediaURL: ["https://youtu.be/KCYg801U_Ps?start=7"],
     textURL: "",
     ref: [
       { id: "markham-1871-ollanta", type: "book", title: "Ollanta, an Ancient Ynca Drama: Translated from the Original Quichua", contributors: [ { firstName: "Clements R.", lastName: "Markham", role: "translator" } ], url: "https://www.gutenberg.org/files/9068/9068-h/9068-h.htm#:~:text=is%20thus%20explained.-,OLLANTAY,-ACTS%20AND%20SCENES", pubDate: { year: 1871 }, publisher: "Trübner & Co.", location: "London, UK", medium: "Print", meta: { notes: "The first full English translation of the play. Includes Markham's 'Introduction' which argues for the purely Indigenous origin of the work, and a Quichua-English vocabulary.", grade: "C", tags: ["Primary Translation", "Quechua Drama", "Inca Empire", "Victorian Ethnography", "Ollanta"], sortKey: "text" } },
@@ -2885,7 +2888,7 @@ export const presMusDrama = [
   {
     id: "AMNEPMD",
     title: {original: "Yaõkwa"},
-    origin: "n.d.",
+    century: null,
     group: {people: "Enawenê-Nawê", language: "Enawenê-Nawê", location: "Mato Grosso, BR"},
     info: [
       `The Enawenê-Nawê people live in the basin of the Juruena River in the southern Amazon rainforest. They perform the Yaõkwa ritual every year during the drought period to honour the Yakairiti spirits, thereby ensuring cosmic and social order for the different clans.`,
@@ -2919,7 +2922,7 @@ export const presMusDrama = [
   {
     id: "AMSOPMD",
     title: {original: "Hain"},
-    origin: "n.d.",
+    century: null,
     group: {people: "Selk'nam", language: "Selk'nam", location: "Tierra del Fuego, CL/AR"},
     info: [
       `The Hain was an initiation ceremony for young Selk’nam men, marking their transition into adulthood, that evolved out of an earlier ceremony of the same name for young women. It involved elaborate rituals, dramatic impersonations of spirits by masked and painted men, and teachings about Selk’nam traditions and social structure. The initiates, called <i>klóketen</i>, would participate in a series of performances that altogether could last anywhere from multiple days to months, or even as long as a year.`,
@@ -2981,7 +2984,7 @@ export const presMusDrama = [
   {
     id: "ASNOPMD",
     title: {original: "Настунд", transliteration: "Ngastund"},
-    origin: "n.d.",
+    century: null,
     group: {people: "Nivkh", language: "Nivkh", location: "Sakhalin, RU"},
     info: [
       `Ngastund, also called <i>ngyzit</i> in the Amur dialect, is the East-Sakhalin Nivkh name for the sung epic tale tradition in which performers tell stories in an improvised, melodic style, to musical accompaniment. The instrumentation includes tambourines, ritual rattles, mouth harps, whistles, a one-stringed bowed instrument called a <i>tyngryn</i>, and <i>tyatya chxach</i>, the drum log.`,
@@ -3010,7 +3013,7 @@ export const presMusDrama = [
   {
     id: "ASEAPMD",
     title: {original: "能楽", transliteration: "Nōgaku"},
-    origin: "c. 14th-c",
+    century: 14,
     group: {people: "Japanese", language: "Japanese", country: "Japan"},
     info: [
       `Nōgaku theatre had its heyday in the fourteenth and fifteenth centuries, but actually originated in the eighth century when the Sangaku was transmitted from China to Japan. At the time, the term Sangaku referred to various types of performance featuring acrobats, song, and dance as well as comic sketches. Its subsequent adaption to Japanese society led to its assimilation of other traditional art forms.`,
@@ -3020,7 +3023,7 @@ export const presMusDrama = [
     ],
     excerpt: [`https://youtu.be/pZjJFKwoT-I`],
     infoURL: [""],
-    mediaURL: "https://youtu.be/54BBZEzYG9A",
+    mediaURL: ["https://youtu.be/54BBZEzYG9A"],
     textURL: "",
     ref: [
       { id: "the-noh-com-world-of-noh", type: "webpage", title: "The World of Noh", containerTitle: "the-Noh.com", contributors: [ { firstName: "", lastName: "The Noh.com Editorial Team", role: "author" } ], pubDate: { year: 2026 }, url: "https://www.the-noh.com/en/world/", publisher: "the-Noh.com / Hinoki Shoten", location: "Tokyo, Japan", medium: "Digital Educational Archive", meta: { notes: "A primary digital resource for the terminology and aesthetics of Nohgaku. It details the five categories of Noh plays (Kami, Shura, Katsura, Zatsu, Kiri) and the metaphysical concept of 'Yugen' (profound, mysterious beauty).", grade: "A", tags: ["Japan", "Noh", "Kyogen", "Japanese Theater", "Masks", "Yugen", "Zeami", "Zen Aesthetics"], sortKey: "info" } },
@@ -3030,7 +3033,7 @@ export const presMusDrama = [
   {
     id: "ASSEPMD",
     title: {original: "ᬕᬫ᭄ᬩᬸᬄ", transliteration: "Gambuh"},
-    origin: "c. 15th-c",
+    century: 15,
     group: {people: "Balinese", language: "Kawi/Balinese", location: "Bali, ID"},
     info: [
       `Gambuh is a form of musical dance drama from Bali, Indonesia, that masterfully blends dance, music, acting, and drama into a captivating theatrical experience. Dating back to the late-Majapahit era (around the 15th century), Gambuh is considered the progenitor of many other forms of Balinese performing arts, including Legong, Topeng masked dance, and Arja opera.`,
@@ -3065,7 +3068,7 @@ export const presMusDrama = [
   {
     id: "ASHIPMD",
     title: {original: "ལྷ་མོ", transliteration: "Lhamo"},
-    origin: "c. 14th-c",
+    century: 14,
     group: {people: "Tibetan", language: "Tibetan", location: "Tibet, CN"},
     info: [
       `Ache Lhamo, also known as Lhamo, is a comprehensive performing art combining song, dance, storytelling, chant, acrobatics, and religious ritual. Most popular in the Qinghai-Tibetan Plateau, the performance begins with a prayer ceremony, including the cleansing of the stage by hunters and blessings by the elder, and concludes with another blessing.`,
@@ -3080,7 +3083,7 @@ export const presMusDrama = [
   {
     id: "ASSOPMD",
     title: {original: "കൂടിയാട്ടം", transliteration: "Kūṭiyāṭṭaṁ"},
-    origin: "c. 15th-c",
+    century: 15,
     group: {people: "Malayali", language: "Sanskrit", location: "Kerala, IN"},
     info: [
       `Kutiyattam is a traditional performing art from Kerala, India, representing a local Malayalam synthesis of classical Sanskrit theatre and Tamil Koothu drama. Its origins lie in the works of 9th-century playwright-king Kulasekhara, and it was further formalized in the 15th century to its contemporary form.`,
@@ -3098,7 +3101,7 @@ export const presMusDrama = [
   {
     id: "ASWEPMD",
     title: {original: "تعزیه", transliteration: "Ta‘zīeh"},
-    origin: "c. 17th-c",
+    century: 17,
     group: {people: "Persian", language: "Persian", country: "Iran"},
     info: [
       `Ta‘zieh is a ritual dramatic art that recounts religious events, historical and mythical stories, and folk tales. Each performance has four elements: poetry, music, song, and movement.`,
@@ -3118,7 +3121,7 @@ export const presMusDrama = [
   {
     id: "ASCEPMD",
     title: {original: "Дастан", transliteration: "Dastan"},
-    origin: "c. 13th-c",
+    century: 13,
     group: {people: "Kyrgyz", language: "Kyrgyz", country: "Kyrgyzstan"},
     info: [
       `Dastan, from the Persian word for a story or tale, is an ornate form of oral epic narrative maintained by the Kyrgyz, as well as other neighboring Central Asian peoples. The narrative form expresses the historical memory of the Kyrgyz people and survives thanks to a community of epic tellers, both women and men, of all ages.`,
@@ -3134,8 +3137,8 @@ export const presMusDrama = [
       `In my last night’s dream,<br>I settled down on the upper Ala-Too mountain range<br>And caught a young baarchin eagle.<br>When I took him hunting,<br>The sound of his flapping wings was heard,<br>Unable to withstand his wrath,<br>All the animals fell over in fright.`,
       `Reaching with my right hand,<br>I grasped the sun for myself.<br>Reaching with my left hand,<br>I caught the moon for myself.<br>My right hand held the sun,<br>My left hand held the moon,<br>I took the sun<br>And put it in place of the moon,<br>I took the moon<br>And put it in place of the sun.<br>Together with the sun and moon,<br>I flew high into the sky.`
     ],
-    infoURL: "https://youtu.be/kMDklwoLf34",
-    mediaURL: "https://youtu.be/Gazj4lfBuHg",
+    infoURL: "",
+    mediaURL: ["https://youtu.be/Gazj4lfBuHg","https://youtu.be/kMDklwoLf34"],
     textURL: "",
     ref: [
       { id: "kocumkulkizi-2005-manas-epic", type: "article", title: "The Kyrgyz Epic Manas: Selections translated, introduced and annotated", contributors: [ { firstName: "Elmira", lastName: "Köçümkulkïzï", role: "translator" } ], pubDate: { year: 2005 }, url: "https://www.elibrary.az/docs/jurnal/jrn2015_333.pdf", publisher: "University of Washington / elibrary.az", location: "Seattle, WA / Baku, Azerbaijan", medium: "Digital PDF / Academic Translation", meta: { notes: "A scholarly translation focusing on the 'inner' logic of the epic. It includes detailed annotations regarding Kyrgyz nomadic life and the oral transmission techniques of the 'Manaschi' (traditional bards). This document is part of the Presidential Library of Azerbaijan's digital collection.", grade: "A", tags: ["Manas", "Kyrgyzstan", "Central Asia", "Turkic Epic", "Oral Tradition", "Manaschi", "Nomadic Culture"], sortKey: "text" } }
@@ -3144,7 +3147,7 @@ export const presMusDrama = [
   {
     id: "ASINPMD",
     title: {original: "ᡠᠶᡠᠨ", transliteration: "Uyun"},
-    origin: "n.d.",
+    century: null,
     group: {people: "Manchu", language: "Manchu", location: "Jilin, CN"},
     info: [
       `The Manchu term for shamanistic song is <i>angga gisun</i>, usually sung while dancing and accompanied by percussion instruments, thus making it a total performing art that integrates music, dance, and poetry.`,
@@ -3182,7 +3185,7 @@ export const presMusDrama = [
   {
     id: "EUEAPMD",
     title: {original: "Leelo"},
-    origin: "c. 11th-c",
+    century: 11,
     group: {people: "Seto", language: "Võro-Seto", country: "Estonia"},
     info: [
       `For the Seto community living in southeastern Estonia and the Pechory district of the Russian Federation, the tradition of <i>leelo</i>, an ancient polyphonic singing tradition, is a cornerstone of contemporary identity.`,
@@ -3212,12 +3215,15 @@ export const presMusDrama = [
     ],
     infoURL: "",
     mediaURL: ["https://youtu.be/mSXcYph-ODc","https://youtu.be/wUAxUie5lqc"],
-    textURL: "https://laul-setomaa-ee.translate.goog/en/song/uibonaeio?_x_tr_sl=et&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp"
+    textURL: "",
+    ref: [
+      { id: "seto-apple-tree-uibonaiõ", type: "webpage", title: "Uibonaiõ (The Apple Tree)", containerTitle: "Seto Song Archive (Laul ja regivärss)", contributors: [ { firstName: "", lastName: "Seto Community / Traditional", role: "author/performer" }, { firstName: "Janika", lastName: "Oras", role: "editor/collector" } ], pubDate: { year: 2026 }, url: "https://laul-setomaa-ee.translate.goog/en/song/uibonaeio?_x_tr_sl=et&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp", publisher: "Estonian Folklore Archives / Seto Institute", location: "Setomaa, Estonia", medium: "Digital Audio & Text Archive", meta: { notes: "A prime example of Seto Leelo. The song utilizes a specific 'killõ' (high-pitched solo voice) and 'torrõ' (chorus) structure. The lyrics follow the regivärss (eight-syllable) meter, common across Baltic-Finnic traditions, but with the distinct polyphonic harmony unique to the Seto region.", grade: "A", tags: ["Seto", "Leelo", "Estonia", "Finno-Ugric", "Polyphony", "Regivärss", "Oral Tradition", "UNESCO Heritage"] } }
+    ]
   },
   {
     id: "EUWEPMD",
     title: {original: "Opera"},
-    origin: "c. 16th-c",
+    century: 16,
     group: {people: "Italian", language: "Italian", country: "Italy"},
     info: [
       `Opera is a traditional Italian performing art, popular throughout Europe, featuring a combination of music, drama, acting, and staging. Its roots trace back to late-16th-century Florence, where a group of intellectuals, musicians, and poets called the Florentine Camerata sought to reconstruct ancient Greek theater on the premise that its works were all originally sung.`,
@@ -3232,7 +3238,7 @@ export const presMusDrama = [
   {
     id: "OCAUPMD",
     title: {original: "Buŋgul"},
-    origin: "n.d.",
+    century: null,
     group: {people: "Yolŋu", language: "Yolŋu Matha", location: "Arnhem Land, AU"},
     info: [
       `Buŋgul is the name of both the Yolŋu ceremony comprised of <i>manikay</i> traditional songs, dances, and ritual practices, as well as the gathering place in which such performances are held.`,
@@ -3307,7 +3313,7 @@ export const presMusDrama = [
   {
     id: "OCMDPMD",
     title: {original: "Hiragasy"},
-    origin: "c. 18th-c",
+    century: 18,
     group: {people: "Merina", language: "Malagasy", country: "Madagascar"},
     info: [
       `Hiragasy is a performing art composed of song, dance, and speech. Originating in the central highlands of Madagascar, the performance takes place in public spaces. It generally involves two troupes and lasts about one hour and thirty minutes, following a standard structure, including drumming, greetings, storytelling, dance, and folk songs.`,
@@ -3334,7 +3340,7 @@ export const presMusDrama = [
   {
     id: "OCMLPMD",
     title: {original: "Kesawaga"},
-    origin: "c. 20th-c",
+    century: 20,
     group: {language: "Tok Pisin", people: "Kiriwina", location: "Trobriand Islands, PNG"},
     info: [
       `Kesawaga, also known as Kiriwina ballet or folk opera, is a form of musical dance drama developed by the Raun Raun Theatre in Port Moresby, Papua New Guinea, with Trobriand poet John Kasaipwalova, based on the Daio dances of the Morema villages on Fergusson Island in Milne Bay Province.`,
@@ -3373,7 +3379,7 @@ export const presMusDrama = [
       `<i>(sings)</i> Imdeduya, Imdeduya<br>Let me lie against your breasts.<br>I am the Midnight Sun.<br>Thrashed by the ocean waves,<br>My body frails.<br>By night, by day I long for you<br>Imdeduya, Imdeduya.`
     ],
     infoURL: "https://core.ac.uk/download/pdf/210777423.pdf#page=153",
-    mediaURL: "https://youtu.be/lz-qlfztAbU",
+    mediaURL: ["https://youtu.be/lz-qlfztAbU"],
     textURL: "",
     ref: [
       { id: "raun-raun-2020-niugini-niugini-trilogy", type: "book", title: "Niugini Niugini, A Trilogy of Folk Operas: Sail the Midnight Sun, My Tide Let Me Ride, The Dance of the Snail", contributors: [ { firstName: "", lastName: "Raun Raun Theatre", role: "author" }, { firstName: "Greg", lastName: "Murphy", role: "editor" } ], pubDate: { year: 1985 }, url: "https://www.amazon.com/Niugini-Trilogy-Folk-Operas-Midnight/dp/9980892096", publisher: "UPNG Press (University of Papua New Guinea)", location: "Goroka / Port Moresby, PNG", medium: "Print (Paperback)", meta: { notes: "A compilation of the three most significant 'folk operas' in PNG history. These plays are known for their 'didactic folk' style, blending dance, song, and drama to address both ancestral myths and modern social challenges. Originally performed in Tok Pisin and English.", grade: "A", isbn: "9789980892096", tags: ["Papua New Guinea", "Raun Raun Theatre", "Folk Opera", "Melanesian Drama", "Oral Tradition", "Goroka", "Post-Colonial Theatre"], sortKey: "text" } }
@@ -3382,7 +3388,7 @@ export const presMusDrama = [
   {
     id: "OCMCPMD",
     title: {original: "Chelitakl Rechuodel"},
-    origin: "n.d.",
+    century: null,
     group: {people: "Palauan", language: "Palauan", country: "Palau"},
     info: [
       `Chelitakl Rechuodel, the traditional chants, music, and dances of Palau, encompass a vast and diverse body of oral tradition performed through <i>chelitakl</i> (song) and dance. Contrasted with <i>beches chelitakl</i> (modern music), these performances are distinguished by their ancient origins and distinctive vocal style.`,
@@ -3391,7 +3397,7 @@ export const presMusDrama = [
     ],
     excerpt: [`https://youtu.be/5cN7q1iGIww`],
     infoURL: [""],
-    mediaURL: "https://youtu.be/z0GeiyqP-Uw",
+    mediaURL: ["https://youtu.be/z0GeiyqP-Uw"],
     textURL: "",
     ref: [
       { id: "abels-2008-sounds-of-articulating-identity", type: "book", title: "Sounds of Articulating Identity: Tradition and Transition in the Music of Palau, Micronesia", contributors: [ { firstName: "Birgit", lastName: "Abels", role: "author" } ], pubDate: { year: 2008 }, url: "https://www.academia.edu/5326510/Sounds_of_Articulating_Identity_Tradition_and_Transition_in_the_Music_of_Palau_Micronesia", publisher: "Logos Verlag", location: "Berlin, Germany / Koror, Palau", medium: "Digital PDF / Ethnographic Monograph", meta: { notes: "A comprehensive analysis of Palauan musical history. It covers the 'Bai' (meeting house) performance contexts, the impact of Japanese and American colonial periods on local aesthetics, and the linguistic nuances of Palauan chant. Essential for understanding Micronesian music theory.", grade: "C", tags: ["Palau", "Micronesia", "Ethnomusicology", "Chant", "Identity", "Post-Colonialism", "Oral Tradition"] } },
@@ -3402,7 +3408,7 @@ export const presMusDrama = [
   {
     id: "OCPLPMD",
     title: {original: "Haka"},
-    origin: "n.d.",
+    century: null,
     group: {people: "Māori", language: "Māori", country: "New Zealand"},
     info: [
       `Haka is a traditional Maori performing art, typically performed in unison by a <i>kapa haka</i> group. It is characterized by vigorous, rhythmic movements of the entire body, stamping of the feet, and stylized gestures. A central feature is the chanted vocal accompaniment, delivered with powerful rhythm and intonation.`,
@@ -3411,7 +3417,7 @@ export const presMusDrama = [
     ],
     excerpt: [`https://youtu.be/LSdNQ-sbLdY`],
     infoURL: "https://en.wikipedia.org/wiki/Haka",
-    mediaURL: "https://youtu.be/q4ABL34b75M",
+    mediaURL: ["https://youtu.be/q4ABL34b75M"],
     textURL: ""
   }
 ];
@@ -3452,7 +3458,7 @@ export const foundRelTexts = [
       `>>(Papyrus of Ani 30B ROF)`
     ],
     infoURL: ["https://en.wikipedia.org/wiki/Book_of_the_Dead","https://en.wikipedia.org/wiki/Ancient_Egyptian_religion"],
-    mediaURL: "",
+    mediaURL: [],
     textURL: ["https://www.africa.upenn.edu/Books/Papyrus_Ani.html","https://isac.uchicago.edu/sites/default/files/uploads/shared/docs/saoc37.pdf"],
     ref: [
       { id: "faulkner-2015", type: "book", title: "The Egyptian Book of the Dead: The Book of Going Forth by Day: The Complete Papyrus of Ani Featuring Integrated Text and Full-Color Images", contributors: [{lastName: "Faulkner", firstName: "Raymond O.", role: "author"}], pubDate: {year: 2015}, publisher: "Chronicle Books", meta: {sortKey: "text", grade: "B"} },
@@ -3496,7 +3502,7 @@ export const foundRelTexts = [
       `>>(Lam I.II:103)`,
     ],
     infoURL: ["https://en.wikipedia.org/wiki/Dinka_religion","https://www.rogerblench.info/Language/Nilo-Saharan/Nilotic/Comparative%20Dinka%20lexicon%20converted.pdf"],
-    mediaURL: "",
+    mediaURL: [],
     textURL: "https://archive.org/details/divinityexperien0000lien",
     ref: [
       { id: "deng-1972", type: "book", title: "The Dinka of the Sudan", shortTitle: "The Dinka", containerTitle: "Case Studies in Cultural Anthropology", contributors: [ { firstName: "Francis Mading", lastName: "Deng", role: "author" } ], pubDate: { year: 1972 }, publisher: "Holt, Rinehart and Winston", location: "New York", isbn: "0030851680", pages: { start: "88", end: "88", literal: "88" }, url: "https://www.rahs-open-lid.com/wp-content/uploads/2024/02/The-Dinka-of-the-Sudan-Case-studies-in-cultural-anthropology-PDFDrive-.pdf#page=88", medium: "Monograph / Digital PDF", meta: { notes: "Part of the George and Louise Spindler series. Page 88 focuses on the 'Akol' (sun) and the relationship between the Dinka and their environment.", grade: "A", tags: ["Dinka", "South Sudan", "Ethnography", "Indigenous Scholar"], sortKey: "text" } },
@@ -3537,7 +3543,7 @@ export const foundRelTexts = [
       `>>(ǂAiǃgãmũchab 5:401-402 HW)`
     ],
     infoURL: "",
-    mediaURL: "",
+    mediaURL: [],
     textURL: "",
     ref: [
       { id: "wittenberg-2011", type: "article", title: "Notes towards a history of Khoi literature", contributors: [{lastName: "Wittenberg", firstName: "Hermann", role: "author"}], pubDate: {year: 2011}, containerTitle: "English Academy Review", volume: "28", issue: "1", pages: {start: "6", end: "22"}, url: "https://ibali.uct.ac.za/files/original/d58262950235cb005621b2d71f9c96191316eeff.pdf", meta: {sortKey: "info", grade: "B"}},
@@ -3595,7 +3601,7 @@ export const foundRelTexts = [
       `>>(Keti 1-62)`
     ],
     infoURL: "",
-    mediaURL: "",
+    mediaURL: [],
     textURL: "",
     ref: [
       { id: "turnbull-1992", type: "report", title: "The Mbuti Pygmies of the Ituri Forest", contributors: [ { firstName: "Colin M.", lastName: "Turnbull", role: "author" }, { firstName: "Francis S.", lastName: "Chapman", role: "author" } ], pubDate: { year: 1992 }, publisher: "Smithsonian Folkways Recordings", location: "Washington, D.C.", url: "https://folkways-media.si.edu/docs/folkways/artwork/SFW40401.pdf", medium: "Digital Booklet / Liner Notes", meta: { notes: "Detailed ethnographic and musicological notes for the SFW 40401 recording. Contains descriptions of the Molimo ceremony and polyphonic singing styles.", grade: "C", tags: ["Mbuti", "Ethnomusicology", "Ituri Forest", "Molimo"], sortKey: "text" } },
@@ -3646,7 +3652,7 @@ export const foundRelTexts = [
       `>>(Ogbè Méjì A:1-63 ASV)`
     ],
     infoURL: ["https://en.wikipedia.org/wiki/If%C3%A1","https://en.wikipedia.org/wiki/Yoruba_religion","https://research.auctr.edu/Ifa/Chap9Intro"],
-    mediaURL: "",
+    mediaURL: [],
     textURL: "",
     ref: [
       { id: "salami-2002", type: "book", title: "Ifá: A Complete Divination", contributors: [{lastName: "Salami", firstName: "Ayọ̀", role: "author"}], pubDate: {year: 2002}, publisher: "NIDD Publishing and Printing Limited", meta: {sortKey: "text", grade: "A"}},
@@ -3711,7 +3717,7 @@ export const foundRelTexts = [
       `>>(Tulugak 2:1-12)`
     ],
     infoURL: "",
-    mediaURL: "https://youtu.be/1TINaxgWRYw",
+    mediaURL: ["https://youtu.be/1TINaxgWRYw"],
     textURL: "",
     ref: [
       {id: "alunik-2003", type: "book", title: "Across Time and Tundra: the Inuvialuit of the Western Arctic", contributors: [{lastName: "Alunik", firstName: "Ishmael", role: "author"}], pubDate: {year: 2003}, publisher: "Raincoast Books", url: "https://archive.org/details/acrosstimetundra0000alun", meta: {sortKey: "text", grade: "A"}},
@@ -3818,7 +3824,7 @@ export const foundRelTexts = [
       `>>(Gaagigegaabaw 150-158)`
     ],
     infoURL: ["https://en.wikipedia.org/wiki/Wiigwaasabak","https://en.wikipedia.org/wiki/Midewiwin"],
-    mediaURL: "",
+    mediaURL: [],
     textURL: ["https://www.gutenberg.org/files/19368/19368-h/19368-h.htm"],
     ref: [
       { id: "vecsey-1984", type: "chapter", title: "Midewiwin Myths of Origin", contributors: [{lastName: "Vecsey", firstName: "Christopher", role: "author"}], pubDate: {year: 1984}, containerTitle: "Algonquian Papers - Archive", volume: "15", url: "https://ojs.library.carleton.ca/index.php/ALGQP/article/view/889", meta: {sortKey: "info", grade: "B"}},
@@ -3869,7 +3875,7 @@ export const foundRelTexts = [
       `>>(Skiri Genesis 43-44)`
     ],
     infoURL: ["https://en.wikipedia.org/wiki/James_Rolfe_Murie#Ceremonies_of_the_Pawnee_(1981)","https://en.wikipedia.org/wiki/Pawnee_mythology"],
-    mediaURL: "",
+    mediaURL: [],
     textURL: "",
     ref: [
       { id: "murie-1981", type: "book", title: "Ceremonies of the Pawnee", contributors: [{lastName: "Murie", firstName: "James R.", role: "author"}], pubDate: {year: 1981}, publisher: "Smithsonian Institution Press", url: "https://repository.si.edu/server/api/core/bitstreams/db5dec6a-c560-4393-a45c-22ef5b2aeffa/content", meta: {sortKey: "text", grade: "A"}},
@@ -3897,7 +3903,7 @@ export const foundRelTexts = [
       `I want you to dance every six weeks. Make a feast at the dance and have food that everybody may eat. Then bathe in the water. That is all. You will receive good words again from me some time. Do not tell lies.`
     ],
     infoURL: "",
-    mediaURL: "",
+    mediaURL: [],
     textURL: "",
     ref: [
       { id: "mooney-1896-ghost-dance", type: "article", title: "The Ghost-dance Religion and the Sioux Outbreak of 1890", containerTitle: "Fourteenth Annual Report of the Bureau of Ethnology to the Secretary of the Smithsonian Institution, 1892-93, Part 2", contributors: [ { firstName: "James", lastName: "Mooney", role: "author" } ], pubDate: { year: 1896 }, publisher: "Government Printing Office", location: "Washington, D.C.", medium: "Government Report / Ethnographic Study", url: "https://archive.org/details/ghostdancereligi0000moon", meta: { notes: "Contains the 'Messiah Letter' delivered by Wovoka (Jack Wilson) to a joint Cheyenne-Arapaho delegation in 1891. Transcribed by a Carlisle Indian School student and later rendered by Mooney. This 1896 publication is the primary source for the Ghost Dance doctrine.", grade: "C", tags: ["Wovoka", "Ghost Dance", "James Mooney", "Bureau of Ethnology", "Messiah Letter", "Plains Indians"] } },
@@ -3970,11 +3976,14 @@ export const foundRelTexts = [
       `<i>Ła Sabaat</i>, The End.`,
       `>>(TS 2.1:1-48)`
     ],
-    infoURL: ["https://en.wikipedia.org/wiki/Tsimshian_mythology","https://guides.library.ubc.ca/c.php?g=733661&p=5279003","https://www.washington.edu/uwired/outreach/cspn/Website/Classroom%20Materials/Reading%20the%20Region/Texts%20by%20and%20about%20Natives/Texts%20by%20and%20about%20Natives%20Main.html#:~:text=The%20conventional%20historical%20synthesis%20places,the%20beginnings%20of%20the%20world.","https://cdn.ymaws.com/aesthetics-online.org/resource/resmgr/articles/DylanRobinson.pdf","https://nniconstitutions.arizona.edu/sites/default/files/2021-11/Gitanyow.pdf","https://www.researchgate.net/publication/313107171_Adawx_Spanaxnox_and_the_Geopolitics_of_the_Tsimshian"],
-    mediaURL: "",
+    infoURL: ["https://en.wikipedia.org/wiki/Tsimshian_mythology","https://guides.library.ubc.ca/c.php?g=733661&p=5279003","https://www.washington.edu/uwired/outreach/cspn/Website/Classroom%20Materials/Reading%20the%20Region/Texts%20by%20and%20about%20Natives/Texts%20by%20and%20about%20Natives%20Main.html#:~:text=The%20conventional%20historical%20synthesis%20places,the%20beginnings%20of%20the%20world."],
+    mediaURL: [],
     textURL: ["https://www.smalgyax.ca/adaawx","https://nebula.wsimg.com/4c62c0e6924cd2d79f8b43edc04be5f0?AccessKeyId=E516E8F6836C59D9D9E9&disposition=0&alloworigin=1","https://aashley.weebly.com/uploads/4/3/8/2/4382474/tsimshian_narratives_vol_2.pdf","https://www.smalgyax.ca/gyemk"],
     ref: [
-      { id: "barbeau-beynon-1987-narratives-v1", type: "book", title: "Tsimshian Narratives I: Tricksters, Shamans and Heroes", contributors: [ { firstName: "William", lastName: "Beynon", role: "author" }, { firstName: "Marius", lastName: "Barbeau", role: "author" }, { firstName: "John", lastName: "Cove", role: "editor" }, { firstName: "George", lastName: "MacDonald", role: "editor" } ], pubDate: { year: 1987 }, url: "https://archive.org/details/tsimshiannarrati0000unse/mode/2up", publisher: "National Museums of Canada", location: "Ottawa", medium: "Digital Archive / Print", meta: { notes: "Contains narratives of Raven (Txamsem) and various shamanic initiations. Beynon’s role was critical as he provided the internal cultural logic that Barbeau often lacked.", grade: "A", tags: ["Ts'msyen", "Mythology", "William Beynon", "Raven Tales", "Ethnography"] } }
+      { id: "barbeau-beynon-1987-narratives-v1", type: "book", title: "Tsimshian Narratives I: Tricksters, Shamans and Heroes", contributors: [ { firstName: "William", lastName: "Beynon", role: "author" }, { firstName: "Marius", lastName: "Barbeau", role: "author" }, { firstName: "John", lastName: "Cove", role: "editor" }, { firstName: "George", lastName: "MacDonald", role: "editor" } ], pubDate: { year: 1987 }, url: "https://archive.org/details/tsimshiannarrati0000unse/mode/2up", publisher: "National Museums of Canada", location: "Ottawa", medium: "Digital Archive / Print", meta: { notes: "Contains narratives of Raven (Txamsem) and various shamanic initiations. Beynon’s role was critical as he provided the internal cultural logic that Barbeau often lacked.", grade: "A", tags: ["Ts'msyen", "Mythology", "William Beynon", "Raven Tales", "Ethnography"] } },
+      { id: "robinson-cultural-hearing-aid", type: "article", title: "A Cultural Hearing Aid", contributors: [ { firstName: "Dylan", lastName: "Robinson", role: "author" } ], pubDate: { year: 2026 }, url: "https://cdn.ymaws.com/aesthetics-online.org/resource/resmgr/articles/DylanRobinson.pdf", publisher: "American Society for Aesthetics", location: "Kingston, Ontario (Queen's University)", medium: "Scholarly Article / PDF", meta: { notes: "Robinson addresses the politics of Indigenous music reception. He argues that non-Indigenous listeners often use music as a 'cultural hearing aid' to fix or fulfill a certain idea of Indigeneity, rather than engaging with the music on its own sovereign terms. A key text for decolonial ethnomusicology.", grade: "A", tags: ["Stó:lō", "Dylan Robinson", "Aesthetics", "Ethnomusicology", "Hungry Listening", "Indigenous Sovereignty", "Decolonization"] } },
+      { id: "gitanyow-constitution-2006", type: "legal_document", title: "The Gitanyow Ayookxw: The Constitution of the Gitanyow Nation", contributors: [ { firstName: "Robert (Sindihl)", lastName: "Good", role: "Signatory/Author" } ], pubDate: { year: 2006, month: 11, day: 22 }, url: "https://nniconstitutions.arizona.edu/sites/default/files/2021-11/Gitanyow.pdf", publisher: "Native Nations Institute / Gitanyow Nation", location: "Gitanyow, British Columbia", medium: "Constitutional Document (PDF)", meta: { notes: "A foundational governance document that bridges the 'Ayookxw' (ancient law) with modern constitutional form. It establishes the Gitanyow Hereditary Chiefs as the governing authority and defines the 'Wilp' as the basic unit of social, political, and economic organization.", grade: "A", tags: ["Gitanyow", "Ayookxw", "Indigenous Law", "Constitution", "Wilp", "Sovereignty", "Gitksan", "Northwest Coast"] } },
+      { id: "marsden-2002-tsimshian-adawx", type: "article", title: "Adawx, Spanaxnox, and the Geopolitics of the Tsimshian", contributors: [ { firstName: "Susan", lastName: "Marsden", role: "author" } ], pubDate: { year: 2002 }, url: "https://www.researchgate.net/publication/313107171_Adawx_Spanaxnox_and_the_Geopolitics_of_the_Tsimshian", containerTitle: "BC Studies: The British Columbian Quarterly", volume: "135", pageRange: "101-135", publisher: "University of British Columbia", location: "Vancouver, BC", medium: "Journal Article", meta: { notes: "The foundational text for understanding Tsimshian 'Adawx' as a sophisticated geopolitical system. Marsden argues that these oral records are primary historical and legal documents that map the migration, territory, and social structures of the Wilp (House) through deep time.", grade: "C", tags: ["Tsimshian", "Adawx", "Spanaxnox", "Indigenous Sovereignty", "Geopolitics", "Northwest Coast", "Susan Marsden", "BC Studies"] } }
     ]
   },
   {
@@ -4051,7 +4060,7 @@ export const foundRelTexts = [
       `>>(Popul Vuh 5:2 DET179-80)`
     ],
     infoURL: ["https://en.wikipedia.org/wiki/Popol_Vuh","https://en.wikipedia.org/wiki/Maya_religion"],
-    mediaURL: "",
+    mediaURL: [],
     textURL: "",
     ref: [
       {id: "tedlock-1996", type: "book", title: "Popol Vuh: The definitive edition of the Mayan book of the dawn of life and the glories of gods and kings", contributors: [{lastName: "Tedlock", firstName: "Dennis Ernest", role: "author"}], pubDate: {year: 1996}, publisher: "Touchstone", url: "https://yale.imodules.com/s/1667/images/gid6/editor_documents/flick_readings/tedlock-popul_vuh_text.pdf", meta: {sortKey: "text", grade: "B"}},
@@ -4083,7 +4092,7 @@ export const foundRelTexts = [
       `>>(Antigüedades XIX-XXI)`
     ],
     infoURL: ["https://en.wikipedia.org/wiki/Ta%C3%ADno#Spirituality","http://www.hartford-hwp.com/archives/41/013.html"],
-    mediaURL: "",
+    mediaURL: [],
     textURL: "",
     ref: [
       { id: "pane-1988", type: "book", title: "Relación Acerca De Las Antigüedades De Los Indios", contributors: [{lastName: "Pané", firstName: "Fray Ramón", role: "author"}], pubDate: {year: 1988}, publisher: "Editora Corripio", url: "http://fundacioncorripio.org.do/wp-content/uploads/2023/01/fray-ramon-pane-relacion-acerca-de-las-antiguedades-delos-indios.pdf", meta: {sortKey: "text", grade: "C", notes: "Originally written c. 1494–1498"}},
@@ -4137,7 +4146,7 @@ export const foundRelTexts = [
       `>>(Huarochirí 2:9-28)`
     ],
     infoURL: ["https://en.wikipedia.org/wiki/Huarochir%C3%AD_Manuscript","https://en.wikipedia.org/wiki/Religion_in_the_Inca_Empire"],
-    mediaURL: "",
+    mediaURL: [],
     textURL: "",
     ref: [
       {id: "salomon-1991", type: "book", title: "The Huarochiri Manuscript: A Testament of Ancient and Colonial Andean Religion", contributors: [{lastName: "Salomon", firstName: "Frank", role: "author"}, {lastName: "Urioste", firstName: "George L.", role: "author"}], pubDate: {year: 1991}, publisher: "University of Texas Press", meta: {sortKey: "text", grade: "B"}},
@@ -4207,7 +4216,7 @@ export const foundRelTexts = [
       `>>(Iureke 6:77-79)`
     ],
     infoURL: ["https://venezuelanindian.blogspot.com/2009/12/watunna-orinoco-creation-cycle.html","https://pib.socioambiental.org/en/Povo:Ye'kwana#:~:text=stuck%20in%20them.-,Shamanism%20and%20rituals,-Foto%3A%20Alcida%20R"],
-    mediaURL: "https://vimeo.com/33329249",
+    mediaURL: ["https://vimeo.com/33329249"],
     textURL: "",
     ref: [
       {id: "decivrieux-1970", type: "book", title: "Watunna: Mitología Makiritare", contributors: [{lastName: "de Civrieux", firstName: "Marc", role: "author"}], pubDate: {year: 1970}, publisher: "Monte Ávila Editores CA", location: "Caracas, Venezuela", url: "https://monteavilaeditores.com/wp-content/plugins/pdfjs-viewer-shortcode/pdfjs/web/viewer.php?download=true&print=true&openfile=false&file=https://monteavilaeditores.com%2Fdownload%2Fwatunna-un-ciclo-de-creacion-en-el-orinoco%2F%3Fwpdmdl%3D10723%26refresh%3D69328fb829ac11764921272", meta: {sortKey: "text", grade: "B"}},
@@ -4267,7 +4276,7 @@ export const foundRelTexts = [
       `>>(Ayvu Rapyta 4:3-6 AFV)`
     ],
     infoURL: ["https://en.wikipedia.org/wiki/Ayvu_Rapyta","https://en.wikipedia.org/wiki/Guarani_mythology","https://pib.socioambiental.org/en/Povo:Guarani_Mbya"],
-    mediaURL: "",
+    mediaURL: [],
     textURL: "",
     ref: [
       {id: "cadogan-1959", type: "book", title: "Ayvu Rapyta: Textos míticos de los Mbyá-Guaraní del Guairá", contributors: [{lastName: "Cadogan", firstName: "León", role: "author"}], pubDate: {year: 1959}, publisher: "Faculdade de Filosofia, Ciências e Letras da Universidade de São Paulo", url: "https://biblioteca.trabalhoindigenista.org.br/wp-content/uploads/2018/06/AYVU-RAPYTA-Textos-Misticos-de-los.pdf", meta: {sortKey: "text", grade: "B"}},
@@ -4342,7 +4351,7 @@ export const foundRelTexts = [
       `>>(Dolganoff Ču’oleǰi 12.1:273-4 WIJ)`
     ],
     infoURL: ["https://arctic-megapedia.com/jukagirs/","https://x.com/UgricWarLord/status/1571434101780975617"],
-    mediaURL: "",
+    mediaURL: [],
     textURL: "",
     ref: [
       {id: "jochelson-1926", type: "book", title: "The Yukaghir and the Yukaghirized Tungus", contributors: [{lastName: "Jochelson", firstName: "Waldemar Ilyich", role: "author"}, {lastName: "Dolganoff", firstName: "Aleksey", role: "author"}], pubDate: {year: 1926}, containerTitle: "Memoirs of the AMNH", volume: "13", publisher: "E. J. Brill", location: "Leiden", isbn: "9783942883900", url: "https://catalog.hathitrust.org/Record/001632378", meta: {sortKey: "text", grade: "C"}}
@@ -4373,7 +4382,7 @@ export const foundRelTexts = [
       `>>(Domog 184)`
     ],
     infoURL: ["https://en.wikipedia.org/wiki/Ongon","https://en.wikipedia.org/wiki/Black_shamanism","https://austriaca.at/0xc1aa5572%200x00358456.pdf"],
-    mediaURL: "",
+    mediaURL: [],
     textURL: [""],
     ref: [
       { id: "birtalan-2003-delden-mend", type: "article", title: "Delden Mend: The Darkhad Shaman and Outlaw", containerTitle: "Altaica Budapestinensia 2002", contributors: [{ firstName: "Ágnes", lastName: "Birtalan", role: "author" }], pubDate: { year: 2003 }, url: "https://www.academia.edu/40395941/Birtalan_Ágnes_Delden_Mend_The_Darkhad_Shaman_and_Outlaw", publisher: "Eötvös Loránd University", location: "Budapest", medium: "Academic Paper / Folklore Study", meta: { notes: "A biographical and mythological analysis of Delden Mend, a historical Darkhad shaman whose life entered the realm of legend as an 'outlaw' figure. Discusses the intersection of social rebellion and spiritual power.", grade: "C", tags: ["Darkhad", "Mongolia", "Shamanism", "Folklore", "Heroic Legends"] } },
@@ -4448,7 +4457,7 @@ export const foundRelTexts = [
       `>>(Chūnqiū 1.1-2)`
     ],
     infoURL: ["https://en.wikipedia.org/wiki/Four_Books_and_Five_Classics","https://en.wikipedia.org/wiki/Religious_Confucianism","https://en.wikipedia.org/wiki/Confucianism"],
-    mediaURL: "",
+    mediaURL: [],
     textURL: ["http://wengu.tartarie.com/wg/wengu.php?l=bienvenue","https://ctext.org/confucianism","https://laits.utexas.edu/~mr56267/HIST_301J/Sources/Daxue-Zhongyong.pdf","https://warwick.ac.uk/fac/arts/classics/intranets/students/modules/ancientglobalhistory/syllabus/analects_of_confucius_eno-2015.pdf","https://scholarworks.iu.edu/iuswrrest/api/core/bitstreams/265d73a0-6bfa-45df-92ff-4e7d3f8be4b1/content"],
     ref: [
       { id: "confucius-lau-1979", type: "book", title: "The Analects (Lun yü)", contributors: [ { firstName: "D. C.", lastName: "Lau", role: "translator" } ], pubDate: { year: 1979 }, publisher: "Penguin Classics", location: "Harmondsworth / New York", isbn: "0140443487", medium: "Print / Paperback", meta: { notes: "A classic translation from the original Chinese. Includes a substantial introduction by D. C. Lau, a glossary of terms, and appendices on the events of Confucius's life and the compilation of the text.", grade: "A", tags: ["Confucianism", "Chinese Philosophy", "Ethics", "Lun yü", "D. C. Lau"] } },
@@ -4483,7 +4492,7 @@ export const foundRelTexts = [
       `>>(Ṅa 85A:1-36)`
     ],
     infoURL: ["https://en.wikipedia.org/wiki/B%C3%B6n_Kangyur_and_Tengyur","https://en.wikipedia.org/wiki/Bon"],
-    mediaURL: "",
+    mediaURL: [],
     textURL: "",
     ref: [
       {id: "karmay-1972", type: "book", title: "The Treasury of Good Sayings: A Tibetan History of Bon", contributors: [{lastName: "Karmay", firstName: "Samten Gyeltsen", role: "author"}], pubDate: {year: 1972}, publisher: "Oxford University Press", url: "https://pahar.in/pahar/Books%20and%20Articles/Tibet%20and%20China/1972%20Treasury%20of%20Good%20Sayings--a%20Tibetan%20History%20of%20Bon%20by%20Karmay%20s.pdf", meta: {sortKey: "info", grade: "A"}},
@@ -4523,7 +4532,7 @@ export const foundRelTexts = [
       ``
     ],
     infoURL: ["https://en.wikipedia.org/wiki/Pustaha","https://en.wikipedia.org/wiki/Batak_mythology","https://en.wikipedia.org/wiki/Parmalim"],
-    mediaURL: "",
+    mediaURL: [],
     textURL: [""],
     ref: [
       {id: "vandertuuk-1862", type: "book", title: "Bataksch Leesboek I-IV", contributors: [{lastName: "van der Tuuk", firstName: "Herman Neubronner", role: "author"}], pubDate: {year: 1862}, publisher: "Frederik Muller", url: "https://catalog.hathitrust.org/Record/001359493", meta: {sortKey: "text", grade: "B"}},
@@ -4579,7 +4588,7 @@ export const foundRelTexts = [
       `>>(Muṇḍaka 1.2.1-6 SPS)`
     ],
     infoURL: ["https://en.wikipedia.org/wiki/Vedas","https://en.wikipedia.org/wiki/Hinduism"],
-    mediaURL: "",
+    mediaURL: [],
     textURL: ["https://dn790008.ca.archive.org/0/items/yajurveda029670mbp/yajurveda029670mbp.pdf","https://archive.org/details/sAmaveda-theses/SamaVedaKashyapR.l.Saksi"],
     ref: [
       {id: "kashyap-2003", type: "book", title: "Secrets of Rig Veda: First 121 Suktas", contributors: [{lastName: "Kashyap", firstName: "Rangasami Lakshminarayan", role: "author"}], pubDate: {year: 2003}, publisher: "Sri Aurobindo Kapali Sastry Institute of Vedic Culture", location: "Bengaluru", url: "https://archive.org/details/MmFD_secrets-of-rig-veda-first-121-suktas-by-r.-l.-kashyap-bengaluru-2003-sri-aurobin", meta: {sortKey: "text", grade: "A"}},
@@ -4589,7 +4598,7 @@ export const foundRelTexts = [
   },
   {
     id: "ASWEFRT",
-    title: {original: "τὰ βιβλία", transliteration: "Ta Biblia", translation: "The Bible", literal: "The Books"},
+    title: {original: "τὰ βιβλία", transliteration: "Ta Biblia", translation: "The Bible"},
     group: {people: "Jewish", language: "Aramaic", religion: "Christianity", country: "Palestine"},
     info: [
       `The Bible (lit. “The Books”) is divided into two main sections, the first of which, the Old Testament, is largely coterminous with the Hebrew Bible, with writings covering such diverse topics as law, history, poetry, and wisdom, and illustrating the traditional life into which Jesus—a 1st-century carpenter, preacher, and the <+>messiah[hero, savior of a group of people in Judaism]</+>—was born. The books of the New Testament, which capture the story of Jesus’ life and ministry, describe a <+>new covenant[a treaty between God and people]</+> seen as fulfilling a prophesy set forth in the Old Testament.`,
@@ -4654,7 +4663,7 @@ export const foundRelTexts = [
       `>>(Revelation 4-5:1-8 NIV)`
     ],
     infoURL: ["https://en.wikipedia.org/wiki/Bible","https://en.wikipedia.org/wiki/Christianity"],
-    mediaURL: "",
+    mediaURL: [],
     textURL: "",
     ref: [
       {id: "niv-2011", type: "book", title: "The Bible", contributors: [{organization: "New International Version", role: "author"}], pubDate: {year: 2011}, publisher: "Biblica", url: "https://www.biblegateway.com/versions/New-International-Version-NIV-Bible/", meta: {sortKey: "text", grade: "B"}}
@@ -4688,7 +4697,7 @@ export const foundRelTexts = [
       `>>(Irk Bitig 1-3, 5, 15-18)`
     ],
     infoURL: ["https://en.wikipedia.org/wiki/Irk_Bitig","https://en.wikipedia.org/wiki/Tengrism"],
-    mediaURL: "",
+    mediaURL: [],
     textURL: "",
     ref: [
       {id: "tekin-1993", type: "book", title: "Irk Bitig: The Book of Omens", contributors: [{lastName: "Tekin", firstName: "Talat", role: "author"}], pubDate: {year: 1993}, publisher: "Harrassowitz Verlag", url: "http://altaica.ru/LIBRARY/Tekin%20Talat/Tekin_Irk%20Bitig%20-%20The%20Book%20of%20Omens%201993.pdf", meta: {sortKey: "text", grade: "A"}}
@@ -4737,7 +4746,7 @@ export const foundRelTexts = [
       `>>(Synnyt 317-18 JA)`
     ],
     infoURL: ["https://en.wikipedia.org/wiki/Kalevala","https://en.wikipedia.org/wiki/Runic_song","https://www.poetryfoundation.org/books/reviews/156104/kalevala-the-epic-of-the-finnish-people"],
-    mediaURL: "",
+    mediaURL: [],
     textURL: "",
     ref: [
       {id: "lonnrot-1988", type: "book", title: "Kalevala: The Epic of the Finnish People", contributors: [{lastName: "Lönnrot", firstName: "Elias", role: "author"}, {lastName: "Friberg", firstName: "Eino", role: "translator"}], pubDate: {year: 1988}, publisher: "Otava Publishing Company Ltd, University of Illinois Press", isbn: "9789511101376", url: "https://archive.org/details/kalevalaepicoffi0000unse/page/n3/mode/2up", meta: {sortKey: "text", grade: "A"}},
@@ -4820,7 +4829,7 @@ export const foundRelTexts = [
       `>>(Lokasenna 1-10)`
     ],
     infoURL: ["https://en.wikipedia.org/wiki/Poetic_Edda","https://en.wikipedia.org/wiki/Old_Norse_religion"],
-    mediaURL: "",
+    mediaURL: [],
     textURL: "",
     ref: [
       { id: "pettit-2023-poetic-edda", type: "book", title: "The Poetic Edda: A Dual-Language Edition", contributors: [ { firstName: "Edward", lastName: "Pettit", role: "author" } ], pubDate: { year: 2023 }, url: "https://doi.org/10.11647/OBP.0308", publisher: "Open Book Publishers", location: "Cambridge, UK", medium: "Open Access Digital Archive / Print", meta: { notes: "A single-volume parallel Old Norse edition and English translation of 36 medieval poems. Covers Norse cosmogony, the pantheon (Óðinn, Þórr, Loki), and heroic legends of the Sigurðr cycle.", grade: "B", tags: ["Old Norse", "Poetic Edda", "Icelandic Mythology", "Codex Regius", "Edward Pettit", "Folklore", "Eurasian Legend"] } }
@@ -4862,10 +4871,10 @@ export const foundRelTexts = [
       `<sp><i>D.</i>`,
       `The great sire Karora<br>Is gazing about watchfully.`,
       `Lo, the great sire, tall and broad-shouldered;<br>Lo, the great sire, in the pride of his strength!`,
-      `Lo, the great sire, in the pride of his strength;<br>Lo. the great sire, with his rippling muscles!`,
-      `Lo. the great sire, in the pride of his strength;<br>Lo, the great sire, proudly keeping to his own home!`,
+      `Lo, the great sire, in the pride of his strength;<br>Lo, the great sire, with his rippling muscles!`,
+      `Lo, the great sire, in the pride of his strength;<br>Lo, the great sire, proudly keeping to his own home!`,
       `Lo, his skull, hard as white quartz;<br>Lo, his skull, firm, hard, and strong!`,
-      `Lo. the bloodwood tree, hard as white quartz;<br>Lo, its hollow trunk, hard as white quartz!`,
+      `Lo, the bloodwood tree, hard as white quartz;<br>Lo, its hollow trunk, hard as white quartz!`,
       `Lo, his knees, firm, hard, and strong;<br>Lo, his knees, hard as white quartz!`,
       `Lo, the great sire of the <+>painted ground[The “painted ground” (intī́pilā́ra or indī́pilā́ra) of verses 6 and 29 is the sacred ground-painting, executed in blood and eagles’ down, which represents the Ilbā́ḷintja soak on the ceremonial ground. It is from the down torn and scattered from this ceremonial painting that the bandicoots found on the Burt Plain were thought to have come into being by the older generations. The Ilbā́ḷintja ground-painting consisted of an inner series of charcoal bands divided by white down rings. and an outer fringe of alternate red and white down circles. The black and white centre of the ground-painting symbolized the original dark honeysuckle (ntjụī́amba) liquid, which was believed to have filled the Ilbā́ḷintja soak at the beginning of time. The red and white outer circles were in accordance with the red and white markings worn by the bandicoot ancestors. According to my informants, one of the purposes of laying down the Ilbā́ḷintja ground-painting was to make the soil fruitful—to promote the increase of yam roots, of yalka bulbs, of various fruits and berries, also to produce an abundance of witchetty grubs, since all of these were articles of food dug up from the ground. In addition, the magical powers of the ground-painting gave new strength to all human beings who touched it; for instance, old men could lie on it and rise up with invigorated limbs]</+>;<br>Lo, his limbs, firm, hard, and strong!`,
       `<sp><i>E.</i>`,
@@ -4953,7 +4962,7 @@ export const foundRelTexts = [
     ],
     infoURL: ["https://www.thebookmerchantjenkins.com/product/songs-of-central-australia/",
     "https://en.wikipedia.org/wiki/Australian_Aboriginal_religion_and_mythology"],
-    mediaURL: "",
+    mediaURL: [],
     textURL: "",
     ref: [
       {id: "strehlow-1971", type: "book", title: "Songs of Central Australia", contributors: [{lastName: "Strehlow", firstName: "Theodor George Henry", role: "author"}], pubDate: {year: 1971}, publisher: "Angus and Robertson", isbn: "0207946574", meta: {sortKey: "text", grade: "B"}},
@@ -5035,7 +5044,7 @@ export const foundRelTexts = [
       `>>(Tokondahy A:1-17)`,
     ],
     infoURL: "https://en.wikipedia.org/wiki/Malagasy_mythology",
-    mediaURL: "",
+    mediaURL: [],
     textURL: "",
     ref: [
       {id: "haring-2013", type: "book", title: "How to Read a Folktale: The Ibonia Epic from Madagascar", contributors: [{lastName: "Haring", firstName: "Lee", role: "author"}], pubDate: {year: 2013}, publisher: "Open Book Publishers", url: "https://library.oapen.org/bitstream/handle/20.500.12657/30303/646721.pdf?sequence=1", meta: {sortKey: "text", grade: "B"}},
@@ -5072,7 +5081,7 @@ export const foundRelTexts = [
       `>>(Kauvandra 240 TWV)`
     ],
     infoURL: ["https://en.wikipedia.org/wiki/Religion_in_Fiji#Ancient_religion"],
-    mediaURL: "",
+    mediaURL: [],
     textURL: "",
     ref: [
       { id: "rokowaqa-2013", type: "book", title: "Viti Makawa: na kedrai Tukutuku nai Taukei kei Viti", contributors: [{lastName: "Rokowaqa", firstName: "Epeli", role: "author"}], pubDate: {year: 2013}, publisher: "Dravucevua Enterprise", location: "Suva, Fiji", isbn: "9789829808615", meta: {sortKey: "text", grade: "A", notes: "Originally written late 1800s"}},
@@ -5125,7 +5134,7 @@ export const foundRelTexts = [
       `>>(Metzgar 89-91)`
     ],
     infoURL: "",
-    mediaURL: "",
+    mediaURL: [],
     textURL: ["https://archive.org/details/yap02ml"],
     ref: [
       { id: "muller-yap-1917", type: "book", title: "Yap", shortTitle: "Yap", containerTitle: "Ergebnisse der Südsee-Expedition, 1908-1910", contributors: [ { firstName: "Wilhelm", lastName: "Müller", role: "author" }, { firstName: "Georg", lastName: "Thilenius", role: "editor" } ], pubDate: { year: 1917 }, publisher: "L. Friederichsen & Co.", location: "Hamburg, Germany", volume: "2", issue: "B", url: "https://hdl.handle.net/2027/coo.31924092528151", medium: "Print", meta: { notes: "Part of the 'Ethnographie: Mikronesien' sub-series of the expedition results.", grade: "B", sortKey: "text" } },
@@ -5183,7 +5192,7 @@ export const foundRelTexts = [
       `>>(Makemake M312-13)`
     ],
     infoURL: ["https://en.wikipedia.org/wiki/Rapa_Nui_mythology","http://kohaumotu.org/rongorongo_org/vanaga/a.html"],
-    mediaURL: "",
+    mediaURL: [],
     textURL: "",
     ref: [
       { id: "rjabchikov-rosetta", type: "webpage", title: "The Rosetta Tablet", containerTitle: "Rongorongo.org", contributors: [ { firstName: "Sergei V.", lastName: "Rjabchikov", role: "author" } ], pubDate: { year: 2000 }, url: "http://kohaumotu.org/rongorongo_org/rosetta/mata0116.html", medium: "Webpage / Research Notes", meta: { notes: "A digital decipherment analysis of the 'Mata' inscriptions on the Rosetta tablet.", grade: "C", sortKey: "text" } },
@@ -5199,7 +5208,7 @@ export const globFeatFilms = [
   {
     id: "AFNOGFF",
     title: {original: "ⴰⴽⵓⵏⴰⴽ ⵜⴷⴰⵍⴰⵜ ⵜⴰⵀⴰ ⵜⴰⵣⵓⴳⵀⴰⵉ", transliteration: "Akounak Tedalat Taha Tazoughai", translation: "Rain the Color of Blue with A Little Red In It"},
-    year: "2015",
+    year: 2015,
     group: {people: "Tuareg", language: "Tamasheq", country: "Niger/USA"},
     info: [
       `<i>Akounak</i> tells the story of a musician trying to make it against all odds, set against the backdrop of the Tuareg <i>tishoumaren</i> desert blues music scene. The protagonist, real life musician Mdou Moctar, must battle fierce competition from jealous musicians, overcome family conflicts, endure the trials of love, and overcome his biggest rival—himself.`,
@@ -5218,7 +5227,7 @@ export const globFeatFilms = [
   {
     id: "AFSOGFF",
     title: {original: "Inxeba", translation: "The Wound"},
-    year: "2017",
+    year: 2017,
     group: {language: "Xhosa", country: "South Africa"},
     info: [
       `Xolani, a lonely factory worker, joins the men of his community in the mountains of the Eastern Cape to initiate a group of teenage boys into manhood in the Xhosa <i>Ulwaluko</i> ceremony. When a defiant initiate from the city discovers his best kept secret, Xolani’s entire existence begins to unravel.`,
@@ -5236,7 +5245,7 @@ export const globFeatFilms = [
   {
     id: "AMSWGFF",
     title: {original: "Béeso Dah Yiníłjaa'", translation: "Fistful of Dollars"},
-    year: "2021",
+    year: 2021,
     group: {people: "Diné", language: "Navajo", location: "Arizona, US"},
     info: [`<i>Béeso Dah Yiníłjaa’</i> is a version of the 1964 Western film <i>A Fistful of Dollars</i> that has been dubbed entirely in the Navajo language. The project was spearheaded by the Navajo Nation Museum as an effort to preserve and revitalize the language, particularly among younger generations. The film, originally a “spaghetti Western” starring Clint Eastwood, was chosen partly because it does not feature any Native American characters, thus avoiding the often inaccurate or offensive portrayals found in many other films of the genre.`],
     infoURL: "https://www.npr.org/2021/11/17/1055897665/dubbing-a-fistful-of-dollars-to-spread-the-navajo-language",
@@ -5251,7 +5260,7 @@ export const globFeatFilms = [
   {
     id: "AMSOGFF",
     title: {original: "La vida en común", translation: "Living All Together"},
-    year: "2019",
+    year: 2019,
     group: {people: "Rankülche", language: "Spanish", country: "Argentina"},
     info: [
       `A puma is stalking Pueblo Ranquel, an indigenous community settled in the northern Argentinian desert, in a modern camp built to accommodate them. As if to break free of their youth, some young boys start stalking the animal, a traditional rite of passage.`,
@@ -5268,7 +5277,7 @@ export const globFeatFilms = [
   {
     id: "ASNOGFF",
     title: {original: "Сэр' няда", transliteration: "Ser' nyada", translation: "White Moss"},
-    year: "2014",
+    year: 2014,
     group: {people: "Nenets", language: "Nenets", location: "Yamalia, RU"},
     info: [
       `<i>White Moss</i>, also known by its Russian title <i>Belyy yagel</i>, takes place in the Yamalo-Nenets Autonomous Okrug of Russia in Western Siberia, where the Nenets people lead a traditional way of life. A young Nenets man, waiting for his beloved from the mainland, is forced into marriage by his mother. It is a story about loyalty, tradition, and the difficulty of choice.`,
@@ -5286,7 +5295,7 @@ export const globFeatFilms = [
   {
     id: "ASSEGFF",
     title: {original: "Mùi đu đủ xanh", translation: "The Scent of Green Papaya"},
-    year: "1993",
+    year: 1993,
     group: {people: "Vietnamese", language: "Vietnamese", country: "France"},
     info: [
       `1950s Saigon through the eyes of Mui, a Vietnamese servant girl. At 10 years-old, Mui leaves her village to work for an affluent, troubled family. As she comes of age, Mui finds work in the household of a pianist she has admired since childhood, and finds their relationship growing in complexity.`,
@@ -5304,7 +5313,7 @@ export const globFeatFilms = [
   {
     id: "ASHIGFF",
     title: {original: "ལུང་ནག་ན", transliteration: "Lung nag na", translation: "Lunana: A Yak in the Classroom"},
-    year: "2019",
+    year: 2019,
     group: {people: "Ngalop", language: "Dzongkha", country: "Bhutan"},
     info: [
       `<i>Lunana</i> follows Ugyen, a discontented, aspiring singer living in Thimphu who dreams of moving to Australia to become a rock star. He is sent to finish his mandatory teaching service in Lunana, a village of 56 people, 4,800 meters above sea level with no electricity or internet.`,
@@ -5321,7 +5330,7 @@ export const globFeatFilms = [
   {
     id: "OCAUGFF",
     title: {original: "Samson and Delilah"},
-    year: "2009",
+    year: 2009,
     group: {people: "Warlpiri", language: "Warlpiri", location: "Central Australian desert"},
     info: [
       `Samson and Delilah are 14-year-olds who live in the Aboriginal community of Iwupataka, or Jay Creek, near Alice Springs in Central Australia. Samson is mute and addicted to sniffing petrol, and Delilah takes care of her grandmother, with whom she creates dot paintings.`,
@@ -5338,7 +5347,7 @@ export const globFeatFilms = [
   {
     id: "OCMDGFF",
     title: {original: "Tantara malagasy", translation: "Disco Afrika: A Malagasy Story"},
-    year: "2023",
+    year: 2023,
     group: {people: "Betsimisaraka", language: "Malagasy", country: "Madagascar"},
     info: [
       `After a traumatic event forces him to leave the sapphire mines, Kwame returns to his hometown, where he reconnects with his mother and old friends. While there, he confronts the harsh realities of corruption and societal decay, forcing him to choose between the temptation of easy money and a tougher path toward political awakening and integrity.`,
@@ -5355,7 +5364,7 @@ export const globFeatFilms = [
   {
     id: "OCPLGFF",
     title: {original: "Next Goal Wins"},
-    year: "2023",
+    year: 2023,
     group: {language: "English", location: "American Samoa, US"},
     info: [
       `The story of the infamously terrible American Samoa soccer team, known for a brutal 2001 FIFA match they lost 31-0, and their attempt to turn around with a new coach.`,
@@ -5376,7 +5385,7 @@ export const cultShortFilms = [
   {
     id: "AMLOCSF",
     title: {original: "Imbé Gikegü", translation: "The Scent of Pequi Fruit"},
-    year: "2006",
+    year: 2006,
     group: {people: "Kuikuro", language: "Kuikúro", location: "Mato Grosso, BR"},
     info: [
       `As the dry season comes to an end, so begins the festive time of year in the Alto Xingu. The smell of the damp earth is mixed with the sweet perfume of pequi, and Kuikuro filmmakers <b>TAKUMÃ KUIKURO</b> and <b>MARICÃ KUIKURO</b> give us a re-enactment of the story of the fruit.`,
@@ -5393,7 +5402,7 @@ export const cultShortFilms = [
   {
     id: "AMSOCSF",
     title: {original: "Lafken ñi az", translation: "The Ocean Reveals Its Knowledge"},
-    year: "2016",
+    year: 2016,
     group: {people: "Lafkenche Mapuche", language: "Mapudungun", country: "Chile"},
     info: [
       `The sea… its colours, its sounds, and its strength imbue the dialogue between two girls and their grandparents with its spirit and wisdom. The Mapuche Lafkenche, one of the major territorial divisions of the Mapuche people, observe the Lafkenmapu Az to enter its dynamics and maintain a balance with Lafkenmapu, the land of the sea.`,
