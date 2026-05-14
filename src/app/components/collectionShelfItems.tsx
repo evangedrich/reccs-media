@@ -57,7 +57,7 @@ export default function CollectionShelfItems({
     return (
         <div className="relative">
             <div ref={scrollRef} onScroll={measure} style={{width:`calc((100vw - (68px * ${collections.length})) / 2)`}} className={`shrink-0 overflow-x-auto no-scrollbar overscroll-x-none h-full grid grid-rows-[repeat(auto-fill,minmax(16rem,1fr))] grid-flow-col auto-cols-[minmax(12rem,1fr)] gap-[2px] ${entries.length>0||true ? "bg-[var(--color-front)]" : "bg-[var(--color-back)]"} ${collections.length>1?"pr-[6px]":""} snap-x snap-mandatory`}>
-                {entries.map(entry => (
+                {entries.length>=8 && entries.map(entry => (
                     <Link href={`/${entry.id}`} className="block bg-[var(--color-back)] snap-start group" key={`${entry.id}_card`}>
                         <div className="shrink-1 w-full h-full hover:bg-[var(--color-mid)] px-4 flex flex-col gap-1 flex flex-col justify-center">
                             <div className="shrink-1 aspect-3/4 bg-[var(--color-mid)] group-hover:opacity-90">
@@ -71,7 +71,7 @@ export default function CollectionShelfItems({
                 {Array.from({ length: padCount }).map((_, idx) => (
                     <div key={`pad_${idx}`} className="bg-[var(--color-back)]" />
                 ))}
-                {entries.length===0
+                {entries.length<8
                 ? <>{Array.from({ length: fillCount*2 }).map((_,i) => (<div key={`dummy${i}`} className="bg-[var(--color-back)] p-5 flex flex-col justify-center gap-2 snap-start"><div className="aspect-3/4 shrink-1 bg-[var(--color-mid)]"></div><div className="shrink-0 w-full h-2 bg-[var(--color-mid)]"></div><div className="shrink-0 w-full h-4 bg-[var(--color-mid)]"></div></div>))}</>
                 : <></>}
             </div>

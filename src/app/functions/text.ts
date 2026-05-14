@@ -1,10 +1,10 @@
 
 export const getTitle = (selection: any, field?: string) => {
-    const label = ('work' in selection && selection.work[field ?? "original"])
-        ? `${selection.work[field ?? "original"]}: “${selection.title[field ?? "original"]}”`
-        : ('anthology' in selection && selection.anthology[field ?? "original"])
-        ? `“${selection.title[field ?? "original"]}”, ${selection.anthology[field ?? "original"]}`
-        : ('piece' in selection && /^(?!undefined)\p{Script=Latin}/u.test(selection.title[field ?? "original"]))
+    const label = (selection.meta && 'work' in selection.meta && selection.meta.work[field ?? "original"])
+        ? `${selection.meta.work[field ?? "original"]}: “${selection.title[field ?? "original"]}”`
+        : (selection.meta && 'anthology' in selection.meta && selection.meta.anthology[field ?? "original"])
+        ? `“${selection.title[field ?? "original"]}”, ${selection.meta.anthology[field ?? "original"]}`
+        : (selection.meta && 'piece' in selection.meta && /^(?!undefined)\p{Script=Latin}/u.test(selection.title[field ?? "original"]))
         ? `“${selection.title[field ?? "original"]}”`
         : selection.title[field ?? "original"];
     return label;

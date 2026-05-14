@@ -1067,7 +1067,7 @@ export const stirrPoetry = [
   {
     id: "AFEASTP",
     title: { original: "𐒖𐒐𐒐𐒗𐒕𐒐 𐒆𐒚𐒑𐒖𐒕", transliteration: "Alleyl dumay", translation: "As night falls" },
-    piece: true,
+    meta: { piece: true },
     author: "Raage Ugaas",
     group: {people: "Somali", language: "Somali", location: "Sasabane, ET"},
     info: [
@@ -1075,18 +1075,19 @@ export const stirrPoetry = [
       `<b>RAAGE UGAAS WARFAA</b> was a chief, poet, and Somali military warrior who lived around the middle of the 19th century. Considered by many Somali to be the best <i>halabuur</i>, Raage Ugaas is remembered for his poems, stories, and interesting events. He was the first to employ <i>guudmaar</i>, an allegorical technique that old poets used to send and convey secret messages.`
     ],
     excerpt: [`Night had fallen and behind closed doors everyone was sleeping<br>Thunder called out with a clamour of rain like shots from a thousand rifles<br>So was my wailing heard that they thought it a lion approaching<br>For men the spine and ribsides are the body’s central support<br>I am shut away now from the eyes through which I used to see<br>Only God knows the source of my lamentations<br>The vulture with an injury to his shoulder cannot fly<br>The horse who has lost his spine cannot gallop<br>The man injured in eye and ribs cannot seek revenge<br>A man whose heart aches cannot take a bride home<br>When the camels are thirsty their outcries increase<br>Like a small girl whose mother now lives in the hereafter<br>Whose father has brought another woman to sleep in the <i>aqal</i><br>I grieve constantly from the sorrow deep in my belly<br>I’m the man whose fiancée has been given to another<br>I’m the man who sees springs but whose thirst remains unquenched<br>I’m the man whose brother is clan leader and yet is accused<br>I am that silent man who sits, slowly patting his mouth again and again`],
-    infoURL: ["https://www.ethnorema.it/wp-content/uploads/18-06-Orwin.pdf"],
+    infoURL: [""],
     mediaURL: ["https://youtu.be/p-L9f9TkVFE"],
     textURL: "https://citylore.org/wp-content/uploads/2022/01/Somalia_Poetry_Raage-Ugaas_Night-Has-Fallen.pdf",
     ref: [
       { id: "andrzejewski-1993", type: "book", title: "An Anthology of Somali Poetry", contributors: [ { firstName: "Bogumil W.", lastName: "Andrzejewski", role: "author" }, { firstName: "Sheila", lastName: "Andrzejewski", role: "author" } ], pubDate: { year: 1993 }, publisher: "Indiana University Press", location: "Bloomington, IN", version: "Republished by Hassell Street Press, 2021", isbn: "9780253304635", medium: "Print", meta: { notes: "A definitive collection covering the major genres of Somali poetry, including the Gabay, Jiifto, and Geeraar. Features translations of works by Sayyid Mohamed Abdille Hassan and others.", grade: "B", tags: ["Somali Literature", "Oral Tradition", "Horn of Africa", "Poetry Anthology"] } },
-      { id: "somalinet-2012-guudmar-raage-ugaas", type: "forum_post", title: "The use of guudmar In Somali poems", contributors: [ { firstName: "", lastName: "metamorphosis", role: "author/forum member" }, { firstName: "Raage", lastName: "Ugaas", role: "subject/poet" } ], pubDate: { year: 2012, month: 4, day: 25 }, url: "https://somalinet.com/forums/viewtopic.php?t=304369#gsc.tab=0", publisher: "SomaliNet Forums", location: "Ogaden - Soomaali Galbeed / Digital", medium: "Digital Forum Thread", meta: { notes: "An informal but culturally vital record detailing 'guudmar' (allegory) in Somali oral tradition. It recounts how Raage Ugaas used coded verbal messages to communicate his starvation, and how his father replied with a similarly coded message that functioned as a tamper-evident seal, exposing the messenger's theft of the food in transit.", grade: "A", tags: ["Somali", "Guudmar", "Raage Ugaas", "Oral Tradition", "Allegory", "Cryptography", "Horn of Africa", "Digital Diaspora"] } }
-    ]
+      { id: "orwin-2022-language-sound-raage-ugaas", type: "journal_article", title: "Language and its sound in ‘Allayl Dumay’ by Raage Ugaas Warfaa", contributors: [ { firstName: "Martin", lastName: "Orwin", role: "author" }, { firstName: "Raage", lastName: "Ugaas Warfaa", role: "subject/poet" } ], pubDate: { year: 2022 }, url: "https://www.ethnorema.it/wp-content/uploads/18-06-Orwin.pdf", publisher: "Ethnorema", location: "Italy / Somalia", medium: "PDF / Scholarly Journal Article", meta: { notes: "A technical linguistic analysis of the poem 'Allayl Dumay'. Orwin examines the interplay between Somali phonology and the 'gabay' meter, focusing on alliteration and the specific weight of long vs. short syllables. It bridges the gap between oral performance and formal literary scansion.", grade: "C", tags: ["Somali", "Raage Ugaas", "Martin Orwin", "Phonology", "Alliteration", "Gabay", "Quantitative Meter", "Oral Literature"] } },
+      { id: "somalinet-2012-guudmar-raage-ugaas", type: "forum_post", title: "The use of guudmar In Somali poems", contributors: [ { firstName: "", lastName: "metamorphosis", role: "author/forum member" }, { firstName: "Raage", lastName: "Ugaas", role: "subject/poet" } ], pubDate: { year: 2012, month: 4, day: 25 }, url: "https://somalinet.com/forums/viewtopic.php?t=304369#gsc.tab=0", publisher: "SomaliNet Forums", location: "Ogaden - Soomaali Galbeed / Digital", medium: "Digital Forum Thread", meta: { notes: "An informal but culturally vital record detailing 'guudmar' (allegory) in Somali oral tradition. It recounts how Raage Ugaas used coded verbal messages to communicate his starvation, and how his father replied with a similarly coded message that functioned as a tamper-evident seal, exposing the messenger's theft of the food in transit.", grade: "B", tags: ["Somali", "Guudmar", "Raage Ugaas", "Oral Tradition", "Allegory", "Cryptography", "Horn of Africa", "Digital Diaspora"] } }
+    ],
   },
   {
     id: "AFSOSTP",
     title: {original: "The broken string"},
-    piece: true,
+    meta: { piece: true },
     author: "Xa:ä-tin",
     intermediary: "Diä!kwain",
     group: {people: "ǀXam-ka ǃʼē", language: "ǀXam", country: "South Africa"},
@@ -1102,7 +1103,7 @@ export const stirrPoetry = [
       { id: "krog-2004-stars-say-tsau", type: "book", title: "The Stars Say 'Tsau': /Xam Poetry of Diä!kwain, Kweiten-ta-⫽ken, ⫽Kabbo, /Han≠kass'o and !Kweiten-ta-⫽ken", contributors: [ { firstName: "", lastName: "Diä!kwain", role: "author" }, { firstName: "", lastName: "Kweiten-ta-⫽ken", role: "author" }, { firstName: "Antjie", lastName: "Krog", role: "author" }, { firstName: "Wilhelm", lastName: "Bleek", role: "editor" }, { firstName: "Lucy", lastName: "Lloyd", role: "editor" } ], pubDate: { year: 2004 }, url: "https://archive.org/details/starssaytsauxamp0000diak", publisher: "Kwela Books", location: "Cape Town, South Africa", medium: "Poetry Anthology", meta: { notes: "A poetic rendering of the Bleek and Lloyd Collection. Focuses on the San concept of 'The First Times.' The title refers to the sound the stars make (Tsau), reflecting the San belief in a sentient, audible universe.", grade: "B", tags: ["San", "|Xam", "South Africa", "Oral Tradition", "Antjie Krog", "Cosmology", "Indigenous Poetry"], sortKey: "text" } },
       { id: "farmer-xam-2009", type: "article", title: "Translator’s Note: 'The Broken String' by Dia!kwain", containerTitle: "Poetry", contributors: [ { firstName: "Harold", lastName: "Farmer", role: "author" } ], pubDate: { year: 2009, month: 4 }, url: "https://www.poetryfoundation.org/poetrymagazine/articles/145726/translator39s-note-the-broken-string-by-diakwain", publisher: "Poetry Foundation", location: "Chicago, IL", medium: "Digital Magazine / Essay", meta: { notes: "Explains the 're-versification' process of |Xam oral narratives. Krog discusses the profound metaphor of the 'broken string' as a symbol for the loss of cultural connection and the silence that follows the death of a singer/shaman.", grade: "C", tags: ["|Xam", "San", "Antjie Krog", "Translation Theory", "Oral Tradition", "South Africa", "Lament"], sortKey: "info" } },
       { id: "bleek-lloyd-1911-specimens", type: "book", title: "Specimens of Bushman Folklore", contributors: [ { firstName: "W. H. I.", lastName: "Bleek", role: "author" }, { firstName: "L. C.", lastName: "Lloyd", role: "author" }, { firstName: "George McCall", lastName: "Theal", role: "editor" } ], pubDate: { year: 1911 }, url: "https://archive.org/details/specimensofbushm00blee", publisher: "George Allen & Company, Ltd.", location: "London", medium: "Print / Digital Archive", meta: { notes: "The primary source for |Xam and !Kun mythology. Features side-by-side transcriptions of the native languages and English translations. Includes the stories of |Kabbo, Han≠kass'o, and Dia!kwain regarding the Mantis (Cagn), the Moon, and the origin of death.", grade: "D", tags: ["|Xam", "San", "South Africa", "Folklore", "Philology", "Bleek and Lloyd", "Primary Source"], sortKey: "text" } }
-    ]
+    ],
   },
   {
     id: "AFCESTP",
@@ -1146,7 +1147,7 @@ export const stirrPoetry = [
   {
     id: "AMNOSTP",
     title: { original: "ᐃᒪᕕᖕᒧᑦ ᓴᕐᕙᕗᖓ", transliteration: "Imavingmut sarvavunga", translation: "I dive into the ocean" },
-    piece: true,
+    meta: { piece: true },
     author: "Uvavnuk",
     group: {people: "Inuit", language: "Inuktitut", location: "Nunavut, CA"},
     info: [
@@ -1162,7 +1163,7 @@ export const stirrPoetry = [
       { id: "rasmussen-1929-intellectual-culture-iglulik", type: "book", title: "Intellectual Culture of the Iglulik Eskimos", containerTitle: "Report of the Fifth Thule Expedition 1921-24 (Vol. VII, No. 1)", contributors: [ { firstName: "Knud", lastName: "Rasmussen", role: "author" } ], pubDate: { year: 1929 }, url: "https://en.wikisource.org/wiki/Intellectual_Culture_of_the_Iglulik_Eskimos/Chapter_5", publisher: "Gyldendalske Boghandel, Nordisk Forlag", location: "Copenhagen, Denmark", medium: "Print (First Edition)", meta: { notes: "A primary source for Inuit mythology, shamanism (Aua), and oral poetry. It details the 'taboos' and spiritual laws (Pittailiniq) that governed daily life. Essential for understanding the conceptual roots of the 'Uaajeerneq' and Arctic drum traditions recorded in later works.", grade: "A", tags: ["Inuit", "Iglulik", "Shamanism", "Aua", "Knud Rasmussen", "Fifth Thule Expedition", "Oral Poetry", "Arctic Mythology"] } },
       { id: "berthelsen-2022-sculpting-the-verse", type: "webpage", title: "Sculpting the Verse", containerTitle: "Arctic Arts Summit", contributors: [ { firstName: "Aqqalu", lastName: "Berthelsen", role: "author" } ], pubDate: { year: 2022 }, url: "https://arcticartssummit.com/articles/sculpting-the-verse/#:~:text=Uvavnuk%20speaks%20of%20all%20the%20natural%20things%20greater%20than%20herself", publisher: "Arctic Arts Summit", location: "Whitehorse, Yukon / Greenland", medium: "Digital Artist Essay", meta: { notes: "An exploration of the 'Uaajeerneq' (Greenlandic mask dance) and its three pillars: humor, fear, and sex. Berthelsen explains how these traditional performance elements inform his electronic music production and the broader movement of Arctic Indigenous futurism.", grade: "A", tags: ["Kalaallit", "Greenland", "Uaajeerneq", "Mask Dance", "Electronic Music", "Arctic Arts", "Inuit Drum", "Sound Design"] } },
       { id: "freuchen-1961-book-of-the-eskimos", type: "book", title: "Book of the Eskimos", contributors: [ { firstName: "Peter", lastName: "Freuchen", role: "author" }, { firstName: "Dagmar", lastName: "Freuchen", role: "editor" } ], pubDate: { year: 1961 }, url: "https://archive.org/details/bookofeskimos0000freu", publisher: "World Publishing Company", location: "Cleveland and New York", medium: "Print (First Edition)", meta: { notes: "A foundational ethnographic text covering the Thule expeditions. It details social structures, hunting rituals, and the transition from traditional law to colonial governance. Includes critical accounts of the polar 'Long Night' and the cultural importance of drum dances and storytelling.", grade: "C", tags: ["Inuit", "Arctic", "Thule", "Greenland", "Ethnography", "Drum Dance", "Oral History", "Polar Exploration"] } }
-    ]
+    ],
   },
   {
     id: "AMEASTP",
@@ -1230,7 +1231,7 @@ export const stirrPoetry = [
   {
     id: "AMNWSTP",
     title: {original: "Spucwpuxlits'lhim", translation: "Milha dance song"},
-    piece: true,
+    meta: { piece: true },
     intermediary: "Bella Coola Archives",
     group: {people: "Nuxalk", language: "Nuxalk", location: "British Columbia, CA"},
     info: [
@@ -1255,7 +1256,7 @@ export const stirrPoetry = [
       { id: "kolstee-1977-bella-coola-music", type: "thesis", title: "Bella Coola Indian music: a study of the interaction between Northwest Coast Indian musical structures and their functional context", contributors: [ { firstName: "Anton Frederik", lastName: "Kolstee", role: "author" } ], pubDate: { year: 1977 }, url: "https://open.library.ubc.ca/media/stream/pdf/831/1.0094150/1", publisher: "University of British Columbia", location: "Vancouver, BC", medium: "Digital Thesis (PDF)", meta: { notes: "A formal analysis of Nuxalk music. Kolstee examines the relationship between musical form (rhythm, pitch, contour) and its use in the potlatch and other social institutions. It includes transcriptions of songs and a discussion on the preservation of melodic integrity across generations.", grade: "D", tags: ["Nuxalk", "Bella Coola", "Northwest Coast", "Ethnomusicology", "Indigenous Music", "Potlatch", "Rhythm", "UBC"] } },
       { id: "nuxalk-nation-culture-language-2026", type: "webpage", title: "Culture and Language", containerTitle: "Nuxalk Nation", contributors: [ { firstName: "", lastName: "Nuxalk Nation", role: "author/publisher" } ], pubDate: { year: 2026 }, url: "https://nuxalknation.ca/culture-and-language/", publisher: "Nuxalk Nation", location: "Bella Coola, British Columbia, Canada", medium: "Official Digital Resource", meta: { notes: "The primary community-facing document for Nuxalk identity. It defines the 'Smayusta' as the foundational laws and histories of the four original ancestors. It also highlights the Nuxalk language—a unique isolate within the Salishan family—as the essential vessel for traditional knowledge and ancestral governance.", grade: "A", tags: ["Nuxalk", "Bella Coola", "Salishan", "Smayusta", "Indigenous Governance", "Language Revitalization", "Northwest Coast"] } },
       { id: "nuxalk-radio-91-1-fm", type: "webpage", title: "Nuxalk Radio: 91.1 FM in Bella Coola", contributors: [ { firstName: "", lastName: "Nuxalk Radio", role: "publisher/broadcaster" } ], pubDate: { year: 2026 }, url: "https://nuxalkradio.com/home", publisher: "Nuxalk Radio", location: "Bella Coola, British Columbia, Canada", medium: "Digital Broadcast Hub / Community Media", meta: { notes: "A key instrument for Nuxalk language immersion and cultural sovereignty. The station broadcasts traditional Smayusta (origin stories), songs analyzed in the Kolstee thesis, and contemporary Nuxalk music. It serves as a real-time repository for the 'living' phonology of the Nuxalk language.", grade: "A", tags: ["Nuxalk", "Bella Coola", "Indigenous Radio", "Language Revitalization", "Community Media", "Smayusta", "91.1 FM"] } }
-    ]
+    ],
   },
   {
     id: "AMINSTP",
@@ -1280,7 +1281,7 @@ export const stirrPoetry = [
   {
     id: "AMCESTP",
     title: { original: "Xon Ahuiyacan", translation: "Be Joyful" },
-    piece: true,
+    meta: { piece: true },
     author: "Nezahualcoyōtl",
     group: {people: "Mexica/Acolhua", language: "Classical Nahuatl", location: "Texcoco, MX"},
     info: [
@@ -1299,7 +1300,7 @@ export const stirrPoetry = [
     ref: [
       { id: "leon-portilla-1992-fifteen-poets", type: "book", title: "Fifteen Poets of the Aztec World", contributors: [ { firstName: "Miguel", lastName: "León-Portilla", role: "author" }, { firstName: "Grace", lastName: "Lobanov", role: "translator" } ], pubDate: { year: 1992, month: 9 }, url: "https://archive.org/details/fifteenpoetsofaz0000unse", publisher: "University of Oklahoma Press", location: "Norman, Oklahoma", medium: "Print (Hardcover/Paperback)", meta: { notes: "An expanded English translation of 'Trece poetas del mundo azteca'. Documents the lives and 'flower and song' (In xóchitl in cuicatl) of 15 Nahua poets, including Nezahualcoyotl and the female poet Macuilxochitzin. Sources include the Cantares Mexicanos and Romances de los señores de la Nueva España.", grade: "A", tags: ["Aztec", "Nahuatl", "Poetry", "Mexico", "Nezahualcoyotl", "Mesoamerican Literature", "Indigenous Oral Tradition"], sortKey: "text" } },
       { id: "bierhorst-1985-cantares-mexicanos", type: "book", title: "Cantares Mexicanos: Songs of the Aztecs", contributors: [ { firstName: "John", lastName: "Bierhorst", role: "author" } ], pubDate: { year: 1985 }, url: "https://archive.org/details/cantaresmexicano0000unse", publisher: "Stanford University Press", location: "Stanford, California", medium: "Academic Edition / Translation", meta: { notes: "The primary source for Aztec poetry. Bierhorst provides a transcription of the original Nahuatl alongside his English translation. He introduces the controversial 'Ghost Song' theory, positing that the poems were part of a post-conquest revitalization movement.", grade: "C", tags: ["Nahuatl", "Aztec", "Cantares Mexicanos", "Manuscript Studies", "Ghost Songs", "Mesoamerican Ritual", "Poetry"], sortKey: "text" } }
-    ]
+    ],
   },
   {
     id: "AMCRSTP",
@@ -1342,7 +1343,7 @@ export const stirrPoetry = [
   {
     id: "AMWESTP",
     title: { original: "Haray Harawi", translation: "Love Song" },
-    piece: true,
+    meta: { piece: true },
     intermediary: "Felipe Guamán Poma de Ayala",
     group: {people: "Quechua", language: "Classical Quechua", country: "Peru"},
     info: [
@@ -1363,13 +1364,12 @@ export const stirrPoetry = [
       { id: "guaman-poma-1615-nueva-coronica", type: "manuscript", title: "El primer nueva corónica y buen gobierno", contributors: [ { firstName: "Felipe", lastName: "Guamán Poma de Ayala", role: "author" } ], pubDate: { year: 1615 }, publisher: "The Royal Library (Det Kongelige Bibliotek)", location: "Copenhagen, Denmark (Original Manuscript GKS 2232 4º)", medium: "Digital Manuscript Archive / 17th-century Autograph", meta: { notes: "A massive Quechua-Spanish hybrid text. Guamán Poma utilized Andean concepts of 'pacha' (time-space) to structure his history. The manuscript was lost for centuries until its rediscovery in the Royal Library of Denmark in 1908 by Richard Pietschmann.", grade: "A", tags: ["Inca", "Andean", "Peru", "Quechua", "Colonial History", "Indigenous Protest", "Visual Ethnography"], sortKey: "text" } },
       { id: "arguedas-stephan-1971-singing-mountaineers", type: "book", title: "The Singing Mountaineers: Songs and Tales of the Quechua People", contributors: [ { firstName: "José María", lastName: "Arguedas", role: "author" }, { firstName: "Ruth", lastName: "Stephan", role: "editor" }, { firstName: "María Lourdes", lastName: "Valladares", role: "author" } ], pubDate: { year: 1971 }, publisher: "University of Texas Press", location: "Austin, TX", medium: "Print (Paperback) / Translation", meta: { notes: "A vital collection of Quechua oral traditions. Includes thirty harvest songs and love songs, as well as nine folk tales. This work is significant for Arguedas's role in documenting the continuity between the Inca past and the 20th-century Quechua present.", grade: "B", isbn: "0292709943", tags: ["Quechua", "Andean", "Peru", "Oral Tradition", "José María Arguedas", "Ethnomusicology", "Folklore", "Indigenous Poetry"] } },
       { id: "mazzi-2011-poesia-quechua-guaman-poma", type: "webpage", title: "Poesía Quechua en Guamán Poma de Ayala", containerTitle: "Víctor Mazzi Huaycucho (Blogspot)", contributors: [ { firstName: "Víctor", lastName: "Mazzi Huaycucho", role: "author" } ], pubDate: { year: 2011, month: 4 }, url: "https://victormazzihuaycucho-blogspot-com.translate.goog/2011/04/poesia-quechua-en-guaman-poma-de-ayala.html?_x_tr_sl=es&_x_tr_tl=en&_x_tr_hl=en", publisher: "Blogger", location: "Peru / Online", medium: "Digital Academic Essay", meta: { notes: "Analyzes the ritualistic and social functions of the Quechua verses found in the 1615 manuscript. Mazzi highlights the 'Harawi' (melancholic/love poetry) and the 'Haylli' (triumphant/agricultural songs), noting how Guamán Poma used these forms to maintain Andean memory against colonial erasure.", grade: "B", tags: ["Quechua Poetry", "Guamán Poma de Ayala", "Andean Literature", "Harawi", "Haylli", "Ethnolinguistics", "Victór Mazzi"] } }
-    ]
+    ],
   },
   {
     id: "AMNESTP",
     title: { original: "Min ngrere", translation: "Crocodile's chant" },
-    piece: true,
-    work: { original: "Nhiok", translation: "Nhiok" },
+    meta: { work: { original: "Nhiok", translation: "Nhiok" }, piece: true },
     intermediary: "Bemoti",
     group: {people: "Xikrin", language: "Mẽbêngôkre", location: "Pará, BR"},
     info: [
@@ -1389,13 +1389,12 @@ export const stirrPoetry = [
     textURL: "",
     ref: [
       { id: "sfw-1995-ritual-music-kayapo", type: "article", title: "Ritual Music of the Kayapó-Xikrin, Brazil (Booklet Notes)", containerTitle: "Traditional Music of the World, Vol. 7", contributors: [ { firstName: "Lux", lastName: "Vidal", role: "author" }, { firstName: "Isabelle", lastName: "Giannini", role: "author" } ], pubDate: { year: 1995 }, url: "https://folkways-media.si.edu/docs/folkways/artwork/SFW40433.pdf#page=29", publisher: "Smithsonian Folkways Recordings", location: "Washington, D.C.", medium: "Digital PDF / Booklet", meta: { notes: "Documentation of the Kwèry-kàn (naming ritual) and other ceremonial cycles. Page 29 specifically contextulizes the relationship between collective singing and the social structure of the village. The notes provide deep insight into how music functions as a means of social memory and territorial claim for the Kayapó.", grade: "C", tags: ["Kayapó", "Xikrin", "Brazil", "Amazon", "Ethnomusicology", "Indigenous Ritual", "Gê Languages"] } }
-    ]
+    ],
   },
   {
     id: "AMSOSTP",
     title: { original: "Apu", translation: "Appear" },
-    piece: true,
-    anthology: { original: "Ita ha'eñoso", translation: "Solitude Abandons Stone" },
+    meta: { anthology: { original: "Ita ha'eñoso", translation: "Solitude Abandons Stone" }, piece: true },
     author: "Miguelángel Meza",
     group: {people: "Mbyá", language: "Guaraní", country: "Paraguay"},
     info: [
@@ -1415,7 +1414,7 @@ export const stirrPoetry = [
       { id: "meza-1985", type: "book", title: "Ita Ha’eñoso (Solitude Abandons Stone)", contributors: [ { firstName: "Miguelángel", lastName: "Meza", role: "author" } ], pubDate: { year: 1985 }, publisher: "Ediciones Taller", location: "Asunción, Paraguay", medium: "Print", meta: { notes: "The first edition of Meza's groundbreaking bilingual poetry collection.", tags: ["Guarani Literature", "Paraguayan Poetry", "Ava Guarani"], sortKey: "text" } },
       { id: "meza-2018", type: "book", title: "Dream-Pattering Soles (Trilingual Edition)", contributors: [ { firstName: "Miguelángel", lastName: "Meza", role: "author" }, { firstName: "Elisa", lastName: "Taber", role: "translator" } ], url: "https://uglyducklingpresse.org/wp-content/uploads/2021/02/978-1-946433-87-9.pdf", pubDate: { year: 2018 }, publisher: "Ugly Duckling Presse", location: "Brooklyn, NY", containerTitle: "2018 Segunda Oficina", isbn: "9781946433138", medium: "Print / Chapbook", meta: { notes: "Trilingual edition (Guaraní/Spanish/English). Includes an introduction by the translator.", tags: ["Indigenous Poetry", "Guaraní", "Brooklyn Publishing", "Chapbook"] } },
       { id: "schreiber-2022-rough-ghosts", type: "webpage", title: "Night Falls Slowly / Dream-Pattering Soles by Miguelángel Meza", contributors: [ { firstName: "Joseph", lastName: "Schreiber", role: "author" } ], pubDate: { year: 2022, month: 3, day: 2 }, url: "https://roughghosts.com/2022/03/02/night-falls-slowly-dream-pattering-soles-by-miguelangel-meza/", publisher: "Rough Ghosts", location: "Paraguay / Digital", medium: "Literary Review / Digital Essay", meta: { notes: "A review of a bilingual Guaraní-Spanish collection. The original title 'Taita pyhare / Che pyta ryrýi' reflects a deep connection to the Paraguayan soil and the nocturnal movements of the spirit. Meza is a key figure in the Yvyra’ija lineage, using Guaraní not as a relic, but as a modern, pulsing medium for complex interiority.", grade: "D", tags: ["Guaraní", "Paraguay", "Indigenous Poetry", "Bilingual", "Jopará", "Southern Cone", "Rough Ghosts"] } }
-    ]
+    ],
   },
   {
     id: "ASNOSTP",
@@ -1462,7 +1461,7 @@ export const stirrPoetry = [
   {
     id: "ASEASTP",
     title: { original: "听蜀僧濬弹琴", transliteration: "Tīng shǔ sēng jùn tán qín", translation: "Listening to the Monk Jun Play his Qin" },
-    piece: true,
+    meta: { piece: true },
     author: "Lǐ Bái",
     group: {people: "Han Chinese", language: "Classical Chinese", location: "Sichuan, CN"},
     info: [
@@ -1483,7 +1482,7 @@ export const stirrPoetry = [
     ref: [
       { id: "young-1990-five-tang-poets", type: "book", title: "Five T'ang Poets", contributors: [ { firstName: "David", lastName: "Young", role: "translator" }, { firstName: "Wang", lastName: "Wei", role: "author" }, { firstName: "Li", lastName: "Po", role: "author" }, { firstName: "Tu", lastName: "Fu", role: "author" }, { firstName: "Li", lastName: "Ho", role: "author" }, { firstName: "Li", lastName: "Shang-yin", role: "author" } ], pubDate: { year: 1990, month: 11 }, publisher: "Oberlin College Press", location: "Oberlin, Ohio", medium: "Print (Paperback) / Translation", meta: { notes: "Selections from five masters of the T'ang Dynasty. Includes Wang Wei's 'Wang River Sequence', Li Po's energetic lyrics, Tu Fu's rigorous social observation, Li Ho's surrealist imagery, and Li Shang-yin's hermetic 'Untitled' poems. David Young provides a general introduction and brief biographies for each poet.", grade: "B", isbn: "9780932440556", tags: ["Chinese Poetry", "T'ang Dynasty", "Wang Wei", "Li Po", "Tu Fu", "Li Ho", "Li Shang-yin", "Translation Theory", "Eurasian Literature"] } },
       { id: "baidubaike-libai-monk-jun-qin", type: "webpage", title: "听蜀僧浚弹琴 (Listening to Monk Jun from Shu Play the Qin)", containerTitle: "Baidu Baike (百度百科)", contributors: [ { firstName: "Bai", lastName: "Li", role: "author" } ], pubDate: { year: 2024 }, url: "https://baike-baidu-com.translate.goog/item/%E5%90%AC%E8%9C%80%E5%83%A7%E6%BF%AC%E5%BC%B9%E7%90%B4/6964378?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en", publisher: "Baidu", location: "China", medium: "Online Encyclopedia", meta: { notes: "Detailed analysis of Li Bai's seven-character quatrain. The poem describes a qin performance that evokes the sounds of 'ten thousand pine trees in the valleys' (万壑松). It is a key text for understanding the intersection of T'ang aesthetics, nature, and the spiritual status of the Guqin (seven-stringed zither).", grade: "A", tags: ["Li Bai", "T'ang Dynasty", "Chinese Poetry", "Guqin", "Shu (Sichuan)", "Buddhism", "Musicology"] } }
-    ]
+    ],
   },
   {
     id: "ASSESTP",
@@ -1604,7 +1603,7 @@ export const stirrPoetry = [
   {
     id: "ASINSTP",
     title: { original: "ᠴᠠᠭᠠᠨ ᠡᠭᠦᠯᠡ", transliteration: "Tsagaan üül", translation: "White Cloud" },
-    piece: true,
+    meta: { piece: true },
     author: "Vanchinbalyn Injinash",
     group: {people: "Tümed", language: "Mongolian", location: "Liaoning, CN"},
     info: [
@@ -1628,7 +1627,7 @@ export const stirrPoetry = [
     ref: [
       { id: "todmedee-2019", type: "webpage", title: "Монгол хэл соёлын түүхэн дэх агуу нэгэн гэр бүлийн тухай", contributors: [ { firstName: "Гоо", lastName: "Г.", role: "author" } ], pubDate: { year: 2019, month: 6, day: 9 }, url: "https://todmedee.mn/4455.html", publisher: "Tod Medee", location: "Ulaanbaatar, Mongolia", medium: "Digital Web Article", meta: { notes: "Explores the historical impact of a prominent family on Mongolian linguistic identity. The text highlights the transmission of cultural knowledge across generations, focusing on the preservation of the Mongolian script and scholarly traditions within the domestic sphere.", grade: "A", tags: ["Mongolia", "Linguistics", "Cultural History", "Genealogy", "Mongolian Script", "Ulaanbaatar", "Eurasian Studies"] } },
       { id: "injinash-dorno-salkhin-biirbeh", type: "poem", title: "Дорно салхин хийстүгэй (May the East Wind Blow)", contributors: [ { firstName: "Ванчинбалын", lastName: "Инжинаш", role: "author" } ], pubDate: { year: 2013, month: 4, day: 25 }, url: "https://www.biirbeh.mn/index.php?sel=content&f=one&obj_id=6882", publisher: "Biirbeh.mn", location: "Ulaanbaatar, Mongolia / Inner Mongolia (Historical)", medium: "Digital Literary Archive", meta: { notes: "A lyric poem by the preeminent 19th-century Mongolian writer Injinash. The title 'Dorno salkhin khiistügei' translates to 'Let the East Wind Fly.' It reflects Injinash's signature blend of traditional Mongolian imagery and sophisticated philosophical reflection on identity and nature.", grade: "A", tags: ["Injinash", "Mongolian Poetry", "Chahar", "Inner Mongolia", "19th Century", "Biirbeh", "Classical Mongolian Literature"] } }
-    ]
+    ],
   },
   {
     id: "EUEASTP",
@@ -1760,8 +1759,7 @@ export const stirrPoetry = [
   {
     id: "OCMCSTP",
     title: {original: "Luk-of-Heaven song"},
-    piece: true,
-    anthology: { original: "the Book of Luelen" },
+    meta: { anthology: { original: "the Book of Luelen" }, piece: true },
     intermediary: "Luelen Bernart",
     group: {people: "Pohnpeian", language: "Pohnpeian", location: "Pohnpei, FSM"},
     info: [
@@ -1799,12 +1797,12 @@ export const stirrPoetry = [
     ref: [
       { id: "bernart-1977-book-of-luelen", type: "book", title: "The Book of Luelen", containerTitle: "Pacific History Series No. 8", contributors: [ { firstName: "Luelen", lastName: "Bernart", role: "author" }, { firstName: "John L.", lastName: "Fischer", role: "editor" }, { firstName: "Saul H.", lastName: "Riesenberg", role: "editor" }, { firstName: "Marjorie G.", lastName: "Whiting", role: "editor" } ], pubDate: { year: 1977 }, url: "https://catalog.hathitrust.org/Record/000260939", publisher: "University Press of Hawaii / Australian National University Press", location: "Honolulu / Canberra", medium: "Print / Digital Archive", meta: { notes: "The foundational text of Pohnpeian historiography. It details the arrival of the first settlers, the construction of the megalithic city of Nan Madol, and the eventual overthrow of the tyrannical Saudeleur rulers. It is a 'hallowed' text that functions as both a spiritual genealogy and a political history.", grade: "A", tags: ["Pohnpei", "Micronesia", "Nan Madol", "Oral Tradition", "Luelen Bernart", "Oceanian History", "Indigenous Historiography"], sortKey: "text" } },
       { id: "ballendorf-2005-luelen-bernart", type: "article", title: "Luelen Bernart: His Times, His Book, And His Inspiration", containerTitle: "Micronesian Journal of the Humanities and Social Sciences", contributors: [ { firstName: "Dirk Anthony", lastName: "Ballendorf", role: "author" } ], pubDate: { year: 2005, month: 6 }, url: "https://marshall.csu.edu.au/MJHSS/Issue2005/MJHSS2005_102.pdf", publisher: "Micronesian Area Research Center, University of Guam", location: "Mangilao, Guam", medium: "Digital PDF / Academic Journal", meta: { notes: "Provides the biographical context for Luelen Bernart (1866–1946). Ballendorf explores how Bernart's education under Protestant missionaries and his life under Spanish, German, and Japanese administrations influenced the structure of his 'Book'. It highlights the transition from purely oral Pohnpeian 'soipei' (debates) to a fixed written record.", grade: "B", tags: ["Pohnpei", "Micronesia", "Luelen Bernart", "Dirk Ballendorf", "Colonial History", "Historiography", "Oral Tradition"] } }
-    ]
+    ],
   },
   {
     id: "OCPLSTP",
     title: { original: "He Kanikau no Kaʻahumanu", translation: "A Lament for Kaʻahumanu" },
-    piece: true,
+    meta: { piece: true },
     author: "Davida Malo",
     group: {people: "Hawaiian", language: "Hawaiian", location: "Hawaiian Islands"},
     info: [
@@ -1818,7 +1816,7 @@ export const stirrPoetry = [
     ref: [
       { id: "malo-1834-kanikau-ka-lama-hawaii", type: "article", title: "He Kanikau no Kaʻahumanu", containerTitle: "Ka Lama Hawaiʻi", contributors: [ { firstName: "Davida", lastName: "Malo", role: "author" } ], pubDate: { year: 1834, month: 8, day: 8, vol: 1, issue: "21" }, url: "https://www.nupepa.org/?a=d&d=KLH18340808-01.2.7", publisher: "Lahainaluna Press", location: "Lahainaluna, Maui, Kingdom of Hawaiʻi", medium: "Newspaper (Original Print / Hawaiian Language)", meta: { notes: "A profound funeral dirge for Queen Kaʻahumanu. This text is a masterclass in traditional Hawaiian metaphor (kaona), referencing geographical features and ancestral connections to express grief and the chiefess's high rank. It appeared on the first page of the August 8th issue.", grade: "A", tags: ["Kaʻahumanu", "Davida Malo", "Kanikau", "Nupepa", "Lahainaluna", "Hawaiian History", "Kingdom of Hawaiʻi", "19th Century"] } },
       { id: "malo-1838-moolelo-hawaii", type: "book", title: "Moolelo Hawaii", contributors: [ { firstName: "Davida", lastName: "Malo", role: "author" } ], pubDate: { year: 1838 }, url: "https://www.ahamoku.org/wp-content/uploads/2011/12/Malo-David-Hawaiian_Antiquities-Moolelo-Hawaii-translated-by-N-B-Emerson-Honolulu-Hawaiian-Gazette-Co-Ltd-1903.pdf", publisher: "Lahainaluna High School Press", location: "Lahaina, Maui, Kingdom of Hawaiʻi", medium: "Print (First Edition) / Hawaiian Language", meta: { notes: "The first indigenous written history of the Hawaiian people. It documents the origin myths, the navigation from 'Kahiki', and the complex 'Kapu' system. This text provided the basis for the later English translation 'Hawaiian Antiquities' by Nathaniel Emerson.", grade: "A", tags: ["Hawaiʻi", "Kanaka Maoli", "Moʻolelo", "Davida Malo", "Lahainaluna", "Aliʻi", "Kapu", "Oceania"] } }
-    ]
+    ],
   }
 ];
 export const cultFeatFilms = [
@@ -1834,7 +1832,7 @@ export const cultFeatFilms = [
     infoURL: "https://www.berlinale.de/en/2017/programme/201710215.html",
     watch: ["https://www.kanopy.com/en/product/house-fields","https://vimeo.com/ondemand/houseinthefields"],
     trailer: "https://youtu.be/dVunYbRl2hA",
-    location: {x: -7.9161, y: 31.0343, name: "High Atlas Mountains"},
+    coordinates: {x: -7.9161, y: 31.0343, name: "High Atlas Mountains"},
     runtime: 86,
     genre: ["Drama","Observational"],
     tags: ["bechdel test"],
@@ -1852,7 +1850,7 @@ export const cultFeatFilms = [
     infoURL: ["https://en.wikipedia.org/wiki/Supa_Modo","https://www.sinemafocus.com/a-love-letter-to-supa-modo-the-best-kenyan-film-yet/"],
     watch: ["https://www.kanopy.com/en/product/15088228","https://www.hoopladigital.com/title/18660371","https://fawesome.tv/movies/10702648/supa-modo","https://www.amazon.com/gp/video/detail/B0FYQ638HB"],
     trailer: "https://youtu.be/G7ToKioHCoU",
-    location: {x: 36.6700, y: -1.1600, name: "Kabuku Village"},
+    coordinates: {x: 36.6700, y: -1.1600, name: "Kabuku Village"},
     runtime: 74,
     genre: ["Drama","Family","Fantasy","Superhero"],
     tags: ["bechdel test"],
@@ -1868,7 +1866,7 @@ export const cultFeatFilms = [
     ],
     watch: ["https://www.kanopy.com/en/product/110328"],
     trailer: "https://youtu.be/1nLWevhitPM",
-    location: {x: 20.5000, y: -19.6667, name: "Nyae Nyae Region"},
+    coordinates: {x: 20.5000, y: -19.6667, name: "Nyae Nyae Region"},
     runtime: 59,
     genre: ["Docudrama","Coming-of-Age"],
     tags: [""],
@@ -1886,7 +1884,7 @@ export const cultFeatFilms = [
     infoURL: ["https://en.wikipedia.org/wiki/Le_silence_de_la_for%C3%AAt","https://africultures.com/co-director-of-le-silence-de-la-foret-5698/?utm_source=newsletter&utm_medium=email&utm_campaign=565","https://woyingi.wordpress.com/2011/09/27/film-review-le-silence-de-la-foret-2003/"],
     watch: ["https://www.kanopy.com/en/product/silence-forest","https://vimeo.com/ondemand/lesilencedelaforet"],
     trailer: "https://youtu.be/PVLfEqbquN8",
-    location: {x: 16.3522, y: 2.9423, name: "Dzanga-Sangha Region"},
+    coordinates: {x: 16.3522, y: 2.9423, name: "Dzanga-Sangha Region"},
     runtime: 93,
     genre: ["Drama","Social Commentary"],
     tags: [""],
@@ -1905,7 +1903,7 @@ export const cultFeatFilms = [
     infoURL: "https://en.wikipedia.org/wiki/Yeelen",
     watch: ["https://www.kanopy.com/en/product/yeelen"],
     trailer: "https://youtu.be/cnEUiJOVkiM",
-    location: {x: -7.6686, y: 14.9961, name: "Dilli, Mali"},
+    coordinates: {x: -7.6686, y: 14.9961, name: "Dilli, Mali"},
     runtime: 105,
     genre: ["Fantasy","Myth","Drama"],
     tags: [""],
@@ -1924,7 +1922,7 @@ export const cultFeatFilms = [
     infoURL: "https://en.wikipedia.org/wiki/Atanarjuat:_The_Fast_Runner",
     watch: ["https://tv.apple.com/us/movie/umc.cmc.1co9m5b61l1hkihyksjodghe2"],
     trailer: "https://youtu.be/Wqxjorhxx0Y",
-    location: {x: -81.8000, y: 69.3811, name: "Igloolik"},
+    coordinates: {x: -81.8000, y: 69.3811, name: "Igloolik"},
     runtime: 172,
     genre: ["Epic","Historical Drama","Myth"],
     tags: [""],
@@ -1943,7 +1941,7 @@ export const cultFeatFilms = [
     infoURL: "https://en.wikipedia.org/wiki/Night_Raiders_(2021_film)",
     watch: ["https://www.netflix.com/title/81470716"],
     trailer: "https://youtu.be/dZC_MimYhos",
-    location: {x: -79.3832, y: 43.6532, name: "Toronto"},
+    coordinates: {x: -79.3832, y: 43.6532, name: "Toronto"},
     runtime: 101,
     genre: ["Sci-Fi","Thriller","Dystopian"],
     tags: ["bechdel test"],
@@ -1961,7 +1959,7 @@ export const cultFeatFilms = [
     infoURL: "https://www.drunktownsfinest.com/about/",
     watch: ["https://vimeo.com/groups/fms620/videos/241461186","https://www.amazon.com/gp/video/detail/B01BOD50ME","https://tv.apple.com/us/movie/umc.cmc.16y056hw6kh1w7rhk39069zp6","https://athome.fandango.com/content/browse/details/Drunktown-s-Finest/746741"],
     trailer: "https://youtu.be/Kl2Yh6YcMBU",
-    location: {x: -108.7426, y: 35.5281, name: "Gallup"},
+    coordinates: {x: -108.7426, y: 35.5281, name: "Gallup"},
     runtime: 95,
     genre: ["Drama","Coming-of-Age","LGBTQ+"],
     tags: ["queer","trans","bechdel test"],
@@ -1978,7 +1976,7 @@ export const cultFeatFilms = [
     ],
     watch: ["https://www.kanopy.com/en/product/malni-towards-ocean-towards-shore","https://tv.apple.com/us/movie/umc.cmc.3qdjcc9mu1ms5m6es9jyqr3ev","https://www.amazon.com/gp/video/detail/B0BVJSLBWD"],
     trailer: "https://youtu.be/MiFeVvwkY6I",
-    location: {x: -123.5700, y: 46.1500, name: "Wimahl"},
+    coordinates: {x: -123.5700, y: 46.1500, name: "Wimahl"},
     runtime: 82,
     genre: ["Poetic","Experimental"],
     tags: [""],
@@ -1996,7 +1994,7 @@ export const cultFeatFilms = [
     infoURL: "https://en.wikipedia.org/wiki/Edge_of_the_Knife",
     watch: ["https://tv.apple.com/us/movie/edge-of-the-knife/umc.cmc.8rv2wrgfsz7pvph6aojlsat4"],
     trailer: "https://youtu.be/DnbOw5Nuq2U",
-    location: {x: -132.0000, y: 53.0000, name: "Haida Gwaii"},
+    coordinates: {x: -132.0000, y: 53.0000, name: "Haida Gwaii"},
     runtime: 100,
     genre: ["Historical Drama","Thriller"],
     tags: [""],
@@ -2015,7 +2013,7 @@ export const cultFeatFilms = [
     infoURL: "https://en.wikipedia.org/wiki/The_Unknown_Country",
     watch: ["https://www.kanopy.com/en/product/16006763","https://www.amazon.com/gp/video/detail/B0B8PXWGSM","https://www.hoopladigital.com/title/19208197","https://mubi.com/en/us/films/the-unknown-country","https://www.hulu.com/movie/the-unknown-country-4ae7f515-2693-4d62-a75c-187d32f97219"],
     trailer: "https://youtu.be/enT3zQzvhGw",
-    location: {x: -102.0911, y: 43.3444, name: "Pine Ridge Reservation"},
+    coordinates: {x: -102.0911, y: 43.3444, name: "Pine Ridge Reservation"},
     runtime: 85,
     genre: ["Drama","Road Movie"],
     tags: ["bechdel test"],
@@ -2033,7 +2031,7 @@ export const cultFeatFilms = [
     infoURL: "https://en.wikipedia.org/wiki/Garifuna_in_Peril",
     watch: ["https://tubitv.com/movies/341514/garifuna-in-peril"],
     trailer: "https://youtu.be/NQs5m9haasM",
-    location: {x: -61.2000, y: 13.2500, name: "St. Vincent"},
+    coordinates: {x: -61.2000, y: 13.2500, name: "St. Vincent"},
     runtime: 99,
     genre: ["Drama","Educational"],
     tags: [""],
@@ -2052,7 +2050,7 @@ export const cultFeatFilms = [
     infoURL: "https://en.wikipedia.org/wiki/Ixcanul",
     watch: ["https://www.kanopy.com/en/product/ixcanul","https://www.hoopladigital.com/title/18383725","https://www.amazon.com/gp/video/detail/B01MSYR3W9","https://tv.apple.com/us/movie/umc.cmc.77l4isuuy7250gxzkxlm1zvu4","https://athome.fandango.com/content/browse/details/Ixcanul/832536"],
     trailer: "https://youtu.be/EJfvKnLPqFM",
-    location: {x: -90.6011, y: 14.3808, name: "Pacaya Volcano"},
+    coordinates: {x: -90.6011, y: 14.3808, name: "Pacaya Volcano"},
     runtime: 93,
     genre: ["Drama","Coming-of-Age"],
     tags: ["bechdel test"],
@@ -2070,7 +2068,7 @@ export const cultFeatFilms = [
     infoURL: "https://en.wikipedia.org/wiki/Eternity_(2018_film)",
     watch: ["https://www.amazon.com/Eternity-Vicente-Catacora/dp/B07HR55PK5"],
     trailer: "https://youtu.be/AA3Yo7kcPQ4",
-    location: {x: -70.4200, y: -13.9100, name: "Allincapac"},
+    coordinates: {x: -70.4200, y: -13.9100, name: "Allincapac"},
     runtime: 86,
     genre: ["Drama","Minimalist"],
     tags: [""],
@@ -2085,7 +2083,7 @@ export const cultFeatFilms = [
     infoURL: "https://pt.m.wikipedia.org/wiki/A_%C3%9Altima_Floresta",
     watch: ["https://youtu.be/MsUAluISvgE"],
     trailer: "https://youtu.be/2tK-5dydqp8",
-    location: {x: -62.7719, y: 0.4461, name: "Urihipë"},
+    coordinates: {x: -62.7719, y: 0.4461, name: "Urihipë"},
     runtime: 77,
     genre: ["Docufiction","Hybrid","Poetic"],
     tags: [""],
@@ -2103,7 +2101,7 @@ export const cultFeatFilms = [
     infoURL: "https://en.wikipedia.org/wiki/Eami",
     watch: ["https://www.amazon.com/gp/video/detail/B0FMQNRBP4"],
     trailer: "https://youtu.be/j_WZGMo9BXo",
-    location: {x: -59.0000, y: -21.0000, name: "Gran Chaco"},
+    coordinates: {x: -59.0000, y: -21.0000, name: "Gran Chaco"},
     runtime: 83,
     genre: ["Drama","Experimental","Mythic"],
     tags: [""],
@@ -2121,7 +2119,7 @@ export const cultFeatFilms = [
     infoURL: ["https://ru.wikipedia.org/wiki/%D0%A6%D0%B0%D1%80%D1%8C-%D0%BF%D1%82%D0%B8%D1%86%D0%B0","https://phmuseum.com/projects/sakhawood"],
     watch: ["https://films.klassiki.online/the-lord-eagle"],
     trailer: "https://youtu.be/5JVlgU_vV1E",
-    location: {x: 129.1500, y: 66.4166, name: "Yakutia"},
+    coordinates: {x: 129.1500, y: 66.4166, name: "Yakutia"},
     runtime: 80,
     genre: ["Drama","Historical"],
     tags: [""],
@@ -2139,7 +2137,7 @@ export const cultFeatFilms = [
     infoURL: "https://en.wikipedia.org/wiki/Farewell_My_Concubine_(film)",
     watch: ["https://www.criterionchannel.com/farewell-my-concubine","https://www.hoopladigital.com/movie/farewell-my-concubine-leslie-cheung/17969092","https://www.kanopy.com/en/product/farewell-my-concubine","https://tv.apple.com/us/movie/farewell-my-concubine/umc.cmc.g2avwzc9mvl1h7oo2hms3nfh"],
     trailer: "https://youtu.be/FFiHfDBt9lE",
-    location: {x: 116.4074, y: 39.9042, name: "Beijing"},
+    coordinates: {x: 116.4074, y: 39.9042, name: "Beijing"},
     runtime: 171,
     genre: ["Romantic Drama","Historical Epic","LGBTQ+"],
     tags: ["queer","gay"],
@@ -2157,7 +2155,7 @@ export const cultFeatFilms = [
     infoURL: "https://en.wikipedia.org/wiki/The_Overture",
     watch: ["https://www.kanopy.com/en/product/overture","https://athome.fandango.com/content/browse/details/The-Overture/4478","https://www.amazon.com/gp/video/detail/B004NSP9GU"],
     trailer: "https://youtu.be/xW3yryL6vCw",
-    location: {x: 100.5018, y: 13.7563, name: "Bangkok"},
+    coordinates: {x: 100.5018, y: 13.7563, name: "Bangkok"},
     runtime: 103,
     genre: ["Drama","Musical","Period Piece"],
     tags: [""],
@@ -2175,7 +2173,7 @@ export const cultFeatFilms = [
     infoURL: "https://en.wikipedia.org/wiki/White_Building_(film)",
     watch: ["https://www.kanopy.com/en/product/15659152","https://www.amazon.com/gp/video/detail/B0CVR4FXR6"],
     trailer: "https://youtu.be/Q5nR18GjjuA",
-    location: {x: 104.9282, y: 11.5564, name: "Phnom Penh"},
+    coordinates: {x: 104.9282, y: 11.5564, name: "Phnom Penh"},
     runtime: 90,
     genre: ["Drama","Urban"],
     tags: [""],
@@ -2193,7 +2191,7 @@ export const cultFeatFilms = [
     infoURL: "https://en.wikipedia.org/wiki/Shambhala_(2024_film)",
     watch: [""],
     trailer: "https://youtu.be/IbT7lt8NZ6k",
-    location: {x: 82.9167, y: 29.2333, name: "Dolpo Region"},
+    coordinates: {x: 82.9167, y: 29.2333, name: "Dolpo Region"},
     runtime: 150,
     genre: ["Adventure","Drama","Spiritual"],
     tags: [""],
@@ -2210,7 +2208,7 @@ export const cultFeatFilms = [
     ],
     watch: [""],
     trailer: "https://youtu.be/Cl3-aUW_p54",
-    location: {x: 77.5770, y: 34.1526, name: "Ladakh"},
+    coordinates: {x: 77.5770, y: 34.1526, name: "Ladakh"},
     runtime: 79,
     genre: ["Drama","Coming-of-Age","Minimalist"],
     tags: [""],
@@ -2228,7 +2226,7 @@ export const cultFeatFilms = [
     infoURL: "https://en.wikipedia.org/wiki/RRR",
     watch: ["https://www.netflix.com/title/81476453"],
     trailer: "https://youtu.be/NgBoMJy386M?t=4",
-    location: {x: 78.6186, y: 19.4629, name: "Adilabad Forest"},
+    coordinates: {x: 78.6186, y: 19.4629, name: "Adilabad Forest"},
     runtime: 182,
     genre: ["Action","Period Drama","Musical Epic"],
     tags: [""],
@@ -2248,7 +2246,7 @@ export const cultFeatFilms = [
     infoURL: "https://www.arabiskefilmdager.no/en/film/2025/songs-of-adam",
     watch: [""],
     trailer: "https://youtu.be/PgI2vnCUj2U",
-    location: {x: 41.5000, y: 33.0000, name: "Anbar Province"},
+    coordinates: {x: 41.5000, y: 33.0000, name: "Anbar Province"},
     runtime: 93,
     genre: ["Drama","Spiritual"],
     tags: [""],
@@ -2270,7 +2268,7 @@ export const cultFeatFilms = [
     infoURL: "https://en.wikipedia.org/wiki/The_Gentle_Indifference_of_the_World",
     watch: ["https://films.klassiki.online/the-gentle-indifference-of-the-world"],
     trailer: "https://youtu.be/cuGLOAy6PUg",
-    location: {x: 77.1444, y: 43.3575, name: "Alatau Steppe"},
+    coordinates: {x: 77.1444, y: 43.3575, name: "Alatau Steppe"},
     runtime: 100,
     genre: ["Drama","Crime","Neo-Noir"],
     tags: [""],
@@ -2288,7 +2286,7 @@ export const cultFeatFilms = [
     infoURL: "https://en.wikipedia.org/wiki/Beshkempir",
     watch: ["https://youtu.be/aLRTEUqa-q4","https://films.klassiki.online/beshkempir"],
     trailer: "https://youtu.be/C_VoYtZ4hnA",
-    location: {x: 76.5861, y: 42.2472, name: "Bar-Bulak Village"},
+    coordinates: {x: 76.5861, y: 42.2472, name: "Bar-Bulak Village"},
     runtime: 81,
     genre: ["Drama","Coming-of-Age"],
     tags: [""],
@@ -2306,7 +2304,7 @@ export const cultFeatFilms = [
     infoURL: "https://2023.tiff-jp.net/en/lineup/film/3602ASF03",
     watch: [""],
     trailer: "https://youtu.be/AQSyLUDVihY",
-    location: {x: 51.1667, y: 43.6500, name: "Aktau City"},
+    coordinates: {x: 51.1667, y: 43.6500, name: "Aktau City"},
     runtime: 77,
     genre: ["Drama","Social Realism"],
     tags: [""],
@@ -2324,7 +2322,7 @@ export const cultFeatFilms = [
     infoURL: "https://en.wikipedia.org/wiki/The_Cave_of_the_Yellow_Dog",
     watch: ["https://www.kanopy.com/en/product/cave-yellow-dog","https://tubitv.com/movies/294333/cave-of-the-yellow-dog","https://youtu.be/6RZlpZCzA3U"],
     trailer: "https://youtu.be/MRiD5B2rKOg",
-    location: {x: 93.3000, y: 46.4000, name: "Altai Region"},
+    coordinates: {x: 93.3000, y: 46.4000, name: "Altai Region"},
     runtime: 93,
     genre: ["Drama","Docudrama"],
     tags: ["bechdel test"],
@@ -2342,7 +2340,7 @@ export const cultFeatFilms = [
     infoURL: "https://en.wikipedia.org/wiki/Three_Colours:_White",
     watch: ["https://www.max.com/movies/three-colors-white/69b9622e-2c90-4694-90f9-feaec2e307c3","https://www.criterionchannel.com/three-colors-white"],
     trailer: "https://youtu.be/xECEAPfdqic",
-    location: {x: 21.0122, y: 52.2297, name: "Warsaw"},
+    coordinates: {x: 21.0122, y: 52.2297, name: "Warsaw"},
     runtime: 92,
     genre: ["Comedy-Drama","Mystery"],
     tags: [""],
@@ -2360,7 +2358,7 @@ export const cultFeatFilms = [
     infoURL: "https://en.wikipedia.org/wiki/Portrait_of_a_Lady_on_Fire",
     watch: ["https://www.kanopy.com/en/product/portrait-lady-fire-1","https://www.hbomax.com/movies/a6fc9402-a8d2-4056-b309-232eaf78050e","https://tv.apple.com/us/movie/umc.cmc.6vs2ly3786rfgnwhiymmdu8h2","https://athome.fandango.com/content/browse/details/Portrait-of-a-Lady-on-Fire/1321025"],
     trailer: "https://youtu.be/R-fQPTwma9o",
-    location: {x: -2.9326, y: 48.2020, name: "France"},
+    coordinates: {x: -2.9326, y: 48.2020, name: "France"},
     runtime: 121,
     genre: ["Period Drama","Romance","LGBTQ+"],
     tags: ["queer","lesbian","bechdel test"],
@@ -2378,7 +2376,7 @@ export const cultFeatFilms = [
     infoURL: "https://en.wikipedia.org/wiki/Ten_Canoes",
     watch: ["https://youtu.be/2AMmHrFdyBw","https://www.amazon.com/gp/video/detail/B0F9LNDH49"],
     trailer: "https://youtu.be/tH_MY8FJuYo",
-    location: {x: 135.0000, y: -12.5000, name: "Arafura Swamp"},
+    coordinates: {x: 135.0000, y: -12.5000, name: "Arafura Swamp"},
     runtime: 90,
     genre: ["Comedy","Drama","Myth"],
     tags: [""],
@@ -2388,7 +2386,7 @@ export const cultFeatFilms = [
     id: "OCMDCFF",
     title: {original: "Rehefa mihaona ny ranomasina sy ny kintana", translation: "When the Stars Meet the Sea"},
     year: 1996,
-    group: {language: "Malagasy", country: "Madagascar"},
+    group: {people: "Merina", language: "Malagasy", country: "Madagascar"},
     info: [
       `This contemplative and poetic film traces the destiny of Kapila, an outcast child who had been deemed to have supernatural powers of destruction because of the timing of his solar eclipse birth.`,
       `Dir/Scr <b>RAYMOND RAJAONARIVELO</b> is a notable Malagasy film director best known for his films <i>Quand les étoiles rencontrent la mer</i> and <i>Taba Taba</i>.`
@@ -2396,7 +2394,7 @@ export const cultFeatFilms = [
     infoURL: "https://letterboxd.com/film/when-the-stars-meet-the-sea",
     watch: ["https://www.kanopy.com/en/product/quand-les-etoiles-rencontrent-la-mer"],
     trailer: "https://youtu.be/WSId_DLWtIs",
-    location: {x: 47.5079, y: -18.8792, name: "Antananarivo"},
+    coordinates: {x: 47.5079, y: -18.8792, name: "Antananarivo"},
     runtime: 86,
     genre: ["Fantasy","Myth","Drama"],
     tags: [""],
@@ -2414,7 +2412,7 @@ export const cultFeatFilms = [
     infoURL: "https://en.m.wikipedia.org/wiki/Tanna_(film)",
     watch: ["https://www.kanopy.com/video/13866690","https://tubitv.com/movies/100013347/tanna","https://athome.fandango.com/content/browse/details/Tanna/842756","https://www.amazon.com/gp/video/detail/B0CJMZMPZD","https://tv.apple.com/us/movie/umc.cmc.dk3imrvbun4dotif1bncdup8"],
     trailer: "https://youtu.be/Tb3Vslnviwo",
-    location: {x: 169.3333, y: -19.5000, name: "Tanna, Vanuatu"},
+    coordinates: {x: 169.3333, y: -19.5000, name: "Tanna, Vanuatu"},
     runtime: 104,
     genre: ["Romance","Drama","True Story"],
     tags: ["bechdel test"],
@@ -2433,7 +2431,7 @@ export const cultFeatFilms = [
     infoURL: "https://www.microwavefilms.org/NaNoniep.html",
     watch: ["https://youtu.be/-bHfr11hfg8"],
     trailer: "https://youtu.be/CMiJlDi5NaY",
-    location: {x: 171.3803, y: 7.0897, name: "Majuro"},
+    coordinates: {x: 171.3803, y: 7.0897, name: "Majuro"},
     runtime: 78,
     genre: ["Mystery","Supernatural"],
     tags: [""],
@@ -2451,7 +2449,7 @@ export const cultFeatFilms = [
     infoURL: "https://en.wikipedia.org/wiki/The_Orator_(film)",
     watch: ["https://youtu.be/TfkjO-jcjSM","https://fawesome.tv/movies/10643457/the-orator","https://therokuchannel.roku.com/details/b673c8f7b44b589d96355f2691f62e05/the-orator","https://tv.apple.com/us/movie/umc.cmc.2ddyv8y0od32armh643ixrlmz"],
     trailer: "https://youtu.be/AGXopPdTAGs",
-    location: {x: -171.7500, y: -13.9167, name: "Upolu"},
+    coordinates: {x: -171.7500, y: -13.9167, name: "Upolu"},
     runtime: 110,
     genre: ["Drama","Underdog","Redemption"],
     tags: [""],
@@ -2579,6 +2577,7 @@ export const presMusDrama = [
   {
     id: "AFCEPMD",
     title: {original: "Mvet"},
+    meta: { works: [`<i>A Mvet</i> by Zwé Nguéma`,`<i>The Fang Mvet Epic</i> (Oveng Ndoumou Obame)`,`<i>Mvet Asseng Mbame Ona</i>`,`<i>The Mvet: Man, Death and Immortality</i><br>`] },
     century: 19,
     group: {people: "Ekang", language: "Fang-Beti-Bulu", country: "Equatorial Guinea"},
     info: [
@@ -2609,7 +2608,6 @@ export const presMusDrama = [
       `<s>Mbom mvet—</s>`,
       `He was a bald old man, imposing in stature with oversized arms. His wild eyes blinked in the darkness, a panther fang hung from his neck, an owl sang on his shoulder, and his crocodile-skin bag containing all the mysteries of nature lay at his feet…`
     ],
-    works: [`<i>A Mvet</i> by Zwé Nguéma`,`<i>The Fang Mvet Epic</i> (Oveng Ndoumou Obame)`,`<i>Mvet Asseng Mbame Ona</i>`,`<i>The Mvet: Man, Death and Immortality</i><br>`],
     infoURL: [""],
     mediaURL: ["https://youtu.be/YKt4eHsTwXU?start=257","https://youtu.be/Wpn5L6kmdoY","https://youtu.be/lVjHjdYeUWg"],
     textURL: "",
@@ -2618,7 +2616,7 @@ export const presMusDrama = [
       { id: "ondo-2009", type: "article", title: "L’espace corporel intérieur dans le mvet", containerTitle: "Journal des africanistes", contributors: [ { firstName: "Angèle Christine", lastName: "Ondo", role: "author" } ], pubDate: { year: 2009 }, volume: "79", issue: "2", doi: "10.4000/africanistes.2991", url: "http://journals.openedition.org/africanistes/2991", medium: "Journal Article (PDF)", meta: { notes: "Analysis of the Mvet as a theatrical performance and a vehicle for collective memory.", grade: "A", sortKey: "info" } },
       { id: "mbala-nkanga-2014", type: "article", title: "Mvett Performance: Retention, Reinvention, and Exaggeration in Remembering the Past", containerTitle: "Theatre History Studies", contributors: [ { firstName: "Dieudonné", lastName: "Mbala Nkanga", role: "author" } ], pubDate: { year: 2014 }, volume: "33", pages: { start: "213", end: "233" }, url: "https://www.researchgate.net/profile/Dieudonne-Mbala-Nkanga/publication/265833436_Mvett_Performance_Retention_Reinvention_and_Exaggeration_in_Remembering_the_Past/links/590b4ff4458515ebb4a87e5d/Mvett-Performance-Retention-Reinvention-and-Exaggeration-in-Remembering-the-Past.pdf", medium: "Journal Article (PDF)", meta: { notes: "Analysis of the Mvet as a theatrical performance and a vehicle for collective memory.", grade: "A", sortKey: "text" } },
       { id: "abessolo-minko-2011", type: "video", title: "Au commencement était le Mvett (In the Beginning was the Mvet)", medium: "Full-length documentary", contributors: [ { firstName: "Antoine", lastName: "Abessolo Minko", role: "director" }, { organization: "MVET-EKANG", role: "uploader" } ], pubDate: { year: 2011, month: 12, day: 17 }, publisher: "MVET-EKANG", url: "https://www.youtube.com/watch?v=xRCGGC6R0IE", video_length: "PT45M42S", meta: { notes: "A comprehensive documentary featuring interviews with masters (diseurs de Mvet) and scholars like Tsira Ndong Ndoutoume. Explores the cosmogony of the immortal world (Engong) vs. the mortal world (Okui).", grade: "A", tags: ["Fang Culture", "Central Africa", "Oral Tradition", "Ethnomusicology"], sortKey: "text" } }
-    ]
+    ],
   },
   {
     id: "AFWEPMD",
@@ -5249,7 +5247,7 @@ export const globFeatFilms = [
     infoURL: ["https://en.wikipedia.org/wiki/Akounak_Tedalat_Taha_Tazoughai","https://sahelsounds.com/films/akounak-tedalat-taha-tazoughai/"],
     watch: ["https://archive.org/details/rain_the_color_of_blue"],
     trailer: "https://youtu.be/QHgEuzv-zNA?t=2",
-    location: {x: 7.9911, y: 16.9733, name: "Agadez, Niger"},
+    coordinates: {x: 7.9911, y: 16.9733, name: "Agadez, Niger"},
     runtime: 75,
     genre: ["Drama","Musical","Romance"],
     tags: [""],
@@ -5267,7 +5265,7 @@ export const globFeatFilms = [
     infoURL: "https://en.wikipedia.org/wiki/The_Wound_(2017_film)",
     watch: ["https://www.kanopy.com/en/product/wound-0","https://www.amazon.com/gp/video/detail/B076FC4399","https://tv.apple.com/us/movie/umc.cmc.51jd1jc67gg1lyzlpqyumbmxb","https://athome.fandango.com/content/browse/details/The-Wound/906495"],
     trailer: "https://youtu.be/ja1QEpgUszo",
-    location: {x: 26.4194, y: -32.2968, name: "eMpuma-Kapa"},
+    coordinates: {x: 26.4194, y: -32.2968, name: "eMpuma-Kapa"},
     runtime: 88,
     genre: ["Drama","LGBTQ+","Romance"],
     tags: ["queer","gay"],
@@ -5282,7 +5280,7 @@ export const globFeatFilms = [
     infoURL: "https://www.npr.org/2021/11/17/1055897665/dubbing-a-fistful-of-dollars-to-spread-the-navajo-language",
     watch: [""],
     trailer: "https://youtu.be/Rp_UIamM2kU",
-    location: {x: -110.9343, y: 31.3404, name: "Nogales"},
+    coordinates: {x: -110.9343, y: 31.3404, name: "Nogales"},
     runtime: 99,
     genre: ["Western","Action"],
     tags: [""],
@@ -5299,7 +5297,7 @@ export const globFeatFilms = [
     ],
     watch: [""],
     trailer: "https://youtu.be/enegHoLKKI4",
-    location: {x: -65.7169, y: -34.6082, name: "Ranquel Nation"},
+    coordinates: {x: -65.7169, y: -34.6082, name: "Ranquel Nation"},
     runtime: 70,
     genre: ["Docudrama","Coming-of-Age"],
     tags: [""],
@@ -5317,7 +5315,7 @@ export const globFeatFilms = [
     infoURL: "https://ru.wikipedia.org/wiki/%D0%91%D0%B5%D0%BB%D1%8B%D0%B9_%D1%8F%D0%B3%D0%B5%D0%BB%D1%8C",
     watch: ["https://tubitv.com/movies/505928/the-white-moss-belyy-yagel","https://fawesome.tv/movies/10616980/white-moss"],
     trailer: "https://youtu.be/KVKnN-9czbk",
-    location: {x: 72.0000, y: 70.0000, name: "Yamalia"},
+    coordinates: {x: 72.0000, y: 70.0000, name: "Yamalia"},
     runtime: 100,
     genre: ["Drama","Romance"],
     tags: [""],
@@ -5335,7 +5333,7 @@ export const globFeatFilms = [
     infoURL: "https://en.wikipedia.org/wiki/The_Scent_of_Green_Papaya",
     watch: ["https://www.kanopy.com/en/product/scent-green-papaya","https://www.amazon.com/gp/video/detail/B08BF8VC38","https://tv.apple.com/us/movie/umc.cmc.3hmh1smmnu8ut670mv43h269g","https://athome.fandango.com/content/browse/details/The-Scent-of-Green-Papaya/24058","https://archive.org/details/the.-scent.-of.-green.-papaya.-1993.1080p.-blu-ray.x-264.-aac-yts.-mx"],
     trailer: "https://youtu.be/q2OfJYvjgQ8",
-    location: {x: 106.6297, y: 10.8231, name: "Ho Chi Minh City"},
+    coordinates: {x: 106.6297, y: 10.8231, name: "Ho Chi Minh City"},
     runtime: 104,
     genre: ["Drama","Romance"],
     tags: ["bechdel test"],
@@ -5352,7 +5350,7 @@ export const globFeatFilms = [
     ],
     watch: ["https://tubitv.com/movies/100018429/lunana-a-yak-in-the-classroom","https://www.amazon.com/gp/video/detail/amzn1.dv.gti.2617c909-646d-4c96-aa0d-ca44f34ed961"],
     trailer: "https://youtu.be/1W8m1IjLJB8",
-    location: {x: 89.8333, y: 28.0000, name: "Gasa District"},
+    coordinates: {x: 89.8333, y: 28.0000, name: "Gasa District"},
     runtime: 110,
     genre: ["Drama","Comedy-Drama"],
     tags: [""],
@@ -5369,7 +5367,7 @@ export const globFeatFilms = [
     ],
     watch: ["https://therokuchannel.roku.com/details/1c9922336caf5e27b8339493022f5c90/samson-and-delilah"],
     trailer: "https://youtu.be/kcLDCNSqimA",
-    location: {x: 135.3330, y: -24.1350, name: "Iwupataka"},
+    coordinates: {x: 135.3330, y: -24.1350, name: "Iwupataka"},
     runtime: 101,
     genre: ["Drama","Addiction","Romance","Bleak","Emotional"],
     tags: [""],
@@ -5386,7 +5384,7 @@ export const globFeatFilms = [
     ],
     watch: [""],
     trailer: "https://youtu.be/EB4VECA1MdM",
-    location: {x: 49.4023, y: -18.1417, name: "Toamasina"},
+    coordinates: {x: 49.4023, y: -18.1417, name: "Toamasina"},
     runtime: 81,
     genre: ["Drama","Political","Coming-of-Age"],
     tags: [""],
@@ -5404,7 +5402,7 @@ export const globFeatFilms = [
     infoURL: "https://en.wikipedia.org/wiki/Next_Goal_Wins_(2023_film)",
     watch: ["https://www.amazon.com/gp/video/detail/amzn1.dv.gti.5b099d27-081d-4506-96db-762dfe3f3760","https://tv.apple.com/us/movie/umc.cmc.2049p35ohuitytmjqn12fswvt","https://athome.fandango.com/content/browse/details/Next-Goal-Wins/548137"],
     trailer: "https://youtu.be/pRH5u5lpArQ",
-    location: {x: -170.1322, y: -14.2710, name: "Amerika Sāmoa"},
+    coordinates: {x: -170.1322, y: -14.2710, name: "Amerika Sāmoa"},
     runtime: 104,
     genre: ["Comedy","Sport","Feel-Good","LGBTQ-inclusive"],
     tags: ["trans","non-binary","funny"],
@@ -5414,7 +5412,7 @@ export const globFeatFilms = [
 
 export const cultShortFilms = [
   {
-    id: "AMLOCSF",
+    id: "AMNECSF",
     title: {original: "Imbé Gikegü", translation: "The Scent of Pequi Fruit"},
     year: 2006,
     group: {people: "Kuikuro", language: "Kuikúro", location: "Mato Grosso, BR"},
@@ -5424,7 +5422,7 @@ export const cultShortFilms = [
     ],
     watch: ["https://vimeo.com/ondemand/cheirodepequi/220915396"],
     trailer: "https://youtu.be/GF49vlg9y5A",
-    location: {x: -53.1333, y: -12.4333, name: "Ipatse Village"},
+    coordinates: {x: -53.1333, y: -12.4333, name: "Ipatse Village"},
     runtime: 36,
     genre: ["Dramedy","Symbolist"],
     tags: [""],
@@ -5441,7 +5439,7 @@ export const cultShortFilms = [
     ],
     watch: ["https://youtu.be/ZGI_KDOmOts"],
     trailer: "https://youtu.be/23FowJvS9W4",
-    location: {x: -73.0000, y: -38.0000, name: "Lafkenmapu Territory"},
+    coordinates: {x: -73.0000, y: -38.0000, name: "Lafkenmapu Territory"},
     runtime: 8,
     genre: ["Docufiction","Children's"],
     tags: [""],
@@ -5449,4 +5447,4 @@ export const cultShortFilms = [
   }
 ];
 
-export const reccsData = [modTradNovels,stirrPoetry,cultFeatFilms,presMusDrama,foundRelTexts,globFeatFilms].flat();
+export const reccsData = [modTradNovels,stirrPoetry,cultFeatFilms,presMusDrama,foundRelTexts,globFeatFilms,cultShortFilms].flat();
