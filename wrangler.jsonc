@@ -33,6 +33,20 @@
 			"service": "reccs-media"
 		}
 	],
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "reccs-media",
+			"database_id": "322e015a-5590-4038-85ed-89150c4b104e",
+			"remote": true
+		},
+		{
+			"binding": "NEXT_TAG_CACHE_D1",
+			"database_name": "reccs-media",
+			"database_id": "322e015a-5590-4038-85ed-89150c4b104e",
+			"remote": true
+		}
+	],
 	"observability": {
 		"enabled": true
 	}

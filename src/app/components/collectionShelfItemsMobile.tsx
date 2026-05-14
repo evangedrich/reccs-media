@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { reccsData } from "../lib/local-media";
+import type { Recc } from "../types/recc";
 import { subregions } from "../lib/subregions";
 import { getTitle } from "../functions/text";
 
@@ -10,12 +10,14 @@ type Collection = { id: string, name: string, shortName: string, type: string, h
 export default function ShelfItemsMobile({
     collections,
     collID,
+    reccs,
 }: {
     collections: Collection[],
     collID: string,
+    reccs: Recc[],
 }): React.ReactNode {
     const [isExpanded,setIsExpanded] = useState(false);
-    const entries = reccsData.filter(item => item.id.endsWith(collID));
+    const entries = reccs.filter(item => item.id.endsWith(collID));
     const tracks = isExpanded ? 3 : 2;
     const padCount = (tracks - (entries.length % tracks)) % tracks;
     return (

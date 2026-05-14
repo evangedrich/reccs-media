@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { syncopate } from "../fonts/fonts";
-import { reccsData } from "../lib/local-media";
+import type { Recc } from "../types/recc";
 import { subregions } from "../lib/subregions";
 import Link from "next/link";
 import Image from "next/image";
@@ -13,9 +13,11 @@ type Collection = { id: string, name: string, shortName: string, type: string, h
 export default function CollectionShelfItems({
     collections,
     coll,
+    reccs,
 }: {
     collections: Collection[],
     coll: Collection,
+    reccs: Recc[],
 }): React.ReactNode {
     const scrollRef = useRef<HTMLDivElement | null>(null);
     const [edges, setEdges] = useState<{ atStart: boolean; atEnd: boolean }>({ atStart: true, atEnd: false });
@@ -23,7 +25,7 @@ export default function CollectionShelfItems({
     const [cols, setCols] = useState(5);
     const isLast = collections[collections.length - 1].id === coll.id;
     const isOnly = collections.length <= 2;
-    const entries = reccsData.filter(entry => entry.id.endsWith(coll.id));
+    const entries = reccs.filter(entry => entry.id.endsWith(coll.id));
     const padCount = rows > 0 ? (rows - (entries.length % rows)) % rows : 0;
     const fillCount = rows * cols;
 

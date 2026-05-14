@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import Map, { HoverMap } from "@/app/components/map";
 import { subregions } from "@/app/lib/subregions";
-import { reccsData } from "../lib/local-media";
+import type { Recc } from "../types/recc";
 import { collections } from "../lib/collections";
 import { getTitle, preParse } from "../functions/text";
 import Globe from "@/app/components/globe";
@@ -13,7 +13,7 @@ import Image from "next/image";
 import { useView } from "@/app/lib/viewContext";
 import SubrInfoWindow from "./subrInfoWindow";
 
-export default function Geoscheme() {
+export default function Geoscheme({ reccs }: { reccs: Recc[] }) {
     const { showGlobe } = useView();
     const [currSubr,setCurrSubr] = useState<string>("X");
     const [hovered,setHovered] = useState<string>("");
@@ -22,7 +22,7 @@ export default function Geoscheme() {
     useEffect(() => {
         //entriesRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' });
     }, [currSubr]);
-    const entries = reccsData.filter(itm => itm.id.startsWith(currSubr));
+    const entries = reccs.filter(itm => itm.id.startsWith(currSubr));
     return (
         <div>
             <div className={`${showGlobe ? "hidden max-sm:block" : "max-sm:hidden"} relative border-b-2 p-4`}>

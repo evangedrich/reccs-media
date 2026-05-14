@@ -6,6 +6,7 @@ import styles from "@/app/ui/main.module.css";
 import CollectionShelfItems from "./collectionShelfItems";
 import ShelfItemsMobile from "./collectionShelfItemsMobile";
 import { preParse } from "../functions/text";
+import type { Recc } from "../types/recc";
 
 const getColor = (id: string) => {
     if (id==="MTN") { return "group-hover:text-[var(--color-blue)]"; }
@@ -20,11 +21,12 @@ const getColor = (id: string) => {
     else { return "group-hover:text-[var(--color-purple)]"; }
 };
 
-export default function CollectionShelf({ 
-    collections 
+export default function CollectionShelf({
+    collections,
+    reccs,
 }: { collections: {
     id: string, name: string, shortName: string, type: string, header: string, info?: string
-}[] }): React.ReactNode {
+}[], reccs: Recc[] }): React.ReactNode {
     const [currColl, setCurrColl] = useState(collections[0].id);
     const bgPatternMobile = "bg-[repeating-linear-gradient(45deg,var(--color-mid)_0px,var(--color-mid)_1px,transparent_1px,transparent_8px)]";
     const bgPattern = "sm:bg-[repeating-linear-gradient(45deg,transparent_0px,transparent_1px,transparent_1px,transparent_8px)]";
@@ -46,7 +48,7 @@ export default function CollectionShelf({
                                     <Markdown>{preParse(coll.info ?? "")}</Markdown>
                                 </div>
                             </div>
-                            <CollectionShelfItems collections={collections} coll={coll} />
+                            <CollectionShelfItems collections={collections} coll={coll} reccs={reccs} />
                         </div>
                         
                     </React.Fragment>
@@ -58,7 +60,7 @@ export default function CollectionShelf({
                 </div>
             ))}</div>
             <div className={`${styles.shelfText} sm:hidden flex flex-col`}>
-                <ShelfItemsMobile collections={collections} collID={currColl} />
+                <ShelfItemsMobile collections={collections} collID={currColl} reccs={reccs} />
                 <div className="p-4">
                     <Markdown>{"# "+collections.find(coll => coll.id===currColl)?.header}</Markdown>
                     <Markdown>{preParse(collections.find(coll => coll.id===currColl)?.info ?? "")}</Markdown>

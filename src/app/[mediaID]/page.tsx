@@ -1,15 +1,12 @@
-import { reccsData } from "@/app/lib/local-media";
+import { getReccById } from "@/app/lib/reccs";
+import { notFound } from "next/navigation";
 import Image from "next/image";
 import { notoEmoji } from "../fonts/fonts";
 import StickyTitleBar from "../components/stickyTitleBar";
 import MediaContent from "../components/mediaContent";
 import { getTitle, getByline, isMongol } from "../functions/text";
 
-export async function generateStaticParams() {
-    return reccsData.map(item => ({
-        mediaID: item.id,
-    }));
-}
+export const dynamic = "force-dynamic";
 
 const groupIcons: { people: string, language: string, location: string, country: string, religion: string, } = {
     people: "👥",
@@ -21,7 +18,8 @@ const groupIcons: { people: string, language: string, location: string, country:
 
 export default async function DetailPage({ params }: { params: Promise<{ mediaID: string }> }) {
     const { mediaID } = await params;
-    const entry = reccsData.find(item => item.id===mediaID);
+    const entry = await getReccById(mediaID);
+    if (!entry) notFound();
     const title = getTitle(entry);
     const transliteration = getTitle(entry,"transliteration");
     const translation = getTitle(entry,"translation");
