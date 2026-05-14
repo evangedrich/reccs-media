@@ -49,7 +49,7 @@ export const collections: { id: string, name: string, shortName: string, type: s
         shortName: "Feature Film",
         type: "cinema",
         header: "What is the relationship between film and globalization?",
-        info: "This collection is under construction. Some films are available already, but please check back later for updates."
+        info: "The resources required to finance a feature film are substantial and often only available to communities with some degree of accountability to foreign economic influence, and correspondingly, a given local movie-going audience may generate insufficient funds to justify initial investment in such a film. Further, although video recording can be used to varying degrees of success in an ethnographic or cultural conservation context, the medium is not itself part of any traditional cultural practice and therefore often requires a relationship with colonial institutions to perpetuate its use.\n\nThis collection is under construction. Some films are available already, but please check back later for updates."
     },
     {
         id: "CSF",

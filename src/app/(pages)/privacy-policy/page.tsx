@@ -3,7 +3,7 @@
 export default function PrivacyPolicyPage() {
     return (
         <div className="max-w-[1000px] mx-auto py-4 pb-10 flex flex-col gap-2 px-4">
-            <h1 className="text-2xl font-black mb-4 mx-auto">Privacy Policy</h1>
+            <h1 className="text-2xl font-black mb-4">Privacy Policy</h1>
             <p>This privacy policy is applicable to the Reccs app (hereinafter referred to as “Application”) for mobile devices, which was developed by Evan Gedrich (hereinafter referred to as “Service Provider”) as a a Free service. This service is provided “AS IS”.</p>
 
             <h2 className="text-xl font-bold mt-4">What information does the Application obtain and how is it used?</h2>
@@ -23,7 +23,7 @@ export default function PrivacyPolicyPage() {
 
             <h2 className="text-xl font-bold mt-4">How does the Application address children&apos;s privacy?</h2>
             <p>The Service Provider does not use the Application to knowingly solicit data from or market to children under the age of 13.</p>
-            <p>The Service Provider does not knowingly collect personally identifiable information from children. The Service Provider encourages all children to never submit any personally identifiable information through the Application and/or Services. The Service Provider encourage parents and legal guardians to monitor their children&apos;s Internet usage and to help enforce this Policy by instructing their children never to provide personally identifiable information through the Application and/or Services without their permission. If you have reason to believe that a child has provided personally identifiable information to the Service Provider through the Application and/or Services, please contact the Service Provider (admin@quichua.evangedrich.com) so that they will be able to take the necessary actions. You must also be at least 16 years of age to consent to the processing of your personally identifiable information in your country (in some countries we may allow your parent or guardian to do so on your behalf).</p>
+            <p>The Service Provider does not knowingly collect personally identifiable information from children. The Service Provider encourages all children to never submit any personally identifiable information through the Application and/or Services. The Service Provider encourage parents and legal guardians to monitor their children&apos;s Internet usage and to help enforce this Policy by instructing their children never to provide personally identifiable information through the Application and/or Services without their permission. If you have reason to believe that a child has provided personally identifiable information to the Service Provider through the Application and/or Services, please contact the Service Provider (admin@evangedrich.com) so that they will be able to take the necessary actions. You must also be at least 16 years of age to consent to the processing of your personally identifiable information in your country (in some countries we may allow your parent or guardian to do so on your behalf).</p>
 
             <h2 className="text-xl font-bold mt-4">How is your information kept secure?</h2>
             <p>The Service Provider is concerned about safeguarding the confidentiality of your information. However, since the Application does not collect any information, there is no risk of your data being accessed by unauthorized individuals.</p>

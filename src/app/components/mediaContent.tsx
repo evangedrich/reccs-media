@@ -34,7 +34,7 @@ export default function MediaContent({ entry }: { entry: any }) {
         let content;
         if (currentTab==="info" || currentTab==="excerpt") {
             const text = entry[currentTab];
-            content = (entry[currentTab][0].includes("youtu.be")) ? <PrepVideo vid={text} /> : <>{text.map((x: string, i: number) => <p key={`p${i}`}>{parseWithAbbr(x, (title, content) => { setCurrAbbr([content, title]); setAbbrOpen(true); })}</p>)}</>;
+            content = (entry[currentTab][0].includes("youtu.be")) ? <PrepVideo vid={text} /> : <>{text.map((x: string, i: number) => <p key={`p${i}`}>{parseWithAbbr(x, (title, content) => { setCurrAbbr([content, title]); setAbbrOpen((abbrOpen && currAbbr[1]===title) ? false : true); })}</p>)}</>;
         } else if (currentTab==="media" || currentTab==="trailer") {
             content = <PrepVideo vid={entry[currentTab==="media"?"mediaURL":"trailer"]} />;
         } else if (currentTab==="watch") {
@@ -42,7 +42,14 @@ export default function MediaContent({ entry }: { entry: any }) {
         } else if (currentTab==="playlist") {
             content = <div className="border-2 bg-[var(--color-mid)] rounded-4xl overflow-hidden"><iframe src={"https://open.spotify.com/embed/playlist/"+entry.playlistURL.substring(34)+"?utm_source=generator&theme=0"} width="100%" height="352" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>;
         } else if (currentTab==="sources") {
-            if (Object.keys(entry).includes("ref")) { content = <div className={styles.citationContainer}><ul className="flex gap-4 text-xs uppercase mb-3">{citationFormats.map((c,i) => <li key={`cite${i}`} onClick={() => setCiteFormat(c)} className={`hover:opacity-80 ${c===citeFormat?"font-extrabold hover:opacity-100":""} cursor-pointer`}>{c}</li>)}</ul>{getCitations(entry.ref,citeFormat).map((src,i) => <MarkdownCitation key={`cit${i}`} markdownContent={src.citation} url={src.url}></MarkdownCitation>)}</div>; }
+            if (Object.keys(entry).includes("ref")) {
+                content = <div className={styles.citationContainer}>
+                    <ul className="flex gap-4 text-xs uppercase mb-3">
+                        {citationFormats.map((c,i) => <li key={`cite${i}`} onClick={() => setCiteFormat(c)} className={`hover:opacity-80 ${c===citeFormat?"font-extrabold hover:opacity-100":""} cursor-pointer`}>{c}</li>)}
+                    </ul>
+                    {getCitations(entry.ref,citeFormat).map((src,i) => <MarkdownCitation key={`cit${i}`} markdownContent={src.citation} url={src.url}></MarkdownCitation>)}
+                </div>; 
+            }
         }
         return content;
     };
@@ -66,10 +73,19 @@ export default function MediaContent({ entry }: { entry: any }) {
                 {getContent()}
             </div>
             <div className={`sm:hidden fixed -bottom-10 left-0 w-full bg-[var(--color-back)] border-t-2 ${abbrOpen?"max-h-[50vh]":"max-h-0"} transform translate-y-1 transition-[max-height] duration-400 overflow-y-auto overscroll-y-none z-10`} onMouseLeave={() => setAbbrOpen(false)}>
-                <div className="absolute right-0 top-0 text-right text-xs p-3 flex items-center" onClick={() => setAbbrOpen(false)}>CLOSE Ｘ</div>
-                <div className="p-6 pb-26">
+                <div className="sticky left-0 top-0 w-full flex justify-end text-xs p-3 pb-1 flex items-center bg-[var(--color-back)] active:opacity-60" onClick={() => setAbbrOpen(false)}>CLOSE Ｘ</div>
+                <div className="p-6 pt-0 pb-30">
                     <h3 className="italic pb-2">{currAbbr[0]}:</h3>
                     <p>{currAbbr[1]}</p>
+                </div>
+            </div>
+            <div className={`max-sm:hidden ${abbrOpen ? "" : "hidden"} fixed bottom-0 right-0 text-[12px]`}>
+                <div className="m-4 max-w-90 bg-[var(--color-back)] border-2 border-[var(--color-front)]">
+                    <div className="flex justify-between border-b-2">
+                        <h3 className="py-1 px-2 italic">{currAbbr[0]}</h3>
+                        <div className="p-1 cursor-pointer border-l-2 w-7 text-center hover:bg-[var(--color-mid)]" onClick={() => setAbbrOpen(false)}>Ｘ</div>
+                    </div>
+                    <p className="px-2 pt-1 pb-3 min-w-30">{currAbbr[1]}</p>
                 </div>
             </div>
         </>

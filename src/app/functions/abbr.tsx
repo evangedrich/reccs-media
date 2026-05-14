@@ -21,6 +21,7 @@ export const parseWithAbbr = (
                     title={title}
                     style={{ cursor: 'help' }}
                     onClick={() => onAbbrClick(title, content)}
+                    className="active:opacity-80"
                 >
                     {domToReact(node.children)}
                 </abbr>

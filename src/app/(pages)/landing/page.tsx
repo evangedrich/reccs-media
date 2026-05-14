@@ -1,14 +1,17 @@
 import { syncopate } from "@/app/fonts/fonts";
 import ColorLink from "@/app/components/colorLink";
 import { preParse } from "@/app/functions/text";
+import { reccsData } from "@/app/lib/local-media";
+
+const refCount = (reccsData as { ref?: unknown[] }[]).reduce((s, e) => s + (e.ref?.length ?? 0), 0);
 
 const stats: [string, string][] = [
-    ["30",  "subregions"],
-    ["9",   "collections"],
-    ["157", "entries"],
-    ["10",  "calendars"],
-    ["3",   "citation formats"],
-    ["2",   "render modes"],
+    ["30",                 "subregions"],
+    ["9",                  "collections"],
+    [String(reccsData.length),                "entries"],
+    [String(refCount),     "citations"],
+    ["10",                 "calendar settings"],
+    ["2",                  "render modes"],
 ];
 
 const features = [
