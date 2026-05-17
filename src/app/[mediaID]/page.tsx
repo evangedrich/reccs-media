@@ -1,5 +1,6 @@
 import { getReccById } from "@/app/lib/reccs";
 import { notFound } from "next/navigation";
+import { Metadata } from "next";
 import Image from "next/image";
 import { notoEmoji } from "../fonts/fonts";
 import StickyTitleBar from "../components/stickyTitleBar";
@@ -7,6 +8,16 @@ import MediaContent from "../components/mediaContent";
 import { getTitle, getByline, isMongol } from "../functions/text";
 
 export const dynamic = "force-dynamic";
+export async function generateMetadata(
+    { params }: { params: Promise<{ mediaID: string }> }
+): Promise<Metadata> {
+    const { mediaID } = await params;
+    const entry = await getReccById(mediaID);
+    if (!entry) return {};
+    return {
+        title: getTitle(entry),
+    };
+}
 
 const groupIcons: { people: string, language: string, location: string, country: string, religion: string, } = {
     people: "👥",

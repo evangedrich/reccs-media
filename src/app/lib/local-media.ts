@@ -1077,7 +1077,7 @@ export const stirrPoetry = [
     excerpt: [`Night had fallen and behind closed doors everyone was sleeping<br>Thunder called out with a clamour of rain like shots from a thousand rifles<br>So was my wailing heard that they thought it a lion approaching<br>For men the spine and ribsides are the body’s central support<br>I am shut away now from the eyes through which I used to see<br>Only God knows the source of my lamentations<br>The vulture with an injury to his shoulder cannot fly<br>The horse who has lost his spine cannot gallop<br>The man injured in eye and ribs cannot seek revenge<br>A man whose heart aches cannot take a bride home<br>When the camels are thirsty their outcries increase<br>Like a small girl whose mother now lives in the hereafter<br>Whose father has brought another woman to sleep in the <i>aqal</i><br>I grieve constantly from the sorrow deep in my belly<br>I’m the man whose fiancée has been given to another<br>I’m the man who sees springs but whose thirst remains unquenched<br>I’m the man whose brother is clan leader and yet is accused<br>I am that silent man who sits, slowly patting his mouth again and again`],
     infoURL: [""],
     mediaURL: ["https://youtu.be/p-L9f9TkVFE"],
-    textURL: "https://citylore.org/wp-content/uploads/2022/01/Somalia_Poetry_Raage-Ugaas_Night-Has-Fallen.pdf",
+    textURL: "",
     ref: [
       { id: "citylore-2022-raage-ugaas-night", type: "document", title: "The Night Has Fallen (Allayl Dumay)", contributors: [ { firstName: "Raage", lastName: "Ugaas", role: "author" }, { firstName: "Shire Jaamac", lastName: "Axmed", role: "author" }, { firstName: "Martin", lastName: "Orwin", role: "author" } ], pubDate: { year: 2022, month: 1 }, url: "https://citylore.org/wp-content/uploads/2022/01/Somalia_Poetry_Raage-Ugaas_Night-Has-Fallen.pdf", publisher: "City Lore", location: "New York, NY / Mogadishu, Somalia", medium: "Digital PDF / Broadside", meta: { notes: "A digital broadside based on the collection 'Gabayo, Maahmaah iyo Sheekooyin Yaryar' (Mogadishu: The National Printers). It preserves the Martin Orwin translation of the classic Somali gabay. This record connects the 19th-century oral performance to the 20th-century script standardization and 21st-century digital archiving.", grade: "A", tags: ["Somali", "Raage Ugaas", "Gabay", "Translation", "Shire Jaamac Axmed", "Martin Orwin", "Mogadishu", "City Lore"] } },
       { id: "andrzejewski-1993", type: "book", title: "An Anthology of Somali Poetry", contributors: [ { firstName: "Bogumil W.", lastName: "Andrzejewski", role: "author" }, { firstName: "Sheila", lastName: "Andrzejewski", role: "author" } ], pubDate: { year: 1993 }, publisher: "Indiana University Press", location: "Bloomington, IN", version: "Republished by Hassell Street Press, 2021", isbn: "9780253304635", medium: "Print", meta: { notes: "A definitive collection covering the major genres of Somali poetry, including the Gabay, Jiifto, and Geeraar. Features translations of works by Sayyid Mohamed Abdille Hassan and others.", grade: "B", tags: ["Somali Literature", "Oral Tradition", "Horn of Africa", "Poetry Anthology"] } },
@@ -1203,7 +1203,7 @@ export const stirrPoetry = [
     ],
     infoURL: "",
     mediaURL: ["https://archive.org/details/78_the-creators-songs-the-great-feather-dance-ostowegowa_chancey-johnny-john-william-n_gbia0524825a"],
-    textURL: "https://drumhop.com/music.php?page=182",
+    textURL: "",
     ref: [
       { id: "fenton-1942-songs-iroquois-longhouse", type: "book", title: "Songs from the Iroquois longhouse: program notes for an album of American Indian music from the eastern woodlands", contributors: [ { firstName: "William N.", lastName: "Fenton", role: "author" }, { firstName: "", lastName: "Archive of American Folk Song", role: "contributor" } ], pubDate: { year: 1942 }, url: "https://catalog.hathitrust.org/Record/102161232", publisher: "Smithsonian Institution (Publication 3691) / Library of Congress", location: "Washington, D.C.", medium: "Print (First Edition) / Program Notes", meta: { notes: "A primary ethnomusicological resource for the Haudenosaunee. It covers the 'Great Feather Dance', 'Midwinter Festival Chants', and 'Medicine Man’s Celebration'. It explains the use of the water drum and horn rattle and the specific ceremonial protocols of the Seneca, Onondaga, and Cayuga nations.", grade: "D", tags: ["Haudenosaunee", "Iroquois", "Longhouse", "Seneca", "Onondaga", "Cayuga", "William Fenton", "Ethnomusicology", "Water Drum", "Midwinter Festival"] } },
       { id: "drumhop-pg182-grand-river-seneca-medicine-songs", type: "webpage", title: "Grand River Seneca: Songs from the Iroquois Longhouse (Hadi’hi’du:s)", containerTitle: "Drumhop: Six Nations Music", contributors: [ { firstName: "Lowell", lastName: "Blanchard", role: "curator" }, { firstName: "Raymond", lastName: "Spragg", role: "singer" }, { firstName: "William N.", lastName: "Fenton", role: "original_collector" } ], pubDate: { year: 2024 }, url: "https://drumhop.com/music.php?page=182", publisher: "Onasakenrat / Drumhop", location: "Six Nations of the Grand River, Ontario", medium: "Digital Audio Archive", meta: { notes: "Digital access to the Hadi’hi’du:s (Society of Medicine Men) songs. These recordings are characterized by the rapid, high-pitched beat of the 'Little Water Drum' and the sharp rhythmic accompaniment of the horn rattle. It represents a sacred ceremonial cycle used for healing.", grade: "D", tags: ["Seneca", "Haudenosaunee", "Little Water Drum", "Hadi’hi’du:s", "Medicine Society", "Six Nations", "Grand River", "Archival Audio"] } }
@@ -1328,11 +1328,11 @@ export const stirrPoetry = [
       `<i>Ibisikaetina</i><br>I am ashamed.`,
       `<i>Kŭrétina</i><br>I want.`,
       `…`,
-      `<i>Karífuna iátina</i><br>I am a Carib.`,
-      `<i>Libúkaye iátina</i><br>I am his brother.`,
-      `…`,
       `<i>Bíabri wéyu láusen ni síruni</i><br>It is four days since I left.`,
-      `<i>Nha bunáhai lubuyékua</i><br>They buried him in his own house.`
+      `<i>Nha bunáhai lubuyékua</i><br>They buried him in his own house.`,
+      `…`,
+      `<i>Karífuna iátina</i><br>I am a Carib.`,
+      `<i>Libúkaye iátina</i><br>I am his brother.`
     ],
     infoURL: "",
     mediaURL: [],
@@ -1855,7 +1855,10 @@ export const cultFeatFilms = [
     runtime: 74,
     genre: ["Drama","Family","Fantasy","Superhero"],
     tags: ["bechdel test"],
-    color: "#5a949c"
+    color: "#5a949c",
+    ref: [
+      { id: "kariuki-2022-supa-modo-sinemafocus", type: "webpage", title: "A Love Letter to 'Supa Modo', Kenya's Best Film Yet", contributors: [ { firstName: "Kelvin", lastName: "Kariuki", role: "author" }, { firstName: "Likarion", lastName: "Wainaina", role: "director (subject)" } ], pubDate: { year: 2022, month: 10, day: 30 }, url: "https://www.sinemafocus.com/a-love-letter-to-supa-modo-the-best-kenyan-film-yet/", publisher: "Sinema Focus", location: "Kenya / Nairobi", medium: "Digital Film Review / Essay", meta: { notes: "A definitive critical essay by Kelvin Kariuki positioning Likarion Wainaina's 2018 film 'Supa Modo' as a masterpiece of contemporary Kenyan cinema. Kariuki argues the film deserves the same canonized recognition within the African geoscheme as Djibril Diop Mambéty's 'Touki Bouki'. It highlights the film's profound subversion of the Hollywood superhero archetype through a localized, community-constructed narrative lens.", grade: "A", tags: ["Supa Modo", "Kenyan Cinema", "Likarion Wainaina", "African Geoscheme", "Film Criticism", "Sinema Focus", "Superhero Genre", "Kelvin Kariuki"] } }
+    ]
   },
   {
     id: "AFSOCFF",
@@ -1889,7 +1892,45 @@ export const cultFeatFilms = [
     runtime: 93,
     genre: ["Drama","Social Commentary"],
     tags: [""],
-    color: "#1f3057"
+    color: "#1f3057",
+    ref: [
+      {
+  id: "barlet-2003-ouenangare-africultures",
+  type: "interview",
+  title: "Interview with Didier Ouenangaré, Co-director of «Le Silence de la Forêt»",
+  contributors: [
+    { 
+      firstName: "Olivier", 
+      lastName: "Barlet", 
+      role: "interviewer" 
+    },
+    { 
+      firstName: "Didier", 
+      lastName: "Ouenangaré", 
+      role: "interviewee/co-director" 
+    },
+    { 
+      firstName: "Bassek", 
+      lastName: "ba Kobhio", 
+      role: "co-director (referenced)" 
+    }
+  ],
+  pubDate: { 
+    year: 2003,
+    month: 5,
+    day: 27
+  },
+  url: "https://africultures.com/co-director-of-le-silence-de-la-foret-5698/",
+  publisher: "Africultures",
+  location: "Central African Republic / Cameroon",
+  medium: "Digital Interview",
+  meta: {
+    notes: "An invaluable primary interview exploring the production mechanics, financial struggles, and thematic goals of CAR's defining cinematic achievement. The film adapts Étienne Goyémidé's novel to critique the paternalistic and discriminatory relationships between the westernized Bantu elite (represented by the protagonist Gonaba) and the indigenous BiAka (Babenzelé) people of the equatorial rainforest.",
+    grade: "A",
+    tags: ["Central African Republic", "Cameroon", "Didier Ouenangaré", "Bassek ba Kobhio", "Le Silence de la Forêt", "BiAka", "African Cinema", "Post-Colonialism", "Film Adaptation"]
+  }
+}
+    ]
   },
   {
     id: "AFWECFF",
@@ -2690,7 +2731,8 @@ export const presMusDrama = [
     mediaURL: ["https://youtu.be/fzh-_BQbP2o","https://youtu.be/5QqJ7RqsxbM?start=490","https://youtu.be/mE89GV6jPfQ?start=465"],
     textURL: "https://s9.imslp.org/files/imglnks/usimg/0/0d/IMSLP222521-SIBLEY1802.21145.da1d-39087011973114score.pdf",
     ref: [
-      { id: "koons-2016", type: "thesis", title: "Dancing Breath: Ceremonial Performance Practice, Environment, and Personhood in a Muskogee Creek Community", contributors: [ { firstName: "Ryan Abel", lastName: "Koons", role: "author" } ], pubDate: { year: 2016 }, publisher: "University of California, Los Angeles", location: "Los Angeles, CA", medium: "Doctoral Dissertation", url: "https://www.researchgate.net/publication/331482090_Dancing_Breath_Ceremonial_Performance_Practice_Environment_and_Personhood_in_a_Muskogee_Creek_Community", meta: { notes: "A PhD dissertation in Ethnomusicology. It utilizes 'ecomusicology' and 'indigenous ontologies' to analyze the Stomp Dance. Focuses on the relationship between breath, song, and the medicinal properties of the ceremonial space.", grade: "B", tags: ["Muskogee", "Creek", "Stomp Dance", "Ethnomusicology", "Ecomusicology", "Indigenous Ontology"], sortKey: "info" } }
+      { id: "koons-2016", type: "thesis", title: "Dancing Breath: Ceremonial Performance Practice, Environment, and Personhood in a Muskogee Creek Community", contributors: [ { firstName: "Ryan Abel", lastName: "Koons", role: "author" } ], pubDate: { year: 2016 }, publisher: "University of California, Los Angeles", location: "Los Angeles, CA", medium: "Doctoral Dissertation", url: "https://www.researchgate.net/publication/331482090_Dancing_Breath_Ceremonial_Performance_Practice_Environment_and_Personhood_in_a_Muskogee_Creek_Community", meta: { notes: "A PhD dissertation in Ethnomusicology. It utilizes 'ecomusicology' and 'indigenous ontologies' to analyze the Stomp Dance. Focuses on the relationship between breath, song, and the medicinal properties of the ceremonial space.", grade: "B", tags: ["Muskogee", "Creek", "Stomp Dance", "Ethnomusicology", "Ecomusicology", "Indigenous Ontology"], sortKey: "info" } },
+      { id: "koons-2019-becoming-avian-pvlvcekolv", type: "journal_article", title: "Becoming Avian in the Anthropocene: Performing the Feather Dance and the Owl Dance at Pvlvcekolv", contributors: [ { firstName: "Ryan", lastName: "Koons", role: "author" } ], pubDate: { year: 2019, month: 2, day: 7 }, url: "https://www.researchgate.net/publication/330923509_Becoming_Avian_in_the_Anthropocene_Performing_the_Feather_Dance_and_the_Owl_Dance_at_Pvlvcekolv", publisher: "Humanimalia", location: "Muscogee Nation / Oklahoma", medium: "Digital Journal Article", meta: { notes: "An ethnomusicological analysis of the Feather and Owl Dances at the Pvlvcekolv ceremonial ground. Koons frames these dances as specialized somatic and sonic methods through which Mvskoke practitioners embody avian ontology. By 'becoming avian,' participants renew multi-species treaties and assert Indigenous sovereignty against the planetary degradation of the Anthropocene.", grade: "C", doi: "10.52537/humanimalia.9503", tags: ["Muscogee", "Mvskoke", "Pvlvcekolv", "Feather Dance", "Owl Dance", "Stomp Ground", "Ethnomusicology", "Anthropocene", "Interspecies Performance"], sortKey: "info" } }
     ]
   },
   {
@@ -4869,7 +4911,7 @@ export const foundRelTexts = [
     id: "OCAUFRT",
     title: {original: "Songs of Central Australia"},
     group: {people: "Arrernte", language: "Arrernte", religion: "Altyerre", location: "Alice Springs, AU"},
-    info: [`At the creation of the world and through its present and eternal existence is <i>Altyerre</i>, the Dreaming. Just like nighttime dreaming, interpreted in the context of places and progenitors, mediates access to the spiritual and religious domains, Altyerre captures the complex and persistent relationship between the ancestral and dream realms. Such acts of dreaming constitute an objective experience in which time and space are no longer obstacles, and in which information of great importance is gained by the dreamer. The same is true for the sacred songs and narratives that describe the Dreaming, timeless stories of ancestral beings and country also called Altyerre.`],
+    info: [`At the creation of the world and through its present and eternal existence is <i>Altyerre</i>, the Dreaming. Just like nighttime dreaming—interpreted in the context of places and progenitors—mediates access to the spiritual and religious domains, Altyerre captures the complex and persistent relationship between the ancestral and dream realms. Such acts of dreaming constitute an objective experience in which time and space are no longer obstacles, and in which information of great importance is gained by the dreamer. The same is true for the sacred songs and narratives that describe the Dreaming, timeless stories of ancestral beings and country also called Altyerre.`],
     excerpt: [
       `Sky mountainous with clouds!<br>Sky crowded with trysting clouds!<br>Sky mountainous with clouds!<br>Sky, olive-brown like watermoss,<br>&emsp;&emsp;with clouds growing,<br>&emsp;&emsp;rising from their knees:<br>&emsp;&emsp;roll, roll, thunder!<br>Sharp-edged cloud-tips melting into rain!<br>Over <+>mulgas[Acacia aneura, a tree endemic to inland Australia]</+> <+>ring-waisted[in the Simpson Desert area the mulgas are confined largely to swamp flats; when these swamps are filled by rainstorms, the mulgas are likely to stand “waist deep” in water; their “bodies” would then be encircled by foam rings]</+> see them drifting,<br>&emsp;&emsp;the floating rack sprouting cloud-wisp avenues!<br><+>Wings[the rapidly advancing storm-driven clouds are likened to huge birds floating through the air on their wings]</+> floating and floating,<br>&emsp;&emsp;<+>pinions[outermost part of a bird’s wing]</+> floating and floating:<br>Wings beating and rushing,<br>&emsp;&emsp;pinions beating and sounding!<br>Thunder roll and shake!<br>Clouds unfolding advancing bosoms,<br>&emsp;&emsp;foreheads flashing sheet lightning!<br>Swelling cloud-fronts growing white with rain!<br>Stoke the <+>fires[this is a warning to the rain-clan members to stoke up their fires against the heavy downpours that are being summoned by this charm verse]</+>, stoke!<br>Foreheads flashing sheet lightning!<br>Cloud drawing cloud in endless file.—<br>Foreheads flashing sheet lightning!`,
       `>>(Uŋgwā́bera ĕ́tna amā́ria 104 TGH)`,
@@ -5412,6 +5454,23 @@ export const globFeatFilms = [
 ];
 
 export const cultShortFilms = [
+  {
+    id: "AMSWCSF",
+    title: { original: "Long Line Of Ladies" },
+    year: 2022,
+    group: {people: "Karuk", language: "English", location: "California, US"},
+    info: [
+      `<i>Long Line of Ladies</i> tells the story of Ahtyirahm and her community as they prepare for her Ihuk, the once-dormant Flower Dance coming of age ceremony of the Karuk people of Northern California.`,
+      `Dirs. <b>RAYKA ZEHTABCHI</b> and <b>SHAANDIIN TOME</b> sought to make a film on one traditional culture’s celebration of menstruation, made in collaboration with the Karuk community.`
+    ],
+    watch: ["https://vimeo.com/777015125","https://www.criterionchannel.com/long-line-of-ladies"],
+    trailer: "https://youtu.be/NlIMKjb_w8s",
+    coordinates: {x: 41.3014, y: -123.5411, name: "Humboldt County"},
+    runtime: 23,
+    genre: [""],
+    tags: [""],
+    color: "#4a3924"
+  },
   {
     id: "AMNECSF",
     title: {original: "Imbé Gikegü", translation: "The Scent of Pequi Fruit"},

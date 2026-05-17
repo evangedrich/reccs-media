@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import Markdown from "react-markdown";
 import styles from "@/app/ui/main.module.css";
 import CollectionShelfItems from "./collectionShelfItems";
@@ -27,7 +28,17 @@ export default function CollectionShelf({
 }: { collections: {
     id: string, name: string, shortName: string, type: string, header: string, info?: string
 }[], reccs: Recc[] }): React.ReactNode {
-    const [currColl, setCurrColl] = useState(collections[0].id);
+    const router = useRouter();
+    const pathname = usePathname();
+    const searchParams = useSearchParams();
+    const initialColl = searchParams.get("coll") ?? collections[0].id;
+    const [currColl, setCurrColl] = useState(initialColl);
+    useEffect(() => {
+        const params = new URLSearchParams(searchParams.toString());
+        if (currColl===collections[0].id) {params.delete("coll");} else {params.set("coll",currColl);}
+        const qs = params.toString();
+        router.replace(qs ? `${pathname}?${qs}` : pathname, { scroll: false });
+    },[currColl]);
     const bgPatternMobile = "bg-[repeating-linear-gradient(45deg,var(--color-mid)_0px,var(--color-mid)_1px,transparent_1px,transparent_8px)]";
     const bgPattern = "sm:bg-[repeating-linear-gradient(45deg,transparent_0px,transparent_1px,transparent_1px,transparent_8px)]";
     return (

@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Convert public/posters/*.jpg to optimized WebP, in place.
 # Requires: cwebp (brew install webp).
+# run with `./scripts/optimize-posters.sh`
 set -euo pipefail
 
 SRC_DIR="$(cd "$(dirname "$0")/.." && pwd)/public/posters"

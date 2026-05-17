@@ -10,18 +10,34 @@ import Globe from "@/app/components/globe";
 import styles from '@/app/ui/main.module.css';
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import { useView } from "@/app/lib/viewContext";
 import SubrInfoWindow from "./subrInfoWindow";
 
 export default function Geoscheme({ reccs }: { reccs: Recc[] }) {
+    const router = useRouter();
+    const pathname = usePathname();
+    const searchParams = useSearchParams();
+    const initialSubr = searchParams.get("subr") ?? "X";
+
     const { showGlobe } = useView();
-    const [currSubr,setCurrSubr] = useState<string>("X");
+    const [currSubr,setCurrSubr] = useState<string>(initialSubr);
     const [hovered,setHovered] = useState<string>("");
     const entriesRef = useRef<HTMLDivElement>(null);
     const hoveredSubr = subregions.find(subr => subr.id===hovered)?.name;
+    
     useEffect(() => {
         //entriesRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' });
+        const params = new URLSearchParams(searchParams.toString());
+        if (currSubr === "X") {
+            params.delete("subr");
+        } else {
+            params.set("subr", currSubr);
+        }
+        const qs = params.toString();
+        router.replace(qs ? `${pathname}?${qs}` : pathname, { scroll: false });
     }, [currSubr]);
+
     const entries = reccs.filter(itm => itm.id.startsWith(currSubr));
     return (
         <div>

@@ -22,8 +22,8 @@ export default function ShelfItemsMobile({
     const padCount = (tracks - (entries.length % tracks)) % tracks;
     return (
         <div className="relative">
-            <div className={`border-b-2 w-[100vw] grid gap-[2px] bg-[var(--color-front)] ${(isExpanded || entries.length===0) ? "grid-cols-3" : "overflow-x-auto no-scrollbar grid-rows-2 grid-flow-col auto-cols-[7.5rem] auto-rows-[10rem]"} overscroll-x-none`}>
-                {entries.map(entry => (
+            <div className={`border-b-2 w-[100vw] grid gap-[2px] bg-[var(--color-front)] ${(isExpanded || entries.length<8) ? "grid-cols-3" : "overflow-x-auto no-scrollbar grid-rows-2 grid-flow-col auto-cols-[7.5rem] auto-rows-[10rem]"} overscroll-x-none`}>
+                {entries.length>=8 && entries.map(entry => (
                     <Link key={`mobile_${entry?.id}`} href={`/${entry.id}`} className="block bg-[var(--color-back)]">
                         <div className="p-2">
                             <div className="mb-1 bg-[var(--color-mid)] aspect-3/4">
@@ -37,11 +37,11 @@ export default function ShelfItemsMobile({
                 {Array.from({ length: padCount }).map((_, idx) => (
                     <div key={`pad_${idx}`} className="bg-[var(--color-back)]" />
                 ))}
-                {entries.length===0
+                {entries.length<8
                 ? <>{Array.from({ length: 3 }).map((_,i) => (<div key={`dummy${i}`} className="bg-[var(--color-back)] p-2 flex flex-col gap-[5px]"><div className="aspect-3/4 bg-[var(--color-mid)]"></div><div className="w-full h-2 bg-[var(--color-mid)]"></div><div className="w-full h-3 bg-[var(--color-mid)]"></div></div>))}</>
                 : <></>}
             </div>
-            <div className={`${entries.length>0?"":"hidden"} border-b-2 flex justify-center bg-[repeating-linear-gradient(45deg,var(--color-mid)_0px,var(--color-mid)_1px,transparent_1px,transparent_8px)]`}>
+            <div className={`${entries.length<8?"hidden":""} border-b-2 flex justify-center bg-[repeating-linear-gradient(45deg,var(--color-mid)_0px,var(--color-mid)_1px,transparent_1px,transparent_8px)]`}>
                 <button className="border-x-2 px-2 bg-[var(--color-back)]" onClick={() => setIsExpanded(!isExpanded)}>{isExpanded ? "- collapse -" : "+ expand +"}</button>
             </div>
         </div>
