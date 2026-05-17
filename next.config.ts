@@ -2,6 +2,9 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
 	serverExternalPackages: ["@vercel/og"],
+	images: {
+		remotePatterns: [{ protocol: "https", hostname: "images.reccs.media" }],
+	},
 	webpack: (config, { isServer }) => {
 		if (isServer) {
 			const externals = Array.isArray(config.externals) ? config.externals : [];

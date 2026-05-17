@@ -12,6 +12,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import { useView } from "@/app/lib/viewContext";
+import { posterUrl } from "../lib/images";
 import SubrInfoWindow from "./subrInfoWindow";
 
 export default function Geoscheme({ reccs }: { reccs: Recc[] }) {
@@ -73,7 +74,7 @@ export default function Geoscheme({ reccs }: { reccs: Recc[] }) {
                         href={`/${entry.id}`}
                         className={`shrink-0 flex flex-col gap-1 sm:w-[9rem] w-[7.7rem] p-3 ${i<entries.length-1 ? "border-r-2" : "sm:border-r-2"} ${i===0 ? "border-l-2 ml-[-2px]" : ""} hover:bg-[var(--color-mid)] group`}
                     >
-                        <div className="bg-[var(--color-mid)] group-hover:opacity-90 aspect-3/4"><Image src={`/posters/${entry.id}.webp`} alt="Media Image" width="300" height="400" className="w-full h-full" unoptimized /></div>
+                        <div className="bg-[var(--color-mid)] group-hover:opacity-90 aspect-3/4"><Image src={posterUrl(entry.id)} alt="Media Image" width="300" height="400" className="w-full h-full" unoptimized /></div>
                         <h2 className="uppercase text-[0.55rem] leading-none mt-1 opacity-50 font-bold">{collections.find(coll => coll.id===entry.id.slice(4,7))?.shortName}</h2>
                         <h1 className="text-xs font-semibold truncate">{getTitle(entry)}</h1>
                     </Link>

@@ -4,6 +4,7 @@ import Image from "next/image";
 import type { Recc } from "../types/recc";
 import { subregions } from "../lib/subregions";
 import { getTitle } from "../functions/text";
+import { posterUrl } from "../lib/images";
 
 type Collection = { id: string, name: string, shortName: string, type: string, header: string, info?: string };
 
@@ -27,7 +28,7 @@ export default function ShelfItemsMobile({
                     <Link key={`mobile_${entry?.id}`} href={`/${entry.id}`} className="block bg-[var(--color-back)]">
                         <div className="p-2">
                             <div className="mb-1 bg-[var(--color-mid)] aspect-3/4">
-                                <Image src={`/posters/${entry?.id}.webp`} alt="Media Image" width="300" height="400" className="w-full" unoptimized />
+                                <Image src={posterUrl(entry.id)} alt="Media Image" width="300" height="400" className="w-full" unoptimized />
                             </div>
                             <h4 className="text-[0.5rem] font-bold opacity-50 truncate">{subregions.find(subr => subr.id===entry.id.slice(0,4))?.name}</h4>
                             <h3 className="text-[0.8rem] font-semibold truncate">{getTitle(entry)}</h3>

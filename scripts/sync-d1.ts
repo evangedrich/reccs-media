@@ -3,6 +3,7 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { spawnSync } from "node:child_process";
 import { reccsData } from "../src/app/lib/local-media";
+import { runImageSync } from "./sync-images";
 
 // Load .dev.vars into process.env (KEY=VALUE per line, # comments allowed)
 const devVarsPath = join(process.cwd(), ".dev.vars");
@@ -146,6 +147,10 @@ async function maybeRevalidate(): Promise<{ ok: boolean; reason: string }> {
 }
 
 async function main() {
+  console.log("== Image pipeline ==");
+  await runImageSync();
+
+  console.log("\n== D1 sync ==");
   const rows = (reccsData as AnyRec[]).map(toRow);
   console.log(`Building SQL for ${rows.length} rows...`);
 

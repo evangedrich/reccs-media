@@ -7,6 +7,7 @@ import { subregions } from "../lib/subregions";
 import Link from "next/link";
 import Image from "next/image";
 import { getTitle } from "../functions/text";
+import { posterUrl } from "../lib/images";
 
 type Collection = { id: string, name: string, shortName: string, type: string, header: string, info?: string };
 
@@ -63,7 +64,7 @@ export default function CollectionShelfItems({
                     <Link href={`/${entry.id}`} className="block bg-[var(--color-back)] snap-start group" key={`${entry.id}_card`}>
                         <div className="shrink-1 w-full h-full hover:bg-[var(--color-mid)] px-4 flex flex-col gap-1 flex flex-col justify-center">
                             <div className="shrink-1 aspect-3/4 bg-[var(--color-mid)] group-hover:opacity-90">
-                                <Image src={`/posters/${entry?.id}.webp`} alt="Media Image" width="300" height="400" unoptimized />
+                                <Image src={posterUrl(entry.id)} alt="Media Image" width="300" height="400" unoptimized />
                             </div>
                             <h2 className={`shrink-0 ${syncopate.className} leading-none uppercase font-bold text-[0.47rem] opacity-50 pt-1`}>{subregions.find(subr => subr.id===entry.id.slice(0,4))?.name}</h2>
                             <h1 className={`shrink-0 text-[0.84rem] mt-[-0.15rem] font-semibold truncate`}>{getTitle(entry)}</h1>

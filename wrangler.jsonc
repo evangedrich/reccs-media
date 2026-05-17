@@ -23,6 +23,10 @@
 		{
 			"bucket_name": "reccs-media-cache",
 			"binding": "reccs_media_cache"
+		},
+		{
+			"binding": "IMAGES",
+			"bucket_name": "reccs-media-images"
 		}
 	],
 	"services": [

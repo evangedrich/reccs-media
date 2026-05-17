@@ -39,9 +39,9 @@ const parseJson = <T,>(s: string | null): T | undefined =>
 function rowToRecc(row: Row): Recc {
   const group: Recc["group"] = { language: row.group_language };
   if (row.group_people) group.people = row.group_people;
+  if (row.group_religion) group.religion = row.group_religion;
   if (row.group_country) group.country = row.group_country;
   if (row.group_location) group.location = row.group_location;
-  if (row.group_religion) group.religion = row.group_religion;
 
   const title: Recc["title"] = { original: row.title_original };
   if (row.title_transliteration) title.transliteration = row.title_transliteration;
