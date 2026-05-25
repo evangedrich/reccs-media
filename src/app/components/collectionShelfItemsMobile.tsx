@@ -25,7 +25,7 @@ export default function ShelfItemsMobile({
         <div className="relative">
             <div className={`border-b-2 w-[100vw] grid gap-[2px] bg-[var(--color-front)] ${(isExpanded || entries.length<8) ? "grid-cols-3" : "overflow-x-auto no-scrollbar grid-rows-2 grid-flow-col auto-cols-[7.5rem] auto-rows-[10rem]"} overscroll-x-none`}>
                 {entries.length>=8 && entries.map(entry => (
-                    <Link key={`mobile_${entry?.id}`} href={`/${entry.id}`} className="block bg-[var(--color-back)]">
+                    <Link key={`mobile_${entry?.id}`} href={`/${entry.id}`} className="block bg-[var(--color-back)] active:opacity-90">
                         <div className="p-2">
                             <div className="mb-1 bg-[var(--color-mid)] aspect-3/4">
                                 <Image src={posterUrl(entry.id)} alt="Media Image" width="300" height="400" className="w-full" unoptimized />
@@ -35,7 +35,7 @@ export default function ShelfItemsMobile({
                         </div>
                     </Link>
                 ))}
-                {Array.from({ length: padCount }).map((_, idx) => (
+                {entries.length>=8 && Array.from({ length: padCount }).map((_, idx) => (
                     <div key={`pad_${idx}`} className="bg-[var(--color-back)]" />
                 ))}
                 {entries.length<8

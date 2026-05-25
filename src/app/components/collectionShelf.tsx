@@ -33,6 +33,7 @@ export default function CollectionShelf({
     const searchParams = useSearchParams();
     const initialColl = searchParams.get("coll") ?? collections[0].id;
     const [currColl, setCurrColl] = useState(initialColl);
+    console.log(reccs.filter(recc => recc.id.slice(5,7)==="FF" || recc.id.slice(5,7)==="SF"));
     useEffect(() => {
         const params = new URLSearchParams(searchParams.toString());
         if (currColl===collections[0].id) {params.delete("coll");} else {params.set("coll",currColl);}
