@@ -2059,7 +2059,7 @@ export const cultFeatFilms = [
     runtime: 85,
     genre: ["Drama","Road Movie"],
     tags: ["bechdel test"],
-    color: "#3a3b5c"
+    color: "#6E7F87"
   },
   {
     id: "AMCRCFF",

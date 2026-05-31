@@ -71,7 +71,7 @@ export default function CollectionShelfItems({
                         </div>
                     </Link>
                 ))}
-                {Array.from({ length: padCount }).map((_, idx) => (
+                {entries.length>=8 && Array.from({ length: padCount }).map((_, idx) => (
                     <div key={`pad_${idx}`} className="bg-[var(--color-back)]" />
                 ))}
                 {entries.length<8
