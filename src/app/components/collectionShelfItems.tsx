@@ -2,20 +2,24 @@
 
 import { useEffect, useRef, useState } from "react";
 import { syncopate } from "../fonts/fonts";
-import { reccsData } from "../lib/local-media";
+import type { Recc } from "../types/recc";
 import { subregions } from "../lib/subregions";
 import Link from "next/link";
 import Image from "next/image";
+import LoadingIcon from "./loading";
 import { getTitle } from "../functions/text";
+import { posterUrl } from "../lib/images";
 
 type Collection = { id: string, name: string, shortName: string, type: string, header: string, info?: string };
 
 export default function CollectionShelfItems({
     collections,
     coll,
+    reccs,
 }: {
     collections: Collection[],
     coll: Collection,
+    reccs: Recc[],
 }): React.ReactNode {
     const scrollRef = useRef<HTMLDivElement | null>(null);
     const [edges, setEdges] = useState<{ atStart: boolean; atEnd: boolean }>({ atStart: true, atEnd: false });
@@ -23,7 +27,7 @@ export default function CollectionShelfItems({
     const [cols, setCols] = useState(5);
     const isLast = collections[collections.length - 1].id === coll.id;
     const isOnly = collections.length <= 2;
-    const entries = reccsData.filter(entry => entry.id.endsWith(coll.id));
+    const entries = reccs.filter(entry => entry.id.endsWith(coll.id));
     const padCount = rows > 0 ? (rows - (entries.length % rows)) % rows : 0;
     const fillCount = rows * cols;
 
@@ -58,17 +62,18 @@ export default function CollectionShelfItems({
         <div className="relative">
             <div ref={scrollRef} onScroll={measure} style={{width:`calc((100vw - (68px * ${collections.length})) / 2)`}} className={`shrink-0 overflow-x-auto no-scrollbar overscroll-x-none h-full grid grid-rows-[repeat(auto-fill,minmax(16rem,1fr))] grid-flow-col auto-cols-[minmax(12rem,1fr)] gap-[2px] ${entries.length>0||true ? "bg-[var(--color-front)]" : "bg-[var(--color-back)]"} ${collections.length>1?"pr-[6px]":""} snap-x snap-mandatory`}>
                 {entries.length>=8 && entries.map(entry => (
-                    <Link href={`/${entry.id}`} className="block bg-[var(--color-back)] snap-start group" key={`${entry.id}_card`}>
+                    <Link href={`/${entry.id}`} className="block bg-[var(--color-back)] snap-start group active:opacity-90" key={`${entry.id}_card`}>
                         <div className="shrink-1 w-full h-full hover:bg-[var(--color-mid)] px-4 flex flex-col gap-1 flex flex-col justify-center">
-                            <div className="shrink-1 aspect-3/4 bg-[var(--color-mid)] group-hover:opacity-90">
-                                <Image src={`/posters/${entry?.id}.webp`} alt="Media Image" width="300" height="400" unoptimized />
+                            <div className="relative shrink-1 aspect-3/4 bg-[var(--color-mid)] group-hover:opacity-90">
+                                <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center"><LoadingIcon /></div>
+                                <Image src={posterUrl(entry.id)} alt="Media Image" width="300" height="400" className="absolute top-0 left-0 w-full" unoptimized />
                             </div>
                             <h2 className={`shrink-0 ${syncopate.className} leading-none uppercase font-bold text-[0.47rem] opacity-50 pt-1`}>{subregions.find(subr => subr.id===entry.id.slice(0,4))?.name}</h2>
                             <h1 className={`shrink-0 text-[0.84rem] mt-[-0.15rem] font-semibold truncate`}>{getTitle(entry)}</h1>
                         </div>
                     </Link>
                 ))}
-                {Array.from({ length: padCount }).map((_, idx) => (
+                {entries.length>=8 && Array.from({ length: padCount }).map((_, idx) => (
                     <div key={`pad_${idx}`} className="bg-[var(--color-back)]" />
                 ))}
                 {entries.length<8

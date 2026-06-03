@@ -3,26 +3,44 @@
 import { useState, useEffect, useRef } from "react";
 import Map, { HoverMap } from "@/app/components/map";
 import { subregions } from "@/app/lib/subregions";
-import { reccsData } from "../lib/local-media";
+import type { Recc } from "../types/recc";
 import { collections } from "../lib/collections";
 import { getTitle, preParse } from "../functions/text";
 import Globe from "@/app/components/globe";
 import styles from '@/app/ui/main.module.css';
 import Link from "next/link";
 import Image from "next/image";
+import LoadingIcon from "./loading";
+import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import { useView } from "@/app/lib/viewContext";
+import { posterUrl } from "../lib/images";
 import SubrInfoWindow from "./subrInfoWindow";
 
-export default function Geoscheme() {
+export default function Geoscheme({ reccs }: { reccs: Recc[] }) {
+    const router = useRouter();
+    const pathname = usePathname();
+    const searchParams = useSearchParams();
+    const initialSubr = searchParams.get("subr") ?? "X";
+
     const { showGlobe } = useView();
-    const [currSubr,setCurrSubr] = useState<string>("X");
+    const [currSubr,setCurrSubr] = useState<string>(initialSubr);
     const [hovered,setHovered] = useState<string>("");
     const entriesRef = useRef<HTMLDivElement>(null);
     const hoveredSubr = subregions.find(subr => subr.id===hovered)?.name;
+    
     useEffect(() => {
         //entriesRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' });
+        const params = new URLSearchParams(searchParams.toString());
+        if (currSubr === "X") {
+            params.delete("subr");
+        } else {
+            params.set("subr", currSubr);
+        }
+        const qs = params.toString();
+        router.replace(qs ? `${pathname}?${qs}` : pathname, { scroll: false });
     }, [currSubr]);
-    const entries = reccsData.filter(itm => itm.id.startsWith(currSubr));
+
+    const entries = reccs.filter(itm => itm.id.startsWith(currSubr));
     return (
         <div>
             <div className={`${showGlobe ? "hidden max-sm:block" : "max-sm:hidden"} relative border-b-2 p-4`}>
@@ -55,15 +73,17 @@ export default function Geoscheme() {
                     <Link 
                         key={`card_${entry.id}`} 
                         href={`/${entry.id}`}
-                        className={`shrink-0 flex flex-col gap-1 sm:w-[9rem] w-[7.7rem] p-3 ${i<entries.length-1 ? "border-r-2" : "sm:border-r-2"} ${i===0 ? "border-l-2 ml-[-2px]" : ""} hover:bg-[var(--color-mid)] group`}
+                        className={`shrink-0 flex flex-col gap-1 sm:w-[9rem] w-[7.7rem] p-3 ${i<entries.length-1 ? "border-r-2" : "sm:border-r-2"} ${i===0 ? "border-l-2 ml-[-2px]" : ""} hover:bg-[var(--color-mid)] active:opacity-85 group`}
                     >
-                        <div className="bg-[var(--color-mid)] group-hover:opacity-90 aspect-3/4"><Image src={`/posters/${entry.id}.webp`} alt="Media Image" width="300" height="400" className="w-full h-full" unoptimized /></div>
+                        <div className="relative bg-[var(--color-mid)] group-hover:opacity-90 aspect-3/4">
+                            <Image src={posterUrl(entry.id)} alt="Media Image" width="300" height="400" className="w-full h-full" unoptimized />
+                            <div className="absolute top-0 left-0 w-full h-full -z-10 flex items-center justify-center"><LoadingIcon /></div>
+                        </div>
                         <h2 className="uppercase text-[0.55rem] leading-none mt-1 opacity-50 font-bold">{collections.find(coll => coll.id===entry.id.slice(4,7))?.shortName}</h2>
                         <h1 className="text-xs font-semibold truncate">{getTitle(entry)}</h1>
                     </Link>
                 ))}</div>
             </div>
-            
         </div>
     )
 }

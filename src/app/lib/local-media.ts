@@ -1077,8 +1077,9 @@ export const stirrPoetry = [
     excerpt: [`Night had fallen and behind closed doors everyone was sleeping<br>Thunder called out with a clamour of rain like shots from a thousand rifles<br>So was my wailing heard that they thought it a lion approaching<br>For men the spine and ribsides are the body’s central support<br>I am shut away now from the eyes through which I used to see<br>Only God knows the source of my lamentations<br>The vulture with an injury to his shoulder cannot fly<br>The horse who has lost his spine cannot gallop<br>The man injured in eye and ribs cannot seek revenge<br>A man whose heart aches cannot take a bride home<br>When the camels are thirsty their outcries increase<br>Like a small girl whose mother now lives in the hereafter<br>Whose father has brought another woman to sleep in the <i>aqal</i><br>I grieve constantly from the sorrow deep in my belly<br>I’m the man whose fiancée has been given to another<br>I’m the man who sees springs but whose thirst remains unquenched<br>I’m the man whose brother is clan leader and yet is accused<br>I am that silent man who sits, slowly patting his mouth again and again`],
     infoURL: [""],
     mediaURL: ["https://youtu.be/p-L9f9TkVFE"],
-    textURL: "https://citylore.org/wp-content/uploads/2022/01/Somalia_Poetry_Raage-Ugaas_Night-Has-Fallen.pdf",
+    textURL: "",
     ref: [
+      { id: "citylore-2022-raage-ugaas-night", type: "document", title: "The Night Has Fallen (Allayl Dumay)", contributors: [ { firstName: "Raage", lastName: "Ugaas", role: "author" }, { firstName: "Shire Jaamac", lastName: "Axmed", role: "author" }, { firstName: "Martin", lastName: "Orwin", role: "author" } ], pubDate: { year: 2022, month: 1 }, url: "https://citylore.org/wp-content/uploads/2022/01/Somalia_Poetry_Raage-Ugaas_Night-Has-Fallen.pdf", publisher: "City Lore", location: "New York, NY / Mogadishu, Somalia", medium: "Digital PDF / Broadside", meta: { notes: "A digital broadside based on the collection 'Gabayo, Maahmaah iyo Sheekooyin Yaryar' (Mogadishu: The National Printers). It preserves the Martin Orwin translation of the classic Somali gabay. This record connects the 19th-century oral performance to the 20th-century script standardization and 21st-century digital archiving.", grade: "A", tags: ["Somali", "Raage Ugaas", "Gabay", "Translation", "Shire Jaamac Axmed", "Martin Orwin", "Mogadishu", "City Lore"] } },
       { id: "andrzejewski-1993", type: "book", title: "An Anthology of Somali Poetry", contributors: [ { firstName: "Bogumil W.", lastName: "Andrzejewski", role: "author" }, { firstName: "Sheila", lastName: "Andrzejewski", role: "author" } ], pubDate: { year: 1993 }, publisher: "Indiana University Press", location: "Bloomington, IN", version: "Republished by Hassell Street Press, 2021", isbn: "9780253304635", medium: "Print", meta: { notes: "A definitive collection covering the major genres of Somali poetry, including the Gabay, Jiifto, and Geeraar. Features translations of works by Sayyid Mohamed Abdille Hassan and others.", grade: "B", tags: ["Somali Literature", "Oral Tradition", "Horn of Africa", "Poetry Anthology"] } },
       { id: "orwin-2022-language-sound-raage-ugaas", type: "journal_article", title: "Language and its sound in ‘Allayl Dumay’ by Raage Ugaas Warfaa", contributors: [ { firstName: "Martin", lastName: "Orwin", role: "author" }, { firstName: "Raage", lastName: "Ugaas Warfaa", role: "subject/poet" } ], pubDate: { year: 2022 }, url: "https://www.ethnorema.it/wp-content/uploads/18-06-Orwin.pdf", publisher: "Ethnorema", location: "Italy / Somalia", medium: "PDF / Scholarly Journal Article", meta: { notes: "A technical linguistic analysis of the poem 'Allayl Dumay'. Orwin examines the interplay between Somali phonology and the 'gabay' meter, focusing on alliteration and the specific weight of long vs. short syllables. It bridges the gap between oral performance and formal literary scansion.", grade: "C", tags: ["Somali", "Raage Ugaas", "Martin Orwin", "Phonology", "Alliteration", "Gabay", "Quantitative Meter", "Oral Literature"] } },
       { id: "somalinet-2012-guudmar-raage-ugaas", type: "forum_post", title: "The use of guudmar In Somali poems", contributors: [ { firstName: "", lastName: "metamorphosis", role: "author/forum member" }, { firstName: "Raage", lastName: "Ugaas", role: "subject/poet" } ], pubDate: { year: 2012, month: 4, day: 25 }, url: "https://somalinet.com/forums/viewtopic.php?t=304369#gsc.tab=0", publisher: "SomaliNet Forums", location: "Ogaden - Soomaali Galbeed / Digital", medium: "Digital Forum Thread", meta: { notes: "An informal but culturally vital record detailing 'guudmar' (allegory) in Somali oral tradition. It recounts how Raage Ugaas used coded verbal messages to communicate his starvation, and how his father replied with a similarly coded message that functioned as a tamper-evident seal, exposing the messenger's theft of the food in transit.", grade: "B", tags: ["Somali", "Guudmar", "Raage Ugaas", "Oral Tradition", "Allegory", "Cryptography", "Horn of Africa", "Digital Diaspora"] } }
@@ -1202,7 +1203,7 @@ export const stirrPoetry = [
     ],
     infoURL: "",
     mediaURL: ["https://archive.org/details/78_the-creators-songs-the-great-feather-dance-ostowegowa_chancey-johnny-john-william-n_gbia0524825a"],
-    textURL: "https://drumhop.com/music.php?page=182",
+    textURL: "",
     ref: [
       { id: "fenton-1942-songs-iroquois-longhouse", type: "book", title: "Songs from the Iroquois longhouse: program notes for an album of American Indian music from the eastern woodlands", contributors: [ { firstName: "William N.", lastName: "Fenton", role: "author" }, { firstName: "", lastName: "Archive of American Folk Song", role: "contributor" } ], pubDate: { year: 1942 }, url: "https://catalog.hathitrust.org/Record/102161232", publisher: "Smithsonian Institution (Publication 3691) / Library of Congress", location: "Washington, D.C.", medium: "Print (First Edition) / Program Notes", meta: { notes: "A primary ethnomusicological resource for the Haudenosaunee. It covers the 'Great Feather Dance', 'Midwinter Festival Chants', and 'Medicine Man’s Celebration'. It explains the use of the water drum and horn rattle and the specific ceremonial protocols of the Seneca, Onondaga, and Cayuga nations.", grade: "D", tags: ["Haudenosaunee", "Iroquois", "Longhouse", "Seneca", "Onondaga", "Cayuga", "William Fenton", "Ethnomusicology", "Water Drum", "Midwinter Festival"] } },
       { id: "drumhop-pg182-grand-river-seneca-medicine-songs", type: "webpage", title: "Grand River Seneca: Songs from the Iroquois Longhouse (Hadi’hi’du:s)", containerTitle: "Drumhop: Six Nations Music", contributors: [ { firstName: "Lowell", lastName: "Blanchard", role: "curator" }, { firstName: "Raymond", lastName: "Spragg", role: "singer" }, { firstName: "William N.", lastName: "Fenton", role: "original_collector" } ], pubDate: { year: 2024 }, url: "https://drumhop.com/music.php?page=182", publisher: "Onasakenrat / Drumhop", location: "Six Nations of the Grand River, Ontario", medium: "Digital Audio Archive", meta: { notes: "Digital access to the Hadi’hi’du:s (Society of Medicine Men) songs. These recordings are characterized by the rapid, high-pitched beat of the 'Little Water Drum' and the sharp rhythmic accompaniment of the horn rattle. It represents a sacred ceremonial cycle used for healing.", grade: "D", tags: ["Seneca", "Haudenosaunee", "Little Water Drum", "Hadi’hi’du:s", "Medicine Society", "Six Nations", "Grand River", "Archival Audio"] } }
@@ -1327,11 +1328,11 @@ export const stirrPoetry = [
       `<i>Ibisikaetina</i><br>I am ashamed.`,
       `<i>Kŭrétina</i><br>I want.`,
       `…`,
-      `<i>Karífuna iátina</i><br>I am a Carib.`,
-      `<i>Libúkaye iátina</i><br>I am his brother.`,
-      `…`,
       `<i>Bíabri wéyu láusen ni síruni</i><br>It is four days since I left.`,
-      `<i>Nha bunáhai lubuyékua</i><br>They buried him in his own house.`
+      `<i>Nha bunáhai lubuyékua</i><br>They buried him in his own house.`,
+      `…`,
+      `<i>Karífuna iátina</i><br>I am a Carib.`,
+      `<i>Libúkaye iátina</i><br>I am his brother.`
     ],
     infoURL: "",
     mediaURL: [],
@@ -1385,7 +1386,7 @@ export const stirrPoetry = [
     ],
     infoURL: "https://folkways.si.edu/traditional-music-of-the-world-vol-7-ritual-music-of-the-kayapo-xikrin-brazil/american-indian-world/album/smithsonian",
     bioURL: "https://pib.socioambiental.org/en/Povo:Kayap%C3%B3_Xikrin",
-    mediaURL: ["https://youtu.be/zRs3fEQpcbI"],
+    mediaURL: ["https://youtu.be/A7GdQwU7ByY","https://youtu.be/zRs3fEQpcbI"],
     textURL: "",
     ref: [
       { id: "sfw-1995-ritual-music-kayapo", type: "article", title: "Ritual Music of the Kayapó-Xikrin, Brazil (Booklet Notes)", containerTitle: "Traditional Music of the World, Vol. 7", contributors: [ { firstName: "Lux", lastName: "Vidal", role: "author" }, { firstName: "Isabelle", lastName: "Giannini", role: "author" } ], pubDate: { year: 1995 }, url: "https://folkways-media.si.edu/docs/folkways/artwork/SFW40433.pdf#page=29", publisher: "Smithsonian Folkways Recordings", location: "Washington, D.C.", medium: "Digital PDF / Booklet", meta: { notes: "Documentation of the Kwèry-kàn (naming ritual) and other ceremonial cycles. Page 29 specifically contextulizes the relationship between collective singing and the social structure of the village. The notes provide deep insight into how music functions as a means of social memory and territorial claim for the Kayapó.", grade: "C", tags: ["Kayapó", "Xikrin", "Brazil", "Amazon", "Ethnomusicology", "Indigenous Ritual", "Gê Languages"] } }
@@ -1446,7 +1447,7 @@ export const stirrPoetry = [
       `“Well, this is a wonder, the paupers have<br>Got some sort of sake,<br>Scraped together some sort of feast,<br>And it looks like they're inviting everyone.<br>We should go and have a look at their feeble efforts.<br>It'l be good for a laugh.”`,
       `So saying amongst themselves, they gathered in a crowd<br>And along they came, gathering from miles around;<br>Just seeing the house<br>They were so shocked that some instantly returned home<br>While others got quite close before collapsing, stunned, on the ground.<br>Then, the old wife went outside<br>And took their hands and led everyone into the house<br>But they crawled abjectly along the ground<br>And not one of them would lift up his face.<br>Then, the old husband made his appearance<br>And in a voice as clear as a cuckoo's he spoke.<br>He spoke of many things:`,
       `“When we were poor, it was impossible for us<br>To come and go freely like this, but<br>The Great God took pity on us,<br>Because we entertained no wicked thoughts;<br>And therefore we were blessed.<br>From now on to all the village, we will be like family,<br>We will let bygones be bygones<br>And everyone who wishes may<br>Visit us freely.”`,
-      `This speech he set forth, and the people<br>(Humbly wringing their hands again and again)<br>Apologized for their ill-treatment, and from now on,<br>They all declared, they would live as friends.<br>Everyone joined in worshipping me.<br>When that was finished, everyone with a glad heart<br>Began the luxurious banquet.<br>While chatting with the fire goddess and the <+>house god[Chisekor Kamui, “Old man of the House”, the god of the house]</+>,<br>And the <+>old goddess of the household altar[Nusakor Kamui, the goddess of the domestic altar, i.e. of the place where inau are kept; in emergencies she may appear to humans, but in the form of a snake; thus, when a snake is seen in the vicinity of the altar or the east window, people say "Doubtless Grandma Nusakorkamui is going out on an errand," and such a snake is never killed; to do so would invite an unspeakable punishment]</+>, I watched them<br>Dancing their human dances and leaping about<br>And an amusing sight I found it.<br>In this way two or three days passed and the party ended.`,
+      `This speech he set forth, and the people<br>(Humbly wringing their hands again and again)<br>Apologized for their ill-treatment, and from now on,<br>They all declared, they would live as friends.<br>Everyone joined in worshipping me.<br>When that was finished, everyone with a glad heart<br>Began the luxurious banquet.<br>While chatting with the fire goddess and the <+>house god[Chisekor Kamui, “Old man of the House”, the god of the house]</+>,<br>And the <+>old goddess of the household altar[Nusakor Kamui, the goddess of the domestic altar, i.e. of the place where inau are kept; in emergencies she may appear to humans, but in the form of a snake; thus, when a snake is seen in the vicinity of the altar or the east window, people say “Doubtless Grandma Nusakorkamui is going out on an errand,” and such a snake is never killed; to do so would invite an unspeakable punishment]</+>, I watched them<br>Dancing their human dances and leaping about<br>And an amusing sight I found it.<br>In this way two or three days passed and the party ended.`,
       `Seeing that good relations prevailed among the humans,<br>I was contented<br>And took my leave of the fire goddess,<br>The house god and the goddess of the altar.<br>When that was done, I went back to my own house.<br>By the time I got home, my house was full<br>Of lovely <i>inau</i> and the best sake.<br>Then I sent messengers to all the gods both near and far<br>I invited them to a bountiful banquet<br>And furthermore, to all the gods<br>I told the tale, of the time I visited the human village,<br>And of the situation there, and everything that happened,<br>And they heaped praise on me.<br>When they went home, I gave to each<br>Two or even three beautiful <i>inau</i>.<br>Looking at the people of that Ainu village,<br>Now all at peace, and the people<br>All living in harmony, and the <i>nispa</i><br>Once again at the head of the village,<br>I see that boy, now already grown up,<br>With a wife of his own and a child too<br>Who respects both his father and his mother,<br>And from now on, forever, when he has made sake,<br>Or at the start of the banquet, he sends me <i>inau</i> and sake.<br>I watch over the people<br>Forever<br>I protect the world of humans.`,
       `Such was the tale the Owl God told.`
     ],
@@ -1854,7 +1855,10 @@ export const cultFeatFilms = [
     runtime: 74,
     genre: ["Drama","Family","Fantasy","Superhero"],
     tags: ["bechdel test"],
-    color: "#5a949c"
+    color: "#5a949c",
+    ref: [
+      { id: "kariuki-2022-supa-modo-sinemafocus", type: "webpage", title: "A Love Letter to 'Supa Modo', Kenya's Best Film Yet", contributors: [ { firstName: "Kelvin", lastName: "Kariuki", role: "author" }, { firstName: "Likarion", lastName: "Wainaina", role: "director (subject)" } ], pubDate: { year: 2022, month: 10, day: 30 }, url: "https://www.sinemafocus.com/a-love-letter-to-supa-modo-the-best-kenyan-film-yet/", publisher: "Sinema Focus", location: "Kenya / Nairobi", medium: "Digital Film Review / Essay", meta: { notes: "A definitive critical essay by Kelvin Kariuki positioning Likarion Wainaina's 2018 film 'Supa Modo' as a masterpiece of contemporary Kenyan cinema. Kariuki argues the film deserves the same canonized recognition within the African geoscheme as Djibril Diop Mambéty's 'Touki Bouki'. It highlights the film's profound subversion of the Hollywood superhero archetype through a localized, community-constructed narrative lens.", grade: "A", tags: ["Supa Modo", "Kenyan Cinema", "Likarion Wainaina", "African Geoscheme", "Film Criticism", "Sinema Focus", "Superhero Genre", "Kelvin Kariuki"] } }
+    ]
   },
   {
     id: "AFSOCFF",
@@ -1888,7 +1892,45 @@ export const cultFeatFilms = [
     runtime: 93,
     genre: ["Drama","Social Commentary"],
     tags: [""],
-    color: "#1f3057"
+    color: "#1f3057",
+    ref: [
+      {
+  id: "barlet-2003-ouenangare-africultures",
+  type: "interview",
+  title: "Interview with Didier Ouenangaré, Co-director of «Le Silence de la Forêt»",
+  contributors: [
+    { 
+      firstName: "Olivier", 
+      lastName: "Barlet", 
+      role: "interviewer" 
+    },
+    { 
+      firstName: "Didier", 
+      lastName: "Ouenangaré", 
+      role: "interviewee/co-director" 
+    },
+    { 
+      firstName: "Bassek", 
+      lastName: "ba Kobhio", 
+      role: "co-director (referenced)" 
+    }
+  ],
+  pubDate: { 
+    year: 2003,
+    month: 5,
+    day: 27
+  },
+  url: "https://africultures.com/co-director-of-le-silence-de-la-foret-5698/",
+  publisher: "Africultures",
+  location: "Central African Republic / Cameroon",
+  medium: "Digital Interview",
+  meta: {
+    notes: "An invaluable primary interview exploring the production mechanics, financial struggles, and thematic goals of CAR's defining cinematic achievement. The film adapts Étienne Goyémidé's novel to critique the paternalistic and discriminatory relationships between the westernized Bantu elite (represented by the protagonist Gonaba) and the indigenous BiAka (Babenzelé) people of the equatorial rainforest.",
+    grade: "A",
+    tags: ["Central African Republic", "Cameroon", "Didier Ouenangaré", "Bassek ba Kobhio", "Le Silence de la Forêt", "BiAka", "African Cinema", "Post-Colonialism", "Film Adaptation"]
+  }
+}
+    ]
   },
   {
     id: "AFWECFF",
@@ -2017,7 +2059,7 @@ export const cultFeatFilms = [
     runtime: 85,
     genre: ["Drama","Road Movie"],
     tags: ["bechdel test"],
-    color: "#3a3b5c"
+    color: "#6E7F87"
   },
   {
     id: "AMCRCFF",
@@ -2689,7 +2731,8 @@ export const presMusDrama = [
     mediaURL: ["https://youtu.be/fzh-_BQbP2o","https://youtu.be/5QqJ7RqsxbM?start=490","https://youtu.be/mE89GV6jPfQ?start=465"],
     textURL: "https://s9.imslp.org/files/imglnks/usimg/0/0d/IMSLP222521-SIBLEY1802.21145.da1d-39087011973114score.pdf",
     ref: [
-      { id: "koons-2016", type: "thesis", title: "Dancing Breath: Ceremonial Performance Practice, Environment, and Personhood in a Muskogee Creek Community", contributors: [ { firstName: "Ryan Abel", lastName: "Koons", role: "author" } ], pubDate: { year: 2016 }, publisher: "University of California, Los Angeles", location: "Los Angeles, CA", medium: "Doctoral Dissertation", url: "https://www.researchgate.net/publication/331482090_Dancing_Breath_Ceremonial_Performance_Practice_Environment_and_Personhood_in_a_Muskogee_Creek_Community", meta: { notes: "A PhD dissertation in Ethnomusicology. It utilizes 'ecomusicology' and 'indigenous ontologies' to analyze the Stomp Dance. Focuses on the relationship between breath, song, and the medicinal properties of the ceremonial space.", grade: "B", tags: ["Muskogee", "Creek", "Stomp Dance", "Ethnomusicology", "Ecomusicology", "Indigenous Ontology"], sortKey: "info" } }
+      { id: "koons-2016", type: "thesis", title: "Dancing Breath: Ceremonial Performance Practice, Environment, and Personhood in a Muskogee Creek Community", contributors: [ { firstName: "Ryan Abel", lastName: "Koons", role: "author" } ], pubDate: { year: 2016 }, publisher: "University of California, Los Angeles", location: "Los Angeles, CA", medium: "Doctoral Dissertation", url: "https://www.researchgate.net/publication/331482090_Dancing_Breath_Ceremonial_Performance_Practice_Environment_and_Personhood_in_a_Muskogee_Creek_Community", meta: { notes: "A PhD dissertation in Ethnomusicology. It utilizes 'ecomusicology' and 'indigenous ontologies' to analyze the Stomp Dance. Focuses on the relationship between breath, song, and the medicinal properties of the ceremonial space.", grade: "B", tags: ["Muskogee", "Creek", "Stomp Dance", "Ethnomusicology", "Ecomusicology", "Indigenous Ontology"], sortKey: "info" } },
+      { id: "koons-2019-becoming-avian-pvlvcekolv", type: "journal_article", title: "Becoming Avian in the Anthropocene: Performing the Feather Dance and the Owl Dance at Pvlvcekolv", contributors: [ { firstName: "Ryan", lastName: "Koons", role: "author" } ], pubDate: { year: 2019, month: 2, day: 7 }, url: "https://www.researchgate.net/publication/330923509_Becoming_Avian_in_the_Anthropocene_Performing_the_Feather_Dance_and_the_Owl_Dance_at_Pvlvcekolv", publisher: "Humanimalia", location: "Muscogee Nation / Oklahoma", medium: "Digital Journal Article", meta: { notes: "An ethnomusicological analysis of the Feather and Owl Dances at the Pvlvcekolv ceremonial ground. Koons frames these dances as specialized somatic and sonic methods through which Mvskoke practitioners embody avian ontology. By 'becoming avian,' participants renew multi-species treaties and assert Indigenous sovereignty against the planetary degradation of the Anthropocene.", grade: "C", doi: "10.52537/humanimalia.9503", tags: ["Muscogee", "Mvskoke", "Pvlvcekolv", "Feather Dance", "Owl Dance", "Stomp Ground", "Ethnomusicology", "Anthropocene", "Interspecies Performance"], sortKey: "info" } }
     ]
   },
   {
@@ -3814,7 +3857,7 @@ export const foundRelTexts = [
       `Evening after evening passed, and on each she took her accustomed stroll along the beach, picking up <+>carnelian stones[red-orange gemstones]</+>, which are found there in great numbers. One evening she was seen standing on the peak of the pictured rocks; and as the sun was passing the horizon, and the waves dashed furiously, she was heard to sing for the first time. Her long black hair floated upon the wind, and her voice was heard above the rustling of the leaves and the noise of the waters. When night came, she could not he seen. She had fled to the rocky cave, from where her petitions to the gods would be sent up.`,
       `The people lighted their birch torches, and wandered over the forest, but they could not observe the slightest sign of the young woman’s presence. They were obliged to wait until the morning. At length day dawned,—the sun gradually arose. Her parents and the people went in search of her; they looked in every place—in woodland, in glades, upon the shore and in the caves of the rocks, yet could not find her. Day passed. Night came. They called her by name, <+>Shah-won-o-equa[Lady of the South]</+> but she answered not, and they were left in great distress, conjecturing about her situation. The next day was spent in like manner, but with no better success. As evening approached, they thought they heard her voice. They all listened. “Yes,” said the father, “it is Shah-won-o-equa.” The voice seemed to be at so great a distance among the rocks that they could not reach the spot from which it proceeded before night came, and the voice departed.`,
       `Anxiously they awaited the approach of day, and when it came, with all possible speed they hasted in the direction in which they had heard the voice. Not seeing any path made by her footsteps, they concluded that it was not her voice, but that of a spirit they had heard, and that she had been taken away by the Great Spirit whose <+>track[the marks on the pictured rocks are thought to be the footsteps of the Great Spirit]</+> was seen on the rocks.`,
-      `The next night when the sun was sinking, they again heard the voice, sounding as if on the cliffs of the rocks. They looked, when they beheld standing on a lofty peak the lost young woman, gazing at the departing sun, and chanting her evening prayer to the gods of her fathers. The parents were convinced that the form they beheld could not he a spirit, but in reality their daughter. The next morning another search was made, which resulted in finding her sitting in the cave, having robes of fur covering her head, and boughs of cedar all around her. Since the day she left her home, she had taken no food, and though a rivulet of pure water coursed along at her feet, she touched it not.`,
+      `The next night when the sun was sinking, they again heard the voice, sounding as if on the cliffs of the rocks. They looked, when they beheld standing on a lofty peak the lost young woman, gazing at the departing sun, and chanting her evening prayer to the gods of her fathers. The parents were convinced that the form they beheld could not be a spirit, but in reality their daughter. The next morning another search was made, which resulted in finding her sitting in the cave, having robes of fur covering her head, and boughs of cedar all around her. Since the day she left her home, she had taken no food, and though a rivulet of pure water coursed along at her feet, she touched it not.`,
       `She was asked why she had not informed her friends of her situation. She replied, that she wanted to fast, and that to do so, it was best for her to remain there in seclusion. Her mother wished her to go with her to their house, but the girl refused to do so, until the gods were propitious to her.`,
       `The following day her mother again visited her, and inquired whether the gods had visited her since their last interview. She replied that they had not, but that she was resolved upon remaining there until they did. She then covered her head with furs and laid down.`,
       `In the cave, on the ledge of rocks, she waited to receive the god of war, the god of the vegetable kingdom, and the god of the waters, whom she expected would visit her in her dreams, or in a visible form, and converse with her.`,
@@ -4868,7 +4911,7 @@ export const foundRelTexts = [
     id: "OCAUFRT",
     title: {original: "Songs of Central Australia"},
     group: {people: "Arrernte", language: "Arrernte", religion: "Altyerre", location: "Alice Springs, AU"},
-    info: [`At the creation of the world and through its present and eternal existence is <i>Altyerre</i>, the Dreaming. Just like nighttime dreaming, interpreted in the context of places and progenitors, mediates access to the spiritual and religious domains, Altyerre captures the complex and persistent relationship between the ancestral and dream realms. Such acts of dreaming constitute an objective experience in which time and space are no longer obstacles, and in which information of great importance is gained by the dreamer. The same is true for the sacred songs and narratives that describe the Dreaming, timeless stories of ancestral beings and country also called Altyerre.`],
+    info: [`At the creation of the world and through its present and eternal existence is <i>Altyerre</i>, the Dreaming. Just like nighttime dreaming—interpreted in the context of places and progenitors—mediates access to the spiritual and religious domains, Altyerre captures the complex and persistent relationship between the ancestral and dream realms. Such acts of dreaming constitute an objective experience in which time and space are no longer obstacles, and in which information of great importance is gained by the dreamer. The same is true for the sacred songs and narratives that describe the Dreaming, timeless stories of ancestral beings and country also called Altyerre.`],
     excerpt: [
       `Sky mountainous with clouds!<br>Sky crowded with trysting clouds!<br>Sky mountainous with clouds!<br>Sky, olive-brown like watermoss,<br>&emsp;&emsp;with clouds growing,<br>&emsp;&emsp;rising from their knees:<br>&emsp;&emsp;roll, roll, thunder!<br>Sharp-edged cloud-tips melting into rain!<br>Over <+>mulgas[Acacia aneura, a tree endemic to inland Australia]</+> <+>ring-waisted[in the Simpson Desert area the mulgas are confined largely to swamp flats; when these swamps are filled by rainstorms, the mulgas are likely to stand “waist deep” in water; their “bodies” would then be encircled by foam rings]</+> see them drifting,<br>&emsp;&emsp;the floating rack sprouting cloud-wisp avenues!<br><+>Wings[the rapidly advancing storm-driven clouds are likened to huge birds floating through the air on their wings]</+> floating and floating,<br>&emsp;&emsp;<+>pinions[outermost part of a bird’s wing]</+> floating and floating:<br>Wings beating and rushing,<br>&emsp;&emsp;pinions beating and sounding!<br>Thunder roll and shake!<br>Clouds unfolding advancing bosoms,<br>&emsp;&emsp;foreheads flashing sheet lightning!<br>Swelling cloud-fronts growing white with rain!<br>Stoke the <+>fires[this is a warning to the rain-clan members to stoke up their fires against the heavy downpours that are being summoned by this charm verse]</+>, stoke!<br>Foreheads flashing sheet lightning!<br>Cloud drawing cloud in endless file.—<br>Foreheads flashing sheet lightning!`,
       `>>(Uŋgwā́bera ĕ́tna amā́ria 104 TGH)`,
@@ -5411,6 +5454,23 @@ export const globFeatFilms = [
 ];
 
 export const cultShortFilms = [
+  {
+    id: "AMSWCSF",
+    title: { original: "Long Line Of Ladies" },
+    year: 2022,
+    group: {people: "Karuk", language: "English", location: "California, US"},
+    info: [
+      `<i>Long Line of Ladies</i> tells the story of Ahtyirahm and her community as they prepare for her Ihuk, the once-dormant Flower Dance coming of age ceremony of the Karuk people of Northern California.`,
+      `Dirs. <b>RAYKA ZEHTABCHI</b> and <b>SHAANDIIN TOME</b> sought to make a film on one traditional culture’s celebration of menstruation, made in collaboration with the Karuk community.`
+    ],
+    watch: ["https://vimeo.com/777015125","https://www.criterionchannel.com/long-line-of-ladies"],
+    trailer: "https://youtu.be/NlIMKjb_w8s",
+    coordinates: {x: -123.5411, y: 41.3014, name: "Humboldt County"},
+    runtime: 23,
+    genre: [""],
+    tags: [""],
+    color: "#4a3924"
+  },
   {
     id: "AMNECSF",
     title: {original: "Imbé Gikegü", translation: "The Scent of Pequi Fruit"},

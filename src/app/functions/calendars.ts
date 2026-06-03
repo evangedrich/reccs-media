@@ -279,64 +279,74 @@ function toChineseDate(date: Date): TransliteratedLunarDate {
 
 interface HawaiianLunarDate {
   moonPhase: string;
-  anahulu: string; // The 10-day "week"
+  anahulu: string;
   dayOfCycle: number;
   toStringEn: () => string;
 }
+
+/**
+ * Converts a Gregorian Date to the traditional Hawaiian Lunar Calendar (Kaulana Mahina).
+ * Uses a precise synodic baseline to calculate the moon phase and corresponding Anahulu.
+ */
 function toHawaiianLunarDate(date: Date): HawaiianLunarDate {
+  // Traditional 30 named nights of the Hawaiian moon cycle
   const MOON_PHASES = [
-    "Hilo", "Hoaka", "Kūkahi", "Kūlua", "Kūpau", "Olekūkahi", "Olekūlua", "Olekūpau", "Huna", "Mohalu",
-    "Hua", "Akua", "Hoku", "Māhealani", "Kulu", "Lāʻaukūkahi", "Lāʻaukūlua", "Lāʻaupau", "ʻOlekūkahi", "ʻOlekūlua",
-    "ʻOlekūpau", "Kāloakūkahi", "Kāloakūlua", "Kāloapau", "Kāne", "Lono", "Mauli", "Muku"
+    "Hilo", "Hoaka", "Kūkahi", "Kūlua", "Kūkolu", "Kūpau", 
+    "ʻOlekūkahi", "ʻOlekūlua", "ʻOlekūkolu", "ʻOlekūpau", 
+    "Huna", "Mohalu", "Hua", "Akua", "Hoku", "Māhealani", 
+    "Kulu", "Lāʻaukūkahi", "Lāʻaukūlua", "Lāʻaupau", 
+    "ʻOlekūkahi", "ʻOlekūlua", "ʻOlekūpau", 
+    "Kāloakūkahi", "Kāloakūlua", "Kāloapau", 
+    "Kāne", "Lono", "Mauli", "Muku"
   ];
-  const moonPhasesEn = [
-    "Faint Streak",       // Hilo (First sighting of the moon)
-    "Crescent",            // Hoaka (Crest/Arch)
-    "First Kū",            // Kūkahi (Rising/Upright)
-    "Second Kū",           // Kūlua
-    "Final Kū",            // Kūpau
-    "First Ole",           // Olekūkahi (Unproductive/Non-planting)
-    "Second Ole",          // Olekūlua
-    "Final Ole",           // Olekūpau
-    "Hidden",              // Huna (Moon is small/hidden)
-    "Spreading",           // Mohalu (Blooms/Opening)
-    "Fruit",               // Hua (Productive/Egg-shaped)
-    "God",                 // Akua (Fullness/Divine)
-    "Star",                // Hoku (Completely round)
-    "Full Moon",           // Māhealani (The peak of fullness)
-    "Dropping",            // Kulu (Dew/To drop)
-    "First Lāʻau",         // Lāʻaukūkahi (Wood/Planting)
-    "Second Lāʻau",        // Lāʻaukūlua
-    "Final Lāʻau",         // Lāʻaupau
-    "First Ole Reprise",   // ʻOlekūkahi (The second set of unproductive days)
-    "Second Ole Reprise",  // ʻOlekūlua
-    "Final Ole Reprise",   // ʻOlekūpau
-    "First Kāloa",         // Kāloakūkahi (Kanaloa/Deep sea)
-    "Second Kāloa",        // Kāloakūlua
-    "Final Kāloa",         // Kāloapau
-    "Kāne",                // Kāne (Named for the deity of life/fresh water)
-    "Lono",                // Lono (Named for the deity of agriculture/rain)
-    "Last Breath",         // Mauli (Fading life/Ghost)
-    "Cut Off"              // Muku (New Moon/Extinguished)
-];
 
-  // A known New Moon reference (e.g., Jan 11, 2024)
-  const newMoonRef = new Date(2024, 0, 11).getTime();
-  const LUNAR_MONTH = 2551442889; // Mean synodic month in ms (29.53 days)
+  const MOON_PHASES_EN = [
+    "Faint Streak", "Crescent", "First Kū", "Second Kū", "Third Kū", "Final Kū",
+    "First ʻOle", "Second ʻOle", "Third ʻOle", "Final ʻOle",
+    "Hidden", "Spreading", "Fruit", "God", "Star", "Full Moon", "Dropping",
+    "First Lāʻau", "Second Lāʻau", "Final Lāʻau",
+    "First ʻOle Reprise", "Second ʻOle Reprise", "Final ʻOle Reprise",
+    "First Kāloa", "Second Kāloa", "Final Kāloa",
+    "Kāne", "Lono", "Last Breath", "Cut Off"
+  ];
+
+  // Astronomical Baseline: A known global New Moon occurred on Jan 11, 2024 at 11:57 UTC
+  const newMoonRef = Date.UTC(2024, 0, 11, 11, 57, 0);
   
-  const diff = date.getTime() - newMoonRef;
-  const dayOfCycle = Math.floor((diff % LUNAR_MONTH) / (1000 * 60 * 60 * 24)) % 30;
+  // The precise length of a mean synodic lunar month in milliseconds (29.53059 days)
+  const LUNAR_MONTH_MS = 29.530588853 * 24 * 60 * 60 * 1000;
+  
+  // Target date normalized to UTC time to maintain timezone consistency
+  const targetTime = Date.UTC(date.getFullYear(), date.getMonth(), date.getDate(), date.getHours(), date.getMinutes());
+  
+  // Calculate raw difference and account for dates prior to reference point
+  let diff = targetTime - newMoonRef;
+  if (diff < 0) {
+    diff = (diff % LUNAR_MONTH_MS) + LUNAR_MONTH_MS;
+  }
 
-  // Determine the Anahulu (10-day period)
-  let anahulu = "Hoʻonui (Growing)";
-  if (dayOfCycle >= 10 && dayOfCycle < 20) anahulu = "Poepoe (Rounding)";
-  else if (dayOfCycle >= 20) anahulu = "Emi (Decreasing)";
+  // Convert the position in the current lunar month into a integer index from 0 to 29
+  const positionInMonth = diff % LUNAR_MONTH_MS;
+  const dayOfCycle = Math.floor(positionInMonth / (1000 * 60 * 60 * 24));
+  
+  // Defensive clamp to prevent overflow errors due to decimal edge conditions
+  const phaseIndex = Math.min(dayOfCycle, 29);
+
+  // Grouping into the three traditional 10-day Anahulu segments
+  let anahulu = "";
+  if (phaseIndex < 10) {
+    anahulu = "Hoʻonui (Growing Bigger)";
+  } else if (phaseIndex < 20) {
+    anahulu = "Poepoe (Rounding/Full)";
+  } else {
+    anahulu = "Hōʻemi (Decreasing/Waning)";
+  }
 
   return {
-    moonPhase: MOON_PHASES[dayOfCycle] || "Muku",
+    moonPhase: MOON_PHASES[phaseIndex],
     anahulu: anahulu,
-    dayOfCycle: dayOfCycle + 1,
-    toStringEn: () => `${dayOfCycle + 1} ${moonPhasesEn[dayOfCycle]}`
+    dayOfCycle: phaseIndex + 1,
+    toStringEn: () => `${phaseIndex + 1} ${MOON_PHASES_EN[phaseIndex]}`
   };
 }
 

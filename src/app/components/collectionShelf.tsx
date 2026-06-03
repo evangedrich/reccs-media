@@ -1,11 +1,13 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import Markdown from "react-markdown";
 import styles from "@/app/ui/main.module.css";
 import CollectionShelfItems from "./collectionShelfItems";
 import ShelfItemsMobile from "./collectionShelfItemsMobile";
 import { preParse } from "../functions/text";
+import type { Recc } from "../types/recc";
 
 const getColor = (id: string) => {
     if (id==="MTN") { return "group-hover:text-[var(--color-blue)]"; }
@@ -20,12 +22,24 @@ const getColor = (id: string) => {
     else { return "group-hover:text-[var(--color-purple)]"; }
 };
 
-export default function CollectionShelf({ 
-    collections 
+export default function CollectionShelf({
+    collections,
+    reccs,
 }: { collections: {
     id: string, name: string, shortName: string, type: string, header: string, info?: string
-}[] }): React.ReactNode {
-    const [currColl, setCurrColl] = useState(collections[0].id);
+}[], reccs: Recc[] }): React.ReactNode {
+    const router = useRouter();
+    const pathname = usePathname();
+    const searchParams = useSearchParams();
+    const initialColl = searchParams.get("coll") ?? collections[0].id;
+    const [currColl, setCurrColl] = useState(initialColl);
+    console.log(reccs.filter(recc => recc.id.slice(5,7)==="FF" || recc.id.slice(5,7)==="SF"));
+    useEffect(() => {
+        const params = new URLSearchParams(searchParams.toString());
+        if (currColl===collections[0].id) {params.delete("coll");} else {params.set("coll",currColl);}
+        const qs = params.toString();
+        router.replace(qs ? `${pathname}?${qs}` : pathname, { scroll: false });
+    },[currColl]);
     const bgPatternMobile = "bg-[repeating-linear-gradient(45deg,var(--color-mid)_0px,var(--color-mid)_1px,transparent_1px,transparent_8px)]";
     const bgPattern = "sm:bg-[repeating-linear-gradient(45deg,transparent_0px,transparent_1px,transparent_1px,transparent_8px)]";
     return (
@@ -46,7 +60,7 @@ export default function CollectionShelf({
                                     <Markdown>{preParse(coll.info ?? "")}</Markdown>
                                 </div>
                             </div>
-                            <CollectionShelfItems collections={collections} coll={coll} />
+                            <CollectionShelfItems collections={collections} coll={coll} reccs={reccs} />
                         </div>
                         
                     </React.Fragment>
@@ -58,7 +72,7 @@ export default function CollectionShelf({
                 </div>
             ))}</div>
             <div className={`${styles.shelfText} sm:hidden flex flex-col`}>
-                <ShelfItemsMobile collections={collections} collID={currColl} />
+                <ShelfItemsMobile collections={collections} collID={currColl} reccs={reccs} />
                 <div className="p-4">
                     <Markdown>{"# "+collections.find(coll => coll.id===currColl)?.header}</Markdown>
                     <Markdown>{preParse(collections.find(coll => coll.id===currColl)?.info ?? "")}</Markdown>

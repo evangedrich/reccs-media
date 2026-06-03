@@ -1,18 +1,9 @@
 import { syncopate } from "@/app/fonts/fonts";
 import ColorLink from "@/app/components/colorLink";
 import { preParse } from "@/app/functions/text";
-import { reccsData } from "@/app/lib/local-media";
+import { getReccs } from "@/app/lib/reccs";
 
-const refCount = (reccsData as { ref?: unknown[] }[]).reduce((s, e) => s + (e.ref?.length ?? 0), 0);
-
-const stats: [string, string][] = [
-    ["30",                 "subregions"],
-    ["9",                  "collections"],
-    [String(reccsData.length),                "entries"],
-    [String(refCount),     "citations"],
-    ["10",                 "calendar settings"],
-    ["2",                  "render modes"],
-];
+export const dynamic = "force-dynamic";
 
 const features = [
     {
@@ -73,7 +64,17 @@ const stack: [string, string][] = [
     ["Cloudflare",         "Static-leaning deploy. No analytics, no cookies, no third parties."],
 ];
 
-export default function LandingPage() {
+export default async function LandingPage() {
+    const reccs = await getReccs();
+    const refCount = reccs.reduce((s, e) => s + (e.ref?.length ?? 0), 0);
+    const stats: [string, string][] = [
+        ["30",                 "subregions"],
+        ["9",                  "collections"],
+        [String(reccs.length), "entries"],
+        [String(refCount),     "citations"],
+        ["10",                 "calendar settings"],
+        ["2",                  "render modes"],
+    ];
     return (
         <div>
             <div className="border-b-2 border-solid border-[var(--color-front)]">

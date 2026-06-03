@@ -6,7 +6,10 @@ import Footer from "@/app/components/footer";
 import { ViewProvider } from "@/app/lib/viewContext";
 
 export const metadata: Metadata = {
-	title: "Reccs",
+	title: {
+    template: "%s - Reccs",
+    default: "Reccs",
+  },
 	description: "A geoscheme-based media library",
 };
 

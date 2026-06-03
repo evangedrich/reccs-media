@@ -1,0 +1,111 @@
+import { unstable_cache } from "next/cache";
+import { getCloudflareContext } from "@opennextjs/cloudflare";
+import type { Recc } from "../types/recc";
+
+type Row = {
+  id: string;
+  title_original: string;
+  title_transliteration: string | null;
+  title_translation: string | null;
+  author: string | null;
+  intermediary: string | null;
+  century: number | null;
+  year: number | null;
+  runtime: number | null;
+  color: string | null;
+  coord_name: string | null;
+  coord_lng: number | null;
+  coord_lat: number | null;
+  trailer_url: string | null;
+  group_people: string | null;
+  group_language: string;
+  group_country: string | null;
+  group_location: string | null;
+  group_religion: string | null;
+  info: string;
+  excerpt: string | null;
+  media_urls: string | null;
+  watch_urls: string | null;
+  playlist_url: string | null;
+  genre: string | null;
+  tags: string | null;
+  refs: string | null;
+  meta: string | null;
+};
+
+const parseJson = <T,>(s: string | null): T | undefined =>
+  s == null ? undefined : (JSON.parse(s) as T);
+
+function rowToRecc(row: Row): Recc {
+  const group: Recc["group"] = { language: row.group_language };
+  if (row.group_people) group.people = row.group_people;
+  if (row.group_religion) group.religion = row.group_religion;
+  if (row.group_country) group.country = row.group_country;
+  if (row.group_location) group.location = row.group_location;
+
+  const title: Recc["title"] = { original: row.title_original };
+  if (row.title_transliteration) title.transliteration = row.title_transliteration;
+  if (row.title_translation) title.translation = row.title_translation;
+
+  const recc: Recc = {
+    id: row.id,
+    title,
+    group,
+    info: JSON.parse(row.info) as string[],
+  };
+
+  if (row.author) recc.author = row.author;
+  if (row.intermediary) recc.intermediary = row.intermediary;
+  if (row.century !== null) recc.century = row.century;
+  if (row.year !== null) recc.year = row.year;
+  if (row.runtime !== null) recc.runtime = row.runtime;
+  if (row.color) recc.color = row.color;
+  if (row.coord_name && row.coord_lng !== null && row.coord_lat !== null) {
+    recc.coordinates = { name: row.coord_name, x: row.coord_lng, y: row.coord_lat };
+  }
+  if (row.trailer_url) recc.trailer = row.trailer_url;
+  if (row.playlist_url) recc.playlistURL = row.playlist_url;
+
+  const excerpt = parseJson<string[]>(row.excerpt);
+  if (excerpt) recc.excerpt = excerpt;
+  const mediaURL = parseJson<string[]>(row.media_urls);
+  if (mediaURL) recc.mediaURL = mediaURL;
+  const watch = parseJson<string[]>(row.watch_urls);
+  if (watch) recc.watch = watch;
+  const genre = parseJson<string[]>(row.genre);
+  if (genre) recc.genre = genre;
+  const tags = parseJson<string[]>(row.tags);
+  if (tags) recc.tags = tags;
+  const ref = parseJson<Array<Record<string, unknown>>>(row.refs);
+  if (ref) recc.ref = ref;
+  const meta = parseJson<Record<string, unknown>>(row.meta);
+  if (meta) recc.meta = meta;
+
+  return recc;
+}
+
+const getReccsFromD1 = unstable_cache(
+  async (): Promise<Recc[]> => {
+    const db = (await getCloudflareContext({ async: true })).env.DB;
+    const { results } = await db.prepare("SELECT * FROM reccs").all<Row>();
+    return results.map(rowToRecc);
+  },
+  ["reccs"],
+  { tags: ["reccs"] },
+);
+
+// In development, read directly from local-media.ts so edits show up instantly
+// (no `pnpm sync` round-trip). Dynamic import keeps this file out of the prod bundle.
+async function getReccsFromLocal(): Promise<Recc[]> {
+  const { reccsData } = await import("./local-media");
+  return reccsData as unknown as Recc[];
+}
+
+// To debug the production data path in dev, comment out lines 106-7 & uncomment:
+//   export const getReccs: () => Promise<Recc[]> = getReccsFromD1;
+export const getReccs: () => Promise<Recc[]> =
+  process.env.NODE_ENV === "development" ? getReccsFromLocal : getReccsFromD1;
+
+export async function getReccById(id: string): Promise<Recc | undefined> {
+  return (await getReccs()).find((r) => r.id === id);
+}
