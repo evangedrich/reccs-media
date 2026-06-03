@@ -49,9 +49,11 @@ export default async function DetailPage({ params }: { params: Promise<{ mediaID
                             {isMongol(title) ? title.split(/\s+/).map((w: string, i: number) => <span key={i} className="block">{w}</span>) : title}
                         </h1>
                         <h2 className={`${(transliteration || translation) ? "" : "hidden"} leading-none text-2xl mb-4 opacity-50`}>
-                            <span className={`${transliteration ? "" : "hidden"}`}>{transliteration}</span>
-                            <span className={`${(transliteration && translation) ? "" : "hidden"}`}>{" · "}</span>
-                            <span className={`${translation ? "" : "hidden"}`}>{translation}</span>
+                            {(transliteration && translation)
+                            ? <span>{`${transliteration} (${translation})`}</span>
+                            : (transliteration || translation)
+                            ? <span>{translation ? translation : transliteration}</span>
+                            : <></>}
                         </h2>
                         <h2 className={`${(byline) ? "" : "hidden"} leading-none text-xl mb-4`}>{byline}</h2>
                         <ul className="sm:flex gap-x-6 gap-y-1 flex-wrap">

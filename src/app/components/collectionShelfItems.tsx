@@ -6,6 +6,7 @@ import type { Recc } from "../types/recc";
 import { subregions } from "../lib/subregions";
 import Link from "next/link";
 import Image from "next/image";
+import LoadingIcon from "./loading";
 import { getTitle } from "../functions/text";
 import { posterUrl } from "../lib/images";
 
@@ -63,8 +64,9 @@ export default function CollectionShelfItems({
                 {entries.length>=8 && entries.map(entry => (
                     <Link href={`/${entry.id}`} className="block bg-[var(--color-back)] snap-start group active:opacity-90" key={`${entry.id}_card`}>
                         <div className="shrink-1 w-full h-full hover:bg-[var(--color-mid)] px-4 flex flex-col gap-1 flex flex-col justify-center">
-                            <div className="shrink-1 aspect-3/4 bg-[var(--color-mid)] group-hover:opacity-90">
-                                <Image src={posterUrl(entry.id)} alt="Media Image" width="300" height="400" unoptimized />
+                            <div className="relative shrink-1 aspect-3/4 bg-[var(--color-mid)] group-hover:opacity-90">
+                                <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center"><LoadingIcon /></div>
+                                <Image src={posterUrl(entry.id)} alt="Media Image" width="300" height="400" className="absolute top-0 left-0 w-full" unoptimized />
                             </div>
                             <h2 className={`shrink-0 ${syncopate.className} leading-none uppercase font-bold text-[0.47rem] opacity-50 pt-1`}>{subregions.find(subr => subr.id===entry.id.slice(0,4))?.name}</h2>
                             <h1 className={`shrink-0 text-[0.84rem] mt-[-0.15rem] font-semibold truncate`}>{getTitle(entry)}</h1>

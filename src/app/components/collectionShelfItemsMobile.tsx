@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import LoadingIcon from "./loading";
 import type { Recc } from "../types/recc";
 import { subregions } from "../lib/subregions";
 import { getTitle } from "../functions/text";
@@ -27,8 +28,9 @@ export default function ShelfItemsMobile({
                 {entries.length>=8 && entries.map(entry => (
                     <Link key={`mobile_${entry?.id}`} href={`/${entry.id}`} className="block bg-[var(--color-back)] active:opacity-90">
                         <div className="p-2">
-                            <div className="mb-1 bg-[var(--color-mid)] aspect-3/4">
-                                <Image src={posterUrl(entry.id)} alt="Media Image" width="300" height="400" className="w-full" unoptimized />
+                            <div className="relative mb-1 bg-[var(--color-mid)] aspect-3/4">
+                                <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center"><LoadingIcon /></div>
+                                <Image src={posterUrl(entry.id)} alt="Media Image" width="300" height="400" className="absolute top-0 left-0 w-full" unoptimized />
                             </div>
                             <h4 className="text-[0.5rem] font-bold opacity-50 truncate">{subregions.find(subr => subr.id===entry.id.slice(0,4))?.name}</h4>
                             <h3 className="text-[0.8rem] font-semibold truncate">{getTitle(entry)}</h3>
