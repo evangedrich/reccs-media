@@ -666,43 +666,32 @@ export const modTradNovels = [
   },
   {
     id: "ASSEMTN",
-    title: {original: "Bumi Manusia", translation: "This Earth of Mankind"},
-    author: "Pramoedya Ananta Toer",
-    group: {people: "Javanese", language: "Indonesian", location: "Java, ID"},
+    title: {original: "ပြုံး၍လည်းကန်တော့ခံတော်မူပါ", transliteration: "Pyone Ywesh Lae Kan Daw Khan Daw Mu Par", translation: "Smile and Get Kicked"},
+    author: "Nu Nu Yi",
+    group: {people: "Bamar", language: "Burmese", country: "Myanmar"},
     info: [
-      `Minke is a young Javanese student of great intelligence, sensitivity, and ambition. The son of a noble Javanese, he moves easily among the Dutch and their ideas and language but is prevented from enjoying their rights. He also falls desperately in love with the beautiful Indo-European Annelies, and it is through her and her extraordinary family that Minke finds the strength to embrace his world—the world of Indonesia—and all its beauty and possibility, brutality and anger.`,
-      `<b>PRAMOEDYA ANANTA TOER</b> was born on the island of Java in 1925. He was imprisoned first by the Dutch for his role in the Indonesian revolution, then by the Indonesian government as a political prisoner. Many of his works were written during this period, including the <i>Buru Quartet</i>, which was conceived in stories the author told to other prisoners during his confinement on Buru Island.`
+      `Originally titled <i>Smile and Get Kicked, Laugh and Get Kicked</i>, an English translation of the novel was published by Hyperion Books under the name <i>Smile As They Bow</i> 12 years after it was first written.`,
+      `<b>NU NU YI</b> was born in a village near Inwa in the central Mandalay Region of Burma in 1957. She has written 15 novels, 100 short stories, and several magazine articles since she began writing at age 27.`
     ],
     excerpt: [
-      `People called me Minke.`,
-      `My own name... for the time being I need not tell it. Not because I’m crazy for mystery. I’ve thought about it quite a lot: I don’t yet really need to reveal who I am before the eyes of others.`,
-      `In the beginning I wrote these short notes during a period of mourning: She had left me, who could tell if only for a while or forever? (At the time I didn’t know how things would turn out.) That eternally harassing, tantalizing future. Mystery! We will all eventually arrive there willing or unwilling, with all our soul and body. And too often it proves to be a great despot. And so, in the end, I arrived too. Whether the future is a kind or a cruel god is, of course, its own affair: Humanity too often claps with just one hand.`,
-      `Thirteen years later I read and studied these short notes over again. I merged them together with dreams, imaginings. Naturally they became different from the original. Different? But that doesn’t matter!`,
-      `And here is how they turned out.`,
-      `I was still very young, just the age of a corn plant, yet I had already experienced modern learning and science: They had bestowed upon me a blessing whose beauty was beyond description.`,
-      `The director of my school once told my class: Your teachers have given you a very broad general knowledge, much broader than that received by students of the same level in many of the European countries.`,
-      `Naturally this breast of mine swelled. I’d never been to Europe, so I did not know if the director was telling the truth or not. But because it pleased me, I decided to believe him. And, further, all my teachers had been born and educated in Europe. It didn’t feel right to distrust my teachers. My parents had entrusted me to them. Among the educated European and Indo communities, they were considered to be the best teachers in all of the Netherlands Indies. So I was obliged to trust them.`,
-      `This science and learning, which I had been taught at school and which I saw manifested in life all around me, meant that I was rather different from the general run of my countrymen. I don’t know. And that’s how it was that I, a Javanese, liked to make notes—because of my European training. One day the notes would be of use to me, as they are now.`,
-      `One of the products of science at which I never stopped marveling was printing, especially zincography. Imagine, people can reproduce tens of thousands of copies of any photograph in just one day: pictures of landscapes, important people, new machines, American skyscrapers. Now I could see for myself everything from all over the world upon these printed sheets of paper. How deprived had the generation before me been—a generation that had been satisfied with the accumulation of its own footsteps in the lanes of its villages. I was truly grateful to all those people who had worked so tirelessly to give birth to these new wonders. Five years ago there were no printed pictures, only block and lithographic prints, which gave very poor representations of reality.`,
-      `Reports from Europe and America brought word of the latest discoveries. Their awesomeness rivaled the magical powers of the gods and knights, my ancestors in the wayang shadow puppet theater. Trains—carriages without horses, without cattle, without buffalo—had been witnessed now for over ten years by my countrymen. And astonishment remains in their hearts even today. The distance from Betawi to Surabaya can be traveled in only three days! And they’re predicting it will soon take only a day and a night! A day and a night! A long train of carriages as big as houses, full of goods, and people too, all pulled by water power alone. If I had ever been so lucky to meet Stephenson, I would have made him an offering of a wreath of flowers, all orchids. A network of railway tracks splintered my island, Java. The trains’ billowing smoke colored the sky of my homeland with black lines, which faded into nothingness. It was as if the world no longer knew distance—it too had been abolished by the telegraph. Power was no longer the monopoly of the elephant and the rhinoceros. They had been replaced by small manmade things: nuts, screws, and bolts.`,
-      `And over there in Europe, people had begun making even smaller machines, with even greater power, or at least with the same power as steam engines. Indeed, not with steam—with oil.`,
-      `There were also vague reports saying that a German had made a vehicle that worked by electricity. Oh Allah, and I couldn’t really understand what electricity was.`,
-      `The forces of nature were beginning to be changed by man and put to his service. People were even planning to fly like the shadow puppet character Gatotkaca, like Icarus. One of my teachers had said: Just a little while longer, just a little while, and people will no longer have to force their bones and squeeze out their sweat for so little result. Machines will replace all and every kind of work. People will have nothing to do except enjoy themselves. You are fortunate indeed, my students, he said, to be able to witness the beginning of the modern era here in the Indies.`,
-      `Modern! How quickly that word had surged forward and multiplied itself like bacteria throughout the world. (At least, that is what people were saying.) So allow me also to use this word, though I still don’t fully understand its meaning.`,
-      `In short, in this modern era tens of thousands of copies of any photo could be reproduced each day. And the important thing was there was one of these that I looked at more often than any other: a photo of a beautiful maiden, rich, powerful, glorious, one who possessed everything, the beloved of the gods.`,
-      `The rumors, whispered furtively among my school friends, were that even the richest bankers in the world had no chance of courting her. Handsome and manly nobility scrambled head over heels just to be noticed by her. Just to be noticed!`,
-      `Whenever I had nothing to do, I would gaze at her face while supposing how it would be to court her. How would it be! And how high, too, was her station. And how far away she was, nearly twenty thousand kilometers from where I was: Surabaya. One month’s sail by boat across two oceans, five straits, and through one canal. Even then there’d be no certainty of being able to meet her. I didn’t dare speak my feelings to a single soul. They would have laughed at me and called me mad.`,
-      `At the post offices, so rumor was also whispered, letters were occasionally received proposing marriage to this maiden who lived so far away and so high above. None ever reached her. Even if I had been crazy enough to try, it would have been just the same: The post officials would have only kept the letter for themselves.`,
-      `And that beloved of the gods was the same age as me: eighteen. We were both born in the same year: 1880. Only one figure shaped like a stick, the others roundish, like miscast marbles. The day and the month were also the same: 31 August. If there were any differences, they were only the hour and sex. My parents never noted down the time of my birth. And I didn’t know the hour of her birth. As for difference in sex, I was a male, she was a female. And that bewildering difference in time: When my island was blanketed in the darkness of night, her land was lit with sunshine. When her country was embraced by the blackness of night, my island shone brightly under the equatorial sun.`,
-      `My teacher, Magda Peters, forbade us to believe in astrology. It was nonsense, she said. Thomas Aquinas, she said, once saw two people who were born in the same year, in the same month, on the same day and at the same hour, even in the same place. The joke played by astrology was that one became a great landowner and the other his slave.`,
-      `Indeed I don’t believe in astrology. How could anyone believe in it? It has never lit the way for progress in science and in learning. And it demands of us that we submit to its predictions. There is nothing else we can do except to throw it into the pig’s slops bucket. Once I had my fortune told, just for fun. My horoscope was turned over and over. The fortune-teller opened her mouth. She had two gold teeth: If sir is patient, she said, he will surely meet the maiden. So I just prefer to trust my intellect. Even with the patience of all mankind, I would never meet her.`,
-      `I put my trust in scientific understanding and in reason. With these, at least, there are certainties that can be grasped.`
+      `Just now, a week before the August full moon, an enchanted air lingers over Taungbyon. As festival time draws near, the Mandalay-Madaya turnoff backs up with cars, trucks, buses, and jeeps—and throngs of anxious passengers all in bright colors. A mischievous August breeze plays above the narrow road awash in yellow puddles, spillover from the canal that runs alongside. The soulful monsoon-weather skies have everyone in a festive mood. It’s time to be happy and carefree.`,
+      `Young boys laugh from the roofs of buses while womenfolk, crammed inside, mumble anxious prayers. Well-to-do ladies sitting comfortably in chauffered sedans raise hands to their foreheads in reverence to the <i>nats</i>. Sunburnt children in scruffy clothes along both sides of the road shout, “Throw money! Throw money!” They size up the incoming caravan, faces full of hope, eyes peeled wide for any tossed scraps of paper, then dive in with elbows flying.`,
+      `Suddenly clouds of dust-choke exhaust wheeze up from braking engines. Alarmed voices cry out as the kids scramble to grab bills from right under the tires, only to resurface all scrapes and bruises, though a glint of fear in their little eyes betrays their daredevil bravado.`,
+      `But wait, who are these grownups shouting alongside the children? A chorus line of drunks is dancing in the middle of the road with eyes squinted and fingers pointed high. And now farm women from the paddy fields rope their headscarves across traffic, clap hands, and shout at the tope of their lungs when any car slows down, “Make merit! Throw us money!”`,
+      `The lines of merrymakers stretch all the way to the village of Taungbyon, now one great big fairground packed with pilgrims and thatched huts. Inbound progress grinds to a hault as each new arrival tries to find a place to park. Cars and jeeps nose toward cleared fields, larger vehicles lurch into an unpaved bus yard.`,
+      `As soon as people set foot in the village, they can see the golden-umbrella spire of the Wish-Fulfilling Pagoda above the huddled festival stalls, though the tinkling bells are drowned out by the mad cacaphony of festivities.`,
+      `&nbsp;`,
+      `Long ago in the eleventh century, during the golden era of Bagan, King Anawrahta had his court nobles bring one brick each to help build this Wish-Fulfilling Pagoda. Yet, come the appointed day, the king’s personal favorites, Indian half-caste lieutenants and brothers Shwepyingyi and Shwepyinlei, failed to show. The two rowdy womanizers had neglected their duties, so the king had no choice but to order them punished. Others in the court, however, were jealous of the brothers’ growing influence and seized the opportunity to have them killed.`,
+      `Then one day, as the king was boating down Irrawaddy, the royal barge froze mysteriously midriver and the two murdered brothers appeared. “Faithfully did we serve Your Majesty, but alas, to no avail!” they decried. “This dragon boat shall not move until we have been vindicated.” Greatly saddened by their fate, King Anawrahta vested the apparitions with this riverside dominion and built a shrine near his pagoda to honor the Taungbyon Brothers, now become <i>nats</i>—spirits who have met tragic “green deaths” in the classic Burmese tradition.`,
+      `To this day, the pagoda is missing two bricks, and the empty space is gilded—a holy of holies where the multitudes come to pay homage before pushing on to the Brothers’ shrine, popularly known as the Grand Palace of the Nats.`
     ],
-    bioURL: "https://en.wikipedia.org/wiki/Pramoedya_Ananta_Toer",
-    infoURL: "https://en.wikipedia.org/wiki/This_Earth_of_Mankind",
+    infoURL: "",
+    bioURL: "",
     textURL: "",
+    playlistURL: "",
     ref: [
-      {id: "toer-1980", type: "book", title: "Bumi Manusia", contributors: [{firstName: "Pramoedya Ananta", lastName: "Toer", role: "author"}], url: "https://archive.org/details/thisearthofmanki0000toer_g3i3", pubDate: {year: 1980}, publisher: "Hasta Mitra", location: "Jakarta", meta: {sortKey: "text"}}
+      { id: "nunuyi-2008-smile", type: "book", title: "Smile As They Bow", contributors: [ { firstName: "Nu Nu", lastName: "Yi", role: "author" }, { firstName: "Alfred", lastName: "Birnbaum", role: "translator" }, { firstName: "Thi Thi", lastName: "Aye", role: "translator" } ], pubDate: { year: 2008 }, publisher: "Hyperion Books", location: "New York", meta: { sortKey: "text" } },
+      { id: "nunuyi-1994-pyon", type: "book", title: "ပြုံး၍လည်းကန်တော့ခံတော်မူပါ ရယ်၍လည်းကန်တော့ခံတော်မူပါ", contributors: [ { firstName: "Nu Nu", lastName: "Yi (Inwa)", role: "author" } ], pubDate: { year: 1994 }, location: "Yangon", meta: { sortKey: "text" } }
     ]
   },
   {
@@ -919,19 +908,95 @@ export const modTradNovels = [
     author: "Clarisse Ratsifandrihamanana",
     group: {people: "Merina", language: "Malagasy", country: "Madagascar"},
     info: [
-      `<i>Lohataona sy ririnina</i> is a Malagasy-langauge novel published posthumously in 2007 by Librairie Mixte.`,
-      `<b>CLARISSE RATSIFANDRIHAMANANA</b>, born in Fenoarivo, Madagascar in 1926, was a prolific writer of poetry, novels, and essays in the Malagasy language, publishing 29 works with more still unpublished. Her literary style is noted for its diversity in both themes and formats.`
+      `<i>Lohataona sy ririnina</i> is a Malagasy-langauge novel published posthumously in 2007 by Librairie Mixte. It is a story the author brings to her descendants to describe the journey of life and the challenges of love—the love that makes us beautiful… but also the love that hurts the heart and moves the soul.`,
+      `<b>CLARISSE RATSIFANDRIHAMANANA</b>, born in Fenoarivo, Madagascar in 1926, was a prolific writer of poetry, novels, and essays in the Malagasy language, publishing 29 works with more still unpublished. Her literary style is noted for its diversity in both themes and formats. The writings she left behind are the treasure and heritage of 11 generations of Malagasy.`
     ],
     excerpt: [
-      `What will happen to this matter? My father and mother insist on not consummating our marriage. I am beginning to worry and need to stay awake.`,
-      `“Work first, my God,” said my mother, “for if you hurry, you will not...”`,
-      `“You see,” he said, “he knows you’ve completed a high school education, he knows you’ll have money to spend ... these types will never hesitate to find any way to support you. And believe me, doctors are good at that, my child.” I’d rather not answer him. I know what I’ll do, I know what I’ll be.`
+      `<v>“Yes, there will be winter, the leaves will wither.</v><v>There will be spring full of flowers…”</v>`,
+      `<...>`,
+      `If I was nearly kept awake tonight, it was for one overwhelming reason: I had just come home from work, and the rain was heavy, pouring relentlessly. Our yard had turned to mud, making my shoes heavy, so I took them off at the threshold... I had the house keys, so I unlocked the door. I carefully picked up my shoes and placed them in the corner of the hallway. I closed the door behind me. I arrived home early today, unlike other days.`,
+      `The drumming of the rain on the tin roof was deafening, so even if I had clomped up the stairs in my shoes, my ascent wouldn't have been heard at all.`,
+      `When I entered our room, I noticed my journal was in her hands. I instantly recognized its bluish cover, slightly larger than a student’s notebook. My heart skipped a beat. She was incredibly quick, appearing completely unfazed as she slipped my private writings into her sewing basket.`,
+      `She was already in her nightwear, sitting on the edge of the bed. Her legs were bare, revealing a glimpse of her smooth, shapely thighs. I looked at her curly hair, slightly messy and cut short at the top, half-covering her forehead like waves of a dark sea.`,
+      `Her deep eyes locked onto me boldly... a gaze so confident, not at all like someone who had just stolen my secrets.`,
+      `Her face was bright and cheerful, but—whether it was just my imagination or not—there was a strange hint of a smile on her thin lips, lips as luscious as a tree-ripened peach... It was that smile that mocked my trust and took advantage of my innocence.`,
+      `She asked, as she did every day, what news and gossip there was outside, before lazily standing up, covering her nightgown with a pink robe, tying the knot at her neck, and slipping into reddish woolen slippers.`,
+      `She stood in front of the mirror, and I could see her tall, slender silhouette. I knew she could see me watching her every move. She knew I was utterly bewildered... She smiled at me through the mirror. I quickly averted my gaze... letting it fall right onto her sewing basket. I ate my dinner half-heartedly, wanting nothing to do with exchanging words with her.`,
+      `I could not sleep. Everything written in my journal dances before me. It is in her hands. There are certain lines I thought I had forgotten, yet here they are, surging up from the depths where I buried them, lashing at my thoughts. I am ashamed. Angry...`,
+      `In her hands is the book of my life, which began the very moment I first saw her. I dare not snatch it back, leaving my story completely exposed! Blazing tongues of fire illuminate what I wrote there, and my mind's eye reads it... without missing a single word.`,
+      `<...>`,
+      `PART ONE: <+><i>Izy</i>[Him/her/them; singular and plural neuter third-person pronoun]</+>`,
+      `I saw a girl who completely caught my eye. Let's just say she only caught my eye for now, because I cannot yet say whether my heart was struck as well or not.`,
+      `The truth is this: she will not leave my sight. To distract myself, I read a book, but my reading does not progress at all. She is right there, between my eyes and the text. I smoke a cigarette: her face and her figure swirl together with the smoke, and when the smoke clears... she is still right there. I am so captivated that I almost burned my fingertips because my cigarette was completely finished, yet I didn't even realize it.`,
+      `I long to see her again. It has been some time now since I first saw her, and my heart still flutters every single time we cross paths. Even if she is not yet enveloped by my love, I must admit she has already completely captured my gaze.`,
+      `The way she walks? This girl is so graceful in her movements... Her gaze: stealing fleeting glances rather than a fixed stare... Her smile: just the faintest hint.`,
+      `<...>`,
+      `I am perpetually lost in daydreams: who is this girl I keep crossing paths with, and what exactly is it about her that draws me, making me long to see her?`,
+      `I am here at the full bloom of my youth, at the budding of love... Budding? I would be lying if I said this was the first time I have ever desired a girl. No! I am not a reckless young man, yet I know how to value a woman’s beauty. Neither do I intend to dedicate myself to a lifetime of bachelorhood. I look favorably upon building a home, and I accept the truth of the words: “It is not good for man to be alone; I will make a partner suitable for him.” I favor it, yes—but I am in no rush.`,
+      `<...>`,
+      `I note now that she is on her way to school when she frequently crosses paths with me; her bag is always with her. It is a little before eight o'clock when she passes by the Andohalo garden. She is heading uphill, while I am heading down. I am currently at the very end of my academic year.`,
+      `She seems to consume my thoughts too much, so I intentionally tried to avoid crossing paths with her to give myself space to reflect. I tried to ignore her existence, tried not to glance at my watch as it ticked slowly closer... closer to eight... Yet, the five days without seeing her felt like an eternity, and my feet naturally guided themselves—instead of heading down Ambatoborodamba, I was drawn to walk straight down to Andohalo.`,
+      `I smiled at her, and she gave a faint smile... just a tiny one, as fleeting as a stray cloud drifting through the scorching heat of spring... A small smile... just a little one, like a blossom unexpectedly found in the dead of winter. The wind blows the former away and it is gone; the frost claims the latter and it withers.`,
+      `I felt completely embarrassed, believing she was amused by my foolishness, laughing at and mocking me as someone who just greets total strangers!`,
+      `Do I not know her? Indeed, I already know how to distinguish her from a crowd, just as I would know how to tell a lily apart from wild weeds, or how to point out the morning star among the vast multitude of stars. The changing colors of her dress will never stop me from recognizing her silhouette from afar.`,
+      `<...>`,
+      `Has love entered my life? Has it kindled its fire, much like a mother lights the morning fire in anticipation of feeding her family? How can the arrow of love pierce deep into my heart from just a single, fleeting encounter? I never imagined loving a girl met by pure chance at a crossroads. A scent carried by a random breeze might instantly captivate the senses, but I always thought of love differently: it is a fruit to be nurtured until it ripens, a foundation built with calm and patience.`,
+      `Right before my eyes are the girls who go to school with my younger sister. There is also that classmate of mine, quick-witted, a perfect match for my intellect, whom my heart could easily desire. There are so many girls at my church, sharing my faith and brightening my Sundays. Many of them come from good, honorable families. Could my soulmate not be found among one of them? I would only be spoiled for choice if I truly wished to take a wife... Yet, perhaps she draws me the way all mysteries do, like the allure of an unknown fruit, bursting with juice and irresistible to the taste.`,
+      `<...>`,
+      `I greeted her today, and she returned my greeting. Looking somewhat surprised but not unkindly, she gave just a slight nod of her head. I want to hear her voice, to get to know her better, to know her name, what she studies, and the day she was born. I want to caress her hair, and I want to catch the scent of her skin, which I already know is fragrant. I want to hold her hand, I want to clasp her fingers... This is as far as I want to go for now, before I consider whether I might truly love her or not.`,
+      `Yes, many girls have crossed my mind and caught my attention, yet none have truly captured my heart. There was once one who almost made me fall, but as we met more often and I saw how shallow her conversation was, I stepped back without any regret. For let it be said that I am an educated young man, with a mind that seeks deeper understanding.`,
+      `<...>`,
+      `She agreed to converse with me today, and I was wrong to believe that a woman can be divided into pieces, as if to say, “I love her figure, but I will hate her voice.” My belief has completely changed; she is whole and indivisible, and I love her just as she is. It is her entirety that makes me love her all the more, like the perfect union of the moon and the sky. It is not just her swaying hair, or her calm and deep gaze, or her shapely legs, or her low and resonant voice, or her flawless, golden complexion that I love—it is her.`,
+      `<...>`,
+      `In love with her? It is too soon for me to say that already. How does love come to be? Does it simply blow wherever it pleases, like a wind of unknown origin? Did the Spirit not choose before proclaiming, “This is my beloved Son, in whom I am well pleased!”? Is love not a seed nurtured by the earth and the warmth, waiting for the rain to fall so it may sprout? That is the true law of its beginning, and that is how I have viewed love until now. If I ever looked at a girl before, it was because I knew she would not be a stranger to my life—someone from a well-known family, right down to her ancestral roots, and one who would surely be approved by my parents.`,
+      `Now, my principles are shaken. This is the truth: love can strike suddenly, impossible to evade, like a sudden volcanic eruption at an unexpected moment, consuming everything in its path, or like a bolt of lightning on a clear day striking down whatever it hits. Yes, I have been caught by the power of love; I do not know where it came from, yet it has completely overcome me. I am spellbound, barely master of myself... I am in love... That is all I know.`
     ],
     bioURL: "https://en.wikipedia.org/wiki/Clarisse_Ratsifandrihamanana",
     infoURL: "https://www.google.com/books/edition/Lohataona_sy_ririnina/e9UiAQAAMAAJ",
     textURL: "",
     ref: [
-      {id: "ratsifandrihamanana-1964", type: "book", title: "Lohataona sy Ririnina", contributors: [{firstName: "Clarisse", lastName: "Ratsifandrihamanana", role: "author"}], pubDate: {year: 1964}, publisher: "Imprimerie Nationale", location: "Antananarivo", meta: {sortKey: "text"}}
+      {id: "ratsifandrihamanana-1970", type: "book", title: "Lohataona sy Ririnina", contributors: [{firstName: "Clarisse", lastName: "Ratsifandrihamanana", role: "author"}], pubDate: {year: 1970}, publisher: "Imprimerie Nationale", location: "Antananarivo", meta: {sortKey: "text"}}
+    ]
+  },
+  {
+    id: "OCMSMTN",
+    title: {original: "Bumi Manusia", translation: "This Earth of Mankind"},
+    author: "Pramoedya Ananta Toer",
+    group: {people: "Javanese", language: "Indonesian", location: "Java, ID"},
+    info: [
+      `Minke is a young Javanese student of great intelligence, sensitivity, and ambition. The son of a noble Javanese, he moves easily among the Dutch and their ideas and language but is prevented from enjoying their rights. He also falls desperately in love with the beautiful Indo-European Annelies, and it is through her and her extraordinary family that Minke finds the strength to embrace his world—the world of Indonesia—and all its beauty and possibility, brutality and anger.`,
+      `<b>PRAMOEDYA ANANTA TOER</b> was born on the island of Java in 1925. He was imprisoned first by the Dutch for his role in the Indonesian revolution, then by the Indonesian government as a political prisoner. Many of his works were written during this period, including the <i>Buru Quartet</i>, which was conceived in stories the author told to other prisoners during his confinement on Buru Island.`
+    ],
+    excerpt: [
+      `People called me Minke.`,
+      `My own name... for the time being I need not tell it. Not because I’m crazy for mystery. I’ve thought about it quite a lot: I don’t yet really need to reveal who I am before the eyes of others.`,
+      `In the beginning I wrote these short notes during a period of mourning: She had left me, who could tell if only for a while or forever? (At the time I didn’t know how things would turn out.) That eternally harassing, tantalizing future. Mystery! We will all eventually arrive there willing or unwilling, with all our soul and body. And too often it proves to be a great despot. And so, in the end, I arrived too. Whether the future is a kind or a cruel god is, of course, its own affair: Humanity too often claps with just one hand.`,
+      `Thirteen years later I read and studied these short notes over again. I merged them together with dreams, imaginings. Naturally they became different from the original. Different? But that doesn’t matter!`,
+      `And here is how they turned out.`,
+      `I was still very young, just the age of a corn plant, yet I had already experienced modern learning and science: They had bestowed upon me a blessing whose beauty was beyond description.`,
+      `The director of my school once told my class: Your teachers have given you a very broad general knowledge, much broader than that received by students of the same level in many of the European countries.`,
+      `Naturally this breast of mine swelled. I’d never been to Europe, so I did not know if the director was telling the truth or not. But because it pleased me, I decided to believe him. And, further, all my teachers had been born and educated in Europe. It didn’t feel right to distrust my teachers. My parents had entrusted me to them. Among the educated European and Indo communities, they were considered to be the best teachers in all of the Netherlands Indies. So I was obliged to trust them.`,
+      `This science and learning, which I had been taught at school and which I saw manifested in life all around me, meant that I was rather different from the general run of my countrymen. I don’t know. And that’s how it was that I, a Javanese, liked to make notes—because of my European training. One day the notes would be of use to me, as they are now.`,
+      `One of the products of science at which I never stopped marveling was printing, especially zincography. Imagine, people can reproduce tens of thousands of copies of any photograph in just one day: pictures of landscapes, important people, new machines, American skyscrapers. Now I could see for myself everything from all over the world upon these printed sheets of paper. How deprived had the generation before me been—a generation that had been satisfied with the accumulation of its own footsteps in the lanes of its villages. I was truly grateful to all those people who had worked so tirelessly to give birth to these new wonders. Five years ago there were no printed pictures, only block and lithographic prints, which gave very poor representations of reality.`,
+      `Reports from Europe and America brought word of the latest discoveries. Their awesomeness rivaled the magical powers of the gods and knights, my ancestors in the wayang shadow puppet theater. Trains—carriages without horses, without cattle, without buffalo—had been witnessed now for over ten years by my countrymen. And astonishment remains in their hearts even today. The distance from Betawi to Surabaya can be traveled in only three days! And they’re predicting it will soon take only a day and a night! A day and a night! A long train of carriages as big as houses, full of goods, and people too, all pulled by water power alone. If I had ever been so lucky to meet Stephenson, I would have made him an offering of a wreath of flowers, all orchids. A network of railway tracks splintered my island, Java. The trains’ billowing smoke colored the sky of my homeland with black lines, which faded into nothingness. It was as if the world no longer knew distance—it too had been abolished by the telegraph. Power was no longer the monopoly of the elephant and the rhinoceros. They had been replaced by small manmade things: nuts, screws, and bolts.`,
+      `And over there in Europe, people had begun making even smaller machines, with even greater power, or at least with the same power as steam engines. Indeed, not with steam—with oil.`,
+      `There were also vague reports saying that a German had made a vehicle that worked by electricity. Oh Allah, and I couldn’t really understand what electricity was.`,
+      `The forces of nature were beginning to be changed by man and put to his service. People were even planning to fly like the shadow puppet character Gatotkaca, like Icarus. One of my teachers had said: Just a little while longer, just a little while, and people will no longer have to force their bones and squeeze out their sweat for so little result. Machines will replace all and every kind of work. People will have nothing to do except enjoy themselves. You are fortunate indeed, my students, he said, to be able to witness the beginning of the modern era here in the Indies.`,
+      `Modern! How quickly that word had surged forward and multiplied itself like bacteria throughout the world. (At least, that is what people were saying.) So allow me also to use this word, though I still don’t fully understand its meaning.`,
+      `In short, in this modern era tens of thousands of copies of any photo could be reproduced each day. And the important thing was there was one of these that I looked at more often than any other: a photo of a beautiful maiden, rich, powerful, glorious, one who possessed everything, the beloved of the gods.`,
+      `The rumors, whispered furtively among my school friends, were that even the richest bankers in the world had no chance of courting her. Handsome and manly nobility scrambled head over heels just to be noticed by her. Just to be noticed!`,
+      `Whenever I had nothing to do, I would gaze at her face while supposing how it would be to court her. How would it be! And how high, too, was her station. And how far away she was, nearly twenty thousand kilometers from where I was: Surabaya. One month’s sail by boat across two oceans, five straits, and through one canal. Even then there’d be no certainty of being able to meet her. I didn’t dare speak my feelings to a single soul. They would have laughed at me and called me mad.`,
+      `At the post offices, so rumor was also whispered, letters were occasionally received proposing marriage to this maiden who lived so far away and so high above. None ever reached her. Even if I had been crazy enough to try, it would have been just the same: The post officials would have only kept the letter for themselves.`,
+      `And that beloved of the gods was the same age as me: eighteen. We were both born in the same year: 1880. Only one figure shaped like a stick, the others roundish, like miscast marbles. The day and the month were also the same: 31 August. If there were any differences, they were only the hour and sex. My parents never noted down the time of my birth. And I didn’t know the hour of her birth. As for difference in sex, I was a male, she was a female. And that bewildering difference in time: When my island was blanketed in the darkness of night, her land was lit with sunshine. When her country was embraced by the blackness of night, my island shone brightly under the equatorial sun.`,
+      `My teacher, Magda Peters, forbade us to believe in astrology. It was nonsense, she said. Thomas Aquinas, she said, once saw two people who were born in the same year, in the same month, on the same day and at the same hour, even in the same place. The joke played by astrology was that one became a great landowner and the other his slave.`,
+      `Indeed I don’t believe in astrology. How could anyone believe in it? It has never lit the way for progress in science and in learning. And it demands of us that we submit to its predictions. There is nothing else we can do except to throw it into the pig’s slops bucket. Once I had my fortune told, just for fun. My horoscope was turned over and over. The fortune-teller opened her mouth. She had two gold teeth: If sir is patient, she said, he will surely meet the maiden. So I just prefer to trust my intellect. Even with the patience of all mankind, I would never meet her.`,
+      `I put my trust in scientific understanding and in reason. With these, at least, there are certainties that can be grasped.`
+    ],
+    bioURL: "https://en.wikipedia.org/wiki/Pramoedya_Ananta_Toer",
+    infoURL: "https://en.wikipedia.org/wiki/This_Earth_of_Mankind",
+    textURL: "",
+    ref: [
+      {id: "toer-1980", type: "book", title: "Bumi Manusia", contributors: [{firstName: "Pramoedya Ananta", lastName: "Toer", role: "author"}], url: "https://archive.org/details/thisearthofmanki0000toer_g3i3", pubDate: {year: 1980}, publisher: "Hasta Mitra", location: "Jakarta", meta: {sortKey: "text"}}
     ]
   },
   {
@@ -1065,7 +1130,7 @@ export const stirrPoetry = [
     ]
   },
   {
-    id: "AFEASTP",
+    id: "AFNESTP",
     title: { original: "𐒖𐒐𐒐𐒗𐒕𐒐 𐒆𐒚𐒑𐒖𐒕", transliteration: "Alleyl dumay", translation: "As night falls" },
     meta: { piece: true },
     author: "Raage Ugaas",
@@ -1084,6 +1149,22 @@ export const stirrPoetry = [
       { id: "orwin-2022-language-sound-raage-ugaas", type: "journal_article", title: "Language and its sound in ‘Allayl Dumay’ by Raage Ugaas Warfaa", contributors: [ { firstName: "Martin", lastName: "Orwin", role: "author" }, { firstName: "Raage", lastName: "Ugaas Warfaa", role: "subject/poet" } ], pubDate: { year: 2022 }, url: "https://www.ethnorema.it/wp-content/uploads/18-06-Orwin.pdf", publisher: "Ethnorema", location: "Italy / Somalia", medium: "PDF / Scholarly Journal Article", meta: { notes: "A technical linguistic analysis of the poem 'Allayl Dumay'. Orwin examines the interplay between Somali phonology and the 'gabay' meter, focusing on alliteration and the specific weight of long vs. short syllables. It bridges the gap between oral performance and formal literary scansion.", grade: "C", tags: ["Somali", "Raage Ugaas", "Martin Orwin", "Phonology", "Alliteration", "Gabay", "Quantitative Meter", "Oral Literature"] } },
       { id: "somalinet-2012-guudmar-raage-ugaas", type: "forum_post", title: "The use of guudmar In Somali poems", contributors: [ { firstName: "", lastName: "metamorphosis", role: "author/forum member" }, { firstName: "Raage", lastName: "Ugaas", role: "subject/poet" } ], pubDate: { year: 2012, month: 4, day: 25 }, url: "https://somalinet.com/forums/viewtopic.php?t=304369#gsc.tab=0", publisher: "SomaliNet Forums", location: "Ogaden - Soomaali Galbeed / Digital", medium: "Digital Forum Thread", meta: { notes: "An informal but culturally vital record detailing 'guudmar' (allegory) in Somali oral tradition. It recounts how Raage Ugaas used coded verbal messages to communicate his starvation, and how his father replied with a similarly coded message that functioned as a tamper-evident seal, exposing the messenger's theft of the food in transit.", grade: "B", tags: ["Somali", "Guudmar", "Raage Ugaas", "Oral Tradition", "Allegory", "Cryptography", "Horn of Africa", "Digital Diaspora"] } }
     ],
+  },
+  {
+    id: "AFEASTP",
+    title: { original: "TBD", translation: "TBD" },
+    meta: { piece: true },
+    author: "TBD",
+    group: {people: "Sandawe", language: "Sandawe", countrypn: "Tanzania"},
+    info: [
+      ``,
+      ``
+    ],
+    excerpt: [``],
+    infoURL: [""],
+    mediaURL: [""],
+    textURL: "",
+    ref: [],
   },
   {
     id: "AFSOSTP",
@@ -1735,6 +1816,49 @@ export const stirrPoetry = [
     ]
   },
   {
+    id: "OCMSSTP",
+    title: {original: "Ɛr cu:o:", translation: "Clean the place for dancing"},
+    intermediary: "Boa Senior",
+    group: {people: "Bo", language: "Aka-Bo", location: "Andaman Islands, IN"},
+    info: [
+      `Here are poetic works sung by native speakers of Andamanese languages. The translations provided are from Aka-Bo speaker Boa Senior taken in 2005 and Aka-Bea leader Jambu in 1865. Video clips of performers singing in the Järawa and Öñge poetic traditions are given as well.`
+    ],
+    excerpt: [
+      `<b>Boa’s songs</b>`,
+      // `<i>5.</i>`,
+      `His face has become thin.`,
+      // `<sp><i>32.</i>`,
+      `Bringing things, he goes all alone.<br>He is helped by his wife as he has to cross a canal.`,
+      // `<sp><i>6.</i>`,
+      `Rain-water is flowing heavily down into the canals.`,
+      // `<sp><i>7.</i>`,
+      `You have been sitting folding thin arms around your knees.<br>In rain, you have been sitting like this.`,
+      // `<sp><i>8.</i>`,
+      `You forgot what I asked you to do during the night.`,
+      // `<sp><i>10.</i>`,
+      `Make the place as clean as your face for dancing.`,
+      // `<sp><i>11.</i>`,
+      `I am getting tired from all the work.<br>My hands are burning, aching.`,
+      // `<sp><i>29.</i>`,
+      `Hands are not reaching the fruits on the tree.`,
+      // `<sp><i>30.</i>`,
+      `Dark clouds are pouring down irrespective of places.`,
+      `<...>`,
+      `<b>Jambu’s song</b>`,
+      `You are sad at heart,<br>gazing there at the sky’s surface<br>gazing at the ripple on the sky’s surface,<br>leaning on the bamboo spear.`
+    ],
+    infoURL: "",
+    mediaURL: ["https://youtu.be/6LukHkYnOi4","https://youtu.be/zU8NH25MGjQ","https://youtu.be/7mmbGtY79Mc"],
+    textURL: "",
+    coordinates: {x: 92.9333, y: 12.9333, name: "Mayabunder"},
+    ref: [
+      { type: "article", title: "Songs That Won’t Be Heard Again: Translations from the Last Speaker", contributors: [ { lastName: "Boa Sr.", role: "author" }, { firstName: "Alok Kumar", lastName: "Das", role: "author" } ], pubDate: { year: 2015, month: 5, day: 31 }, url: "https://www.researchgate.net/publication/371164124_Songs_That_Won't_Be_Heard_Again_Translations_from_the_Last_Speaker", publisher: "International Journal of Translation", location: "Jazan, Saudi Arabia", volume: "27", issue: "1-2", pages: { start: "91", end: "111" }, meta: { grade: "B" } },
+      { id: "man-1885-aboriginal", type: "book", title: "On the Aboriginal Inhabitants of the Andaman Islands", shortTitle: "Aboriginal Inhabitants of the Andaman Islands", contributors: [ { firstName: "Edward Horace", lastName: "Man", role: "author" }, { firstName: "A. J.", lastName: "Ellis", role: "contributor" } ], pubDate: { year: 1885 }, publisher: "Royal Anthropological Institute", location: "London", url: "https://archive.org/details/b24764413/page/68/mode/2up", meta: { grade: "D" } },
+      { id: "abbi-2011-dictionary", type: "book", title: "A Dictionary of the Great Andamanese Language: English-Great Andamanese-Hindi", shortTitle: "Dictionary of the Great Andamanese Language", contributors: [ { firstName: "Anvita", lastName: "Abbi", role: "author" } ], pubDate: { year: 2011 }, publisher: "Ratna Sagar", location: "New Delhi", isbn: "9789350361252", medium: "[Book with CD-ROM]", meta: { grade: "C" } },
+      { id: "sreenathan-2001-jarawas", type: "book", title: "The Jarawas: Language and Culture", shortTitle: "The Jarawas: Language and Culture", contributors: [ { firstName: "M.", lastName: "Sreenathan", role: "author" } ], pubDate: { year: 2001 }, publisher: "Anthropological Survey of India", location: "Kolkata", isbn: "9788185579628", meta: { grade: "C" } }
+    ]
+  },
+  {
     id: "OCMLSTP",
     title: {original: "Arosi Songs & Incantations"},
     intermediary: "John Saunana",
@@ -1840,10 +1964,29 @@ export const cultFeatFilms = [
     color: "#8d796e"
   },
   {
+    id: "AFNECFF",
+    title: { original: "በግ", transliteration: "Begi", translation: "Lamb" },
+    year: 2015,
+    group: {people: "Amhara", language: "Amharic", country: "Ethiopia"},
+    info: [
+      `<i>Lamb</i> tells the story of`,
+      ``
+    ],
+    infoURL: [""],
+    watch: ["https://www.kanopy.com/en/product/lamb","https://www.hoopladigital.com/title/16147085","https://www.amazon.com/gp/video/detail/B0GGZ9ZJXN","https://tv.apple.com/us/movie/lamb/umc.cmc.2qbya5up8e8naromvzixbvkfa"],
+    trailer: "https://youtu.be/fS9kpcmO9Jo",
+    coordinates: {x: 39.6333, y: 11.1333, name: "Kissoye Village"},
+    runtime: 94,
+    genre: ["Drama","Coming-of-Age"],
+    tags: [""],
+    color: "#a5b566",
+    ref: []
+  },
+  {
     id: "AFEACFF",
     title: {original: "Supa Modo"},
     year: 2018,
-    group: {language: "Swahili", country: "Kenya"},
+    group: {people: "Kikuyu", language: "Swahili", country: "Kenya"},
     info: [
       `Nine-year-old Jo loves action films and dreams of being a superhero. Her biggest wish: to make a film and star in it. In her fantasy she can forget that she is terminally ill. When Jo’s sister can no longer bear seeing the cheerful girl spend her precious remaining time in bed, she encourages Jo to believe in her magic powers, and the whole village to make Jo’s dream a reality.`,
       `This moving drama by Kenyan filmmaker Likarion Wainaina, created as part of a master class hosted by the German-Kenyan production collective One Fine Day Films/Ginger Ink, is about the power of the imagination.`
@@ -2441,6 +2584,24 @@ export const cultFeatFilms = [
     genre: ["Fantasy","Myth","Drama"],
     tags: [""],
     color: "#a69577"
+  },
+  {
+    id: "OCMSCFF",
+    title: {original: "Paglipay", translation: "Crossing"},
+    year: 2016,
+    group: {people: "Aeta", language: "Sambal/Tagalog", country: "Philippines"},
+    info: [
+      `is`,
+      `Dir/Scr`
+    ],
+    infoURL: "",
+    watch: ["https://vimeo.com/ondemand/paglipay"],
+    trailer: "https://youtu.be/Zhpl4s-B0QQ",
+    coordinates: {x: 119.9612, y: 15.3584, name: "Zambales"},
+    runtime: 98,
+    genre: ["Romance","Drama"],
+    tags: [""],
+    color: "#83527a"
   },
   {
     id: "OCMLCFF",
