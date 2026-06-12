@@ -35,6 +35,24 @@ export const modTradNovels = [
     ]
   },
   {
+    id: "AFNEMTN",
+    title: {original: "የሽነጋ መንደር", transliteration: "Yäshinäga Menideri", translation: "Shinega’s Village"},
+    author: "Sahle Sellassie",
+    group: {people: "Gurage", language: "Chaha", country: "Ethiopia"},
+    info: [
+      ``
+    ],
+    excerpt: [
+      ``
+    ],
+    infoURL: "https://www.google.com/books/edition/The_Strange_Bride/Orb4rPhlyp4C",
+    bioURL: "https://en.wikipedia.org/wiki/Grace_Ogot",
+    textURL: "",
+    ref: [
+      { id: "sellassie-1964-shinega", type: "book", title: "Shinega’s Village: Scenes of Ethiopian Life", contributors: [ { firstName: "Sahle", lastName: "Sellassie", role: "author" }, { firstName: "Wolf", lastName: "Leslau", role: "translator" } ], pubDate: { year: 1964 }, publisher: "University of California Press", location: "Berkeley", meta: { sortKey: "text" } }
+    ]
+  },
+  {
     id: "AFEAMTN",
     title: {original: "Miaha", translation: "Strange Bride"},
     author: "Grace Ogot",
