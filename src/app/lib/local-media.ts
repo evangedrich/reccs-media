@@ -3626,7 +3626,7 @@ export const presMusDrama = [
       `<s>Sehun Taang—</s>`,
       `Of the multitudes of you gathered here, from whence have you journeyed? What are your names, and where do you originate?`,
       `<s>Hudoq Tonggaep—</s>`,
-      `Behold, these are the ones who come from <+><i>Apao Lagan</i>[epaue Legean, the ancestral spirit realm or mythical place of origin]</+>; those who come from the riverbed, those who come from the rocky mountains, and those who come from the deep wilderness. Yes, such are the origins of our arrival.`,
+      `Behold, these are the ones who come from <+>Apao Lagan[epaue Legean, the ancestral spirit realm or mythical place of origin]</+>; those who come from the riverbed, those who come from the rocky mountains, and those who come from the deep wilderness. Yes, such are the origins of our arrival.`,
       `<s>Hudoq Tonggaep—</s>`,
       `Yes, very well. I invite you to wait for a moment while I prepare a modest offering of food. After you have finished eating and drinking, please partake in <+>chewing betel nut and smoking[sign of hospitality and respect, serving to cement bonds between humans and spirits before the ritual task begins]</+>. Only then shall you assist in setting things right and come to our aid. You shall restore the harmony and prosperity of our lives, fulfill the needs of the community, and uplift the spirit of life.`,
       `<s>Hudoq Tonggaep—</s>`,
