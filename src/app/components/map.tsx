@@ -6,7 +6,7 @@ export function HoverMap({ currSubr, setCurrSubr, setHovered }: { currSubr: stri
     return (
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 720">
             {regionPolygons.map(itm => (
-                <path key={`hm_${itm.id}`} onClick={() => setCurrSubr(itm.id)} onMouseEnter={() => setHovered(itm.id)} onMouseLeave={() => setHovered("X")} fill={itm.color} fillOpacity="0.25" stroke={itm.color} strokeWidth="0" strokeLinejoin="round" d={itm.d} />
+                <path key={`hm_${itm.id}`} onClick={() => setCurrSubr(currSubr===itm.id ? "X" : itm.id)} onMouseEnter={() => setHovered(itm.id)} onMouseLeave={() => setHovered("X")} fill={itm.color} fillOpacity="0.25" stroke={itm.color} strokeWidth="0" strokeLinejoin="round" d={itm.d} />
             ))}
         </svg>
     )

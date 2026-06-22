@@ -60,7 +60,7 @@ export default function CollectionShelfItems({
 
     return (
         <div className="relative">
-            <div ref={scrollRef} onScroll={measure} style={{width:`calc((100vw - (68px * ${collections.length})) / 2)`}} className={`shrink-0 overflow-x-auto no-scrollbar overscroll-x-none h-full grid grid-rows-[repeat(auto-fill,minmax(16rem,1fr))] grid-flow-col auto-cols-[minmax(12rem,1fr)] gap-[2px] ${entries.length>0||true ? "bg-[var(--color-front)]" : "bg-[var(--color-back)]"} ${collections.length>1?"pr-[6px]":""} snap-x snap-mandatory`}>
+            <div ref={scrollRef} onScroll={measure} style={{width:`calc((100vw - (68px * ${collections.length})) / 2)`}} className={`shrink-0 overflow-x-auto overflow-y-hidden no-scrollbar overscroll-x-none h-full grid grid-rows-[repeat(auto-fill,minmax(16rem,1fr))] grid-flow-col auto-cols-[minmax(12rem,1fr)] gap-[2px] ${entries.length>0||true ? "bg-[var(--color-front)]" : "bg-[var(--color-back)]"} ${collections.length>1?"pr-[6px]":""} snap-x snap-mandatory`}>
                 {entries.length>=8 && entries.map(entry => (
                     <Link href={`/${entry.id}`} className="block bg-[var(--color-back)] snap-start group active:opacity-90" key={`${entry.id}_card`}>
                         <div className="shrink-1 w-full h-full hover:bg-[var(--color-mid)] px-4 flex flex-col gap-1 flex flex-col justify-center">

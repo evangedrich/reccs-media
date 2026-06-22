@@ -36,20 +36,29 @@ export const modTradNovels = [
   },
   {
     id: "AFNEMTN",
-    title: {original: "የሽነጋ መንደር", transliteration: "Yäshinäga Menideri", translation: "Shinega’s Village"},
+    title: {original: "የሺንጋ ቃያ", transliteration: "Yä-Šinga Qaya", translation: "Shinega’s Village"},
     author: "Sahle Sellassie",
     group: {people: "Gurage", language: "Chaha", country: "Ethiopia"},
     info: [
-      ``
+      /* `የሺንጋ መንደር = Yä-Šinga Mändär in standard Amharic`, */
+      `Based on the author’s own experiences being brought up in a small town in the Gurage Zone of rural Ethiopia, <i>Shinega’s Village</i> contrasts quiet village life with the intrusive modernity of Addis Ababa. Originally published in 1956 in the Chaha language, the novel was translated into English by Leslau Wolf in 1964.`,
+      `<b>SAHLE SELLASSIE BERHANE MARIAM</b> is a Gurage author who has written in the Chaha, Amharic, and English languages. His works include six novels, a memoir, and translations of five Western European classics.`
     ],
     excerpt: [
-      ``
+      `Kerwege, similarly shaken, stood up, leaned against the wall, and said in a low voice:`,
+      `“Zomo, who told you that I had given birth? Or did the news travel to Atat by the wind?”`,
+      `“My dear, I knew that you were due, and when I reached the village, I heard that you had delivered,” he said. “However, it's not kind of you to leave so early. Even if you weren't worried about yourself, you should have thought about this little boy of yours; you caught a cold in the morning!”`,
+      `Kerwege thought it would be cold outside because she had stayed indoors, but it was warm outside. The sky was clear. The grass outside had shaken off the dew and the smell had entered the house and was sweet. But inside the house it was dark. The door was closed so that she and her baby could not see the sun's rays.`,
+      `It was believed that if the sun's rays fell on them, they would get sick.`
     ],
     infoURL: "https://www.google.com/books/edition/The_Strange_Bride/Orb4rPhlyp4C",
     bioURL: "https://en.wikipedia.org/wiki/Grace_Ogot",
     textURL: "",
+    mediaURL: ["https://youtu.be/jGFERPgcnM0"],
     ref: [
-      { id: "sellassie-1964-shinega", type: "book", title: "Shinega’s Village: Scenes of Ethiopian Life", contributors: [ { firstName: "Sahle", lastName: "Sellassie", role: "author" }, { firstName: "Wolf", lastName: "Leslau", role: "translator" } ], pubDate: { year: 1964 }, publisher: "University of California Press", location: "Berkeley", meta: { sortKey: "text" } }
+      { id: "sellassie-1964-shinega", type: "book", title: "Shinega’s Village: Scenes of Ethiopian Life", contributors: [ { firstName: "Sahle", lastName: "Sellassie", role: "author" }, { firstName: "Wolf", lastName: "Leslau", role: "translator" } ], pubDate: { year: 1964 }, publisher: "University of California Press", location: "Berkeley", meta: { sortKey: "text" } },
+      { id: "kebede-2025-novelization", type: "chapter", title: "The Novelization of Orature in Ethiopian Village Novels", containerTitle: "Oral Literary Worlds: Location, Transmission and Circulation", contributors: [ { firstName: "Ayele", lastName: "Kebede", role: "author" } ], pubDate: { year: 2025 }, publisher: "Open Book Publishers", pages: { start: "113", end: "144" }, url: "https://doi.org/10.11647/obp.0405.03", meta: { sortKey: "info", grade: "A" } },
+      { id: "sellassie-2017-shinega-andemta", type: "webpage", title: "የሺንጋ መንደር (ልብወለድ) / Shinega's Village (Novel) [Amharic Excerpt]", containerTitle: "አንድምታ (Andemta)", contributors: [ { firstName: "ሣህለሥላሴ", lastName: "ብርሃነማርያም", role: "author" } ], pubDate: { year: 2017, month: 6, day: 9 }, url: "https://andemta.com/2017/06/09/%E1%8B%A8%E1%88%BA%E1%8A%95%E1%8C%8B-%E1%88%98%E1%8A%95%E1%8B%B0%E1%88%AD-%E1%88%8D%E1%89%A5%E1%8B%88%E1%88%88%E1%8B%B5/", meta: { sortKey: "text", grade: "A" } }
     ]
   },
   {
@@ -977,7 +986,7 @@ export const modTradNovels = [
     ]
   },
   {
-    id: "OCMSMTN",
+    id: "OCMRMTN",
     title: {original: "Bumi Manusia", translation: "This Earth of Mankind"},
     author: "Pramoedya Ananta Toer",
     group: {people: "Javanese", language: "Indonesian", location: "Java, ID"},
@@ -1170,19 +1179,21 @@ export const stirrPoetry = [
   },
   {
     id: "AFEASTP",
-    title: { original: "TBD", translation: "TBD" },
-    meta: { piece: true },
-    author: "TBD",
+    title: { original: "A ǁ’aaye twīnga ǀhime", translation: "They followed the bird and sang" },
+    intermediary: "Berta Kwelē",
     group: {people: "Sandawe", language: "Sandawe", countrypn: "Tanzania"},
     info: [
-      ``,
-      ``
+      `Poetry can be found in all manifestations of arts and culture, in storytelling, in dance, in ritual. The poem here comes embedded in a traditional story, recorded in July 1963 by Berta Kwelē, about a child raised by a bird. When the child came of age, the bird took the child from their home near a human community to a faraway place where lived every sort of bird. The people from the town, embarking on a search for the child, sing this song; its themes transcend the literal context of the story, speaking to the bewildering and cyclical experience of a desire for seeking out anything.`
     ],
-    excerpt: [``],
+    excerpt: [
+      `To <+>Swaare[the name of a pond, literally meaning ‘to coax’ or ‘to egg on by persuasion’]</+> all swirl <+>around and around[‘to circle round’ or ‘to whirl around like leaves caught in a whirlwind’; sudden whirlwinds are common during the dry season]</+><br>&emsp;&emsp;Now, all searchers go on and on.<br>To Swaare all swirl around and around<br>&emsp;&emsp;Now, all searchers go on and on.<br>Try all your very best then,<br>&emsp;&emsp;Now, all searchers go on and on.<br>Try all your very best then,<br>&emsp;&emsp;Now, all searchers go on and on.<br>The <+><i>habé</i>[baby carrier]</+>, bring it out<br>&emsp;&emsp;to take it round <+>Ringeringe[another place name, suggesting not an aimless swirling but instead going around the something definable like the boundaries of a field]</+>,<br>oh! to take it round Ringeringe,<br>oh! they took it round, round Ringeringe.`
+    ],
     infoURL: [""],
-    mediaURL: [""],
+    mediaURL: ["https://youtu.be/qgQuXYqcjqM?start=27","https://youtu.be/LN4ASG6PlGM"],
     textURL: "",
-    ref: [],
+    ref: [
+      { id: "ten-raa-1967-sandawe", type: "thesis", title: "Sandawe Oral Literature", contributors: [ { firstName: "Eric", lastName: "Ten Raa", role: "author" } ], pubDate: { year: 1967 }, publisher: "University of Oxford", location: "Oxford", url: "https://ora.ox.ac.uk/objects/uuid:37a72503-4b3b-4e71-a575-e96061c0aa7e", meta: { sortKey: "text", grade: "C" } }
+    ],
   },
   {
     id: "AFSOSTP",
@@ -1228,7 +1239,7 @@ export const stirrPoetry = [
     author: "Léopold Sédar Senghor",
     group: {people: "Serer/Fula", language: "French", country: "Senegal"},
     info: [
-      `<i>Nocturnes</i> is the only book of verse that Senghor published after becoming President of Senegal following his country’s independence in 1960. Senghor’s poetry was associated with Africa’s struggle for independence; it is perhaps logical that this volume seems to have marked the end of his career as a poet. ‘Songs for Signare’ are the eloquent love poems of a man who was once uncertain of his place in the world. The ‘Elegies’ are the easy, rhetorical, self-assured poems of the leader and the man who has reached his goal.`,
+      `<i>Nocturnes</i> is the only book of verse that Senghor published after becoming President of Senegal following his country’s independence in 1960. Senghor’s poetry was associated with Africa’s struggle for independence; it is perhaps logical that this volume seems to have marked the end of his career as a poet. The work is divided into two parts: ‘Songs for Signare’ are the eloquent love poems of a man who was once uncertain of his place in the world; the ‘Elegies’ are the easy, rhetorical, self-assured poems of the leader and the man who has reached his goal.`,
       `<b>LÉOPOLD SÉDAR SENGHOR</b>, born 1906 in what was then called French West Africa, was a prominent Senegalese poet, politician, and cultural theorist, renowned as a leading figure in the <i>négritude</i> movement. He served as the first president of Senegal from 1960 to 1980, guiding the nation through its early years of independence. Senghor’s work, both literary and political, explored themes of African identity, culture, and the relationship between the people of Africa and Europe.`
     ],
     excerpt: [
@@ -1468,7 +1479,7 @@ export const stirrPoetry = [
   },
   {
     id: "AMNESTP",
-    title: { original: "Min ngrere", translation: "Crocodile's chant" },
+    title: { original: "Min ngrere", translation: "Crocodile’s chant" },
     meta: { work: { original: "Nhiok", translation: "Nhiok" }, piece: true },
     intermediary: "Bemoti",
     group: {people: "Xikrin", language: "Mẽbêngôkre", location: "Pará, BR"},
@@ -1834,12 +1845,13 @@ export const stirrPoetry = [
     ]
   },
   {
-    id: "OCMSSTP",
+    id: "OCMRSTP",
     title: {original: "Ɛr cu:o:", translation: "Clean the place for dancing"},
     intermediary: "Boa Senior",
     group: {people: "Bo", language: "Aka-Bo", location: "Andaman Islands, IN"},
     info: [
-      `Here are poetic works sung by native speakers of Andamanese languages. The translations provided are from Aka-Bo speaker Boa Senior taken in 2005 and Aka-Bea leader Jambu in 1865. Video clips of performers singing in the Järawa and Öñge poetic traditions are given as well.`
+      `The translations of Andamanese poetic works provided are from Aka-Bo-language speaker Boa Senior taken in 2005 and Aka‑Bea leader Jambu in 1865. Video clips of performers singing in the Järawa and Öñge poetic traditions are given as well.`,
+      `The major stylistic feature of Andamanese poetry is its prosody, and word prefixes and suffixes can be dropped as needed to accommodate the rhythm of its meter. As such, cultivation in the distinctive features of refined language and culture are needed to supply the missing context and interpret the depth of the sentiment being expressed.`
     ],
     excerpt: [
       `<b>Boa’s songs</b>`,
@@ -1870,8 +1882,9 @@ export const stirrPoetry = [
     textURL: "",
     coordinates: {x: 92.9333, y: 12.9333, name: "Mayabunder"},
     ref: [
-      { type: "article", title: "Songs That Won’t Be Heard Again: Translations from the Last Speaker", contributors: [ { lastName: "Boa Sr.", role: "author" }, { firstName: "Alok Kumar", lastName: "Das", role: "author" } ], pubDate: { year: 2015, month: 5, day: 31 }, url: "https://www.researchgate.net/publication/371164124_Songs_That_Won't_Be_Heard_Again_Translations_from_the_Last_Speaker", publisher: "International Journal of Translation", location: "Jazan, Saudi Arabia", volume: "27", issue: "1-2", pages: { start: "91", end: "111" }, meta: { grade: "B" } },
+      { id: "kumar-2015-songs", type: "article", title: "Songs That Won’t Be Heard Again: Translations from the Last Speaker", contributors: [ { lastName: "Boa Sr.", role: "author" }, { firstName: "Alok Kumar", lastName: "Das", role: "author" } ], pubDate: { year: 2015, month: 5, day: 31 }, url: "https://www.researchgate.net/publication/371164124_Songs_That_Won't_Be_Heard_Again_Translations_from_the_Last_Speaker", publisher: "International Journal of Translation", location: "Jazan, Saudi Arabia", volume: "27", issue: "1-2", pages: { start: "91", end: "111" }, meta: { grade: "B" } },
       { id: "man-1885-aboriginal", type: "book", title: "On the Aboriginal Inhabitants of the Andaman Islands", shortTitle: "Aboriginal Inhabitants of the Andaman Islands", contributors: [ { firstName: "Edward Horace", lastName: "Man", role: "author" }, { firstName: "A. J.", lastName: "Ellis", role: "contributor" } ], pubDate: { year: 1885 }, publisher: "Royal Anthropological Institute", location: "London", url: "https://archive.org/details/b24764413/page/68/mode/2up", meta: { grade: "D" } },
+      { id: "portman-1898-notes", type: "book", title: "Notes on the Languages of the South Andaman Group of Tribes", contributors: [ { firstName: "M. V.", lastName: "Portman", role: "author" } ], pubDate: { year: 1898 }, publisher: "Office of the Superintendent of Government Printing, India", location: "Calcutta", url: "https://archive.org/details/in.ernet.dli.2015.12937", meta: { sortKey: "text", grade: "C" } },
       { id: "abbi-2011-dictionary", type: "book", title: "A Dictionary of the Great Andamanese Language: English-Great Andamanese-Hindi", shortTitle: "Dictionary of the Great Andamanese Language", contributors: [ { firstName: "Anvita", lastName: "Abbi", role: "author" } ], pubDate: { year: 2011 }, publisher: "Ratna Sagar", location: "New Delhi", isbn: "9789350361252", medium: "[Book with CD-ROM]", meta: { grade: "C" } },
       { id: "sreenathan-2001-jarawas", type: "book", title: "The Jarawas: Language and Culture", shortTitle: "The Jarawas: Language and Culture", contributors: [ { firstName: "M.", lastName: "Sreenathan", role: "author" } ], pubDate: { year: 2001 }, publisher: "Anthropological Survey of India", location: "Kolkata", isbn: "9788185579628", meta: { grade: "C" } }
     ]
@@ -1983,12 +1996,12 @@ export const cultFeatFilms = [
   },
   {
     id: "AFNECFF",
-    title: { original: "በግ", transliteration: "Begi", translation: "Lamb" },
+    title: { original: "ላምብ", transliteration: "Lamibi", translation: "Lamb" },
     year: 2015,
     group: {people: "Amhara", language: "Amharic", country: "Ethiopia"},
     info: [
-      `<i>Lamb</i> tells the story of`,
-      ``
+      `When his father must travel to Addis Ababa to look for work, a boy is sent to live with his distant relatives. He takes his pet sheep, but the upcoming holiday spells danger for his friend.`,
+      `Dir/Scr <b>YARED ZELEKE</b> left his native Ethiopia at age 10 to live with his father in the United States, where he received his training in filmmaking at New York University. For his first feature film, <i>Lamb</i>, he cast actors from traditional theater, locals from rural villages, and a clever lamb.`
     ],
     infoURL: [""],
     watch: ["https://www.kanopy.com/en/product/lamb","https://www.hoopladigital.com/title/16147085","https://www.amazon.com/gp/video/detail/B0GGZ9ZJXN","https://tv.apple.com/us/movie/lamb/umc.cmc.2qbya5up8e8naromvzixbvkfa"],
@@ -1998,7 +2011,9 @@ export const cultFeatFilms = [
     genre: ["Drama","Coming-of-Age"],
     tags: [""],
     color: "#a5b566",
-    ref: []
+    ref: [
+      { id: "ganjavie-2015-zeleke", type: "article", title: "An interview with Yared Zeleke, the director of the first Ethiopian film at Cannes", containerTitle: "Offscreen", contributors: [ { firstName: "Amir", lastName: "Ganjavie", role: "author" }, { firstName: "Yared", lastName: "Zeleke", role: "performer" } ], pubDate: { year: 2015, month: 2 }, volume: "19", issue: "2", url: "https://offscreen.com/view/interview-with-yared-zeleke", meta: { sortKey: "info", grade: "B" } }
+    ]
   },
   {
     id: "AFEACFF",
@@ -2183,7 +2198,10 @@ export const cultFeatFilms = [
     runtime: 82,
     genre: ["Poetic","Experimental"],
     tags: [""],
-    color: "#182111"
+    color: "#182111",
+    ref: [
+      { id: "ruiz-2022-desire", type: "article", title: "Desire Lines: Sky Hopinka’s Undisciplining of Vision", containerTitle: "Film Quarterly", contributors: [ { firstName: "Diana", lastName: "Flores Ruíz", role: "author" } ], pubDate: { year: 2022, month: 3, day: 1 }, volume: "75", issue: "3", pages: { start: "12", end: "25" }, url: "https://doi.org/10.1525/fq.2022.75.3.12", meta: { sortKey: "text", grade: "A" } }
+    ]
   },
   {
     id: "AMNWCFF1",
@@ -2604,13 +2622,13 @@ export const cultFeatFilms = [
     color: "#a69577"
   },
   {
-    id: "OCMSCFF",
+    id: "OCMRCFF",
     title: {original: "Paglipay", translation: "Crossing"},
     year: 2016,
     group: {people: "Aeta", language: "Sambal/Tagalog", country: "Philippines"},
     info: [
-      `is`,
-      `Dir/Scr`
+      `A teenage Aeta boy from Baytan village in Zambales makes a living from cutting down and burning trees and hunting on the foothills of Mt. Pinatubo. While working to sell food in town, he meets a university student from Manila.`,
+      `Dir/Scr <b>ZIG MADAMBA DULAY</b> is an independent filmmaker from a farming family with 11 children in rural Philippines. He uses media to depict stories from underrepresented groups in his country.`
     ],
     infoURL: "",
     watch: ["https://vimeo.com/ondemand/paglipay"],
@@ -2619,7 +2637,10 @@ export const cultFeatFilms = [
     runtime: 98,
     genre: ["Romance","Drama"],
     tags: [""],
-    color: "#83527a"
+    color: "#83527a",
+    ref: [
+      { id: "dulay-2022-tv-system", type: "webpage", title: "Interview with Zig Dulay: I was afraid of being eaten by the TV system", containerTitle: "Asian Movie Pulse", contributors: [ { firstName: "Zig", lastName: "Dulay", role: "performer" } ], pubDate: { year: 2022, month: 2 }, url: "https://asianmoviepulse.com/2022/02/interview-with-zig-dulay-i-was-afraid-of-being-eaten-by-the-tv-system/", meta: { sortKey: "info", grade: "B" } }
+    ]
   },
   {
     id: "OCMLCFF",
@@ -3589,6 +3610,45 @@ export const presMusDrama = [
     ]
   },
   {
+    id: "OCMRPMD",
+    title: {original: "Hudoq"},
+    century: null,
+    group: {people: "Dayak", language: "Bahau", country: "Borneo, ID"},
+    info: [
+      `Masked and clothed in betel nut and banana leaves, each performer in Hudoq represents a distinct deity associated with animal traits meant to rid the land of vermin and appease the spirits of the rice paddies. In other renditions, each character is itself a fantastical interpretation of the creatures that wish to destroy the crop, who after the culminating blessing of the harvest are chased away by two human-masked figures, restoring order and replinishing the land.`,
+      `Many of the performances of Hudoq in Indonesia today have foregone their ritual purpose in favor of a primarily aesthetic function, as the Indonesian government has encouraged its exhibition in East Kalimantan for tourists. Even so, ceremonies like the one celebrated in the Mahakam Ulu Regency’s Hudoq Pekayang Festival have shown that a balanced reintegration with Nugal rice planting practices and Lamin communal lifestyle is possible.`
+    ],
+    excerpt: [
+      `<s>Sehun Taang—</s>`,
+      `Yes, very well. I wish to ask, I wish to greet all of you Hudoq, regarding the purpose of your arrival, the purpose of your presence among us humans. What is the matter? Is there something amiss that brings you to us humans? Is there a condition that has affected our lives?`,
+      `<s>Hudoq Tonggaep—</s>`,
+      `This is the purpose of our arrival: we have seen the condition of life, the situation that has befallen humanity. Rice has turned into weeds, bananas have turned into wild bananas, sugarcane has turned into reeds; the fishes in the river and the wild boars in the forest have gone far away. The harmony of life is fractured, the spirit of the rice has been disturbed and has departed. Such is our observation of what humanity has endured.`,
+      `<s>Sehun Taang—</s>`,
+      `Of the multitudes of you gathered here, from whence have you journeyed? What are your names, and where do you originate?`,
+      `<s>Hudoq Tonggaep—</s>`,
+      `Behold, these are the ones who come from <+><i>Apao Lagan</i>[epaue Legean, the ancestral spirit realm or mythical place of origin]</+>; those who come from the riverbed, those who come from the rocky mountains, and those who come from the deep wilderness. Yes, such are the origins of our arrival.`,
+      `<s>Hudoq Tonggaep—</s>`,
+      `Yes, very well. I invite you to wait for a moment while I prepare a modest offering of food. After you have finished eating and drinking, please partake in <+>chewing betel nut and smoking[sign of hospitality and respect, serving to cement bonds between humans and spirits before the ritual task begins]</+>. Only then shall you assist in setting things right and come to our aid. You shall restore the harmony and prosperity of our lives, fulfill the needs of the community, and uplift the spirit of life.`,
+      `<s>Hudoq Tonggaep—</s>`,
+      `Here I wish to reach out, to grasp, I wish to gather all the necessities of life—to bring success, fortune, and prosperity into the life of the community. May all the fruits of their endeavors be gathered, directed, and achieved.`,
+      `I wish to begin this invocation from the direction of the rising sun. I wish to reach out with a hook, I wish to grasp with creeping vines, I wish to pull in with <+>thorns[imagery of hooked tools and thorny plants (like rattan or uncaria) represent physically “snagging” and pulling good fortune, blessings, and prosperity inward so it cannot escape]</+>—so that all goodness, fortune, prosperity, peace, and harmony may be collected and gathered into human life.`,
+      `One, two, three, four—cast out, thrown away, and discarded be all that is foul. Five, six—vanish be all wickedness. Seven—let it end here. Eight—may all good fortune multiply time and time again. Nine—vanish, disappear, perish, and be extinguished be all that brings pain, harm, and ruin to human life; let it vanish with the dark of night, wash away with the heavy clouds, fall silent with the dusk, and be carried away by the wind.`,
+      `Here we wish to reach out, to grasp from the direction of the setting sun, wishing to pull in and attain blessings, good fate, and true prosperity. And we wish to repel, cast away, eradicate, and eliminate the stains of life, disharmony, disaster, and misfortune. One, two, three, four, five, six—vanish, disappear, be completely extinguished. Seven, eight, nine—buried, crushed, and vanished be all that taints and harms.`,
+      `Here we wish to reach out, to grasp from the right side of the sun. Gather, assemble, and unite toward the place we hope for. May the grains of rice be plump and full; may the fishes and the wild boars come in droves, bringing an atmosphere of peace, harmony, and prosperity. One, two, three, four, five—multiply and come in multitudes! Six, seven, eight, nine—buried and released be misfortune and unrest, vanishing with the heavy clouds, disappearing with the wind.`,
+      `Here we wish to reach out, to grasp our hopes from the left side of the sun. We wish to repel, release, cast away, and ward off all disasters, losses, anxieties, and afflictions from destructive pests. We wish to break free from the conditions of life that cause unrest and suffocation. One, two, three, four—cast out, discarded, thrown away, flung far from life. Five, six, seven, eight, nine—buried in the silence of dusk, lost in the dark of night.`,
+      `Yes, let this be all for now. You are the ones who understand these greetings and words; you are the ones who help convey them in unbroken succession to the Almighty, to the spirits of our grandfathers and grandmothers in the realm beyond, the guardians and protectors of the universe.`
+    ],
+    infoURL: "",
+    mediaURL: ["https://youtu.be/LROXUgHTf-g?start=505","https://youtu.be/yN2HnK7ljZI","https://youtu.be/2Kpov1UKJcU?start=149",/*"https://youtu.be/MF4qdaaH95w",*/"https://youtu.be/AsZlxW4bk0Q"],
+    textURL: "",
+    ref: [
+      { id: "herjayanti-2014-makna", type: "thesis", title: "Makna Simbolik Tari Hudoq pada Upacara Panen bagi Masyarakat Suku Dayak Ga'ay Kabupaten Berau Kalimantan Timur", contributors: [ { firstName: "Risna", lastName: "Herjayanti", role: "author" } ], pubDate: { year: 2014 }, degree: "S1 Thesis", publisher: "Universitas Negeri Yogyakarta", location: "Yogyakarta", url: "https://eprints.uny.ac.id/16590/1/Risna%20Herjayanti%2010209241039.pdf", meta: { sortKey: "text", grade: "B" } },
+      { id: "alpert-2020-hudoq", type: "webpage", title: "Out of the Forest — Hudoq", containerTitle: "Art of the Ancestors", contributors: [ { firstName: "Steven G.", lastName: "Alpert", role: "author" } ], pubDate: { year: 2020, month: 4, day: 19 }, url: "https://www.artoftheancestors.com/blog/out-of-the-forest-hudoq", meta: { sortKey: "info", grade: "C" } },
+      { id: "saha-ghafur-2024-tourism", type: "article", title: "Tourism Policy Impact on Transforming Religious Traditions of Dayak a Case Study of the Hudoq Ceremony Tradition of the Dayak Bahau Tribe in Tourism Development, East Kalimantan, Indonesia", containerTitle: "Cogent Arts & Humanities", contributors: [ { firstName: "A. Hanief", lastName: "Saha Ghafur", role: "author" } ], pubDate: { year: 2024 }, volume: "11", issue: "1", url: "https://doi.org/10.1080/23311983.2024.2429938", meta: { sortKey: "info", grade: "B" } },
+      { id: "geroda-2024-komunikasi", type: "article", title: "Komunikasi Simbolik Dalam Upacara Ritual Hudoq Suku Dayak Bahau Umaq Luhat Desa Kelian Luar Kabupaten Kutai Barat Kalimantan Timur", containerTitle: "Digicom: Jurnal Komunikasi dan Media", contributors: [ { firstName: "Elvis Deventus", lastName: "Geroda", role: "author" }, { firstName: "Edelweis Puti", lastName: "Prima", role: "author" } ], pubDate: { year: 2024, month: 1 }, volume: "4", issue: "1", pages: { start: "23", end: "39" }, url: "https://journal.stikosa-aws.ac.id/index.php/digicom/article/view/768", meta: { sortKey: "info", grade: "A" } }
+    ]
+  },
+  {
     id: "OCMLPMD",
     title: {original: "Kesawaga"},
     century: 20,
@@ -3714,6 +3774,44 @@ export const foundRelTexts = [
     ref: [
       { id: "faulkner-2015", type: "book", title: "The Egyptian Book of the Dead: The Book of Going Forth by Day: The Complete Papyrus of Ani Featuring Integrated Text and Full-Color Images", contributors: [{lastName: "Faulkner", firstName: "Raymond O.", role: "author"}], pubDate: {year: 2015}, publisher: "Chronicle Books", meta: {sortKey: "text", grade: "B"} },
       { id: "allen-1974", type: "book", title: "The Book of the Dead or Going Forth by Day: Ideas of the Ancient Egyptians Concerning the Hereafter as Expressed in Their Own Terms", shortTitle: "The Book of the Dead", contributors: [ { firstName: "Thomas George", lastName: "Allen", role: "author" }, { firstName: "Elizabeth Blaisdell", lastName: "Hauser", role: "editor" } ], pubDate: { year: 1974 }, publisher: "The University of Chicago Press", location: "Chicago, Illinois", containerTitle: "Studies in Ancient Oriental Civilization", volume: "37", url: "https://isac.uchicago.edu/sites/default/files/uploads/shared/docs/saoc37.pdf", medium: "Monograph / Digital PDF", meta: { notes: "A comprehensive translation based on the recension of the 18th Dynasty. Published posthumously by the Oriental Institute.", grade: "C", tags: ["Ancient Egypt", "Funerary Texts", "Egyptology", "Primary Source"] } }
+    ]
+  },
+  {
+    id: "AFNEFRT",
+    title: {original: "Argaa-dhageettii", translation: "Seeing and Hearing"},
+    group: {people: "Oromo", language: "Oromo", religion: "Waaqeffannaa", location: "Oromia, ET"},
+    info: [
+      `Before the people could memorize the exact words set down in the first holy book given them by God, it was eaten by a <+>cow[this is why the Ragaas spiritual experts instead use “moora”, strings of fat on the interior of a cow’s stomach, to interpret all events that have or will happen]</+>. As a result, the rituals, proverbs, and prayers of Waaqeffannaa are passed down orally by <i>argaa-dhageettii</i>, hearing and seeing. This method allows for the perpetual enrichment of the religion, as opposed to its being weighed down by dogmatic doctrines. Life and living is dynamic and prone to change from one form to another, from one stage to another, from one <+><i>maraa</i>[history repeats itself, and all events that are happening today have already happened in the past and will continue to happen into the future with slight alterations; this is “maraa”]</+> to another in a continuous cycle, and so Waaqeffannaa is not inexorable but grows based on the concept of <i>argaa-dhageettii</i>.`
+    ],
+    excerpt: [
+      `O wonder! O wonder!<br>&emsp;&emsp;<i>What are the wonders?</i><br>The wonders are six:<br>The hornbill complains without being sick;<br>the plant <+><i>hiddi</i>[a little plant which produces flowers similar to the lily; it grows in thorny clusters, even in arid places and during the dry season; in Amharic it is called “imbabo”]</+> flourishes without needing nourishment;<br>the water runs without being urged;<br>the earth is fixed without pegs;<br>the heavens hold themselves up without supports;<br>in the firmament He has sown the <+>chickpeas[stars]</+> of heaven.<br>These things fill me with wonder.`,
+      `Let us all pray to God!`,
+      `O God, who has caused me to pass the day,<br>cause me to pass the night well!<br>&emsp;&emsp;<i>Cause us to pass the night well!</i>`,
+      `From the hungry one who grows angry,<br>from the satiated who grows proud,<br>O God, deliver me!<br>&emsp;&emsp;<i>O God, deliver us!</i>`,
+      `From the one who meddles with others’ affairs;<br>from the one who says, “you took, and now give,”<br>O God, deliver me!<br>&emsp;&emsp;<i>O God, deliver us!</i>`,
+      `From the one who says, “you saw, and now tell”;<br>from the one who says, “bear false testimony for me!”<br>O God, deliver me!<br>&emsp;&emsp;<i>O God, deliver us!</i>`,
+      `>>Wädaǧa 1-26 (EC137)`,
+      `<...>`,
+      `The ways by which God has passed,<br>who can ever see?<br>O edge of the lance!<br>God knows the mind of men.<br>The head is not combed,<br>unless, after it has been combed, it is oiled.<br>I shall not weary of speaking,<br>if by growing weary, I shall not fail to obtain.<br>We have prayed: when shall we ever find favor?`,
+      `>>Kara waq darbe 1-11`,
+      `<...>`,
+      `Of lord Tasamma!<br>“Come and kill!” he commands.<br>What gate shall be forbidden to me?<br>I have set aside the <+>golden earrings[gift an elephant hunter gives their wife as a sign of victory]</+>!<br>The vulture moves toward the corpses;<br>the <+>hornbill[during the dry season, the hornbill cries with a hollow note, like lamentation, imploring the rain to fall]</+> moves toward the rain;<br>the rash man moved and surpassed me.<br>He enters and keeps me from entering.`,
+      `The <+><i>balliesa</i>[a name hunters humbly call themselves after only a single victory, literally “waster”]</+> has ruined me;<br>he has covered my <i>ehad</i> with ashes;<br>he has made me like a widow.<br>The <i>balliesa</i> taking away the soot,<br>has swept and pulled it down.`,
+      `O my lord Tasamma,<br>king of the trench of Bonga,<br>husband of Alima, daughter of Abba Foggi,<br>in a dream my head bleeds;<br>perhaps I will anoint myself with butter.`,
+      `In the dream, I have climbed a tree;<br>perhaps you will buy a horse for me.`,
+      `In the dream, my shoulders bleed;<br>perhaps you will clothe me with the cloak of skin;<br>perhaps you will rise to speak with me;<br>perhaps you will clothe me with the shirt of silk.`,
+      `The king will rise to speak with me!`,
+      `>>Obo Gofte Tasamma 1-25`
+
+    ],
+    infoURL: [""],
+    mediaURL: ["https://youtu.be/nj4-xiXF5JQ"],
+    textURL: "",
+    ref: [
+      { id: "cerulli-1922-folk-literature", type: "article", title: "The Folk-Literature of the Galla of Southern Abyssinia", containerTitle: "Harvard African Studies", contributors: [ { firstName: "Enrico", lastName: "Cerulli", role: "author" } ], pubDate: { year: 1922 }, volume: "3", url: "https://seltzerbooks.com/cerulli.html", meta: { sortKey: "text", grade: "C" } },
+      { id: "sabaa-2006-daaniyaa", type: "book", title: "Daaniyaa", contributors: [ { firstName: "Maatii", lastName: "Sabaa", role: "author" } ], pubDate: { year: 2007 }, publisher: "Oromia Publishing Company", location: "Atlanta, Georgia", meta: { sortKey: "text", grade: "A" } },
+      { id: "erko-2019-revitalization", type: "article", title: "The Revitalization of Waaqeffannaa and Its Importance in Transforming Values of Humanness and Peace", containerTitle: "Oromo Studies Association 33rd Annual Conference", contributors: [ { firstName: "Asnake T.", lastName: "Erko", role: "author" } ], pubDate: { year: 2019, month: 7 }, location: "Finfinnee (Addis Ababa)", url: "https://www.waaqeffannaa.com/wp-content/uploads/2019/08/Revitalization-of-Waaqeffannaa-Asnake-T-Erko.pdf", meta: { sortKey: "info", grade: "A" } },
+      { id: "waaqeffannaa-argaa-dhageettii", type: "webpage", title: "Argaa-dhageettii - Website", containerTitle: "Waaqeffannaa", contributors: [ { firstName: "", lastName: "Waaqeffannaa", role: "author" } ], pubDate: { year: 2026 }, url: "https://www.waaqeffannaa.com/culture/argaa-dhageettii/", meta: { sortKey: "text" } }
     ]
   },
   {
@@ -4753,44 +4851,37 @@ export const foundRelTexts = [
   },
   {
     id: "ASSEFRT",
-    title: {original: "ᯇᯮᯘ᯲ᯖᯂ", transliteration: "Pustaha", translation: "Book of Magic"},
-    group: {people: "Batak", language: "Toba Batak", religion: "Ugamo Malim", location: "Sumatra, ID"},
+    title: {original: "ꪁꪫꪱꪣ ꪶꪕ ꪹꪣꪉ", transliteration: "Kwaam To Meuang", translation: "Story of the Country"},
+    group: {people: "Tai Dam", language: "Tai Dam", religion: "Satsana Phi", country: "Laos"},
     info: [
-      `The folded bark books called <i>pustaha</i> are <+>grimoires[book of spells/magic]</+> containing divination techniques, ritual practices, narratives, and methods of protecting one’s community from adversaries. The <i>pustaha</i> are composed by <i>datu</i> ritual specialists, who use them as repositories of esoteric knowledge and ritual instruction for passing down through generations of teacher-student relationships.`,
-      `Only <i>datu</i> and traders move freely across the five Batak lands in the highland interior of contemporary North Sumatra, Indonesia, resulting in manuscripts incorporating variations in language and script from the different regions. Combined with the fact that the <i>pustaha</i> are written in <i>hata poda</i>, an ancient variant of the Batak language with many Malay loanwords known only by the <i>datu</i>, the contents become shrouded in secrecy outside the direct line of transmission.`
+      `The <i>Kwaam To Meuang</i> is recited at the funeral service of a family member who has just died to guide their <+><i>khwan</i>[soul substance, life essence]</+> back to their ancestors who reside in the <+>Muang Fa[Land of the Heavens]</+>, along with the <+><i>thaen</i>[Spirits of the Sky, Lords of the Heavens]</+>, who inhabit their own special territories in that realm in the sky. It is the duty of the eldest son-in-law of the deceased to perform the recitation and guide the soul substance to Tat Pi Fai Waterfall in Muang La (or Son La), the original location of the connection between the Earth and the Sky, where the dead can ascend to the heavens.`,
+      `Tai Dam religious practitioners, <i>mo</i> priests and <i>mod</i> sorcerers, employ a form of the pre-Buddhist Tai religion Satsana Phi, centered on <+><i>phi</i>[spirits]</+>, <i>khwan</i>, and cosmology, that bears a deep connection to the surrounding natural elements and ancestral lineages.`
     ],
     excerpt: [
-      `Once upon a time long ago, it is told, Debata i datas langit, a god in the sky above, came down here. The reason why he came down, they say, was that his wife who was pregnant felt a craving for a pregnant male mouse-deer. His wife, it is told, said: “If you wish, oh son of my Aunt, that this fruit of my body will come into being, you must get me a pregnant male mouse-deer to eat, so that this fruit of my body will come into being.” These were the words of the God’s spouse.`,
-      `Then, it is told, the God spoke: “If you say that you must eat a pregnant male mouse-deer, so that what is inside your body will see the light of day, oh Uncle’s daughter, I will order my young men to hunt it. Hopefully the mouse-deer that you desire will soon be found, so that I can soon give it as food to you, and our minds will be calm, and your unborn child will no longer be disturbed by ghosts, oh uncle’s daughter.” These were, they say, the words of the God. Then the God ordered his helper Aji Guru to go hunting, and a crow was told to go with him.`,
-      `>>(Bataksch Leesboek III:1-2 HNT)`,
-      `<...>`,
-      `In the very beginning there was our <+>Ompung[Grandfather/grandmother, ancestor; respectful term of address]</+> Tuan Bubi na Bolon, the Only God, who leant against the Singkammabarbar tree.`,
-      `Five times decaying matter fell down from the tree and this brought into existence all the animals of the water, the dry land, the forest; all domestic animals and all birds.`,
-      `And then he gave names to three of the birds, Tuan Bubi na Bolon, who is one cubit or ell in height and whose circumference is three fathoms, who leans against the Singkammabarbar tree, named the three birds;`,
-      `the first one with the crest was named Patiaradja, the second one with the long feathers was given the name Maoangmaoing, but the third one, which could neither fly nor walk, was called Mandoangmandoing.`,
-      `The bird Patiaradja took the bird Mandoangmandoing to wife. The latter got five young ones, of which four were still in the eggshell. The fifth was a monster, with the snout of a pig, a human body, hair like that of a cow, the tail of a kerbau, the mane of a horse, the ears of a goat and a belly like that of a hen. In great astonishment the bird, Patiaradja, went to the bird, Maoangmaoing, whom he told what has happened. As a matter of fact, the bird, Maoangmaoing, already knew, for he was a bird that knew the future and the past. He gave the bird, Patiaradja, the following advice:`,
-      `“As to what has happened, you must never call it your son because it is apparently not male, nor your daughter because it is apparently not female.”`,
-      `The four birth companions in the eggs should be put on a potsherd close to the hearth, but for it, you must make a ragaraga, a large square rack, and suspend it from the Upperworld, from the hollow singkam tree to which it is fastened by a brass chain, towards the Middleworld, under the heavens, above the wide sea. There it will be rocked, moved by the wind, swung to and fro by the storm.`,
-      `Raja Pinangkabo, Raja Pinangkabua, he who neither dies nor grows old; Tuan Bumi na bolon, the majestic Raja of the Upperworld, Mulajadi na Bolon, who lives in the region of the lightning, who leans against the very hard stone, who turns his face upon good fortune, but turns his back upon bad luck.`,
-      `If he shows his snout, offer him a fat pig as sacrifice, so that your rice may thrive and your tubers may flourish; if he shows his belly, give him a red and a white hen, so that no curse might come upon you. However, if he shows his ear, sacrifice a white goat to him, so that there will be no lepers. If he shows his mane, sacrifice a chestnut horse to him, so that there shall be no famine. If he shows his tail, kill a <+><i>pangalotlot</i>[trampling]</+> buffalo for him, so that there will be no wicked plans made by evildoers and roaming spirits. But if he shows his feathers, you must sacrifice a <+><i>sitiotio</i> cow[a cow which brings clarity]</+> to him, so that all will be well. And if he shows his whole body, you must sacrifice a <i>bius</i> buffalo to him, so that you all may be healthy and well. In the future this will become the custom among men.`,
-      `After these instructions, an earthquake caused the four eggs to burst open. Out of the eggs came four beings in human form who took Raja Pinangkabo’s place. He asked them why they had done so and they answered him:`,
-      `“We have not taken your place, Grandfather (Ompung)!” Raja Pinangkabo said: “If this is so, why do you call me your Ompung?” The four replied: “Because you are the Mighty One and the Holy One, who can attain through his will, who is peerless. This is the reason we call you Ompung.`,
-      `“For your <i>sahala</i> has called and your power has summoned us; for the waves have tossed us to you, driven by the wind”. And Raja Pinangkabo asked: “Where do you come from?” and they replied: “We do not know”. “If so, who are your parents that you call me your Ompung? For you are not the sons of my son or of my daughter”. The four replied: “If we were your own children, oh Ompung, then we would have called you father, if you were a man; mother, if you were a woman; for you are the Mighty One, the Holy One, whose will shall be done, you are peerless. This is why we call you Ompung.`,
-      `>>(Ruben 30-36 PLT)`,
-      `<...>`,
-      `Hail you, Father who takes care of the sacred books of Si Mangulak, the <i>datu</i> who exercises genuine magic, to be written in my sacred book delivering the Rambu Si Porhas oracle.`,
-      `>>(AE.1922.0001.1007 A29-31 UKV)`,
-      ``
+      `Let us remember.<br>There was the earth and the grass;<br>There was the Sky, like a mushroom;<br>There were seven lands;<br>There was the branching of the nine rivers<br>At the mouth of the <+>Tè[Red River]</+> and the <+>Tao[Black River]</+>.`,
+      `The Sky was as low as an iron skillet;<br>The Sky was as thin as a shard of ceramic.<br>When pounding rice it reached the pestle;<br>When drying rice it reached the mat.<br>It reached the hump of the black ox;<br>It reached the boar’s snout.`,
+      `Then came the king named Chô-Who-Protects-The-Sky.<br>He cut the heavenly cord and let it rise;<br>Cut the Sky-cord until it parted.<br>The Sky went surging upwards<br>Until as far as the eye could see, all was Sky,<br>All was Heavenly Spirit.`,
+      `Ten bales of yarn, each the size of a sow,<br>Streched out end-to end,<br>Could not reach the Sky.`,
+      `Twenty rolls of cane, each the size of a cow elephant,<br>Stretched out end-to-end,<br>Could not reach the Sky.`,
+      `Ten arrows and five bullets,<br>Shot one after the other,<br>Could not reach the Sky.`,
+      `Ten strokes on the giant log drum,<br>Nine strokes on the giant leather drum,<br>One after the other,<br>Could not reach the Sky;<br>The Sky could not hear them.`,
+      `In those days animals dwelt in the lower realm.<br>Each one knew speech,<br>Every leech knew how to talk,<br>Each pig could prattle and converse.`,
+      `These animals of the lower realm<br>Traveled upwards and spoke with the <+>Thèn[Lords of the Sky]</+>,<br>And the Thèn devised a plan to kill all humans<br>On the earth below.`,
+      `At that time, the Sky turned dry and orange.<br>The sun created waves of heat.<br>Oxen and buffalos died for want of grass;<br>Traders died along the roads;<br>Rice in the fields died in shreds;<br>Snails in the paddies died for lack of water;<br>Spirit-grains on the fire-shelf were covered with soot;<br>Tubers in ditches died from the heat;<br>Yams in the forest died on the vine;<br>Men of the boats died from thirst.`,
+      `King Chô-Who-Protects-The-Sky<br>Took a snake and stretched it out,<br>Took a Khiat-frog and wrapped it like a corpse,<br>Took snails to make wine in jars,<br>Took a fly to make a sweeper,<br>A spiny eel to make a cook,<br>A thrush to make a hostess.`,
+      `The Sky became dark,<br>Thunder resounded for a day and a night<br>Until the storm began.`,
+      `The raindrops were as big as figs,<br>As large as Muay-berries.<br>All the streams and lakes,<br>Every islet of earth and sand,<br>All the flood waters,<br>Were caught up in a giant whirlwind<br>Which spun round and round until it reached the abode of the Thèn.<br>The humans of the lower realm were dead.`,
+      `Now the Sky dropped a thousand new people,<br>Placed them in Pung-gourds,<br>Every kind of person,<br>Together with the sacred books of priests and sorcerers,<br>The books of prophecy, and all else.`,
+      `Three-hundred thirty races of people,<br>Three-hundred thirty kinds of rice for the fields,<br>Three hundred thirty kinds of fish for the waters,<br>Placed into the Pung-gourds.`
     ],
-    infoURL: ["https://en.wikipedia.org/wiki/Pustaha","https://en.wikipedia.org/wiki/Batak_mythology","https://en.wikipedia.org/wiki/Parmalim"],
-    mediaURL: [],
+    infoURL: [""],
+    mediaURL: ["https://youtu.be/xtx0idaF3OI"],
     textURL: [""],
     ref: [
-      {id: "vandertuuk-1862", type: "book", title: "Bataksch Leesboek I-IV", contributors: [{lastName: "van der Tuuk", firstName: "Herman Neubronner", role: "author"}], pubDate: {year: 1862}, publisher: "Frederik Muller", url: "https://catalog.hathitrust.org/Record/001359493", meta: {sortKey: "text", grade: "B"}},
-      {id: "brakel-2016", type: "article", title: "Dairi storytelling and stories in the Batak Reader of Herman Neubronner van der Tuuk", contributors: [{lastName: "Brakel-Papenhuyzen", firstName: "Clara", role: "author"}], pubDate: {year: 2016}, containerTitle: "Wacana Journal of the Humanities of Indonesia", volume: "17", issue: "2", pages: {start: "278", end: "278"}, url: "https://www.researchgate.net/publication/307923443_Dairi_storytelling_and_stories_in_the_Batak_Reader_of_Herman_Neubronner_van_der_Tuuk", meta: {sortKey: "info", grade: "C"}},
-      {id: "tobing-1956", type: "book", title: "The Structure of the Toba-Batak Belief in the High God", contributors: [{lastName: "Tobing", firstName: "Philip Lumban", role: "author"}], pubDate: {year: 1956}, publisher: "J. van Campen", location: "Amsterdam", url: "https://catalog.hathitrust.org/Record/001879656", meta: {sortKey: "info", grade: "C"}},
-      { id: "anger-2016-batak-storytelling", type: "article", title: "Images of God in Toba Batak storytelling", containerTitle: "Wacana, Journal of the Humanities of Indonesia", contributors: [ { firstName: "Johann", lastName: "Angerler", role: "author" } ], pubDate: { year: 2016 }, url: "https://doi.org/10.17510/wacana.v17i2.444", publisher: "Faculty of Humanities, Universitas Indonesia", location: "Depok, Indonesia", medium: "Academic Journal", meta: { notes: "Examines the Toba Batak concepts of 'Mula Jadi Na Bolon' (The Great Originator). Discusses the three-tiered cosmology (Banua Ginjjang, Banua Tonga, Banua Toru) and how storytelling acts as a vessel for these theological structures in a post-missionary era.", grade: "C", pages: "215-233", tags: ["Toba Batak", "Sumatra", "Indonesia", "Cosmology", "Storytelling", "Oral Tradition", "Southeast Asian Media"] } },
-      { id: "kozok-2025-looted-pustaha", type: "article", title: "A Batak Pustaha Looted from the Last Singamangaraja", containerTitle: "Bijdragen tot de taal-, land- en volkenkunde / Journal of the Humanities and Social Sciences of Southeast Asia", contributors: [ { firstName: "Uli", lastName: "Kozok", role: "author" } ], pubDate: { year: 2025 }, url: "https://doi.org/10.1163/22134379-bja10068", publisher: "Brill", location: "Leiden, Netherlands", medium: "Academic Journal", meta: { notes: "Examines a specific manuscript (Pustaha) associated with the last priest-king of the Batak, Sisingamangaraja XII. Discusses the Dutch expedition of 1907, the physical structure of the alim-bark book, and the ethics of colonial collections.", grade: "C", pages: "191-225", tags: ["Toba Batak", "Pustaha", "Sisingamangaraja XII", "Looted Art", "Indonesian History", "Manuscript Studies", "Batak Script"] } }
+      { id: "hartmann-1981-tai-dam", type: "article", title: "Computations on a Tai Dam Origin Myth", containerTitle: "Anthropological Linguistics", contributors: [ { firstName: "John F.", lastName: "Hartmann", role: "author" } ], pubDate: { year: 1981 }, volume: "23", issue: "5", pages: { start: "183", end: "202" }, url: "https://seasite.niu.edu/tai/TaiDam/TaiDamOrigin.htm", meta: { sortKey: "text", grade: "C" } },
+      { id: "chamberlain_1991_black_tai", type: "article", title: "The Black Tai Chronicle of Meuang Mouay: Part I, Mythology", containerTitle: "The Mon-Khmer Studies Journal", contributors: [ { firstName: "James", lastName: "Chamberlain", role: "author" } ], pubDate: { year: 1991 }, volume: "21", pages: { start: "19", end: "55" }, url: "https://www.researchgate.net/publication/366008245_The_Black_Tai_Chronicle_of_Meuang_Mouay_Part_IMythology", meta: { sortKey: "text", grade: "C" } },
+      { id: "burusphat-2016-tai-dam", type: "article", title: "A Discourse Analysis of the Tai Dam Chronicle", containerTitle: "Journal of the Southeast Asian Linguistics Society", contributors: [ { firstName: "Somsonge", lastName: "Burusphat", role: "author" } ], pubDate: { year: 2016 }, volume: "9", pages: { start: "30", end: "47" }, url: "http://hdl.handle.net/1885/733712959", meta: { sortKey: "info", grade: "A" } },
+      { id: "pitiphat-1980-religion", type: "article", title: "The Religion and Beliefs of the Black Tai, and a Note on the Study of Cultural Origins", containerTitle: "Journal of the Siam Society", contributors: [ { firstName: "Sumitr", lastName: "Pitiphat", role: "author" } ], pubDate: { year: 1980 }, volume: "68", issue: "1", pages: { start: "29", end: "38" }, url: "https://thesiamsociety.org/wp-content/uploads/1980/03/JSS_068_1c_SumitrPitiphat_ReligionAndBeliefsOfBlackTai.pdf", meta: { sortKey: "info", grade: "A" } }
     ]
   },
   {
@@ -5301,6 +5392,48 @@ export const foundRelTexts = [
       {id: "haring-2013", type: "book", title: "How to Read a Folktale: The Ibonia Epic from Madagascar", contributors: [{lastName: "Haring", firstName: "Lee", role: "author"}], pubDate: {year: 2013}, publisher: "Open Book Publishers", url: "https://library.oapen.org/bitstream/handle/20.500.12657/30303/646721.pdf?sequence=1", meta: {sortKey: "text", grade: "B"}},
       {id: "ottino-1983", type: "article", title: "Ancient Malagasy Dynastic Succession; The Merina Example", contributors: [{lastName: "Ottino", firstName: "Paul", role: "author"}], pubDate: {year: 1983}, containerTitle: "History in Africa", volume: "10", doi: "10.2307/3171698", url: "https://doi.org/10.2307/3171698", meta: {sortKey: "info", grade: "C"}},
       {id: "fee-2008", type: "article", title: "Handicapped heroes, Sambilo the bull, and the treacherous terrain of polygynous relations in southern Madagascar", contributors: [{lastName: "Fee", firstName: "Sarah", role: "author"}], pubDate: {year: 2008}, containerTitle: "Études océan Indien", volume: "40-41", doi: "10.4000/oceanindien.1403", url: "https://doi.org/10.4000/oceanindien.1403", meta: {sortKey: "info", grade: "C"}}
+    ]
+  },
+  {
+    id: "OCMRFRT",
+    title: {original: "ᯇᯮᯘ᯲ᯖᯂ", transliteration: "Pustaha", translation: "Book of Magic"},
+    group: {people: "Batak", language: "Toba Batak", religion: "Ugamo Malim", location: "Sumatra, ID"},
+    info: [
+      `The folded bark books called <i>pustaha</i> are <+>grimoires[book of spells/magic]</+> containing divination techniques, ritual practices, narratives, and methods of protecting one’s community from adversaries. The <i>pustaha</i> are composed by <i>datu</i> ritual specialists, who use them as repositories of esoteric knowledge and ritual instruction for passing down through generations of teacher-student relationships.`,
+      `Only <i>datu</i> and traders move freely across the five Batak lands in the highland interior of contemporary North Sumatra, Indonesia, resulting in manuscripts incorporating variations in language and script from the different regions. Combined with the fact that the <i>pustaha</i> are written in <i>hata poda</i>, an ancient variant of the Batak language with many Malay loanwords known only by the <i>datu</i>, the contents become shrouded in secrecy outside the direct line of transmission.`
+    ],
+    excerpt: [
+      `Once upon a time long ago, it is told, Debata i datas langit, a god in the sky above, came down here. The reason why he came down, they say, was that his wife who was pregnant felt a craving for a pregnant male mouse-deer. His wife, it is told, said: “If you wish, oh son of my Aunt, that this fruit of my body will come into being, you must get me a pregnant male mouse-deer to eat, so that this fruit of my body will come into being.” These were the words of the God’s spouse.`,
+      `Then, it is told, the God spoke: “If you say that you must eat a pregnant male mouse-deer, so that what is inside your body will see the light of day, oh Uncle’s daughter, I will order my young men to hunt it. Hopefully the mouse-deer that you desire will soon be found, so that I can soon give it as food to you, and our minds will be calm, and your unborn child will no longer be disturbed by ghosts, oh uncle’s daughter.” These were, they say, the words of the God. Then the God ordered his helper Aji Guru to go hunting, and a crow was told to go with him.`,
+      `>>(Bataksch Leesboek III:1-2 HNT)`,
+      `<...>`,
+      `In the very beginning there was our <+>Ompung[Grandfather/grandmother, ancestor; respectful term of address]</+> Tuan Bubi na Bolon, the Only God, who leant against the Singkammabarbar tree.`,
+      `Five times decaying matter fell down from the tree and this brought into existence all the animals of the water, the dry land, the forest; all domestic animals and all birds.`,
+      `And then he gave names to three of the birds, Tuan Bubi na Bolon, who is one cubit or ell in height and whose circumference is three fathoms, who leans against the Singkammabarbar tree, named the three birds;`,
+      `the first one with the crest was named Patiaradja, the second one with the long feathers was given the name Maoangmaoing, but the third one, which could neither fly nor walk, was called Mandoangmandoing.`,
+      `The bird Patiaradja took the bird Mandoangmandoing to wife. The latter got five young ones, of which four were still in the eggshell. The fifth was a monster, with the snout of a pig, a human body, hair like that of a cow, the tail of a kerbau, the mane of a horse, the ears of a goat and a belly like that of a hen. In great astonishment the bird, Patiaradja, went to the bird, Maoangmaoing, whom he told what has happened. As a matter of fact, the bird, Maoangmaoing, already knew, for he was a bird that knew the future and the past. He gave the bird, Patiaradja, the following advice:`,
+      `“As to what has happened, you must never call it your son because it is apparently not male, nor your daughter because it is apparently not female.”`,
+      `The four birth companions in the eggs should be put on a potsherd close to the hearth, but for it, you must make a ragaraga, a large square rack, and suspend it from the Upperworld, from the hollow singkam tree to which it is fastened by a brass chain, towards the Middleworld, under the heavens, above the wide sea. There it will be rocked, moved by the wind, swung to and fro by the storm.`,
+      `Raja Pinangkabo, Raja Pinangkabua, he who neither dies nor grows old; Tuan Bumi na bolon, the majestic Raja of the Upperworld, Mulajadi na Bolon, who lives in the region of the lightning, who leans against the very hard stone, who turns his face upon good fortune, but turns his back upon bad luck.`,
+      `If he shows his snout, offer him a fat pig as sacrifice, so that your rice may thrive and your tubers may flourish; if he shows his belly, give him a red and a white hen, so that no curse might come upon you. However, if he shows his ear, sacrifice a white goat to him, so that there will be no lepers. If he shows his mane, sacrifice a chestnut horse to him, so that there shall be no famine. If he shows his tail, kill a <+><i>pangalotlot</i>[trampling]</+> buffalo for him, so that there will be no wicked plans made by evildoers and roaming spirits. But if he shows his feathers, you must sacrifice a <+><i>sitiotio</i> cow[a cow which brings clarity]</+> to him, so that all will be well. And if he shows his whole body, you must sacrifice a <i>bius</i> buffalo to him, so that you all may be healthy and well. In the future this will become the custom among men.`,
+      `After these instructions, an earthquake caused the four eggs to burst open. Out of the eggs came four beings in human form who took Raja Pinangkabo’s place. He asked them why they had done so and they answered him:`,
+      `“We have not taken your place, Grandfather (Ompung)!” Raja Pinangkabo said: “If this is so, why do you call me your Ompung?” The four replied: “Because you are the Mighty One and the Holy One, who can attain through his will, who is peerless. This is the reason we call you Ompung.`,
+      `“For your <i>sahala</i> has called and your power has summoned us; for the waves have tossed us to you, driven by the wind”. And Raja Pinangkabo asked: “Where do you come from?” and they replied: “We do not know”. “If so, who are your parents that you call me your Ompung? For you are not the sons of my son or of my daughter”. The four replied: “If we were your own children, oh Ompung, then we would have called you father, if you were a man; mother, if you were a woman; for you are the Mighty One, the Holy One, whose will shall be done, you are peerless. This is why we call you Ompung.`,
+      `>>(Ruben 30-36 PLT)`,
+      `<...>`,
+      `Hail you, Father who takes care of the sacred books of Si Mangulak, the <i>datu</i> who exercises genuine magic, to be written in my sacred book delivering the Rambu Si Porhas oracle.`,
+      `>>(AE.1922.0001.1007 A29-31 UKV)`,
+      ``
+    ],
+    infoURL: ["https://en.wikipedia.org/wiki/Pustaha","https://en.wikipedia.org/wiki/Batak_mythology","https://en.wikipedia.org/wiki/Parmalim"],
+    mediaURL: [],
+    textURL: [""],
+    ref: [
+      {id: "vandertuuk-1862", type: "book", title: "Bataksch Leesboek I-IV", contributors: [{lastName: "van der Tuuk", firstName: "Herman Neubronner", role: "author"}], pubDate: {year: 1862}, publisher: "Frederik Muller", url: "https://catalog.hathitrust.org/Record/001359493", meta: {sortKey: "text", grade: "B"}},
+      {id: "brakel-2016", type: "article", title: "Dairi storytelling and stories in the Batak Reader of Herman Neubronner van der Tuuk", contributors: [{lastName: "Brakel-Papenhuyzen", firstName: "Clara", role: "author"}], pubDate: {year: 2016}, containerTitle: "Wacana Journal of the Humanities of Indonesia", volume: "17", issue: "2", pages: {start: "278", end: "278"}, url: "https://www.researchgate.net/publication/307923443_Dairi_storytelling_and_stories_in_the_Batak_Reader_of_Herman_Neubronner_van_der_Tuuk", meta: {sortKey: "info", grade: "C"}},
+      {id: "tobing-1956", type: "book", title: "The Structure of the Toba-Batak Belief in the High God", contributors: [{lastName: "Tobing", firstName: "Philip Lumban", role: "author"}], pubDate: {year: 1956}, publisher: "J. van Campen", location: "Amsterdam", url: "https://catalog.hathitrust.org/Record/001879656", meta: {sortKey: "info", grade: "C"}},
+      { id: "anger-2016-batak-storytelling", type: "article", title: "Images of God in Toba Batak storytelling", containerTitle: "Wacana, Journal of the Humanities of Indonesia", contributors: [ { firstName: "Johann", lastName: "Angerler", role: "author" } ], pubDate: { year: 2016 }, url: "https://doi.org/10.17510/wacana.v17i2.444", publisher: "Faculty of Humanities, Universitas Indonesia", location: "Depok, Indonesia", medium: "Academic Journal", meta: { notes: "Examines the Toba Batak concepts of 'Mula Jadi Na Bolon' (The Great Originator). Discusses the three-tiered cosmology (Banua Ginjjang, Banua Tonga, Banua Toru) and how storytelling acts as a vessel for these theological structures in a post-missionary era.", grade: "C", pages: "215-233", tags: ["Toba Batak", "Sumatra", "Indonesia", "Cosmology", "Storytelling", "Oral Tradition", "Southeast Asian Media"] } },
+      { id: "kozok-2025-looted-pustaha", type: "article", title: "A Batak Pustaha Looted from the Last Singamangaraja", containerTitle: "Bijdragen tot de taal-, land- en volkenkunde / Journal of the Humanities and Social Sciences of Southeast Asia", contributors: [ { firstName: "Uli", lastName: "Kozok", role: "author" } ], pubDate: { year: 2025 }, url: "https://doi.org/10.1163/22134379-bja10068", publisher: "Brill", location: "Leiden, Netherlands", medium: "Academic Journal", meta: { notes: "Examines a specific manuscript (Pustaha) associated with the last priest-king of the Batak, Sisingamangaraja XII. Discusses the Dutch expedition of 1907, the physical structure of the alim-bark book, and the ethics of colonial collections.", grade: "C", pages: "191-225", tags: ["Toba Batak", "Pustaha", "Sisingamangaraja XII", "Looted Art", "Indonesian History", "Manuscript Studies", "Batak Script"] } }
     ]
   },
   {
