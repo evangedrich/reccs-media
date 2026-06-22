@@ -2731,7 +2731,7 @@ export const presMusDrama = [
     century: null,
     group: {people: "Maasai", language: "Maa", country: "Tanzania"},
     info: [
-      `Engilakinoto is call-and-response performing art form sung without instrumental accompaniment. A <i>olaranyani</i> (song leader) initiates the melody, and the chorus responds in unison, often with layered rhythms, deep throat-based chanting, and harmonies, while executing slow, leaning dance moves.`,
+      `Engilakinoto is call-and-response performing art form sung without instrumental accompaniment. A <i>olaranyani</i> (song leader) initiates the melody, and the chorus responds in unison, often with layered rhythms, deep throat-based chanting, and harmonies, while executing controlled, leaning dance moves.`,
       `The lyrical content of Engilakinoto is a vast repository of Maasai oral tradition covering a wide range of themes, from recounting historical narratives and reinforcing social norms to expressing emotion and depicting the Maasai pastoral lifestyle and relationship with nature.`,
       `Children learn the chants by participating in community gatherings and ceremonies from a young age, and many types of song and dance are performed specifically by young people. While the tradition is deeply rooted in ancestral knowledge, it is a living art form that adapts to contemporary life.`
     ],
@@ -2761,7 +2761,7 @@ export const presMusDrama = [
       `A patch stretches over the colobus monkey<br>That does not climb trees<br>Among thin oxen whose bells are wound twice<br>But mine had conquered the Ng’atet anthrax<br>That the Maasai fear.`
     ],
     infoURL: "",
-    mediaURL: ["https://youtu.be/CVS7rEkiEHQ"],
+    mediaURL: ["https://youtu.be/CVS7rEkiEHQ","https://youtu.be/vq9U4s8q1yQ","https://youtu.be/PsMn6FmjF2g","https://youtu.be/Ojr5JNJdC5g"],
     textURL: "",
     ref: [
       { id: "kipuri-1983-maasai", type: "book", title: "Oral Literature of the Maasai", contributors: [ { firstName: "Naomi", lastName: "Kipuri", role: "author" } ], pubDate: { year: 1983 }, publisher: "East African Educational Publishers Ltd.", location: "Nairobi, Kenya", isbn: "9966463136", medium: "Print", meta: { notes: "A seminal collection of Maasai oral texts including folk tales, songs, and riddles. Provides the original Maa text alongside English translations and extensive socio-cultural commentary.", grade: "A", tags: ["Maasai", "Oral Tradition", "Kenya", "Folklore", "Maa Language", "Ethnography"] } },
@@ -3641,6 +3641,7 @@ export const presMusDrama = [
     infoURL: "",
     mediaURL: ["https://youtu.be/LROXUgHTf-g?start=505","https://youtu.be/yN2HnK7ljZI","https://youtu.be/2Kpov1UKJcU?start=149",/*"https://youtu.be/MF4qdaaH95w",*/"https://youtu.be/AsZlxW4bk0Q"],
     textURL: "",
+    coordinates: {x: 114.7333, y: 1.4333, name: "East Kalimantan"},
     ref: [
       { id: "herjayanti-2014-makna", type: "thesis", title: "Makna Simbolik Tari Hudoq pada Upacara Panen bagi Masyarakat Suku Dayak Ga'ay Kabupaten Berau Kalimantan Timur", contributors: [ { firstName: "Risna", lastName: "Herjayanti", role: "author" } ], pubDate: { year: 2014 }, degree: "S1 Thesis", publisher: "Universitas Negeri Yogyakarta", location: "Yogyakarta", url: "https://eprints.uny.ac.id/16590/1/Risna%20Herjayanti%2010209241039.pdf", meta: { sortKey: "text", grade: "B" } },
       { id: "alpert-2020-hudoq", type: "webpage", title: "Out of the Forest — Hudoq", containerTitle: "Art of the Ancestors", contributors: [ { firstName: "Steven G.", lastName: "Alpert", role: "author" } ], pubDate: { year: 2020, month: 4, day: 19 }, url: "https://www.artoftheancestors.com/blog/out-of-the-forest-hudoq", meta: { sortKey: "info", grade: "C" } },
