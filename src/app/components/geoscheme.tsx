@@ -65,9 +65,6 @@ export default function Geoscheme({ reccs }: { reccs: Recc[] }) {
                 <h1 className={`${currSubr==="X"?"italic font-light":"font-extrabold"}`}>{currSubr==="X" ? "select region above" : subregions.find(subr => subr.id===currSubr)?.name}</h1>
                 <div className={`${currSubr==="X"?"hidden":""} absolute right-0 top-0 h-full aspect-square flex items-center justify-center border-l-2`} onClick={() => setCurrSubr("X")}>Ｘ</div>
             </div>
-            <div className={`${currSubr==="X" ? "hidden" : ""} sm:hidden border-b-2 p-4`}>
-                <p className="max-w-[800px] mx-auto text-sm">{preParse(subregions.find(subr => subr.id===currSubr)?.description ?? "")}</p>
-            </div>
             <div ref={entriesRef} className={`border-b-2 mt-[-2px] overflow-x-auto no-scrollbar overflow-y-hidden ${currSubr==="X"?"max-h-0":"max-h-[221px]"} transition-[max-height]`}>
                 <div className="flex w-max mx-auto">{entries.map((entry,i) => (
                     <Link 
@@ -83,6 +80,9 @@ export default function Geoscheme({ reccs }: { reccs: Recc[] }) {
                         <h1 className="text-xs font-semibold truncate mt-[-0.25rem] leading-[1.5rem] mb-[-0.25rem]">{getTitle(entry)}</h1>
                     </Link>
                 ))}</div>
+            </div>
+            <div className={`${currSubr==="X" ? "hidden" : ""} sm:hidden border-b-2 p-4`}>
+                <p className="max-w-[800px] mx-auto text-sm">{preParse(subregions.find(subr => subr.id===currSubr)?.description ?? "")}</p>
             </div>
         </div>
     )

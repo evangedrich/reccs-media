@@ -47,8 +47,8 @@ export const modTradNovels = [
     excerpt: [
       `Kerwege, similarly shaken, stood up, leaned against the wall, and said in a low voice:`,
       `“Zomo, who told you that I had given birth? Or did the news travel to Atat by the wind?”`,
-      `“My dear, I knew that you were due, and when I reached the village, I heard that you had delivered,” he said. “However, it's not kind of you to leave so early. Even if you weren't worried about yourself, you should have thought about this little boy of yours; you caught a cold in the morning!”`,
-      `Kerwege thought it would be cold outside because she had stayed indoors, but it was warm outside. The sky was clear. The grass outside had shaken off the dew and the smell had entered the house and was sweet. But inside the house it was dark. The door was closed so that she and her baby could not see the sun's rays.`,
+      `“My dear, I knew that you were due, and when I reached the village, I heard that you had delivered,” he said. “However, it’s not kind of you to leave so early. Even if you weren’t worried about yourself, you should have thought about this little boy of yours; you caught a cold in the morning!”`,
+      `Kerwege thought it would be cold outside because she had stayed indoors, but it was warm outside. The sky was clear. The grass outside had shaken off the dew and the smell had entered the house and was sweet. But inside the house it was dark. The door was closed so that she and her baby could not see the sun’s rays.`,
       `It was believed that if the sun's rays fell on them, they would get sick.`
     ],
     infoURL: "https://www.google.com/books/edition/The_Strange_Bride/Orb4rPhlyp4C",
@@ -1181,7 +1181,7 @@ export const stirrPoetry = [
     id: "AFEASTP",
     title: { original: "A ǁ’aaye twīnga ǀhime", translation: "They followed the bird and sang" },
     intermediary: "Berta Kwelē",
-    group: {people: "Sandawe", language: "Sandawe", countrypn: "Tanzania"},
+    group: {people: "Sandawe", language: "Sandawe", country: "Tanzania"},
     info: [
       `Poetry can be found in all manifestations of arts and culture, in storytelling, in dance, in ritual. The poem here comes embedded in a traditional story, recorded in July 1963 by Berta Kwelē, about a child raised by a bird. When the child came of age, the bird took the child from their home near a human community to a faraway place where lived every sort of bird. The people from the town, embarking on a search for the child, sing this song; its themes transcend the literal context of the story, speaking to the bewildering and cyclical experience of a desire for seeking out anything.`
     ],
@@ -3806,7 +3806,7 @@ export const foundRelTexts = [
 
     ],
     infoURL: [""],
-    mediaURL: ["https://youtu.be/nj4-xiXF5JQ"],
+    mediaURL: ["https://youtu.be/nj4-xiXF5JQ","https://youtu.be/IEBt4W12xY8"],
     textURL: "",
     ref: [
       { id: "cerulli-1922-folk-literature", type: "article", title: "The Folk-Literature of the Galla of Southern Abyssinia", containerTitle: "Harvard African Studies", contributors: [ { firstName: "Enrico", lastName: "Cerulli", role: "author" } ], pubDate: { year: 1922 }, volume: "3", url: "https://seltzerbooks.com/cerulli.html", meta: { sortKey: "text", grade: "C" } },

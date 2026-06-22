@@ -9,6 +9,7 @@
 		"lint": "next lint",
 		"sync": "tsx scripts/sync-d1.ts",
 		"sync:images": "tsx scripts/sync-images.ts",
+		"update-map": "python3 scripts/update-region-polygons.py",
 		"deploy": "pnpm sync && opennextjs-cloudflare build && opennextjs-cloudflare deploy",
 		"upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
 		"preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
