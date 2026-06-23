@@ -49,7 +49,7 @@ export const modTradNovels = [
       `“Zomo, who told you that I had given birth? Or did the news travel to Atat by the wind?”`,
       `“My dear, I knew that you were due, and when I reached the village, I heard that you had delivered,” he said. “However, it’s not kind of you to leave so early. Even if you weren’t worried about yourself, you should have thought about this little boy of yours; you caught a cold in the morning!”`,
       `Kerwege thought it would be cold outside because she had stayed indoors, but it was warm outside. The sky was clear. The grass outside had shaken off the dew and the smell had entered the house and was sweet. But inside the house it was dark. The door was closed so that she and her baby could not see the sun’s rays.`,
-      `It was believed that if the sun's rays fell on them, they would get sick.`
+      `It was believed that if the sun’s rays fell on them, they would get sick.`
     ],
     infoURL: "https://www.google.com/books/edition/The_Strange_Bride/Orb4rPhlyp4C",
     bioURL: "https://en.wikipedia.org/wiki/Grace_Ogot",
@@ -953,7 +953,7 @@ export const modTradNovels = [
       `In her hands is the book of my life, which began the very moment I first saw her. I dare not snatch it back, leaving my story completely exposed! Blazing tongues of fire illuminate what I wrote there, and my mind's eye reads it... without missing a single word.`,
       `<...>`,
       `PART ONE: <+><i>Izy</i>[Him/her/them; singular and plural neuter third-person pronoun]</+>`,
-      `I saw a girl who completely caught my eye. Let's just say she only caught my eye for now, because I cannot yet say whether my heart was struck as well or not.`,
+      `I saw a girl who completely caught my eye. Let’s just say she only caught my eye for now, because I cannot yet say whether my heart was struck as well or not.`,
       `The truth is this: she will not leave my sight. To distract myself, I read a book, but my reading does not progress at all. She is right there, between my eyes and the text. I smoke a cigarette: her face and her figure swirl together with the smoke, and when the smoke clears... she is still right there. I am so captivated that I almost burned my fingertips because my cigarette was completely finished, yet I didn't even realize it.`,
       `I long to see her again. It has been some time now since I first saw her, and my heart still flutters every single time we cross paths. Even if she is not yet enveloped by my love, I must admit she has already completely captured my gaze.`,
       `The way she walks? This girl is so graceful in her movements... Her gaze: stealing fleeting glances rather than a fixed stare... Her smile: just the faintest hint.`,
@@ -1555,7 +1555,7 @@ export const stirrPoetry = [
       `Speaking through their tears<br>They addressed me<br>And then, cutting some wood for an <i>inau</i>,<br>The old couple made a charming new <i>inau</i><br>And adorned me with it.<br>The old lady made new clothes;<br>The boy helped, gathering wood`,
       `Drawing water and preparing sake;<br>He made preparations, and in a moment<br>Six barrels of sake were lined up before the high seat.<br>Then, I called the <+>old hearth goddess[Apehuchi, “Fire Grandmother”, goddess of the hearth and of fire in general]</+>, and<br>Spoke with the various gods.<br>Two days passed, and already the scent<br>Of sake (a particular favorite of the gods!)<br>Drifted in the air.<br>Then, I made the boy resume his disheveled appearance<br>And put on his old clothes and I sent him<br>Through the village to give invitations to<br>Those who had been poor and were now rich.<br>He entered every house and<br>Proclaimed my message and<br>Those who had been poor and were now rich<br>Laughed hugely:`,
       `“Well, this is a wonder, the paupers have<br>Got some sort of sake,<br>Scraped together some sort of feast,<br>And it looks like they're inviting everyone.<br>We should go and have a look at their feeble efforts.<br>It'l be good for a laugh.”`,
-      `So saying amongst themselves, they gathered in a crowd<br>And along they came, gathering from miles around;<br>Just seeing the house<br>They were so shocked that some instantly returned home<br>While others got quite close before collapsing, stunned, on the ground.<br>Then, the old wife went outside<br>And took their hands and led everyone into the house<br>But they crawled abjectly along the ground<br>And not one of them would lift up his face.<br>Then, the old husband made his appearance<br>And in a voice as clear as a cuckoo's he spoke.<br>He spoke of many things:`,
+      `So saying amongst themselves, they gathered in a crowd<br>And along they came, gathering from miles around;<br>Just seeing the house<br>They were so shocked that some instantly returned home<br>While others got quite close before collapsing, stunned, on the ground.<br>Then, the old wife went outside<br>And took their hands and led everyone into the house<br>But they crawled abjectly along the ground<br>And not one of them would lift up his face.<br>Then, the old husband made his appearance<br>And in a voice as clear as a cuckoo’s he spoke.<br>He spoke of many things:`,
       `“When we were poor, it was impossible for us<br>To come and go freely like this, but<br>The Great God took pity on us,<br>Because we entertained no wicked thoughts;<br>And therefore we were blessed.<br>From now on to all the village, we will be like family,<br>We will let bygones be bygones<br>And everyone who wishes may<br>Visit us freely.”`,
       `This speech he set forth, and the people<br>(Humbly wringing their hands again and again)<br>Apologized for their ill-treatment, and from now on,<br>They all declared, they would live as friends.<br>Everyone joined in worshipping me.<br>When that was finished, everyone with a glad heart<br>Began the luxurious banquet.<br>While chatting with the fire goddess and the <+>house god[Chisekor Kamui, “Old man of the House”, the god of the house]</+>,<br>And the <+>old goddess of the household altar[Nusakor Kamui, the goddess of the domestic altar, i.e. of the place where inau are kept; in emergencies she may appear to humans, but in the form of a snake; thus, when a snake is seen in the vicinity of the altar or the east window, people say “Doubtless Grandma Nusakorkamui is going out on an errand,” and such a snake is never killed; to do so would invite an unspeakable punishment]</+>, I watched them<br>Dancing their human dances and leaping about<br>And an amusing sight I found it.<br>In this way two or three days passed and the party ended.`,
       `Seeing that good relations prevailed among the humans,<br>I was contented<br>And took my leave of the fire goddess,<br>The house god and the goddess of the altar.<br>When that was done, I went back to my own house.<br>By the time I got home, my house was full<br>Of lovely <i>inau</i> and the best sake.<br>Then I sent messengers to all the gods both near and far<br>I invited them to a bountiful banquet<br>And furthermore, to all the gods<br>I told the tale, of the time I visited the human village,<br>And of the situation there, and everything that happened,<br>And they heaped praise on me.<br>When they went home, I gave to each<br>Two or even three beautiful <i>inau</i>.<br>Looking at the people of that Ainu village,<br>Now all at peace, and the people<br>All living in harmony, and the <i>nispa</i><br>Once again at the head of the village,<br>I see that boy, now already grown up,<br>With a wife of his own and a child too<br>Who respects both his father and his mother,<br>And from now on, forever, when he has made sake,<br>Or at the start of the banquet, he sends me <i>inau</i> and sake.<br>I watch over the people<br>Forever<br>I protect the world of humans.`,
@@ -2049,7 +2049,7 @@ export const cultFeatFilms = [
     coordinates: {x: 20.5000, y: -19.6667, name: "Nyae Nyae Region"},
     runtime: 59,
     genre: ["Docudrama","Coming-of-Age"],
-    tags: [""],
+    tags: ["bechdel test"],
     color: "#3d2d2b"
   },
   {
@@ -2070,42 +2070,7 @@ export const cultFeatFilms = [
     tags: [""],
     color: "#1f3057",
     ref: [
-      {
-  id: "barlet-2003-ouenangare-africultures",
-  type: "interview",
-  title: "Interview with Didier Ouenangaré, Co-director of «Le Silence de la Forêt»",
-  contributors: [
-    { 
-      firstName: "Olivier", 
-      lastName: "Barlet", 
-      role: "interviewer" 
-    },
-    { 
-      firstName: "Didier", 
-      lastName: "Ouenangaré", 
-      role: "interviewee/co-director" 
-    },
-    { 
-      firstName: "Bassek", 
-      lastName: "ba Kobhio", 
-      role: "co-director (referenced)" 
-    }
-  ],
-  pubDate: { 
-    year: 2003,
-    month: 5,
-    day: 27
-  },
-  url: "https://africultures.com/co-director-of-le-silence-de-la-foret-5698/",
-  publisher: "Africultures",
-  location: "Central African Republic / Cameroon",
-  medium: "Digital Interview",
-  meta: {
-    notes: "An invaluable primary interview exploring the production mechanics, financial struggles, and thematic goals of CAR's defining cinematic achievement. The film adapts Étienne Goyémidé's novel to critique the paternalistic and discriminatory relationships between the westernized Bantu elite (represented by the protagonist Gonaba) and the indigenous BiAka (Babenzelé) people of the equatorial rainforest.",
-    grade: "A",
-    tags: ["Central African Republic", "Cameroon", "Didier Ouenangaré", "Bassek ba Kobhio", "Le Silence de la Forêt", "BiAka", "African Cinema", "Post-Colonialism", "Film Adaptation"]
-  }
-}
+      { id: "barlet-2003-ouenangare-africultures", type: "interview", title: "Interview with Didier Ouenangaré, Co-director of «Le Silence de la Forêt»", contributors: [ { firstName: "Olivier", lastName: "Barlet", role: "interviewer" }, { firstName: "Didier", lastName: "Ouenangaré", role: "interviewee/co-director" }, { firstName: "Bassek", lastName: "ba Kobhio", role: "co-director (referenced)" } ], pubDate: { year: 2003, month: 5, day: 27 }, url: "https://africultures.com/co-director-of-le-silence-de-la-foret-5698/", publisher: "Africultures", location: "Central African Republic / Cameroon", medium: "Digital Interview", meta: { notes: "An invaluable primary interview exploring the production mechanics, financial struggles, and thematic goals of CAR's defining cinematic achievement. The film adapts Étienne Goyémidé's novel to critique the paternalistic and discriminatory relationships between the westernized Bantu elite (represented by the protagonist Gonaba) and the indigenous BiAka (Babenzelé) people of the equatorial rainforest.", grade: "A", tags: ["Central African Republic", "Cameroon", "Didier Ouenangaré", "Bassek ba Kobhio", "Le Silence de la Forêt", "BiAka", "African Cinema", "Post-Colonialism", "Film Adaptation"] } }
     ]
   },
   {
@@ -2167,7 +2132,25 @@ export const cultFeatFilms = [
   },
   {
     id: "AMSWCFF",
-    title: {original: "Drunktown's Finest"},
+    title: {original: "5th World"},
+    year: 2005,
+    group: {people: "Diné", language: "Navajo/English", location: "New Mexico, US"},
+    info: [
+      `Andrei and Aria are young Navajos hitchhiking their way back home across the rez. Along the way they reconnect with their heritage and culture and the beautiful landscape of the American Southwest. After meeting Andrei’s family Aria finds the sense of belonging that has always eluded her. But will a dark cultural secret keep her and Andrei from finding true happiness?`,
+      `Dir/Scr <b>BLACKHORSE LOWE</b> grew up in Nenahnezad, New Mexico, in Navajo Nation. He has written and directed episodes of the series <i>Reservation Dogs</i>, alongside numerous shorts and features of his own.`
+    ],
+    infoURL: "https://www.moma.org/interactives/exhibitions/2005/fnff/directors_detail-47285.htm",
+    watch: ["https://www.amazon.com/gp/video/detail/B0FVFN67N3"],
+    trailer: "https://youtu.be/T0RA8tl1SYM",
+    coordinates: {x: -106.6511, y: 35.0844, name: "Albuquerque"},
+    runtime: 95,
+    genre: ["Romance"],
+    tags: [""],
+    color: "#c45d46"
+  },
+  {
+    id: "AMSWCFF1",
+    title: {original: "Drunktown’s Finest"},
     year: 2014,
     group: {people: "Diné", language: "English", location: "New Mexico, US"},
     info: [
@@ -2637,7 +2620,7 @@ export const cultFeatFilms = [
     runtime: 98,
     genre: ["Romance","Drama"],
     tags: [""],
-    color: "#83527a",
+    color: "#d1b45c",
     ref: [
       { id: "dulay-2022-tv-system", type: "webpage", title: "Interview with Zig Dulay: I was afraid of being eaten by the TV system", containerTitle: "Asian Movie Pulse", contributors: [ { firstName: "Zig", lastName: "Dulay", role: "performer" } ], pubDate: { year: 2022, month: 2 }, url: "https://asianmoviepulse.com/2022/02/interview-with-zig-dulay-i-was-afraid-of-being-eaten-by-the-tv-system/", meta: { sortKey: "info", grade: "B" } }
     ]
@@ -4672,20 +4655,20 @@ export const foundRelTexts = [
       `The next morning, she looked around and saw that her hut had become a beautiful house and that she herself had turned into a beautiful young girl. She went out and saw that in the middle of the willow tent a handsome youth was sitting, combing his hair. She approached the youth. He married her. After that, they lived together.`,
       `>>(Dolganoff Ču’oleǰi 11.3:250-1 WIJ)`,
       `<...>`,
-      `<b>Sacrificium to Cān-coro’mo</b><+>*[Wooden Man]</+>`,
+      `<b>Sacrificium to <+>Cān-coro’mo[Wooden Man]</+></b>`,
       `Our grandfather, I have put this here into the fire<br>Here it is, eat what I have brought.<br>Grant me luck—If alive I shall be,<br>then feed you I always shall.`,
       `>>(Prayers 166 WIJ)`,
       `<...>`,
       `<+>Samsonov[a Tungus-style shaman, also known as Nelbosh]</+> let his long hair fly loose, put on the fringed hat, sat down on the floor on a reindeer skin and began quietly to beat the drum. Then he began to emit sounds imitative of animals and birds thus conjuring the spirits of these animals, his protectors. Then he sang:`,
-      `&emsp;&emsp;”My fore-father, my ancestors, stand near by me.<br>&emsp;&emsp;In order to help me, stand near me,<br>&emsp;&emsp;my girl-spirits, <+>xa’n.badaxče and ye’ñečuope[these are ancient Yukaghir words used only in shamanistic songs and ceremonies, representing two categories of spirits]</+>,<br>&emsp;&emsp;bring here.”`,
+      `&emsp;&emsp;“My fore-father, my ancestors, stand near by me.<br>&emsp;&emsp;In order to help me, stand near me,<br>&emsp;&emsp;my girl-spirits, <+>xa’n.badaxče and ye’ñečuope[these are ancient Yukaghir words used only in shamanistic songs and ceremonies, representing two categories of spirits]</+>,<br>&emsp;&emsp;bring here.”`,
       `After this the shaman again began to beat the drum, then, with the assistance of his helper, he stood up and, approaching the door, opened it and began to take deep breaths, thus breathing in the souls of ancestors and other spirits he had conjured. Then he returned to his place, again squatted down on the skin, shook the drum and said:`,
-      `&emsp;&emsp;”My children, my descendents,<br>&emsp;&emsp;Why do you torture us?”`,
+      `&emsp;&emsp;“My children, my descendents,<br>&emsp;&emsp;Why do you torture us?”`,
       `Thus the spirit of his fore-fathers spoke through the shaman. Then the relatives of the patient, who were, present, said:`,
-      `&emsp;&emsp;”A man is drowning in a pool of water,<br>&emsp;&emsp;they have placed in order to see you.”`,
+      `&emsp;&emsp;“A man is drowning in a pool of water,<br>&emsp;&emsp;they have placed in order to see you.”`,
       `To this, the shaman replied:`,
-      `&emsp;&emsp;”The soul of the patient, it seems,<br>&emsp;&emsp;has travelled along the road<br>&emsp;&emsp;to the Kingdom of Shadows.”`,
+      `&emsp;&emsp;“The soul of the patient, it seems,<br>&emsp;&emsp;has travelled along the road<br>&emsp;&emsp;to the Kingdom of Shadows.”`,
       `Thus spoke through the shaman the spirit of the ancestors. The relatives of the patient, that is, the people present, answered to this:`,
-      `&emsp;&emsp;”Be strong! Spare no strength!”`,
+      `&emsp;&emsp;“Be strong! Spare no strength!”`,
       `Then the shaman stopped beating the drum, put it down near by, and remained motionless, lying on his stomach on the reindeer skin. This meant that the soul of the shaman had left his body and through the drum as through a lake, had descended into the Kingdom of Shadows. The shaman lay motionless for a long time, and those present were waiting for his awakening. As to what becomes of the soul after it leaves his body, Samsonov, after the performance, told me the following...`,
       `&emsp;&emsp;The soul of the shaman accompanied by spirits followed the road which leads to the Kingdom of Shadows. It reached a little house in front of which was a dog which barked at the shaman. Then an old woman, who guards the road to the Kingdom of Shadows, came out of the house and holding in her hand a scraper for dressing skins, asked the shaman: “Did you come forever or for a time?” The shaman did not answer the old woman, but said to the spirit protectors who were accompanying him: “Do not listen to the old woman’s words, walk on, without stopping.” They reached a river. On the bank there was a boat. The shaman looked at the opposite bank and saw tents standing there. Their hide covers seemed white in the sunlight, the inhabitants walked about in the yard. The ornaments on their garments made a tinkling noise. The shaman accompanied by his spirit helpers sat down in the boat and crossed to the other bank. He left the boat and ascended the bank. The spirits of the deceased relatives of the shaman were among the other shadows. The soul of the shaman entered their tent and there it saw the soul of the sick man.`,
       `>>(Nelbosh 196-8 WIJ)`,
@@ -5769,6 +5752,22 @@ export const globFeatFilms = [
 export const cultShortFilms = [
   {
     id: "AMSWCSF",
+    title: { original: "Shimásání", translation: "My Maternal Grandmother" },
+    year: 2009,
+    group: {people: "Diné", language: "Navajo", location: "New Mexico, US"},
+    info: [
+      `In 1934 on the serene Navajo reservation, Mary Jane spends her time daydreaming and tending to her family’s flock of sheep. Mary Jane lives under the ways and guidance of her Másání (grandmother). When Mary Jane’s older sister Anne Mae flees from boarding school, she returns to the reservation with a world geography book. The images in the book reveal new worlds that are “just over the mountain.” Conflicted by her obedient nature and her curious imagination, Mary Jane must privately decide her own fate; whether to maintain her typical lifestyle alongside the sheep and her Másání or to depart into the exotic unknowns of the world expressed on the pages of the book.`
+    ],
+    watch: [""],
+    trailer: "https://youtu.be/iIw5SbSi4Pg",
+    coordinates: {x: -108.2000, y: 36.3000, name: "Burnham"},
+    runtime: 23,
+    genre: [""],
+    tags: ["bechdel test"],
+    color: "#181723"
+  },
+  {
+    id: "AMNWCSF",
     title: { original: "Long Line Of Ladies" },
     year: 2022,
     group: {people: "Karuk", language: "English", location: "California, US"},
@@ -5781,7 +5780,7 @@ export const cultShortFilms = [
     coordinates: {x: -123.5411, y: 41.3014, name: "Humboldt County"},
     runtime: 23,
     genre: [""],
-    tags: [""],
+    tags: ["bechdel test"],
     color: "#4a3924"
   },
   {

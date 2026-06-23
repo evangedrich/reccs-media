@@ -52,7 +52,7 @@ export default function Header() {
                     </div>
                     <div className={`w-7 h-7 pr-2 ${pathname==="/"?"hidden":"flex"} items-center justify-start cursor-pointer`} onClick={() => router.back()}>
                         <svg viewBox="0 0 80 100" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
-                            <path d="M 75,10 5,50 75,90" fill="none" stroke="var(--color-front)" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round" />
+                            <path d="M 75,10 8,50 75,90" fill="none" stroke="var(--color-front)" strokeWidth="8" strokeLinejoin="miter" />
                         </svg>
                     </div>
                 </div>
