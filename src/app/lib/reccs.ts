@@ -88,6 +88,7 @@ const getReccsFromD1 = unstable_cache(
   async (): Promise<Recc[]> => {
     const db = (await getCloudflareContext({ async: true })).env.DB;
     const { results } = await db.prepare("SELECT * FROM reccs").all<Row>();
+    // const { results } = await db.prepare("SELECT * FROM reccs ORDER BY RANDOM()").all<Row>();
     return results.map(rowToRecc);
   },
   ["reccs"],
@@ -101,8 +102,8 @@ async function getReccsFromLocal(): Promise<Recc[]> {
   return reccsData as unknown as Recc[];
 }
 
-// To debug the production data path in dev, comment out lines 106-7 & uncomment:
-//   export const getReccs: () => Promise<Recc[]> = getReccsFromD1;
+// To debug the production data path in dev, comment out lines 107-8 & uncomment:
+  // export const getReccs: () => Promise<Recc[]> = getReccsFromD1;
 export const getReccs: () => Promise<Recc[]> =
   process.env.NODE_ENV === "development" ? getReccsFromLocal : getReccsFromD1;
 
