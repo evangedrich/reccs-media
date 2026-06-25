@@ -59,7 +59,7 @@ function MenuItem({ name, tier1 }: { name: string, tier1: any }) {
                                 ))
                                 : subregions.filter(subr => itm.code.includes(subr.id.slice(0,2))).map((subr,i) => (
                                     <li key={`navColl${i+1}`} className="whitespace-nowrap group">
-                                        <Link href={`${itm.id}?subr=${subr.id}`} className={`${getColor(subr.id)} hover:font-extrabold`}>{subr.name.replace(" North "," N ").replace(" South "," S ").replace(" Southeast "," SE ")}</Link>
+                                        <Link href={`${itm.id}?subr=${subr.id}`} className={`${getColor(subr.id)} group-hover:font-extrabold`}>{subr.name.replace(" North "," N ").replace(" South "," S ").replace(" Southeast "," SE ")}</Link>
                                     </li>
                                 ))}
                             </ul>
@@ -130,10 +130,10 @@ export default function Header() {
                 </div>
             </div>
             <div className="w-full border-b-2 border-solid border-[var(--color-front)] p-1 flex gap-6 sm:gap-8 items-center justify-center">
-                {/* <MenuItem name="collections" tier1={categories} />
+                <MenuItem name="collections" tier1={categories} />
                 <MenuItem name="regions" tier1={regions} />
-                <Link href="/" className="hover:font-extrabold">SEARCH</Link> */}
-                {categories.map(itm => (
+                <Link href="/" className="hover:font-extrabold">SEARCH</Link>
+                {/* {categories.map(itm => (
                     <ColorLink
                         to={`/${itm.id}`}
                         text={itm.id}
@@ -142,7 +142,7 @@ export default function Header() {
                         bold={(pathname===`/${itm.id}` || collections.filter(coll => coll.type===itm.id).map(coll => coll.id).includes(pathname.slice(5,8)) )}
                         key={`${itm.id}_nav`}
                     />
-                ))}
+                ))} */}
                 {/* <Link href="/" className={`${styles.navLink} bg-[var(--color-front)] text-[var(--color-back)] px-1`}>SUBMISSIONS</Link> */}
             </div>
 
