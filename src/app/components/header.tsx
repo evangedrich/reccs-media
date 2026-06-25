@@ -9,14 +9,67 @@ import Clock from "./clock";
 import styles from "@/app/ui/main.module.css";
 import { syncopate, notoEmoji } from "@/app/fonts/fonts";
 import { collections } from "../lib/collections";
+import { subregions } from "../lib/subregions";
 import { useView } from "../lib/viewContext";
+import { getColor } from "./collectionShelf";
 
-const navLinks = [
+const categories = [
     { id: "literature", color: "g" },
     { id: "cinema", color: "y" },
     { id: "theatre", color: "r" },
     { id: "systems", color: "p" },
 ];
+const regions = [
+    { id: "africa", color: "p", code: ["AF"] },
+    { id: "americas", color: "b", code: ["AM"] },
+    { id: "eurasia", color: "o", code: ["AS","EU"] },
+    { id: "oceania", color: "g", code: ["OC"] },
+];
+
+function MenuItem({ name, tier1 }: { name: string, tier1: any }) {
+    return (
+        <div className="relative group/main">
+            <div className="uppercase group-hover/main:font-extrabold cursor-pointer">
+                {name}
+                <span className="relative -top-[4.5px] font-black">⌄</span>
+            </div>
+            <div className="absolute mt-1 left-1/2 -translate-x-1/2 border-2 px-4 py-2 hidden group-hover/main:flex flex-col items-center bg-[var(--color-back)]">
+                <div className="absolute -top-[9.5px] left-1/2 h-2 w-full -translate-x-1/2"></div>
+                <div className="absolute -top-[5.5px] left-1/2 h-2 w-2 -translate-x-1/2 rotate-45 border-t-2 border-l-2 border-[var(--color-front)] bg-[var(--color-back)]"></div>
+                {tier1.map(itm => {
+                    const [isOpen,setIsOpen] = useState(false);
+                    return (
+                        <div key={`${itm.id}_nav`} onMouseLeave={() => setIsOpen(false)}>
+                            <span className="flex justify-center">
+                                <button className="mr-1 relative -top-[1.5px] cursor-pointer" onClick={() => setIsOpen(!isOpen)}>{isOpen ? "-" : "+"}</button>
+                                <ColorLink
+                                    to={`/${itm.id}`}
+                                    text={itm.id}
+                                    c={itm.color}
+                                    caps={true}
+                                    //bold={(pathname===`/${itm.id}` || collections.filter(coll => coll.type===itm.id).map(coll => coll.id).includes(pathname.slice(5,8)) )}
+                                />
+                            </span>
+                            <ul className={`text-xs text-center mb-2 ${isOpen ? "block" : "hidden"}`}>
+                                {tier1[0].id==="literature" 
+                                ? collections.filter(coll => coll.type===itm.id).map((coll,i) => (
+                                    <li key={`navColl${i+1}`} className="whitespace-nowrap group">
+                                        <Link href={`${itm.id}?coll=${coll.id}`} className={`${getColor(coll.id)} hover:font-extrabold`}>{coll.name}</Link>
+                                    </li>
+                                ))
+                                : subregions.filter(subr => itm.code.includes(subr.id.slice(0,2))).map((subr,i) => (
+                                    <li key={`navColl${i+1}`} className="whitespace-nowrap group">
+                                        <Link href={`${itm.id}?subr=${subr.id}`} className={`${getColor(subr.id)} hover:font-extrabold`}>{subr.name.replace(" North "," N ").replace(" South "," S ").replace(" Southeast "," SE ")}</Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    )
+                })}
+            </div>
+        </div>
+    )
+}
 
 export default function Header() {
     const { showGlobe, toggleGlobe, isDark, toggleDark, isOffline, toggleOffline } = useView();
@@ -24,7 +77,7 @@ export default function Header() {
     const [date, setDate] = useState<Date>(new Date());
     const [time, setTime] = useState(new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }));
     const [colonVisible, setColonVisible] = useState(true);
-    
+
     const pathname = usePathname();
     const router = useRouter();
     useEffect(() => {
@@ -38,7 +91,7 @@ export default function Header() {
         }, 500);
         return () => clearInterval(timer);
     }, []);
-    
+
     return (
         <div className="w-full sticky top-0 bg-[var(--color-back)] z-30">
             <div className="w-full border-b-2 border-solid border-[var(--color-front)] flex items-center justify-between overflow-hidden">
@@ -77,20 +130,23 @@ export default function Header() {
                 </div>
             </div>
             <div className="w-full border-b-2 border-solid border-[var(--color-front)] p-1 flex gap-6 sm:gap-8 items-center justify-center">
-                {navLinks.map(itm => (
-                    <ColorLink 
-                        to={`/${itm.id}`} 
-                        text={itm.id} 
-                        c={itm.color} 
-                        caps={true} 
-                        bold={(pathname===`/${itm.id}` || collections.filter(coll => coll.type===itm.id).map(coll => coll.id).includes(pathname.slice(5,8)) )} 
-                        key={`${itm.id}_nav`} 
+                {/* <MenuItem name="collections" tier1={categories} />
+                <MenuItem name="regions" tier1={regions} />
+                <Link href="/" className="hover:font-extrabold">SEARCH</Link> */}
+                {categories.map(itm => (
+                    <ColorLink
+                        to={`/${itm.id}`}
+                        text={itm.id}
+                        c={itm.color}
+                        caps={true}
+                        bold={(pathname===`/${itm.id}` || collections.filter(coll => coll.type===itm.id).map(coll => coll.id).includes(pathname.slice(5,8)) )}
+                        key={`${itm.id}_nav`}
                     />
                 ))}
                 {/* <Link href="/" className={`${styles.navLink} bg-[var(--color-front)] text-[var(--color-back)] px-1`}>SUBMISSIONS</Link> */}
             </div>
-            
-            
+
+
         </div>
     )
 }

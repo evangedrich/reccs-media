@@ -110,3 +110,28 @@ export const getReccs: () => Promise<Recc[]> =
 export async function getReccById(id: string): Promise<Recc | undefined> {
   return (await getReccs()).find((r) => r.id === id);
 }
+
+// Deterministic, seeded shuffle (mulberry32 PRNG + Fisher–Yates). The same
+// `seed` always yields the same order, so navigating between collections on a
+// CollectionShelf page doesn't visibly reshuffle on each `force-dynamic` refetch.
+function seededShuffle<T>(arr: T[], seed: number): T[] {
+  let s = seed >>> 0;
+  const rand = () => {
+    s = (s + 0x6d2b79f5) | 0;
+    let t = Math.imul(s ^ (s >>> 15), 1 | s);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(rand() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+// Reccs in a stable pseudo-random order for CollectionShelf pages. Default seed
+// gives one fixed order; pass a changing seed (e.g. a day number) to reshuffle
+// on a schedule without flickering as the user clicks between collections.
+export const getShuffledReccs = async (seed = 1): Promise<Recc[]> =>
+  seededShuffle(await getReccs(), seed);

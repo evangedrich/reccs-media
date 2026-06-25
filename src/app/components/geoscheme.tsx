@@ -77,7 +77,7 @@ export default function Geoscheme({ reccs }: { reccs: Recc[] }) {
                             <div className="absolute top-0 left-0 w-full h-full -z-10 flex items-center justify-center"><LoadingIcon /></div>
                         </div>
                         <h2 className="uppercase text-[0.55rem] leading-none mt-1 opacity-50 font-bold">{collections.find(coll => coll.id===entry.id.slice(4,7))?.shortName}</h2>
-                        <h1 className="text-xs font-semibold truncate mt-[-0.25rem] leading-[1.5rem] mb-[-0.25rem]">{getTitle(entry)}</h1>
+                        <h1 className="text-xs font-semibold truncate mt-[-0.25rem] leading-[1.5rem] mb-[-0.4rem]">{getTitle(entry)}</h1>
                     </Link>
                 ))}</div>
             </div>

@@ -1335,6 +1335,7 @@ export const stirrPoetry = [
     infoURL: "",
     mediaURL: ["https://youtu.be/CzxIdFlurYQ?start=85","https://youtu.be/EHF1qjJIOYA","https://youtu.be/doaFfzMbNeQ","https://youtu.be/OJ30MRdpvyc"],
     textURL: "",
+    coordinates: {x: -111.1396, y: 32.3995, name: "Yoem Pueblo" },
     ref: [
       { id: "evers-molina-1987-yaqui-deer-songs", type: "book", title: "Maso Bwikam (Yaqui Deer Songs)", contributors: [ { firstName: "Felipe S.", lastName: "Molina", role: "author" }, { firstName: "Larry", lastName: "Evers", role: "author" } ], pubDate: { year: 1987 }, url: "https://archive.org/details/yaquideersongsma00ever", publisher: "University of Arizona Press", location: "Tucson, AZ", medium: "Print (Paperback) / Translation", meta: { notes: "A primary source for Yoeme (Yaqui) oral literature. The book transcribes the deer songs in their original language alongside English translations. It explores the concept of the 'Seyewailo' (Flower World) and the role of the 'Maso' (Deer) as a mediator between the human community and the wilderness world.", grade: "A", isbn: "0816509956", tags: ["Yaqui", "Yoeme", "Deer Dance", "Sonora", "Arizona", "Indigenous Poetry", "Ethnomusicology", "Sun Tracks"] } }
     ]
@@ -2969,7 +2970,11 @@ export const presMusDrama = [
     ],
     infoURL: ["https://crossingworlds.org/hopi-cycle-of-the-year/","https://edsitement.neh.gov/lesson-plans/lesson-3-hopi-traditional-dance-and-song","https://medium.com/weeds-wildflowers/exploring-the-sacred-hopi-religious-ceremonies-and-traditions-f8ee5d92326d#:~:text=The%20Katsina%20Dance%2C%20another%20important%20Hopi%20ceremony%2C%20honors%20the%20Kachina%20spirits%2C%20believed%20to%20be%20intermediaries%20between%20the%20Hopi%20people%20and%20the%20spiritual%20world.%20These%20ceremonies%20involve%20the%20use%20of%20ceremonial%20objects%2C%20like%20masks%20and%20costumes%2C%20and%20are%20accompanied%20by%20traditional%20songs%20and%20dances."],
     mediaURL: ["https://youtu.be/JNbJv0roLBI","https://youtu.be/U_3fgqxv7Ew","https://youtu.be/cDDcTNIPkOM?start=230"],
-    textURL: "https://folkways-media.si.edu/docs/folkways/artwork/FW04394.pdf"
+    textURL: "",
+    ref: [
+      { id: "folkways-1964-hopi-katcina", type: "book", title: "Hopi Katcina Songs and six other songs by Hopi Chanters", contributors: [ { firstName: "Jesse Walter", lastName: "Fewkes", role: "author" } ], pubDate: { year: 1964 }, publisher: "Folkways Records and Service Corp.", location: "New York, NY", url: "https://folkways-media.si.edu/docs/folkways/artwork/FW04394.pdf", meta: { sortKey: "text", grade: "C" } },
+
+    ]
   },
   {
     id: "AMNWPMD",
@@ -3719,7 +3724,7 @@ export const presMusDrama = [
 export const foundRelTexts = [
   {
     id: "AFNOFRT",
-    title: {original: "ⲣⲱ ⲛⲱ ⲡⲣⲧ ⲙ ϩⲣⲱ", transliteration: "Rw nw prt m hrw", translation: "Spells of Coming Forth by Day"},
+    title: {original: "Rw nw prt m hrw", translation: "Spells of Coming Forth by Day"},
     group: {people: "Egyptian", language: "Egyptian", religion: "Kemetism", country: "Egypt"},
     info: [
       `The heavenly paradise Aaru is an infinitely abundant and peaceful expanse of golden reeds, much like the wide tracts and thickets of the Nile Delta; but before one could plough its fields and hunt in its marshes, before one would even be permitted to undertake the perilous journey there, one’s soul must first pass the Weighing of the Heart. To overcome these obstacles, the guidance granted by a particular religious text is essential.`,
