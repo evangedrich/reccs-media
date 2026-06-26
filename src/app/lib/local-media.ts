@@ -1996,6 +1996,24 @@ export const cultFeatFilms = [
     color: "#8d796e"
   },
   {
+    id: "AFNOCFF1",
+    title: {original: "Mai Martaba", translation: "Your Highness"},
+    year: 2024,
+    group: {people: "Hausa", language: "Hausa", country: "Nigeria"},
+    info: [
+      `Jallaba’s trade boom crumbles due to internal conflict among the ruling clans. A new dynasty promises stability, shattered by a king’s choice of heir—his daughter. Princess, rival, and a deposed clan clash for the throne. Who will rule—and can Jallaba survive?`,
+      `Dir <b>PRINCE DANIEL</b>`
+    ],
+    infoURL: "",
+    watch: [""],
+    trailer: "https://youtu.be/3AEZfRd4fgA",
+    coordinates: {x: 8.3177, y: 13.0364, name: "Daura"},
+    runtime: 86,
+    genre: ["Drama", "Adventure"],
+    tags: [""],
+    color: "#"
+  },
+  {
     id: "AFNECFF",
     title: { original: "ላምብ", transliteration: "Lamibi", translation: "Lamb" },
     year: 2015,
@@ -4454,9 +4472,9 @@ export const foundRelTexts = [
       `Later, at the time when another <i>huaca</i> named Paria Caca appeared, these beings and all their works were cast out to the hot Anti lands by Paria Caca’s actions. Further on we’ll speak of Paria Caca’s emergence and his victories.`,
       `Also, as we know, there was another <i>huaca</i> named Cuni Raya. Regarding him, we’re not sure where he existed before Paria Caca or maybe after him. However, Cuni Raya’s essential nature almost matches Vira Cocha’s. For when people worshipped this <i>huaca</i>, they would invoke him, saying,`,
       `&emsp;&emsp;“Cuni Raya Vira Cocha,<br>&emsp;&emsp;You who animate mankind,<br>&emsp;&emsp;Who charge the world with being,<br>&emsp;&emsp;All things are yours!<br><V>Yours the fields and yours the people.”</V>`,
-      `&emsp;&emsp;And so, long ago, when beginning anything difficult, the ancients, even though they couldn’t see Vira Cocha, used to throw coca leaves to the ground, talk to him, and worship him before all others, saying,`,
+      `And so, long ago, when beginning anything difficult, the ancients, even though they couldn’t see Vira Cocha, used to throw coca leaves to the ground, talk to him, and worship him before all others, saying,`,
       `&emsp;&emsp;“Help me remember how,<br>&emsp;&emsp;Help me work it out,<br>&emsp;&emsp;Cuni Raya Vira Cocha!”`,
-      `&emsp;&emsp;And the master weaver would worship and call on him whenever it was hard for him to weave. For that reason, we’ll write first about this <i>huaca</i> and about his life, and later on about Paria Caca.`,
+      `And the master weaver would worship and call on him whenever it was hard for him to weave. For that reason, we’ll write first about this <i>huaca</i> and about his life, and later on about Paria Caca.`,
       `>>(Huarochirí 1:3-8)`,
       `<...>`,
       `A long, long time ago, Cuni Raya Vira Cocha used to go around posing as a miserably poor and friendless man, with his cloak and tunic all ripped and tattered. Some people who didn’t recognize him for who he was yelled, “You poor lousy wretch!” Yet it was this man who fashioned all the villages. Just by speaking he made the fields, and finished the terraces with walls of fine masonry. As for the irrigation canals, he channeled them out from their sources just by tossing down the flower of a reed called <i>pupuna</i>. After that, he went around performing all kinds of wonders, putting some of the local <i>huacas</i> to shame with his cleverness.`,
@@ -4941,7 +4959,7 @@ export const foundRelTexts = [
       `>>(Ecclesiastes 1:2-11 NIV)`,
       `<...>`,
       `Now when Jesus saw the crowds, he went up on a mountainside and sat down. His disciples came to him, and he began to teach them. He said:`,
-      `“Blessed are the poor in spirit,<br>&emsp;&emsp;for theirs is the kingdom of heaven.<br>Blessed are those who mourn,<br>&emsp;&emsp;for they will be comforted.<br>Blessed are the meek,<br>&emsp;&emsp;for they will inherit the earth.<br><v>Blessed are those who hunger and thirst for righteousness,</v><br>&emsp;&emsp;for they will be filled.<br>Blessed are the merciful,<br>&emsp;&emsp;for they will be shown mercy.<br>Blessed are the pure in heart,<br>&emsp;&emsp;for they will see God.<br>Blessed are the peacemakers,<br>&emsp;&emsp;for they will be called children of God.<br><v>Blessed are those who are persecuted because of righteousness,</v><br>&emsp;&emsp;for theirs is the kingdom of heaven.`,
+      `“Blessed are the poor in spirit,<br>&emsp;&emsp;for theirs is the kingdom of heaven.<br>Blessed are those who mourn,<br>&emsp;&emsp;for they will be comforted.<br>Blessed are the meek,<br>&emsp;&emsp;for they will inherit the earth.<br><v>Blessed are those who hunger and thirst for righteousness,</v>&emsp;&emsp;for they will be filled.<br>Blessed are the merciful,<br>&emsp;&emsp;for they will be shown mercy.<br>Blessed are the pure in heart,<br>&emsp;&emsp;for they will see God.<br>Blessed are the peacemakers,<br>&emsp;&emsp;for they will be called children of God.<br><v>Blessed are those who are persecuted because of righteousness,</v>&emsp;&emsp;for theirs is the kingdom of heaven.`,
       `“Blessed are you when people insult you, persecute you and falsely say all kinds of evil against you because of me. Rejoice and be glad, because great is your reward in heaven, for in the same way they persecuted the prophets who were before you.”`,
       `>>(Matthew 5:1-12 NIV)`,
       `<...>`,

@@ -59,7 +59,7 @@ export default async function DetailPage({ params }: { params: Promise<{ mediaID
                         <ul className="sm:flex gap-x-6 gap-y-1 flex-wrap">
                             {(Object.keys(sortedGroup ?? {}) as Array<keyof typeof groupIcons>).map(key => (
                                 <li key={`${key}Text`}>
-                                    <span className={`${notoEmoji.className} ${key==="location" ? "sm:mr-0" : ""} mr-1 font-bold`}>{groupIcons[key]}</span>
+                                    <span className={`${notoEmoji.className} ${key==="location" ? "sm:mr-0" : ""} mr-1 font-bold cursor-default`} title={key.charAt(0).toUpperCase()+key.slice(1)}>{groupIcons[key]}</span>
                                     {sortedGroup[key as keyof typeof entry.group]}
                                 </li>
                             ))}
