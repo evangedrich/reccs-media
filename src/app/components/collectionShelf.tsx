@@ -34,6 +34,11 @@ export default function CollectionShelf({
     const initialColl = searchParams.get("coll") ?? collections[0].id;
     const [currColl, setCurrColl] = useState(initialColl);
     // console.log(reccs.filter(recc => recc.id.slice(5,7)==="FF" || recc.id.slice(5,7)==="SF"));
+    // Sync URL -> state so navigating to a new ?coll= on the same page updates the view
+    useEffect(() => {
+        const coll = searchParams.get("coll") ?? collections[0].id;
+        setCurrColl(coll);
+    },[searchParams]);
     useEffect(() => {
         const params = new URLSearchParams(searchParams.toString());
         if (currColl===collections[0].id) {params.delete("coll");} else {params.set("coll",currColl);}

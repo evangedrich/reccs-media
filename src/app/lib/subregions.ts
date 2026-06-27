@@ -1,8 +1,20 @@
+interface RegionType {
+    id: string;
+    color: string;
+    code?: string[];
+}
 interface SubregionType {
     id: string;
     name: string;
     description: string;
 }
+
+export const regions: RegionType[] = [
+    { id: "africa", color: "p", code: ["AF"] },
+    { id: "americas", color: "b", code: ["AM"] },
+    { id: "eurasia", color: "o", code: ["AS","EU"] },
+    { id: "oceania", color: "g", code: ["OC"] },
+];
 
 export const subregions: SubregionType[] = [
     { id: "AFNO", name: "North Africa", description: "The Amazigh, Saharan, and Chadic languages anchor the distinctive linguistic and cultural heritage of the Maghreb, Sahara, and Sahel." },

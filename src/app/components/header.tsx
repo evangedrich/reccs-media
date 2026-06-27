@@ -9,7 +9,7 @@ import Clock from "./clock";
 import styles from "@/app/ui/main.module.css";
 import { syncopate, notoEmoji } from "@/app/fonts/fonts";
 import { collections } from "../lib/collections";
-import { subregions } from "../lib/subregions";
+import { regions, subregions } from "../lib/subregions";
 import { regionPolygons } from "../lib/mapPaths";
 import { useView } from "../lib/viewContext";
 import { getColor } from "./collectionShelf";
@@ -19,12 +19,6 @@ const categories = [
     { id: "cinema", color: "y" },
     { id: "theatre", color: "r" },
     { id: "systems", color: "p" },
-];
-const regions = [
-    { id: "africa", color: "p", code: ["AF"] },
-    { id: "americas", color: "b", code: ["AM"] },
-    { id: "eurasia", color: "o", code: ["AS","EU"] },
-    { id: "oceania", color: "g", code: ["OC"] },
 ];
 
 function MenuItem({ name, tier1 }: { name: string, tier1: { id: string, color: string, code?: string[] }[] }) {
@@ -44,7 +38,7 @@ function MenuItem({ name, tier1 }: { name: string, tier1: { id: string, color: s
                         <span className="flex justify-center items-center">
                             <button className="mr-[4px] cursor-pointer h-3 w-3 pb-[2px] leading-1 hover:bg-[var(--color-front)] hover:text-[var(--color-back)] active:opacity-80" onClick={() => setIsOpen(prevState => prevState.map((curr,k) => k===i ? !curr : curr))}>{isOpen[i] ? "-" : "+"}</button>
                             <ColorLink
-                                to={isCat?`/${itm.id}`:`/regions/${itm.id}`}
+                                to={isCat?`/collections/${itm.id}`:`/regions/${itm.id}`}
                                 text={itm.id}
                                 c={itm.color}
                                 caps={true}
@@ -55,7 +49,7 @@ function MenuItem({ name, tier1 }: { name: string, tier1: { id: string, color: s
                             {isCat 
                             ? collections.filter(coll => coll.type===itm.id).map((coll,j) => (
                                 <li key={`navColl${j+1}`} className="whitespace-nowrap group">
-                                    <Link href={`/${itm.id}?coll=${coll.id}`} className={`${getColor(coll.id)} group-hover:font-extrabold`}>{coll.name}</Link>
+                                    <Link href={`/collections/${itm.id}?coll=${coll.id}`} className={`${getColor(coll.id)} group-hover:font-extrabold`}>{coll.name}</Link>
                                 </li>
                             ))
                             : subregions.filter(subr => itm.code?.includes(subr.id.slice(0,2))).map((subr,j) => (
@@ -96,7 +90,7 @@ export default function Header() {
         <div className="w-full sticky top-0 bg-[var(--color-back)] z-30">
             <div className="w-full border-b-2 border-solid border-[var(--color-front)] flex items-center justify-between overflow-hidden">
                 {/* <div className={`${notoEmoji.className} text-2xl w-13 h-13 text-center leading-13`}>🌎</div> */}
-                <div className={`w-13 h-13 text-center leading-13 flex items-center ${showGlobe?"justify-end max-sm:justify-center":"justify-center max-sm:justify-center"} active:scale-90 transition-[scale]`}>
+                <div className={`w-13 h-13 text-center leading-13 flex items-center ${showGlobe&&pathname==="/"?"justify-end max-sm:justify-center":"justify-center max-sm:justify-center"} active:scale-90 transition-[scale]`}>
                     <div className={`h-6 ${showGlobe?"rounded-[1px] w-10 max-sm:rounded-full max-sm:w-6":"rounded-full w-6 max-sm:rounded-[1px] max-sm:w-6"} overflow-hidden ring-[1.8px] ring-[var(--color-front)] cursor-pointer group hover:opacity-80 ${pathname==="/"?"block":"hidden"}`} onClick={() => pathname==="/" ? toggleGlobe() : router.push('/')}>
                         <div className={`flex h-6 ${showGlobe?"":"animate-[map-scroll_800ms_linear_infinite] max-sm:animate-none"} [animation-play-state:paused] group-hover:[animation-play-state:running] ml-[-5px]`}>
                             <div className={`${showGlobe?"ml-[-1.5px] max-sm:ml-[-3px]":"max-sm:ml-[-5px]"} shrink-0 w-[50px] h-6`}><TinyMap /></div>
