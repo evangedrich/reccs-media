@@ -26,11 +26,11 @@ function MenuItem({ name, tier1 }: { name: string, tier1: { id: string, color: s
     const isCat: boolean = tier1[0].id==="literature";
     return (
         <div className="relative group/main">
-            <div className="uppercase group-hover/main:font-extrabold cursor-pointer">
+            <div className="uppercase sm:group-hover/main:font-extrabold cursor-default">
                 {name}
                 <span className="relative -top-[4.5px] font-black">⌄</span>
             </div>
-            <div className="absolute mt-1 left-1/2 -translate-x-1/2 border-2 px-3 py-2 hidden group-hover/main:flex flex-col items-center bg-[var(--color-back)]">
+            <div className="absolute mt-1 left-1/2 -translate-x-1/2 border-2 px-3 py-2 hidden sm:group-hover/main:flex flex-col items-center bg-[var(--color-back)]">
                 <div className="absolute -top-[9.5px] left-1/2 h-2 w-full -translate-x-1/2"></div>
                 <div className="absolute -top-[5.5px] left-1/2 h-2 w-2 -translate-x-1/2 rotate-45 border-t-2 border-l-2 border-[var(--color-front)] bg-[var(--color-back)]"></div>
                 {tier1.map((itm,i) => (

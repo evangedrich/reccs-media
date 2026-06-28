@@ -36,6 +36,17 @@
     filter: blur(1px) brightness(0.6);
 }
 
+.contourMap path {
+    cursor: pointer;
+}
+.selectedConMap {
+    animation: flash 500ms steps(2) infinite;
+}
+@keyframes flash {
+    to { fill-opacity: 0.25; }
+    from { fill-opacity: 0.05; }
+}
+
 .citationContainer p {
     margin-bottom: 0.5em;
     text-indent: 2em hanging;
