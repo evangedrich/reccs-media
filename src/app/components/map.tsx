@@ -53,9 +53,8 @@ export function ContourMap({ mapID, currSubrID, setCurrSubrID, hovered, setHover
                     d={itm.d} 
                     stroke="var(--color-front)" 
                     strokeWidth={mapData?.stroke} 
-                    fill={itm.color} 
-                    fillOpacity={itm.id===currSubrID||itm.id===hovered ? "0.25" : "0"} 
-                    className={currSubrID===itm.id ? styles.selectedConMap : ""} 
+                    fill={itm.id===currSubrID ? itm.color : "var(--color-mid)"} 
+                    className={`${itm.id===hovered&&itm.id!==currSubrID ? "sm:[fill-opacity:0.75] [fill-opacity:0]" : itm.id===currSubrID ? "[fill-opacity:0.25]" : "[fill-opacity:0]"}`}
                 />
             ))}
         </svg>

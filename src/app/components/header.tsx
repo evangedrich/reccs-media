@@ -3,16 +3,13 @@
 import { useState, useEffect } from "react";
 import { usePathname, useRouter } from 'next/navigation'
 import Link from "next/link";
-import ColorLink from "./colorLink";
+import MenuItem from "./menuItem";
 import TinyMap from "./tinyMap";
 import Clock from "./clock";
 import styles from "@/app/ui/main.module.css";
 import { syncopate, notoEmoji } from "@/app/fonts/fonts";
-import { collections } from "../lib/collections";
-import { regions, subregions } from "../lib/subregions";
-import { regionPolygons } from "../lib/mapPaths";
+import { regions } from "../lib/subregions";
 import { useView } from "../lib/viewContext";
-import { getColor } from "./collectionShelf";
 
 const categories = [
     { id: "literature", color: "g" },
@@ -20,50 +17,6 @@ const categories = [
     { id: "theatre", color: "r" },
     { id: "systems", color: "p" },
 ];
-
-function MenuItem({ name, tier1 }: { name: string, tier1: { id: string, color: string, code?: string[] }[] }) {
-    const [isOpen,setIsOpen] = useState(new Array(tier1.length).fill(false));
-    const isCat: boolean = tier1[0].id==="literature";
-    return (
-        <div className="relative group/main">
-            <div className="uppercase sm:group-hover/main:font-extrabold cursor-default">
-                {name}
-                <span className="relative -top-[4.5px] font-black">⌄</span>
-            </div>
-            <div className="absolute mt-1 left-1/2 -translate-x-1/2 border-2 px-3 py-2 hidden sm:group-hover/main:flex flex-col items-center bg-[var(--color-back)]">
-                <div className="absolute -top-[9.5px] left-1/2 h-2 w-full -translate-x-1/2"></div>
-                <div className="absolute -top-[5.5px] left-1/2 h-2 w-2 -translate-x-1/2 rotate-45 border-t-2 border-l-2 border-[var(--color-front)] bg-[var(--color-back)]"></div>
-                {tier1.map((itm,i) => (
-                    <div key={`${itm.id}_nav`} onMouseLeave={() => setIsOpen(new Array(tier1.length).fill(false))}>
-                        <span className="flex justify-center items-center">
-                            <button className="mr-[4px] cursor-pointer h-3 w-3 pb-[2px] leading-1 hover:bg-[var(--color-front)] hover:text-[var(--color-back)] active:opacity-80" onClick={() => setIsOpen(prevState => prevState.map((curr,k) => k===i ? !curr : curr))}>{isOpen[i] ? "-" : "+"}</button>
-                            <ColorLink
-                                to={isCat?`/collections/${itm.id}`:`/regions/${itm.id}`}
-                                text={itm.id}
-                                c={itm.color}
-                                caps={true}
-                                //bold={(pathname===`/${itm.id}` || collections.filter(coll => coll.type===itm.id).map(coll => coll.id).includes(pathname.slice(5,8)) )}
-                            />
-                        </span>
-                        <ul className={`text-sm text-center mb-2 ${isOpen[i] ? "block" : "hidden"}`}>
-                            {isCat 
-                            ? collections.filter(coll => coll.type===itm.id).map((coll,j) => (
-                                <li key={`navColl${j+1}`} className="whitespace-nowrap group">
-                                    <Link href={`/collections/${itm.id}?coll=${coll.id}`} className={`${getColor(coll.id)} group-hover:font-extrabold`}>{coll.name}</Link>
-                                </li>
-                            ))
-                            : subregions.filter(subr => itm.code?.includes(subr.id.slice(0,2))).map((subr,j) => (
-                                <li key={`navSubr${j+1}`} className="whitespace-nowrap group">
-                                    <Link href={`/regions/${itm.id}?subr=${subr.id}`} style={{'--color-hover':regionPolygons.find(ply => ply.id===subr.id)?.color}} className={`hover:font-extrabold hover:text-[var(--color-hover)]`}>{subr.name.replace(" North "," N ").replace(" South "," S ").replace(" Southeast "," SE ")}</Link>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                ))}
-            </div>
-        </div>
-    )
-}
 
 export default function Header() {
     const { showGlobe, toggleGlobe, isDark, toggleDark, isOffline, toggleOffline } = useView();
@@ -123,7 +76,7 @@ export default function Header() {
                     <Clock date={date} time={time} colonVisible={colonVisible} />
                 </div>
             </div>
-            <div className="w-full border-b-2 border-solid border-[var(--color-front)] p-1 flex gap-6 sm:gap-8 items-center justify-center">
+            <div className="relative w-full border-b-2 border-solid border-[var(--color-front)] p-1 flex gap-6 sm:gap-8 items-center justify-center">
                 <MenuItem name="collections" tier1={categories} />
                 <MenuItem name="regions" tier1={regions} />
                 <Link href="/search" className="hover:font-extrabold">SEARCH</Link>
