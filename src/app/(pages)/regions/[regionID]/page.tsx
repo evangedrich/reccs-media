@@ -1,6 +1,7 @@
 import { regions } from "@/app/lib/subregions";
 import { Metadata } from "next";
 import SubregionViewer from "@/app/components/subregionViewer";
+import { getShuffledReccs } from "@/app/lib/reccs";
 
 export async function generateStaticParams() {
     return regions.map(reg => ({
@@ -18,7 +19,8 @@ export async function generateMetadata({ params }: { params: Promise<{ regionID:
 
 export default async function RegionPage({ params }: { params: Promise<{ regionID: string }> }) {
     const { regionID } = await params;
+    const reccs = await getShuffledReccs(Math.floor(Date.now() / 86_400_000));
     return (
-        <SubregionViewer regionID={regionID} />
+        <SubregionViewer regionID={regionID} reccs={reccs} />
     )
 }
