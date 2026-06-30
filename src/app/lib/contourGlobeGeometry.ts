@@ -34,6 +34,19 @@ function angleBetween(a: V3, b: V3): number {
     return Math.acos(Math.max(-1, Math.min(1, a[0] * b[0] + a[1] * b[1] + a[2] * b[2])));
 }
 
+// lon/lat re-expressed in a frame rotated so (lon0, lat0) sits at the origin
+// (prime meridian / equator). Triangulating in this centered equirectangular frame
+// avoids the Robinson pixel map's severe high-latitude distortion, which otherwise
+// folds the lifted mesh for wide, high-latitude regions (e.g. ASNO near the Bering).
+function centerLonLat(lon: number, lat: number, lon0: number, lat0: number): [number, number] {
+    const [x, y, z] = lonLatToUnit(lon, lat);
+    const a = -lon0 * DEG;
+    const x1 = x * Math.cos(a) + z * Math.sin(a), z1 = -x * Math.sin(a) + z * Math.cos(a), y1 = y;
+    const b = -lat0 * DEG;
+    const y2 = y1 * Math.cos(b) - z1 * Math.sin(b), z2 = y1 * Math.sin(b) + z1 * Math.cos(b);
+    return [Math.atan2(-z2, x1) / DEG, Math.asin(Math.max(-1, Math.min(1, y2))) / DEG];
+}
+
 function midUnit(a: V3, b: V3): V3 {
     const x = a[0] + b[0], y = a[1] + b[1], z = a[2] + b[2];
     const n = Math.hypot(x, y, z) || 1;
@@ -80,21 +93,27 @@ function build(): ContourRegionMesh[] {
         let cx = 0, cy = 0, cz = 0;
         for (const ring of parseContourRings(c.d)) {
             if (ring.length < 2) continue;
-            const unit = ring.map(([px, py]) => {
-                const [lon, lat] = contourPixelToLonLat(px, py);
-                return lonLatToUnit(lon, lat);
-            });
+            const ll = ring.map(([px, py]) => contourPixelToLonLat(px, py));
+            const unit = ll.map(([lon, lat]) => lonLatToUnit(lon, lat));
             for (let i = 0; i < unit.length; i++) {
                 const a = unit[i], b = unit[(i + 1) % unit.length];
                 outline.push(a[0], a[1], a[2], b[0], b[1], b[2]);
                 cx += a[0]; cy += a[1]; cz += a[2];
             }
             if (ring.length < 3) continue;
-            // Triangulate in flat pixel space (valid, non-self-intersecting there);
-            // each ring is filled solid (islands are separate rings, the rare lake is
-            // harmlessly filled at globe scale).
+            // Triangulate in a frame centered on this ring (see centerLonLat): valid and
+            // low-distortion, so the lifted mesh doesn't fold. Vertices are still lifted
+            // from their true lon/lat below, so placement is unchanged. Each ring is
+            // filled solid (islands are separate rings, the rare lake harmlessly filled).
+            let rx = 0, ry = 0, rz = 0;
+            for (const u of unit) { rx += u[0]; ry += u[1]; rz += u[2]; }
+            const lon0 = Math.atan2(-rz, rx) / DEG;
+            const lat0 = Math.asin(Math.max(-1, Math.min(1, ry / (Math.hypot(rx, ry, rz) || 1)))) / DEG;
             const flat: number[] = [];
-            for (const [px, py] of ring) flat.push(px, py);
+            for (const [lon, lat] of ll) {
+                const [clon, clat] = centerLonLat(lon, lat, lon0, lat0);
+                flat.push(clon, clat);
+            }
             const idx = earcut(flat);
             for (let i = 0; i < idx.length; i += 3) {
                 emitTriangle(unit[idx[i]], unit[idx[i + 1]], unit[idx[i + 2]], fill, SUBDIVIDE_MAX_DEPTH);

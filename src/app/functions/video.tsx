@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const externalLinkClass = "text-[var(--color-highlight)] underline";
 
@@ -127,25 +127,41 @@ const getEmbed = (url: string): React.ReactNode => {
 export function PrepVideo({ vid }: { vid: string | string[] }) {
     const seriesRef = useRef<HTMLDivElement>(null);
     const urls = Array.isArray(vid) ? vid : [vid];
-    const [currIndex, setCurrIndex] = useState(0);
+    const currIndexRef = useRef(0);
+    const [edges, setEdges] = useState<{ atStart: boolean; atEnd: boolean }>({ atStart: true, atEnd: false });
 
+    const measure = () => {
+        const el = seriesRef.current;
+        if (!el) return;
+        setEdges({
+            atStart: el.scrollLeft <= 0,
+            atEnd: el.scrollLeft + el.clientWidth >= el.scrollWidth - 1,
+        });
+        const iframes = el.querySelectorAll("iframe");
+        const entryWidth = (el.querySelector<HTMLElement>(":scope > div")?.offsetWidth ?? el.clientWidth);
+        if (entryWidth === 0) return;
+        const newIndex = Math.max(0, Math.min(iframes.length - 1, Math.round(el.scrollLeft / entryWidth)));
+        if (newIndex !== currIndexRef.current) {
+            // Stop the video we scrolled away from by reloading its iframe.
+            const prev = iframes[currIndexRef.current];
+            if (prev) prev.src = prev.src;
+            currIndexRef.current = newIndex;
+        }
+    };
     const scroll = (dir: -1 | 1) => {
         const el = seriesRef.current;
         if (!el) return;
-        const firstIframe = el.querySelector("iframe");
-        const entryWidth = firstIframe ? firstIframe.offsetWidth : el.clientWidth;
-        if (entryWidth === 0) return;
-        const iframes = el.querySelectorAll("iframe");
-        const prev = iframes[currIndex];
-        if (prev) prev.src = prev.src;
-        el.scrollBy({ left: dir * entryWidth, behavior: "smooth" });
-        setTimeout(() => {
-            const newIndex = Math.max(0, Math.min(iframes.length - 1, Math.round(el.scrollLeft / entryWidth)));
-            setCurrIndex(newIndex);
-            const target = iframes[newIndex];
-            if (target) target.src = target.src;
-        }, 500);
+        const step = (el.querySelector<HTMLElement>(":scope > div")?.offsetWidth ?? el.clientWidth);
+        el.scrollBy({ left: dir * step, behavior: "smooth" });
     };
+    useEffect(() => {
+        measure();
+        const el = seriesRef.current;
+        if (!el) return;
+        const ro = new ResizeObserver(measure);
+        ro.observe(el);
+        return () => ro.disconnect();
+    }, [urls.length]);
 
     if (urls.length === 1) {
         return <div className="w-full aspect-video border-2 bg-[var(--color-mid)] rounded-2xl overflow-hidden">{getEmbed(urls[0])}</div>;
@@ -155,6 +171,7 @@ export function PrepVideo({ vid }: { vid: string | string[] }) {
         <div className="relative border-2 bg-[var(--color-mid)] rounded-2xl overflow-hidden">
             <div
                 ref={seriesRef}
+                onScroll={measure}
                 className="flex overflow-x-scroll no-scrollbar snap-x snap-mandatory scroll-smooth"
             >
                 {urls.map((url, i) => (
@@ -166,7 +183,7 @@ export function PrepVideo({ vid }: { vid: string | string[] }) {
                     </div>
                 ))}
             </div>
-            {currIndex > 0 && (
+            {!edges.atStart && (
                 <button
                     onClick={() => scroll(-1)}
                     aria-label="Previous video"
@@ -175,7 +192,7 @@ export function PrepVideo({ vid }: { vid: string | string[] }) {
                     <span className="w-full h-full hover:bg-[var(--color-mid)] flex items-center justify-center">&lt;</span>
                 </button>
             )}
-            {currIndex < urls.length - 1 && (
+            {!edges.atEnd && (
                 <button
                     onClick={() => scroll(1)}
                     aria-label="Next video"
