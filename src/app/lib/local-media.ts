@@ -99,7 +99,7 @@ export const modTradNovels = [
     id: "AFSOMTN",
     title: { original: "Nǂisa" },
     author: "Nǂisa",
-    group: {people: "!Kung", language: "Juǀ'hoan", country: "Botswana"},
+    group: {people: "!Kung", language: "Juǀʼhoan", country: "Botswana"},
     info: [
       `“I’ll break open the story and tell you what is there. Then, like the others that have fallen out onto the sand, I will finish with it, and the wind will take it away.”`,
       `An engaging, vivid, insightful book, this work reveals the universality of women’s experiences and feelings despite vast differences in culture and society, through stories of childhood, marriage, motherhood, and loss. Nǂisa helps us know what it means to be !Kung, to be a woman, and finally, to be human.`,
@@ -109,11 +109,11 @@ export const modTradNovels = [
       `I have told you about my lovers, but I haven’t finished telling you about all of them, because they are as many as my fingers and toes. Some have died and others are still alive. Me, I’m a bad one. I’m not like you who have no lovers. Because, when you are a woman, you don’t just sit still and do nothing—you have lovers. You don’t just sit with the man of your hut, with just one man. One man can give you very little. One man gives you only one kind of food to eat. But when you have lovers, one brings you something and another brings you something else. One comes at night with meat, another with money, another with beads. Your husband also does things and gives them to you.`,
       `But sitting with just one man? We don’t do that. Does one man have enough thoughts for you?`,
       `There are many kinds of work a woman has to do, and she should have lovers wherever she goes. If she goes somewhere to visit and is alone, then someone there will give her beads, someone else will give her meat, and someone else will give her other food. When she returns to her village, she will have been well taken care of.`,
-      `Even if she goes with her husband, she should still have a few lovers. Because each one gives her something. She gathers from one man one thing, from another man some thing else, and from another, yet something else. It is as though her genitals were worth money—Pounds! Rands! Shillings (laughs)! She collects her gatherings from each different place until she has filled her kaross with beads and pubic aprons and money.`,
+      `Even if she goes with her husband, she should still have a few lovers. Because each one gives her something. She gathers from one man one thing, from another man something else, and from another, yet something else. It is as though her genitals were worth money—Pounds! Rands! Shillings (laughs)! She collects her gatherings from each different place until she has filled her kaross with beads and pubic aprons and money.`,
       `When she returns home, she confides in her friends, “One of my lovers gave me this, another gave me that, and another gave me this.” Her friends say, “Oh, the place you went has such wonderful lovers. They treated you very well!” She says, “Listen, if all of you are as beautiful as I think you are and if you also went there, the men would see you and like you, too. Then just as they treated me, they would also treat you.”`,
       `It’s the same when a woman remains home. One day when she and her husband are living as usual, her husband says, “I’m going away for a few days.” She stays behind, and that’s when she sees her lovers. If one of her lovers lives in a village nearby and an animal is killed, he’ll cut some meat and bring it to her. It will be beautiful meat, full of juice and fat. He’ll sit with her, cooking it until the broth is rich and heavy. She will drink it and her heart will be happy. She’ll think, “Oh, my husband has just left and here I am, drinking this wonderful broth.”`,
       `Another day, perhaps he comes to her and they sleep together. He asks, “When is your husband coming back?” She says, “Not for a while. My leg hasn’t started to shake,” meaning her husband isn’t coming home yet. They make love, and when the rooster crows before dawn breaks, he leaves.`,
-      `Another day, perhaps he comes again. The two of them lie down together and he asks, “I’d really like to stay with you the rest of the night. The last time I came to you, I left right after we made love. Now, today ... what is your leg telling you?” She says, “This morning as I was siting around, my thighs started to tremble, ever so slightly. Perhaps my husband will come back later. Perhaps he will come in the middle of the night. I don’t know when he planned to come back. But my leg was shaking, so it may be tonight.” Her lover says, “All right, will only lie with you a short time. Then I will leave.”`,
+      `Another day, perhaps he comes again. The two of them lie down together and he asks, “I’d really like to stay with you the rest of the night. The last time I came to you, I left right after we made love. Now, today ... what is your leg telling you?” She says, “This morning as I was siting around, my thighs started to tremble, ever so slightly. Perhaps my husband will come back later. Perhaps he will come in the middle of the night. I don’t know when he planned to come back. But my leg was shaking, so it may be tonight.” Her lover says, “All right, I will only lie with you a short time. Then I will leave.”`,
       `The two of them lie together and then separate. He leaves, and soon after, her husband comes back. The next morning, when she is about doing things, perhaps getting water at the well, her lover meets her and asks if her husband came back. She says, “Yes, he arrived soon after you left. Didn’t I tell you that my leg was trembling in the morning? It was a true warning.” Her lover says, “Now that your husband is here, my heart feels pain! It really hurts! Later, when the sun is low in the sky and after you’ve finished your work, let’s meet somewhere.” She says, “Fine, but only if my work is finished. I have a lot of things to do. After I finish with the water, I have to do things for my husband, because he has just now come back. Only much later, when the sun is near to setting, will I be able to leave his work and meet you.” The next day, she and her husband stay together. She works for him, washing and cooking. She thinks, “My lover told me we will meet again today.” She spends the whole day doing the things she has to do. She works so hard that the time she was supposed to meet him passes. She works until she goes to sleep. She thinks, “Oh, when my lover sees me tomorrow, he’s going to be angry!” She’s afraid. Then she thinks, “There’s no reason for him to be angry. I didn’t meet him because I was working for my husband.”`,
       `The next day, as she is filling her water containers at the well, her lover sees her and says, “What did I tell you the other day? Didn’t I say we would meet?” She says, “I told you I had all my husband’s work to do—washing and cooking. When he told me to get firewood, he also wanted me to do other things when I came back. He had me work very hard and I wasn’t even aware of when it was time to meet you, that’s why I worked past it.” Her lover is angry and says,`,
       `“If it was because of your husband, that’s all right. But if you do it again, I’ll beat you! What’s the matter with your genitals? Are they too old to care?” She says, “What did I do that I should be hit? I was doing things for my husband.”`,
@@ -376,7 +376,7 @@ export const modTradNovels = [
     id: "AMCEMTN",
     title: {original: "La otra cara", translation: "The Other Face"},
     author: "Gaspar Pedro González",
-    group: {people: "Q'anjob'al Maya", language: "Q'anjob'al/Spanish", country: "Guatemala"},
+    group: {people: "Qʼanjobʼal Maya", language: "Qʼanjobʼal/Spanish", country: "Guatemala"},
     info: [
       `This novel narrates the life of Lwin, a Q’anjob’al Maya, living in the hamlet of Jolomk’u high up in the isolated Cuchumatán Mountains in the Department of Huehuetenango. Rich in personal and cultural detail, the reader comes away knowing better just what it means to be a contemporary Maya in Guatemala.`,
       `<b>GASPAR PEDRO GONZÁLEZ</b>, born in San Pedro Soloma in 1945, is a graduate of Universidad Mariano Gálvez, having majored in educational planning. He currently teaches Mayan literature and oral tradition at his alma mater, and is a member of the Academy of Mayan Languages of Guatemala.`
@@ -2815,7 +2815,7 @@ export const presMusDrama = [
     mediaURL: ["https://youtu.be/AlvU3Ml7JNw","https://youtu.be/TiOmIPTOILw","https://archive.org/details/numtchaitheceremonialdanceofthekungbushmen"],
     textURL: "",
     ref: [
-      { id: "keeney-2015", type: "book", title: "Way of the Bushman: Spiritual Teachings and Practices of the Kalahari Ju/'hoansi", contributors: [ { firstName: "Bradford", lastName: "Keeney", role: "editor" }, { firstName: "Hillary", lastName: "Keeney", role: "editor" } ], pubDate: { year: 2015 }, publisher: "Bear & Company", location: "Rochester, Vermont", isbn: "9781591432050", pages: { start: "97", end: "97", literal: "97" }, url: "https://maypoleofwisdom.com/wp-content/uploads/2022/10/way-of-the-bushman-keeney-bradford-z-lib.org_.pdf#page=97", medium: "Digital PDF", meta: { notes: "Page 97 is within the section 'The Teachings of the Elders,' focusing on the concepts of n/om (spiritual energy) and the transition to the spirit world.", grade: "A", tags: ["San People", "Ju/'hoansi", "Kalahari", "Spiritual Traditions"], sortKey: "info" } }
+      { id: "keeney-2015", type: "book", title: "Way of the Bushman: Spiritual Teachings and Practices of the Kalahari Ju/ʼhoansi", contributors: [ { firstName: "Bradford", lastName: "Keeney", role: "editor" }, { firstName: "Hillary", lastName: "Keeney", role: "editor" } ], pubDate: { year: 2015 }, publisher: "Bear & Company", location: "Rochester, Vermont", isbn: "9781591432050", pages: { start: "97", end: "97", literal: "97" }, url: "https://maypoleofwisdom.com/wp-content/uploads/2022/10/way-of-the-bushman-keeney-bradford-z-lib.org_.pdf#page=97", medium: "Digital PDF", meta: { notes: "Page 97 is within the section 'The Teachings of the Elders,' focusing on the concepts of n/om (spiritual energy) and the transition to the spirit world.", grade: "A", tags: ["San People", "Ju/ʼhoansi", "Kalahari", "Spiritual Traditions"], sortKey: "info" } }
     ]
   },
   {
@@ -2823,7 +2823,7 @@ export const presMusDrama = [
     title: {original: "Mvet"},
     meta: { works: [`<i>A Mvet</i> by Zwé Nguéma`,`<i>The Fang Mvet Epic</i> (Oveng Ndoumou Obame)`,`<i>Mvet Asseng Mbame Ona</i>`,`<i>The Mvet: Man, Death and Immortality</i><br>`] },
     century: 19,
-    group: {people: "Ekang", language: "Fang-Beti-Bulu", country: "Equatorial Guinea"},
+    group: {people: "Ekang", language: "Fang/Beti/Bulu", country: "Equatorial Guinea"},
     info: [
       `The Mvet is an epic cycle of heroic tales encompassing music, storytelling, and dramatic performance. Shows are performed by a master storyteller known as the <i>mbom-mvet</i>, who simultaneously sings, recites, dances, and plays a stringed instrument called the <i>mvet</i>, a chordophone with calabash resonators, whose sounds accompany the intricate narratives.`,
       `The Mvet performance is a communal event, often taking place at night, where the audience actively participates by responding to the performer and marking the rhythm with claps or other objects.`,
@@ -3191,7 +3191,7 @@ export const presMusDrama = [
     id: "AMSOPMD",
     title: {original: "Hain"},
     century: null,
-    group: {people: "Selk'nam", language: "Selk'nam", location: "Tierra del Fuego, CL/AR"},
+    group: {people: "Selkʼnam", language: "Selkʼnam", location: "Tierra del Fuego, CL/AR"},
     info: [
       `The Hain was an initiation ceremony for young Selk’nam men, marking their transition into adulthood, that evolved out of an earlier ceremony of the same name for young women. It involved elaborate rituals, dramatic impersonations of spirits by masked and painted men, and teachings about Selk’nam traditions and social structure. The initiates, called <i>klóketen</i>, would participate in a series of performances that altogether could last anywhere from multiple days to months, or even as long as a year.`,
       `The Hain of 1923 was extensively documented by Austrian initiate Martin Gusinde, and its his writings and images that provide the bulk of the present-day knowledge of the performance tradition, since much of its oral record was lost with the murders of the Selk’nam sages in a genocide carried out by European settlers and mercenaries from 1880-1930, which resulted in the deaths of 98% of the Selk’nam population. The last full performance of the Hain ocurred in 1936, though by then greatly diminished in scale from the much larger assemblies of the 19th century.`,
@@ -3286,7 +3286,10 @@ export const presMusDrama = [
     ],
     infoURL: ["https://meltingtheice.wordpress.com/2008/08/27/the-music-of-nivkhi-people/","https://mobile.atlaskmns.ru/page/en/people_nivhi_spirit.html"],
     mediaURL: ["https://youtu.be/mh6w5eyHDVg?start=144","https://youtu.be/7jJKN-W44HU","https://youtu.be/JyS0_CE46MI","https://youtu.be/4HPLLbnCE9w","https://youtu.be/2KOgSN0Zalc?start=971"],
-    textURL: ["https://science-education.ru/ru/article/view?id=395","https://sakhgu.ru/wp-content/uploads/page/record_85102/2019_12/%D0%98%D0%BA%D0%BE%D0%BD%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%95.-%D0%90.-%D0%9B%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%82%D1%83%D1%80%D0%BD%D0%BE%D0%B5-%D0%BA%D1%80%D0%B0%D0%B5%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5.pdf"]
+    textURL: ["https://sakhgu.ru/wp-content/uploads/page/record_85102/2019_12/%D0%98%D0%BA%D0%BE%D0%BD%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0-%D0%95.-%D0%90.-%D0%9B%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%82%D1%83%D1%80%D0%BD%D0%BE%D0%B5-%D0%BA%D1%80%D0%B0%D0%B5%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5.pdf"],
+    ref: [
+      { id: "", type: "article", containerTitle: "Modern Problems of Science and Education", title: "“The Man of Myth” by Vladimir Sangha and the Oral Epic Tradition", contributors: [ { firstName: "Yu. G.", lastName: "Khazankovich", role: "Author" } ], pubDate: { year: 2007 }, volume: "3", pages: "108-111", url: "https://science-education.ru/ru/article/view?id=395", meta: { sort: "info", grade: "B" } }
+    ]
   },
   {
     id: "ASEAPMD",
@@ -4512,7 +4515,7 @@ export const foundRelTexts = [
   {
     id: "AMNEFRT",
     title: {original: "Watunna", translation: "Retellings"},
-    group: {people: "So'to", language: "So'to", religion: "So'to religion", location: "Amazonas, VE"},
+    group: {people: "So'to", language: "Ye'kuana", religion: "So'to religion", location: "Amazonas, VE"},
     info: [
       `The deeds of the Heavenly Ancestors are the models for correct behavior, the perfect expression of traditional law, the wisdom bequeathed to the Earth by the Primordial Beings. Such deeds have been recounted since the beginning of time in the rituals of the magico-religious festivals of <i>Wanwanna</i>, which are celebrated to inaugurate new gardens or communal houses.`,
       `At these ceremonies, the laws of the people are sung in the form of narratives. Only the elders completely know the secrets of the <i>ademi</i> sacred songs, whose meanings they have discovered, little by little, through contact with the <+><i>sadashe</i>[animal masters and grandfather spirits]</+> over a lifetime of participation in <i>Wanwanna</i>. They have gained the wisdom and power that the <i>Watunna</i> has opened to them.`,

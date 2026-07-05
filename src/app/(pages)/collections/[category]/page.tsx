@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { categories } from "@/app/lib/collections";
 import { collections } from "@/app/lib/collections";
 import CollectionShelf from "@/app/components/collectionShelf";
@@ -23,6 +24,8 @@ export default async function CollectionPage({ params }: { params: Promise<{ cat
     const cinemaCollections = collections.filter(collection => collection.type===category);
     const reccs = await getShuffledReccs(Math.floor(Date.now() / 86_400_000));
     return (
-        <CollectionShelf collections={cinemaCollections} reccs={reccs} />
+        <Suspense>
+            <CollectionShelf collections={cinemaCollections} reccs={reccs} />
+        </Suspense>
     )
 }

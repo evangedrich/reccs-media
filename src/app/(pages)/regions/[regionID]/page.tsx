@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { regions } from "@/app/lib/subregions";
 import { Metadata } from "next";
 import SubregionViewer from "@/app/components/subregionViewer";
@@ -21,6 +22,8 @@ export default async function RegionPage({ params }: { params: Promise<{ regionI
     const { regionID } = await params;
     const reccs = await getShuffledReccs(Math.floor(Date.now() / 86_400_000));
     return (
-        <SubregionViewer regionID={regionID} reccs={reccs} />
+        <Suspense>
+            <SubregionViewer regionID={regionID} reccs={reccs} />
+        </Suspense>
     )
 }

@@ -88,23 +88,23 @@ export default function SubregionViewer({ regionID, reccs }: { regionID: string;
                 <div className={`max-sm:basis-full min-w-0 max-sm:border-b-2 p-4 flex justify-center ${currSubrID ? "sm:basis-1/2" : "sm:basis-full"}`}>
                     <div className={`w-auto max-w-full h-auto max-h-full ease-in-out max-sm:w-full max-sm:h-full shrink-0 flex items-center justify-center max-sm:aspect-square ${currSubrID? /*"sm:aspect-square sm:transition-[aspect-ratio] sm:duration-250"*/ "" : "sm:aspect-2/1"}`}>
                         <div className={`${!showGlobe?"max-sm:hidden":"sm:hidden"} w-full h-full`}><DynamicContourMap mapID={regionID} currSubrID={currSubrID} setCurrSubrID={setCurrSubrID} hovered={currHovered} setHovered={setCurrHovered} /></div>
-                        <div className={`${!showGlobe?"sm:hidden":"max-sm:hidden"} border-2 h-full w-auto max-w-full rounded-full aspect-square p-[3.5px] shrink-0`}><ContourGlobe mapID={regionID} currSubrID={currSubrID} setCurrSubrID={setCurrSubrID} hovered={currHovered} setHovered={setCurrHovered} /></div>
+                        <div className={`${!showGlobe?"sm:hidden":"max-sm:hidden"} border-2 h-full w-auto max-w-full rounded-full aspect-square p-[3.5px] shrink-0 overflow-hidden`}><ContourGlobe mapID={regionID} currSubrID={currSubrID} setCurrSubrID={setCurrSubrID} hovered={currHovered} setHovered={setCurrHovered} /></div>
                     </div>
                 </div>
-                <div className={`max-sm:basis-full min-h-55 min-w-0 max-w-full overflow-y-scroll sm:absolute sm:top-0 sm:right-0 sm:bottom-0 sm:w-1/2 ease-in-out ${currSubrID ? "transition-transform duration-250 sm:translate-x-0 sm:border-l-2" : "sm:translate-x-full"}`}>
-                    <div className="border-b-2 p-4">
+                <div className={`max-sm:basis-full min-h-65 min-w-0 max-w-full overflow-y-scroll sm:absolute sm:top-0 sm:right-0 sm:bottom-0 sm:w-1/2 ease-in-out ${currSubrID ? "transition-transform duration-250 sm:translate-x-0 sm:border-l-2" : "sm:translate-x-full"}`}>
+                    <div className={`${currSubrID ? "border-b-2" : ""} p-4`}>
                         <h1 className={`max-w-200 text-5xl max-sm:text-4xl font-extrabold ${currSubrID?"mb-3":""}`}>{currSubrID ? currSubrName.replace(" America","\u00A0America") : currSubrName}</h1>
                         <p className="max-w-200">{currSubrDesc}</p>
                     </div>
                     <div className={`relative ${entries.length>0?"border-b-2":""}`}>
                         <div ref={scrollRef} onScroll={measure} className="max-w-full flex overflow-x-auto overflow-y-hidden no-scrollbar snap-x snap-mandatory">
                             {entries.map((entry,i) => (
-                                <Link className={`w-40 max-sm:w-30 h-auto shrink-0 p-3 hover:bg-[var(--color-mid)]/75 snap-start ${i<entries.length-1||entries.length<5 ?"border-r-2":""}`} href={`/${entry.id}`} key={`item${entry.id}`}>
-                                    <div className="relative w-full aspect-3/4 bg-[var(--color-mid)]">
+                                <Link className={`w-40 max-sm:w-30 h-auto shrink-0 p-3 hover:bg-[var(--color-mid)]/75 active:opacity-90 group sm:snap-start ${i<entries.length-1||entries.length<5 ?"border-r-2":""}`} href={`/${entry.id}`} key={`item${entry.id}`}>
+                                    <div className="relative w-full aspect-3/4 bg-[var(--color-mid)] group-hover:opacity-90">
                                         <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center"><LoadingIcon /></div>
                                         <Image src={posterUrl(entry.id)} alt="Media Image" width="300" height="400" className="absolute top-0 left-0 w-full" unoptimized />
                                     </div>
-                                    <h3 className="text-[0.7em]/1 opacity-50 mt-3">{collections.find(coll => coll.id===entry.id.slice(4,7))?.shortName}</h3>
+                                    <h3 className="text-[0.65em]/1 opacity-50 mt-3">{collections.find(coll => coll.id===entry.id.slice(4,7))?.shortName}</h3>
                                     <h2 className="text-sm font-bold truncate leading-[2em] mb-[-0.6em]">{getTitle(entry)}</h2>
                                 </Link>
                             ))}
@@ -121,7 +121,7 @@ export default function SubregionViewer({ regionID, reccs }: { regionID: string;
                         </div>
                     </div>
                     <div className={`p-4 ${neighbors?.length??0>0 ? "" : "hidden"}`}>
-                        <h3 className="text-xs opacity-50">Related:</h3>
+                        <h3 className="text-xs opacity-50 mb-1">Related:</h3>
                         <p className="-ml-1">
                             {neighbors?.map((neighborID,i) => (
                                 <Link className="mr-1 p-1 px-1 leading-1 hover:bg-[var(--color-mid)]/75" href={`/regions/${regions.find(reg => reg.code?.includes(neighborID.slice(0,2)))?.id}?subr=${neighborID}`} key={`neighbor${neighborID}`}>

@@ -17,28 +17,21 @@ import { allContours } from "./mapPaths";
 import { parseContourRings, contourPixelToLonLat } from "./contourProjection";
 
 const DEG = Math.PI / 180;
-// Subdivide any fill triangle whose edges exceed this arc length so the flat triangle
-// stays close to the sphere surface (sagitta for ~10deg is ~0.004 of the radius, well
-// clear of the inner background sphere).
-const MAX_EDGE_RAD = 10 * DEG;
 const SUBDIVIDE_MAX_DEPTH = 5;
 
 type V3 = [number, number, number];
+type P2 = [number, number];
 
 function lonLatToUnit(lon: number, lat: number): V3 {
     const phi = lat * DEG, lam = lon * DEG, cphi = Math.cos(phi);
     return [cphi * Math.cos(lam), Math.sin(phi), -cphi * Math.sin(lam)];
 }
 
-function angleBetween(a: V3, b: V3): number {
-    return Math.acos(Math.max(-1, Math.min(1, a[0] * b[0] + a[1] * b[1] + a[2] * b[2])));
-}
-
 // lon/lat re-expressed in a frame rotated so (lon0, lat0) sits at the origin
 // (prime meridian / equator). Triangulating in this centered equirectangular frame
 // avoids the Robinson pixel map's severe high-latitude distortion, which otherwise
 // folds the lifted mesh for wide, high-latitude regions (e.g. ASNO near the Bering).
-function centerLonLat(lon: number, lat: number, lon0: number, lat0: number): [number, number] {
+function centerLonLat(lon: number, lat: number, lon0: number, lat0: number): P2 {
     const [x, y, z] = lonLatToUnit(lon, lat);
     const a = -lon0 * DEG;
     const x1 = x * Math.cos(a) + z * Math.sin(a), z1 = -x * Math.sin(a) + z * Math.cos(a), y1 = y;
@@ -47,16 +40,21 @@ function centerLonLat(lon: number, lat: number, lon0: number, lat0: number): [nu
     return [Math.atan2(-z2, x1) / DEG, Math.asin(Math.max(-1, Math.min(1, y2))) / DEG];
 }
 
-function midUnit(a: V3, b: V3): V3 {
-    const x = a[0] + b[0], y = a[1] + b[1], z = a[2] + b[2];
-    const n = Math.hypot(x, y, z) || 1;
-    return [x / n, y / n, z / n];
+// Inverse of centerLonLat: a centered lon/lat back to a world-space unit vector.
+// Subdivided vertices are lifted through this so the whole fill is the equirectangular
+// image of a planar triangulation (fold- and overlap-free), rather than drifting off
+// it via great-circle midpoints.
+function liftCentered(clon: number, clat: number, lon0: number, lat0: number): V3 {
+    const [x2, y2, z2] = lonLatToUnit(clon, clat);
+    const b = -lat0 * DEG;
+    const x1 = x2, y1 = y2 * Math.cos(b) + z2 * Math.sin(b), z1 = -y2 * Math.sin(b) + z2 * Math.cos(b);
+    const a = -lon0 * DEG;
+    return [x1 * Math.cos(a) - z1 * Math.sin(a), y1, x1 * Math.sin(a) + z1 * Math.cos(a)];
 }
 
-// Recursively 4-split a spherical triangle until its edges are short enough, pushing
-// final vertices (flat, 9 numbers per triangle) into `out`, wound so the triangle
-// faces outward from the sphere center (so the fill can be rendered single-sided and
-// the region's far side doesn't bleed through its near side).
+// Push a triangle's final vertices (flat, 9 numbers) into `out`, wound so it faces
+// outward from the sphere center (lets the fill render single-sided so a region's far
+// side doesn't bleed through its near side).
 function pushOutward(a: V3, b: V3, c: V3, out: number[]): void {
     const ux = b[0] - a[0], uy = b[1] - a[1], uz = b[2] - a[2];
     const vx = c[0] - a[0], vy = c[1] - a[1], vz = c[2] - a[2];
@@ -66,16 +64,34 @@ function pushOutward(a: V3, b: V3, c: V3, out: number[]): void {
     else out.push(a[0], a[1], a[2], c[0], c[1], c[2], b[0], b[1], b[2]);
 }
 
-function emitTriangle(a: V3, b: V3, c: V3, out: number[], depth: number): void {
-    if (depth <= 0 || (angleBetween(a, b) <= MAX_EDGE_RAD && angleBetween(b, c) <= MAX_EDGE_RAD && angleBetween(c, a) <= MAX_EDGE_RAD)) {
-        pushOutward(a, b, c, out);
+const MAX_EDGE_DEG = 10;
+const mid = (p: P2, q: P2): P2 => [(p[0] + q[0]) / 2, (p[1] + q[1]) / 2];
+const tooLong = (p: P2, q: P2) => Math.hypot(p[0] - q[0], p[1] - q[1]) > MAX_EDGE_DEG;
+
+// Red-green refinement in centered lon/lat: split ONLY the edges that are too long, so
+// two triangles sharing an edge always make the same decision about it. That keeps the
+// mesh conforming (no T-junction cracks) while subdividing just the few oversized
+// triangles. Leaves are lifted to the sphere and emitted outward-facing.
+function refine(a: P2, b: P2, c: P2, out: number[], lon0: number, lat0: number, depth: number): void {
+    const lab = tooLong(a, b), lbc = tooLong(b, c), lca = tooLong(c, a);
+    if (depth <= 0 || (!lab && !lbc && !lca)) {
+        pushOutward(liftCentered(a[0], a[1], lon0, lat0), liftCentered(b[0], b[1], lon0, lat0), liftCentered(c[0], c[1], lon0, lat0), out);
         return;
     }
-    const ab = midUnit(a, b), bc = midUnit(b, c), ca = midUnit(c, a);
-    emitTriangle(a, ab, ca, out, depth - 1);
-    emitTriangle(ab, b, bc, out, depth - 1);
-    emitTriangle(ca, bc, c, out, depth - 1);
-    emitTriangle(ab, bc, ca, out, depth - 1);
+    const r = (x: P2, y: P2, z: P2) => refine(x, y, z, out, lon0, lat0, depth - 1);
+    const n = (lab ? 1 : 0) + (lbc ? 1 : 0) + (lca ? 1 : 0);
+    if (n === 3) {
+        const mab = mid(a, b), mbc = mid(b, c), mca = mid(c, a);
+        r(a, mab, mca); r(mab, b, mbc); r(mca, mbc, c); r(mab, mbc, mca);
+    } else if (n === 1) {
+        if (lab) { const m = mid(a, b); r(a, m, c); r(m, b, c); }
+        else if (lbc) { const m = mid(b, c); r(a, b, m); r(a, m, c); }
+        else { const m = mid(c, a); r(a, b, m); r(b, c, m); }
+    } else { // n === 2: split the two long edges (they share a vertex)
+        if (lab && lbc) { const mab = mid(a, b), mbc = mid(b, c); r(mab, b, mbc); r(a, mab, mbc); r(a, mbc, c); }
+        else if (lbc && lca) { const mbc = mid(b, c), mca = mid(c, a); r(mbc, c, mca); r(a, b, mbc); r(a, mbc, mca); }
+        else { const mab = mid(a, b), mca = mid(c, a); r(a, mab, mca); r(mab, b, c); r(mab, c, mca); }
+    }
 }
 
 export type ContourRegionMesh = {
@@ -109,14 +125,10 @@ function build(): ContourRegionMesh[] {
             for (const u of unit) { rx += u[0]; ry += u[1]; rz += u[2]; }
             const lon0 = Math.atan2(-rz, rx) / DEG;
             const lat0 = Math.asin(Math.max(-1, Math.min(1, ry / (Math.hypot(rx, ry, rz) || 1)))) / DEG;
-            const flat: number[] = [];
-            for (const [lon, lat] of ll) {
-                const [clon, clat] = centerLonLat(lon, lat, lon0, lat0);
-                flat.push(clon, clat);
-            }
-            const idx = earcut(flat);
+            const cl = ll.map(([lon, lat]) => centerLonLat(lon, lat, lon0, lat0));
+            const idx = earcut(cl.flat());
             for (let i = 0; i < idx.length; i += 3) {
-                emitTriangle(unit[idx[i]], unit[idx[i + 1]], unit[idx[i + 2]], fill, SUBDIVIDE_MAX_DEPTH);
+                refine(cl[idx[i]], cl[idx[i + 1]], cl[idx[i + 2]], fill, lon0, lat0, SUBDIVIDE_MAX_DEPTH);
             }
         }
         const n = Math.hypot(cx, cy, cz) || 1;

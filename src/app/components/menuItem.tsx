@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, type CSSProperties } from "react";
 import { collections } from "../lib/collections";
 import { subregions } from "../lib/subregions";
 import { regionPolygons } from "../lib/mapPaths";
@@ -44,7 +44,7 @@ export default function MenuItem({ name, tier1 }: { name: string, tier1: { id: s
                             ))
                             : subregions.filter(subr => itm.code?.includes(subr.id.slice(0,2))).map((subr,j) => (
                                 <li key={`navSubr${j+1}`} className="whitespace-nowrap group max-sm:p-1">
-                                    <Link href={`/regions/${itm.id}?subr=${subr.id}`} style={{'--color-hover':regionPolygons.find(ply => ply.id===subr.id)?.color}} className={`hover:font-extrabold hover:text-[var(--color-hover)]`} onClick={() => setMainOpen(false)}>{subr.name.replace(" North "," N ").replace(" South "," S ").replace(" Southeast "," SE ")}</Link>
+                                    <Link href={`/regions/${itm.id}?subr=${subr.id}`} style={{'--color-hover':regionPolygons.find(ply => ply.id===subr.id)?.color} as CSSProperties} className={`hover:font-extrabold hover:text-[var(--color-hover)]`} onClick={() => setMainOpen(false)}>{subr.name.replace(" North "," N ").replace(" South "," S ").replace(" Southeast "," SE ")}</Link>
                                 </li>
                             ))}
                         </ul>

@@ -72,7 +72,7 @@ export default function MediaContent({ entry }: { entry: any }) {
             <div className={`${styles.mediaContent} p-4 max-w-[800px]`} onScroll={() => setAbbrOpen(false)}>
                 {getContent()}
             </div>
-            <div className={`sm:hidden fixed -bottom-10 left-0 w-full bg-[var(--color-back)] border-t-2 ${abbrOpen?"max-h-[50vh]":"max-h-0"} transform translate-y-1 transition-[max-height] duration-400 overflow-y-auto overscroll-y-none z-10`} onMouseLeave={() => setAbbrOpen(false)}>
+            <div className={`sm:hidden fixed -bottom-10 left-0 w-full bg-[var(--color-back)] border-t-2 z-30 ${abbrOpen?"max-h-[50vh]":"max-h-0"} transform translate-y-1 transition-[max-height] duration-400 overflow-y-auto overscroll-y-none z-10`} onMouseLeave={() => setAbbrOpen(false)}>
                 <div className="sticky left-0 top-0 w-full flex justify-end text-xs p-3 pb-1 flex items-center bg-[var(--color-back)] active:opacity-60" onClick={() => setAbbrOpen(false)}>CLOSE Ｘ</div>
                 <div className="p-6 pt-0 pb-30">
                     <h3 className="italic pb-2">{currAbbr[0]}:</h3>
