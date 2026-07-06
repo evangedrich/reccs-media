@@ -12,10 +12,10 @@ import { subregions } from "../lib/subregions";
 import { searchTypes, filterTypes } from "../functions/search";
 import FilterItems from "./filterItems";
 
-const filterKeys = ["people","language","religion"];
+const filterKeys = ["people","language","religion","location"];
 const parseFilters = (params: URLSearchParams) => {
     const f: Record<string,string[]> = {};
-    filterKeys.forEach(key => { const val = params.get(key); if (val) { f[key] = val.split(","); } });
+    filterKeys.forEach(key => { const vals = params.getAll(key); if (vals.length) { f[key] = vals; } });
     return f;
 };
 
@@ -37,8 +37,8 @@ export default function SearchWindow ({ reccs }: { reccs: Recc[] }) {
         const params = new URLSearchParams(searchParams.toString());
         if (input==="") {params.delete("q");} else {params.set("q",input);}
         filterKeys.forEach(key => {
-            const vals = filters[key] ?? [];
-            if (vals.length===0) {params.delete(key);} else {params.set(key,vals.join(","));}
+            params.delete(key);
+            (filters[key] ?? []).forEach(v => params.append(key,v));
         });
         const qs = params.toString();
         if (qs !== searchParams.toString()) {
@@ -57,9 +57,10 @@ export default function SearchWindow ({ reccs }: { reccs: Recc[] }) {
     const languages = filterTypes[0].get(reccs,"language");
     const peoples = filterTypes[0].get(reccs,"people");
     const religions = filterTypes[0].get(reccs,"religion");
+    const locations = filterTypes[0].get(reccs,"location");
     return (
         <div className="flex h-full grow justify-center min-h-0 max-sm:flex-wrap max-sm:content-start">
-            <div className="w-80 p-4 sm:border-r-2 flex flex-col gap-1 max-sm:w-full max-sm:h-fit max-sm:border-b-2 sm:max-h-[calc(100vh_-_var(--header-h)_-_126px_+_2px)]">
+            <div className="w-80 p-4 sm:border-r-2 flex flex-col gap-1 max-sm:w-full max-sm:h-fit max-sm:border-b-2 max-sm:sticky max-sm:transition-[top] max-sm:top-[var(--header-h)] max-sm:self-start max-sm:z-20 max-sm:bg-[var(--color-back)] sm:max-h-[calc(100%)]">
                 <form onSubmit={e => e.preventDefault()}>
                     <div className="w-full border-b-2 flex">
                         <input 
@@ -82,16 +83,17 @@ export default function SearchWindow ({ reccs }: { reccs: Recc[] }) {
                             ))}
                         </ul>
                     </div></div>
-                    <div className={`font-extrabold sm:hidden`} onClick={() => setFiltersOpen(!filtersOpen)}>☰ filters</div>
+                    <div className={`font-extrabold sm:hidden`} onClick={() => setFiltersOpen(!filtersOpen)}><span className="relative -top-[1.5px] mr-[4px]">{filtersOpen?"✕":"☰"}</span>filters</div>
                 </div>
-                <div className={`max-sm:p-4 overflow-hidden sm:pb-6 sm:grow bg-[var(--color-back)] max-sm:fixed max-sm:bottom-0 max-sm:left-0 max-sm:w-full max-sm:max-h-[80dvh] max-sm:overflow-y-auto max-sm:border-t-2 max-sm:z-20 max-sm:transition-transform max-sm:duration-300 max-sm:ease-out max-sm:min-h-60 ${filtersOpen?"max-sm:translate-y-0":"max-sm:translate-y-full"}`} onMouseLeave={() => setFiltersOpen(false)}>
+                <div className={`max-sm:z-30 max-sm:p-4 overflow-hidden sm:grow flex flex-col min-h-0 bg-[var(--color-back)] max-sm:fixed max-sm:bottom-0 max-sm:left-0 max-sm:w-full max-sm:h-[calc(100%_-_var(--header-h)_-_84px_+_2px)] max-sm:transition-[translate,height] max-sm:overflow-y-auto max-sm:border-t-2 max-sm:z-20 max-sm:min-h-60 ${filtersOpen?"max-sm:translate-y-0":"max-sm:translate-y-full"}`}>
                     <div className="flex justify-between">
                         <div className="text-sm max-sm:mb-2">filter by</div>
-                        <button className={`text-sm cursor-pointer hover:opacity-80 active:scale-90 ${Object.keys(filters).length===0 ? "hidden" : ""}`} onClick={() => setFilters({})}>✕</button>
+                        <button className={`text-sm cursor-pointer hover:opacity-80 active:scale-90 relative -top-[6px] font-bold ${Object.keys(filters).length===0 ? "hidden" : ""}`} onClick={() => setFilters({})}>ᴄʟᴇᴀʀ ᴀʟʟ</button>
                     </div>
-                    <div className="h-full overflow-hidden max-sm:flex max-sm:flex-col max-sm:gap-2">
-                        <FilterItems label="people" items={peoples} filters={filters} setFilters={setFilters} />
+                    <div className="overflow-hidden flex flex-col flex-1 min-h-0 max-sm:gap-2">
                         <FilterItems label="language" items={languages} filters={filters} setFilters={setFilters} />
+                        <FilterItems label="people" items={peoples} filters={filters} setFilters={setFilters} />
+                        <FilterItems label="location" items={locations} filters={filters} setFilters={setFilters} />
                         <FilterItems label="religion" items={religions} filters={filters} setFilters={setFilters} />
                     </div>
                 </div>
@@ -104,8 +106,8 @@ export default function SearchWindow ({ reccs }: { reccs: Recc[] }) {
                             <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center"><LoadingIcon /></div>
                             <Image src={posterUrl(entry.id)} alt="Media Image" width="300" height="400" className="absolute top-0 left-0 w-full" unoptimized />
                         </div>
-                        <h3 className="text-[0.65rem] leading-none truncate">{subregions.find(subr => subr.id===entry.id.slice(0,4))?.name.replace(" North "," N ").replace(" South "," S ").replace(" Southeast "," SE ")}</h3>
-                        <h2 className="text-[0.9rem] font-extrabold leading-[1.7em] my-[-0.35em] truncate">{getTitle(entry)}</h2>
+                        <h3 className="sm:text-[0.65rem] text-[0.55rem] leading-none truncate opacity-60">{subregions.find(subr => subr.id===entry.id.slice(0,4))?.name.replace(" North "," N ").replace(" South "," S ").replace(" Southeast "," SE ")}</h3>
+                        <h2 className="sm:text-[0.9rem] text-[0.8rem] font-extrabold leading-[1.7em] my-[-0.35em] truncate">{getTitle(entry)}</h2>
                     </Link>
                 ))}
                 </div>

@@ -9,9 +9,11 @@
 		"lint": "next lint",
 		"sync": "tsx scripts/sync-d1.ts",
 		"sync:images": "tsx scripts/sync-images.ts",
+		"revalidate": "tsx scripts/revalidate.ts",
 		"subset-fonts": "tsx scripts/subset-fonts.ts",
 		"update-map": "python3 scripts/update-region-polygons.py",
-		"deploy": "pnpm sync && pnpm subset-fonts && opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+		"deploy": "pnpm sync --skip-revalidate && pnpm subset-fonts && opennextjs-cloudflare build && opennextjs-cloudflare deploy && pnpm revalidate",
+		"deploy:quick": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
 		"upload": "pnpm subset-fonts && opennextjs-cloudflare build && opennextjs-cloudflare upload",
 		"preview": "pnpm subset-fonts && opennextjs-cloudflare build && opennextjs-cloudflare preview",
 		"cf-typegen": "wrangler types --env-interface CloudflareEnv ./cloudflare-env.d.ts"

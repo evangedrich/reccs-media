@@ -7,6 +7,7 @@ import StickyTitleBar from "../components/stickyTitleBar";
 import MediaContent from "../components/mediaContent";
 import { getTitle, getByline, isMongol } from "../functions/text";
 import { posterUrl } from "../lib/images";
+import { subregions } from "../lib/subregions";
 
 export const dynamic = "force-dynamic";
 export async function generateMetadata(
@@ -63,6 +64,10 @@ export default async function DetailPage({ params }: { params: Promise<{ mediaID
                                     {sortedGroup[key as keyof typeof entry.group]}
                                 </li>
                             ))}
+                            <li>
+                                <span className={`${notoEmoji.className} mr-1 font-bold cursor-default`} title="Region">{groupIcons.country}</span>
+                                {subregions.find(subr => subr.id===mediaID.slice(0,4))?.name.replace(" North ", " N ").replace(" South ", " S ").replace(" Southeast ", " SE ")}
+                            </li>
                         </ul>
                     </div>
                 </StickyTitleBar>

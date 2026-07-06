@@ -20,6 +20,10 @@ if (existsSync(devVarsPath)) {
 }
 
 const isInit = process.argv.includes("--init");
+// `pnpm deploy` passes this so the cache bust is deferred until AFTER
+// `opennextjs-cloudflare deploy` (which re-populates the R2/D1 caches). A
+// revalidate fired before publish doesn't stick; see `pnpm revalidate`.
+const skipRevalidate = process.argv.includes("--skip-revalidate");
 const DB_NAME = "reccs-media";
 const REVALIDATE_URL = process.env.REVALIDATE_URL ?? "https://reccs.media/api/revalidate";
 const REVALIDATE_TOKEN = process.env.REVALIDATE_TOKEN;
@@ -130,6 +134,8 @@ function buildSql(rows: Array<Record<(typeof COLUMNS)[number], Cell>>): string {
 
 async function maybeRevalidate(): Promise<{ ok: boolean; reason: string }> {
   if (isInit) return { ok: false, reason: "skipped (--init)" };
+  if (skipRevalidate)
+    return { ok: false, reason: "skipped (--skip-revalidate; deploy revalidates after publish)" };
   if (!REVALIDATE_TOKEN)
     return { ok: false, reason: "skipped (REVALIDATE_TOKEN not set)" };
   try {

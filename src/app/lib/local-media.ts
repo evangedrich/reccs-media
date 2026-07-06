@@ -3,7 +3,7 @@ export const modTradNovels = [
     id: "AFNOMTN",
     title: {original: "ⵍⵡⴰⵍⵉ ⵏ ⵓⴷⵔⴰⵔ", transliteration: "Lwali n udrar", translation: "Saint of the Mountain"},
     author: "Belaïd Ait-Ali",
-    group: {people: "Kabyle", language: "Kabyle", country: "Algeria"},
+    group: {people: "Kabyle", language: "Kabyle", location: "Algeria"},
     info: [
       `<i>Lwali n wedrar</i>, translated as <i>All Rags’ Journey to Sacred Heights</i>, tells the captivating tale of a gentle giant whose humble beginnings and simple nature earned him the nickname that would define his life. Despite enduring poverty, ridicule, and hardship, he found solace and strength in his wife, Thumbelina, whose quiet resilience and unwavering support shaped their harmonious life in Thagmount-Ath-Moussa.`,
       `Set against a backdrop of belief, community dynamics, and the complexities of spiritual leadership in Kabyle society, <i>All Rags’ Journey to Sacred Heights</i> is a poignant exploration of resilience, quest for meaning, justice, and the transformative power of kindness in the face of adversity.`,
@@ -38,7 +38,7 @@ export const modTradNovels = [
     id: "AFNEMTN",
     title: {original: "የሺንጋ ቃያ", transliteration: "Yä-Šinga Qaya", translation: "Shinega’s Village"},
     author: "Sahle Sellassie",
-    group: {people: "Gurage", language: "Chaha", country: "Ethiopia"},
+    group: {people: "Gurage", language: "Chaha", location: "Ethiopia"},
     info: [
       /* `የሺንጋ መንደር = Yä-Šinga Mändär in standard Amharic`, */
       `Based on the author’s own experiences being brought up in a small town in the Gurage Zone of rural Ethiopia, <i>Shinega’s Village</i> contrasts quiet village life with the intrusive modernity of Addis Ababa. Originally published in 1956 in the Chaha language, the novel was translated into English by Leslau Wolf in 1964.`,
@@ -65,7 +65,7 @@ export const modTradNovels = [
     id: "AFEAMTN",
     title: {original: "Miaha", translation: "Strange Bride"},
     author: "Grace Ogot",
-    group: {people: "Luo", language: "Dholuo", country: "Kenya"},
+    group: {people: "Luo", language: "Dholuo", location: "Kenya"},
     info: [
       `<i>The Strange Bride</i>, first published in Dholuo as <i>Miaha</i> (1983), is an interpretation of a rich Luo myth. The people of Got Owaga lead a placid, almost idyllic, life-style until the glamorous and mysterious Nyawir suddenly appears from an unknown world.`,
       `<b>GRACE OGOT</b> was born in Kenya in 1930. She was educated at Ngiya High School and Butere Girls’ High School. Thereafter, she trained as a nurse in Uganda and England. Mrs. Ogot worked as an Assistant Minister in the Kenya Government. She has previously written scripts for the BBC and worked as a Community Development Officer and as a Public Relations Officer. Among her earlier published works are <i>Land Without Thunder</i> (Heinemann), <i>The Promised Land</i> and <i>The Other Woman</i>.`
@@ -99,7 +99,7 @@ export const modTradNovels = [
     id: "AFSOMTN",
     title: { original: "Nǂisa" },
     author: "Nǂisa",
-    group: {people: "!Kung", language: "Juǀʼhoan", country: "Botswana"},
+    group: {people: "!Kung", language: "Juǀʼhoan", location: "Botswana"},
     info: [
       `“I’ll break open the story and tell you what is there. Then, like the others that have fallen out onto the sand, I will finish with it, and the wind will take it away.”`,
       `An engaging, vivid, insightful book, this work reveals the universality of women’s experiences and feelings despite vast differences in culture and society, through stories of childhood, marriage, motherhood, and loss. Nǂisa helps us know what it means to be !Kung, to be a woman, and finally, to be human.`,
@@ -130,7 +130,7 @@ export const modTradNovels = [
     id: "AFCEMTN",
     title: {original: "Ebamba", translation: "Mr. Fix-It"},
     author: "Richard Ali A Mutu",
-    group: {people: "Congolese", language: "Lingala", country: "DRC"},
+    group: {people: "Mongo", language: "Lingala", location: "DR Congo"},
     info: [
       `Ebamba’s name means “mender” in Lingala, but everything in the Congolese twenty-something’s life seems to be falling apart. In the chaotic megacity of Kinshasa, the educated but unemployed young man must navigate the ever widening distance between tradition and modernity—from the payment of his fiancée’s exorbitant dowry to the unexpected sexual confession of his best friend—as he struggles with responsibility and flirts with temptation.`,
       `<b>RICHARD ALI A MUTU</b> was born in Mbandaka, Democratic Republic of the Congo in 1988. He won the Mark Twain Award in 2009, and published his first novel, <i>Tabu’s Nightmares</i>, written in French, in 2011. His novel <i>Ebamba: Kinshasa Makambo</i>, translated into English as <i>Mr. Fix-It</i>, was published in Lingala in 2014. His work portrays the everyday realities of Congolese life with the bold, intense style associated with the country’s music and fashion. He works as a lawyer and writer, and hosts a weekly television program about Congolese literature.`
@@ -171,7 +171,7 @@ export const modTradNovels = [
     id: "AFWEMTN",
     title: {original: "Ìrèké Oníbùdó", translation: "The Sugarcane of the Guardian"},
     author: "D.O. Fágúnwà",
-    group: {people: "Yorùbá", language: "Yorùbá", country: "Nigeria"},
+    group: {people: "Yorùbá", language: "Yorùbá", location: "Nigeria"},
     info: [
       `<i>Ìrèké Oníbùdó</i> is a frightening and inspiring story of a character whose early life was beclouded by a plethora of vicissitudes and a deluge of suffering and intimidation from human and non-human forces. His father’s matrimonial and financial recklessness threw him into a precarious condition; but by a dint of industry, tenacity, and bravery, he was able to establish a transition from a deep pit of deprivation and poverty to a rostrum of royalty and podium of prosperity.`,
       `<b>D.O. FÁGÚNWÀ</b> was a Nigerian author who pioneered the Yorùbá-language novel. He was born in Òkè-Igbó, Ondo State. A chief of the Yorùbá, Fágúnwà studied at St. Luke’s School, Òkè-Igbó and St. Andrew’s College, Ọ̀yọ́ before becoming a teacher himself.`,
@@ -376,7 +376,7 @@ export const modTradNovels = [
     id: "AMCEMTN",
     title: {original: "La otra cara", translation: "The Other Face"},
     author: "Gaspar Pedro González",
-    group: {people: "Qʼanjobʼal Maya", language: "Qʼanjobʼal/Spanish", country: "Guatemala"},
+    group: {people: "Qʼanjobʼal Maya", language: "Qʼanjobʼal/Spanish", location: "Guatemala"},
     info: [
       `This novel narrates the life of Lwin, a Q’anjob’al Maya, living in the hamlet of Jolomk’u high up in the isolated Cuchumatán Mountains in the Department of Huehuetenango. Rich in personal and cultural detail, the reader comes away knowing better just what it means to be a contemporary Maya in Guatemala.`,
       `<b>GASPAR PEDRO GONZÁLEZ</b>, born in San Pedro Soloma in 1945, is a graduate of Universidad Mariano Gálvez, having majored in educational planning. He currently teaches Mayan literature and oral tradition at his alma mater, and is a member of the Academy of Mayan Languages of Guatemala.`
@@ -422,7 +422,7 @@ export const modTradNovels = [
     id: "AMCRMTN",
     title: {original: "Panchito: Kasike Wito", translation: "Panchito: Mountain Cacique"},
     author: "Francisco Ramírez Rojas",
-    group: {people: "Taíno", language: "Spanish", country: "Cuba"},
+    group: {people: "Taíno", language: "Spanish", location: "Cuba"},
     info: [
       `In this book, Taíno academic José Barreiro distills over a decade of interviews with Francisco Panchito Ramírez Rojas, a true <i>cacique</i> (leader) in the tradition of his Taíno ancestors. In the track of an uninterrupted lineage reaching back to before the 15th century, Panchito speaks with the plain and certain voice of one who understands and communicates with nature, humans included, in ways profound and true.`,
       `<b>FRANCISCO “PANCHITO” RAMÍREZ ROJAS</b> is the hereditary chief of <i>Caridad de los Indios</i>, a mountain enclave in Guantanamo, Cuba. His clan, the Rojas-Ramírez, is considered the most historically documented continuous Taíno population in the Greater Antilles.`
@@ -460,7 +460,7 @@ export const modTradNovels = [
     id: "AMWEMTN",
     title: {original: "Phuyup Yawar Waqaynin", translation: "The Bloody Tear of a Cloud"},
     author: "Gladys Camacho Rios",
-    group: {people: "Quechua", language: "Quechua II-C", country: "Bolivia"},
+    group: {people: "Quechua", language: "Quechua II-C", location: "Bolivia"},
     info: [
       `The novella <i>Phuyup Yawar Waqaynin</i> tells the story of the life of the author’s grandfather, Don Faustino Camacho Soto, from when he was a little boy up until he was an old man; how he grew from a small boy in the town Kalallusta, got married, and then went to Cochabamba to work; and even though he worked, he didn’t keep his money. The story of him going through this sadness crystalizes across the narrative, and the book reads as an extended memory.`,
       `<b>GLADYS CAMACHO RIOS</b> is a Bolivian linguist, writer, and translator born in Anzaldo, Bolivia. She promotes language and culture through her writing and academic work, with the aim of spreading the richly expressive monolingual Quechua of rural speakers to urban bilngual speakers of simplified Quechua.`
@@ -500,7 +500,7 @@ export const modTradNovels = [
     id: "AMNEMTN",
     title: {original: "Uwíshin", translation: "A Shuar Healer"},
     author: "Alejandro Tsakimp",
-    group: {people: "Shuar", language: "Shuar", country: "Ecuador"},
+    group: {people: "Shuar", language: "Shuar", location: "Ecuador"},
     info: [
       `In the heavily forested foothills of the Ecuadorian Andes lives <i>uwíshin</i> (healer) Alejandro Tsakimp. He was first exposed to healing practices when he was cured in the womb by a healer. Later he actively pursued this knowledge in the hopes of curing his father, another <i>uwíshin</i>, who was ill from witchcraft. His father’s death in 1990 created conflict among his heirs, who were the first generation of Shuar to inherit property. Tsakimp’s family fiercely competed for the property and eventually accused one another of witchcraft and parricide.`,
       `<b>ALEJANDRO TSAKIMP</b> is a Shuar traditional healer, cattle owner, and one of the founders of the Shuar Federation, which he has repeatedly served in an official capacity.`
@@ -544,7 +544,7 @@ export const modTradNovels = [
     id: "AMSOMTN",
     title: {original: "Chilco", translation: "Wild Fuchsia"},
     author: "Daniela Catrileo",
-    group: {people: "Mapuche", language: "Spanish", country: "Chile"},
+    group: {people: "Mapuche", language: "Spanish", location: "Chile"},
     info: [
       `Chilco was supposed to be an Eden for Marina and Pascale. But something seems amiss on the island. There is a smell of rot in the air that only Marina can detect, and she is visited by strange, unsettling dreams.`,
       `The couple has escaped to Chilco from the crumbling ruins of Capital City, a place scarred by centuries of colonialism and now roiled by revolution. But as they try to start life anew here, far from the city, strange rifts open in their relationship, and they wonder if they have merely entered a lush, distorted version of what they fled.`,
@@ -624,7 +624,7 @@ export const modTradNovels = [
       translation: "Notes of a Crocodile"
     },
     author: "Qiū Miàojīn",
-    group: {people: "Han Taiwanese", language: "Mandarin", country: "ROC"},
+    group: {people: "Han", language: "Mandarin", location: "Taiwan"},
     info: [
       `Set in the post-martial-law era of late-1980s Taipei, <i>Notes of a Crocodile</i> is a coming-of-age story of queer misfits discovering love, friendship, and artistic affinity while hardly studying at Taiwan’s most prestigious university. Told through the eyes of an anonymous lesbian narrator nicknamed Lazi, this cult classic is a postmodern pastiche of diaries, vignettes, mash notes, aphorisms, exegesis, and satire by an incisive prose stylist and major counter-cultural figure.`,
       `<b>QIŪ MIÀOJĪN</b>, one of Taiwan’s most innovative literary modernists, and the country’s most renowned lesbian writer, was born in 1969 in Chuanghua County in western Taiwan. She graduated with a degree in psychology from National Taiwan University and pursued graduate studies in clinical psychology at the University of Paris VIII.`,
@@ -653,9 +653,9 @@ export const modTradNovels = [
   },
   {
     id: "ASHIMTN",
-    title: {original: "ཀར་མ་གི་འཁོར་ལོ་", transliteration: "Circle of Karma"},
+    title: {original: "ད་སར་ཀཱར་ཨོཕོ་ཀརྨ་", transliteration: "Da Sarkaar opho Karma", translation: "The Circle of Karma"},
     author: "Kunzang Choden",
-    group: {people: "Bhutanese", language: "English", country: "Bhutan"},
+    group: {people: "Ngalop", language: "English", location: "Bhutan"},
     info: [
       `Caught in the everyday reality of household life, fifteen-year-old Tsomo is suddenly called upon to travel when her mother dies. She makes her first journey to a faraway village to light the ritual butter lamps in her mother’s memory. Beginning here, her travels take her to distant places, across Bhutan and into India. As she faces the world, a woman alone, Tsomo embarks on what becomes a life journey, in which she begins to find herself, and to grow as a person and a woman.`,
       `<b>KUNZANG CHODEN</b>, born in Bhutan’s Bumthang District in 1952, is one of the country’s best-known writers. She is recognized for her efforts to document and preserve Bhutanese oral traditions and folklore. Among her publications are: <i>Tales in Colour and Other Stories</i>, <i>Aunty Mouse</i> and <i>Room in Your Heart</i>.`
@@ -695,7 +695,7 @@ export const modTradNovels = [
     id: "ASSEMTN",
     title: {original: "ပြုံး၍လည်းကန်တော့ခံတော်မူပါ", transliteration: "Pyone Ywesh Lae Kan Daw Khan Daw Mu Par", translation: "Smile and Get Kicked"},
     author: "Nu Nu Yi",
-    group: {people: "Bamar", language: "Burmese", country: "Myanmar"},
+    group: {people: "Bamar", language: "Burmese", location: "Myanmar"},
     info: [
       `Originally titled <i>Smile and Get Kicked, Laugh and Get Kicked</i>, an English translation of the novel was published by Hyperion Books under the name <i>Smile As They Bow</i> 12 years after it was first written.`,
       `<b>NU NU YI</b> was born in a village near Inwa in the central Mandalay Region of Burma in 1957. She has written 15 novels, 100 short stories, and several magazine articles since she began writing at age 27.`
@@ -754,7 +754,7 @@ export const modTradNovels = [
     id: "ASWEMTN",
     title: {original: "بنات الرياض", transliteration: "Banāt al-Riyāḍ", translation: "Girls of Riyadh"},
     author: "Rajaa al-Sanea",
-    group: {people: "Arab", language: "Arabic", country: "Saudi Arabia"},
+    group: {people: "Arab", language: "Arabic", location: "Saudi Arabia"},
     info: [
       `The girls of Riyadh are young, attractive, and living by Saudi Arabia’s strict cultural traditions. Well, not quite. In between sneaking out behind their parents’ backs, dating, shopping, watching American TV, and having fun, they’re still trying to be good little Muslim girls. That is, pleasing their families and their men. But can you be a twenty-first-century girl and a Saudi girl?`,
       `<b>RAJAA AL-SANEA</b> is a Saudi writer and endodontist, born in Riyadh in 1981 to a family of doctors. She received her bachelor’s degree in Dentistry from King Saud University in 2005, and her master’s in oral sciences from University of Illinois at Chicago College of Dentistry in 2008 on the King Abdullah scholarship. Upon publication, her novel <i>Girls of Riyadh</i> was immediately banned in Saudi Arabia, as the depiction of infidelity, pre-marital relations, and homosexuality was seen as inflammatory material.`
@@ -782,7 +782,7 @@ export const modTradNovels = [
     id: "ASCEMTN",
     title: {original: "Arosat", translation: "The Railway"},
     author: "Hamid Ismailov",
-    group: {people: "Uzbek", language: "Uzbek", country: "Uzbekistan"},
+    group: {people: "Uzbek", language: "Uzbek", location: "Uzbekistan"},
     info: [
       `Set mainly in Uzbekistan between 1900 and 1980, <i>The Railway</i> introduces to us the inhabitants of the small town of Gilas on the ancient Silk Route. Their colorful lives offer a unique and comic picture of a little-known land populated by outgoing Mullahs, incoming Bolsheviks, and a plethora of Uzbeks, Russians, Persians, Jews, Koreans, Tatars, and Romani.`,
       `<b>HAMID ISMAILOV</b> is an Uzbek journalist, novelist, poet, and translator who was born in the Soviet Union in 1954 in what is now Kyrgyzstan. In 1992 he was forced to flee his home in the Uzbek capital Tashkent when his writing drew negative attention from government officials. Under threat of arrest he moved to London and now heads the Central Asian division of the BBC World Service.`
@@ -810,7 +810,7 @@ export const modTradNovels = [
     id: "ASINMTN",
     title: {original: "Der blaue Himmel", translation: "The Blue Sky"},
     author: "Galsan Tschinag",
-    group: {people: "Tuvan", language: "German", country: "Mongolia"},
+    group: {people: "Tuvan", language: "German", location: "Mongolia"},
     info: [
       `In the high Altai Mountains of northern Mongolia, a young shepherd boy comes of age, tending his family’s flocks on the mountain steppes. Under the influence of the Soviet Union, nomadic traditions confront a modernization that is at once devastating and alluring.`,
       `<b>GALSAN TSCHINAG</b>, whose name in his native Tuvan language is Irgit Schynykbajoglu Dshurukuwaa, was born in 1944 in Mongolia. He studied at the University of Leipzig, where he adopted German as his written language. Under an oppressive Communist regime he became a singer, storyteller, and poet in the ancient Tuvan tradition. As the chief of Tuvans in Mongolia, Tschinag led his people, scattered under Communist rule, back in a huge caravan to their original home in the high Altai Mountains. Tschinag is the author of more than thirty books, and his work has been translated into many languages. He lives alternately in the Altai, Ulaanbaatar, and Europe.`
@@ -845,7 +845,7 @@ export const modTradNovels = [
     id: "EUEAMTN",
     title: {original: "Евгений Онегин", transliteration: "Yevgeniy Onegin", translation: "Eugene Onegin"},
     author: "Alexander Pushkin",
-    group: {people: "Russian", language: "Russian", country: "Russia"},
+    group: {people: "Russian", language: "Russian", location: "Russia"},
     info: [
       `<i>Eugene Onegin</i> is a novel in verse by Alexander Pushkin, following the story of a bored and disillusioned aristocrat named Eugene Onegin. The novel explores themes of ennui, love, regret, and the social complexities of 19th-century Russia, with Onegin becoming a quintessential example of the “superfluous man” in Russian literature.`,
       `<b>ALEXANDER SERGEYEVICH PUSHKIN</b>, born in Moscow in 1799, is widely regarded as Russia’s greatest poet and the founder of modern Russian literature. He was a key figure in the Romantic movement, known for his poetry, novels, and plays, often exploring themes of love, social injustice, and political commentary. His works are celebrated for their linguistic innovation and enduring influence on Russian culture.`
@@ -872,7 +872,7 @@ export const modTradNovels = [
     id: "EUWEMTN",
     title: {original: "Candide"},
     author: "Voltaire",
-    group: {people: "French", language: "French", country: "France"},
+    group: {people: "French", language: "French", location: "France"},
     info: [
       `We are living in the “best of all possible worlds” and everything that happens is “all for the best”. This was the basis of Leibniz’s optimistic philosophy. Voltaire, on the other hand, found these notions patently absurd and decided to show this absurdity through his satirical masterpiece Candide.`,
       `Follow Candide and his friends through their series of misadventures where they experienced a variety of tragedies and reversal of fortunes. Ultimately, all is not for the best, but throughout his journey Candide discovers the meaning of life.`,
@@ -933,7 +933,7 @@ export const modTradNovels = [
     id: "OCMDMTN",
     title: {original: "Lohataona sy Ririnina", translation: "Spring & Winter"},
     author: "Clarisse Ratsifandrihamanana",
-    group: {people: "Merina", language: "Malagasy", country: "Madagascar"},
+    group: {people: "Merina", language: "Malagasy", location: "Madagascar"},
     info: [
       `<i>Lohataona sy ririnina</i> is a Malagasy-langauge novel published posthumously in 2007 by Librairie Mixte. It is a story the author brings to her descendants to describe the journey of life and the challenges of love—the love that makes us beautiful… but also the love that hurts the heart and moves the soul.`,
       `<b>CLARISSE RATSIFANDRIHAMANANA</b>, born in Fenoarivo, Madagascar in 1926, was a prolific writer of poetry, novels, and essays in the Malagasy language, publishing 29 works with more still unpublished. Her literary style is noted for its diversity in both themes and formats. The writings she left behind are the treasure and heritage of 11 generations of Malagasy.`
@@ -1069,7 +1069,7 @@ export const modTradNovels = [
     id: "OCMCMTN",
     title: {original: "Stormed"},
     author: "Paula Quinene",
-    group: {people: "CHamoru", language: "English", country: "Guam"},
+    group: {people: "CHamoru", language: "English", location: "Guam"},
     info: [
       `A medical doctor educated in the United States, passionate and fierce Liz Taimanglo must now fulfill her promise and return to her island home. Liz makes the long flight across the US and the North Pacific Ocean to Guam, uncertain of what her future holds. Heading into the epicenter of her family and prime typhoon season for the Mariana Islands chain, the disquiet of her heart threatens to do more damage than any typhoon might inflict on Guam. Little does Liz know, the man featured in the newspaper would indeed unleash delicious torment rivaling even a Category 5 super typhoon.`,
       `<b>PAULA QUINENE</b> was born and raised on Guam. She graduated trom the University of Oregon in 1997 with a bachelor’s of science in Exercise & Movement Science hoping to return to the island as an anatomy teacher. A resident of North Carolina since 2000, Paula’s homesickness—or “<i>mahålang</i>ness”—has motivated Paula to write <i>A Taste of Guam</i> and <i>Remember Guam</i>, (both cookbooks), along with her two novels, <i>Conquered</i> and <i>Stormed</i>.`
@@ -1115,7 +1115,7 @@ export const modTradNovels = [
     id: "OCPLMTN",
     title: {original: "Pōuliuli", translation: "Darkness"},
     author: "Albert Wendt",
-    group: {people: "Samoan", language: "English", country: "Samoa"},
+    group: {people: "Samoan", language: "English", location: "Samoa"},
     info: [
       `<i>Pouliuli</i> tells the story of Faleasa Osovae, a Samoan chief who feigns madness to escape the responsibilities and expectations of his high-ranking position. The novel explores themes of identity, cultural conflict, and the human desire for freedom, particularly within the context of Samoan society and its traditions.`,
       `<b>ALBERT WENDT</b>, born in Apia, Samoa in 1939, is an author of novels, short stories, and poetry. At age thirteen, he was sent from Western Samoa on a government scholarship to study in New Zealand. With visits home every three years, Wendt stayed in New Zealand to earn an M.A. in history from Victoria University in Wellington. Wendt has a deep love for both countries, and yet he has said, “I accept living in exile as a permanent condition of my life—a lot of it even in my own country.” It is perhaps this feeling that has tempered his love for Samoa with the insight, sometimes painful, that he needed to write <i>Pouliuli</i>.`
@@ -1139,7 +1139,7 @@ export const stirrPoetry = [
     id: "AFNOSTP",
     title: { original: "ⵍⴻⵙ ⵛⵀⴰⵏⵜⵙ ⴷⴻ ⵍⴰ ⵜⴰⵙⵙⴰⵓⵓⵜ", transliteration: "Les chants de la Tassaout", translation: "Songs of the Shilha" },
     author: "Mririda n'Ait Attik",
-    group: {people: "Shilha", language: "Tashelhiyt", country: "Morocco"},
+    group: {people: "Shilha", language: "Tashelhiyt", location: "Morocco"},
     info: [`All the poems in this gathering are not of Mririda’s own inspiration, but part of an oral, ancestral tradition. Nevertheless, she brought them to [me] with an art that is only her, in this dialect of transition, where the <i>tamazirt</i> jostles with the <i>tachelhait</i> particular to this region overlapping the Atlas, from Demnat to El Kelaa of the Mgouna. She sang these songs in a warm and captivating voice, from which was excluded every sharp note, and which always caused a certain surprise to listeners even profane and gross. But in the <i>souk</i> (market) of Azilal, who could impart true attention to her talent? Unfamiliar with the <i>tachelhait</i> dialect, the non-commissioned French officers cared little about the songs. When it came to indigenous clients—<i>goums</i>, truck drivers, passing merchants—they manifested, but for the rare exceptions, the most total scorn.`],
     excerpt: [
       `<b>Mririda</b>`,
@@ -1181,7 +1181,7 @@ export const stirrPoetry = [
     id: "AFEASTP",
     title: { original: "A ǁ’aaye twīnga ǀhime", translation: "They followed the bird and sang" },
     intermediary: "Berta Kwelē",
-    group: {people: "Sandawe", language: "Sandawe", country: "Tanzania"},
+    group: {people: "Sandawe", language: "Sandawe", location: "Tanzania"},
     info: [
       `Poetry can be found in all manifestations of arts and culture, in storytelling, in dance, in ritual. The poem here comes embedded in a traditional story, recorded in July 1963 by Berta Kwelē, about a child raised by a bird. When the child came of age, the bird took the child from their home near a human community to a faraway place where lived every sort of bird. The people from the town, embarking on a search for the child, sing this song; its themes transcend the literal context of the story, speaking to the bewildering and cyclical experience of a desire for seeking out anything.`
     ],
@@ -1201,7 +1201,7 @@ export const stirrPoetry = [
     meta: { piece: true },
     author: "Xa:ä-tin",
     intermediary: "Diä!kwain",
-    group: {people: "ǀXam-ka ǃʼē", language: "ǀXam", country: "South Africa"},
+    group: {people: "ǀXam-ka ǃʼē", language: "ǀXam", location: "South Africa"},
     info: [
       `Diä!kwain was a ǀXam hunter in the northern Cape Colony, at a time of conflict with encroaching European settlers. He was arrested by colonial authorities for retaliating against a Dutch farmer who had threatened to murder his family. While in prison, Diä!kwain and a few other ǀXam were transferred into the custody of a German linguist and Welsh archivist who wished to study their language. The imprisoned ǀXam shared their vast repository of oral lore, which the two scholars transcribed and translated between 1870 and 1880. They remembered Diä!kwain as “a soft-hearted mortal” who wept when his puppy got distemper, and sometimes escorted visiting ladies home to protect them from hoodlums.`,
       `<b>XA:Ä-TIN</b>, Diä!kwain’s father, was the pupil of a shaman, !Nuin-/kuïten, who taught him such skills as how to lead the Rain Bull across the sky and how to make his enemies sick. Xa:ä-tin would hear his teacher calling him by plucking the strings of his bow, but with the teacher’s death the string of shamanic succession ended.`
@@ -1220,7 +1220,7 @@ export const stirrPoetry = [
     id: "AFCESTP",
     title: {original: "ꛞ꛰ ꛤ꛰ ꛜꛄ꛰ꛜꛄ꛰ꛄ꛰ꛑ ꛅꚧꚳ꛰ ꛰ꚳꛤꚩꚤꚳ꛰", transliteration: "Lo’ tù lu lulùre pon ntièn", translation: "From Resilient Shadows"},
     author: "Samuel Calvin Gbetnkom",
-    group: {people: "Bamum", language: "Bamum", country: "Cameroon"},
+    group: {people: "Bamum", language: "Bamum", location: "Cameroon"},
     info: [
       `These poems are all written in the Bamum script created by the famous King Ibrahim Njoya. The writing system went through several phases, beginning as a set of nearly 500 pictographic symbols that were eventually consolidated into an 80-character syllabary.`,
       `<b>SAMUEL CALVIN GBETNKOM</b> is a poet and codicologist with extensive knowledge of manuscripts written in Bamum, having worked on the Bamum Scripts and Archives Project housed in the Foumban Royal Palace. He wasn’t content to just study and archive manuscripts, however, and he saw creative potential in using the Bamum script to produce new, original literature, as a tool for creating work that captured diverse aspects of contemporary Bamum life.`
@@ -1237,7 +1237,7 @@ export const stirrPoetry = [
     id: "AFWESTP",
     title: {original: "Nocturnes"},
     author: "Léopold Sédar Senghor",
-    group: {people: "Serer/Fula", language: "French", country: "Senegal"},
+    group: {people: "Serer/Fula", language: "French", location: "Senegal"},
     info: [
       `<i>Nocturnes</i> is the only book of verse that Senghor published after becoming President of Senegal following his country’s independence in 1960. Senghor’s poetry was associated with Africa’s struggle for independence; it is perhaps logical that this volume seems to have marked the end of his career as a poet. The work is divided into two parts: ‘Songs for Signare’ are the eloquent love poems of a man who was once uncertain of his place in the world; the ‘Elegies’ are the easy, rhetorical, self-assured poems of the leader and the man who has reached his goal.`,
       `<b>LÉOPOLD SÉDAR SENGHOR</b>, born 1906 in what was then called French West Africa, was a prominent Senegalese poet, politician, and cultural theorist, renowned as a leading figure in the <i>négritude</i> movement. He served as the first president of Senegal from 1960 to 1980, guiding the nation through its early years of independence. Senghor’s work, both literary and political, explored themes of African identity, culture, and the relationship between the people of Africa and Europe.`
@@ -1418,7 +1418,7 @@ export const stirrPoetry = [
     id: "AMCRSTP",
     title: {original: "Kalinago Grammar"},
     intermediary: "Joseph Numa Rat",
-    group: {people: "Kalinago", language: "Kalinago", country: "Dominica"},
+    group: {people: "Kalinago", language: "Kalinago", location: "Dominica"},
     info: [`The text provided here does not strictly constitute material within the Kalinago poetic tradition of the Lesser Antilles, which though historically well-attested and even contemporarily demonstrated at the cultural center <i>Kalinago Barana Aute</i> on the island of Dominica, offers no English translation of truly traditional literature. While some pieces utlizing the reconstructed Kalinago language were found, it was determined that brief spoken phrases from 19th-century fluent speakers recorded in an early grammar of the language would provide a richer experience of the evocative aesthetic qualities of Kalinago. The judgement call resulting in this provisional selection is liable to change based on future research.`],
     excerpt: [
       `<i>Sŭlŭrŭ́hali wéyu</i><br>The sun has arrived.`,
@@ -1457,7 +1457,7 @@ export const stirrPoetry = [
     title: { original: "Haray Harawi", translation: "Love Song" },
     meta: { piece: true },
     intermediary: "Felipe Guamán Poma de Ayala",
-    group: {people: "Quechua", language: "Classical Quechua", country: "Peru"},
+    group: {people: "Quechua", language: "Classical Quechua", location: "Peru"},
     info: [
       `A dominant feature of Quechua poetics, especially within the <i>harawi</i> (festive song) genre, is semantic parallelism, accomplished through the use of semantic doubles—pairs of related statements with identical structure that contrast their homologous terms. For example, in “Haray Harawi”, the symmetrical employment of ‘queen’ and ‘princess’ in the opening lines brings out the consistent identity of the subject across time through the irreconcilable concurrence of those terms. This poetic device adheres to the Andean philosophical model of <i>yanantin</i> (complementary dualism) premised upon interdependent opposites ordering the totality of thought.`,
       `<b>FELIPE GUAMÁN POMA DE AYALA</b>, born 1535 to a family of the non-Inca Yarowilca dynasty from the regional capital Huánuco, was a Quechua nobleman who chronicled the history and culture of the Andes from ancient times through Spanish colonial rule. His most famous work, <i>The First New Chronicle and Good Government</i>, is a richly illustrated manuscript that critiques the Spanish administration and offers a perspective on Andean society from an indigenous point of view.`
@@ -1508,7 +1508,7 @@ export const stirrPoetry = [
     title: { original: "Apu", translation: "Appear" },
     meta: { anthology: { original: "Ita ha'eñoso", translation: "Solitude Abandons Stone" }, piece: true },
     author: "Miguelángel Meza",
-    group: {people: "Mbyá", language: "Guaraní", country: "Paraguay"},
+    group: {people: "Mbyá", language: "Guaraní", location: "Paraguay"},
     info: [
       `The writer and researcher Mario Castells says of <i>Dream Pattering Soles</i>, “Many words in avañe’ẽ [Guaraní] are micro-units of mythic narratives, ancient bridges that link Paraguayan society to their Guaraní ancestors.” Cadogan began his compilation when he realized that the phrase “jasyra’ýnteko ojovaheihína” references both reality and myth. Its literal English translation, “the new moon is washing its face,” alludes to “The Myth of the Twins: Genesis of the Sun and the Moon.” Its metaphoric English translation, “torrential rain,” alludes to the fact that heavy rainfall and the first lunar phase usually coincide. This phrase is a metaphor for a metonymy because the moon stands in for the rain, while their relationship renders them parts of a whole, the natural world and Mbyá Guaraní cosmology.`,
       `<b>MIGUELÁNGEL MEZA</b> is a Guaraní poet and cultural promoter born in Caacupé in 1955. He has contributed to numerous anthropological and linguistic research studies, as well as translations, and worked for the National Ministry of Culture of Paraguay. His books include <i>Ita ha’eñoso</i>, <i>Perurima rapykuere</i>, and <i>Perurima pypore</i>. He is the founder of the <i>cartonera</i> press Mburukujarami Kartonéra, with which he has published numerous titles authored by him and others.`
@@ -1532,7 +1532,7 @@ export const stirrPoetry = [
     id: "ASNOSTP",
     title: { original: "アイヌ神謡集", transliteration: "Ainu Shin'yōshū", translation: "Ainu Songs of the Gods" },
     intermediary: "Chiri Yukie",
-    group: {people: "Horobetsu Ainu", language: "Ainu", location: "Hokkaido, JP"},
+    group: {people: "Horobetsu Ainu", language: "Ainu", religion: "Ainu religion", location: "Hokkaido, JP"},
     info: [
       `The first record of Ainu oral literature written down by an Ainu, the thirteen beautiful <i>yukar</i> chants of <i>Ainu Shin’yōshū</i> capture the imagination and stand as a milestone in the translation of oral literature and ancient Kamuy religious concepts. The <i>yukar</i> were collected from the author’s aunt and grandmother at a time when traditional storytellers were actively being assimilated by the Japanese. The Ainu have long maintained their distinctive North Asian culture, while many other North Asian groups assimilated into neighboring Turkic, Mongolic, and Uralic cultures, due in part to their protected island location and long relationship with the Japanese to the south.`,
       `<b>CHIRI YUKIE</b> was born in 1903 and spent her childhood in Noboribetsu, Hokkaido. Her father Takakichi and mother Nami were Ainu from Chiri and Kanenari. At the age of 7 she moved to Asahikawa, where she lived until the age of 19 with her mother Nami’s elder sister Matsu Kannari and her grandmother Monasinouk.`
@@ -1575,7 +1575,7 @@ export const stirrPoetry = [
     title: { original: "听蜀僧濬弹琴", transliteration: "Tīng shǔ sēng jùn tán qín", translation: "Listening to the Monk Jun Play his Qin" },
     meta: { piece: true },
     author: "Lǐ Bái",
-    group: {people: "Han Chinese", language: "Classical Chinese", location: "Sichuan, CN"},
+    group: {people: "Han", language: "Classical Chinese", location: "Sichuan, CN"},
     info: [
       `Regulated verse emphasizes level and oblique tones, parallelism, and relatively strict rhythmic rules. Even so, Li Bai’s five-character regulated verse is written with remarkable freshness and clarity, seemingly without effort. This natural artistic beauty, like “a lotus emerging from clear water, naturally free of embellishment,” can move the human heart more deeply than any ornamentation.`,
       `<b>LǏ BÁI</b>, also known as Li Po, was a renowned Chinese poet of the Tang dynasty born in 701, celebrated for his romantic and imaginative verse. He’s often considered one of China’s greatest poets, alongside his friend and contemporary Du Fu. Li Bai’s life was marked by wanderlust and a yearning for political office, though he largely followed his poetic pursuits instead. His works are known for their rich imagery, spontaneity, and use of Daoist themes.`
@@ -1600,7 +1600,7 @@ export const stirrPoetry = [
     id: "ASSESTP",
     title: {original: "โคลงนิราศหริภุญชัย", transliteration: "Khlong nirāt hariphunchai"},
     author: "Mueang Kaeo",
-    group: {people: "Thai", language: "Kam Mueang", country: "Thailand"},
+    group: {people: "Thai", language: "Kam Mueang", location: "Thailand"},
     info: [
       `In <i>Nirat hariphunchai</i>, written around 1517 in Northern Thailand, the narrator makes a pilgrimage to the great Buddhist reliquary at Lamphun to show his devotion to a lover and his religion. The genre <i>nirat</i> is a type of <i>khlong</i> (poetic verse) involving travel and longing for a separated lover, and Hariphunchai was an ancient kingdom centered on Lamphun in the Northern Thai kingdom of Lan Na.`,
       `<b>MUEANG KAEO</b>, the author of <i>Nirat hariphunchai</i> as proposed by Winai Pongsripian, was king of Chiang Mai, the capital of the Lanna Kingdom, at the start of the 16th century. Si Thip, the subject of the poem, is presumed to be his primary queen consort.`
@@ -1629,7 +1629,7 @@ export const stirrPoetry = [
     id: "ASHISTP",
     title: { original: "मुनामदन", transliteration: "Muna Madan" },
     author: "Laxmi Prasad Devkota",
-    group: {people: "Nepali", language: "Nepali", country: "Nepal"},
+    group: {people: "Nepali", language: "Nepali", location: "Nepal"},
     info: [
       `<i>Muna-Madan</i> narrates the story of every Nepali house from which a male character leaves for a foreign country with the dream of making enough money to satisfy the needs and aspirations of the family. Madan, the protagonist of this narrative written in <i>jhyaure</i> folk meter, decides to try his luck in Lhasa from where he does not make it back home on time to avoid a family tragedy.`,
       `<b>LAXMI PRASAD DEVKOTA</b>, born 1909 in Kathmandu, is one of the most eminent poets of modern Nepal. He has composed epics and long narrative poems, personal essays, several lyrical and one-act plays, and collections of short stories. His vision, imagination and mastery over language lift him to unsurpassed literary eminence.`
@@ -1667,7 +1667,7 @@ export const stirrPoetry = [
     id: "ASWESTP",
     title: {original: "دیوان حافظ", transliteration: "Dīvān-i Ḥāfiẓ", translation: "Collected Poems of Hāfez"},
     author: "Ḥāfeẓ",
-    group: {people: "Persian", language: "Persian", location: "Shiraz, IR"},
+    group: {people: "Persian", language: "Persian", religion: "Sufism", location: "Shiraz, IR"},
     info: [
       `If a book of poetry is to be found in a Persian home, it is likely to be the <i>Divān</i> (collected poems) of Hafez. Many of his lines have become proverbial sayings, and there are few who cannot recite some of his lyrics, partially or totally, by heart. And yet he is also a poet’s poet. No other Persian poet has been the subject of so much analysis, commentary, and interpretation. Nor has any poet influenced the course of post-fourteenth century Persian lyrics as much as he has.`,
       `In no other Persian poet can be found such a combination of fertile imagination, polished diction, apt choice of words, and silken melodious expressions. These are all wedded to a broad humanity, philosophical musings, moral precepts, and reflections about the unfathomable nature of destiny, the transience of life, and the wisdom of making the most of the moment—all expressed with a lyrical exuberance that lifts his poetry above all other Persian lyrics.`,
@@ -1694,7 +1694,7 @@ export const stirrPoetry = [
     id: "ASCESTP",
     title: {original: "Қара Сөздер", transliteration: "Qara Sözder", translation: "Book of Words"},
     author: "Abai",
-    group: {people: "Kazakh", language: "Kazakh", country: "Kazakhstan"},
+    group: {people: "Kazakh", language: "Kazakh", location: "Kazakhstan"},
     info: [
       `The creative work of Abai is a fusion of thought and feeling, an exchange between the mind and the heart, combining personal experience, history, philosophy and religion, morality, and psychology. His poetry is melodic and mysterious, a powerful torrent of soulfulness, expressing an unquenchable thirst for redemption and inner spontaneity. It brings the breadth of the history of the Kazakh people and a planetary comprehension of existence. His sad, enchanted songs are imbued with lofty wisdom and the utmost clarity.`,
       `<b>ABAI QŪNANBAIŪLY</b>, born 1845 in Semipalatinsk province of what is now Kazakhstan but was then part of the Russian Empire, was a Kazakh poet, composer, translator, and social activist. He received the nickname “Abai”, meaning careful, in his early childhood. His inspirations range from Navoi and Ferdowsi to Pushkin and Darwin.`
@@ -1745,10 +1745,10 @@ export const stirrPoetry = [
     id: "EUEASTP",
     title: {original: "Ύμνοι Θείας Αγάπης", transliteration: "Ímnōi Theíās Agápis", translation: "Hymns of Divine Love"},
     author: "Symeon the New Theologian",
-    group: {people: "Byzantine", language: "Greek", location: "Ankara, TR"},
+    group: {people: "Greek", language: "Greek", religion: "Eastern Orthodoxy", location: "Ankara, TR"},
     info: [
       `Saint Symeon’s <i>Hymns of Divine Love</i>, considered unparalleled in their depth of spiritual revelation, describe the author’s personal experience of the divine. The hymns emphasize the transformative power of grace and the possibility of experiencing God’s presence directly.`,
-      `<b>SYMEON THE NEW THEOLOGIAN</b> was a 10th-century Greek monk and ascetic writer in the Eastern Orthodox hesychast tradition. He emphasized the possibility and importance of direct, personal encounter with God through contemplation and spiritual practices. His teachings, while influential, also led to conflict with church authorities, resulting in his exile.`
+      `<b>SYMEON THE NEW THEOLOGIAN</b> was a 10th-century Greek Rhomaioi monk and ascetic writer in the Eastern Orthodox hesychast tradition. He emphasized the possibility and importance of direct, personal encounter with God through contemplation and spiritual practices. His teachings, while influential, also led to conflict with church authorities, resulting in his exile.`
     ],
     excerpt: [
       `But, Oh, what intoxication of light,<br>Oh, what movements of fire!<br>Oh, what swirlings of the flame in me,<br>miserable one that I am,<br>coming from You and Your glory!<br>`,
@@ -1826,7 +1826,7 @@ export const stirrPoetry = [
     id: "OCMDSTP",
     title: {original: "Vieilles chansons des pays d'Imerina", translation: "Old Songs of Imerina Lands"},
     author: "Jean-Joseph Rabearivelo",
-    group: {people: "Malagasy", language: "French", country: "Madagascar"},
+    group: {people: "Malagasy", language: "French", location: "Madagascar"},
     info: [
       `<i>Vieilles Chansons des pays d’Imerina</i> is a collection of reinterpretations of traditional Merina <i>hainteny</i> oral poetry by Rabearivelo, published posthumously in 1939. Hainteny, translating to “knowledge of words”, is characterized by its use of rich metaphors and allusions.`,
       `<b>JEAN-JOSEPH RABEARIVELO</b>, born in Antananarivo in 1901, is Madagascar’s best-known modern poet, writing in French and blending Western influence with traditional Malagasy poetics in his compositions.`
@@ -1894,7 +1894,7 @@ export const stirrPoetry = [
     id: "OCMLSTP",
     title: {original: "Arosi Songs & Incantations"},
     intermediary: "John Saunana",
-    group: {people: "Arosi", language: "Arosi", country: "Solomon Islands"},
+    group: {people: "Arosi", language: "Arosi", location: "Solomon Islands"},
     info: [
       `<i>Dragon Tree: Arosi Incantations and Songs</i> is a collection of transcriptions and translations of traditional song texts in the Arosi language published in Port Moresby in 1972 as part of the prolific <i>Papua Pocket Poems</i> series distributed through the author’s alma mater, the University of Papua New Guinea.`,
       `<b>JOHN SAUNANA</b>, born 1945 in Arosi on the island of Makira in the Solomon Islands, was a writer and politician best known for his 1980 novel <i>The Alternative</i>.`
@@ -1961,7 +1961,7 @@ export const stirrPoetry = [
     title: { original: "He Kanikau no Kaʻahumanu", translation: "A Lament for Kaʻahumanu" },
     meta: { piece: true },
     author: "Davida Malo",
-    group: {people: "Hawaiian", language: "Hawaiian", location: "Hawaiian Islands"},
+    group: {people: "Hawaiian", language: "Hawaiian", location: "Hawaiʻi, US"},
     info: [
       `Kanikau are chants composed after the passing of a loved one. Though these laments come from moments of grief, they function as <i>oli</i> (recitations) to aid the soul on its traverse from this world into the place of <i>akua</i> (spirits) and <i>ʻaumākua</i> (deified ancestors). A kanikau could be a spontaneous expression of grief heard at funeral gatherings, or an oli labored over by skillful chanters to later be performed in public—kanikau told stories, honored the deceased, and in more recent times, expressed the deep affection and aloha felt for a beloved member of the family or community.`,
       `<b>DAVIDA MALO</b>, born 1795 in the Kingdom of Hawaiʻi, was a <i>Kānaka Maoli</i> (Native Hawaiian) intellectual, educator, politician, minister, royal counselor, and historian. His kanikau for the death of Queen Kaʻahumanu, published in the newspaper <i>Ka Lama Hawaiʻi</i> on August 8, 1834, is well known for its striking elegance.`
@@ -1981,7 +1981,7 @@ export const cultFeatFilms = [
     id: "AFNOCFF",
     title: {original: "ⵜⵉⴳⵎⵎⵉ ⵏ ⵉⴳⵔⴰⵏ", transliteration: "Tigmi n Igren", translation: "House in the Fields"},
     year: 2017,
-    group: {people: "Shilha", language: "Tashelhiyt", country: "Morocco"},
+    group: {people: "Shilha", language: "Tashelhiyt", location: "Morocco"},
     info: [
       `In a remote village in the High Atlas Mountains of Morocco, at the crossroad between tradition and change, two sisters experience the last seasons of childhood.`,
       `The film is a sensitive portrait of a Berber community whose social fabric and centuries-old traditions are gripped by change. With long, portrait-like takes, precise observations of daily life, and strikingly photographed images of the lush green surroundings and the majestic red of the massif, <i>Tigmi n Igren</i> manages to bring a faraway world up astonishingly close.`
@@ -1999,7 +1999,7 @@ export const cultFeatFilms = [
     id: "AFNOCFF1",
     title: {original: "Mai Martaba", translation: "Your Highness"},
     year: 2024,
-    group: {people: "Hausa", language: "Hausa", country: "Nigeria"},
+    group: {people: "Hausa", language: "Hausa", location: "Nigeria"},
     info: [
       `Jallaba’s trade boom crumbles due to internal conflict among the ruling clans. A new dynasty promises stability, shattered by a king’s choice of heir—his daughter. Princess, rival, and a deposed clan clash for the throne. Who will rule—and can Jallaba survive?`,
       `Dir <b>PRINCE DANIEL</b>`
@@ -2017,7 +2017,7 @@ export const cultFeatFilms = [
     id: "AFNECFF",
     title: { original: "ላምብ", transliteration: "Lamibi", translation: "Lamb" },
     year: 2015,
-    group: {people: "Amhara", language: "Amharic", country: "Ethiopia"},
+    group: {people: "Amhara", language: "Amharic", location: "Ethiopia"},
     info: [
       `When his father must travel to Addis Ababa to look for work, a boy is sent to live with his distant relatives. He takes his pet sheep, but the upcoming holiday spells danger for his friend.`,
       `Dir/Scr <b>YARED ZELEKE</b> left his native Ethiopia at age 10 to live with his father in the United States, where he received his training in filmmaking at New York University. For his first feature film, <i>Lamb</i>, he cast actors from traditional theater, locals from rural villages, and a clever lamb.`
@@ -2038,7 +2038,7 @@ export const cultFeatFilms = [
     id: "AFEACFF",
     title: {original: "Supa Modo"},
     year: 2018,
-    group: {people: "Kikuyu", language: "Swahili", country: "Kenya"},
+    group: {people: "Kikuyu", language: "Swahili", location: "Kenya"},
     info: [
       `Nine-year-old Jo loves action films and dreams of being a superhero. Her biggest wish: to make a film and star in it. In her fantasy she can forget that she is terminally ill. When Jo’s sister can no longer bear seeing the cheerful girl spend her precious remaining time in bed, she encourages Jo to believe in her magic powers, and the whole village to make Jo’s dream a reality.`,
       `This moving drama by Kenyan filmmaker Likarion Wainaina, created as part of a master class hosted by the German-Kenyan production collective One Fine Day Films/Ginger Ink, is about the power of the imagination.`
@@ -2059,7 +2059,7 @@ export const cultFeatFilms = [
     id: "AFSOCFF",
     title: {original: "Nǃai"},
     year: 1980,
-    group: {people: "Juǀʼhoansi", language: "Juǀʼhoan", country: "Namibia"},
+    group: {people: "Juǀʼhoansi", language: "Juǀʼhoan", location: "Namibia"},
     info: [
       `The Juǀʼhoansi <i>Boyhood</i>, this film depicts 27 years in the life of Nǃai and the changes experienced by her and the members of her ǃKung community across that time. Though ideally the film would have been directed and produced by a Juǀʼhoansi Richard Linklater to be a truly representative feature, the intimate portrayals and captioned translations presented in this work are personal enough to sincerely relate something of the spirit of the Kalahari region.`
     ],
@@ -2075,7 +2075,7 @@ export const cultFeatFilms = [
     id: "AFCECFF",
     title: {original: "Le silence de la forêt", translation: "The Forest"},
     year: 2003,
-    group: {people: "BaAka", language: "Aka/Sango/French", country: "CAF"},
+    group: {people: "BaAka", language: "Aka/Sango/French", location: "Central African Rep."},
     info: [
       `Gonaba is a Central African intellectual fresh from Europe and driven by the foolish belief that western curriculum and pedagogy are necessary assets to bring positive change back home to the Central African Republic. Failing to “liberate” his own countrymen on these grounds, he tries the same tactics on the BaAka people of the Congolian rainforests, where he’s confronted with the unavoidable limitations of his supremacist ideologies.`,
       `Much of the film was shot in a reconstructed BaAka village-studio near the location of the actual village in which the community that acted in the film resides. It should be noted that though the film features many BaAka actors, it is not itself a work of BaAka cinema but of post-colonial Central African cinema.`
@@ -2096,7 +2096,7 @@ export const cultFeatFilms = [
     id: "AFWECFF",
     title: {original: "ߦߋ߮ߟߋߣ", transliteration: "Yeelen", translation: "Brightness"},
     year: 1987,
-    group: {people: "Bambara", language: "Bambara/Fula", country: "Mali"},
+    group: {people: "Bambara", language: "Bambara/Fula", location: "Mali"},
     info: [
       `Set in the powerful Mali Empire of the 13th century, <i>Yeelen</i> follows the journey of Nianankoro, a young warrior who must battle the powerful Komo cult. Nianankoro’s greatest enemy is his own father, a dangerous and corrupt wizard who uses his dark magic to try and destroy his son. Traveling over the arid Bambara, Fulani, and Dogan lands of ancient West Africa, Nianankoro eventually comes face to face with his father in a final fatal showdown.`,
       `This adaptation of an ancient oral legend from Mali is one the most acclaimed and widely seen African films ever made. Its extraordinary use of landscapes and light produces a unique and striking cinematic style.`,
@@ -2134,7 +2134,7 @@ export const cultFeatFilms = [
     id: "AMEACFF",
     title: {original: "ᑎᐯᐢᑳᐃ ᓇᑐᐸᓃᒐᑫᐘᐠ", transliteration: "Tipêskâi Natopanîcakêwak", translation: "Night Raiders"},
     year: 2021,
-    group: {people: "Cree", language: "Cree/English", country: "Canada"},
+    group: {people: "Cree", language: "Cree/English", location: "Canada"},
     info: [
       `In a dystopian future, a military government separates children from their parents and puts them in schools, where they say the pledge of allegiance and speak one language. Niska, a Cree woman, joins an underground resistance movement to rescue her daughter.`,
       `In this vivid allegory for the U.S.-Canadian residential school system, life under a relentlessly urbanizing, exploitative, militaristic state in the contemporary Eastern Woodlands is depicted with exceptional clarity.`,
@@ -2246,7 +2246,7 @@ export const cultFeatFilms = [
     id: "AMCRCFF",
     title: {original: "Garifuna in Peril"},
     year: 2012,
-    group: {people: "Garínagu", language: "Garifuna/English", country: "Honduras"},
+    group: {people: "Garínagu", language: "Garifuna/English", location: "Honduras"},
     info: [
       `A Garifuna-language teacher, Ricardo, struggles to preserve his endangered Afro-Amerindian culture by building a language school in his home village in Honduras. A business venture with his brother designed to raise money for the school’s construction becomes complicated by the expansion plans of a nearby tourist resort into indigenous territory. Historical parallels are invoked as Ricardo’s son rehearses a stage play about the Garifuna people’s last stand against British colonialism over 200 years ago in their motherland, the island of St. Vincent in the Caribbean.`,
       `Naturalistically shot, with debut performances by nearly the entire cast, <i>Garifuna in Peril</i> is the first major feature film with the majority of dialogue in Garifuna, an Arawakan language (with a high number of loanwords from Carib and European languages) indigenous to the Caribbean islands of St. Vincent before its speakers (of mixed West/Central African, Arawakan, and Kalinago ancestry) were deported by the British to Honduras in 1797.`
@@ -2264,7 +2264,7 @@ export const cultFeatFilms = [
     id: "AMCECFF",
     title: {original: "Ixcanul", translation: "Volcano"},
     year: 2015,
-    group: {people: "Kaqchikel Maya", language: "Kaqchikel", country: "Guatemala"},
+    group: {people: "Kaqchikel Maya", language: "Kaqchikel", location: "Guatemala"},
     info: [
       `In a village at the foot of an active volcano, seventeen-year-old María and her parents cultivate coffee. They practice a mixture of Catholicism and the traditional Maya religion, praying to the Christian God and making offerings to the deity of the volcano. She is arranged to be married to the coffee plantation foreman in a traditional ceremony, but problems arise when her desire to know more of the world beyond the volcano causes unforeseen consequences.`,
       `The film stars Guatemalan actress María Mercedes Coroy in her first onscreen role, alognside veteran street theater actors María Telón and Manuel Antún.`,
@@ -2283,7 +2283,7 @@ export const cultFeatFilms = [
     id: "AMWECFF",
     title: {original: "Wiñaypacha", translation: "Eternity"},
     year: 2018,
-    group: {people: "Aymara", language: "Aymara", country: "Peru"},
+    group: {people: "Aymara", language: "Aymara", location: "Peru"},
     info: [
       `An elderly couple named Willka and Phaxsi (Sun and Moon) live in a remote part of the Peruvian Andes. They await the return of their son who has left for the city.`,
       `Dir/Scr <b>ÓSCAR CATACORA</b> was an Aymara filmmaker, screenwriter, producer, and cinematographer best known for the drama films <i>Wiñaypacha</i> and <i>Yana-Wara</i>. During the production of the latter, he tragically died of appendicitis at the age of 34. His uncle Tito Catacora, who had encouraged his nephew’s interests by accompanying him to filmmaking classes, completed work on Óscar’s two in-progress films posthumously.`
@@ -2316,7 +2316,7 @@ export const cultFeatFilms = [
     id: "AMSOCFF",
     title: {original: "Eami"},
     year: 2022,
-    group: {people: "Ayoreo", language: "Ayoreo", country: "Paraguay"},
+    group: {people: "Ayoreo", language: "Ayoreo", location: "Paraguay"},
     info: [
       `Eami’s homeland is invaded by settlers. She embodies Asojá, the bird-god-woman, falling into a trance. She walks slowly and stunned through her beloved forest, preparing to leave it forever.`,
       `Dir/Scr/Prod <b>PAZ ENCINA</b> continues her work of remembrance with an intimate and sensorial approach to the recent history of Paraguay. Eami is a fragmented work, an immersive and hypnotic experience in which the mysticism of nature and its soundscape is interwoven with the perspective of a child.`
@@ -2352,7 +2352,7 @@ export const cultFeatFilms = [
     id: "ASEACFF",
     title: {original: "霸王別姬", transliteration: "Bà Wáng Bié Jī", translation: "Farewell, My Concubine"},
     year: 1992,
-    group: {people: "Han Chinese", language: "Mandarin", country: "China"},
+    group: {people: "Han", language: "Mandarin", location: "China"},
     info: [
       `In 1924, young Cheng Dieyi begins training at the Beijing Opera House at the same time as Duan Xiaolou. Cheng specializes in playing female parts, often against Duan’s commanding male leads. Over the next 50 years, the two men maintain a complicated relationship as China undergoes turbulent changes.`,
       `Dir. <b>CHÉN KĂIGĒ</b> is a Chinese filmmaker and leading figure in the fifth generation of Chinese directors, known for his visual flair and epic storytelling.`
@@ -2370,7 +2370,7 @@ export const cultFeatFilms = [
     id: "ASSECFF",
     title: {original: "โหมโรง", transliteration: "Hom rong", translation: "The Overture"},
     year: 2004,
-    group: {people: "Thai", language: "Thai", country: "Thailand"},
+    group: {people: "Thai", language: "Thai", location: "Thailand"},
     info: [
       `<i>Hom rong</i> is a fictionalized account of the life of Luang Pradit Pairoh, a Thai classical music master who lived from the late 19th to mid-20th century. The story follows his journey from childhood to becoming a master of the <i>ranat-ek</i> (Thai xylophone), highlighting the challenges he faces as traditional Thai music struggles against modernization and government bans.`,
       `Dir/Scr/Prod <b>ITTHISOONTORN VICHAILAK</b> is a Thai filmmaker known for <i>Hom rong</i> (2004), <i>Look Ba Teaw La Sud</i> (1993) and <i>Khon liang chang</i> (1987).`
@@ -2388,7 +2388,7 @@ export const cultFeatFilms = [
     id: "ASSECFF1",
     title: {original: "ប៊ូឌីញ ស", transliteration: "White Building"},
     year: 2021,
-    group: {people: "Khmer", language: "Khmer", country: "Cambodia"},
+    group: {people: "Khmer", language: "Khmer", location: "Cambodia"},
     info: [
       `A 20-year-old faces the demolition of his lifelong home, the White Building in Phnom Penh, Cambodia, and the pressures from family, friends, and neighbors that arise and intersect in this moment of sudden change.`,
       `Dir/Scr <b>KAVICH NEANG</b> is a Cambodian filmmaker known for <i>Last Night I Saw You Smiling</i> (2019), <i>White Building</i> (2021) and <i>Three Wheels</i> (2015).`
@@ -2406,7 +2406,7 @@ export const cultFeatFilms = [
     id: "ASHICFF",
     title: {original: "ཤམ་བྷ་ལ།", transliteration: "Shambhala"},
     year: 2024,
-    group: {people: "Nepali", language: "Nepali/Tibetan", country: "Nepal"},
+    group: {people: "Nepali", language: "Nepali/Tibetan", location: "Nepal"},
     info: [
       `In the heart of the Nepalese Himalayas, the spirited Pema embraces a polyandrous marriage with Tashi and his two younger brothers. They initially lead a harmonious life, but when Tashi fails to return from a trading trip to Lhasa, the legitimacy of Pema’s unborn child is questioned by her community. Determined to prove her love and purity, she embarks on a quest to find Tashi.`,
       `Dir/Scr <b>MIN BAHADUR BHAM</b> sought with <i>Shambhala</i>, originally titled <i>Chiso Barsha (A Year of Cold)</i>, to make a female-driven travelogue for his second feature film.`
@@ -2459,7 +2459,7 @@ export const cultFeatFilms = [
     id: "ASWECFF",
     title: {original: "أنَاشِيْدُ آدَمَ", transliteration: "Anāshīdu Ādama", translation: "Songs of Adam"},
     year: 2024,
-    group: {people: "Arab", language: "Arabic", country: "Iraq"},
+    group: {people: "Arab", language: "Arabic", location: "Iraq"},
     info: [
       `Mesopotamia, 1946. Adam and Ali are forced to watch the washing of their grandfather’s body. The experience affects Adam so deeply that he decides never to grow up—and stops aging.`,
       `The years go by, and the villagers believe Adam is cursed, while his brother—who ages year by year—grows bitter and insists that Adam should be institutionalized. Over several decades, the family, friends, and Iraq undergo enormous changes, while Adam remains the same. Only Iman and Anki, a shepherd and Adam’s best friend, see his condition as a blessing.`,
@@ -2483,7 +2483,7 @@ export const cultFeatFilms = [
       translation: "The Gentle Indifference of the World"
     },
     year: 2018,
-    group: {people: "Kazakh", language: "Kazakh", country: "Kazakhstan"},
+    group: {people: "Kazakh", language: "Kazakh", location: "Kazakhstan"},
     info: [
       `When her father commits suicide, country girl Saltanat is forced to travel to the city in search of the money that will spare her mother from jail. Accompanied by her childhood friend (and ardent admirer) Kuandyk, Saltanat soon learns how wide the gap between her ideals and the reality of contemporary Kazakhstan truly is.`,
       `Dir/Scr <b>ADILKHAN YERZHANOV</b>, Kazakhstan’s king of the offbeat and the absurd, is at his lyrical best in this tale of innocence corrupted. Yerzhanov’s trademarks—exquisite tableaux, deadpan humour, and humanist heart—are coupled here with a meta-cinematic riff on the western, the noir, and French New Wave.`
@@ -2501,7 +2501,7 @@ export const cultFeatFilms = [
     id: "ASCECFF1",
     title: {original: "Бешкемпир", transliteration: "Beshkempir", translation: "Five Grannies"},
     year: 1998,
-    group: {people: "Kyrgyz", language: "Kyrgyz", country: "Kyrgyzstan"},
+    group: {people: "Kyrgyz", language: "Kyrgyz", location: "Kyrgyzstan"},
     info: [
       `A young boy in a rural village discovers he is adopted. The film explores his coming-of-age journey as he navigates childhood mischief, his first crush, and the complex emotions surrounding his true parentage.`,
       `Dir/Scr <b>AKTAN ABDYKALYKOV</b> is a Kyrgyz filmmaker. The story of <i>Beshkempir</i> is based on his own life, having learned that his mother and father were not his biological parents at age 13.`
@@ -2519,7 +2519,7 @@ export const cultFeatFilms = [
     id: "ASCECFF2",
     title: {original: "Мадина", transliteration: "Madina"},
     year: 2023,
-    group: {people: "Kazakh", language: "Kazakh", country: "Kazakhstan/Pakistan/India"},
+    group: {people: "Kazakh", language: "Kazakh", location: "Kazakhstan/Pakistan/India"},
     info: [
       `In trying to earn a living for her small family—an old grandmother, a withdrawn little brother, and a two-year-old daughter—Madina is ready to go against her moral principles. Her feelings are frozen by a cold winter inside her that seems to never end, until one day her brother makes a shocking revelation. The knowledge of the abuse to which he was subjected as a child changes everything for Madina and breaks the ice that covers her soul. The story is based on the real experiences of lead actress Madina Akylbekov.`,
       `Dir/Scr/Prod <b>AIZHAN KASSYMBEK</b> is a Kazakh filmmaker whose goal is to empower women in film, such as with the all-women crew of her first film <i>Fire</i> (2021).`
@@ -2537,7 +2537,7 @@ export const cultFeatFilms = [
     id: "ASINCFF",
     title: {original: "ᠰᠢᠷ᠎ᠠ ᠨᠣᠬᠠᠢ ᠶᠢᠨ ᠲᠠᠮᠤ", transliteration: "Shar nokhoin tam", translation: "Cave of the Yellow Dog"},
     year: 2005,
-    group: {people: "Khalkha", language: "Mongolian", country: "Mongolia"},
+    group: {people: "Khalkha", language: "Mongolian", location: "Mongolia"},
     info: [
       `Nansal finds a small dog and names him Zochor. Her father refuses to let her keep it, believing it will bring the family bad luck and lead wolves to their sheep. Nansal decides to hide her four-legged friend, but things get complicated as winter approaches and the family prepares to move camps.`,
       `Dir/Scr <b>BYAMBASUREN DAVAA</b>, born 1971 in Ulaanbaatar, is a Mongolian filmmaker who tells stories embedded in the traditional life of the nomads of her country. The subjects of her movies also serve as amateur actors, playing mostly themselves, which positions her work somewhere between documentary and fiction.`
@@ -2555,7 +2555,7 @@ export const cultFeatFilms = [
     id: "EUEACFF",
     title: {original: "Trzy kolory: Biały", translation: "Three Colours: White"},
     year: 1994,
-    group: {people: "Polish", language: "Polish/French", country: "Poland"},
+    group: {people: "Polish", language: "Polish/French", location: "Poland"},
     info: [
       `<i>Biały</i>, the second in the Polish <i>Trzy kolory</i> film trilogy themed on French Revolutionary ideals, is a psychological comedy-drama depicting the humiliating circumstances in the life of Polish immigrant Karol Karol.`,
       `Dir/Scr <b>KRZYSZTOF KIEŚLOWSKI</b> was a filmmaker and screenwriter best known internationally for his television miniseries <i>Dekalog</i> and <i>Three Colors</i> films.`
@@ -2573,7 +2573,7 @@ export const cultFeatFilms = [
     id: "EUWECFF",
     title: {original: "Portrait de la jeune fille en feu", translation: "Portrait of a Lady on Fire"},
     year: 2019,
-    group: {people: "French", language: "French", country: "France"},
+    group: {people: "French", language: "French", location: "France"},
     info: [
       `France, 1770. Marianne, a painter, is commissioned to do the wedding portrait of Héloïse, a young woman who has just left the convent. Héloïse is a reluctant bride-to-be and Marianne must paint without her knowing. She observes her by day, to paint the portrait in secret.`,
       `Dir/Scr <b>CÉLINE SCIAMMA</b> is a French filmmaker and screenwriter known for <i>Portrait de la jeune fille en feu</i> and <i>Petite Maman</i>. A  common theme in Sciamma’s films is the fluidity of gender, sexual identity among girls and women, and the female gaze.`
@@ -2609,7 +2609,7 @@ export const cultFeatFilms = [
     id: "OCMDCFF",
     title: {original: "Rehefa mihaona ny ranomasina sy ny kintana", translation: "When the Stars Meet the Sea"},
     year: 1996,
-    group: {people: "Merina", language: "Malagasy", country: "Madagascar"},
+    group: {people: "Merina", language: "Malagasy", location: "Madagascar"},
     info: [
       `This contemplative and poetic film traces the destiny of Kapila, an outcast child who had been deemed to have supernatural powers of destruction because of the timing of his solar eclipse birth.`,
       `Dir/Scr <b>RAYMOND RAJAONARIVELO</b> is a notable Malagasy film director best known for his films <i>Quand les étoiles rencontrent la mer</i> and <i>Taba Taba</i>.`
@@ -2627,7 +2627,7 @@ export const cultFeatFilms = [
     id: "OCMRCFF",
     title: {original: "Paglipay", translation: "Crossing"},
     year: 2016,
-    group: {people: "Aeta", language: "Sambal/Tagalog", country: "Philippines"},
+    group: {people: "Aeta", language: "Sambal/Tagalog", location: "Philippines"},
     info: [
       `A teenage Aeta boy from Baytan village in Zambales makes a living from cutting down and burning trees and hunting on the foothills of Mt. Pinatubo. While working to sell food in town, he meets a university student from Manila.`,
       `Dir/Scr <b>ZIG MADAMBA DULAY</b> is an independent filmmaker from a farming family with 11 children in rural Philippines. He uses media to depict stories from underrepresented groups in his country.`
@@ -2648,7 +2648,7 @@ export const cultFeatFilms = [
     id: "OCMLCFF",
     title: {original: "Tanna"},
     year: 2015,
-    group: {people: "Ni-Vanuatu", language: "Nivhaal/Nafe", country: "Vanuatu"},
+    group: {people: "Ni-Vanuatu", language: "Nivhaal/Nafe", location: "Vanuatu"},
     info: [
       `Wawa, a young girl from Yakel on Tanna Island, falls in love with her community leader’s grandson, Dain. When a war between factions escalates, Wawa is unknowingly betrothed as part of a peace deal. The lovers run away, but are pursued by enemies intent on killing them.`,
       `The cast of the film are all Ni-Vanuatu locals from the village of Yakel, and the film’s plot is based on events that ocurred there in the 1980s that changed the way the community keeps <i>Kastom</i> (traditional cultural practices) to this day.`
@@ -2666,7 +2666,7 @@ export const cultFeatFilms = [
     id: "OCMCCFF",
     title: {original: "Ña Noniep", translation: "I am the Good Fairy"},
     year: 2009,
-    group: {people: "Marshallese", language: "Marshallese", country: "Marshall Islands"},
+    group: {people: "Marshallese", language: "Marshallese", location: "Marshall Islands"},
     info: [
       `An original feature film made in the Marshall Islands, performed by island residents, and produced to support local education, interweaves Marshallese folklore with the challenges faced by youth in the islands today.`,
       `<i>Ña Noniep</i> deals with the spiritual battle between a <i>ri‑anijnij</i> (an evil Marshallese maker of black magic) and a <i>noniep</i> (a Marshallese fairy-like creature) for the soul of a 13-year old boy, Liki. The film portrays Liki as an “off-the-chart” brilliant student who can solve math problems without using pencil or paper and who can read a thick novel in a few days.`,
@@ -2685,7 +2685,7 @@ export const cultFeatFilms = [
     id: "OCPLCFF",
     title: {original: "O Le Tulafale", translation: "The Orator"},
     year: 2011,
-    group: {people: "Samoan", language: "Samoan", country: "Samoa"},
+    group: {people: "Samoan", language: "Samoan", location: "Samoa"},
     info: [
       `<i>O Le Tulafale</i> is a contemporary drama about courage, forgiveness, and love. Saili lives a humble life with his beloved wife and daughter in an isolated traditional village on the islands of Samoa, but everything changes when he is denied his father’s chiefly status and his family plantation is threatened.`,
       `Dir/Scr <b>TUSI TAMASESE</b> is a Samoan filmmaker of high chiefly descent, of the Tupua Tamasese lineage. His first feature film, <i>O Le Tulafale</i>, was financed in part by the Samoan government and depicts <i>Faʻa Sāmoa</i>, the Samoan Way.`
@@ -2731,7 +2731,7 @@ export const presMusDrama = [
     id: "AFEAPMD",
     title: {original: "Engilakinoto"},
     century: null,
-    group: {people: "Maasai", language: "Maa", country: "Tanzania"},
+    group: {people: "Maasai", language: "Maa", location: "Tanzania"},
     info: [
       `Engilakinoto is call-and-response performing art form sung without instrumental accompaniment. A <i>olaranyani</i> (song leader) initiates the melody, and the chorus responds in unison, often with layered rhythms, deep throat-based chanting, and harmonies, while executing controlled, leaning dance moves.`,
       `The lyrical content of Engilakinoto is a vast repository of Maasai oral tradition covering a wide range of themes, from recounting historical narratives and reinforcing social norms to expressing emotion and depicting the Maasai pastoral lifestyle and relationship with nature.`,
@@ -2774,7 +2774,7 @@ export const presMusDrama = [
     id: "AFSOPMD",
     title: {original: "Djxani"},
     century: null,
-    group: {people: "Juǀʼhoansi", language: "Juǀʼhoan", country: "Angola"},
+    group: {people: "Juǀʼhoansi", language: "Juǀʼhoan", location: "Angola"},
     info: [
       `Djxani is a form of sung dance with narrative elements typically staged around a fire, performed by all members of the community. Dances involve choreographed shaking, stomping, and clapping, with dancers often taking on animal characteristics as they depict traditional stories. Every djxani includes an accompanying song that can be repeated indefinitely during the extended performances, while the <i>n</i><I>ǀ</I><i>um kxao</i> occasionally solos overtop.`,
       `Among the better known ceremonies featuring djxani is the <i>ǂhoe djxani</i> medicine dance, erroneously called a “trance dance”. While women perform rhythmic clapping and singing to generate <i>n</i><I>ǀ</I><i>um</i> (healing energy), the male healers enter a heightened mental state through intense rhythmic movements and hyperventilation. The ceremony is not only a performance but a therapeutic and spiritual event, often lasting throughout the night.`,
@@ -2823,7 +2823,7 @@ export const presMusDrama = [
     title: {original: "Mvet"},
     meta: { works: [`<i>A Mvet</i> by Zwé Nguéma`,`<i>The Fang Mvet Epic</i> (Oveng Ndoumou Obame)`,`<i>Mvet Asseng Mbame Ona</i>`,`<i>The Mvet: Man, Death and Immortality</i><br>`] },
     century: 19,
-    group: {people: "Ekang", language: "Fang/Beti/Bulu", country: "Equatorial Guinea"},
+    group: {people: "Ekang", language: "Fang/Beti/Bulu", location: "Equatorial Guinea"},
     info: [
       `The Mvet is an epic cycle of heroic tales encompassing music, storytelling, and dramatic performance. Shows are performed by a master storyteller known as the <i>mbom-mvet</i>, who simultaneously sings, recites, dances, and plays a stringed instrument called the <i>mvet</i>, a chordophone with calabash resonators, whose sounds accompany the intricate narratives.`,
       `The Mvet performance is a communal event, often taking place at night, where the audience actively participates by responding to the performer and marking the rhythm with claps or other objects.`,
@@ -2866,7 +2866,7 @@ export const presMusDrama = [
     id: "AFWEPMD",
     title: {original: "Egúngún"},
     century: 16,
-    group: {people: "Yorùbá", language: "Yorùbá", country: "Nigeria"},
+    group: {people: "Yorùbá", language: "Yorùbá", location: "Nigeria"},
     info: [
       `The Egúngún ancestral masquerade is a spiritual and cultural tradition of the Yoruba people, manifesting the collective spirits of departed ancestors who periodically return to the human community. Performances involve elaborately costumed and masked figures who embody the spirits of ancestors, known as <i>Ará Ọ̀run</i> (the collective dead).`,
       `During the annual Ọdun Egúngún festivals, and at family rituals, these figures appear through dynamic performances of dance, drumming, and chanting. Their purpose is to bless, warn, and spiritually cleanse the community, while also strengthening the bonds that unite families and society.`,
@@ -2899,7 +2899,7 @@ export const presMusDrama = [
     id: "AMEAPMD",
     title: {original: "Posketv"},
     century: 14,
-    group: {people: "Muscogee", language: "Muscogee", location: "Florida, US"},
+    group: {people: "Muscogee", language: "Muscogee", religion: "Mvskoke-Nene", location: "Florida, US"},
     info: [
       `Posketv, also known as the busk or Green Corn Ceremony, is a ritual cycle comprised of sung dances, including <i>opvnkv haco</i> (stomp dances), <i>hvsē opvnkv</i> (ribbon dance), and other ceremonial and social dances.`,
       `The concept of <i>ometv</i>, meaning to emulate or become, is central to the performance of the busk. Through enacting the ritualized behavior of non-human beings, performers become, as far as the surrounding ecology is concerned, a combination of themselves and their subject.`,
@@ -2934,7 +2934,8 @@ export const presMusDrama = [
     textURL: "https://s9.imslp.org/files/imglnks/usimg/0/0d/IMSLP222521-SIBLEY1802.21145.da1d-39087011973114score.pdf",
     ref: [
       { id: "koons-2016", type: "thesis", title: "Dancing Breath: Ceremonial Performance Practice, Environment, and Personhood in a Muskogee Creek Community", contributors: [ { firstName: "Ryan Abel", lastName: "Koons", role: "author" } ], pubDate: { year: 2016 }, publisher: "University of California, Los Angeles", location: "Los Angeles, CA", medium: "Doctoral Dissertation", url: "https://www.researchgate.net/publication/331482090_Dancing_Breath_Ceremonial_Performance_Practice_Environment_and_Personhood_in_a_Muskogee_Creek_Community", meta: { notes: "A PhD dissertation in Ethnomusicology. It utilizes 'ecomusicology' and 'indigenous ontologies' to analyze the Stomp Dance. Focuses on the relationship between breath, song, and the medicinal properties of the ceremonial space.", grade: "B", tags: ["Muskogee", "Creek", "Stomp Dance", "Ethnomusicology", "Ecomusicology", "Indigenous Ontology"], sortKey: "info" } },
-      { id: "koons-2019-becoming-avian-pvlvcekolv", type: "journal_article", title: "Becoming Avian in the Anthropocene: Performing the Feather Dance and the Owl Dance at Pvlvcekolv", contributors: [ { firstName: "Ryan", lastName: "Koons", role: "author" } ], pubDate: { year: 2019, month: 2, day: 7 }, url: "https://www.researchgate.net/publication/330923509_Becoming_Avian_in_the_Anthropocene_Performing_the_Feather_Dance_and_the_Owl_Dance_at_Pvlvcekolv", publisher: "Humanimalia", location: "Muscogee Nation / Oklahoma", medium: "Digital Journal Article", meta: { notes: "An ethnomusicological analysis of the Feather and Owl Dances at the Pvlvcekolv ceremonial ground. Koons frames these dances as specialized somatic and sonic methods through which Mvskoke practitioners embody avian ontology. By 'becoming avian,' participants renew multi-species treaties and assert Indigenous sovereignty against the planetary degradation of the Anthropocene.", grade: "C", doi: "10.52537/humanimalia.9503", tags: ["Muscogee", "Mvskoke", "Pvlvcekolv", "Feather Dance", "Owl Dance", "Stomp Ground", "Ethnomusicology", "Anthropocene", "Interspecies Performance"], sortKey: "info" } }
+      { id: "koons-2019-becoming-avian-pvlvcekolv", type: "journal_article", title: "Becoming Avian in the Anthropocene: Performing the Feather Dance and the Owl Dance at Pvlvcekolv", contributors: [ { firstName: "Ryan", lastName: "Koons", role: "author" } ], pubDate: { year: 2019, month: 2, day: 7 }, url: "https://www.researchgate.net/publication/330923509_Becoming_Avian_in_the_Anthropocene_Performing_the_Feather_Dance_and_the_Owl_Dance_at_Pvlvcekolv", publisher: "Humanimalia", location: "Muscogee Nation / Oklahoma", medium: "Digital Journal Article", meta: { notes: "An ethnomusicological analysis of the Feather and Owl Dances at the Pvlvcekolv ceremonial ground. Koons frames these dances as specialized somatic and sonic methods through which Mvskoke practitioners embody avian ontology. By 'becoming avian,' participants renew multi-species treaties and assert Indigenous sovereignty against the planetary degradation of the Anthropocene.", grade: "C", doi: "10.52537/humanimalia.9503", tags: ["Muscogee", "Mvskoke", "Pvlvcekolv", "Feather Dance", "Owl Dance", "Stomp Ground", "Ethnomusicology", "Anthropocene", "Interspecies Performance"], sortKey: "info" } },
+      { id: "bolfing-2021-mvskoke", type: "thesis", title: "Mvskoke-Nene momis komet Yvkvpvkkeyetos/We Keep Walking the Mvskoke Path: A Reflexive and Phenomenological Ethnographic Study of the Ceremonial Beliefs and Practices of a Modern Mvskoke Community in Florida", contributors: [ { firstName: "Christopher B.", lastName: "Bolfing", role: "author" } ], pubDate: { year: 2021, month: 5 }, degree: "Doctor of Philosophy in Anthropology", publisher: "University of Arkansas", location: "Fayetteville", url: "https://scholarworks.uark.edu/etd/3963/", meta: { sortKey: "text", grade: "B" } }
     ]
   },
   {
@@ -3026,7 +3027,7 @@ export const presMusDrama = [
     id: "AMCEPMD",
     title: {original: "Xajoj"},
     century: 15,
-    group: {people: "Achí Maya", language: "Achí", country: "Guatemala"},
+    group: {people: "Achí Maya", language: "Achí", location: "Guatemala"},
     info: [
       `Xajoj is a genre of theatrical performance involving music, dance, and storytelling. It is most famously associated with the <i>Rabinal Achí</i>, a pre-Columbian Maya play also known as <i>Xajoj Tun</i>, the tun being a type of wooden drum used in its performance.`,
       `The <i>Rabinal Achí</i> is a 15th-century dynastic Maya drama, and a rare example of preserved pre-Hispanic Maya theatrical traditions. It comprises myths of origin and addresses popular and political subjects concerning the inhabitants of the region of Rabinal, expressed through masked dance, theater, and music.`,
@@ -3093,7 +3094,7 @@ export const presMusDrama = [
     id: "AMWEPMD",
     title: {original: "Wanka"},
     century: 15,
-    group: {people: "Quechua", language: "Quechua", country: "Peru"},
+    group: {people: "Quechua", language: "Quechua", location: "Peru"},
     info: [
       `Until 1555, a series of plays were performed annually in Cuzco, the capital of the Inca Empire, as part of a strong Andean dramaturgical tradition that continued well into the colonial period. The shows were of two types: <i>wanka</i>, which were historical and memorial in character, and <i>aránway</i>, which typically depicted the everyday lives of the Quechua people.`,
       `These music dramas were composed by <i>amautas</i>, the intellectual class of poets, philosophers, scholars, and sages employed by the Inca nobility, to express imperial values and ideology. The works were recorded in <i>khipus</i>, the knotted Andean writing system, and, according to the Inca calendar, were performed in central plazas, accompanied by dancing and music.`,
@@ -3295,7 +3296,7 @@ export const presMusDrama = [
     id: "ASEAPMD",
     title: {original: "能楽", transliteration: "Nōgaku"},
     century: 14,
-    group: {people: "Japanese", language: "Japanese", country: "Japan"},
+    group: {people: "Yamato", language: "Japanese", location: "Japan"},
     info: [
       `Nōgaku theatre had its heyday in the fourteenth and fifteenth centuries, but actually originated in the eighth century when the Sangaku was transmitted from China to Japan. At the time, the term Sangaku referred to various types of performance featuring acrobats, song, and dance as well as comic sketches. Its subsequent adaption to Japanese society led to its assimilation of other traditional art forms.`,
       `Today, Nōgaku is the principal form of Japanese theatre and has influenced the puppet theatre as well as the more-recent Kabuki. Often based on tales from traditional literature, Nōgaku theatre integrates masks, costumes, and various props in a dance-based performance. Moreover, this theatre requires highly trained actors and musicians.`,
@@ -3365,7 +3366,7 @@ export const presMusDrama = [
     id: "ASSOPMD",
     title: {original: "കൂടിയാട്ടം", transliteration: "Kūṭiyāṭṭaṁ"},
     century: 15,
-    group: {people: "Malayali", language: "Sanskrit", location: "Kerala, IN"},
+    group: {people: "Malayali", language: "Sanskrit", religion: "Hinduism", location: "Kerala, IN"},
     info: [
       `Kutiyattam is a traditional performing art from Kerala, India, representing a local Malayalam synthesis of classical Sanskrit theatre and Tamil Koothu drama. Its origins lie in the works of 9th-century playwright-king Kulasekhara, and it was further formalized in the 15th century to its contemporary form.`,
       `In its stylized and codified theatrical language, <i>neta abhinaya</i> (eye expression) and <i>hasta abhinaya</i> (the language of gestures) are prominent. They focus on the thoughts and feelings of the main character.`,
@@ -3383,7 +3384,7 @@ export const presMusDrama = [
     id: "ASWEPMD",
     title: {original: "تعزیه", transliteration: "Ta‘zīeh"},
     century: 17,
-    group: {people: "Persian", language: "Persian", country: "Iran"},
+    group: {people: "Persian", language: "Persian", location: "Iran"},
     info: [
       `Ta‘zieh is a ritual dramatic art that recounts religious events, historical and mythical stories, and folk tales. Each performance has four elements: poetry, music, song, and movement.`,
       `Some performances have up to a hundred roles, divided into historical, religious, political, social, supernatural, real, imaginary, and fantasy characters. Each Ta‘zieh drama is individual, having its own subject, costumes and music.`,
@@ -3403,7 +3404,7 @@ export const presMusDrama = [
     id: "ASCEPMD",
     title: {original: "Дастан", transliteration: "Dastan"},
     century: 13,
-    group: {people: "Kyrgyz", language: "Kyrgyz", country: "Kyrgyzstan"},
+    group: {people: "Kyrgyz", language: "Kyrgyz", location: "Kyrgyzstan"},
     info: [
       `Dastan, from the Persian word for a story or tale, is an ornate form of oral epic narrative maintained by the Kyrgyz, as well as other neighboring Central Asian peoples. The narrative form expresses the historical memory of the Kyrgyz people and survives thanks to a community of epic tellers, both women and men, of all ages.`,
       `Narrators accept their calling after experiencing a prophetic dream, understood to be a sign from the heroes of the epic. During recitals they enter into a near-trance state and use special forms of narration, rhythm, tone and gestures to recreate the epic’s historical atmosphere.`,
@@ -3467,7 +3468,7 @@ export const presMusDrama = [
     id: "EUEAPMD",
     title: {original: "Leelo"},
     century: 11,
-    group: {people: "Seto", language: "Võro-Seto", country: "Estonia"},
+    group: {people: "Seto", language: "Võro-Seto", location: "Estonia"},
     info: [
       `For the Seto community living in southeastern Estonia and the Pechory district of the Russian Federation, the tradition of <i>leelo</i>, an ancient polyphonic singing tradition, is a cornerstone of contemporary identity.`,
       `Performed to traditional melodies and in traditional costume, leelo features a lead singer who delivers a verse line followed by a choir that joins in for the final syllables and then repeats the whole line. Although lyrics are sometimes learned from former great performers, skill in composition is the mark of an excellent lead singer. Most choirs are composed wholly of women, and the most notable lead singer is crowned on Seto Kingdom Day as the King’s “Mother of Song”.`,
@@ -3505,7 +3506,7 @@ export const presMusDrama = [
     id: "EUWEPMD",
     title: {original: "Opera"},
     century: 16,
-    group: {people: "Italian", language: "Italian", country: "Italy"},
+    group: {people: "Italian", language: "Italian", location: "Italy"},
     info: [
       `Opera is a traditional Italian performing art, popular throughout Europe, featuring a combination of music, drama, acting, and staging. Its roots trace back to late-16th-century Florence, where a group of intellectuals, musicians, and poets called the Florentine Camerata sought to reconstruct ancient Greek theater on the premise that its works were all originally sung.`,
       `The knowledge and skills related to Italian opera singing, a technique called <i>bel canto</i>, are transmitted orally between a <i>maestro</i> and pupil through vocal exercises and the gradual introduction of different musical repertoires and styles. Performances in recitals, singing schools, and workshops also contribute to the transmission of the practice, as well as formal education in conservatories and academies. Furthermore, the beginning of an opera season often coincides with local festivities and ceremonies.`,
@@ -3595,7 +3596,7 @@ export const presMusDrama = [
     id: "OCMDPMD",
     title: {original: "Hiragasy"},
     century: 18,
-    group: {people: "Merina", language: "Malagasy", country: "Madagascar"},
+    group: {people: "Merina", language: "Malagasy", location: "Madagascar"},
     info: [
       `Hiragasy is a performing art composed of song, dance, and speech. Originating in the central highlands of Madagascar, the performance takes place in public spaces. It generally involves two troupes and lasts about one hour and thirty minutes, following a standard structure, including drumming, greetings, storytelling, dance, and folk songs.`,
       `The lyrics of hiragasy performances allude to moral, civic, and cultural values, and the music is performed using traditional instruments. Hiragasy is present in all Malagasy festive and cultural events. A source of national identity, it is transmitted informally within families, with children following their parents on tour and joining in on the performances.`,
@@ -3622,7 +3623,7 @@ export const presMusDrama = [
     id: "OCMRPMD",
     title: {original: "Hudoq"},
     century: null,
-    group: {people: "Dayak", language: "Bahau", country: "Borneo, ID"},
+    group: {people: "Dayak", language: "Bahau", religion: "Kaharingan", location: "Borneo, ID"},
     info: [
       `Masked and clothed in betel nut and banana leaves, each performer in Hudoq represents a distinct deity associated with animal traits meant to rid the land of vermin and appease the spirits of the rice paddies. In other renditions, each character is itself a fantastical interpretation of the creatures that wish to destroy the crop, who after the culminating blessing of the harvest are chased away by two human-masked figures, restoring order and replinishing the land.`,
       `Many of the performances of Hudoq in Indonesia today have foregone their ritual purpose in favor of a primarily aesthetic function, as the Indonesian government has encouraged its exhibition in East Kalimantan for tourists. Even so, ceremonies like the one celebrated in the Mahakam Ulu Regency’s Hudoq Pekayang Festival have shown that a balanced reintegration with Nugal rice planting practices and Lamin communal lifestyle is possible.`
@@ -3710,7 +3711,7 @@ export const presMusDrama = [
     id: "OCMCPMD",
     title: {original: "Chelitakl Rechuodel"},
     century: null,
-    group: {people: "Palauan", language: "Palauan", country: "Palau"},
+    group: {people: "Palauan", language: "Palauan", location: "Palau"},
     info: [
       `Chelitakl Rechuodel, the traditional chants, music, and dances of Palau, encompass a vast and diverse body of oral tradition performed through <i>chelitakl</i> (song) and dance. Contrasted with <i>beches chelitakl</i> (modern music), these performances are distinguished by their ancient origins and distinctive vocal style.`,
       `Performances often take place at the <i>bai</i>, a traditional central meeting house. The bai is adorned with elaborate paintings and carvings depicting Palauan legends and history. These decorations provide a symbolic backdrop for the chants and dances, which themselves recount stories and genealogies.`,
@@ -3730,7 +3731,7 @@ export const presMusDrama = [
     id: "OCPLPMD",
     title: {original: "Haka"},
     century: null,
-    group: {people: "Māori", language: "Māori", country: "New Zealand"},
+    group: {people: "Māori", language: "Māori", location: "New Zealand"},
     info: [
       `Haka is a traditional Maori performing art, typically performed in unison by a <i>kapa haka</i> group. It is characterized by vigorous, rhythmic movements of the entire body, stamping of the feet, and stylized gestures. A central feature is the chanted vocal accompaniment, delivered with powerful rhythm and intonation.`,
       `Fierce facial expressions, including <i>pūkana</i> (bulging eyes) and <i>whetero</i> (protruding tongues), are used to convey emotion and intensity, with the specific intent varying depending on the occasion. The quivering movements of the hands, known as <i>wiripapa</i>, are said to represent the dance of Tane-rore, the personification of shimmering, heat-hazed air, and are considered fundamental to the art form.`,
@@ -3746,7 +3747,7 @@ export const foundRelTexts = [
   {
     id: "AFNOFRT",
     title: {original: "Rw nw prt m hrw", translation: "Spells of Coming Forth by Day"},
-    group: {people: "Egyptian", language: "Egyptian", religion: "Kemetism", country: "Egypt"},
+    group: {people: "Egyptian", language: "Egyptian", religion: "Kemetism", location: "Egypt"},
     info: [
       `The heavenly paradise Aaru is an infinitely abundant and peaceful expanse of golden reeds, much like the wide tracts and thickets of the Nile Delta; but before one could plough its fields and hunt in its marshes, before one would even be permitted to undertake the perilous journey there, one’s soul must first pass the Weighing of the Heart. To overcome these obstacles, the guidance granted by a particular religious text is essential.`,
       `Originally carved onto the stone walls of the tombs of Pharaohs (the <i>Pyramid Texts</i>, c. 2400 BCE), the prayers and litanies of the ancient Egyptian religion had evolved to wider distribution centuries later, when they were painted on the sides of wooden burial coffins for wealthy nobles of the realm (the <i>Coffin Texts</i>, c. 2000 BCE). By 1250 BCE, when the documents presented here were produced, the ancient spells were written and illustrated on rolls of papyrus buried with the deceased (the <i>Books of the Dead</i>, c. 1550 BCE).`,
@@ -3827,7 +3828,7 @@ export const foundRelTexts = [
   {
     id: "AFEAFRT",
     title: {original: "Cieŋ ë baai", translation: "Customs"},
-    group: {people: "Dinka", language: "Dinka", religion: "Dinka religion", country: "South Sudan"},
+    group: {people: "Dinka", language: "Dinka", religion: "Dinka religion", location: "South Sudan"},
     info: [
       `Rocks, trees, snakes, animals, the wind, the weather, waves, foam, drums, everything one encounters in life has a spiritual significance. A relationship to an emblem may require that certain trees not be burnt, certain animals not be killed, certain bones not be broken, certain sacrificial beasts not be roasted on fire, certain fish not be killed, certain grass not burnt—indeed, that an object not be treated in a way inconsistent with the respect due to spiritually inspired leaders, lest evil follow.`,
       `The <i>bäny bith</i>, masters of the fishing-spear, are the priestly clan leaders who, since ancient times, have played a central role in the administration and enrichment of Dinka society, with skills of truth-telling, justice, and prophetic vision. Such acts as communic-ating with and appeasing <i>jak</i> nature spirits and <i>yieth</i> ancestor spirits and rain-making fall to the spiritual specialists of this class.`
@@ -3872,7 +3873,7 @@ export const foundRelTexts = [
   {
     id: "AFSOFRT",
     title: {original: "Aibe-gam-ǁäe-ǃgãis-kxũna", translation: "Things from the Back of Time"},
-    group: {people: "Nama", language: "Khoekhoe", religion: "Nama religion", country: "Namibia"},
+    group: {people: "Nama", language: "Khoekhoe", religion: "Nama religion", location: "Namibia"},
     info: [
       `As the horizon of the open sea is called “the back of the water” (<I>ǁ</I><i>gamiǃgãib</i>), so the primeval past, remote as a distant horizon, is called “the back of time” (<I>ǁ</I><i>äeǃgãis</i>). In those days there were no people, the sun and moon were the earth’s inhabitants, fire lived, and all animals had human-like shapes, feelings, and actions. Within this framework, all observations of the animal world and experiences of one’s own life are processed.`,
       `In the evening, everyone gets together and takes a turn telling one of these stories preserved across the generations. Not out of superstition, but out of the mood of these happy hours themselves, the commandment has arisen to let the figures of legend (Tsũi-ǁgoab, ǁGaunab, the ǂAiǃgãmũchab) revive themselves only at night. Anyone who talks about them in daylight could conjure up the things (<i>kxũ·na</i>) of the past (<i>aibe-gam</i>) and thus cause hopless confusion. Only after sunset is it said <i>!ho·are</i>—“tell me!”`
@@ -3915,7 +3916,7 @@ export const foundRelTexts = [
   {
     id: "AFCEFRT",
     title: {original: "Ndura a lufu", translation: "The Forest is Talking"},
-    group: {people: "Mbuti", language: "Asoa/Efé/Kango", religion: "Mbuti religion", country: "DRC"},
+    group: {people: "Mbuti", language: "Asoa/Efé/Kango", religion: "Mbuti religion", location: "DR Congo"},
     info: [
       `The Ituri rainforest is a world that is essentially good, where life normally runs smoothly and easily. Any break in that flow is abnormal, but such is not the result of any malevolence, nor due to any evil person or spirit at work. The forest is always full of sound, a constant background referred to as <i>ndura a lufu</i> (lit. the forest is talking), and so if the forest stops talking, it is a sign that something is very wrong, a warning of imminent danger.`,
       `It is said that “if things go wrong, it must be because God is sleeping. If he were awake and seeing us he would not let this happen.” So what is there to do? Sing. And the power of the song is to awaken God, and that is all that is needful, for when he is awake then everything will return to normal. Only by a special sound can God be awakened, and the ceremonies and songs of the <i>molimo</i> and <i>elima</i> facilitate the acquisition of the right to take part in these sacred songs, upon which the welfare of the community depends. <i>S’uti mota ningo’e, akami sinana’e, imba nde bonga’i</i>—Sound is very strong indeed; noise is bad, but song is good.`
@@ -3970,7 +3971,7 @@ export const foundRelTexts = [
   {
     id: "AFWEFRT",
     title: {original: "Odù Ifá", translation: "Divination Verses"},
-    group: {people: "Yorùbá", language: "Yorùbá", religion: "Ìṣẹ̀ṣe", country: "Nigeria"},
+    group: {people: "Yorùbá", language: "Yorùbá", religion: "Ìṣẹ̀ṣe", location: "Nigeria"},
     info: [
       `<+>Ifá[Yorùbá oracle]</+> owns the world, the world as encapsulated in the face of the <i>ọpọ́n Ifá</i> divining tray (pictured), in the hands of Ọ̀rúnmìlà with Èṣù overlooking from the top. Ọ̀rúnmìlà is the custodian of divine, moral, economic, linguistic, and metaphysical order, and his teachings are kept by the <+><i>babaláwo</i>[“father of secrets”, high priest of the Ifá oracle]</+> elders.`,
       `As the life of man is enmeshed in many riddles, seen or unseen, the quest to know that which is obscured becomes juxtaposed against the fear of the unexpected and unknown. Clients consult the <i>babaláwo</i> who, by chanting oratory prayers and casting the <+>Ọ̀pẹ̀lẹ̀[divination chain]</+> or the <+>Ikin[sacred palm nuts]</+>, communicates with Ọ̀rúnmìlà to seek solutions to life’s numerous problems.`
@@ -4348,7 +4349,7 @@ export const foundRelTexts = [
   {
     id: "AMCEFRT",
     title: {original: "Popol Vuh", translation: "Book of Counsel"},
-    group: {people: "K’iche’ Maya", language: "K’iche’", religion: "Costumbre", country: "Guatemala"},
+    group: {people: "K’iche’ Maya", language: "K’iche’", religion: "Costumbre", location: "Guatemala"},
     info: [
       `The first four humans, the first four earthly beings who were truly articulate when they moved their feet and hands, their faces and mouths, and who could speak the very language of the gods, could also see everything under the sky and on the earth. All they had to do was look around from the spot where they were, all the way to the limits of space and the limits of time.`,
       `But then the gods, who had not intended to make and model beings with the potential of becoming their own equals, limited human sight to what was obvious and nearby. Nevertheless, the lords of the Kʼicheʼ kingdom of Qʼumarkaj, in the highlands of Guatemala, once had in their possession the means for overcoming this nearsightedness, an <i>ilbal</i>, a “seeing instrument” or a “place to see”; with this they could know distant or future events. The instrument was not a telescope, not a crystal for gazing, but a book called the <i>Popol Vuh</i>.`
@@ -4463,7 +4464,7 @@ export const foundRelTexts = [
   {
     id: "AMWEFRT",
     title: {original: "Huarochirí Manuscript"},
-    group: {people: "Quechua", language: "Quechua", religion: "Wakanism", country: "Peru"},
+    group: {people: "Quechua", language: "Quechua", religion: "Wakanism", location: "Peru"},
     info: [
       `The religious landscape of the Andean region is influenced by a variety of overlapping traditions, including: <i>curanderismo</i>, organized around physicians and spirits and most illustratively at the center of religious practices in the rainforests of the east; ancient Huamanism, the cult of the sacred mountains, which emerged as a distinct tradition no later than 8000 BCE out of a deep relationship with the highland terrain; and Wakanism, which originated around 3000 BCE with the advent of urbanized, hierarchical civilization.`,
       `The organized worship of <+><i>waka</i>[sacred places, abnormal beings, idols, sacred plants, the four elements; also written “huaca”]</+> coincided with the domestication of crops and animals and the emergence of monumental architecture in urban ceremonial centers like Caral-Supe and Kotosh. While its scriptures were originally recorded in <+><i>khipu</i>[knotted string writing and numeral system]</+>, 16th-century Christian evangelization efforts resulted in books like the <i>Huarochirí Manuscript</i>, a testament to Andean religion in the Latin script. Although the ongoing colonial period has led to a forcible shift in the terminology and imagery of Wakanist practices, many aspects of traditional religion nonetheless persist through syncretization.`
@@ -4585,7 +4586,7 @@ export const foundRelTexts = [
   {
     id: "AMSOFRT",
     title: {original: "Ayvu Rapyta", translation: "The Foundation of Human Language"},
-    group: {people: "Mbyá", language: "Guaraní", religion: "Tekó marăngatú", country: "Paraguay"},
+    group: {people: "Mbyá", language: "Guaraní", religion: "Tekó marăngatú", location: "Paraguay"},
     info: [
       `Much of identity arises from a shared language, a willingness to understand each other, and an adherence to a common system of belief. So important is language to identity that without a name, a human being ceases to be considered as such. This topic is central to the theological nature of the creation story presented in the sacred chants of the <i>Ayvu Rapyta</i>.`,
       `Translated as the <i>Foundation of Human Language</i> or <i>Origins of the Word</i>, the <i>Ayvu Rapyta</i> tells the story of creation through the acts of Ñamandu, who in his <+><i>kuaarara</i>[divine wisdom]</+> created language and the <+>Ñe’ẽ[word-soul]</+> even before the existence of the world. The texts themselves are shielded by the use of three distinct speech registers: <i>ayvu</i>, everyday Mbyá Guaraní; <i>ayvu porã</i>, sacred vocabulary used in the transmission of religious traditions; and Ñande Ru Ayvu, a secret language with vocabulary and linguistic forms of non-Guaraní origin.`
@@ -4595,7 +4596,7 @@ export const foundRelTexts = [
       `As he surged, he gave form to<br>the small rounded stool,<br>the divine sole of his feet,<br>in the midst of primordial darkness.`,
       `The reflection of divine wisdom<br>the divine hear-it-all perception<br>the divine palm of his hands holding the sacred staff<br>the divine palm of his hands in flourishing boughs<br>Ñamanduĩ formed, as he surged,<br>in the midst of primordial darkness.`,
       `In the divine sublime crown of his head<br>the flowers in the headdress<br>were dew-drops.<br>Among the flowers of the divine headdress<br>Maino’i, the primeval bird,<br>flew around, fluttering.`,
-      `While our first father grew<br>and made his own divine body surge;<br>he existed in the midst of primordial winds:<br>Even before conceiving his future earthly abode,<br>before conceiving his future firmament, his future earth,<br>Maino’i refreshed his mouth;<br><v>the one who sustained Ñamandu with sacred nourishment</v>was the hummingbird.`,
+      `While our first father grew<br>and made his own divine body surge;<br>he existed in the midst of primordial winds:<br>Even before conceiving his future earthly abode,<br>before conceiving his future firmament, his future earth,<br>Maino’i refreshed his mouth;<br>the one who sustained Ñamandu with sacred nourishment<br>was the hummingbird.`,
       `Before creating his future abode,<br>as he came into being,<br>Our Father Ñamandu, the first,<br>saw no darkness, even if there was no sun.<br>He existed in the light of his own heart,<br>his divine wisdom served as the sun.`,
       `>>(Ayvu Rapyta 1:1-6 AFV)`,
       `<...>`,
@@ -4603,15 +4604,15 @@ export const foundRelTexts = [
       `Having emerged in human form,<br>Out of the wisdom contained in his own godliness,<br>And by virtue of his creative wisdom<br>He conceived the foundation of human speech.<br>Out of the wisdom contained within his own godliness,<br>And by virtue of his creative wisdom<br>Our father created the foundation of human speech,<br>And caused it to form part of his own godliness.<br>Before the earth existed,<br>In the midst of primeval darkness,<br>Before there was knowledge of things,<br>He created the foundation of future human speech,<br>And the first true father Ñamandu<br>Caused it to form part of his own divinity.`,
       `Having conceived the origin of future human speech,<br>Out of the wisdom contained within his own godliness,<br>And by virtue of his creative wisdom<br>He conceived the foundation of love of one’s fellow men.<br>Before the earth existed,<br>In the midst of primeval darkness,<br>Before there was knowledge of things,<br>And by virtue of his creative power<br>He conceived the foundation of love of one’s fellow men.`,
       `Having created the foundations of human speech,<br>Having created a small portion of love,<br>Out of the wisdom contained within his own godliness<br>And by virtue of his creative wisdom<br>He created, in his solitude,<br>The beginning of a sacred hymn.<br>Before the earth existed,<br>In the midst of primeval darkness,<br>Before there was knowledge of things<br>He created, in his solitude,<br>The beginning of a sacred hymn.`,
-      `<v>Having created, in his solitude, the origin of human speech;</v>Having created, in his solitude, a small portion of love,<br>Having created, in his solitude, a short sacred hymn,<br>He pondered deeply<br>About sharing the origin of human speech,<br>About sharing the words of the sacred hymn,<br>About sharing the love for one’s fellow men.<br>Having pondered deeply,<br>Out of the wisdom contained within his own godliness,<br>And by virtue of his own creative wisdom,<br>He created those who could share his godliness.`,
-      `<sp>Having pondered deeply,<br>Out of the wisdom contained within his own divinity<br>And by virtue of his creative power,<br>He created the brave-hearted <+>Ñamandu[deity associated with the sun]</+>;<br><v>He created him simultaneously with the reflection of his wisdom (the sun).</v>`,
-      `Before the earth existed,<br>In the midst of primeval darkness,<br>He created the brave-hearted Ñamandu.<br>For the father of his future numerous sons,<br><v>For the true father of the word-souls of his future numerous sons</v>He created the brave-hearted Ñamandu.`,
-      `<sp>Following these things,<br>Out of the wisdom contained within his own divinity<br>And by virtue of his own creating power,<br>To the true father of the future <+>Karaí[deity associated with fire]</+>,<br>To the true father of the future <+>Jakairá[deity associated with medical lore and sorcerers]</+>,<br>To the true father of the future <+>Tupá[deity associated with thunder, rain, and water]</+><br>He granted knowledge of godliness.`,
-      `<sp>Following these things,<br>The true father Ñamandu<br>To seat herself opposite his own heart,<br>Imparted knowledge of godliness<br>To the future true mother Ñamandu.`,
+      `<v>Having created, in his solitude, the origin of human speech;</v>Having created, in his solitude, a small portion of love,<br>Having created, in his solitude, a short sacred hymn,<br>He pondered deeply<br>About sharing the origin of human speech,<br>About sharing the words of the sacred hymn,<br>About sharing the love for one’s fellow men.<br>Having pondered deeply,<br>Out of the wisdom contained within his own godliness,<br>And by virtue of his own creative wisdom,<br>He created those who could share his godliness.<sp>`,
+      `Having pondered deeply,<br>Out of the wisdom contained within his own divinity<br>And by virtue of his creative power,<br>He created the brave-hearted <+>Ñamandu[deity associated with the sun]</+>;<br><v>He created him simultaneously with the reflection of his wisdom (the sun).</v>`,
+      `Before the earth existed,<br>In the midst of primeval darkness,<br>He created the brave-hearted Ñamandu.<br>For the father of his future numerous sons,<br><v>For the true father of the word-souls of his future numerous sons</v>He created the brave-hearted Ñamandu.<sp>`,
+      `Following these things,<br>Out of the wisdom contained within his own divinity<br>And by virtue of his own creating power,<br>To the true father of the future <+>Karaí[deity associated with fire]</+>,<br>To the true father of the future <+>Jakairá[deity associated with medical lore and sorcerers]</+>,<br>To the true father of the future <+>Tupá[deity associated with thunder, rain, and water]</+><br>He granted knowledge of godliness.<sp>`,
+      `Following these things,<br>The true father Ñamandu<br>To seat herself opposite his own heart,<br>Imparted knowledge of godliness<br>To the future true mother Ñamandu.`,
       `The true father Karaí<br>Granted knowledge of godliness<br>To whom would seat herself opposite his heart,<br>To the true future mother Karaí.`,
       `The true father Jakairá, in the same manner,<br>Imparted knowledge of godliness<br>To the true mother Jakairá.`,
-      `The true father Tupá, in the same manner,<br>To whom would seat herself opposite his heart,<br>Imparted knowledge of godliness,<br>To the true future mother Tupá.`,
-      `<sp>For having assimilated<br>Divine knowledge from their own<br>True father,<br>After having assimilated<br>Human speech,<br>After having inspired in love<br>Of one’s fellowmen,<br>After having assimilated the series of<br>Words of the sacred hymn,<br>After having inspired themselves<br>In the foundation of creative wisdom;<br>We call these, also,<br>The sublime true fathers of<br>The <+>word-soul[“word” and “soul” are synonymous in Guaraní]</+>,<br>The sublime true mothers of<br>The word-soul.`,
+      `The true father Tupá, in the same manner,<br>To whom would seat herself opposite his heart,<br>Imparted knowledge of godliness,<br>To the true future mother Tupá.<sp>`,
+      `For having assimilated<br>Divine knowledge from their own<br>True father,<br>After having assimilated<br>Human speech,<br>After having inspired in love<br>Of one’s fellowmen,<br>After having assimilated the series of<br>Words of the sacred hymn,<br>After having inspired themselves<br>In the foundation of creative wisdom;<br>We call these, also,<br>The sublime true fathers of<br>The <+>word-soul[“word” and “soul” are synonymous in Guaraní]</+>,<br>The sublime true mothers of<br>The word-soul.`,
       `>>(Ayvu Rapyta 2:1-9 LCV)`,
       `<...>`,
       `<b>Morning Prayer</b>`,
@@ -4696,10 +4697,10 @@ export const foundRelTexts = [
       `Thus spoke through the shaman the spirit of the ancestors. The relatives of the patient, that is, the people present, answered to this:`,
       `&emsp;&emsp;“Be strong! Spare no strength!”`,
       `Then the shaman stopped beating the drum, put it down near by, and remained motionless, lying on his stomach on the reindeer skin. This meant that the soul of the shaman had left his body and through the drum as through a lake, had descended into the Kingdom of Shadows. The shaman lay motionless for a long time, and those present were waiting for his awakening. As to what becomes of the soul after it leaves his body, Samsonov, after the performance, told me the following...`,
-      `&emsp;&emsp;The soul of the shaman accompanied by spirits followed the road which leads to the Kingdom of Shadows. It reached a little house in front of which was a dog which barked at the shaman. Then an old woman, who guards the road to the Kingdom of Shadows, came out of the house and holding in her hand a scraper for dressing skins, asked the shaman: “Did you come forever or for a time?” The shaman did not answer the old woman, but said to the spirit protectors who were accompanying him: “Do not listen to the old woman’s words, walk on, without stopping.” They reached a river. On the bank there was a boat. The shaman looked at the opposite bank and saw tents standing there. Their hide covers seemed white in the sunlight, the inhabitants walked about in the yard. The ornaments on their garments made a tinkling noise. The shaman accompanied by his spirit helpers sat down in the boat and crossed to the other bank. He left the boat and ascended the bank. The spirits of the deceased relatives of the shaman were among the other shadows. The soul of the shaman entered their tent and there it saw the soul of the sick man.`,
+      `The soul of the shaman accompanied by spirits followed the road which leads to the Kingdom of Shadows. It reached a little house in front of which was a dog which barked at the shaman. Then an old woman, who guards the road to the Kingdom of Shadows, came out of the house and holding in her hand a scraper for dressing skins, asked the shaman: “Did you come forever or for a time?” The shaman did not answer the old woman, but said to the spirit protectors who were accompanying him: “Do not listen to the old woman’s words, walk on, without stopping.” They reached a river. On the bank there was a boat. The shaman looked at the opposite bank and saw tents standing there. Their hide covers seemed white in the sunlight, the inhabitants walked about in the yard. The ornaments on their garments made a tinkling noise. The shaman accompanied by his spirit helpers sat down in the boat and crossed to the other bank. He left the boat and ascended the bank. The spirits of the deceased relatives of the shaman were among the other shadows. The soul of the shaman entered their tent and there it saw the soul of the sick man.`,
       `>>(Nelbosh 196-8 WIJ)`,
       `<...>`,
-      `<b>Prayer to Me’emḍeye-Eči’e</b><br><sp><+>Father-Fire[Me’emḍeye-Eči’e, a beneficient deity of fire residing in the sky]</+>, save us from death.`,
+      `<b>Prayer to Me’emḍeye-Eči’e</b><sp><br><+>Father-Fire[Me’emḍeye-Eči’e, a beneficient deity of fire residing in the sky]</+>, save us from death.`,
       `>>(Prayers 141 WIJ)`,
       `<...>`,
       `Once upon a time, there was an old man. He was married and had two daughters. In a shamanistic trance he had thrown a third daughter, the oldest one, into the water when she was a small child.`,
@@ -4719,7 +4720,7 @@ export const foundRelTexts = [
   {
     id: "ASINFRT",
     title: {original: "ᠺᠾᠠᠷ ᠪᠥᠥᠭᠢᠢᠨ ᠽᠠᠨ ᠦᠢᠯ", transliteration: "Khar böögiin zan üil", translation: "Rites of the Black Shaman"},
-    group: {people: "Darkhad", language: "Mongolian", religion: "Böö Mörgöl", country: "Mongolia"},
+    group: {people: "Darkhad", language: "Mongolian", religion: "Böö Mörgöl", location: "Mongolia"},
     info: [`Mongolian shamanism, or <i>Böö Mörgöl</i>, contains many features common to the religious systems of the surrounding regions, including the Tungusic šamanism (also) of Inner Asia, the Turkic Tengrism of Central Asia, and the Tibetan Buddhism of Highland Asia. Distinctions are drawn between two or three primary varieties of Böö Mörgöl: yellow shamanism, named for the yellow hats of the Gelug school buddhists whose influence is yellow shamanism’s dominant feature; black shamanism, which is largely void of buddhist influence; and sometimes white shamanism, whose practitioners place greater emphasis on the worship of <i>tenger</i> sky deities. The Darkhad of northern Mongolia, shielded by the rugged surroundings of the remote Darkhad valley, have a reputation in Ulaanbaatar for their numinous powers as practitioners of the most traditional black shamanism.`],
     excerpt: [
       `Well, You fluttered above three black stumps<br>You rejoiced at the triangular black riverbend,<br>You furnished the three clans with offices,<br>You put the <+><i>ongons</i>[benevolent spirits, originating from the transformation of an ancestral soul, and, as in this case, the material objects representing those spirits]</+> on a rope,<br>You furnished them with respect,<br>You became the <+><i>sülde</i>[guardian spirit]</+>-spirit of many generations,<br>You have the blue black sky as cover,<br>You spread the flat Yellow Faith at the door,<br>You became the <i>sülde</i>-spirit of the lay people and Lamas,<br>You became the seer among ones who have sight,<br>You became the arteries of the black heart, <+>Xosō <i>āw</i>[Father of Khos, the transformed soul of the shaman Delden Mend and the target of this invocation]</+>!<br>You looking through the flesh counted the bones,<br>You looking through the hat counted the hairs,<br>For the fate that is destined to have,<br>You bowed giving the sign of respect with your hat.`,
@@ -4757,7 +4758,7 @@ export const foundRelTexts = [
   {
     id: "ASEAFRT",
     title: {original: "四書五經", transliteration: "Sìshū Wǔjīng", translation: "4 Books & 5 Classics"},
-    group: {people: "Chinese", language: "Chinese", religion: "Ruism", country: "China"},
+    group: {people: "Han", language: "Chinese", religion: "Ruism", location: "China"},
     info: [
       `Heaven’s cycle goes on turning, and nothing goes forth without returning. Such is true of Ruism over the course of the two-and-a-half millenia since its founding by Confucius during the Spring and Autumn period, itself named for the <i>Spring and Autumn Annals</i>, one of the <i>Four Books and Five Classics</i> of the <+><i>rú</i>[scholar; refined person; the ideal of the Confucian man]</+> religious doctrine and school of thought.`,
       `Mencius said, “We call Confucius ‘the great coda.’ By this we mean that he is like the great musical climax, where the brass gongs peal and the jade chimes ring. The peal of the brass gongs signals the start of the culmination and the ring of the jade chimes brings the coda to its close. The start of the culmination is like the work of wisdom; the close of the coda is like the work of sagehood. Wisdom can be compared to craft and sagehood to strength.” (Mèngzǐ 5B.1)`
@@ -4862,7 +4863,7 @@ export const foundRelTexts = [
   {
     id: "ASSEFRT",
     title: {original: "ꪁꪫꪱꪣ ꪶꪕ ꪹꪣꪉ", transliteration: "Kwaam To Meuang", translation: "Story of the Country"},
-    group: {people: "Tai Dam", language: "Tai Dam", religion: "Satsana Phi", country: "Laos"},
+    group: {people: "Tai Dam", language: "Tai Dam", religion: "Satsana Phi", location: "Laos"},
     info: [
       `The <i>Kwaam To Meuang</i> is recited at the funeral service of a family member who has just died to guide their <+><i>khwan</i>[soul substance, life essence]</+> back to their ancestors who reside in the <+>Muang Fa[Land of the Heavens]</+>, along with the <+><i>thaen</i>[Spirits of the Sky, Lords of the Heavens]</+>, who inhabit their own special territories in that realm in the sky. It is the duty of the eldest son-in-law of the deceased to perform the recitation and guide the soul substance to Tat Pi Fai Waterfall in Muang La (or Son La), the original location of the connection between the Earth and the Sky, where the dead can ascend to the heavens.`,
       `Tai Dam religious practitioners, <i>mo</i> priests and <i>mod</i> sorcerers, employ a form of the pre-Buddhist Tai religion Satsana Phi, centered on <+><i>phi</i>[spirits]</+>, <i>khwan</i>, and cosmology, that bears a deep connection to the surrounding natural elements and ancestral lineages.`
@@ -4897,7 +4898,7 @@ export const foundRelTexts = [
   {
     id: "ASSOFRT",
     title: {original: "वेदः", transliteration: "Vedas", translation: "Knowledge"},
-    group: {people: "Vedic", language: "Sanskrit", religion: "Hinduism", country: "India"},
+    group: {people: "Vedic", language: "Sanskrit", religion: "Hinduism", location: "India"},
     info: [`The four holy <i>Vedas</i> were composed during the Vedic period (c. 1500–500 BCE) in the northwest of the Indian subcontinent by the ancient sages who heard the eternal <+><i>apauruṣeyā</i>[not of human origin, impersonal, authorless]</+> knowledge. They contain prayers to <+>devās[deities, supraphysical beings without physical bodies endowed with consciousness, knowledge, and power; they carry out actions directly from their consciousness without the need for a body]</+> or personified forces of nature and the Ultimate Reality. They also contain <i>yajña</i> rituals—<i>yajña</i> is variously defined as a <+>journey[every action in life is a step in our journey towards realising the goal, namely bliss, an all-sided perfection of not only the physical body, but the vital and mental bodies, not only an individual perfection but perfection of the entire society]</+>, <+>climbing a hill[climbing from one peak to another, from one degree of perfection to another]</+>, a <+>battle[against the powers that hinder our journey towards perfection]</+>, and also worship or <+>rite[a symbolic physical representation of the various steps involved in collaboration]</+>; the ritual action is not performed by a human but by devās at the request of a human—and philosophical discourses on the nature of Paramātmā, the soul, and the world. These discourses include the Upanishads, literally “sitting down near” a teacher, vedantic knowledge appended to the end of each Veda.`],
     excerpt: [
       `When the worshipper climbs from peak to peak,<br>He realizes the progress that is yet to be achieved.<br><v>Then Indra awakens within him the purpose of the journey</v>And manifests with his troop to aid the devotee.`,
@@ -4951,7 +4952,7 @@ export const foundRelTexts = [
   {
     id: "ASWEFRT",
     title: {original: "τὰ βιβλία", transliteration: "Ta Biblia", translation: "The Bible"},
-    group: {people: "Jewish", language: "Aramaic", religion: "Christianity", country: "Palestine"},
+    group: {people: "Jewish", language: "Aramaic", religion: "Christianity", location: "Palestine"},
     info: [
       `The Bible (lit. “The Books”) is divided into two main sections, the first of which, the Old Testament, is largely coterminous with the Hebrew Bible, with writings covering such diverse topics as law, history, poetry, and wisdom, and illustrating the traditional life into which Jesus—a 1st-century carpenter, preacher, and the <+>messiah[hero, savior of a group of people in Judaism]</+>—was born. The books of the New Testament, which capture the story of Jesus’ life and ministry, describe a <+>new covenant[a treaty between God and people]</+> seen as fulfilling a prophesy set forth in the Old Testament.`,
       `These later texts were first written down by <+>students[and students of students]</+> of Jesus in Koine Greek, the dominant language of trade in the Mediterranean at the time, because it provided the easiest means of disseminating the teachings of <+>Christ[title given to Jesus, Greek translation of messiah]</+>. His lectures and discourses were originally spoken in the Aramaic language, though Jesus also knew Hebrew and some Greek.`
@@ -5058,7 +5059,7 @@ export const foundRelTexts = [
   {
     id: "EUEAFRT",
     title: {original: "Kalevala", translation: "Land of Heroes"},
-    group: {people: "Finnish", language: "Finnic", religion: "Suomenusko", country: "Finland"},
+    group: {people: "Finnish", language: "Finnic", religion: "Suomenusko", location: "Finland"},
     info: [
       `Väinämöinen, the Eternal Sage, does not fight with weapons of steel but with song. To know the <+>origin[synty]</+> of something—be it iron, fire, bears, or a disease—is to have absolute power over it, and traditional healers, following the model of the hero Väinämöinen, recite origin-charms to heal physical injuries.`,
       `This is the world of the <i>Kalevala</i>, Land of Heroes, a dreamlike landscape where the boundary between the material and spirit worlds is as thin as a birch leaf. Such is also the name given to the text compiled by Finnish polymath Elias Lönnrot in the 19th-century from the stories and songs of the people of Finland, Karelia, and Ingria.`
@@ -5109,7 +5110,7 @@ export const foundRelTexts = [
   {
     id: "EUWEFRT",
     title: {original: "Edda Sæmundar", translation: "Poetic Edda"},
-    group: {people: "Norse", language: "Old Norse", religion: "Norse paganism", country: "Iceland"},
+    group: {people: "Norse", language: "Old Norse", religion: "Norse paganism", location: "Iceland"},
     info: [`The <i>Poetic Edda</i> is a collection of narrative poetry relating the stories of the old Germanic gods and heroes in mythical and material realms across the dense forests, stark mountains, and powerful rivers of Scandinavia and Germany. The primary source for the written text of the <i>Elder Edda</i>, so called for its relation to the later <i>Prose Edda</i>, that has survived into the present is the 13th-century Icelandic manuscript <i>Konungsbók</i> (pictured), also called the <i>Codex Regius</i>, although the complete body of Eddic poetry also incorporates other 14th-century manuscripts, like the <i>Hauksbók</i> and AM 748 I 4to, and even earlier runic inscriptions like the Eggja and Fyrby runestones.`],
     excerpt: [
       `A hearing I ask from all kindreds,<br>greater and lesser, the sons of Heimdallr!<br>You wish, Valfǫðr, that I well recount<br>ancient tales of the living, those which I recall from longest ago.`,
@@ -5228,7 +5229,7 @@ export const foundRelTexts = [
       `Lo, his skull, hard as white quartz;<br>Lo, his skull, firm, hard, and strong!`,
       `Lo, the bloodwood tree, hard as white quartz;<br>Lo, its hollow trunk, hard as white quartz!`,
       `Lo, his knees, firm, hard, and strong;<br>Lo, his knees, hard as white quartz!`,
-      `Lo, the great sire of the <+>painted ground[The “painted ground” (intī́pilā́ra or indī́pilā́ra) of verses 6 and 29 is the sacred ground-painting, executed in blood and eagles’ down, which represents the Ilbā́ḷintja soak on the ceremonial ground. It is from the down torn and scattered from this ceremonial painting that the bandicoots found on the Burt Plain were thought to have come into being by the older generations. The Ilbā́ḷintja ground-painting consisted of an inner series of charcoal bands divided by white down rings. and an outer fringe of alternate red and white down circles. The black and white centre of the ground-painting symbolized the original dark honeysuckle (ntjụī́amba) liquid, which was believed to have filled the Ilbā́ḷintja soak at the beginning of time. The red and white outer circles were in accordance with the red and white markings worn by the bandicoot ancestors. According to my informants, one of the purposes of laying down the Ilbā́ḷintja ground-painting was to make the soil fruitful—to promote the increase of yam roots, of yalka bulbs, of various fruits and berries, also to produce an abundance of witchetty grubs, since all of these were articles of food dug up from the ground. In addition, the magical powers of the ground-painting gave new strength to all human beings who touched it; for instance, old men could lie on it and rise up with invigorated limbs]</+>;<br>Lo, his limbs, firm, hard, and strong!`,
+      `Lo, the great sire of the <+>painted ground[The “painted ground” (intī́pilā́ra or indī́pilā́ra) of verses 6 and 29 is the sacred ground-painting, executed in blood and eagles’ down, which represents the Ilbā́ḷintja soak on the ceremonial ground. It is from the down torn and scattered from this ceremonial painting that the bandicoots found on the Burt Plain were thought to have come into being by the older generations. The Ilbā́ḷintja ground-painting consisted of an inner series of charcoal bands divided by white down rings, and an outer fringe of alternate red and white down circles. The black and white centre of the ground-painting symbolized the original dark honeysuckle (ntjụī́amba) liquid, which was believed to have filled the Ilbā́ḷintja soak at the beginning of time. The red and white outer circles were in accordance with the red and white markings worn by the bandicoot ancestors. According to my informants, one of the purposes of laying down the Ilbā́ḷintja ground-painting was to make the soil fruitful—to promote the increase of yam roots, of yalka bulbs, of various fruits and berries, also to produce an abundance of witchetty grubs, since all of these were articles of food dug up from the ground. In addition, the magical powers of the ground-painting gave new strength to all human beings who touched it; for instance, old men could lie on it and rise up with invigorated limbs]</+>;<br>Lo, his limbs, firm, hard, and strong!`,
       `<sp><i>E.</i>`,
       `The whirlwind is encircling his waist;<br><v>Stripes fall down his back from his shoulders, and the whirlwind is encircling his waist.</v>`,
       `The pendent ornaments are reaching to the ground;<br>The hairstring ornaments are reaching to the ground.`,
@@ -5326,7 +5327,7 @@ export const foundRelTexts = [
   {
     id: "OCMDFRT",
     title: {original: "Andriambahoaka", translation: "Lord of the People"},
-    group: {people: "Malagasy", language: "Malagasy", religion: "Fomba Gasy", country: "Madagascar"},
+    group: {people: "Malagasy", language: "Malagasy", religion: "Fomba Gasy", location: "Madagascar"},
     info: [
       `The sacred history of the <i>Andriambahoaka</i> narrative cycle tells of the legendary sovereigns and the divine origins of the laws of the ancestors. Among the best known segments of the text is the <i>Ibonia</i> cycle, which details the semi-divine Ibonia’s miraculous birth, heroic journey, and battles against supernatural forces. Other well known segments include the Books of Tokandahy, Andrianerinerina, and the Vazimba.`,
       `While the most traditional narratives are preserved by groups like the Saklava and Masikoro, the tales of the <i>Andriambahoaka</i> and the rites of Fomba Gasy, Malagasy traditional religion, are deeply embedded in the cultural fabric of all people across Madagascar.`
@@ -5350,8 +5351,8 @@ export const foundRelTexts = [
       `Old Man went back to the well and looked around. He saw Ibonia up on the rock and said, “You are looking for trouble. What are you doing here, my lord? Stone Man does not like good people. He is envious and kills them all, the good people who come to Mananivo.”`,
       `“Yes, father, but you and I can talk like family,” said Ibonia. “How many wives has Stone Man?”`,
       `&emsp;&emsp;Old Man said, “There is<br>&emsp;&emsp;Not-Untouched-by-the-Shrimp<br>&emsp;&emsp;&emsp;&emsp;No-Prisoner-of-Day<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Silver-Stripe-Forged-One<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Fern-Shoot<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;and <+>Girl-of-Grace[Iampelasoamananoro]</+>.”`,
-      `&emsp;&emsp;Ibonia said, “Which one is Stone Man’s favorite?”`,
-      `&emsp;&emsp;Old Man said, “He likes each and every one, but it is Girl-of-Grace he loves best.”`,
+      `Ibonia said, “Which one is Stone Man’s favorite?”`,
+      `Old Man said, “He likes each and every one, but it is Girl-of-Grace he loves best.”`,
       `So Ibonia said, “When you go to visit the prince, Old Man, what do you carry with you?”`,
       `Old Man answered, “What should I take, grandchild, but ripe bananas, seeds for herbs, herbs, citrus plants, and other little things?”`,
       `Ibonia said, “What is the first place you go when you get there?”`,
@@ -5365,7 +5366,7 @@ export const foundRelTexts = [
       `Ibonia and Girl-of-Grace stayed married about ten years. About three years before his death, he declared his will to his father and mother, his wife and children, and all the people in and around Iliolava. He said,`,
       `&emsp;&emsp;“This I declare to you:<br>&emsp;&emsp;soon I am to return to the ‘place of lying down.’<br>&emsp;&emsp;Close at hand is the day when Ibonia will be removed<br>&emsp;&emsp;and Inabo [another of his names] will go the way<br>&emsp;&emsp;&emsp;&emsp;of all those whose doors face west [the dead].<br>&emsp;&emsp;That is a fate that disheartens one’s manhood.<br>&emsp;&emsp;For to the earth we return.`,
       `&emsp;&emsp;Inabo is not of those who are buried to rot<br>&emsp;&emsp;&emsp;&emsp;he is of those who are planted to grow<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;dead by day, alive by night.<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Inabo’s return is coming.`,
-      `&emsp;&emsp;These then are the orders I leave you.`,
+      `&emsp;&emsp;These then are the orders I leave you.<br>`,
       `&emsp;&emsp;First of things is marriage.<br>&emsp;&emsp;If you are a prince<br>&emsp;&emsp;&emsp;&emsp;if you are a ruler<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if you are a governor<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if you are a spokesman<br>&emsp;&emsp;do not untie the bonds of marriage!<br>&emsp;&emsp;The marriage tie is binding even unto death.<br>&emsp;&emsp;Do not divide it.”`,
       `<i>(This admonition, it is said, gave marriage the importance it has.)</i>`,
       `&emsp;&emsp;“Second: listen. I shall change my name<br>&emsp;&emsp;&emsp;&emsp;for one’s name on earth<br>&emsp;&emsp;&emsp;&emsp;does not go back to heaven.<br>&emsp;&emsp;Before the lord of heaven all things are new.<br>&emsp;&emsp;&emsp;&emsp;My grandfather is holy.<br>&emsp;&emsp;These will be my names:<br>&emsp;&emsp;&emsp;&emsp;Lightning-Over-Half-the-Earth<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Gashed-Earth<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Thunderer-Heard-Afar.`,
@@ -5385,7 +5386,7 @@ export const foundRelTexts = [
       `And so he jumped on top of him…`,
       `So he walked and walked and walked. And he climbed on top of a tall tree and he scattered branches all around. And so the creature began to eat and he seized his hump. Then he climbed on top and rode him forward and onward.`,
       `&emsp;&emsp;Bellow, oh bellow, Sambilo<br>&emsp;&emsp;Bellow, oh bellow, Sambilo<br>&emsp;&emsp;— Mmm. Mmm [narrator imitates bull bellow].<br>&emsp;&emsp;They rode on and on…<br>&emsp;&emsp;Bellow, oh bellow, Sambilo<br>&emsp;&emsp;Bellow, oh bellow, Sambilo<br>&emsp;&emsp;So all the people will hear<br>&emsp;&emsp;— Mmm. Mmm [narrator imitates bull bellow].`,
-      `&emsp;&emsp;“Look, it’s Lone-Man, he got Resambilo!” And the Eight-Men leaped up in surprise and tried to spear Lone-Man because he got Resambilo. But the father put himself in the middle between them so Lone-Man would not be killed. “I would rather that you kill me than Lone-Man”, he said so they wouldn’t spear Lone-Man. So he wasn’t speared. And the healing ceremony took place, they held the ceremony for their father.`,
+      `“Look, it’s Lone-Man, he got Resambilo!” And the Eight-Men leaped up in surprise and tried to spear Lone-Man because he got Resambilo. But the father put himself in the middle between them so Lone-Man would not be killed. “I would rather that you kill me than Lone-Man”, he said so they wouldn’t spear Lone-Man. So he wasn’t speared. And the healing ceremony took place, they held the ceremony for their father.`,
       `Then Lords-the-Eight-Men went to the forest to make a coffin [for their father]. And they chopped and chopped the tree trunk to make the coffin. And when it was done they went back to the village. “Let’s go Lone-Man and make a coffin for our father because he’s sick and probably won’t make it. Let’s make a coffin for our father.”`,
       `So they all went off and walked and walked. And they came upon the coffin that they had already built. “Hmmm, let’s measure the coffin to see if it’s the right size for our father.” And one of the eight sons got in and tried it out. “Oh! He doesn’t fit! Oh! he doesn’t fit. Hey, Lone-Man, you try to see if it fits you.” So Lone-Man got in to try it out and they slammed on the lid with Lone-Man inside. They tied a rope all around it and then they plunged it into [a body of] water. And then they went home.`,
       `After some time had passed:`,
@@ -5449,7 +5450,7 @@ export const foundRelTexts = [
   {
     id: "OCMLFRT",
     title: {original: "Viti Makawa", translation: "Ancient Fiji"},
-    group: {people: "iTaukei", language: "Fijian", religion: "Vanua", country: "Fiji"},
+    group: {people: "iTaukei", language: "Fijian", religion: "Vanua", location: "Fiji"},
     info: [
       `The <i>vanua</i> is the holistic system of lands associated with founding ancestors through which one’s relationship with the natural and spiritual world are understood. While each locality has its own customs and recognizes its own unique <+><i>kalou</i>[divinities]</+>, there is one deity whose influence is recognized across Fiji: <+>Degei[half snake, half stone supreme deity]</+>, who is the personification of the abstract idea of eternal existence.`,
       `Lesser deities, represented by trees, plants, animals, insects, fish, and birds, are associated with <i>vanua</i> places of origin. Many of these deities and rites are described in Rev. Epeli Rokowaqa’s written account of Fijian history, <i>Viti Makawa: na kedrai Tukutuku nai Taukei kei Viti</i>, and the <i>bure kalou</i> (pictured) is the place of worship in which rituals are performed.`
@@ -5603,7 +5604,7 @@ export const globFeatFilms = [
     id: "AFNOGFF",
     title: {original: "ⴰⴽⵓⵏⴰⴽ ⵜⴷⴰⵍⴰⵜ ⵜⴰⵀⴰ ⵜⴰⵣⵓⴳⵀⴰⵉ", transliteration: "Akounak Tedalat Taha Tazoughai", translation: "Rain the Color of Blue with A Little Red In It"},
     year: 2015,
-    group: {people: "Tuareg", language: "Tamasheq", country: "Niger/USA"},
+    group: {people: "Tuareg", language: "Tamasheq", location: "Niger/USA"},
     info: [
       `<i>Akounak</i> tells the story of a musician trying to make it against all odds, set against the backdrop of the Tuareg <i>tishoumaren</i> desert blues music scene. The protagonist, real life musician Mdou Moctar, must battle fierce competition from jealous musicians, overcome family conflicts, endure the trials of love, and overcome his biggest rival—himself.`,
       `An homage to Prince’s 1984 film <i>Purple Rain,</i> the story was written with and for a Tuareg audience by a Euro-American record label executive, drawing from the experiences of Mdou Moctar and his fellow musicians. Carried by stunning musical performances from Mdou, the film is equally a window into modern day Tuareg guitar in the city of Agadez, Niger as it is an experiment in new techniques of cross cultural collaboration, much like the genre of music being documented itself.`,
@@ -5622,7 +5623,7 @@ export const globFeatFilms = [
     id: "AFSOGFF",
     title: {original: "Inxeba", translation: "The Wound"},
     year: 2017,
-    group: {language: "Xhosa", country: "South Africa"},
+    group: {language: "Xhosa", location: "South Africa"},
     info: [
       `Xolani, a lonely factory worker, joins the men of his community in the mountains of the Eastern Cape to initiate a group of teenage boys into manhood in the Xhosa <i>Ulwaluko</i> ceremony. When a defiant initiate from the city discovers his best kept secret, Xolani’s entire existence begins to unravel.`,
       `The film is based on a novel by Thando Mgqolozana, who also co-wrote the script, and stars non-binary musician, novelist, and actor Nakhane in a critically-acclaimed performance.`
@@ -5655,7 +5656,7 @@ export const globFeatFilms = [
     id: "AMSOGFF",
     title: {original: "La vida en común", translation: "Living All Together"},
     year: 2019,
-    group: {people: "Rankülche", language: "Spanish", country: "Argentina"},
+    group: {people: "Rankülche", language: "Spanish", location: "Argentina"},
     info: [
       `A puma is stalking Pueblo Ranquel, an indigenous community settled in the northern Argentinian desert, in a modern camp built to accommodate them. As if to break free of their youth, some young boys start stalking the animal, a traditional rite of passage.`,
       `Most often leaving adults out of the frame, the filmmaker interweaves history with small stories, to trace the contours of complex identities: adolescents evolving between the ancestral and the future, between tradition and homogenization.`
@@ -5690,7 +5691,7 @@ export const globFeatFilms = [
     id: "ASSEGFF",
     title: {original: "Mùi đu đủ xanh", translation: "The Scent of Green Papaya"},
     year: 1993,
-    group: {people: "Vietnamese", language: "Vietnamese", country: "France"},
+    group: {people: "Vietnamese", language: "Vietnamese", location: "France"},
     info: [
       `1950s Saigon through the eyes of Mui, a Vietnamese servant girl. At 10 years-old, Mui leaves her village to work for an affluent, troubled family. As she comes of age, Mui finds work in the household of a pianist she has admired since childhood, and finds their relationship growing in complexity.`,
       `Dir/Scr <b>TRẦN ANH HÙNG</b> left Vietnam at age 12, but returned 16 years later to Hồ Chí Minh City with plans to shoot <i>Mùi đu đủ xanh</i> on location in Vietnam. When accomplishing this proved too cumbersome, the film was instead shot entirely on a soundstage reconstruction of downtown Saigon in Bry-sur-Marne, France.`
@@ -5708,7 +5709,7 @@ export const globFeatFilms = [
     id: "ASHIGFF",
     title: {original: "ལུང་ནག་ན", transliteration: "Lung nag na", translation: "Lunana: A Yak in the Classroom"},
     year: 2019,
-    group: {people: "Ngalop", language: "Dzongkha", country: "Bhutan"},
+    group: {people: "Ngalop", language: "Dzongkha", location: "Bhutan"},
     info: [
       `<i>Lunana</i> follows Ugyen, a discontented, aspiring singer living in Thimphu who dreams of moving to Australia to become a rock star. He is sent to finish his mandatory teaching service in Lunana, a village of 56 people, 4,800 meters above sea level with no electricity or internet.`,
       `Filmed on location in the Himalayas, the film showcases stunning, panoramic mountain scenery, and includes acting performances from many of the residents of the actual village of Lunana.`
@@ -5725,7 +5726,7 @@ export const globFeatFilms = [
     id: "OCAUGFF",
     title: {original: "Samson and Delilah"},
     year: 2009,
-    group: {people: "Warlpiri", language: "Warlpiri", location: "Central Australian desert"},
+    group: {people: "Warlpiri", language: "Warlpiri", location: "Jay Creek, AU"},
     info: [
       `Samson and Delilah are 14-year-olds who live in the Aboriginal community of Iwupataka, or Jay Creek, near Alice Springs in Central Australia. Samson is mute and addicted to sniffing petrol, and Delilah takes care of her grandmother, with whom she creates dot paintings.`,
       `Dir/Scr <b>WARWICK THORNTON</b> calls the film a “survival love story” of overcoming the bleak circumstances of an impoverished, government-run Aboriginal settlement. He is best known for this, his award-winning debut feature film, and four and counting features since.`
@@ -5742,7 +5743,7 @@ export const globFeatFilms = [
     id: "OCMDGFF",
     title: {original: "Tantara malagasy", translation: "Disco Afrika: A Malagasy Story"},
     year: 2023,
-    group: {people: "Betsimisaraka", language: "Malagasy", country: "Madagascar"},
+    group: {people: "Betsimisaraka", language: "Malagasy", location: "Madagascar"},
     info: [
       `After a traumatic event forces him to leave the sapphire mines, Kwame returns to his hometown, where he reconnects with his mother and old friends. While there, he confronts the harsh realities of corruption and societal decay, forcing him to choose between the temptation of easy money and a tougher path toward political awakening and integrity.`,
       `Dir <b>LUCK RAZANAJAONA</b> seeks to depict the contemporary political cycles of his country, and takes an interest in engaging Madagascar in neighboring Pan-Africanism.`
@@ -5830,7 +5831,7 @@ export const cultShortFilms = [
     id: "AMSOCSF",
     title: {original: "Lafken ñi az", translation: "The Ocean Reveals Its Knowledge"},
     year: 2016,
-    group: {people: "Lafkenche Mapuche", language: "Mapudungun", country: "Chile"},
+    group: {people: "Lafkenche Mapuche", language: "Mapudungun", location: "Chile"},
     info: [
       `The sea… its colours, its sounds, and its strength imbue the dialogue between two girls and their grandparents with its spirit and wisdom. The Mapuche Lafkenche, one of the major territorial divisions of the Mapuche people, observe the Lafkenmapu Az to enter its dynamics and maintain a balance with Lafkenmapu, the land of the sea.`,
       `The short film was made by the Mapuche School of Filmmaking and Communication of the Aylla Rewe Budi, which focuses on <i>tukulpa kimvn</i>, bringing knowledge to the present through reflecting on traditional values.`

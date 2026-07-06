@@ -32,15 +32,16 @@ const smallCaps = (txt: string): string => {
         inner.replace(/[a-z]/gi, (ch) => map[ch.toLowerCase()] ?? ch)
     );
 }
-const indent = (txt: string): string => {
-    txt = txt.replace(/<v>([\s\S]*?)<\/v>/g, (_, inner: string) =>
-        `<span style="display:block;padding-left:1em;text-indent:-1em">${inner}</span>`
-    );
-    txt = txt.replace(/<V>([\s\S]*?)<\/V>/g, (_, inner: string) =>
-        `<span style="display:block;padding-left:3em;text-indent:-1em">${inner}</span>`
-    );
-    return txt;
-};
+// Superseded by addIndents(), which normalizes <v>/<V> into <br> + &emsp; markers. Kept for reference.
+// const indent = (txt: string): string => {
+//     txt = txt.replace(/<v>([\s\S]*?)<\/v>/g, (_, inner: string) =>
+//         `<span style="display:block;padding-left:0.6em;text-indent:-0.6em">${inner}</span>`
+//     );
+//     txt = txt.replace(/<V>([\s\S]*?)<\/V>/g, (_, inner: string) =>
+//         `<span style="display:block;padding-left:2.6em;text-indent:-0.6em">${inner}</span>`
+//     );
+//     return txt;
+// };
 const abbrDef = (txt: string): string => {
     return txt.replace(/<\+>([\s\S]*?)<\/\+>/g, (_, inner: string) => {
         const match = inner.match(/^([\s\S]*?)\[([\s\S]*?)\]([\s\S]*)$/);
@@ -71,10 +72,40 @@ const strip = (txt: string): string => {
     txt = txt.replace(/>>/g, "");                                                    // (6) remove >> double-arrow markers
     return txt;
 };
+const addIndents = (txt: string): string => {
+    /*
+    Split the text on <br> into separate lines and wrap each in an indented block span.
+    padding-left starts at `base` (0.6em) and grows by 1em for every leading &emsp;, each of which is consumed.
+
+    <v>/<V> tags are normalized into the same <br> + &emsp; markers first, so this fully replaces indent():
+      - <v>X</v> becomes its own line at the base indent (equivalent to 0 &emsp;)
+      - <V>X</V> becomes its own line indented two levels deeper (equivalent to 2 &emsp;)
+    Both are wrapped in <br>…<br> so they're treated as newly separated strings regardless of the surrounding markup;
+    the empty segments this creates (e.g. from an already-present preceding <br>) are dropped below.
+    */
+    txt = txt
+        .replace(/<V>([\s\S]*?)<\/V>/g, "<br>&emsp;&emsp;$1<br>")             // <V>: own line, two indent levels deeper
+        .replace(/<v>([\s\S]*?)<\/v>/g, "<br>$1<br>");                        // <v>: own line at the base indent
+    if (!txt.includes("<br>")) return txt;
+    return txt
+        .split("<br>")
+        .map((segment) => {
+            if (segment === "") return "";                                    // drop the empties the <br> normalization creates
+            const base = 0.6;
+            let padding = base;                                               // base indent, in em
+            let inner = segment;
+            while (inner.startsWith("&emsp;")) {                              // each leading &emsp; adds 1em and is consumed
+                padding += 1;
+                inner = inner.slice("&emsp;".length);
+            }
+            return `<span style="display:block;padding-left:${padding}em;text-indent:-${base}em">${inner}</span>`;
+        })
+        .join("");
+};
 export const preParse = (txt: string): string => {
     // txt = strip(txt);      // remove all potentially problematic html characters
+    txt = addIndents(txt); // add <v> and <V> tags in line break strings
     txt = smallCaps(txt);  // <s> smallcaps
-    txt = indent(txt);     // <v> & <V> indent
     txt = abbrDef(txt);    // <+> abbr defs
     txt = spacer(txt);     // <sp> spacer
     txt = threeDots(txt);  // <...> 3dot break

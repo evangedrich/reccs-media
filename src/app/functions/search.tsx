@@ -20,12 +20,13 @@ const checkAuthor = ( query: string, entry: Recc ) => {
 };
 const getGrouping = (entries: Recc[], grouping: keyof Recc["group"]) => {
     // Define the exceptions for quick lookup
-    const euweExceptions = new Set(["English", "French", "Spanish", "German"]);
+    const euweExceptions = new Set(["English", "French", "Spanish", "German", "France", "USA"]);
     const eueaExceptions = new Set(["Russian"]);
     // Step 1: Accumulate items into Sets, grouped by prefix or the "EUWE" exception
     const groupedSets = entries.reduce((acc, entry) => {
         const prefix = entry.id.substring(0, 4);
-        const items = (entry.group[grouping] as string)?.split('/').map(item => item.trim());
+        const raw = entry.group[grouping] as string;
+        const items = raw?.includes(',') ? [raw.trim()] : raw?.split('/').map(item => item.trim());
 
         items?.forEach(item => {
             // Check if the item matches our exceptions; if so, route it to "EUWE"
@@ -67,7 +68,7 @@ export const searchTypes = [
     { type: "info", check: checkInfo },
     { type: "excerpt", check: checkExcerpt },
     { type: "author", check: checkAuthor },
-    { type: "subregion", check: checkSubregion },
+    { type: "region", check: checkSubregion },
     { type: "tags", check: checkTags }
 ];
 export const filterTypes = [

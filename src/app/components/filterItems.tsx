@@ -25,8 +25,9 @@ export default function FilterItems ({ label, items, filters, setFilters }: { la
     const [isSorted,setIsSorted] = useState(true);
     const listRef = useRef<HTMLUListElement>(null);
     const selected = filters[label] ?? [];
+    const canHover = () => typeof window !== "undefined" && window.matchMedia("(hover: hover)").matches;
     return (
-        <div className="sm:text-sm" onMouseLeave={() => setIsOpen(false)}>
+        <div className={`sm:text-sm flex flex-col overflow-hidden min-h-0 transition-[flex-grow] duration-200 ease-out ${isOpen?"grow":"grow-0"}`} onMouseEnter={() =>{ if (!canHover()) return; setIsOpen(!isOpen); if (listRef.current) { listRef.current.scrollTo({ top: 0 }); } }} onMouseLeave={() => { if (canHover()) setIsOpen(false); }} >
             <div className="font-extrabold flex justify-between items-center">
                 <div onClick={() => { setIsOpen(!isOpen); if (listRef.current) { listRef.current.scrollTo({ top: 0 }); } }} className="cursor-pointer">
                     {label}<span className={`relative inline-block ${isOpen?"":"rotate-180 top-[-1px]"}`}>⌃</span>
@@ -35,7 +36,7 @@ export default function FilterItems ({ label, items, filters, setFilters }: { la
                     <button title="Sort" onClick={() => setIsSorted(!isSorted)} className={`${isSorted?"":"opacity-50"} cursor-pointer text-xs`}>A</button>
                 </div>
             </div>
-            <ul className={`max-h-90 overflow-y-scroll overflow-x-hidden ${isOpen?"h-full mb-2":"h-0"}`} ref={listRef}>
+            <ul className={`overflow-y-auto overflow-x-hidden grow basis-0 min-h-0 ${isOpen?"mb-2":""}`} ref={listRef}>
                 {isSorted ? Object.entries(items)
                     .sort(([keyA], [keyB]) => keyA.localeCompare(keyB))
                     .map(([key,val]) => (
