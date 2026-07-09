@@ -79,7 +79,7 @@ export default function Header() {
             <div className="relative w-full border-b-2 border-solid border-[var(--color-front)] p-1 flex gap-6 sm:gap-8 items-center justify-center">
                 <MenuItem name="collections" tier1={categories} />
                 <MenuItem name="regions" tier1={regions} />
-                <Link href="/search" className="hover:font-extrabold">SEARCH</Link>
+                <Link href="/search" className={`hover:font-extrabold ${pathname==="/search"?"font-extrabold":""}`}>SEARCH</Link>
                 {/* {categories.map(itm => (
                     <ColorLink
                         to={`/${itm.id}`}

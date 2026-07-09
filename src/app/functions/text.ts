@@ -1,4 +1,3 @@
-
 export const getTitle = (selection: any, field?: string) => {
     const label = (selection.meta && 'work' in selection.meta && selection.meta.work[field ?? "original"])
         ? `${selection.meta.work[field ?? "original"]}: “${selection.title[field ?? "original"]}”`
@@ -19,6 +18,20 @@ export const getByline = (selection: any): string | null => {
 };
 export const isMongol = (str: string): boolean => {
     return /\p{Script=Mongolian}/u.test(str);
+};
+// Returns a stable utility class (defined in globals.css) that maps to the matching
+// script's CSS variable. Plain strings — no next/font hash — so the result is identical
+// on the server and client and is safe to compute anywhere, including Client Components.
+export const checkFont = (str: string): string => {
+    const fontClass =
+        (/\p{Script=Malayalam}/u.test(str)) ? "font-malayalam"
+        : (/\p{Script=Tibetan}/u.test(str)) ? "font-tibetan text-[0.9em]"
+        : (/\p{Script=Canadian_Aboriginal}/u.test(str)) ? "font-canadian"
+        : (/\p{Script=Arabic}/u.test(str)) ? "font-arabic"
+        : (/\p{Script=Tamil}/u.test(str)) ? "font-tamil"
+        : (/\p{Script=Telugu}/u.test(str)) ? "font-telugu"
+        : "";
+    return fontClass;
 };
 
 const smallCaps = (txt: string): string => {
@@ -95,7 +108,7 @@ const addIndents = (txt: string): string => {
             let padding = base;                                               // base indent, in em
             let inner = segment;
             while (inner.startsWith("&emsp;")) {                              // each leading &emsp; adds 1em and is consumed
-                padding += 1;
+                padding += 0.9;
                 inner = inner.slice("&emsp;".length);
             }
             return `<span style="display:block;padding-left:${padding}em;text-indent:-${base}em">${inner}</span>`;

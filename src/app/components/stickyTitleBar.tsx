@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import ScrollTop from "./scrollTop";
 
-export default function StickyTitleBar({ title, children }: { title: string | undefined, children: React.ReactNode }) {
+export default function StickyTitleBar({ title, titleFont, children }: { title: string | undefined, titleFont: string, children: React.ReactNode }) {
     const sentinelRef = useRef<HTMLDivElement>(null);
     const barRef = useRef<HTMLDivElement>(null);
     const innerRef = useRef<HTMLDivElement>(null);
@@ -51,7 +51,7 @@ export default function StickyTitleBar({ title, children }: { title: string | un
                 <div ref={innerRef} style={{ opacity: 0, pointerEvents: 'none' }}
                     className="absolute -top-[34px] left-0 w-full h-[34px] border-b-2 border-solid border-[var(--color-front)] pl-4 pr-2 bg-[var(--color-back)] flex items-center justify-between overflow-hidden"
                 >
-                    <span className="font-black truncate">{title}</span>
+                    <span className={`font-black truncate ${titleFont}`}>{title}</span>
                     <ScrollTop />
                 </div>
             </div>

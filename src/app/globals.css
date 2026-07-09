@@ -51,6 +51,16 @@ body {
 	font-family: var(--font-julia-mono), monospace, sans-serif;
 }
 
+/* Per-script font classes returned by checkFont() in functions/text.ts. Each reads a
+   --font-noto-* variable registered on <html> in layout.tsx, falling back to the body
+   stack. Stable names (no next/font hash) so they render identically on server/client. */
+.font-malayalam { font-family: var(--font-noto-malayalam), var(--font-julia-mono), monospace, sans-serif; }
+.font-tibetan   { font-family: var(--font-noto-tibetan),   var(--font-julia-mono), monospace, sans-serif; }
+.font-canadian  { font-family: var(--font-noto-canadian),  var(--font-julia-mono), monospace, sans-serif; }
+.font-arabic    { font-family: var(--font-noto-arabic),    var(--font-julia-mono), monospace, sans-serif; }
+.font-tamil     { font-family: var(--font-noto-tamil),     var(--font-julia-mono), monospace, sans-serif; }
+.font-telugu    { font-family: var(--font-noto-telugu),    var(--font-julia-mono), monospace, sans-serif; }
+
 @keyframes map-scroll {
 	from { margin-left: -8px; }
 	to   { margin-left: -58px; }

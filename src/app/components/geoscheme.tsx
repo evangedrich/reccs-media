@@ -5,7 +5,7 @@ import Map, { HoverMap } from "@/app/components/map";
 import { subregions } from "@/app/lib/subregions";
 import type { Recc } from "../types/recc";
 import { collections } from "../lib/collections";
-import { getTitle, preParse } from "../functions/text";
+import { getTitle, preParse, checkFont } from "../functions/text";
 import Globe from "@/app/components/globe";
 import styles from '@/app/ui/main.module.css';
 import Link from "next/link";
@@ -77,7 +77,7 @@ export default function Geoscheme({ reccs }: { reccs: Recc[] }) {
                             <div className="absolute top-0 left-0 w-full h-full -z-10 flex items-center justify-center"><LoadingIcon /></div>
                         </div>
                         <h2 className="uppercase text-[0.55rem] leading-none mt-1 opacity-50 font-bold">{collections.find(coll => coll.id===entry.id.slice(4,7))?.shortName}</h2>
-                        <h1 className="text-xs font-semibold truncate mt-[-0.25rem] leading-[1.5rem] mb-[-0.4rem]">{getTitle(entry)}</h1>
+                        <h1 className="text-xs font-semibold truncate mt-[-0.25rem] leading-[1.5rem] mb-[-0.4rem]"><span className={`${checkFont(getTitle(entry))}`}>{getTitle(entry)}</span></h1>
                     </Link>
                 ))}</div>
             </div>

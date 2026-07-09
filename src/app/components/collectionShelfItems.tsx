@@ -7,7 +7,7 @@ import { subregions } from "../lib/subregions";
 import Link from "next/link";
 import Image from "next/image";
 import LoadingIcon from "./loading";
-import { getTitle } from "../functions/text";
+import { getTitle, checkFont } from "../functions/text";
 import { posterUrl } from "../lib/images";
 
 type Collection = { id: string, name: string, shortName: string, type: string, header: string, info?: string };
@@ -69,7 +69,7 @@ export default function CollectionShelfItems({
                                 <Image src={posterUrl(entry.id)} alt="Media Image" width="300" height="400" className="absolute top-0 left-0 w-full" unoptimized />
                             </div>
                             <h2 className={`shrink-0 ${syncopate.className} leading-none uppercase font-bold text-[0.47rem] opacity-50 pt-1`}>{subregions.find(subr => subr.id===entry.id.slice(0,4))?.name}</h2>
-                            <h1 className={`shrink-0 text-[0.84rem] mt-[-0.3rem] leading-[1.5rem] mb-[-0.25rem] font-semibold truncate`}>{getTitle(entry)}</h1>
+                            <h1 className={`shrink-0 text-[0.84rem] mt-[-0.3rem] leading-[1.5rem] mb-[-0.25rem] font-semibold truncate`}><span className={`${checkFont(getTitle(entry))}`}>{getTitle(entry)}</span></h1>
                         </div>
                     </Link>
                 ))}

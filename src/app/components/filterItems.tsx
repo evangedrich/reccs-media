@@ -33,7 +33,7 @@ export default function FilterItems ({ label, items, filters, setFilters }: { la
                     {label}<span className={`relative inline-block ${isOpen?"":"rotate-180 top-[-1px]"}`}>⌃</span>
                 </div>
                 <div className="flex gap-1">
-                    <button title="Sort" onClick={() => setIsSorted(!isSorted)} className={`${isSorted?"":"opacity-50"} cursor-pointer text-xs`}>A</button>
+                    <button title="Sort" onClick={() => setIsSorted(!isSorted)} className={`${isSorted?"opacity-50":""} cursor-pointer text-xs`}>A</button>
                 </div>
             </div>
             <ul className={`overflow-y-auto overflow-x-hidden grow basis-0 min-h-0 ${isOpen?"mb-2":""}`} ref={listRef}>

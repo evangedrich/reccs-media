@@ -14,6 +14,7 @@ import { posterUrl } from "../lib/images";
 import { getTitle } from "../functions/text";
 import { collections } from "../lib/collections";
 import { useView } from "../lib/viewContext";
+import { checkFont } from "../functions/text";
 
 export default function SubregionViewer({ regionID, reccs }: { regionID: string; reccs: Recc[]; }) {
     const { showGlobe } = useView();
@@ -84,14 +85,14 @@ export default function SubregionViewer({ regionID, reccs }: { regionID: string;
                     </li>
                 ))}
             </ul>
-            <div className="relative w-full grow flex flex-wrap sm:overflow-hidden">
-                <div className={`max-sm:basis-full min-w-0 max-sm:border-b-2 p-4 flex justify-center ${currSubrID ? "sm:basis-1/2" : "sm:basis-full"}`}>
-                    <div className={`w-auto max-w-full h-auto max-h-full ease-in-out max-sm:w-full max-sm:h-full shrink-0 flex items-center justify-center max-sm:aspect-square ${currSubrID? /*"sm:aspect-square sm:transition-[aspect-ratio] sm:duration-250"*/ "" : "sm:aspect-2/1"}`}>
+            <div className="relative w-full grow flex max-sm:flex-col sm:flex-wrap sm:overflow-hidden">
+                <div className={`max-sm:shrink-0 min-w-0 max-sm:border-b-2 p-4 flex justify-center ${currSubrID ? "sm:basis-1/2" : "sm:basis-full"}`}>
+                    <div className={`w-auto max-w-full h-auto max-h-full ease-in-out max-sm:w-full max-sm:max-h-none shrink-0 flex items-center justify-center max-sm:aspect-square ${currSubrID? /*"sm:aspect-square sm:transition-[aspect-ratio] sm:duration-250"*/ "" : "sm:aspect-2/1"}`}>
                         <div className={`${!showGlobe?"max-sm:hidden":"sm:hidden"} w-full h-full`}><DynamicContourMap mapID={regionID} currSubrID={currSubrID} setCurrSubrID={setCurrSubrID} hovered={currHovered} setHovered={setCurrHovered} /></div>
                         <div className={`${!showGlobe?"sm:hidden":"max-sm:hidden"} border-2 h-full w-auto max-w-full rounded-full aspect-square p-[3.5px] shrink-0 overflow-hidden`}><ContourGlobe mapID={regionID} currSubrID={currSubrID} setCurrSubrID={setCurrSubrID} hovered={currHovered} setHovered={setCurrHovered} /></div>
                     </div>
                 </div>
-                <div className={`max-sm:basis-full min-h-65 min-w-0 max-w-full overflow-y-scroll sm:absolute sm:top-0 sm:right-0 sm:bottom-0 sm:w-1/2 ease-in-out ${currSubrID ? "transition-transform duration-250 sm:translate-x-0 sm:border-l-2" : "sm:translate-x-full"}`}>
+                <div className={`max-sm:grow max-sm:min-h-0 min-w-0 max-w-full overflow-y-scroll sm:absolute sm:top-0 sm:right-0 sm:bottom-0 sm:w-1/2 ease-in-out ${currSubrID ? "transition-transform duration-250 sm:translate-x-0 sm:border-l-2" : "sm:translate-x-full"}`}>
                     <div className={`${currSubrID ? "border-b-2" : ""} p-4`}>
                         <h1 className={`max-w-200 text-5xl max-sm:text-4xl font-extrabold ${currSubrID?"mb-3":""}`}>{currSubrID ? currSubrName.replace(" America","\u00A0America") : currSubrName}</h1>
                         <p className="max-w-200">{currSubrDesc}</p>
@@ -105,7 +106,7 @@ export default function SubregionViewer({ regionID, reccs }: { regionID: string;
                                         <Image src={posterUrl(entry.id)} alt="Media Image" width="300" height="400" className="absolute top-0 left-0 w-full" unoptimized />
                                     </div>
                                     <h3 className="text-[0.65em]/1 opacity-50 mt-3">{collections.find(coll => coll.id===entry.id.slice(4,7))?.shortName}</h3>
-                                    <h2 className="text-sm font-bold truncate leading-[2em] mb-[-0.6em]">{getTitle(entry)}</h2>
+                                    <h2 className={`text-sm font-semibold truncate leading-[2em] mb-[-0.6em] ${checkFont(getTitle(entry))}`}>{getTitle(entry)}</h2>
                                 </Link>
                             ))}
                         </div>

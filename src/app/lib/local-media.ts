@@ -4758,7 +4758,7 @@ export const foundRelTexts = [
   {
     id: "ASEAFRT",
     title: {original: "四書五經", transliteration: "Sìshū Wǔjīng", translation: "4 Books & 5 Classics"},
-    group: {people: "Han", language: "Chinese", religion: "Ruism", location: "China"},
+    group: {people: "Han", language: "Classical Chinese", religion: "Ruism", location: "China"},
     info: [
       `Heaven’s cycle goes on turning, and nothing goes forth without returning. Such is true of Ruism over the course of the two-and-a-half millenia since its founding by Confucius during the Spring and Autumn period, itself named for the <i>Spring and Autumn Annals</i>, one of the <i>Four Books and Five Classics</i> of the <+><i>rú</i>[scholar; refined person; the ideal of the Confucian man]</+> religious doctrine and school of thought.`,
       `Mencius said, “We call Confucius ‘the great coda.’ By this we mean that he is like the great musical climax, where the brass gongs peal and the jade chimes ring. The peal of the brass gongs signals the start of the culmination and the ring of the jade chimes brings the coda to its close. The start of the culmination is like the work of wisdom; the close of the coda is like the work of sagehood. Wisdom can be compared to craft and sagehood to strength.” (Mèngzǐ 5B.1)`
@@ -5771,7 +5771,7 @@ export const globFeatFilms = [
     coordinates: {x: -170.1322, y: -14.2710, name: "Amerika Sāmoa"},
     runtime: 104,
     genre: ["Comedy","Sport","Feel-Good","LGBTQ-inclusive"],
-    tags: ["trans","non-binary","funny"],
+    tags: ["trans","non-binary","funny movies"],
     color: "#366e37"
   }
 ];

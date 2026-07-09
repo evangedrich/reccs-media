@@ -4,7 +4,7 @@ import Image from "next/image";
 import LoadingIcon from "./loading";
 import type { Recc } from "../types/recc";
 import { subregions } from "../lib/subregions";
-import { getTitle } from "../functions/text";
+import { getTitle, checkFont } from "../functions/text";
 import { posterUrl } from "../lib/images";
 
 type Collection = { id: string, name: string, shortName: string, type: string, header: string, info?: string };
@@ -33,7 +33,7 @@ export default function ShelfItemsMobile({
                                 <Image src={posterUrl(entry.id)} alt="Media Image" width="300" height="400" className="absolute top-0 left-0 w-full" unoptimized />
                             </div>
                             <h4 className="text-[0.5rem] font-bold opacity-50 truncate">{subregions.find(subr => subr.id===entry.id.slice(0,4))?.name}</h4>
-                            <h3 className="text-[0.8rem] font-semibold truncate mt-[-0.25rem] leading-[1.5rem] mb-[-0.25rem]">{getTitle(entry)}</h3>
+                            <h3 className={`text-[0.8rem] font-semibold truncate mt-[-0.25rem] leading-[1.5rem] mb-[-0.25rem]`}><span className={`${checkFont(getTitle(entry))}`}>{getTitle(entry)}</span></h3>
                         </div>
                     </Link>
                 ))}
