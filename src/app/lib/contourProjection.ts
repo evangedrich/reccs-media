@@ -12,7 +12,9 @@
 // to avoid pulling in that module's mesh-building side effects on the regions page).
 // The pixel placement of the contour coordinate system (center + scale) is unknown,
 // so it is calibrated once at load by matching each region's contour centroid to the
-// lon/lat centroid of the same region's dots (see CALIB below). Because forward and
+// lon/lat centroid of the same region's dots (see CALIB below), and the x placement
+// is then refined against the map's own antimeridian cut (see refineSeam below),
+// which the centroid fit alone recovers a few percent too wide. Because forward and
 // inverse use identical tables, forward(inverse(p)) === p exactly, so an unshifted
 // map is reproduced perfectly and calibration error only lightly affects the shear
 // applied when recentering distant regions.
@@ -148,7 +150,52 @@ function calibrate(): { CX: number; KX: number; CY: number; KY: number } {
     return { CX: fx.intercept, KX: fx.slope, CY: fy.intercept, KY: -fy.slope };
 }
 
-const { CX, KX, CY, KY } = calibrate();
+// --- Refine CX/KX against the antimeridian seam (run once) ------------------------
+// The centroid fit recovers the x placement only to within a few percent, which is
+// invisible mid-map but glaring at the edges: the halves of the antimeridian-split
+// region (Chukotka + Wrangel Island in ASNO) inverted to lon ~±171 instead of ~±180,
+// so on the globe the left-edge pieces stopped ~7° short of the Siberian mainland.
+// The map data itself pins the x placement exactly: where the split halves are meant
+// to meet, the drawing has a vertex at the same y on both edges (the drawn cut), and
+// that pair satisfies xL = CX - KX*AA(lat(y)) and xR = CX + KX*AA(lat(y)). Detect
+// those pairs — same-y vertices of one region spanning close to the full 360° width,
+// where the left vertex is its ring's west extreme or the right vertex its ring's
+// east extreme (a drawn cut line, not coastline) — then least-squares CX and KX.
+function refineSeam(cal: { CX: number; KX: number; CY: number; KY: number }): { CX: number; KX: number } {
+    const pairs: { a: number; xL: number; xR: number }[] = [];
+    for (const c of allContours) {
+        const rings = parseContourRings(c.d);
+        const ringMin = rings.map(r => Math.min(...r.map(p => p[0])));
+        const ringMax = rings.map(r => Math.max(...r.map(p => p[0])));
+        const byY = new Map<number, { minX: number; minRing: number; maxX: number; maxRing: number }>();
+        rings.forEach((ring, ri) => {
+            for (const [x, y] of ring) {
+                const e = byY.get(y);
+                if (!e) byY.set(y, { minX: x, minRing: ri, maxX: x, maxRing: ri });
+                else {
+                    if (x < e.minX) { e.minX = x; e.minRing = ri; }
+                    if (x > e.maxX) { e.maxX = x; e.maxRing = ri; }
+                }
+            }
+        });
+        for (const [y, e] of byY) {
+            const lat = invertBB((cal.CY - y) / cal.KY);
+            const a = interpTable(AA, Math.abs(lat));
+            if (e.maxX - e.minX < 0.8 * 2 * cal.KX * a) continue;
+            if (e.minX - ringMin[e.minRing] < 2.5 || ringMax[e.maxRing] - e.maxX < 2.5) {
+                pairs.push({ a, xL: e.minX, xR: e.maxX });
+            }
+        }
+    }
+    if (pairs.length === 0) return cal;
+    let sx = 0, sax = 0, saa = 0;
+    for (const p of pairs) { sx += p.xL + p.xR; sax += p.a * (p.xR - p.xL); saa += 2 * p.a * p.a; }
+    return { CX: sx / (2 * pairs.length), KX: sax / saa };
+}
+
+const CAL = calibrate();
+const { CX, KX } = refineSeam(CAL);
+const { CY, KY } = CAL;
 
 // Parse a contour `d` (M/L/Z polylines) into its rings; each ring is the list of
 // [px, py] vertices between an M and its closing Z (or the next M). Used by the
