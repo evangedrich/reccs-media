@@ -4,6 +4,16 @@ import { getReccs } from "./lib/reccs";
 
 export const dynamic = "force-dynamic";
 
+/* 
+IMPORTANT COMMANDS:
+`pnpm run deploy`
+`pnpm sync`
+`pnpm sync:images --local`
+`pnpm run deploy:quick` || `pnpm deploy/quick`
+`pnpm update-map` to update paths of dot map trace
+`pnpm subset-fonts` to update font subsets to reflect all used characters
+*/
+
 export default async function Home() {
 	const reccs = await getReccs();
 	return (

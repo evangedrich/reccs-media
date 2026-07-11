@@ -108,7 +108,7 @@ function RegionNode({
     setHovered: Dispatch<SetStateAction<string | null>>;
     currSubrID: string | null;
 }) {
-    const opacity = selected ? 0.25 : hovered && isActive ? 0.125 : 0;
+    const opacity = selected ? 0.25 : hovered && isActive ? 0.1 : 0;
     const outlinePoints = useMemo(() => {
         const pts: [number, number, number][] = [];
         for (let i = 0; i < region.outline.length; i += 3) {

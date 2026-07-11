@@ -14,9 +14,11 @@ import { posterUrl } from "../lib/images";
 import { getTitle } from "../functions/text";
 import { collections } from "../lib/collections";
 import { checkFont } from "../functions/text";
+import { notoEmoji } from "../fonts/fonts";
 
 export default function SubregionViewer({ regionID, reccs }: { regionID: string; reccs: Recc[]; }) {
     const [showGlobe,setShowGlobe] = useState(true);
+    const [mapMode,setMapMode] = useState(0);
     const router = useRouter();
     const pathname = usePathname();
     const searchParams = useSearchParams();
@@ -86,9 +88,15 @@ export default function SubregionViewer({ regionID, reccs }: { regionID: string;
             </ul>
             <div className="relative w-full grow flex max-sm:flex-col sm:flex-wrap sm:overflow-hidden">
                 <div className={`max-sm:shrink-0 min-w-0 max-sm:border-b-2 p-4 flex justify-center ${showGlobe?"transition-[flex-basis] duration-250":""} ${currSubrID ? "sm:basis-1/2" : "sm:basis-full"}`}>
-                    <div className={`w-auto max-w-full h-auto max-h-full ease-in-out max-sm:w-full max-sm:max-h-none shrink-0 flex items-center justify-center max-sm:aspect-square ${currSubrID? /*"sm:aspect-square sm:transition-[aspect-ratio] sm:duration-250"*/ "" : "sm:aspect-2/1"}`}>
-                        <div className={`${!showGlobe?"max-sm:hidden":"sm:hidden"} w-full h-full`}><DynamicContourMap mapID={regionID} currSubrID={currSubrID} setCurrSubrID={setCurrSubrID} hovered={currHovered} setHovered={setCurrHovered} /></div>
-                        <div className={`${!showGlobe?"sm:hidden":"max-sm:hidden"} border-2 h-full w-auto max-w-full rounded-full aspect-square p-[3.5px] shrink-0 overflow-hidden`}><ContourGlobe mapID={regionID} currSubrID={currSubrID} setCurrSubrID={setCurrSubrID} hovered={currHovered} setHovered={setCurrHovered} /></div>
+                    <div className={`w-auto max-w-full h-auto max-h-full ease-in-out max-sm:w-full max-sm:max-h-none shrink-0 flex items-center justify-center max-sm:aspect-square ${currSubrID? "" : "sm:aspect-2/1"}`}>
+                        <div className={`relative h-full ${showGlobe?"aspect-square":"w-full"}`}>
+                            <div className={`${showGlobe?"hidden":""} w-full h-full`}><DynamicContourMap mapID={regionID} currSubrID={currSubrID} setCurrSubrID={setCurrSubrID} hovered={currHovered} setHovered={setCurrHovered} /></div>
+                            <div className={`${showGlobe?"":"hidden"} border-2 h-full w-auto max-w-full rounded-full aspect-square p-[3.5px] shrink-0 overflow-hidden`}><ContourGlobe mapID={regionID} currSubrID={currSubrID} setCurrSubrID={setCurrSubrID} hovered={currHovered} setHovered={setCurrHovered} /></div>
+                            <div className="absolute bottom-0 right-0 flex gap-2">
+                                <button title="Map Mode" className={`w-7 h-7 rounded border-2 cursor-pointer hover:bg-[var(--color-mid)]/75 ${!showGlobe?"hidden":""}`} onClick={() => setMapMode(mapMode===0?1:0)}>{mapMode+1}</button>
+                                <button title="Map Shape" className="w-7 h-7 rounded border-2 cursor-pointer hover:bg-[var(--color-mid)]/75" onClick={() => setShowGlobe(!showGlobe)}>{showGlobe?"2D":"3D"}</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className={`max-sm:grow max-sm:min-h-0 min-w-0 max-w-full overflow-y-scroll sm:absolute sm:top-0 sm:right-0 sm:bottom-0 sm:w-1/2 ease-in-out ${currSubrID ? "transition-transform duration-250 sm:translate-x-0 sm:border-l-2" : "sm:translate-x-full"}`}>
