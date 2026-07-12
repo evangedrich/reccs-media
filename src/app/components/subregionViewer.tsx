@@ -91,10 +91,10 @@ export default function SubregionViewer({ regionID, reccs }: { regionID: string;
                     <div className={`w-auto max-w-full h-auto max-h-full ease-in-out max-sm:w-full max-sm:max-h-none shrink-0 flex items-center justify-center max-sm:aspect-square ${currSubrID? "" : "sm:aspect-2/1"}`}>
                         <div className={`relative h-full ${showGlobe?"aspect-square":"w-full"}`}>
                             <div className={`${showGlobe?"hidden":""} w-full h-full`}><DynamicContourMap mapID={regionID} currSubrID={currSubrID} setCurrSubrID={setCurrSubrID} hovered={currHovered} setHovered={setCurrHovered} /></div>
-                            <div className={`${showGlobe?"":"hidden"} border-2 h-full w-auto max-w-full rounded-full aspect-square p-[3.5px] shrink-0 overflow-hidden`}><ContourGlobe mapID={regionID} currSubrID={currSubrID} setCurrSubrID={setCurrSubrID} hovered={currHovered} setHovered={setCurrHovered} /></div>
+                            <div className={`${showGlobe?"":"hidden"} border-2 h-full w-auto max-w-full rounded-full aspect-square p-0 shrink-0 overflow-hidden`}><ContourGlobe mapID={regionID} mapMode={mapMode} currSubrID={currSubrID} setCurrSubrID={setCurrSubrID} hovered={currHovered} setHovered={setCurrHovered} /></div>
                             <div className="absolute bottom-0 right-0 flex gap-2">
-                                <button title="Map Mode" className={`w-7 h-7 rounded border-2 cursor-pointer hover:bg-[var(--color-mid)]/75 ${!showGlobe?"hidden":""}`} onClick={() => setMapMode(mapMode===0?1:0)}>{mapMode+1}</button>
-                                <button title="Map Shape" className="w-7 h-7 rounded border-2 cursor-pointer hover:bg-[var(--color-mid)]/75" onClick={() => setShowGlobe(!showGlobe)}>{showGlobe?"2D":"3D"}</button>
+                                <button title="Map Mode" className={`w-8 h-8 rounded border-2 cursor-pointer hover:bg-[var(--color-mid)]/75 ${!showGlobe?"hidden":""}`} onClick={() => setMapMode((mapMode+1)%3)}>{mapMode===1?<span className="relative -top-[0.23em] text-[1.5em]">{/*꩜*/}⛶</span>:mapMode===0?"⣿⣿":<span className="relative -top-[0.23em] text-[1.5em]">␥</span>}</button>
+                                <button title="Map Shape" className="w-8 h-8 rounded border-2 cursor-pointer hover:bg-[var(--color-mid)]/75" onClick={() => setShowGlobe(!showGlobe)}>{showGlobe?"2D":"3D"}</button>
                             </div>
                         </div>
                     </div>

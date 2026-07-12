@@ -71,7 +71,7 @@ export default function SearchWindow ({ reccs }: { reccs: Recc[] }) {
                             onChange={handleTyping}
                             className="grow outline-none caret-[var(--color-front)] px-1"
                         />
-                        <button className={`${input===""?"hidden":""} text-md font-light w-4 h-5 rounded-full flex items-center justify-center cursor-pointer hover:opacity-80 active:scale-90 text-sm`} onClick={() => setInput("")}>✕</button>
+                        <button className={`${input===""?"hidden":""} text-md font-light w-4 h-5 rounded-full flex items-center justify-center cursor-pointer hover:opacity-80 active:scale-90 text-sm`} type="button" onClick={() => setInput("")}>✕</button>
                     </div>
                 </form>
                 <div className="flex justify-between text-sm">

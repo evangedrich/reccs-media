@@ -1,17 +1,23 @@
 "use client";
 
 import { Canvas, ThreeEvent, useFrame, useThree } from "@react-three/fiber";
-import { OrbitControls, Line } from "@react-three/drei";
-import { Dispatch, SetStateAction, Suspense, useEffect, useMemo, useRef, useState } from "react";
+import { OrbitControls, Line, useTexture } from "@react-three/drei";
+import { Dispatch, SetStateAction, Suspense, lazy, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import * as THREE from "three";
 import type { OrbitControls as OrbitControlsImpl } from "three-stdlib";
 import { contourRegionMeshes, type ContourRegionMesh } from "@/app/lib/contourGlobeGeometry";
+import { dotPositions, dotRegionIndex, dotRegionIds, dotCount, contourDotRegionMeshes } from "@/app/lib/contourDotGeometry";
 import { regions } from "@/app/lib/subregions";
+
+const ContourGlobeBloom = lazy(() => import("./contourGlobeBloom"));
 
 const SPHERE_RADIUS = 1;
 const BG_RADIUS = SPHERE_RADIUS - 0.015;
 const FILL_SCALE = SPHERE_RADIUS + 0.001;
 const OUTLINE_SCALE = SPHERE_RADIUS + 0.003;
+const DOT_RADIUS = 0.0065;      // dot sphere radius (scaled with the tightened grid spacing)
+const DOT_OVERLAY_SCALE = SPHERE_RADIUS + 0.004; // honeycomb overlay sits just above the dots
+const INACTIVE_DOT_OPACITY = 0.5;
 const CAM_DIST = 100;
 const AUTO_ROTATE_SPEED = 0.5;
 const FOCUS_DURATION_MS = 400;
@@ -26,6 +32,7 @@ const AUTO_ROTATE_ENABLED = false;
 // subregion rotates the globe so that region faces the camera.
 type ContourGlobeProps = {
     mapID: string;
+    mapMode: number; // 0 = contour view (VIEW 1), 1 = satellite view (VIEW 2)
     currSubrID: string | null;
     setCurrSubrID: Dispatch<SetStateAction<string | null>>;
     hovered: string | null;
@@ -65,16 +72,25 @@ function useResolvedColors() {
     return { colors, ...ui };
 }
 
+// Orthographic zoom (pixels per world unit) that fits the unit sphere to the smaller
+// container dimension with a small margin. Applied both at canvas creation (onCreated,
+// so the first painted frame is already correctly sized) and on resize (below).
+function fitZoom(width: number, height: number): number {
+    return Math.min(width, height) / (SPHERE_RADIUS * 1.96);
+}
+
 function ResponsiveZoom() {
     const camera = useThree(s => s.camera);
     const size = useThree(s => s.size);
-    useEffect(() => {
+    const invalidate = useThree(s => s.invalidate);
+    // useLayoutEffect so a resize re-zooms before the browser paints (no visible jump).
+    useLayoutEffect(() => {
         if (camera instanceof THREE.OrthographicCamera) {
-            const fit = Math.min(size.width, size.height);
-            camera.zoom = fit / (SPHERE_RADIUS * 1.96);
+            camera.zoom = fitZoom(size.width, size.height);
             camera.updateProjectionMatrix();
+            invalidate(); // demand frameloop: redraw after an imperative camera change
         }
-    }, [camera, size.width, size.height]);
+    }, [camera, size.width, size.height, invalidate]);
     return null;
 }
 
@@ -150,10 +166,285 @@ function RegionNode({
     );
 }
 
-function ContourGlobeScene({ mapID, currSubrID, setCurrSubrID, hovered, setHovered }: ContourGlobeProps) {
+// ===================================================================
+//  VIEW 2 — Satellite view (mapMode === 1)
+// ===================================================================
+// The Blue Marble equirectangular image is draped on the sphere and the region
+// contours act purely as a selection overlay. The default sphere UVs share the
+// same lon/lat convention as contourGlobeGeometry's lonLatToUnit, so the texture
+// aligns with the contours without any rotation offset (the contour projection is
+// coastline-calibrated, see contourProjection.ts).
+
+function useBlueMarble() {
+    const texture = useTexture("/textures/blueMarble.jpg");
+    texture.colorSpace = THREE.SRGBColorSpace;
+    texture.wrapS = THREE.RepeatWrapping;
+    return texture;
+}
+
+function SatelliteSphere() {
+    const texture = useBlueMarble();
+    return (
+        <mesh renderOrder={0}>
+            <sphereGeometry args={[SPHERE_RADIUS, 64, 64]} />
+            <meshBasicMaterial map={texture} />
+        </mesh>
+    );
+}
+
+// Dark overlay dimming the whole near hemisphere while a region is selected; the
+// selected region's full-brightness textured fill renders above it. depthTest is
+// off so it shades uniformly instead of z-fighting the satellite sphere.
+function ShadeOverlay() {
+    return (
+        <mesh renderOrder={1}>
+            <sphereGeometry args={[SPHERE_RADIUS + 0.002, 64, 64]} />
+            <meshBasicMaterial color="black" transparent opacity={0.55} depthWrite={false} depthTest={false} />
+        </mesh>
+    );
+}
+
+// Equirectangular UVs matching the (rotated) satellite sphere, so the selected
+// region's fill reproduces the underlying image at full brightness — i.e. the
+// region simply isn't dimmed by the shade, giving a clean spotlight look.
+function fillUVs(positions: Float32Array): Float32Array {
+    const uv = new Float32Array((positions.length / 3) * 2);
+    for (let i = 0, j = 0; i < positions.length; i += 3, j += 2) {
+        const lam = Math.atan2(-positions[i + 2], positions[i]);
+        uv[j] = lam / (2 * Math.PI) + 0.5;
+        uv[j + 1] = 0.5 + Math.asin(Math.max(-1, Math.min(1, positions[i + 1]))) / Math.PI;
+    }
+    return uv;
+}
+
+// Outline points (segment pairs) with every long edge slerp-subdivided so it follows
+// the sphere surface instead of chording through it. A single long straight edge (e.g.
+// the near-polar AMNO/AMIN boundary) otherwise dips below the satellite sphere and gets
+// occluded; short great-circle steps keep it hugging the surface.
+function greatCircleOutline(outline: Float32Array, maxDeg = 3): [number, number, number][] {
+    const pts: [number, number, number][] = [];
+    const maxRad = (maxDeg * Math.PI) / 180;
+    for (let i = 0; i < outline.length; i += 6) {
+        const ax = outline[i], ay = outline[i + 1], az = outline[i + 2];
+        const bx = outline[i + 3], by = outline[i + 4], bz = outline[i + 5];
+        const ang = Math.acos(Math.max(-1, Math.min(1, ax * bx + ay * by + az * bz)));
+        const n = Math.max(1, Math.ceil(ang / maxRad));
+        const sinA = Math.sin(ang);
+        let prev: [number, number, number] = [ax, ay, az];
+        for (let s = 1; s <= n; s++) {
+            const t = s / n;
+            let cur: [number, number, number];
+            if (sinA < 1e-6) cur = [bx, by, bz];
+            else {
+                const w0 = Math.sin((1 - t) * ang) / sinA, w1 = Math.sin(t * ang) / sinA;
+                cur = [w0 * ax + w1 * bx, w0 * ay + w1 * by, w0 * az + w1 * bz];
+            }
+            pts.push(prev, cur);
+            prev = cur;
+        }
+    }
+    return pts;
+}
+
+// Only rendered for active regions, so inactive regions are inherently
+// non-hoverable/non-selectable. Same fill geometry + pointer/click logic as
+// RegionNode; the fill is an invisible hit target unless selected.
+function SatelliteRegionNode({
+    region,
+    selected,
+    hovered,
+    anyHovered,
+    someSelected,
+    setCurrSubrID,
+    setHovered,
+    currSubrID,
+    registerSelected,
+}: {
+    region: ContourRegionMesh;
+    selected: boolean;
+    hovered: boolean;
+    anyHovered: boolean;
+    someSelected: boolean;
+    setCurrSubrID: Dispatch<SetStateAction<string | null>>;
+    setHovered: Dispatch<SetStateAction<string | null>>;
+    currSubrID: string | null;
+    registerSelected: (mesh: THREE.Mesh | null) => void;
+}) {
+    const texture = useBlueMarble();
+    const meshRef = useRef<THREE.Mesh>(null);
+    const outlinePoints = useMemo(() => greatCircleOutline(region.outline), [region]);
+    const uv = useMemo(() => fillUVs(region.positions), [region]);
+    // idle → every active region's outline; hover or a selection → only the hovered region's;
+    // the selected region itself never shows an outline (its bright fill marks it instead).
+    const showOutline = selected ? false : (someSelected || anyHovered) ? hovered : true;
+    // Hand this region's fill up to the scene's SelectiveBloom target while it is selected.
+    useEffect(() => {
+        if (!selected) return;
+        registerSelected(meshRef.current);
+        return () => registerSelected(null);
+    }, [selected, registerSelected]);
+    return (
+        <group>
+            <mesh
+                ref={meshRef}
+                scale={FILL_SCALE}
+                renderOrder={2}
+                onPointerOver={(e: ThreeEvent<PointerEvent>) => {
+                    if (e.camera.position.dot(e.point) < 0) return;
+                    e.stopPropagation();
+                    setHovered(region.id);
+                    document.body.style.cursor = "pointer";
+                }}
+                onPointerOut={(e: ThreeEvent<PointerEvent>) => {
+                    e.stopPropagation();
+                    setHovered(null);
+                    document.body.style.cursor = "";
+                }}
+                onClick={(e: ThreeEvent<MouseEvent>) => {
+                    if (e.camera.position.dot(e.point) < 0) return;
+                    e.stopPropagation();
+                    setCurrSubrID(region.id === currSubrID ? null : region.id);
+                }}
+            >
+                <bufferGeometry>
+                    <bufferAttribute attach="attributes-position" args={[region.positions, 3]} />
+                    <bufferAttribute attach="attributes-uv" args={[uv, 2]} />
+                </bufferGeometry>
+                {/* selected → full-brightness satellite fill (the SelectiveBloom target);
+                    otherwise an invisible hit target. depthTest off so the coarse fill can't
+                    z-fight the satellite sphere (blotches). */}
+                <meshBasicMaterial
+                    map={texture}
+                    transparent
+                    opacity={selected ? 1 : 0}
+                    side={THREE.FrontSide}
+                    depthWrite={false}
+                    depthTest={!selected}
+                />
+            </mesh>
+            {showOutline && (
+                <Line points={outlinePoints} color="white" lineWidth={LINE_WIDTH} transparent opacity={0.5} renderOrder={4} scale={OUTLINE_SCALE} segments />
+            )}
+        </group>
+    );
+}
+
+// ===================================================================
+//  VIEW: Dot map (mapMode === 1)
+// ===================================================================
+// Hex-packed dots filling each region (contourDotGeometry, from the same allContours data),
+// plus a honeycomb overlay per active region as the semi-opaque hover/select target.
+
+// Two InstancedMeshes so active-region dots render at full colour and inactive regions at 50%
+// opacity of their own colour. The split depends only on mapID, so it's static per page.
+function DotLayers({ colors, mapID }: { colors: Map<string, THREE.Color>; mapID: string }) {
+    const activeRef = useRef<THREE.InstancedMesh>(null);
+    const inactiveRef = useRef<THREE.InstancedMesh>(null);
+    const { activeIdx, inactiveIdx } = useMemo(() => {
+        const codes = regions.find(r => r.id === mapID)?.code ?? [];
+        const a: number[] = [], n: number[] = [];
+        for (let i = 0; i < dotCount; i++) {
+            (codes.includes(dotRegionIds[dotRegionIndex[i]].slice(0, 2).toUpperCase()) ? a : n).push(i);
+        }
+        return { activeIdx: a, inactiveIdx: n };
+    }, [mapID]);
+    useEffect(() => {
+        const obj = new THREE.Object3D();
+        const fill = (mesh: THREE.InstancedMesh | null, idxs: number[]) => {
+            if (!mesh) return;
+            idxs.forEach((di, i) => {
+                obj.position.set(dotPositions[di * 3], dotPositions[di * 3 + 1], dotPositions[di * 3 + 2]);
+                obj.updateMatrix();
+                mesh.setMatrixAt(i, obj.matrix);
+                mesh.setColorAt(i, colors.get(dotRegionIds[dotRegionIndex[di]]) ?? new THREE.Color("#ffffff"));
+            });
+            mesh.instanceMatrix.needsUpdate = true;
+            if (mesh.instanceColor) mesh.instanceColor.needsUpdate = true;
+        };
+        fill(activeRef.current, activeIdx);
+        fill(inactiveRef.current, inactiveIdx);
+    }, [colors, activeIdx, inactiveIdx]);
+    return (
+        <>
+            {activeIdx.length > 0 && (
+                <instancedMesh key={`a${activeIdx.length}`} ref={activeRef} args={[undefined, undefined, activeIdx.length]}>
+                    <sphereGeometry args={[DOT_RADIUS, 6, 6]} />
+                    <meshBasicMaterial />
+                </instancedMesh>
+            )}
+            {inactiveIdx.length > 0 && (
+                <instancedMesh key={`i${inactiveIdx.length}`} ref={inactiveRef} args={[undefined, undefined, inactiveIdx.length]}>
+                    <sphereGeometry args={[DOT_RADIUS, 6, 6]} />
+                    <meshBasicMaterial transparent opacity={INACTIVE_DOT_OPACITY} />
+                </instancedMesh>
+            )}
+        </>
+    );
+}
+
+// Semi-opaque honeycomb overlay for one active region: the hover/click target (opacity 0.25 when
+// hovered or selected, invisible but still hit-testable otherwise). Same interaction as RegionNode.
+function DotRegionNode({
+    region,
+    color,
+    active,
+    setCurrSubrID,
+    setHovered,
+    currSubrID,
+}: {
+    region: (typeof contourDotRegionMeshes)[number];
+    color: THREE.Color;
+    active: boolean;
+    setCurrSubrID: Dispatch<SetStateAction<string | null>>;
+    setHovered: Dispatch<SetStateAction<string | null>>;
+    currSubrID: string | null;
+}) {
+    return (
+        <mesh
+            scale={DOT_OVERLAY_SCALE}
+            onPointerOver={(e: ThreeEvent<PointerEvent>) => {
+                if (e.camera.position.dot(e.point) < 0) return;
+                e.stopPropagation();
+                setHovered(region.id);
+                document.body.style.cursor = "pointer";
+            }}
+            onPointerOut={(e: ThreeEvent<PointerEvent>) => {
+                e.stopPropagation();
+                setHovered(null);
+                document.body.style.cursor = "";
+            }}
+            onClick={(e: ThreeEvent<MouseEvent>) => {
+                if (e.camera.position.dot(e.point) < 0) return;
+                e.stopPropagation();
+                setCurrSubrID(region.id === currSubrID ? null : region.id);
+            }}
+        >
+            <bufferGeometry>
+                <bufferAttribute attach="attributes-position" args={[region.positions, 3]} />
+                <bufferAttribute attach="index" args={[region.indices, 1]} />
+            </bufferGeometry>
+            <meshBasicMaterial color={color} transparent opacity={active ? 0.25 : 0} side={THREE.DoubleSide} depthWrite={false} />
+        </mesh>
+    );
+}
+
+// ===================================================================
+//  Shared scene (all views)
+// ===================================================================
+
+function ContourGlobeScene({ mapID, mapMode, currSubrID, setCurrSubrID, hovered, setHovered }: ContourGlobeProps) {
     const { colors, bg, mid, front, gray } = useResolvedColors();
+    const invalidate = useThree(s => s.invalidate);
     const controlsRef = useRef<OrbitControlsImpl>(null);
     const [autoRotate, setAutoRotate] = useState(true);
+    // The selected region's fill mesh, handed up by SatelliteRegionNode, is the
+    // SelectiveBloom target. Stable setter so the registration effect doesn't re-fire.
+    const [bloomTarget, setBloomTarget] = useState<THREE.Mesh | null>(null);
+    const registerSelected = useCallback((mesh: THREE.Mesh | null) => setBloomTarget(mesh), []);
+    const bloomSelection = useMemo(() => (bloomTarget ? [bloomTarget] : []), [bloomTarget]);
+    // A detached dummy Object3D as the bloom "light": our fill is unlit so no real light is
+    // needed, but a non-empty lights array silences SelectiveBloom's "requires lights" warning.
+    const bloomLights = useMemo(() => [new THREE.Object3D()], []);
     const tweenRef = useRef<{ startAz: number; startPol: number; endAz: number; endPol: number; elapsedMs: number } | null>(null);
     const resumeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -192,7 +483,8 @@ function ContourGlobeScene({ mapID, currSubrID, setCurrSubrID, hovered, setHover
         while (dAz > Math.PI) { normalizedEndAz -= 2 * Math.PI; dAz = normalizedEndAz - startAz; }
         while (dAz < -Math.PI) { normalizedEndAz += 2 * Math.PI; dAz = normalizedEndAz - startAz; }
         tweenRef.current = { startAz, startPol, endAz: normalizedEndAz, endPol, elapsedMs: 0 };
-    }, [currSubrID, mapID, mapCentroid]);
+        invalidate(); // demand frameloop: start driving the focus animation
+    }, [currSubrID, mapID, mapCentroid, invalidate]);
 
     useFrame((_, delta) => {
         const controls = controlsRef.current;
@@ -204,29 +496,84 @@ function ContourGlobeScene({ mapID, currSubrID, setCurrSubrID, hovered, setHover
         controls.setAzimuthalAngle(tween.startAz + (tween.endAz - tween.startAz) * eased);
         controls.setPolarAngle(tween.startPol + (tween.endPol - tween.startPol) * eased);
         if (t >= 1) tweenRef.current = null;
+        else invalidate(); // keep requesting frames until the tween completes
     });
+
+    const someSelected = currSubrID !== null;
+    const anyHovered = hovered !== null;
 
     return (
         <>
-            <BackgroundSphere color={bg} />
-            {contourRegionMeshes.map(region => {
-                const active = isRegion(region.id);
-                const selected = currSubrID === region.id;
-                return (
-                    <RegionNode
-                        key={region.id}
-                        region={region}
-                        isActive={active}
-                        selected={selected}
-                        hovered={hovered === region.id}
-                        fillColor={selected ? (colors.get(region.id) ?? mid) : mid}
-                        outlineColor={active ? front : gray}
-                        setCurrSubrID={setCurrSubrID}
-                        setHovered={setHovered}
-                        currSubrID={currSubrID}
-                    />
-                );
-            })}
+            {mapMode === 2 ? (
+                // VIEW 3 — satellite: textured sphere + contours as a selection overlay,
+                // rendered only for active regions (inactive ones are non-interactive).
+                <>
+                    <SatelliteSphere />
+                    {someSelected && <ShadeOverlay />}
+                    {contourRegionMeshes.filter(region => isRegion(region.id)).map(region => (
+                        <SatelliteRegionNode
+                            key={region.id}
+                            region={region}
+                            selected={currSubrID === region.id}
+                            hovered={hovered === region.id}
+                            anyHovered={anyHovered}
+                            someSelected={someSelected}
+                            setCurrSubrID={setCurrSubrID}
+                            setHovered={setHovered}
+                            currSubrID={currSubrID}
+                            registerSelected={registerSelected}
+                        />
+                    ))}
+                    {/* Glow: bloom only the selected region's bright fill so it bleeds a soft
+                        halo past the perimeter over the shaded globe (see contourGlobeBloom).
+                        Lazy + its own Suspense so the postprocessing chunk loads on entering the
+                        satellite view without blanking the rest of the scene while it fetches. */}
+                    <Suspense fallback={null}>
+                        <ContourGlobeBloom enabled={someSelected} selection={bloomSelection} lights={bloomLights} />
+                    </Suspense>
+                </>
+            ) : mapMode === 1 ? (
+                // VIEW 2 — dot map: hex dots over a background sphere, honeycomb overlay per
+                // active region as the selection target (inactive regions are non-interactive).
+                <>
+                    <BackgroundSphere color={bg} />
+                    <DotLayers colors={colors} mapID={mapID} />
+                    {contourDotRegionMeshes.filter(region => isRegion(region.id)).map(region => (
+                        <DotRegionNode
+                            key={region.id}
+                            region={region}
+                            color={colors.get(region.id) ?? mid}
+                            active={hovered === region.id || currSubrID === region.id}
+                            setCurrSubrID={setCurrSubrID}
+                            setHovered={setHovered}
+                            currSubrID={currSubrID}
+                        />
+                    ))}
+                </>
+            ) : (
+                // VIEW 1 — contour globe (original)
+                <>
+                    <BackgroundSphere color={bg} />
+                    {contourRegionMeshes.map(region => {
+                        const active = isRegion(region.id);
+                        const selected = currSubrID === region.id;
+                        return (
+                            <RegionNode
+                                key={region.id}
+                                region={region}
+                                isActive={active}
+                                selected={selected}
+                                hovered={hovered === region.id}
+                                fillColor={selected ? (colors.get(region.id) ?? mid) : mid}
+                                outlineColor={active ? front : gray}
+                                setCurrSubrID={setCurrSubrID}
+                                setHovered={setHovered}
+                                currSubrID={currSubrID}
+                            />
+                        );
+                    })}
+                </>
+            )}
             <OrbitControls
                 ref={controlsRef}
                 enableZoom={false}
@@ -252,7 +599,20 @@ function ContourGlobeScene({ mapID, currSubrID, setCurrSubrID, hovered, setHover
 export default function ContourGlobe(props: ContourGlobeProps) {
     return (
         <div className="w-full h-full relative">
-            <Canvas orthographic camera={{ position: [0, 0, CAM_DIST], zoom: 224 }} flat>
+            <Canvas
+                orthographic
+                camera={{ position: [0, 0, CAM_DIST], zoom: 224 }}
+                flat
+                frameloop="demand"
+                // Size the camera from the measured container before the first render so the
+                // globe appears already filling its container (no initial small-then-jump).
+                onCreated={({ camera, size }) => {
+                    if (camera instanceof THREE.OrthographicCamera) {
+                        camera.zoom = fitZoom(size.width, size.height);
+                        camera.updateProjectionMatrix();
+                    }
+                }}
+            >
                 <ambientLight intensity={1} />
                 <ResponsiveZoom />
                 <Suspense fallback={null}>

@@ -22,7 +22,7 @@ const SUBDIVIDE_MAX_DEPTH = 5;
 type V3 = [number, number, number];
 type P2 = [number, number];
 
-function lonLatToUnit(lon: number, lat: number): V3 {
+export function lonLatToUnit(lon: number, lat: number): V3 {
     const phi = lat * DEG, lam = lon * DEG, cphi = Math.cos(phi);
     return [cphi * Math.cos(lam), Math.sin(phi), -cphi * Math.sin(lam)];
 }

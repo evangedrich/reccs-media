@@ -624,7 +624,7 @@ export const modTradNovels = [
       translation: "Notes of a Crocodile"
     },
     author: "Qiū Miàojīn",
-    group: {people: "Han", language: "Mandarin", location: "Taiwan"},
+    group: {people: "Han", language: "Mandarin Chinese", location: "Taiwan"},
     info: [
       `Set in the post-martial-law era of late-1980s Taipei, <i>Notes of a Crocodile</i> is a coming-of-age story of queer misfits discovering love, friendship, and artistic affinity while hardly studying at Taiwan’s most prestigious university. Told through the eyes of an anonymous lesbian narrator nicknamed Lazi, this cult classic is a postmodern pastiche of diaries, vignettes, mash notes, aphorisms, exegesis, and satire by an incisive prose stylist and major counter-cultural figure.`,
       `<b>QIŪ MIÀOJĪN</b>, one of Taiwan’s most innovative literary modernists, and the country’s most renowned lesbian writer, was born in 1969 in Chuanghua County in western Taiwan. She graduated with a degree in psychology from National Taiwan University and pursued graduate studies in clinical psychology at the University of Paris VIII.`,
@@ -2352,7 +2352,7 @@ export const cultFeatFilms = [
     id: "ASEACFF",
     title: {original: "霸王別姬", transliteration: "Bà Wáng Bié Jī", translation: "Farewell, My Concubine"},
     year: 1992,
-    group: {people: "Han", language: "Mandarin", location: "China"},
+    group: {people: "Han", language: "Mandarin Chinese", location: "China"},
     info: [
       `In 1924, young Cheng Dieyi begins training at the Beijing Opera House at the same time as Duan Xiaolou. Cheng specializes in playing female parts, often against Duan’s commanding male leads. Over the next 50 years, the two men maintain a complicated relationship as China undergoes turbulent changes.`,
       `Dir. <b>CHÉN KĂIGĒ</b> is a Chinese filmmaker and leading figure in the fifth generation of Chinese directors, known for his visual flair and epic storytelling.`
@@ -5059,7 +5059,7 @@ export const foundRelTexts = [
   {
     id: "EUEAFRT",
     title: {original: "Kalevala", translation: "Land of Heroes"},
-    group: {people: "Finnish", language: "Finnic", religion: "Suomenusko", location: "Finland"},
+    group: {people: "Finnish", language: "Finnish", religion: "Suomenusko", location: "Finland"},
     info: [
       `Väinämöinen, the Eternal Sage, does not fight with weapons of steel but with song. To know the <+>origin[synty]</+> of something—be it iron, fire, bears, or a disease—is to have absolute power over it, and traditional healers, following the model of the hero Väinämöinen, recite origin-charms to heal physical injuries.`,
       `This is the world of the <i>Kalevala</i>, Land of Heroes, a dreamlike landscape where the boundary between the material and spirit worlds is as thin as a birch leaf. Such is also the name given to the text compiled by Finnish polymath Elias Lönnrot in the 19th-century from the stories and songs of the people of Finland, Karelia, and Ingria.`
