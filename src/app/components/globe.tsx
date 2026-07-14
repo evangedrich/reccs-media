@@ -319,6 +319,7 @@ function GlobeScene({ currSubr, setCurrSubr, setHovered, hovered }: GlobeProps) 
                 ref={controlsRef}
                 enableZoom={false}
                 enablePan={false}
+                enableDamping={false}
                 autoRotate={autoRotate && currSubr === "X"}
                 autoRotateSpeed={AUTO_ROTATE_SPEED}
                 onStart={() => {

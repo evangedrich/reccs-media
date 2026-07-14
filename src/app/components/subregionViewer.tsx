@@ -1,15 +1,23 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from "react";
+import dynamic from "next/dynamic";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import { regions, subregions } from "@/app/lib/subregions";
 import { ContourMap, FullContourMap } from "./map";
 import { DynamicContourMap } from "./dynamicContourMap";
-import ContourGlobe from "./contourGlobe";
 import { Recc } from "../types/recc";
 import Link from "next/link";
 import Image from "next/image";
 import LoadingIcon from "./loading";
+
+// Client-only: three.js + drei + the contour/dot geometry (built at module load)
+// must never be imported into the server bundle, or SSR of this region page loads
+// all of it into the 128MB Worker isolate and trips Cloudflare Error 1102.
+const ContourGlobe = dynamic(() => import("./contourGlobe"), {
+	ssr: false,
+	loading: () => <LoadingIcon />,
+});
 import { posterUrl } from "../lib/images";
 import { getTitle } from "../functions/text";
 import { collections } from "../lib/collections";

@@ -1,16 +1,23 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import dynamic from "next/dynamic";
 import Map, { HoverMap } from "@/app/components/map";
 import { subregions } from "@/app/lib/subregions";
 import type { Recc } from "../types/recc";
 import { collections } from "../lib/collections";
 import { getTitle, preParse, checkFont } from "../functions/text";
-import Globe from "@/app/components/globe";
 import styles from '@/app/ui/main.module.css';
 import Link from "next/link";
 import Image from "next/image";
 import LoadingIcon from "./loading";
+
+// Client-only: keeps three.js/drei out of the server bundle so an on-demand
+// (cache-miss) render of the home page stays inside the Worker's limits.
+const Globe = dynamic(() => import("@/app/components/globe"), {
+	ssr: false,
+	loading: () => <LoadingIcon />,
+});
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import { useView } from "@/app/lib/viewContext";
 import { posterUrl } from "../lib/images";

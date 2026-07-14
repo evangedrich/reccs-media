@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { juliaMonoSubset, juliaMonoFull, notoMalayalam, notoTibetan, notoCanadian, notoArabic, notoTamil, notoTelugu } from "./fonts/fonts";
+import { juliaMonoSubset, notoMalayalam, notoTibetan, notoCanadian, notoArabic, notoTamil, notoTelugu } from "./fonts/fonts";
 import "./globals.css";
 
 // Every conditional script font's CSS variable is registered once on <html>, so its
@@ -9,11 +9,15 @@ const scriptFontVars = [notoMalayalam, notoTibetan, notoCanadian, notoArabic, no
   .map((f) => f.variable)
   .join(" ");
 
-// Layered body-font stack: the preloaded subset renders first; the full JuliaMono
-// lazily covers any glyph missing from the subset (same metrics, no shift); generic
-// monospace then sans-serif are the universal OS safety net so nothing is ever tofu.
+// Body-font stack: the preloaded, comprehensively-subset JuliaMono renders first;
+// generic monospace then sans-serif are the universal OS safety net. The full 1 MB
+// JuliaMono is deliberately NOT in this stack — because it carries no unicode-range,
+// listing it made the browser download the whole 1 MB weight just to discover it
+// lacks a foreign glyph (e.g. ﷺ, ＋, CJK titles) before falling through to a system
+// font. The subset is regenerated from all source text on every deploy, so it always
+// covers what JuliaMono can render; anything it can't now falls straight to the OS.
 const juliaMonoStack =
-  `${juliaMonoSubset.style.fontFamily}, ${juliaMonoFull.style.fontFamily}, monospace, sans-serif`;
+  `${juliaMonoSubset.style.fontFamily}, monospace, sans-serif`;
 import Header from "@/app/components/header";
 import Footer from "@/app/components/footer";
 import { ViewProvider } from "@/app/lib/viewContext";

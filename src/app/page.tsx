@@ -1,8 +1,7 @@
+import { Suspense } from "react";
 import Geoscheme from "./components/geoscheme";
 import { preParse } from "./functions/text";
 import { getReccs } from "./lib/reccs";
-
-export const dynamic = "force-dynamic";
 
 /* 
 IMPORTANT COMMANDS:
@@ -18,7 +17,9 @@ export default async function Home() {
 	const reccs = await getReccs();
 	return (
 		<div>
-			<Geoscheme reccs={reccs} />
+			<Suspense>
+				<Geoscheme reccs={reccs} />
+			</Suspense>
 			<div className="p-4 border-b-2 border-solid border-[var(--color-front)]">
 				<div className="max-w-[1000px] m-auto">
 					<p className="mb-2">{preParse("Reccs is a compilation of collections of literary, cinematic, theatrical, and analytical achievements from each of the United Nations geoscheme subregions (modified slightly to better conform the subregions, devised for statistical purposes, to their corresponding culturally-affiliated regions). Click around the geoscheme above to explore works by region, or browse the complete collections from the navigation bar at the top of the page.")}</p>

@@ -16,35 +16,27 @@ import subsetFont from "subset-font";
 const FONTS_DIR = join(process.cwd(), "src/app/fonts");
 const HASH_FILE = join(FONTS_DIR, ".subset-hash");
 
-// Source files whose raw text determines the glyphs we must keep. Reading the raw
-// file content (not executing it) captures every character in every string literal;
-// code syntax is ASCII, which is in the baseline anyway.
-const CONTENT_FILES = [
-  "src/app/lib/local-media.ts",
-  "src/app/lib/subregions.ts",
-  "src/app/lib/globeGeometry.ts",
-];
-
 // Self-hosted font families to subset: directory name -> weight files live directly
 // inside it; subsets are written to its `subset/` sub-directory.
 const FONT_FAMILIES = ["JuliaMono", "NotoEmoji"];
 
-function walkTsx(dir: string, acc: string[] = []): string[] {
+// Scan EVERY .ts/.tsx under src/app (not a hardcoded file list): reading raw file
+// content captures every character in every string literal — UI chrome, page copy,
+// and data modules (local-media, subregions, collections, …) alike. A glyph missing
+// here escapes the subset and forces the browser to download the full ~1 MB weight,
+// so the scan must be exhaustive. Code syntax is ASCII, already in the baseline.
+function walkSource(dir: string, acc: string[] = []): string[] {
   for (const entry of readdirSync(dir, { withFileTypes: true })) {
     const full = join(dir, entry.name);
-    if (entry.isDirectory()) walkTsx(full, acc);
-    else if (entry.name.endsWith(".tsx")) acc.push(full);
+    if (entry.isDirectory()) walkSource(full, acc);
+    else if (entry.name.endsWith(".ts") || entry.name.endsWith(".tsx")) acc.push(full);
   }
   return acc;
 }
 
 function collectUsedText(): string {
   let raw = "";
-  for (const rel of CONTENT_FILES) {
-    const abs = join(process.cwd(), rel);
-    if (existsSync(abs)) raw += readFileSync(abs, "utf8");
-  }
-  for (const file of walkTsx(join(process.cwd(), "src/app"))) {
+  for (const file of walkSource(join(process.cwd(), "src/app"))) {
     raw += readFileSync(file, "utf8");
   }
   // Drop HTML/JSX tags so markup like <i>, <br>, <span> isn't counted as glyphs;

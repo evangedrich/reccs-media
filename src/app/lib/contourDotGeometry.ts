@@ -20,7 +20,7 @@ import { parseContourRings, contourPixelToLonLat } from "./contourProjection";
 import { lonLatToUnit } from "./contourGlobeGeometry";
 
 const DEG = Math.PI / 180;
-const SPACING_DEG = 1.16;                        // grid spacing (nearest-neighbour), tightened
+const SPACING_DEG = 1.2;                        // grid spacing (nearest-neighbour), tightened
 const CELL_RC = (SPACING_DEG / 2) * Math.SQRT2 * DEG; // square-cell corner distance, radians
 
 type V3 = [number, number, number];

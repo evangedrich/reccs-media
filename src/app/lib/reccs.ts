@@ -107,9 +107,29 @@ async function getReccsFromLocal(): Promise<Recc[]> {
 export const getReccs: () => Promise<Recc[]> =
   process.env.NODE_ENV === "development" ? getReccsFromLocal : getReccsFromD1;
 
-export async function getReccById(id: string): Promise<Recc | undefined> {
-  return (await getReccs()).find((r) => r.id === id);
+// Fetch a single entry by id. In production this is a targeted `WHERE id = ?`
+// D1 query, cached per-id under the shared "reccs" tag — so a detail page parses
+// one row instead of scanning and JSON-parsing the entire table on every request.
+const getReccByIdFromD1 = unstable_cache(
+  async (id: string): Promise<Recc | undefined> => {
+    const db = (await getCloudflareContext({ async: true })).env.DB;
+    const row = await db
+      .prepare("SELECT * FROM reccs WHERE id = ?")
+      .bind(id)
+      .first<Row>();
+    return row ? rowToRecc(row) : undefined;
+  },
+  ["reccById"],
+  { tags: ["reccs"] },
+);
+
+// In development, mirror getReccs by resolving from local-media.
+async function getReccByIdFromLocal(id: string): Promise<Recc | undefined> {
+  return (await getReccsFromLocal()).find((r) => r.id === id);
 }
+
+export const getReccById: (id: string) => Promise<Recc | undefined> =
+  process.env.NODE_ENV === "development" ? getReccByIdFromLocal : getReccByIdFromD1;
 
 // Deterministic, seeded shuffle (mulberry32 PRNG + Fisher–Yates). The same
 // `seed` always yields the same order, so navigating between collections on a

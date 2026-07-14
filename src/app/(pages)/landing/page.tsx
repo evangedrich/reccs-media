@@ -3,8 +3,6 @@ import ColorLink from "@/app/components/colorLink";
 import { preParse } from "@/app/functions/text";
 import { getReccs } from "@/app/lib/reccs";
 
-export const dynamic = "force-dynamic";
-
 const features = [
     {
         title: "Dual-render geoscheme",
