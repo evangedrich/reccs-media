@@ -64,8 +64,8 @@ export const collections: { id: string, name: string, shortName: string, type: s
         name: "Original Maths",
         shortName: "Maths",
         type: "systems",
-        header: "This collection is under construction.",
-        info: "Check back later for updates."
+        header: "What counts as math?",
+        info: "We know well enough that the Math we’re taught in schools is something like an anthology of different disciplines (e.g. algebra, geometry, calculus, etc.), yet we still tend to treat it as a monolithic, progressive course of study of something real in itself, obscuring its inherent practicality and heterogeneous origins. The system we’re taught in school has its roots in entirely distinct traditions, and that set of sources is of course limited, not absolute, in its ability to capture the complete extent of what the human mind can accomplish using quantitative tools.\n\nTo bring us closer to an accurate understanding of what the symbols and concepts of maths truly represent, I’ve assembled these mathematical texts and principles from distinct intellectual traditions. With manifold applications across science, engineering, and technology, and with profound beauty and elegance to spare, the ideas collected here offer different inroads into understanding the common patterns underpinning the nature of reality in all its complexity.\n\nNote, this collection is under construction. Please check back later for even more fascinating mathematical concepts."
     },
     {
         id: "UQC",

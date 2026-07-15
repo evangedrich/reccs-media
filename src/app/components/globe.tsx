@@ -174,12 +174,14 @@ function RegionMeshNode({
     region,
     color,
     active,
+    currSubr,
     setCurrSubr,
     setHovered,
 }: {
     region: typeof regionMeshes[number];
     color: THREE.Color;
     active: boolean;
+    currSubr: string;
     setCurrSubr: Dispatch<SetStateAction<string>>;
     setHovered: Dispatch<SetStateAction<string>>;
 }) {
@@ -205,7 +207,7 @@ function RegionMeshNode({
             onClick={(e: ThreeEvent<MouseEvent>) => {
                 if (e.camera.position.dot(e.point) < 0) return;
                 e.stopPropagation();
-                setCurrSubr(region.id);
+                setCurrSubr(currSubr===region.id?"X":region.id);
             }}
         >
             <bufferGeometry>
@@ -247,6 +249,7 @@ function RegionLayer({
                         region={region}
                         color={color}
                         active={active}
+                        currSubr={currSubr}
                         setCurrSubr={setCurrSubr}
                         setHovered={setHovered}
                     />

@@ -1183,7 +1183,7 @@ export const stirrPoetry = [
     intermediary: "Berta Kwelē",
     group: {people: "Sandawe", language: "Sandawe", location: "Tanzania"},
     info: [
-      `Poetry can be found in all manifestations of arts and culture, in storytelling, in dance, in ritual. The poem here comes embedded in a traditional story, recorded in July 1963 by Berta Kwelē, about a child raised by a bird. When the child came of age, the bird took the child from their home near a human community to a faraway place where lived every sort of bird. The people from the town, embarking on a search for the child, sing this song; its themes transcend the literal context of the story, speaking to the bewildering and cyclical experience of a desire for seeking out anything.`
+      `Poetry is found in all manifestations of arts and culture, in storytelling, in dance, in ritual. The poem here comes embedded in a traditional story, recorded in July 1963 by Berta Kwelē, about a child raised by a bird. When the child came of age, the bird took the child from their home near a human community to a faraway place where lived every sort of bird. The people from the town, embarking on a search for the child, sing this song; its themes transcend the literal context of the story, speaking to the bewildering and cyclical experience of a desire for seeking out anything.`
     ],
     excerpt: [
       `To <+>Swaare[the name of a pond, literally meaning ‘to coax’ or ‘to egg on by persuasion’]</+> all swirl <+>around and around[‘to circle round’ or ‘to whirl around like leaves caught in a whirlwind’; sudden whirlwinds are common during the dry season]</+><br>&emsp;&emsp;Now, all searchers go on and on.<br>To Swaare all swirl around and around<br>&emsp;&emsp;Now, all searchers go on and on.<br>Try all your very best then,<br>&emsp;&emsp;Now, all searchers go on and on.<br>Try all your very best then,<br>&emsp;&emsp;Now, all searchers go on and on.<br>The <+><i>habé</i>[baby carrier]</+>, bring it out<br>&emsp;&emsp;to take it round <+>Ringeringe[another place name, suggesting not an aimless swirling but instead going around the something definable like the boundaries of a field]</+>,<br>oh! to take it round Ringeringe,<br>oh! they took it round, round Ringeringe.`
@@ -2002,16 +2002,16 @@ export const cultFeatFilms = [
     group: {people: "Hausa", language: "Hausa", location: "Nigeria"},
     info: [
       `Jallaba’s trade boom crumbles due to internal conflict among the ruling clans. A new dynasty promises stability, shattered by a king’s choice of heir—his daughter. Princess, rival, and a deposed clan clash for the throne. Who will rule—and can Jallaba survive?`,
-      `Dir <b>PRINCE DANIEL</b>`
+      `Dir <b>PRINCE DANIEL ABOKI</b> is a writer, producer, and director. He is well-known in Nigeria for his work in radio broadcast journalism, where he’s earned the nickname Aboki, meaning “friend” in Hausa.`
     ],
-    infoURL: "",
+    infoURL: "https://thefilmverdict.com/an-interview-with-prince-daniel/",
     watch: [""],
     trailer: "https://youtu.be/3AEZfRd4fgA",
     coordinates: {x: 8.3177, y: 13.0364, name: "Daura"},
     runtime: 86,
     genre: ["Drama", "Adventure"],
     tags: [""],
-    color: "#"
+    color: "#45201e"
   },
   {
     id: "AFNECFF",
@@ -5843,6 +5843,23 @@ export const cultShortFilms = [
     genre: ["Docufiction","Children's"],
     tags: [""],
     color: "#423327"
+  },
+  {
+    id: "OCAUCSF",
+    title: {original: "Marungka tjalatjunu", translation: "Dipped in black"},
+    year: 2022,
+    group: {people: "Yankunytjatjara", language: "Yankunytjatjara", location: "Western Desert, AU"},
+    info: [
+      `<i>Marungka tjalatjunu</i> follows one man’s road trip back to Country for spiritual healing, as memories from his childhood return. A journey from oppressive white city life in Adelaide, back home to his remote Anangu community Aputula to perform on sacred Inma ground. Inma is a traditional form of storytelling using the visual, verbal, and physical. It is how Anangu <+>Tjukurpa[story connected to country/dreaming/myth/lore]</+> have been passed down for tens of thousands of years, from generation to generation.`,
+      `Dir/Scr <b>DERIK LYNCH</b>, born 1986 in Alice Springs, is a Yankunytjatjara dancer, actor, singer and filmmaker. He studied with the Centre for Aboriginal Studies in Music at Adelaide University.`
+    ],
+    watch: ["https://www.amazon.com/gp/video/detail/0SVFAP3WRN4R8H3JLF58OSZ481"],
+    trailer: "https://youtu.be/8N4LMGOojcM",
+    coordinates: {x: 134.57778, y: -25.57111, name: "Aputula"},
+    runtime: 24,
+    genre: ["Docufiction","LGBTQ+"],
+    tags: ["queer"],
+    color: "#9e542f"
   }
 ];
 
