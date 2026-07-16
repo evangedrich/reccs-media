@@ -31,7 +31,7 @@ const AUTO_ROTATE_ENABLED = false;
 // subregion rotates the globe so that region faces the camera.
 type ContourGlobeProps = {
     mapID: string;
-    mapMode: number; // 0 = contour view (VIEW 1), 1 = satellite view (VIEW 2)
+    mapMode: number; // 0 = contour view (VIEW 1), 1 = dot view (VIEW 2), 2 = satellite view (VIEW 3)
     currSubrID: string | null;
     setCurrSubrID: Dispatch<SetStateAction<string | null>>;
     hovered: string | null;
@@ -471,7 +471,11 @@ function ContourGlobeScene({ mapID, mapMode, currSubrID, setCurrSubrID, hovered,
         const controls = controlsRef.current;
         const tween = tweenRef.current;
         if (!controls || !tween) return;
-        tween.elapsedMs += delta * 1000;
+        // With frameloop="demand" the clock keeps ticking while no frames render, so
+        // the first frame after an idle period reports a huge delta (the whole gap) —
+        // which used to blast elapsedMs past FOCUS_DURATION_MS and snap instead of
+        // animating. Clamp to one ~30fps tick so the tween always plays.
+        tween.elapsedMs += Math.min(delta, 1 / 30) * 1000;
         const t = Math.min(tween.elapsedMs / FOCUS_DURATION_MS, 1);
         const eased = t * t * (3 - 2 * t);
         controls.setAzimuthalAngle(tween.startAz + (tween.endAz - tween.startAz) * eased);
@@ -537,7 +541,11 @@ function ContourGlobeScene({ mapID, mapMode, currSubrID, setCurrSubrID, hovered,
                                 isActive={active}
                                 selected={selected}
                                 hovered={hovered === region.id}
-                                fillColor={selected ? (colors.get(region.id) ?? mid) : mid}
+                                // Hover fill uses the solid foreground hex (front), not mid: --color-mid
+                                // is an rgba() whose alpha THREE.Color drops, leaving a solid black/white
+                                // that mis-resolves under Tailwind's @theme inline in the prod build. front
+                                // is a clean hex, switches with the theme, and the mesh opacity supplies the tint.
+                                fillColor={selected ? (colors.get(region.id) ?? front) : front}
                                 outlineColor={active ? front : gray}
                                 setCurrSubrID={setCurrSubrID}
                                 setHovered={setHovered}

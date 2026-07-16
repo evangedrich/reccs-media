@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import Geoscheme from "./components/geoscheme";
 import { preParse } from "./functions/text";
-import { getReccs } from "./lib/reccs";
+import { getReccsLite } from "./lib/reccs";
 
 /* 
 IMPORTANT COMMANDS:
@@ -14,7 +14,7 @@ IMPORTANT COMMANDS:
 */
 
 export default async function Home() {
-	const reccs = await getReccs();
+	const reccs = await getReccsLite();
 	return (
 		<div>
 			<Suspense>

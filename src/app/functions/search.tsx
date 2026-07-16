@@ -1,24 +1,24 @@
-import { Recc } from "../types/recc";
+import { Recc, ReccSearch } from "../types/recc";
 import { subregions } from "../lib/subregions";
 
 const norm = ( txt: string ) => {
     return txt.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 }
-const checkTitle = ( query: string, entry: Recc ) => {
+const checkTitle = ( query: string, entry: ReccSearch ) => {
     return norm(entry.title.original).includes(norm(query)) 
     || norm(entry.title.transliteration??"").includes(norm(query))
     || norm(entry.title.translation??"").includes(norm(query));
 };
-const checkInfo = ( query: string, entry: Recc ) => {
+const checkInfo = ( query: string, entry: ReccSearch ) => {
     return entry.info?.join(" ").toLowerCase().includes(query.toLowerCase());
 };
-const checkExcerpt = ( query: string, entry: Recc ) => {
+const checkExcerpt = ( query: string, entry: ReccSearch ) => {
     return entry.excerpt?.join(" ").toLowerCase().includes(query.toLowerCase());
 };
-const checkAuthor = ( query: string, entry: Recc ) => {
+const checkAuthor = ( query: string, entry: ReccSearch ) => {
     return entry.author || entry.intermediary ? norm(entry.author??"").includes(norm(query)) || norm(entry.intermediary??"").includes(norm(query)) : false;
 };
-const getGrouping = (entries: Recc[], grouping: keyof Recc["group"]) => {
+const getGrouping = (entries: ReccSearch[], grouping: keyof Recc["group"]) => {
     // Define the exceptions for quick lookup
     const euweExceptions = new Set(["English", "French", "Spanish", "German", "France", "USA"]);
     const eueaExceptions = new Set(["Russian"]);
@@ -47,16 +47,16 @@ const getGrouping = (entries: Recc[], grouping: keyof Recc["group"]) => {
     }
     return result;
 };
-const checkLanguage = ( query: string, entry: Recc ) => {
+const checkLanguage = ( query: string, entry: ReccSearch ) => {
     return norm(entry.group.language).includes(norm(query));
 };
-const checkSubregion = ( query: string, entry: Recc ) => {
+const checkSubregion = ( query: string, entry: ReccSearch ) => {
     return subregions.find(subr => subr.id===entry.id.slice(0,4))?.name.toLowerCase().includes(query.toLowerCase());
 };
-const checkTags = ( query: string, entry: Recc ) => {
+const checkTags = ( query: string, entry: ReccSearch ) => {
     return entry.tags?.join(" ").toLowerCase().includes(query.toLowerCase()) || entry.genre?.join(" ").toLowerCase().includes(query.toLowerCase());
 };
-const checkAll = ( query: string, entry: Recc ) => {
+const checkAll = ( query: string, entry: ReccSearch ) => {
     const checks = [checkTitle,checkInfo,checkExcerpt,checkAuthor,checkSubregion,checkTags];
     let match: boolean|undefined = false;
     checks.forEach(check => match = match ? true : check(query,entry));

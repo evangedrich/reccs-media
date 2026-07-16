@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { syncopate } from "../fonts/fonts";
-import type { Recc } from "../types/recc";
+import type { ReccLite } from "../types/recc";
 import { subregions } from "../lib/subregions";
 import Link from "next/link";
 import Image from "next/image";
@@ -19,7 +19,7 @@ export default function CollectionShelfItems({
 }: {
     collections: Collection[],
     coll: Collection,
-    reccs: Recc[],
+    reccs: ReccLite[],
 }): React.ReactNode {
     const scrollRef = useRef<HTMLDivElement | null>(null);
     const [edges, setEdges] = useState<{ atStart: boolean; atEnd: boolean }>({ atStart: true, atEnd: false });

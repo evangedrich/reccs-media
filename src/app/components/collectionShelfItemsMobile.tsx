@@ -2,7 +2,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import LoadingIcon from "./loading";
-import type { Recc } from "../types/recc";
+import type { ReccLite } from "../types/recc";
 import { subregions } from "../lib/subregions";
 import { getTitle, checkFont } from "../functions/text";
 import { posterUrl } from "../lib/images";
@@ -16,7 +16,7 @@ export default function ShelfItemsMobile({
 }: {
     collections: Collection[],
     collID: string,
-    reccs: Recc[],
+    reccs: ReccLite[],
 }): React.ReactNode {
     const [isExpanded,setIsExpanded] = useState(false);
     const entries = reccs.filter(item => item.id.endsWith(collID));

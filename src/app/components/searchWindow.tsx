@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
-import { Recc } from "../types/recc";
+import { Recc, ReccSearch } from "../types/recc";
 import Link from "next/link";
 import Image from "next/image";
 import LoadingIcon from "./loading";
@@ -20,7 +20,7 @@ const parseFilters = (params: URLSearchParams) => {
     return f;
 };
 
-export default function SearchWindow ({ reccs }: { reccs: Recc[] }) {
+export default function SearchWindow ({ reccs }: { reccs: ReccSearch[] }) {
     const router = useRouter();
     const pathname = usePathname();
     const searchParams = useSearchParams();

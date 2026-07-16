@@ -1,6 +1,6 @@
 import { unstable_cache } from "next/cache";
 import { getCloudflareContext } from "@opennextjs/cloudflare";
-import type { Recc } from "../types/recc";
+import type { Recc, ReccLite, ReccSearch } from "../types/recc";
 
 type Row = {
   id: string;
@@ -155,3 +155,43 @@ function seededShuffle<T>(arr: T[], seed: number): T[] {
 // on a schedule without flickering as the user clicks between collections.
 export const getShuffledReccs = async (seed = 1): Promise<Recc[]> =>
   seededShuffle(await getReccs(), seed);
+
+// --- Slim projections (see types/recc.ts for why) -------------------------------
+// List pages must never serialize full Recc arrays into their payloads: with ~180
+// entries × ~5.6KB that's ~1MB per document AND per RSC prefetch, and the SSR
+// serialization cost is what pushed the Worker into 1102s under concurrent loads.
+
+// getTitle() reads meta.work / meta.anthology / meta.piece; everything else in
+// meta (notes, grades, tags…) is detail-page material and gets dropped.
+const TITLE_META_KEYS = ["work", "anthology", "piece"] as const;
+const pruneTitleMeta = (meta?: Record<string, unknown>): Record<string, unknown> | undefined => {
+  if (!meta) return undefined;
+  let out: Record<string, unknown> | undefined;
+  for (const k of TITLE_META_KEYS) {
+    if (k in meta) (out ??= {})[k] = meta[k];
+  }
+  return out;
+};
+
+export const toLite = (r: Recc): ReccLite => {
+  const lite: ReccLite = { id: r.id, title: r.title };
+  const meta = pruneTitleMeta(r.meta);
+  if (meta) lite.meta = meta;
+  return lite;
+};
+
+export const toSearchEntry = (r: Recc): ReccSearch => {
+  const s: ReccSearch = { ...toLite(r), group: r.group, info: r.info };
+  if (r.author) s.author = r.author;
+  if (r.intermediary) s.intermediary = r.intermediary;
+  if (r.excerpt) s.excerpt = r.excerpt;
+  if (r.tags) s.tags = r.tags;
+  if (r.genre) s.genre = r.genre;
+  return s;
+};
+
+export const getReccsLite = async (): Promise<ReccLite[]> => (await getReccs()).map(toLite);
+export const getShuffledReccsLite = async (seed = 1): Promise<ReccLite[]> =>
+  (await getShuffledReccs(seed)).map(toLite);
+export const getShuffledReccsSearch = async (seed = 1): Promise<ReccSearch[]> =>
+  (await getShuffledReccs(seed)).map(toSearchEntry);

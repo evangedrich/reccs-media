@@ -6,7 +6,7 @@ import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import { regions, subregions } from "@/app/lib/subregions";
 import { ContourMap, FullContourMap } from "./map";
 import { DynamicContourMap } from "./dynamicContourMap";
-import { Recc } from "../types/recc";
+import { ReccLite } from "../types/recc";
 import Link from "next/link";
 import Image from "next/image";
 import LoadingIcon from "./loading";
@@ -24,7 +24,7 @@ import { collections } from "../lib/collections";
 import { checkFont } from "../functions/text";
 import { notoEmoji } from "../fonts/fonts";
 
-export default function SubregionViewer({ regionID, reccs }: { regionID: string; reccs: Recc[]; }) {
+export default function SubregionViewer({ regionID, reccs }: { regionID: string; reccs: ReccLite[]; }) {
     const [showGlobe,setShowGlobe] = useState(true);
     const [mapMode,setMapMode] = useState(0);
     const router = useRouter();

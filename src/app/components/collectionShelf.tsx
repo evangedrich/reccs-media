@@ -7,7 +7,7 @@ import styles from "@/app/ui/main.module.css";
 import CollectionShelfItems from "./collectionShelfItems";
 import ShelfItemsMobile from "./collectionShelfItemsMobile";
 import { preParse } from "../functions/text";
-import type { Recc } from "../types/recc";
+import type { ReccLite } from "../types/recc";
 
 export const getColor = (id: string) => {
     if (id==="MTN") { return "group-hover:text-[var(--color-blue)]"; }
@@ -27,7 +27,7 @@ export default function CollectionShelf({
     reccs,
 }: { collections: {
     id: string, name: string, shortName: string, type: string, header: string, info?: string
-}[], reccs: Recc[] }): React.ReactNode {
+}[], reccs: ReccLite[] }): React.ReactNode {
     const router = useRouter();
     const pathname = usePathname();
     const searchParams = useSearchParams();

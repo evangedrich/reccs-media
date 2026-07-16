@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import dynamic from "next/dynamic";
 import Map, { HoverMap } from "@/app/components/map";
 import { subregions } from "@/app/lib/subregions";
-import type { Recc } from "../types/recc";
+import type { ReccLite } from "../types/recc";
 import { collections } from "../lib/collections";
 import { getTitle, preParse, checkFont } from "../functions/text";
 import styles from '@/app/ui/main.module.css';
@@ -23,7 +23,7 @@ import { useView } from "@/app/lib/viewContext";
 import { posterUrl } from "../lib/images";
 import SubrInfoWindow from "./subrInfoWindow";
 
-export default function Geoscheme({ reccs }: { reccs: Recc[] }) {
+export default function Geoscheme({ reccs }: { reccs: ReccLite[] }) {
     const router = useRouter();
     const pathname = usePathname();
     const searchParams = useSearchParams();
