@@ -32,12 +32,17 @@ jobs:
       - run: pnpm install --frozen-lockfile
 
       # next lint was removed in Next 16 — validate with the TS compiler + a real build.
-      # NEXT_PUBLIC_IMAGE_BASE is read from the committed .env.production, so no secrets needed here.
       - name: Typecheck
         run: pnpm exec tsc --noEmit
 
+      # `next build` runs initOpenNextCloudflareForDev({ remoteBindings: true }) from next.config.ts,
+      # which opens a wrangler remote-proxy session to D1. The SSG collection/region pages query
+      # `SELECT * FROM reccs` at build time, so the build needs authenticated remote D1 access.
       - name: Build
         run: pnpm build
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
 
   deploy:
     name: Deploy to Cloudflare Workers
