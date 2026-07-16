@@ -582,7 +582,25 @@ function ContourGlobeScene({ mapID, mapMode, currSubrID, setCurrSubrID, hovered,
     );
 }
 
+// Blue Marble is only rendered in satellite view (mapMode 2). Loading it lazily on the
+// first switch flashes a blank sphere while it fetches. Warm THREE's texture cache in the
+// background once the browser goes idle after the globe mounts, so satellite view is ready
+// on first entry. requestIdleCallback keeps it off the critical path (page-load priority);
+// a modest timeout guarantees it still warms shortly even if the page stays busy.
+function usePreloadSatellite() {
+    useEffect(() => {
+        const ric: (cb: () => void, opts?: { timeout: number }) => number =
+            typeof requestIdleCallback !== "undefined"
+                ? requestIdleCallback
+                : (cb) => window.setTimeout(cb, 200);
+        const cancel = typeof cancelIdleCallback !== "undefined" ? cancelIdleCallback : clearTimeout;
+        const id = ric(() => useTexture.preload("/textures/blueMarble.jpg"), { timeout: 2000 });
+        return () => cancel(id as number);
+    }, []);
+}
+
 export default function ContourGlobe(props: ContourGlobeProps) {
+    usePreloadSatellite();
     return (
         <div className="w-full h-full relative">
             <Canvas
