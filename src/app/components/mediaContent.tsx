@@ -79,7 +79,7 @@ export default function MediaContent({ entry }: { entry: any }) {
                     <p>{currAbbr[1]}</p>
                 </div>
             </div>
-            <div className={`max-sm:hidden ${abbrOpen ? "" : "hidden"} fixed bottom-0 right-0 text-[12px]`}>
+            <div className={`max-sm:hidden ${abbrOpen ? "" : "hidden"} fixed bottom-0 right-0 text-[12px] z-20`}>
                 <div className="m-4 max-w-90 bg-[var(--color-back)] border-2 border-[var(--color-front)]">
                     <div className="flex justify-between border-b-2">
                         <h3 className="py-1 px-2 italic">{currAbbr[0]}</h3>

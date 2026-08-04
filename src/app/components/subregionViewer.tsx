@@ -86,7 +86,7 @@ export default function SubregionViewer({ regionID, reccs }: { regionID: string;
                     <li 
                         key={`${subr.id}button`} 
                         onClick={() => setCurrSubrID(subr.id===currSubrID?null:subr.id)}
-                        className={`relative shrink-0 leading-[34px] px-4 ${i===subrSet.length-1?"":"border-r-2"} cursor-pointer hover:bg-[var(--color-mid)]/75 select-none`}
+                        className={`relative shrink-0 leading-[34px] px-4 ${i===subrSet.length-1?"":"border-r-2"} cursor-pointer hover:bg-[var(--color-mid)]/75 active:bg-[var(--color-mid)]/50 select-none`}
                     >
                         <span>
                             {subr.name.replace(" North "," N ").replace(" South "," S ").replace(" Southeast "," SE ")}
@@ -109,7 +109,7 @@ export default function SubregionViewer({ regionID, reccs }: { regionID: string;
                 </div>
                 <div className={`max-sm:grow max-sm:min-h-0 min-w-0 max-w-full overflow-y-scroll sm:absolute sm:top-0 sm:right-0 sm:bottom-0 sm:w-1/2 ease-in-out ${currSubrID ? "transition-transform duration-250 sm:translate-x-0 sm:border-l-2" : "sm:translate-x-full"}`}>
                     <div className={`${currSubrID ? "border-b-2" : ""} p-4`}>
-                        <h1 className={`max-w-200 text-5xl max-sm:text-4xl font-extrabold ${currSubrID?"mb-3":""}`}>{currSubrID ? currSubrName.replace(" America","\u00A0America") : currSubrName}</h1>
+                        <h1 className={`max-w-200 text-5xl max-sm:text-4xl font-extrabold ${currSubrID?"mb-3":""}`}>{currSubrID ? currSubrName.replace(" America","\u00A0America").replace("Maritime Southeast Asia","Maritime Southeast\u00A0Asia") : currSubrName}</h1>
                         <p className="max-w-200">{currSubrDesc}</p>
                     </div>
                     <div className={`relative ${entries.length>0?"border-b-2":""}`}>

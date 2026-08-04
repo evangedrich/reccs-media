@@ -22,14 +22,14 @@ const getGrouping = (entries: ReccSearch[], grouping: keyof Recc["group"]) => {
     // Define the exceptions for quick lookup
     const euweExceptions = new Set(["English", "French", "Spanish", "German", "France", "USA"]);
     const eueaExceptions = new Set(["Russian"]);
-    // Step 1: Accumulate items into Sets, grouped by prefix or the "EUWE" exception
+    // Step 1: Accumulate items into Sets, grouped by prefix or the "EUWE"/"EUEA" exception
     const groupedSets = entries.reduce((acc, entry) => {
         const prefix = entry.id.substring(0, 4);
         const raw = entry.group[grouping] as string;
         const items = raw?.includes(',') ? [raw.trim()] : raw?.split('/').map(item => item.trim());
 
         items?.forEach(item => {
-            // Check if the item matches our exceptions; if so, route it to "EUWE"
+            // Check if the item matches our exceptions; if so, route it to "EUWE" or "EUEA"
             const targetKey = euweExceptions.has(item) ? "EUWE" : eueaExceptions.has(item) ? "EUEA" : prefix;
             // Initialize a new Set for this target key if it doesn't exist yet
             if (!acc[targetKey]) {

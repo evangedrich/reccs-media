@@ -50,7 +50,7 @@ export default function Geoscheme({ reccs }: { reccs: ReccLite[] }) {
     const entries = reccs.filter(itm => itm.id.startsWith(currSubr));
     return (
         <div>
-            <div className={`${showGlobe ? "hidden max-sm:block" : "max-sm:hidden"} relative border-b-2 p-4`}>
+            <div className={`${showGlobe ? "hidden max-sm:block max-sm:w-full max-sm:aspect-2/1" : "max-sm:hidden"} relative border-b-2 p-4`}>
 				<div className="relative max-w-[900px] mx-auto">
 					<div className=""><Map /></div>
 					<div className={`${styles.hoverMap} absolute top-0 left-0 w-full`}>
@@ -59,7 +59,7 @@ export default function Geoscheme({ reccs }: { reccs: ReccLite[] }) {
                     <SubrInfoWindow currSubr={currSubr} setCurrSubr={setCurrSubr} hoveredSubr={hoveredSubr} />
 				</div>
 			</div>
-            <div className={`${showGlobe ? "max-sm:hidden" : "hidden max-sm:block"} p-4 border-b-2`}>
+            <div className={`${showGlobe ? "max-sm:hidden" : "hidden max-sm:block max-sm:w-full max-sm:aspect-square"} p-4 border-b-2`}>
 				<div className="relative max-w-[450px] mx-auto">
                     <div className="relative border-2 rounded-full aspect-square w-full overflow-hidden">
                         <Globe currSubr={currSubr} setCurrSubr={setCurrSubr} setHovered={setHovered} hovered={hovered} />

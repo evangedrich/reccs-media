@@ -2,7 +2,7 @@ export const categories: string[] = [
     "literature", "cinema", "theatre", "systems"
 ];
 
-export const collections: { id: string, name: string, shortName: string, type: string, header: string, info?: string }[] = [
+export const collections: { id: string, name: string, shortName: string, type: string, header: string, info?: string, links?: string[] }[] = [
     {
         id: "MTN",
         name: "Modern Traditional Novels",
@@ -65,7 +65,8 @@ export const collections: { id: string, name: string, shortName: string, type: s
         shortName: "Maths",
         type: "systems",
         header: "How many maths are there?",
-        info: "We know well enough that the Math we’re taught in schools is something like an anthology of different disciplines (e.g. algebra, geometry, calculus, etc.), yet we still tend to treat it as a monolithic, progressive course of study of something real in itself, obscuring its inherent practicality and heterogeneous origins. The system we’re taught in school has its roots in entirely distinct traditions, and that set of sources is of course limited, not absolute, in its ability to capture the complete extent of what the human mind can accomplish using quantitative tools.\n\nTo bring us closer to an accurate understanding of what the symbols and concepts of maths truly represent, I’ve assembled these mathematical texts and principles from distinct intellectual traditions. With manifold applications across science, engineering, and technology, and with profound beauty and elegance to spare, the ideas collected here offer different inroads into understanding the common patterns underpinning the nature of reality in all its complexity.\n\nNote, this collection is under construction. Please check back later for even more fascinating mathematical concepts."
+        info: "We know well enough that the Math we’re taught in schools is something like an anthology of different disciplines (e.g. Algebra, Geometry, Calculus, etc.), yet we still tend to treat it as a monolithic, progressive course of study of something real in itself, obscuring both its heterogeneous origins and inherent practicality. The system we’re taught in school has its roots in entirely distinct traditions, and that set of sources is of course limited, not absolute, in its ability to capture the complete extent of what the human mind can accomplish using quantitative tools.\n\nTo bring us closer to an accurate understanding of what the symbols and concepts of Maths truly represent, I’ve assembled these mathematical texts and principles from distinct intellectual traditions. With manifold applications across science, engineering, and technology, and with profound beauty and elegance to spare, the ideas collected here offer different inroads into understanding the common patterns underpinning the nature of reality, in all its complexity.\n\nNote, this collection is under construction. Please check back later for even more fascinating mathematical concepts.",
+        links: ["https://tribalcollegejournal.org/balance-and-harmony-ojibwe-mathematics-at-turtle-mountain-community-college/"]
     },
     {
         id: "UQC",

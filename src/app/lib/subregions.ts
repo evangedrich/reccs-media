@@ -14,7 +14,7 @@ export const regions: RegionType[] = [
     { id: "africa", color: "p", code: ["AF"] },
     { id: "americas", color: "b", code: ["AM"] },
     { id: "eurasia", color: "o", code: ["AS","EU"] },
-    { id: "oceania", color: "g", code: ["OC"] },
+    { id: "oceania", color: "g", code: ["OC"] }
 ];
 
 export const subregions: SubregionType[] = [
