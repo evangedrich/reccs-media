@@ -426,6 +426,10 @@ function ContourGlobeScene({ mapID, mapMode, currSubrID, setCurrSubrID, hovered,
     const invalidate = useThree(s => s.invalidate);
     const controlsRef = useRef<OrbitControlsImpl>(null);
     const [autoRotate, setAutoRotate] = useState(true);
+    // The "all" globe makes every region selectable, so a re-center-on-mapID can't frame
+    // them all — instead we auto-rotate and skip the re-center when nothing is selected.
+    // Every other mapID keeps the original centered, non-spinning behavior.
+    const autoRotateEnabled = AUTO_ROTATE_ENABLED || mapID === "all";
     const tweenRef = useRef<{ startAz: number; startPol: number; endAz: number; endPol: number; elapsedMs: number } | null>(null);
     const resumeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -448,7 +452,7 @@ function ContourGlobeScene({ mapID, mapMode, currSubrID, setCurrSubrID, hovered,
     useEffect(() => {
         const controls = controlsRef.current;
         if (!controls) return;
-        if (AUTO_ROTATE_ENABLED && currSubrID === null) { setAutoRotate(true); return; }
+        if (autoRotateEnabled && currSubrID === null) { setAutoRotate(true); return; }
         setAutoRotate(false);
         const target = currSubrID !== null
             ? contourRegionMeshes.find(r => r.id === currSubrID)?.centroid
@@ -465,7 +469,7 @@ function ContourGlobeScene({ mapID, mapMode, currSubrID, setCurrSubrID, hovered,
         while (dAz < -Math.PI) { normalizedEndAz += 2 * Math.PI; dAz = normalizedEndAz - startAz; }
         tweenRef.current = { startAz, startPol, endAz: normalizedEndAz, endPol, elapsedMs: 0 };
         invalidate(); // demand frameloop: start driving the focus animation
-    }, [currSubrID, mapID, mapCentroid, invalidate]);
+    }, [currSubrID, mapID, mapCentroid, invalidate, autoRotateEnabled]);
 
     useFrame((_, delta) => {
         const controls = controlsRef.current;
@@ -564,7 +568,7 @@ function ContourGlobeScene({ mapID, mapMode, currSubrID, setCurrSubrID, hovered,
                 // pinning the GPU at ~60fps forever. Off = the globe renders only on
                 // interaction/tween, then rests at 0 draw calls when idle.
                 enableDamping={false}
-                autoRotate={AUTO_ROTATE_ENABLED && autoRotate && currSubrID === null}
+                autoRotate={autoRotateEnabled && autoRotate && currSubrID === null}
                 autoRotateSpeed={AUTO_ROTATE_SPEED}
                 onStart={() => {
                     if (resumeTimerRef.current) clearTimeout(resumeTimerRef.current);
@@ -574,7 +578,7 @@ function ContourGlobeScene({ mapID, mapMode, currSubrID, setCurrSubrID, hovered,
                 onEnd={() => {
                     if (resumeTimerRef.current) clearTimeout(resumeTimerRef.current);
                     resumeTimerRef.current = setTimeout(() => {
-                        if (AUTO_ROTATE_ENABLED && currSubrID === null) setAutoRotate(true);
+                        if (autoRotateEnabled && currSubrID === null) setAutoRotate(true);
                     }, RESUME_DELAY_MS);
                 }}
             />
