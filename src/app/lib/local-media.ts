@@ -163,7 +163,7 @@ export const modTradNovels = [
     bioURL: "https://www.deepvellum.org/authors/richard-ali",
     textURL: "",
     ref: [
-      {id: "ali-2013", type: "book", title: "Ebamba: Mr. Fix-It", contributors: [{firstName: "Richard Ali", lastName: "A Mutu", role: "author"}], pubDate: {year: 2013}, publisher: "Mabiki", location: "Kinshasa", meta: {sortKey: "text", notes: "Significant modern Lingala novel."}},
+      { id: "ali-2013", type: "book", title: "Ebamba: Mr. Fix-It", contributors: [{firstName: "Richard Ali", lastName: "A Mutu", role: "author"}], pubDate: {year: 2013}, publisher: "Mabiki", location: "Kinshasa", meta: {sortKey: "text", notes: "Significant modern Lingala novel."}},
       { id: "deep-vellum-richard-ali", type: "webpage", title: "Richard Ali A Mutu biography", contributors: [ { firstName: "", lastName: "Deep Vellum Editorial Staff", role: "author" } ], pubDate: { year: 2026 }, url: "https://www.deepvellum.org/authors/richard-ali", publisher: "Deep Vellum Publishing", location: "Dallas, Texas / Nigeria", medium: "Author Profile / Digital Bio", meta: { notes: "A profile of the Nigerian author of 'City of Memories'. Ali is noted for his exploration of multi-ethnic identity and the historical tensions in Northern Nigeria. He is a member of the Jalada Africa collective and serves as a bridge between African literary production and international distribution through Deep Vellum.", grade: "C", tags: ["Richard Ali", "Nigeria", "African Literature", "Novelists", "Publishing", "Jalada Africa", "Third Generation", "Deep Vellum"] } }
     ]
   },
@@ -196,10 +196,38 @@ export const modTradNovels = [
     textURL: "",
     playlistURL: "https://open.spotify.com/playlist/6ysko7CH9qaUpESJnPsoM9",
     ref: [
-      {id: "fagunwa-1949", type: "book", title: "Ìrèké Oníbùdó", contributors: [{firstName: "D.O.", lastName: "Fágúnwà", role: "author"}], pubDate: {year: 1949}, publisher: "Nelson", location: "Edinburgh/Lagos", meta: {sortKey: "text", notes: "Yoruba classic."}},
+      { id: "fagunwa-1949", type: "book", title: "Ìrèké Oníbùdó", contributors: [{firstName: "D.O.", lastName: "Fágúnwà", role: "author"}], pubDate: {year: 1949}, publisher: "Nelson", location: "Edinburgh/Lagos", meta: {sortKey: "text", notes: "Yoruba classic."}},
       { id: "oyinsan-2020-fagunwa-ireke-onibudo", type: "thesis", title: "A Critical Introduction and Annotated Translation of D.O. Fagunwa's Ireke Onibudo", contributors: [ { firstName: "Olubunmi O.", lastName: "Oyinsan", role: "author" }, { firstName: "Daniel O.", lastName: "Fagunwa", role: "author" } ], pubDate: { year: 2020 }, url: "https://esploro.libs.uga.edu/esploro/outputs/doctoral/A-CRITICAL-INTRODUCTION-AND-ANNOTATED-TRANSLATION/9949366061602959", publisher: "University of Georgia (UGA) Esploro", location: "Athens, Georgia / Nigeria", medium: "Doctoral Dissertation", meta: { notes: "A comprehensive translation of Fagunwa's second novel (originally published in 1949). The dissertation analyzes Fagunwa’s unique use of the 'Autobiographical' mode within the Yoruba oral tradition, where the protagonist narrates his life's trials and spiritual maturation. It serves as a vital linguistic bridge for scholars of the West African novel.", grade: "A", tags: ["Yoruba", "D.O. Fagunwa", "Ireke Onibudo", "Translation", "Nigerian Literature", "African Aesthetics", "Allegory", "Doctoral Thesis"] } },
       { id: "asc-leiden-2021-fagunwa", type: "webpage", title: "Library Weekly: Daniel O. Fagunwa", contributors: [ { firstName: "Gerard C.", lastName: "van de Bruinhorst", role: "author/librarian" }, { firstName: "Daniel O.", lastName: "Fagunwa", role: "subject" } ], pubDate: { year: 2021, month: 10 }, url: "https://www.ascleiden.nl/content/library-weekly/daniel-o-fagunwa", publisher: "African Studies Centre Leiden", location: "Leiden, Netherlands / Nigeria", medium: "Digital Library Profile", meta: { notes: "A biographical and bibliographical summary of D.O. Fagunwa. It highlights his 1938 masterpiece 'Ogboju Ode ninu Igbo Irunmale' (The Forest of a Thousand Daemons), which was the first full-length novel written in Yoruba. Fagunwa is credited with standardizing Yoruba narrative prose by weaving together folklore, Christian allegory, and traditional hunter stories.", grade: "C", tags: ["Yoruba", "D.O. Fagunwa", "Nigeria", "Oral Tradition", "Igbo Irunmale", "Wole Soyinka", "African Literature", "Vernacular Prose"] } }
     ]
+  },
+  {
+    id: "AFNCMTN",
+    title: {original: "Alhaki Kuykuyo Ne Uban Gidansa Yakan Bi", translation: "Sin is a Puppy That Follows You Home"},
+    author: "Balaraba Ramat Yakubu",
+    group: {people: "Hausa", language: "Hausa", location: "Nigeria"},
+    info: [
+      `Beginning in the late 1980s, northern Nigeria saw a boom in popular fiction written in the Hausa language. Known as <i>littattafan soyayya</i> (“love literature”), the books are often inspired by Hindi films—which have been hugely popular among Hausa speakers for decades—and are primarily written by women. They have sparked a craze among young adult readers as well as a backlash from government censors.`,
+      `<i>Sin Is a Puppy That Follows You Home</i> is an Islamic soap opera complete with polygamous households, virtuous women, scheming harlots, and black magic. It’s the first full-length novel translated from Hausa to English.`,
+      `<b>BALARABA RAMAT YAKUBU</b> published her first novel in 1987, and has been one of the bestselling Hausa authors ever since. She has also written, directed, and produced a number of films for Kannywood, the Hausa-langauge film industry based in Kano, Nigeria.`
+    ],
+    excerpt: [
+      `Alhaji Abdu was a small business owner with a stall at Sabon Gari Market. He sold fabrics, cotton prints, and headscarves. Though he rarely had enough stock to fill the stall, the merchandise still amounted to about one hundred thousand naira. Some of his merchandise was received from a supplier, but he owned about one-third of it himself. He was very well known in the market, not least because his stall was always filled with female customers, with whom he flirted shamelessly.`,
+      `He was married with children, but his wife, Rabi, had no control over him. He was constantly after other women. At least Rabi could console herself with the fact that he didn’t marry and divorce his women friends at will; only once, after they had been married ten years, had he married a second wife. That woman had borne him a daughter, but had later left him, abandoning the child, because he would not stop chasing women.`,
+      `Alhaji Abdu had now been married to Rabi for twenty-two years. She had borne him nine children: six boys and three girls. So far, these children had kept her from deserting his house—but that seemed fated to happen eventually, for he treated her as badly as it is possible for a man to treat his wife. She had suffered for it, as was plain for all to see; she had an emaciated look, and went about in clothes that were hardly better than rags.`,
+      `They lived in the <i>bakin kasuwa</i>, the district of Kano city around the circular market, and shared their walls with neighbours who could hear everything that was said in the house—a fact that the neighbours were surely not very happy about. Their clothesline was made from bits of cloth tied together, and an open drain ran through the middle of the house. In the courtyard, where the cooking was done, the smoke that billowed out from the wood stove had blackened all the walls. Rabi cooked in the courtyard because her husband had filled the kitchen with junk, and insisted on keeping it locked. In the rainy season she had no alternative but to cook in the second entranceway. She was terribly burdened with work, and was always found either holding a broom, or doing the dishes at the tap, or cooking food at the hearth to sell.`,
+      `Alhaji Abdu was never much help. He never even did as much as buy them ingredients for soup. He would simply distribute fifty kobo each to Rabi and the children and let them fend for themselves for breakfast and lunch. But to his mother, who lived with them, he would give one whole naira. He’d also give Rabi five naira to buy meat, Maggi cubes, salt and soup ingredients for the evening meal. There was plenty of corn, at least; whenever that ran out, he would buy another sack.`,
+      `But Alhaji Abdu had no idea whether the food his wife cooked was tasty or not, because he always ate out at hotels. He rarely returned home before midnight. He never even had breakfast at home in the mornings, let alone lunch. His room always remained locked through the day until he came back home. Once in a while, when it became untidy, he would call one of his children to sweep it for him; otherwise, no one was allowed inside.`,
+      `His wife used to watch him put on expensive clothes sewed from brocade, and spray himself with pleasant perfumes, the scent of which would linger in the house long after he had gone out. Yet he never bothered to buy simple soap and detergent for her and the children. He did buy new clothes for the boys for the festivals of Sallah Karama and Sallah Babba; sometimes on a sudden whim he would include shoes and caps as well. As for the girls, they would each get a six-yard <i>atamfa</i> cotton print with a matching veil—but not the money to cover the tailoring charges. Rabi and Alhaji Abdu’s mother would get the same. These were the only times that the members of the family ever felt any joy, for they would receive nothing at all from him until the following year.`,
+      `Alhaji Abdu, on the other hand, never kept any one set of clothes longer than three months. In the morning he would go out and spend five naira on gourmet dishes with boiled eggs, and for lunch there was a food-seller woman who knew how to cook to his taste. For three naira, she would send spaghetti with yams and meat over to his fabric stall, with a bottled soft drink to wash the food down. Sometimes, he would buy five naira worth of roast tripe from a passing seller, and feast on that as well. Then, at night, he would eat at the Kano Tourist Hotel, spending another four or five naira. After the meal, he would look for somewhere to relax. If he had a woman friend lined up, he would go to her place. Otherwise he would start looking for a new catch, and if he got lucky, he would spend the night with her. Only if all his efforts to secure a woman for the night failed would he end up back with Rabi, who often went up to three months at a stretch without spending a single night with her husband. Even when Alhaji Abdu did come home, Rabi often declined to sleep with him, because she thought he wouldn’t enjoy being with her.`,
+      `It was this attitude of Alhaji Abdu towards his family that forced his wife to get into the food-selling business. In the morning, she would prepare <i>koko</i> and fry <i>kosai</i>; aside from what was sold, she would keep some for her and her children to eat as well. At lunchtime, she would cook rice and yams, and make <i>gurasa</i>, and they would eat some of that too. At sunset, she would cook <i>tuwo</i> with <i>miyan kuka</i>. All this cooking gave her some distraction from her miserable home life; and besides the profits generated from the business, she was able to feed her children.`,
+      `Five of her children attended primary school, one was in secondary school, and the youngest two stayed at home. She cared for them all, including the eldest of the nine, her son Kabiru, who had just finished secondary school and was looking for a job. She had bought their school books and uniforms and paid all their school fees, slowly selling off her belongings—including the enamelware <i>kwalla</i>, <i>fanteka</i>, and serving dishes that her family had given her when she was married—until her room became bare. In the past, she had always managed to keep a sack of rice and a sack of corn in store, but lately it seemed that all the proceeds from her daily trade were spent on the kids.`
+    ],
+    infoURL: "",
+    bioURL: "",
+    textURL: "",
+    coordinates: { x: 8.516667, y: 12, name: "Kano City"},
+    ref: []
   },
   {
     id: "AMNOMTN",
@@ -748,6 +776,73 @@ export const modTradNovels = [
     playlistURL: "https://open.spotify.com/playlist/39VuUqOk9cG2P3uZlPFy3F",
     ref: [
       {id: "bama-1992", type: "book", title: "கருக்கு (Karukku)", contributors: [{lastName: "Bama", role: "author"}], url: "https://www.scribd.com/document/485947405/Karukku-by-Bama-pdf", pubDate: {year: 1992}, publisher: "Ideas", location: "Madurai", meta: {sortKey: "text"}}
+    ]
+  },
+  {
+    id: "ASSWMTN",
+    title: {original: "نازک", transliteration: "Nazuk"},
+    author: "Syed Hashmi",
+    group: {people: "Baloch", language: "Balochi", location: "Pakistan"},
+    info: [
+      `Set in the coastal region of Makran, the novel follows its central character, Nazuk. After three consecutive husbands die while out fishing, she is labelled a “husband-killer.” When she agrees to marry again, she sets a condition: her future husband must not go to sea.`,
+      `<b>SYED ZAHOOR SHAH HASHMI</b> was a poet, scholar, writer, and philosopher who wrote in Balochi, Urdu, Persian, and Arabic. His works include poetry, novels, short stories, translations, and dictionaries.`
+    ],
+    excerpt: [
+      `Early in the night, the wind began to sweep across the land, growing stronger after the moon rose. As the moon climbed higher, its pale light seemed to quicken the wind. By the third cockcrow, the fishermen came to call Captain Mereen.`,
+      `At first, no one stirred. But when they called again, Nazuk woke with a start and sat up, listening. She recognised the voices of members of Mereen’s crew and remained quiet. She listened to the wind whistling through the straw walls, the restless sea and the roar of the rising tides.`,
+      `After a moment, a third call came. This time, she gently woke her husband, careful not to startle him.`,
+      `Mereen stirred, yawned and said, “Nazal, I’m awake. How many times have they called?”`,
+      `“Twice… no, they’ve called twice already,” Nazuk replied, still a little dazed.`,
+      `“Nazal, what’s the matter? Are you still half asleep? I slept late last night, that’s why I didn’t wake sooner,” he said.`,
+      `“The wind has been blowing since yesterday afternoon. It’s getting stronger,” she said anxiously.`,
+      `“Nazal, this wind has been blowing since last night. It’s not the usual daytime sea breeze. Don’t confuse the two.”`,
+      `“I know they’re different, but I fear a storm is coming,” she said quietly.`,
+      `As he put on his fishing vest, Nazuk listened to the rising wind. It seemed stronger with every passing moment.`,
+      `“If it’s this fierce here, how strong must it be out at sea, Hoduk’s father?” she asked.`,
+      `A moment later, she pleaded, “Look at the wind. It’s too strong. Don’t go out today.”`,
+      `He said nothing. Picking up his lunch basket, he stepped outside.`,
+      `The fishermen called out to him, “Captain, did you oversleep? We called three times before Nazuk answered.”`,
+      `He didn’t reply. He simply looked up at the clear sky. The others followed his gaze without thinking.`,
+      `After a pause, he turned and asked, “What do you think of the wind today?”`,
+      `They glanced at one another, but no one spoke.`,
+      `He pressed them, “It’s strong, isn’t it?”`,
+      `“Yes, Captain,” they answered together.`,
+      `“Your hearts are as weak as a woman’s,” he said sharply, then strode ahead. The others followed.`,
+      `For a while, only their footsteps could be heard, along with the faint clinks of the lead weights tied to the net slung over one man’s shoulder. The wind struck their faces in hard gusts, drowning out every other sound.`,
+      `After some distance, they began to speak again.`,
+      `After they left, Nazuk’s heart began to race. She strained to catch their voices, but the wind swallowed their words, leaving only faint murmurs behind. A sudden gust rushed through the doorway, lifting the corner of the mat and slamming it back down.`,
+      `The noise startled Mahal, who opened her eyes and saw her mother standing at the door.`,
+      `“Mother,” she called softly.`,
+      `“Yes, my child. You’re awake?” Nazuk asked.`,
+      `“Yes.”`,
+      `“Your father has gone out to sea in this wind. I tried to stop him, but he wouldn’t listen. You know how he is, as stubborn as ever. I don’t know why, but my heart feels uneasy tonight.”`,
+      `After a pause, she said, “Mahal, are you listening?”`,
+      `“Yes, Mother.”`,
+      `“Take care of Peral and Hoduk. I will go to the shore and return soon. The sea is too restless tonight.”`,
+      `Without waiting for an answer, Nazuk stepped outside.`,
+      `Under the pale moonlight, the sea crept over the grey sand, each wave pushing closer to the dry edge of the shore.`,
+      `Nazuk stood there for a long time, staring out. She looked from one side to the other, expecting to see empty waters. Surely no one would sail on a night like this, she thought.`,
+      `But she was wrong. Most of the boats had already gone out.`,
+      `For fishermen, storms are a risk they learn to live with. A few days earlier, after many unsuccessful trips, the boats had returned with heavy catches. Now, no one wanted to miss their chance.`,
+      `Nazuk murmured to herself, “My heart is weak and fearful. If this wind were truly dangerous, these boats wouldn’t have gone out.”`,
+      `With that thought, she steadied herself. Perhaps the wind wasn’t a warning but a sign of better days. She remembered a morning when Captain Shambok had come for breakfast. The wind had been just as strong then, yet he had shown no concern. His own son had gone to sea, and still he remained calm. Mereen had explained that such winds blew away from the shore and weakened farther out at sea. Later, the fishermen had returned and confirmed it. The memory brought her a small measure of comfort.`,
+      `She didn’t realise how long she had been standing there until the call for the dawn prayer rose in the air. Startled, she adjusted her goshan, pulling one side over her head and letting the other fall over her shoulder. The keys tied to its edge jingled softly as she turned and walked home.`,
+      `About an hour later, the children awoke. Daylight had spread across the ground. Nazuk went to Sapoori’s and bought six sorghum breads and four paisa worth of boiled broad beans, while Peral brought three cups of tea from Laloo’s hotel. Mahal, Peral and little Hoduk sat together and ate their breakfast.`,
+      `Suddenly, the light outside dimmed. Nazuk paused, then stepped out. A cloud had covered the sun.`,
+      `Turning back, she called, “Mahal, my daughter, look after your brothers. I’ll be back from the shore soon.”`,
+      `Mahal stood confused, unsure what troubled her mother or how to respond. As Nazuk turned to leave, Hoduk ran after her and clutched at the edge of her shirt. She lifted him into her arms and walked towards the sea, holding him close. He babbled softly along the way, but Nazuk’s thoughts were far away. When they reached the shore, she set him down, and he began to play in the sand.`,
+      `The clouds had thickened, spreading across the horizon. Foam flickered over the waves like white flecks against a mountainside, and the sea reflected the sky, scattered with pale streaks. The sight filled Nazuk with unease, as though a storm were gathering not just in the sky but within her as well.`,
+      `The fishermen who had gone out the night before were now returning. The strong wind pulled hard at their sails, making the boats seem to glide through the air. For the fishermen, such winds brought a strange thrill. They urged one another on, racing to see who would reach the shore first. Out at sea, they feared little. But on land, their families waited with anxious hearts.`,
+      `Women and children stood along the shore, searching the horizon. When a familiar boat appeared, relief spread across their faces. But those who came in last brought troubling news. The wind had grown fiercer farther out, rain had begun to fall, and in some cases the gale had torn nets away completely.`,
+      `As more boats reached the shore, the crowd began to thin, only to gather again moments later. Families of those still out at sea, especially the line-fishermen, stood waiting with a restless mix of hope and fear, their eyes fixed on the horizon. Beyond the crashing waves and foaming tide, nothing could be seen. In such moments, no one had the strength to think of another’s grief. It wasn’t selfishness, but the weight of fear.`,
+      `The wind grew stronger, and the strain on every face deepened. They waited, suspended between hope and dread, for their loved ones to return from the vast, unforgiving sea.`
+    ],
+    infoURL: "",
+    bioURL: "https://en.wikipedia.org/wiki/Syed_Zahoor_Shah_Hashmi",
+    textURL: "",
+    playlistURL: "",
+    ref: [
+      {id: "hashmi-1976", type: "book", title: "نازک (Nazuk)", contributors: [{firstName: "Syed", lastName: "Hashmi", role: "author"}, {firstName: "Fazal", lastName: "Baloch", role: "translator"}], url: "", pubDate: {year: 1976}, publisher: "Self-published", location: "Karachi", meta: {sortKey: "text"}}
     ]
   },
   {
@@ -1664,7 +1759,7 @@ export const stirrPoetry = [
     ]
   },
   {
-    id: "ASWESTP",
+    id: "ASSWSTP",
     title: {original: "دیوان حافظ", transliteration: "Dīvān-i Ḥāfiẓ", translation: "Collected Poems of Hāfez"},
     author: "Ḥāfeẓ",
     group: {people: "Persian", language: "Persian", religion: "Sufism", location: "Shiraz, IR"},
@@ -1689,6 +1784,22 @@ export const stirrPoetry = [
     ref: [
       { id: "avery-heathstubbs-1952-hafiz-thirty-poems", type: "book", title: "Thirty Poems by Hafiz of Shiraz", contributors: [ { firstName: "Peter", lastName: "Avery", role: "translator" }, { firstName: "John", lastName: "Heath-Stubbs", role: "translator" }, { firstName: "Hafiz", lastName: "Shirazi", role: "author" } ], pubDate: { year: 1952 }, url: "https://ia803208.us.archive.org/13/items/HafizOfShirazThirtyPoems/Hafiz-of-shiraz-%20Thirty%20poems_text.pdf#page=37", publisher: "John Murray", location: "London, UK", medium: "Print (First Edition) / Wisdom of the East Series", meta: { notes: "A refined selection of ghazals from the Divan. The translation emphasizes the 'disjointed' nature of the Persian ghazal, where each couplet contains a complete thought. The notes explore the dual-coded nature of Hafiz’s language—simultaneously erotic and divine.", grade: "C", tags: ["Hafiz", "Persian Poetry", "Ghazal", "Shiraz", "Sufism", "Translation", "Literary Criticism"] } }
     ]
+  },
+  {
+    id: "ASWESTP",
+    title: { original: "𒊩𒌆𒈨𒄭𒊏", transliteration: "Nin-me-šara", translation: "Queen of Innumerable Divine Powers" },
+    author: "Enheduanna",
+    group: {people: "Akkadian", language: "Sumerian", religion: "Mesopotamian religion", location: "Iraq"},
+    info: [
+      ``
+    ],
+    excerpt: [
+      ``
+    ],
+    infoURL: "",
+    mediaURL: [""],
+    textURL: "",
+    ref: []
   },
   {
     id: "ASCESTP",
@@ -1764,6 +1875,7 @@ export const stirrPoetry = [
     infoURL: "https://en.wikipedia.org/wiki/Symeon_the_New_Theologian",
     mediaURL: ["https://youtu.be/Y3g2AJk-lwU"],
     textURL: "",
+    coordinates: { x: 32.854722, y: 39.928889, name: "Ankara" },
     ref: [
       { id: "symeon-1980-discourses-paulist", type: "book", title: "The Discourses", containerTitle: "The Classics of Western Spirituality", contributors: [ { firstName: "Symeon the New", lastName: "Theologian", role: "author" }, { firstName: "C.J.", lastName: "de Catanzaro", role: "translator" }, { firstName: "George A.", lastName: "Maloney", role: "introduction" } ], url: "https://godaftergod.wordpress.com/2012/03/17/hymn-25-symeon-the-new-theologian/", pubDate: { year: 1980 }, publisher: "Paulist Press", location: "New York, NY", medium: "Print (Hardcover/Paperback)", meta: { notes: "A primary source for Hesychastic theology. Symeon's 'Discourses' (Katecheseis) focus on the necessity of tears, repentance, and the vision of the Uncreated Light. This volume is essential for understanding the transition of Eastern monastic spirituality into the later Palamite synthesis.", grade: "A", tags: ["Byzantine", "Mysticism", "Hesychasm", "Symeon the New Theologian", "Orthodox", "Constantinople", "Patristics"] } },
       { id: "symeon-1976-hymns-dimension", type: "book", title: "Hymns of Divine Love", contributors: [ { firstName: "St. Symeon the New", lastName: "Theologian", role: "author" }, { firstName: "George A.", lastName: "Maloney", role: "translator" } ], pubDate: { year: 1976 }, publisher: "Dimension Books", location: "Denville, NJ", medium: "Print (Octavo)", meta: { notes: "A collection of 58 hymns. These poems are radical for their time, emphasizing the physical sensation of the Divine Light and the emotional 'baptism of tears.' The octavo format of this edition is a staple of mid-century Catholic/Orthodox mystical scholarship in America.", grade: "A", tags: ["Byzantine", "Poetry", "Mysticism", "Hesychasm", "St. Symeon", "Eastern Orthodoxy", "Divine Light", "Erotikon"] } }
@@ -1996,24 +2108,6 @@ export const cultFeatFilms = [
     color: "#8d796e"
   },
   {
-    id: "AFNOCFF1",
-    title: {original: "Mai Martaba", translation: "Your Highness"},
-    year: 2024,
-    group: {people: "Hausa", language: "Hausa", location: "Nigeria"},
-    info: [
-      `Jallaba’s trade boom crumbles due to internal conflict among the ruling clans. A new dynasty promises stability, shattered by a king’s choice of heir—his daughter. Princess, rival, and a deposed clan clash for the throne. Who will rule—and can Jallaba survive?`,
-      `Dir <b>PRINCE DANIEL ABOKI</b> is a writer, producer, and director. He is well-known in Nigeria for his work in radio broadcast journalism, where he’s earned the nickname Aboki, meaning “friend” in Hausa.`
-    ],
-    infoURL: "https://thefilmverdict.com/an-interview-with-prince-daniel/",
-    watch: [""],
-    trailer: "https://youtu.be/3AEZfRd4fgA",
-    coordinates: {x: 8.3177, y: 13.0364, name: "Daura"},
-    runtime: 86,
-    genre: ["Drama", "Adventure"],
-    tags: [""],
-    color: "#45201e"
-  },
-  {
     id: "AFNECFF",
     title: { original: "ላምብ", transliteration: "Lamibi", translation: "Lamb" },
     year: 2015,
@@ -2128,6 +2222,42 @@ export const cultFeatFilms = [
     genre: ["Drama","Romance","LGBTQ+"],
     tags: ["queer"],
     color: "#62958C"
+  },
+  {
+    id: "AFNCCFF",
+    title: {original: "Zin’naariyâ", translation: "The Wedding Ring"},
+    year: 2016,
+    group: {people: "Songhai", language: "Zarma/Songhai/Hausa/Fula", location: "Niger"},
+    info: [
+      `A student who hails from a prestigious aristocratic family, Tiyaa returns home to the Sultanate of Damagaran, in Niger, for the winter holidays. She is expecting the young man whom she met at university in France—who also comes from a wealthy family, not far from where she grew up—to make a formal proposal of marriage. While waiting for the handsome suitor, she shares her secret with her friends, learning the other women’s stories of love, marriage, and divorce, painting a compelling and revealing portrait of relationships in Sahelian society.`,
+      `Dir <b>RAHMATOU KEÏTA</b> is a filmmaker of Songhai, Fula, and Mandinka descent who studied Philosophy and Linguistics in Paris, married a French journalist, and directs and produces films. She cast her daughter Magaajyia Silberfeld as the lead in <i>Zin’naariyâ</i>.`
+    ],
+    infoURL: "",
+    watch: [""],
+    trailer: "https://youtu.be/50uN8xn6fJE",
+    coordinates: {x: 8.9836, y: 13.8014, name: "Zinder"},
+    runtime: 96,
+    genre: ["Drama","Romance"],
+    tags: [""],
+    color: "#2888a9"
+  },
+  {
+    id: "AFNCCFF1",
+    title: {original: "Mai Martaba", translation: "Your Highness"},
+    year: 2024,
+    group: {people: "Hausa", language: "Hausa", location: "Nigeria"},
+    info: [
+      `Jallaba’s trade boom crumbles due to internal conflict among the ruling clans. A new dynasty promises stability, shattered by a king’s choice of heir—his daughter. Princess, rival, and a deposed clan clash for the throne. Who will rule—and can Jallaba survive?`,
+      `Dir <b>PRINCE DANIEL ABOKI</b> is a writer, producer, and director. He is well-known in Nigeria for his work in radio broadcast journalism, where he’s earned the nickname Aboki, meaning “friend” in Hausa.`
+    ],
+    infoURL: "https://thefilmverdict.com/an-interview-with-prince-daniel/",
+    watch: [""],
+    trailer: "https://youtu.be/3AEZfRd4fgA",
+    coordinates: {x: 8.3177, y: 13.0364, name: "Daura"},
+    runtime: 86,
+    genre: ["Drama", "Adventure"],
+    tags: [""],
+    color: "#45201e"
   },
   {
     id: "AMNOCFF",
@@ -3399,7 +3529,7 @@ export const presMusDrama = [
     textURL: [""]
   },
   {
-    id: "ASWEPMD",
+    id: "ASSWPMD",
     title: {original: "تعزیه", transliteration: "Ta‘zīeh"},
     century: 17,
     group: {people: "Persian", language: "Persian", location: "Iran"},
@@ -3417,6 +3547,21 @@ export const presMusDrama = [
     ref: [
       { id: "taghvai-2005", type: "video", title: "Dress Rehearsal: The Brave Hurr's Ta'zieh", shortTitle: "Dress Rehearsal", contributors: [ { firstName: "Nasser", lastName: "Taghvai", role: "director" } ], pubDate: { year: 2005 }, publisher: "Nasser Taghvai Productions", location: "Iran", medium: "Documentary Film", meta: { notes: "A study of the Ta'zieh of 'Hurr ibn Yazid al-Riyahi.' Focuses on the ritualistic aspects, the distinction between 'shabih-khani' (singing roles), and the interaction between performers and the community.", grade: "A", sortKey: "text", tags: ["Iranian Cinema", "Ta'zieh", "Persian Culture", "Ritual Theater"] } }
     ]
+  },
+  {
+    id: "ASWEPMD",
+    title: {original: "رِغزِيت مَيدَانِي", transliteration: "Reǧzīt Maydānī", translation: "Collective Chant"},
+    century: 6,
+    group: {people: "Mahri", language: "Mehri", location: "Yemen"},
+    info: [
+      `text`
+    ],
+    excerpt: [``],
+    infoURL: "",
+    mediaURL: [""],
+    textURL: "",
+    coordinates: { x: 51.7333, y: 16.8000, name: "Mahra"},
+    ref: []
   },
   {
     id: "ASCEPMD",

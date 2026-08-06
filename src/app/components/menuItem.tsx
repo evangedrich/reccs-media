@@ -25,11 +25,11 @@ export default function MenuItem({ name, tier1 }: { name: string, tier1: { id: s
                 <div className="absolute -top-[5.5px] sm:left-1/2 h-2 w-2 sm:-translate-x-1/2 rotate-45 border-t-2 border-l-2 border-[var(--color-front)] bg-[var(--color-back)] max-sm:hidden"></div>
                 {tier1.map((itm,i) => (
                     <div key={`${itm.id}_nav`} onMouseLeave={() => setSubOpen(new Array(tier1.length).fill(false))}>
-                        <span className="flex sm:justify-center items-center justify-start max-sm:p-1">
-                            <button className="mr-[4px] max-sm:mr-2 cursor-pointer h-3 w-3 pb-[2px] leading-1 hover:bg-[var(--color-front)] hover:text-[var(--color-back)] active:opacity-80" onClick={() => setSubOpen(prevState => prevState.map((curr,k) => k===i ? !curr : curr))}>{subOpen[i] ? "-" : "+"}</button>
+                        <span className={`flex sm:justify-center items-center justify-start max-sm:p-1 ${isCat||itm.id==="all"?"":"pr-4"}`}>
+                            {itm.id!=="all"?<button className="mr-[4px] max-sm:mr-2 cursor-pointer h-3 w-3 pb-[2px] leading-1 hover:bg-[var(--color-front)] hover:text-[var(--color-back)] active:opacity-80" onClick={() => setSubOpen(prevState => prevState.map((curr,k) => k===i ? !curr : curr))}>{subOpen[i] ? "-" : "+"}</button>:<></>}
                             <span onClick={() => setMainOpen(false)}><ColorLink
                                 to={isCat?`/collections/${itm.id}`:`/regions/${itm.id}`}
-                                text={itm.id}
+                                text={itm.id!=="all"?itm.id:"all regions"}
                                 c={itm.color}
                                 caps={true}
                                 //bold={(pathname===`/${itm.id}` || collections.filter(coll => coll.type===itm.id).map(coll => coll.id).includes(pathname.slice(5,8)) )}
