@@ -71,7 +71,7 @@ export default async function LandingPage() {
         [String(reccs.length), "entries"],
         [String(refCount),     "citations"],
         ["10",                 "calendar settings"],
-        ["2",                  "render modes"],
+        ["3",                  "research modes"],
     ];
     return (
         <div>

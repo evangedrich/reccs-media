@@ -25,11 +25,18 @@ export const isMongol = (str: string): boolean => {
 export const checkFont = (str: string): string => {
     const fontClass =
         (/\p{Script=Malayalam}/u.test(str)) ? "font-malayalam"
-        : (/\p{Script=Tibetan}/u.test(str)) ? "font-tibetan text-[0.9em]"
+        : (/\p{Script=Tibetan}/u.test(str)) ? "font-tibetan"
         : (/\p{Script=Canadian_Aboriginal}/u.test(str)) ? "font-canadian"
         : (/\p{Script=Arabic}/u.test(str)) ? "font-arabic"
         : (/\p{Script=Tamil}/u.test(str)) ? "font-tamil"
         : (/\p{Script=Telugu}/u.test(str)) ? "font-telugu"
+        : (/\p{Script=Ethiopic}/u.test(str)) ? "font-ethiopic"
+        : (/\p{Script=Devanagari}/u.test(str)) ? "font-devanagari"
+        : (/\p{Script=Tifinagh}/u.test(str)) ? "font-tifinagh"
+        : (/\p{Script=Bamum}/u.test(str)) ? "font-bamum"
+        : (/\p{Script=Thai}/u.test(str)) ? "font-thai"
+        : (/\p{Script=Khmer}/u.test(str)) ? "font-khmer"
+        : (/\p{Script=Balinese}/u.test(str)) ? "font-balinese"
         : "";
     return fontClass;
 };

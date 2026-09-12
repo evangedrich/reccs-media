@@ -102,31 +102,92 @@ export type ContourRegionMesh = {
     centroid: V3;            // unit vector, region center (for rotate-to-face)
 };
 
+// Shoelace area in pixel space; sign encodes winding, magnitude ranks nesting.
+function signedArea(ring: P2[]): number {
+    let a = 0;
+    for (let i = 0; i < ring.length; i++) {
+        const [x1, y1] = ring[i], [x2, y2] = ring[(i + 1) % ring.length];
+        a += x1 * y2 - x2 * y1;
+    }
+    return a / 2;
+}
+
+// Ray-cast point-in-polygon in pixel space, used to detect which rings nest inside
+// which (a ring drawn inside another is a lake/hole, not a separate island).
+function pointInRing(pt: P2, ring: P2[]): boolean {
+    let inside = false;
+    for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+        const [xi, yi] = ring[i], [xj, yj] = ring[j];
+        if ((yi > pt[1]) !== (yj > pt[1]) && pt[0] < ((xj - xi) * (pt[1] - yi)) / (yj - yi) + xi) inside = !inside;
+    }
+    return inside;
+}
+
+type ClassifiedRing = { px: P2[]; ll: P2[]; unit: V3[]; area: number; hole: boolean; parent: number };
+
+// Classify a region's rings the way the flat map's SVG fill-rule does: a ring nested
+// inside an odd number of others is a hole (great lakes), otherwise it is a solid
+// outer ring (continent or island). Each hole records its immediate container so it can
+// be triangulated together with that outer ring, leaving the cutout empty.
+function classifyRings(rings: { px: P2[]; ll: P2[]; unit: V3[] }[]): ClassifiedRing[] {
+    return rings.map((r, i) => {
+        const area = signedArea(r.px);
+        const containers: number[] = [];
+        for (let j = 0; j < rings.length; j++) {
+            if (j === i) continue;
+            if (Math.abs(signedArea(rings[j].px)) > Math.abs(area) && pointInRing(r.px[0], rings[j].px)) containers.push(j);
+        }
+        // Immediate container = the smallest-area (innermost) ring enclosing this one.
+        let parent = -1;
+        for (const j of containers) if (parent < 0 || Math.abs(signedArea(rings[j].px)) < Math.abs(signedArea(rings[parent].px))) parent = j;
+        return { ...r, area, hole: containers.length % 2 === 1, parent };
+    });
+}
+
 function build(): ContourRegionMesh[] {
     return allContours.map(c => {
         const fill: number[] = [];
         const outline: number[] = [];
         let cx = 0, cy = 0, cz = 0;
-        for (const ring of parseContourRings(c.d)) {
-            if (ring.length < 2) continue;
-            const ll = ring.map(([px, py]) => contourPixelToLonLat(px, py));
-            const unit = ll.map(([lon, lat]) => lonLatToUnit(lon, lat));
+
+        const rings = classifyRings(
+            parseContourRings(c.d)
+                .filter(ring => ring.length >= 2)
+                .map(ring => {
+                    const ll = ring.map(([px, py]) => contourPixelToLonLat(px, py));
+                    return { px: ring, ll, unit: ll.map(([lon, lat]) => lonLatToUnit(lon, lat)) };
+                })
+        );
+
+        // Outlines + centroid over every ring (holes are stroked too, matching the flat map).
+        for (const { unit } of rings) {
             for (let i = 0; i < unit.length; i++) {
                 const a = unit[i], b = unit[(i + 1) % unit.length];
                 outline.push(a[0], a[1], a[2], b[0], b[1], b[2]);
                 cx += a[0]; cy += a[1]; cz += a[2];
             }
-            if (ring.length < 3) continue;
-            // Triangulate in a frame centered on this ring (see centerLonLat): valid and
-            // low-distortion, so the lifted mesh doesn't fold. Vertices are still lifted
-            // from their true lon/lat below, so placement is unchanged. Each ring is
-            // filled solid (islands are separate rings, the rare lake harmlessly filled).
+        }
+
+        // Fill each solid outer ring together with its holes, so cutouts stay empty
+        // instead of being filled a second time (double-dark). Triangulate in a frame
+        // centered on the outer ring (see centerLonLat): valid and low-distortion, so
+        // the lifted mesh doesn't fold. Vertices are still lifted from their true
+        // lon/lat below, so placement is unchanged.
+        for (let ri = 0; ri < rings.length; ri++) {
+            if (rings[ri].hole || rings[ri].ll.length < 3) continue;
+            const { unit, ll } = rings[ri];
             let rx = 0, ry = 0, rz = 0;
             for (const u of unit) { rx += u[0]; ry += u[1]; rz += u[2]; }
             const lon0 = Math.atan2(-rz, rx) / DEG;
             const lat0 = Math.asin(Math.max(-1, Math.min(1, ry / (Math.hypot(rx, ry, rz) || 1)))) / DEG;
-            const cl = ll.map(([lon, lat]) => centerLonLat(lon, lat, lon0, lat0));
-            const idx = earcut(cl.flat());
+            const cl: P2[] = ll.map(([lon, lat]) => centerLonLat(lon, lat, lon0, lat0));
+            const holeIndices: number[] = [];
+            for (let hi = 0; hi < rings.length; hi++) {
+                if (!rings[hi].hole || rings[hi].parent !== ri || rings[hi].ll.length < 3) continue;
+                holeIndices.push(cl.length);
+                for (const [lon, lat] of rings[hi].ll) cl.push(centerLonLat(lon, lat, lon0, lat0));
+            }
+            const idx = earcut(cl.flat(), holeIndices.length ? holeIndices : undefined);
             for (let i = 0; i < idx.length; i += 3) {
                 refine(cl[idx[i]], cl[idx[i + 1]], cl[idx[i + 2]], fill, lon0, lat0, SUBDIVIDE_MAX_DEPTH);
             }

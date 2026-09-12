@@ -121,7 +121,7 @@ export default function SubregionViewer({ regionID, reccs }: { regionID: string;
                                         <Image src={posterUrl(entry.id)} alt="Media Image" width="300" height="400" className="absolute top-0 left-0 w-full" unoptimized />
                                     </div>
                                     <h3 className="text-[0.65em]/1 opacity-50 mt-3">{collections.find(coll => coll.id===entry.id.slice(4,7))?.shortName}</h3>
-                                    <h2 className={`text-sm font-semibold truncate leading-[2em] mb-[-0.6em] ${checkFont(getTitle(entry))}`}>{getTitle(entry)}</h2>
+                                    <h2 className={`text-sm font-semibold truncate leading-[2em] h-[2.25em] mb-[-0.85em] ${checkFont(getTitle(entry))}`}>{getTitle(entry)}</h2>
                                 </Link>
                             ))}
                         </div>

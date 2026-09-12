@@ -33,7 +33,7 @@ export default function ShelfItemsMobile({
                                 <Image src={posterUrl(entry.id)} alt="Media Image" width="300" height="400" className="absolute top-0 left-0 w-full" unoptimized />
                             </div>
                             <h4 className="text-[0.5rem] font-bold opacity-50 truncate">{subregions.find(subr => subr.id===entry.id.slice(0,4))?.name}</h4>
-                            <h3 className={`text-[0.8rem] font-semibold truncate mt-[-0.25rem] leading-[1.5rem] mb-[-0.25rem]`}><span className={`${checkFont(getTitle(entry))}`}>{getTitle(entry)}</span></h3>
+                            <h3 className={`text-[0.8rem] font-semibold truncate mt-[-0.25rem] leading-[1.5rem] h-[1.75rem] mb-[-0.5rem]`}><span className={`${checkFont(getTitle(entry))}`}>{getTitle(entry)}</span></h3>
                         </div>
                     </Link>
                 ))}

@@ -108,7 +108,7 @@ export default function SearchWindow ({ reccs }: { reccs: ReccSearch[] }) {
                             <Image src={posterUrl(entry.id)} alt="Media Image" width="300" height="400" className="absolute top-0 left-0 w-full" unoptimized />
                         </div>
                         <h3 className="sm:text-[0.65rem] text-[0.55rem] leading-none truncate opacity-60">{subregions.find(subr => subr.id===entry.id.slice(0,4))?.name.replace(" North "," N ").replace(" South "," S ").replace(" Southeast "," SE ")}</h3>
-                        <h2 className={`${checkFont(getTitle(entry))} sm:text-[0.9rem] text-[0.8rem] font-semibold leading-[1.7em] my-[-0.35em] truncate`}><span className={`${checkFont(getTitle(entry))}`}>{getTitle(entry)}</span></h2>
+                        <h2 className={`${checkFont(getTitle(entry))} sm:text-[0.9rem] text-[0.8rem] font-semibold leading-[1.7em] h-[1.9em] my-[-0.45em] mb-[-0.65em] truncate`}><span className={`${checkFont(getTitle(entry))}`}>{getTitle(entry)}</span></h2>
                     </Link>
                 ))}
                 </div>

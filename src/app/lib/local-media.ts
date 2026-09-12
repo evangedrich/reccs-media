@@ -38,7 +38,7 @@ export const modTradNovels = [
     id: "AFNEMTN",
     title: {original: "የሺንጋ ቃያ", transliteration: "Yä-Šinga Qaya", translation: "Shinega’s Village"},
     author: "Sahle Sellassie",
-    group: {people: "Gurage", language: "Chaha", location: "Ethiopia"},
+    group: {people: "Gurage", language: "Chaha", location: "Central Ethiopia, ET"},
     info: [
       /* `የሺንጋ መንደር = Yä-Šinga Mändär in standard Amharic`, */
       `Based on the author’s own experiences being brought up in a small town in the Gurage Zone of rural Ethiopia, <i>Shinega’s Village</i> contrasts quiet village life with the intrusive modernity of Addis Ababa. Originally published in 1956 in the Chaha language, the novel was translated into English by Leslau Wolf in 1964.`,
@@ -51,8 +51,16 @@ export const modTradNovels = [
       `Kerwege thought it would be cold outside because she had stayed indoors, but it was warm outside. The sky was clear. The grass outside had shaken off the dew and the smell had entered the house and was sweet. But inside the house it was dark. The door was closed so that she and her baby could not see the sun’s rays.`,
       `It was believed that if the sun’s rays fell on them, they would get sick.`
     ],
-    infoURL: "https://www.google.com/books/edition/The_Strange_Bride/Orb4rPhlyp4C",
-    bioURL: "https://en.wikipedia.org/wiki/Grace_Ogot",
+    excerptSrc: [
+      `ሳመናም። ኬርወጌ አበጐዳኽይታ ብትችን ኽይነኽይታ ሳረናም ተፍተተረችም ተድገተረችም መደር ተረሳችም ዘንግር ተሻመኸችም ቾናችምታ የዝምወት በምወተ ቃረኽይታ ተሳረችናም።`,
+      `“ዝሞ የጨነኹ ኽማ ሟን አደናኽይም? ዌ አቸም የኳ ወሬ ትምትሽ ያር?”`,
+      `“ያገድኽይን እያሽ የትቅያጥኽይ ኸማ ኻርኹም አዥኼ ትንቸን የጨነኽይ ኸማ በረን ቤት ሰማኹም። ወሬ የዚፍቴ አጣጥሽ አንሰና።”`,
+      `“በኸረም የጋት ኤነም ኽማ ወጣኽይምሽ። ያኽይ ባንባኽይ የዝ የጨንቅራ ትካኽይ በጋት ገሪ አትቀጠርኽዪም።”`,
+      `ኬርወጌ በቤት የረፐረቼ ድየ አመዳር መሰረናም ባንኸረሼ ድየሽ ጬቱ። ሰሜም ቅንቅት ኤነወ። የድየ ሠር የቅረረ እኻታ ነገፈም ቤት ገፓም ይሽታ። የቤት ደኔ ጭን አጭራነመም። የጭን ተትከኽይታ ጬት ኤገባቦ ኸማ ወዝገብ ዠነርሎም የረፐሬ።`,
+      `ጬት የገፓም በኸረም ይትጋረፍኖቴ ቧርም ይሰርፍዊ የረፐሬ።`
+    ],
+    infoURL: "",
+    bioURL: "",
     textURL: "",
     mediaURL: ["https://youtu.be/jGFERPgcnM0"],
     ref: [
@@ -163,7 +171,7 @@ export const modTradNovels = [
     bioURL: "https://www.deepvellum.org/authors/richard-ali",
     textURL: "",
     ref: [
-      {id: "ali-2013", type: "book", title: "Ebamba: Mr. Fix-It", contributors: [{firstName: "Richard Ali", lastName: "A Mutu", role: "author"}], pubDate: {year: 2013}, publisher: "Mabiki", location: "Kinshasa", meta: {sortKey: "text", notes: "Significant modern Lingala novel."}},
+      { id: "ali-2013", type: "book", title: "Ebamba: Mr. Fix-It", contributors: [{firstName: "Richard Ali", lastName: "A Mutu", role: "author"}], pubDate: {year: 2013}, publisher: "Mabiki", location: "Kinshasa", meta: {sortKey: "text", notes: "Significant modern Lingala novel."}},
       { id: "deep-vellum-richard-ali", type: "webpage", title: "Richard Ali A Mutu biography", contributors: [ { firstName: "", lastName: "Deep Vellum Editorial Staff", role: "author" } ], pubDate: { year: 2026 }, url: "https://www.deepvellum.org/authors/richard-ali", publisher: "Deep Vellum Publishing", location: "Dallas, Texas / Nigeria", medium: "Author Profile / Digital Bio", meta: { notes: "A profile of the Nigerian author of 'City of Memories'. Ali is noted for his exploration of multi-ethnic identity and the historical tensions in Northern Nigeria. He is a member of the Jalada Africa collective and serves as a bridge between African literary production and international distribution through Deep Vellum.", grade: "C", tags: ["Richard Ali", "Nigeria", "African Literature", "Novelists", "Publishing", "Jalada Africa", "Third Generation", "Deep Vellum"] } }
     ]
   },
@@ -196,9 +204,39 @@ export const modTradNovels = [
     textURL: "",
     playlistURL: "https://open.spotify.com/playlist/6ysko7CH9qaUpESJnPsoM9",
     ref: [
-      {id: "fagunwa-1949", type: "book", title: "Ìrèké Oníbùdó", contributors: [{firstName: "D.O.", lastName: "Fágúnwà", role: "author"}], pubDate: {year: 1949}, publisher: "Nelson", location: "Edinburgh/Lagos", meta: {sortKey: "text", notes: "Yoruba classic."}},
+      { id: "fagunwa-1949", type: "book", title: "Ìrèké Oníbùdó", contributors: [{firstName: "D.O.", lastName: "Fágúnwà", role: "author"}], pubDate: {year: 1949}, publisher: "Nelson", location: "Edinburgh/Lagos", meta: {sortKey: "text", notes: "Yoruba classic."}},
       { id: "oyinsan-2020-fagunwa-ireke-onibudo", type: "thesis", title: "A Critical Introduction and Annotated Translation of D.O. Fagunwa's Ireke Onibudo", contributors: [ { firstName: "Olubunmi O.", lastName: "Oyinsan", role: "author" }, { firstName: "Daniel O.", lastName: "Fagunwa", role: "author" } ], pubDate: { year: 2020 }, url: "https://esploro.libs.uga.edu/esploro/outputs/doctoral/A-CRITICAL-INTRODUCTION-AND-ANNOTATED-TRANSLATION/9949366061602959", publisher: "University of Georgia (UGA) Esploro", location: "Athens, Georgia / Nigeria", medium: "Doctoral Dissertation", meta: { notes: "A comprehensive translation of Fagunwa's second novel (originally published in 1949). The dissertation analyzes Fagunwa’s unique use of the 'Autobiographical' mode within the Yoruba oral tradition, where the protagonist narrates his life's trials and spiritual maturation. It serves as a vital linguistic bridge for scholars of the West African novel.", grade: "A", tags: ["Yoruba", "D.O. Fagunwa", "Ireke Onibudo", "Translation", "Nigerian Literature", "African Aesthetics", "Allegory", "Doctoral Thesis"] } },
       { id: "asc-leiden-2021-fagunwa", type: "webpage", title: "Library Weekly: Daniel O. Fagunwa", contributors: [ { firstName: "Gerard C.", lastName: "van de Bruinhorst", role: "author/librarian" }, { firstName: "Daniel O.", lastName: "Fagunwa", role: "subject" } ], pubDate: { year: 2021, month: 10 }, url: "https://www.ascleiden.nl/content/library-weekly/daniel-o-fagunwa", publisher: "African Studies Centre Leiden", location: "Leiden, Netherlands / Nigeria", medium: "Digital Library Profile", meta: { notes: "A biographical and bibliographical summary of D.O. Fagunwa. It highlights his 1938 masterpiece 'Ogboju Ode ninu Igbo Irunmale' (The Forest of a Thousand Daemons), which was the first full-length novel written in Yoruba. Fagunwa is credited with standardizing Yoruba narrative prose by weaving together folklore, Christian allegory, and traditional hunter stories.", grade: "C", tags: ["Yoruba", "D.O. Fagunwa", "Nigeria", "Oral Tradition", "Igbo Irunmale", "Wole Soyinka", "African Literature", "Vernacular Prose"] } }
+    ]
+  },
+  {
+    id: "AFNCMTN",
+    title: {original: "Alhaki Kuykuyo Ne Uban Gidansa Yakan Bi", translation: "Sin is a Puppy That Follows You Home"},
+    author: "Balaraba Ramat Yakubu",
+    group: {people: "Hausa", language: "Hausa", location: "Nigeria"},
+    info: [
+      `Beginning in the late 1980s, northern Nigeria saw a boom in popular fiction written in the Hausa language. Known as <i>littattafan soyayya</i> (“love literature”), the books are often inspired by Hindi films—which have been hugely popular among Hausa speakers for decades—and are primarily written by women. They have sparked a craze among young adult readers as well as a backlash from government censors.`,
+      `<i>Sin Is a Puppy That Follows You Home</i> is an Islamic soap opera complete with polygamous households, virtuous women, scheming harlots, and black magic. It’s the first full-length novel translated from Hausa to English.`,
+      `<b>BALARABA RAMAT YAKUBU</b> published her first novel in 1987, and has been one of the bestselling Hausa authors ever since. She has also written, directed, and produced a number of films for Kannywood, the Hausa-langauge film industry based in Kano, Nigeria.`
+    ],
+    excerpt: [
+      `Alhaji Abdu was a small business owner with a stall at Sabon Gari Market. He sold fabrics, cotton prints, and headscarves. Though he rarely had enough stock to fill the stall, the merchandise still amounted to about one hundred thousand naira. Some of his merchandise was received from a supplier, but he owned about one-third of it himself. He was very well known in the market, not least because his stall was always filled with female customers, with whom he flirted shamelessly.`,
+      `He was married with children, but his wife, Rabi, had no control over him. He was constantly after other women. At least Rabi could console herself with the fact that he didn’t marry and divorce his women friends at will; only once, after they had been married ten years, had he married a second wife. That woman had borne him a daughter, but had later left him, abandoning the child, because he would not stop chasing women.`,
+      `Alhaji Abdu had now been married to Rabi for twenty-two years. She had borne him nine children: six boys and three girls. So far, these children had kept her from deserting his house—but that seemed fated to happen eventually, for he treated her as badly as it is possible for a man to treat his wife. She had suffered for it, as was plain for all to see; she had an emaciated look, and went about in clothes that were hardly better than rags.`,
+      `They lived in the <i>bakin kasuwa</i>, the district of Kano city around the circular market, and shared their walls with neighbours who could hear everything that was said in the house—a fact that the neighbours were surely not very happy about. Their clothesline was made from bits of cloth tied together, and an open drain ran through the middle of the house. In the courtyard, where the cooking was done, the smoke that billowed out from the wood stove had blackened all the walls. Rabi cooked in the courtyard because her husband had filled the kitchen with junk, and insisted on keeping it locked. In the rainy season she had no alternative but to cook in the second entranceway. She was terribly burdened with work, and was always found either holding a broom, or doing the dishes at the tap, or cooking food at the hearth to sell.`,
+      `Alhaji Abdu was never much help. He never even did as much as buy them ingredients for soup. He would simply distribute fifty kobo each to Rabi and the children and let them fend for themselves for breakfast and lunch. But to his mother, who lived with them, he would give one whole naira. He’d also give Rabi five naira to buy meat, Maggi cubes, salt and soup ingredients for the evening meal. There was plenty of corn, at least; whenever that ran out, he would buy another sack.`,
+      `But Alhaji Abdu had no idea whether the food his wife cooked was tasty or not, because he always ate out at hotels. He rarely returned home before midnight. He never even had breakfast at home in the mornings, let alone lunch. His room always remained locked through the day until he came back home. Once in a while, when it became untidy, he would call one of his children to sweep it for him; otherwise, no one was allowed inside.`,
+      `His wife used to watch him put on expensive clothes sewed from brocade, and spray himself with pleasant perfumes, the scent of which would linger in the house long after he had gone out. Yet he never bothered to buy simple soap and detergent for her and the children. He did buy new clothes for the boys for the festivals of Sallah Karama and Sallah Babba; sometimes on a sudden whim he would include shoes and caps as well. As for the girls, they would each get a six-yard <i>atamfa</i> cotton print with a matching veil—but not the money to cover the tailoring charges. Rabi and Alhaji Abdu’s mother would get the same. These were the only times that the members of the family ever felt any joy, for they would receive nothing at all from him until the following year.`,
+      `Alhaji Abdu, on the other hand, never kept any one set of clothes longer than three months. In the morning he would go out and spend five naira on gourmet dishes with boiled eggs, and for lunch there was a food-seller woman who knew how to cook to his taste. For three naira, she would send spaghetti with yams and meat over to his fabric stall, with a bottled soft drink to wash the food down. Sometimes, he would buy five naira worth of roast tripe from a passing seller, and feast on that as well. Then, at night, he would eat at the Kano Tourist Hotel, spending another four or five naira. After the meal, he would look for somewhere to relax. If he had a woman friend lined up, he would go to her place. Otherwise he would start looking for a new catch, and if he got lucky, he would spend the night with her. Only if all his efforts to secure a woman for the night failed would he end up back with Rabi, who often went up to three months at a stretch without spending a single night with her husband. Even when Alhaji Abdu did come home, Rabi often declined to sleep with him, because she thought he wouldn’t enjoy being with her.`,
+      `It was this attitude of Alhaji Abdu towards his family that forced his wife to get into the food-selling business. In the morning, she would prepare <i>koko</i> and fry <i>kosai</i>; aside from what was sold, she would keep some for her and her children to eat as well. At lunchtime, she would cook rice and yams, and make <i>gurasa</i>, and they would eat some of that too. At sunset, she would cook <i>tuwo</i> with <i>miyan kuka</i>. All this cooking gave her some distraction from her miserable home life; and besides the profits generated from the business, she was able to feed her children.`,
+      `Five of her children attended primary school, one was in secondary school, and the youngest two stayed at home. She cared for them all, including the eldest of the nine, her son Kabiru, who had just finished secondary school and was looking for a job. She had bought their school books and uniforms and paid all their school fees, slowly selling off her belongings—including the enamelware <i>kwalla</i>, <i>fanteka</i>, and serving dishes that her family had given her when she was married—until her room became bare. In the past, she had always managed to keep a sack of rice and a sack of corn in store, but lately it seemed that all the proceeds from her daily trade were spent on the kids.`
+    ],
+    infoURL: "",
+    bioURL: "",
+    textURL: "",
+    coordinates: { x: 8.516667, y: 12, name: "Kano City"},
+    ref: [
+      { id: "yakubu-1990-alhaki", type: "book", title: "Alhaki Kuykuyo Ne (Uban Gidansa Yakan Bi)", contributors: [ { firstName: "Balaraba Ramat", lastName: "Yakubu", role: "author" } ], pubDate: { year: 1990 }, publisher: "Ramat General Enterprises", location: "Kano", meta: { sortKey: "text" } }
     ]
   },
   {
@@ -751,6 +789,73 @@ export const modTradNovels = [
     ]
   },
   {
+    id: "ASSWMTN",
+    title: {original: "نازک", transliteration: "Nazuk"},
+    author: "Syed Hashmi",
+    group: {people: "Baloch", language: "Balochi", location: "Pakistan"},
+    info: [
+      `Set in the coastal region of Makran, the novel follows its central character, Nazuk. After three consecutive husbands die while out fishing, she is labelled a “husband-killer.” When she agrees to marry again, she sets a condition: her future husband must not go to sea.`,
+      `<b>SYED ZAHOOR SHAH HASHMI</b> was a poet, scholar, writer, and philosopher who wrote in Balochi, Urdu, Persian, and Arabic. His works include poetry, novels, short stories, translations, and dictionaries.`
+    ],
+    excerpt: [
+      `Early in the night, the wind began to sweep across the land, growing stronger after the moon rose. As the moon climbed higher, its pale light seemed to quicken the wind. By the third cockcrow, the fishermen came to call Captain Mereen.`,
+      `At first, no one stirred. But when they called again, Nazuk woke with a start and sat up, listening. She recognised the voices of members of Mereen’s crew and remained quiet. She listened to the wind whistling through the straw walls, the restless sea and the roar of the rising tides.`,
+      `After a moment, a third call came. This time, she gently woke her husband, careful not to startle him.`,
+      `Mereen stirred, yawned and said, “Nazal, I’m awake. How many times have they called?”`,
+      `“Twice… no, they’ve called twice already,” Nazuk replied, still a little dazed.`,
+      `“Nazal, what’s the matter? Are you still half asleep? I slept late last night, that’s why I didn’t wake sooner,” he said.`,
+      `“The wind has been blowing since yesterday afternoon. It’s getting stronger,” she said anxiously.`,
+      `“Nazal, this wind has been blowing since last night. It’s not the usual daytime sea breeze. Don’t confuse the two.”`,
+      `“I know they’re different, but I fear a storm is coming,” she said quietly.`,
+      `As he put on his fishing vest, Nazuk listened to the rising wind. It seemed stronger with every passing moment.`,
+      `“If it’s this fierce here, how strong must it be out at sea, Hoduk’s father?” she asked.`,
+      `A moment later, she pleaded, “Look at the wind. It’s too strong. Don’t go out today.”`,
+      `He said nothing. Picking up his lunch basket, he stepped outside.`,
+      `The fishermen called out to him, “Captain, did you oversleep? We called three times before Nazuk answered.”`,
+      `He didn’t reply. He simply looked up at the clear sky. The others followed his gaze without thinking.`,
+      `After a pause, he turned and asked, “What do you think of the wind today?”`,
+      `They glanced at one another, but no one spoke.`,
+      `He pressed them, “It’s strong, isn’t it?”`,
+      `“Yes, Captain,” they answered together.`,
+      `“Your hearts are as weak as a woman’s,” he said sharply, then strode ahead. The others followed.`,
+      `For a while, only their footsteps could be heard, along with the faint clinks of the lead weights tied to the net slung over one man’s shoulder. The wind struck their faces in hard gusts, drowning out every other sound.`,
+      `After some distance, they began to speak again.`,
+      `After they left, Nazuk’s heart began to race. She strained to catch their voices, but the wind swallowed their words, leaving only faint murmurs behind. A sudden gust rushed through the doorway, lifting the corner of the mat and slamming it back down.`,
+      `The noise startled Mahal, who opened her eyes and saw her mother standing at the door.`,
+      `“Mother,” she called softly.`,
+      `“Yes, my child. You’re awake?” Nazuk asked.`,
+      `“Yes.”`,
+      `“Your father has gone out to sea in this wind. I tried to stop him, but he wouldn’t listen. You know how he is, as stubborn as ever. I don’t know why, but my heart feels uneasy tonight.”`,
+      `After a pause, she said, “Mahal, are you listening?”`,
+      `“Yes, Mother.”`,
+      `“Take care of Peral and Hoduk. I will go to the shore and return soon. The sea is too restless tonight.”`,
+      `Without waiting for an answer, Nazuk stepped outside.`,
+      `Under the pale moonlight, the sea crept over the grey sand, each wave pushing closer to the dry edge of the shore.`,
+      `Nazuk stood there for a long time, staring out. She looked from one side to the other, expecting to see empty waters. Surely no one would sail on a night like this, she thought.`,
+      `But she was wrong. Most of the boats had already gone out.`,
+      `For fishermen, storms are a risk they learn to live with. A few days earlier, after many unsuccessful trips, the boats had returned with heavy catches. Now, no one wanted to miss their chance.`,
+      `Nazuk murmured to herself, “My heart is weak and fearful. If this wind were truly dangerous, these boats wouldn’t have gone out.”`,
+      `With that thought, she steadied herself. Perhaps the wind wasn’t a warning but a sign of better days. She remembered a morning when Captain Shambok had come for breakfast. The wind had been just as strong then, yet he had shown no concern. His own son had gone to sea, and still he remained calm. Mereen had explained that such winds blew away from the shore and weakened farther out at sea. Later, the fishermen had returned and confirmed it. The memory brought her a small measure of comfort.`,
+      `She didn’t realise how long she had been standing there until the call for the dawn prayer rose in the air. Startled, she adjusted her goshan, pulling one side over her head and letting the other fall over her shoulder. The keys tied to its edge jingled softly as she turned and walked home.`,
+      `About an hour later, the children awoke. Daylight had spread across the ground. Nazuk went to Sapoori’s and bought six sorghum breads and four paisa worth of boiled broad beans, while Peral brought three cups of tea from Laloo’s hotel. Mahal, Peral and little Hoduk sat together and ate their breakfast.`,
+      `Suddenly, the light outside dimmed. Nazuk paused, then stepped out. A cloud had covered the sun.`,
+      `Turning back, she called, “Mahal, my daughter, look after your brothers. I’ll be back from the shore soon.”`,
+      `Mahal stood confused, unsure what troubled her mother or how to respond. As Nazuk turned to leave, Hoduk ran after her and clutched at the edge of her shirt. She lifted him into her arms and walked towards the sea, holding him close. He babbled softly along the way, but Nazuk’s thoughts were far away. When they reached the shore, she set him down, and he began to play in the sand.`,
+      `The clouds had thickened, spreading across the horizon. Foam flickered over the waves like white flecks against a mountainside, and the sea reflected the sky, scattered with pale streaks. The sight filled Nazuk with unease, as though a storm were gathering not just in the sky but within her as well.`,
+      `The fishermen who had gone out the night before were now returning. The strong wind pulled hard at their sails, making the boats seem to glide through the air. For the fishermen, such winds brought a strange thrill. They urged one another on, racing to see who would reach the shore first. Out at sea, they feared little. But on land, their families waited with anxious hearts.`,
+      `Women and children stood along the shore, searching the horizon. When a familiar boat appeared, relief spread across their faces. But those who came in last brought troubling news. The wind had grown fiercer farther out, rain had begun to fall, and in some cases the gale had torn nets away completely.`,
+      `As more boats reached the shore, the crowd began to thin, only to gather again moments later. Families of those still out at sea, especially the line-fishermen, stood waiting with a restless mix of hope and fear, their eyes fixed on the horizon. Beyond the crashing waves and foaming tide, nothing could be seen. In such moments, no one had the strength to think of another’s grief. It wasn’t selfishness, but the weight of fear.`,
+      `The wind grew stronger, and the strain on every face deepened. They waited, suspended between hope and dread, for their loved ones to return from the vast, unforgiving sea.`
+    ],
+    infoURL: "",
+    bioURL: "https://en.wikipedia.org/wiki/Syed_Zahoor_Shah_Hashmi",
+    textURL: "",
+    playlistURL: "",
+    ref: [
+      {id: "hashmi-1976", type: "book", title: "نازک (Nazuk)", contributors: [{firstName: "Syed", lastName: "Hashmi", role: "author"}, {firstName: "Fazal", lastName: "Baloch", role: "translator"}], url: "", pubDate: {year: 1976}, publisher: "Self-published", location: "Karachi", meta: {sortKey: "text"}}
+    ]
+  },
+  {
     id: "ASWEMTN",
     title: {original: "بنات الرياض", transliteration: "Banāt al-Riyāḍ", translation: "Girls of Riyadh"},
     author: "Rajaa al-Sanea",
@@ -1161,7 +1266,7 @@ export const stirrPoetry = [
     title: { original: "𐒖𐒐𐒐𐒗𐒕𐒐 𐒆𐒚𐒑𐒖𐒕", transliteration: "Alleyl dumay", translation: "As night falls" },
     meta: { piece: true },
     author: "Raage Ugaas",
-    group: {people: "Somali", language: "Somali", location: "Sasabane, ET"},
+    group: {people: "Somali", language: "Somali", location: "Somali, ET"},
     info: [
       `Raage Ugaas was engaged to a girl, who was blessed by God with beauty. Raage was very fond of her and was in love with her. But, the girl was eventually married off to his rival Garaad Faarax Wiilwaal. When the news reached Raage, he became so upset, he recited this poem called Alleyl Dumay.`,
       `<b>RAAGE UGAAS WARFAA</b> was a chief, poet, and Somali military warrior who lived around the middle of the 19th century. Considered by many Somali to be the best <i>halabuur</i>, Raage Ugaas is remembered for his poems, stories, and interesting events. He was the first to employ <i>guudmaar</i>, an allegorical technique that old poets used to send and convey secret messages.`
@@ -1218,7 +1323,7 @@ export const stirrPoetry = [
   },
   {
     id: "AFCESTP",
-    title: {original: "ꛞ꛰ ꛤ꛰ ꛜꛄ꛰ꛜꛄ꛰ꛄ꛰ꛑ ꛅꚧꚳ꛰ ꛰ꚳꛤꚩꚤꚳ꛰", transliteration: "Lo’ tù lu lulùre pon ntièn", translation: "From Resilient Shadows"},
+    title: {original: "ꛞ꛰ ꛤ꛰ ꛜꛄ꛰ꛜꛄ꛰ꛄ꛰ꛑ ꛅꚧꚳ꛰ ꚳ꛰ꛤꚩꚤꚳ꛰", transliteration: "Lo’ tù lu lulùre pon ntièn", translation: "From Resilient Shadows"},
     author: "Samuel Calvin Gbetnkom",
     group: {people: "Bamum", language: "Bamum", location: "Cameroon"},
     info: [
@@ -1664,10 +1769,10 @@ export const stirrPoetry = [
     ]
   },
   {
-    id: "ASWESTP",
+    id: "ASSWSTP",
     title: {original: "دیوان حافظ", transliteration: "Dīvān-i Ḥāfiẓ", translation: "Collected Poems of Hāfez"},
     author: "Ḥāfeẓ",
-    group: {people: "Persian", language: "Persian", religion: "Sufism", location: "Shiraz, IR"},
+    group: {people: "Persian", language: "Persian", religion: "Sufi Islam", location: "Shiraz, IR"},
     info: [
       `If a book of poetry is to be found in a Persian home, it is likely to be the <i>Divān</i> (collected poems) of Hafez. Many of his lines have become proverbial sayings, and there are few who cannot recite some of his lyrics, partially or totally, by heart. And yet he is also a poet’s poet. No other Persian poet has been the subject of so much analysis, commentary, and interpretation. Nor has any poet influenced the course of post-fourteenth century Persian lyrics as much as he has.`,
       `In no other Persian poet can be found such a combination of fertile imagination, polished diction, apt choice of words, and silken melodious expressions. These are all wedded to a broad humanity, philosophical musings, moral precepts, and reflections about the unfathomable nature of destiny, the transience of life, and the wisdom of making the most of the moment—all expressed with a lyrical exuberance that lifts his poetry above all other Persian lyrics.`,
@@ -1688,6 +1793,41 @@ export const stirrPoetry = [
     textURL: "",
     ref: [
       { id: "avery-heathstubbs-1952-hafiz-thirty-poems", type: "book", title: "Thirty Poems by Hafiz of Shiraz", contributors: [ { firstName: "Peter", lastName: "Avery", role: "translator" }, { firstName: "John", lastName: "Heath-Stubbs", role: "translator" }, { firstName: "Hafiz", lastName: "Shirazi", role: "author" } ], pubDate: { year: 1952 }, url: "https://ia803208.us.archive.org/13/items/HafizOfShirazThirtyPoems/Hafiz-of-shiraz-%20Thirty%20poems_text.pdf#page=37", publisher: "John Murray", location: "London, UK", medium: "Print (First Edition) / Wisdom of the East Series", meta: { notes: "A refined selection of ghazals from the Divan. The translation emphasizes the 'disjointed' nature of the Persian ghazal, where each couplet contains a complete thought. The notes explore the dual-coded nature of Hafiz’s language—simultaneously erotic and divine.", grade: "C", tags: ["Hafiz", "Persian Poetry", "Ghazal", "Shiraz", "Sufism", "Translation", "Literary Criticism"] } }
+    ]
+  },
+  {
+    id: "ASWESTP",
+    title: { original: "𒊩𒌆𒈨𒄭𒊏", transliteration: "Nin-me-šara", translation: "Queen of Innumerable Divine Powers" },
+    author: "Enḫéduanna",
+    group: {people: "Akkadian", language: "Sumerian", religion: "Mesopotamian religion", location: "Iraq"},
+    info: [
+      `Inanna, also known as Ishtar to the Akkadians, Babylonians, and Assyrians, is the patron deity of political power, divine law, sensuality, sex, and destruction in the ancient Mesopotamian religion. She is the subject of the poem “Nin-me-šara”, also called the Exaltation of Inana, in which the poet successfully entreaties for her aid.`,
+      `<b>ENHEDUANNA</b>, born 2285 BCE, was high priestess in the temple of the moon god in the capital of Ur, a Sumerian city-state conquered by her father and founder of the Akkadian Empire, Sargon of Akkad. She is the earliest author for whom there is a written record of their name, and her compositions in cuneiform constitute a powerful body of hymns capturing the religious, political, and emotional landscape of her time.`
+    ],
+    excerpt: [
+      `<i>I</i>.`,
+      `Queen of all powers,<br>downpour of daylight!<br>Good woman wrapped<br>in frightful light, loved<br>by heaven and earth,<br>holy woman of An.<br>You hold the great<br>gems, you love the<br>good crown, to rule<br>is your right: you<br>have seized the seven<br>powers of the gods.`,
+      `<sp><i>II</i>.`,
+      `My queen, you are<br>the guardian of the<br>gods’ great powers:<br>you lift them up and<br>grasp them in your<br>hand, you take them<br>in and clasp them<br>to your breast. As if<br>you were a basilisk,<br>you pour poison<br>upon the enemy,<br>as if you were the<br>Storm God, grain<br>bends before your<br>roar. You are like<br>a flash flood that<br>gushes down the<br>mountains, you<br>are supreme in<br>heaven and earth:<br>You are Inana.`,
+      `Raging rainfall of<br>fire! It was An who<br>gave you power. You<br>are a queen astride<br>a lion, you give orders<br>by the holy order of<br>An. Who can fathom<br>the great duties that<br>befall you? It is you<br>who strike down<br>the enemy, you who<br>give the storm its<br>strength. Enlil loves<br>you for teaching the<br>land how to fear, An<br>has ordered you to<br>stand by for battle.`,
+      `My queen, hearing<br>your battle cry the<br>enemy bows down.<br>Fleeing sandstorms,<br>terror, and splendor,<br>humanity assembled<br>to stand before you<br>in silence, and of all<br>the gods’ powers, you<br>took the most terrible.<br>Because of you, the<br>people must march<br>past the threshold<br>of tears. Because of<br>you, they go to the<br>great house of grief.<br>Because of you, they<br>yield all they own<br>without a fight.`,
+      `My queen, your<br>strength can make<br>teeth crush stone.<br>You strike like the<br>strike of a storm.<br>You roar like the<br>roar of a storm.<br>Your howl is like<br>the Storm God’s<br>howl. You wear<br>yourself out with<br>wind after wind,<br>but your feet stay<br>strong. With the<br>harps of the temple,<br>they strike the beat<br>of a sorrowful song.`,
+      `My queen, even the<br>Anuna flee from you<br>like bats fluttering<br>through ruins: they<br>could not withstand<br>your terrifying gaze,<br>no one can stand<br>firm before your<br>staring eyes. Who<br>can calm the rage<br>in your heart? To<br>soothe your wrath<br>is a daunting task.<br>Queen, who can<br>ease your mind?<br>Queen, who can<br>please your heart?`,
+      `<sp><i>III</i>.`,
+      `Your rage cannot<br>be cooled, O great<br>daughter of Nanna!<br>Queen, outstanding<br>on earth, who can<br>rob you of your rule?`,
+      `The mountain fell<br>under your rule. Its<br>harvest has failed,<br>its city gates burn,<br>its rivers run with<br>blood—the thirsty<br>must drink it. All<br>its armies march<br>before you, all its<br>troops disband<br>before you, all<br>its soldiers stand<br>before you. While<br>the wind fills the<br>squares where they<br>danced, their best<br>men are led before<br>you in chains.`,
+      `...`,
+      `Queen, beloved of<br>heaven! I will sing<br>of your fury. I have<br>piled up the coals, I<br>have purified myself.<br>The Holy Inn awaits<br>you. Will your heart<br>not have mercy on<br>me? The pain filled<br>me, overwhelmed me.<br>Queen, lady! For you,<br>I have given birth to<br>it: what I sang to you<br>at dead of night, let<br>a lamenter repeat at<br>midday. For your<br>captive spouse and<br>your captive child,<br>your fury grows ever<br>greater, your heart<br>can find no rest.`,
+      `<sp><i>VI</i>.`,
+      `The mighty woman,<br>the greatest in the<br>gathering of gods,<br>has heard her plea.<br>Inana’s holy heart<br>came back to her.`,
+      `The light pleased<br>her. She spread joy<br>and beamed with a<br>passionate delight,<br>like a downpour of<br>moonlight, wrapped<br>in charm. Nanna<br>extolled her, Ningal<br>blessed her, and the<br>temple’s thresholds<br>welcomed her home.<br>What she said to her<br>holy woman was<br>magnificent.`,
+      `You who crush the<br>mountains, you who<br>were given powers<br>by An. My queen<br>cloaked in charm:<br>All praise Inana!`
+    ],
+    infoURL: "",
+    mediaURL: [""],
+    textURL: "",
+    ref: [
+      { id: "helle-2022-exaltation", type: "webpage", title: "The Exaltation of Inana", containerTitle: "Enheduana", contributors: [ { firstName: "Sophus", lastName: "Helle", role: "author" } ], pubDate: { year: 2022 }, url: "https://enheduana.org/exaltation/", meta: { sortKey: "text" } }
     ]
   },
   {
@@ -1764,6 +1904,7 @@ export const stirrPoetry = [
     infoURL: "https://en.wikipedia.org/wiki/Symeon_the_New_Theologian",
     mediaURL: ["https://youtu.be/Y3g2AJk-lwU"],
     textURL: "",
+    coordinates: { x: 32.854722, y: 39.928889, name: "Ankara" },
     ref: [
       { id: "symeon-1980-discourses-paulist", type: "book", title: "The Discourses", containerTitle: "The Classics of Western Spirituality", contributors: [ { firstName: "Symeon the New", lastName: "Theologian", role: "author" }, { firstName: "C.J.", lastName: "de Catanzaro", role: "translator" }, { firstName: "George A.", lastName: "Maloney", role: "introduction" } ], url: "https://godaftergod.wordpress.com/2012/03/17/hymn-25-symeon-the-new-theologian/", pubDate: { year: 1980 }, publisher: "Paulist Press", location: "New York, NY", medium: "Print (Hardcover/Paperback)", meta: { notes: "A primary source for Hesychastic theology. Symeon's 'Discourses' (Katecheseis) focus on the necessity of tears, repentance, and the vision of the Uncreated Light. This volume is essential for understanding the transition of Eastern monastic spirituality into the later Palamite synthesis.", grade: "A", tags: ["Byzantine", "Mysticism", "Hesychasm", "Symeon the New Theologian", "Orthodox", "Constantinople", "Patristics"] } },
       { id: "symeon-1976-hymns-dimension", type: "book", title: "Hymns of Divine Love", contributors: [ { firstName: "St. Symeon the New", lastName: "Theologian", role: "author" }, { firstName: "George A.", lastName: "Maloney", role: "translator" } ], pubDate: { year: 1976 }, publisher: "Dimension Books", location: "Denville, NJ", medium: "Print (Octavo)", meta: { notes: "A collection of 58 hymns. These poems are radical for their time, emphasizing the physical sensation of the Divine Light and the emotional 'baptism of tears.' The octavo format of this edition is a staple of mid-century Catholic/Orthodox mystical scholarship in America.", grade: "A", tags: ["Byzantine", "Poetry", "Mysticism", "Hesychasm", "St. Symeon", "Eastern Orthodoxy", "Divine Light", "Erotikon"] } }
@@ -1996,28 +2137,10 @@ export const cultFeatFilms = [
     color: "#8d796e"
   },
   {
-    id: "AFNOCFF1",
-    title: {original: "Mai Martaba", translation: "Your Highness"},
-    year: 2024,
-    group: {people: "Hausa", language: "Hausa", location: "Nigeria"},
-    info: [
-      `Jallaba’s trade boom crumbles due to internal conflict among the ruling clans. A new dynasty promises stability, shattered by a king’s choice of heir—his daughter. Princess, rival, and a deposed clan clash for the throne. Who will rule—and can Jallaba survive?`,
-      `Dir <b>PRINCE DANIEL ABOKI</b> is a writer, producer, and director. He is well-known in Nigeria for his work in radio broadcast journalism, where he’s earned the nickname Aboki, meaning “friend” in Hausa.`
-    ],
-    infoURL: "https://thefilmverdict.com/an-interview-with-prince-daniel/",
-    watch: [""],
-    trailer: "https://youtu.be/3AEZfRd4fgA",
-    coordinates: {x: 8.3177, y: 13.0364, name: "Daura"},
-    runtime: 86,
-    genre: ["Drama", "Adventure"],
-    tags: [""],
-    color: "#45201e"
-  },
-  {
     id: "AFNECFF",
     title: { original: "ላምብ", transliteration: "Lamibi", translation: "Lamb" },
     year: 2015,
-    group: {people: "Amhara", language: "Amharic", location: "Ethiopia"},
+    group: {people: "Amhara", language: "Amharic", location: "Amhara, ET"},
     info: [
       `When his father must travel to Addis Ababa to look for work, a boy is sent to live with his distant relatives. He takes his pet sheep, but the upcoming holiday spells danger for his friend.`,
       `Dir/Scr <b>YARED ZELEKE</b> left his native Ethiopia at age 10 to live with his father in the United States, where he received his training in filmmaking at New York University. For his first feature film, <i>Lamb</i>, he cast actors from traditional theater, locals from rural villages, and a clever lamb.`
@@ -2130,6 +2253,42 @@ export const cultFeatFilms = [
     color: "#62958C"
   },
   {
+    id: "AFNCCFF",
+    title: {original: "Zin’naariyâ", translation: "The Wedding Ring"},
+    year: 2016,
+    group: {people: "Songhai", language: "Zarma/Songhai/Hausa/Fula", location: "Niger"},
+    info: [
+      `A student who hails from a prestigious aristocratic family, Tiyaa returns home to the Sultanate of Damagaran, in Niger, for the winter holidays. She is expecting the young man whom she met at university in France—who also comes from a wealthy family, not far from where she grew up—to make a formal proposal of marriage. While waiting for the handsome suitor, she shares her secret with her friends, learning the other women’s stories of love, marriage, and divorce, painting a compelling and revealing portrait of relationships in Sahelian society.`,
+      `Dir <b>RAHMATOU KEÏTA</b> is a filmmaker of Songhai, Fula, and Mandinka descent who studied Philosophy and Linguistics in Paris, married a French journalist, and directs and produces films. She cast her daughter Magaajyia Silberfeld as the lead in <i>Zin’naariyâ</i>.`
+    ],
+    infoURL: "",
+    watch: [""],
+    trailer: "https://youtu.be/50uN8xn6fJE",
+    coordinates: {x: 8.9836, y: 13.8014, name: "Zinder"},
+    runtime: 96,
+    genre: ["Drama","Romance"],
+    tags: [""],
+    color: "#2888a9"
+  },
+  {
+    id: "AFNCCFF1",
+    title: {original: "Mai Martaba", translation: "Your Highness"},
+    year: 2024,
+    group: {people: "Hausa", language: "Hausa", location: "Nigeria"},
+    info: [
+      `The Hausa Kingdoms, 1906. Fictional Jallaba’s trade boom crumbles due to internal conflict among the ruling clans. A new dynasty promises stability, shattered by a king’s choice of heir—his daughter. Princess, rival, and a deposed clan clash for the throne. Who will rule—and can Jallaba survive?`,
+      `Dir <b>PRINCE DANIEL ABOKI</b> is a writer, producer, and director. He is well-known in Nigeria for his work in radio broadcast journalism, where he’s earned the nickname Aboki, meaning “friend” in Hausa.`
+    ],
+    infoURL: "https://thefilmverdict.com/an-interview-with-prince-daniel/",
+    watch: [""],
+    trailer: "https://youtu.be/3AEZfRd4fgA",
+    coordinates: {x: 8.3177, y: 13.0364, name: "Daura"},
+    runtime: 86,
+    genre: ["Drama", "Adventure"],
+    tags: [""],
+    color: "#45201e"
+  },
+  {
     id: "AMNOCFF",
     title: {original: "ᐊᑕᓈᕐᔪᐊᑦ", transliteration: "Atanarjuat", translation: "The Fast Runner"},
     year: 2001,
@@ -2152,7 +2311,7 @@ export const cultFeatFilms = [
     id: "AMEACFF",
     title: {original: "ᑎᐯᐢᑳᐃ ᓇᑐᐸᓃᒐᑫᐘᐠ", transliteration: "Tipêskâi Natopanîcakêwak", translation: "Night Raiders"},
     year: 2021,
-    group: {people: "Cree", language: "Cree/English", location: "Canada"},
+    group: {people: "Cree", language: "Cree/English", location: "Ontario, CA"},
     info: [
       `In a dystopian future, a military government separates children from their parents and puts them in schools, where they say the pledge of allegiance and speak one language. Niska, a Cree woman, joins an underground resistance movement to rescue her daughter.`,
       `In this vivid allegory for the U.S.-Canadian residential school system, life under a relentlessly urbanizing, exploitative, militaristic state in the contemporary Eastern Woodlands is depicted with exceptional clarity.`,
@@ -2474,6 +2633,25 @@ export const cultFeatFilms = [
     color: "#627147"
   },
   {
+    id: "ASSWCFF",
+    title: {original: "باد ما را خواهد برد", transliteration: "Bād mā rā khāhad bord", translation: "The Wind Will Carry Us"},
+    year: 1999,
+    group: {people: "Kurdish", language: "Kurdish/Persian", location: "Kurdistan, IR"},
+    info: [
+      `Irreverent city engineer Behzad comes to a rural Kurdish village in Iran to keep vigil for a dying relative. While death hovers around the corner, Behzad gains perspectives on life and spirituality as he befriends the locals and experiences nature’s majesty, changing his own attitudes as a result.`,
+      `Dir/Scr <b>ABBAS KIAROSTAMI</b> was a filmmaker, screenwriter, photographer, and poet involved in the production of over 40 films. The concepts of change and continuity, in addition to the themes of life and death, play a major role in Kiarostami’s works.`
+    ],
+    infoURL: "",
+    watch: ["https://www.amazon.com/gp/video/detail/B0F5Q3YLFY","https://tv.apple.com/us/movie/the-wind-will-carry-us/umc.cmc.21frcgvsf4ca7otnxxke6pbnu"],
+    trailer: "https://youtu.be/04Ct1HVg0Z8",
+    mediaURL: ["https://youtu.be/_vOtrJXV8ys","https://youtu.be/wFX9HY2t31I"],
+    coordinates: {x: 46.541, y: 36.167, name: "Siah Darreh Village"},
+    runtime: 118,
+    genre: ["Drama"],
+    tags: [""],
+    color: "#237b93"
+  },
+  {
     id: "ASWECFF",
     title: {original: "أنَاشِيْدُ آدَمَ", transliteration: "Anāshīdu Ādama", translation: "Songs of Adam"},
     year: 2024,
@@ -2746,6 +2924,70 @@ export const presMusDrama = [
     ]
   },
   {
+    id: "AFNEPMD",
+    title: {original: "ኣሸንዳ", transliteration: "Ashenda"},
+    century: null,
+    group: {people: "Tigrayan", language: "Tigrinya", location: "Tigray, ET"},
+    info: [
+      `For one week late in the rainy season of Kiremt, when the green fields are setting seeds for harvest and the <+>ashenda[Kniphofia foliosa]</+> plant is in flower, girls and young women in the Tigray region of northern Ethiopia and Eritrea participate in a series of performances of song, poetry, and dance. Although the festival is known by many names, including Ayeni Wari in Axum, Shadey in Agew, Mariya in Adigrat, and Ashenda in Gondar, its features remain largely the same across the communities in which it’s celebrated: women dress up and entertain the families of their neighborhood, with festivities culminating in a competition.`,
+      `Spectators typically give the girls donations for their efforts, which proceeds typically benefit the poorest in the community. Excess contributions typically go to the church. Though there are prominent Christian facets of the tradition, its roots likely rest in more local cultural ceremony. Recent adoption of the festival as ‘intangible cultural heritage’ by the Ethiopian state in some cases threatens to limit the relaxing of social constraints experienced by its female participants through a commodification and standardization that has come with its increased observability.`
+    ],
+    excerpt: [
+      `<i>(Collecting ashenda leaves for their skirts, the </i><s>Girls</s><i> sing.)</i>`,
+      `<s>Ashenda Girls</s>—`,
+      `Coming, coming<br>Ashenda the flower is coming<br>After a long year,<br>Now we meet Ashenda.`,
+      `<i>(The </i><s>Girls</s><i> prepare, wearing cosmetics, colorful clothes, waist scarves, hair ribbons, jewelry, perfume, and the ashenda leaves down their backsides.)</i>`,
+      `Look at me this side,<br>and this side,<br>and that side<br>Mom put some kohl on me eye<br>some butter on my hair<br>So a man who has a horse will choose me<br>and a man who has a donkey will leave me<br>If you need a man, you won’t find him<br>we have already taken him.`,
+      `<i>(They go to the church.)</i>`,
+      `St. Mary <+>my sun[an admiration]</+><br>I came back as promised<br>St. Michael my sun<br>I came back as promised.`,
+      `<i>(After prayer, the </i><s>Girls</s><i> entertain door-to-door, to which families respond by joining them in a traditional dance. Then, the household will bring out gifts that they promised to give in the last year’s Ashenda.)</i>`,
+      `Lord of the gates,<br>please open the door for me<br>It is so cold and I came from far away`,
+      `<s>Householder</s>—`,
+      `Girls, where did you spend the day?`,
+      `<s>Girls</s>—`,
+      `We spent it across the river, where no one goes.<br>My lord, trust me<br>I have been waiting for you the whole day<br>My lord, the son of my other lord<br>are you from Tigray, the open land, the great land?<br>The compound of this house has lots of water,<br>the hall of this house has lots of gold`,
+      `My lady, the girls are saying your face is like the sun<br>and your tooth brush is made of gold<br>Does this house have a lion?<br>because it is roaring in the backyard<br>A broken drum,<br>here comes my lady whose hair is like a whip<br>My lady is generous like a deep clay land<br>she feeds you too much <+><i>fitfit</i>[a common meal, usually injera mixed with spicy meat and butter]</+> easily`,
+      `My lady the sun,<br>I have come back for my promise.`,
+      `<s>Householder</s>—`,
+      `May you come back next year with even more beauty and grace.<br>May you get married and have babies.<br>May you make your families happy.`,
+      `<s>Girls</s>—`,
+      `The gifts are pouring<br>Like the rains of <+>August[August is the most rainy month in the northern Ethiopian highlands]</+><br>What his lordship has given me will be enough for a year<br>What her ladyship has given me will be enough for a year.`,
+      `<i>(After performing at every door, showcasing a wide variety of numbers from the Ashenda repertoire, they proceed to a nearby field where the </i><s>Girls</s><i> join with </i><s>Ashenda Girls</s><i> from other communities for a competition.)</i>`,
+      `Let’s go crazy performing<br>as there is no theater in the sky.`
+    ],
+    excerptSrc: [
+      `(ንስረኦም ዝኸውን ቆጽሊ ኣሸንዳ እናኣከቡ፡ ኣዋልድ ይደርፋ።)`,
+      `ኣዋልድ ኣሸንዳ—`,
+      `መፀት መፀት<br>ኣሸንዳ ዕምበብ መፀት<br>ኣሸንዳዋይ ናይ ዓሚ ናይ ዓሚየ<br>ተራኺብና ሎሚየ”`,
+      `(እተን ኣዋልድ መመላኽዒ፡ ሕብራዊ ክዳውንቲ፡ ስካርፍ ሕቝፊ፡ ሪባን ጸጉሪ፡ ስልማት፡ ሽቶ፡ ከምኡ’ውን ቆጽሊ ኣሸንዳ ብድሕሪት ንታሕቲ ተኸዲነን ይዳለዋ።)`,
+      `እስክቲ በቲ<br>እቲ<br>እስክቲ በቲ<br>እቲ<br>ኣደዋየ እቲ<br>ኮሓልኒ እቲ<br>ጣስምኒ እቲ<br>በዓል ፈረስ እቲ<br>ክወስደኒ<br>በዓል ኣድጊ አቲ<br>ክሓድገኒ<br>ሰብኣይ ተደሊኽንየ<br>የለን መሞቲኽንየ`,
+      `(ናብ ቤተ ክርስቲያን ይኸዱ።)`,
+      `ማርያምዋይ ፀሓይ<br>መፂአያ እኮ ታ መፅበዓይ<br>ማርያምዋይ ፀሓይ<br>መፂአለኹ ናብ መፅብዓይ<br>ሚኪኤለይ ፀሓይ<br>መፂአያ እኮ ታ መፅበዓየ<br>መፂአለኹ ናብ መፅብዓይ`,
+      `(ድሕሪ ጸሎት፡ ኣዋልድ ካብ ገዛ ናብ ኣፍደገ የዘናግዓ፡ ስድራቤታት ድማ ኣብ ባህላዊ ሳዕስዒት ብምጽንባር ይምልሱ። ድሕሪኡ፡ እቶም ገዛ ኣብ ዝሓለፈ ዓመት ኣሸንዳ ክህቡ ቃል ዝኣተውዎም ህያባት ከውጽኡ እዮም።)`,
+      `ጎይታይ ኣጋፋሪ ክፈተለት በሪ<br>ዓደማተይ ቁሪ`,
+      `ዋና ገዛ—`,
+      `ኣበያ ውዒልክን ኣዋልዶ`,
+      `ኣዋልድ—`,
+      `ገረብ ገረብ ማዕዶ ሰብ ዘይኸዶ<br>ኣያይ ስጋኻ ስጋኻየ<br>ክፅበ ውዒለ ንዓኻ<br>ጎይታይ ወዲ ጎይታየ<br>ትግራይ ዶ ዓድኻ ኣደባባይ<br>መረብኦም ብማይ ድብልቕልቕ<br>ኣዳራሾም ብወርቂ ልቕልቕ`,
+      `እምበይተየ ዝብላኺ ለዋማ ፀሓይ ገዓ<br>ወርቂ መወፃ ይብላኺ ‘ለዋየ<br>እዞም ዓዲ ኣምበሳ ደለዎሜ<br>ሕዝም በለ ኣብ ድሕሪ ገዝኦምየ<br>በለፀትየ በለፀት<br>ካብ ዓይኒ ማይ ዝወፀት<br>ስባር ከበሮ<br>እምበይተይ እያ ርእሲ ዅማሮ`,
+      `ሰለላ ቑመትየ ሰለላ ቑመት<br>ሽልም ውዒላቶ ኺዳነምህረት`,
+      `ዋና ገዛ—`,
+      `ዝመጽእ ዓመት ዝያዳ ጽባቐን ጸጋን ሒዝካ ክትምለስ<br>ተመርዕኻ ዕሸላት ይውለድ<br>ስድራኹም የሐጉሱ`,
+      `ኣዋልድ—`,
+      `ፈሰሰ<br>>ከም ማይ ነሓሰ፡፡<br>ኣያይ ወለላይ ዝሃቡኒየ ቀለብ ዓመት ይኾነኒ<br>እምበይተይ ወለላይ ዝሃባንየ ቀለብ ዓመይ ይኾነኒ`,
+      `(ኣብ ነፍሲ ወከፍ ኣፍደገ ምርኢት ድሕሪ ምቕራቦም፡ ካብ ሬፐርቶርያ ኣሸንዳ ዝተፈላለዩ ቁጽርታት ብምርኣይ፡ ናብቲ ኣብ ጥቓኦም ዝርከብ ሜዳ ይኸዱ፡ ኣብኡ ድማ ኣዋልድ ምስ ካብ ካልኦት ማሕበረሰባት ዝመጻ ኣዋልድ ኣሸንዳ ተጸንቢረን ውድድር ይገብራ።)`,
+      `ኣዋልደየ በላ ዕበዳ<br>ላዕላይ ሰማይዶ ኣለዎ ሜዳ`
+    ],
+    infoURL: "",
+    mediaURL: ["https://youtu.be/uchFpzqWVKc","https://youtu.be/_endYUAhYbg","https://youtu.be/5-beJq9iMpk","https://youtu.be/FhyCakx4K58","https://youtu.be/ZLH3eMsjoLk","https://youtu.be/8hpJXAZP8BU","https://youtu.be/Azuxj3U3Akw"],
+    textURL: "",
+    ref: [
+      { id: "balehey-2019-art", type: "chapter", title: "The Art, Aesthetics and Gender Significance of Ashenda girls’ Festival in Tigray, Northern Ethiopia", containerTitle: "Current Studies in Social Sciences-5", contributors: [ { firstName: "Selam", lastName: "Balehey", role: "author" }, { firstName: "Mulubrhan", lastName: "Balehegn", role: "author" } ], pubDate: { year: 2019, month: 8 }, publisher: "Iksad Publications", location: "Ankara", url: "https://www.researchgate.net/publication/334836277_The_Art_Aesthetics_and_Gender_Significance_of_Ashenda_girls'_Festival_in_Tigray_Northern_Ethiopia", meta: { grade: "A", sortKey: "text" } },
+      { id: "belay-2011-media", type: "thesis", title: "Media and Culture: A Case Study of Ashenda as Portrayed in Tigrigna Television Programs", contributors: [ { firstName: "Mebrahten Gebremariam", lastName: "Belay", role: "author" } ], pubDate: { year: 2011, month: 5 }, publisher: "Addis Ababa University", location: "Addis Ababa", url: "https://etd.aau.edu.et/server/api/core/bitstreams/ada8c99e-d618-431f-ac09-0ae10505e954/content", meta: { grade: "A", sortKey: "info" } },
+      { id: "nega-2019-challenges", type: "article", title: "Challenges and opportunities of managing festival tourism for sustainable tourism development: The case of the Ashendye Festival, North Wollo, Ethiopia", containerTitle: "African Journal of Hospitality, Tourism and Leisure", contributors: [ { firstName: "Dagnachew", lastName: "Nega", role: "author" } ], pubDate: { year: 2019, month: 1 }, volume: "8", issue: "2", pages: { start: "1", end: "12" }, url: "https://www.researchgate.net/publication/334282572_Challenges_and_opportunities_of_managing_festival_tourism_for_sustainable_tourism_development_The_case_of_the_Ashendye_Festival_North_Wollo_Ethiopia", meta: { grade: "A", sortKey: "info" } }
+    ]
+  },
+  {
     id: "AFEAPMD",
     title: {original: "Engilakinoto"},
     century: null,
@@ -2894,6 +3136,50 @@ export const presMusDrama = [
     infoURL: "",
     mediaURL: ["https://youtu.be/_16B1t8qDD8"],
     textURL: ""
+  },
+  {
+    id: "AFNCPMD",
+    title: {original: "Bòòríí"},
+    century: 16,
+    group: {people: "Hausa", language: "Hausa", religion: "Maguzanci", location: "Niger"},
+    info: [
+      `The Maguzawa are those Hausa who continue to practice the pre-Islamic Hausa religion, at the core of which is the Bòòríí (Bori) ceremony. In a Bori ritual, the <+><i>yan bori</i>[followers of the Maguzanci religion, literally “children of the spiritual force that resides in physical things”]</+> performers become possessed by individual <+><i>iskoki</i>[literally, “winds”]</+> spirits, taking on their characteristics; each spirit is associated with a particular musical motif, gestures, dance steps, clothing, and way of speaking. These repertoires are learned by an <i>amaryaa</i> initiate during the <i>girkaa</i> ceremony that follows the <i>fural saayè</i> healing ceremony, instigated by the aspiring adherent falling ill, signalling the desire of an <+><i>iska</i>[singular of iskoki]</+> to incarnate in that person and thus fulfilling the conditions for initiation.`,
+      `Among the pantheon of characters found in Bori are <i>iskoki</i> for everything experienced in Hausa life: there are animal spirits, human spirits, spirits of the streams, springs, rocks, paths, forests, the fields, rain and storms, war, disasters, for affective states like wrath, happiness, and laughter, for Muslims, pagans, Arabs, and Europeans, for drummers, hunters, scholars, weavers, alcoholics, lepers, warriors, and farmers. It is through enacting the reality of these personages that Bori adepts—significantly comprised of those people Islamicized Hausa society disempowers, including women, queer people, sex workers, the mentally ill, and victims of stigmatized illnesses—articulate alternative identities and viewpoints discarded by the Muslim Hausa elite, and exercise power and dominance over the captivated human spectators.`
+    ],
+    excerpt: [
+      `<i>(The ceremony begins with the orchestra playing the motif of </i><s>Jangarai</s><i>, the legendary city of the iskoki, at the sound of which the yan bori present are possessed.)</i>`,
+      `<s>Jangarai</s>—`,
+      `I offer the greeting of the prologue.<br>A stranger who does not offer a greeting is a bad one.<br>I journeyed to the east, I journeyed to the west.<br>I saw no equal to God.<br>I journeyed to the south, I journeyed to the north.<br>The one God to whom prayer is addressed.<br>King of night and day, the Mighty One.`,
+      `<s>Sarkim Maka’daa</s>—`,
+      `You satisfy us, Father.<br>Maryaama’s husband.<br>It is hard for him to beg.<br>Lazybones and his mother shared the flour; each took their share.`,
+      `<i>(The ceremony continues with the motif of the deity </i><s>Goojè</s><+>¹[the name Goojè derives from the title of a noble of the court of Katsina]</+><i> to accompany a dance called buu’da hiilii, “opening the square”, in which the yan bori dance in circles while dragging a rooster behind them, properly delimiting the space.)</i>`,
+      `<s>Goojè</s>—`,
+      `Here is the Arab!<br>A <+>marabout[a Muslim holy man or hermit, especially in North and North-Central Africa]</+> who prays to God.<br>Goojè, son of a chief, Arab.<br>Arab. Goojè.`,
+      `<i>(After the rooster has been sacrificed, the </i><s>initiate</s><i> inhales the smoke of fragrant herbs burned in a pot of embers. The initiate sits in front of the orchestra, on the floor, next to </i><s>jaa keeso</s><i>, as the introductions continue.)</i>`,
+      `<s>Yaa saab rook’oo</s>—`,
+      `He is used to begging.<br>Let him beg!`,
+      `<s>Maka’din jau-jau</s>—`,
+      `Disau, <+>griot[poet/musician/storyteller]</+> of the children.<br>Disau, griot of the grown-ups.`,
+      `<s>Dàariiyaa</s>—`,
+      `She who doesn’t walk away and just laughs.<br>You who don’t walk away without laughing.<br>You who can’t walk away without laughing.`,
+      `<s>Bàmaagujè</s>—`,
+      `The <+><i>kwaraayà</i>[an annual competition that reserves an important place for traditional baura bracelets]</+> ritual wrestling match doesn’t interest the Muslims.<br>Here comes its great challenger, the Animist!<br>Come quickly, Animist!`,
+      `<s>Saamaagii rarii</s>—`,
+      `Powerful, negligent ruler. Long, strong.<br>Powerful, careless sovereign strikes the sorcerer.<br>Powerful, careless sovereign. Strong animist.`,
+      `<s>Nakaada</s>—`,
+      `It is not true that the whirlwind can only carry dry leaves.<br>When it reaches a house, it circles around it.<br>It is not true that fire cannot devour a grill.<br>A meal of <+>black thread[As Nakaada is a crazy spirit, he mixes millet flour with black thread instead of boiled leaves]</+>.<br>An inseparable chain.<br>White stands apart, black <+>stands apart[“Unbearable spirit, suspicious spirit”]</+>.`,
+    ],
+    infoURL: "",
+    mediaURL: ["https://youtu.be/brh46wcFXgk","https://youtu.be/2YGkRHzLsMw"],
+    textURL: "",
+    coordinates: { x: 4.028889, y: 13.646111, name: "Dogondoutchi" },
+    ref: [
+      { id: "okagbue-2008-deviants", type: "article", title: "Deviants and Outcasts: Power and Politics in Hausa Bori Performances", containerTitle: "New Theatre Quarterly", contributors: [ { firstName: "Osita", lastName: "Okagbue", role: "author" } ], pubDate: { year: 2008, month: 8 }, volume: "24", issue: "3", pages: { start: "270", end: "280" }, url: "https://eprints-gro.gold.ac.uk/id/eprint/2515/1/DRAMA_Okagbue_2008a.pdf", meta: { sortKey: "info", grade: "A" } },
+      { id: "horn-1981-ritual", type: "article", title: "Ritual, drama and the theatrical: The case of Bori spirit mediumship", containerTitle: "Nigeria Magazine", contributors: [ { firstName: "Andrew", lastName: "Horn", role: "author" } ], pubDate: { year: 1981 }, issue: "136", pages: { start: "3", end: "16" }, url: "https://www.academia.edu/144408401/Andrew_Horn_African_Theatre_Ritual_Drama_Theatrical_Bori_Spirit_Mediumship", meta: { sortKey: "info", grade: "C" } },
+      { id: "sullivan-2005-exploring", type: "article", title: "Exploring Bori as a Site of Myth in Hausa Culture", containerTitle: "Journal of African Cultural Studies", contributors: [ { firstName: "Joanna", lastName: "Sullivan", role: "author" } ], pubDate: { year: 2005, month: 12 }, volume: "17", issue: "2", pages: { start: "271", end: "282" }, publisher: "Taylor & Francis", url: "https://www.jstor.org/stable/4141314", meta: { sortKey: "info", grade: "C" } },
+      { id: "hunter-1998-towards", type: "article", title: "Towards a Hausa verbal aesthetic: aspects of language about using language", containerTitle: "Journal of African Cultural Studies", contributors: [ { firstName: "Linda", lastName: "Hunter", role: "author" }, { firstName: "Chaibou Elhadji", lastName: "Oumarou", role: "author" } ], pubDate: { year: 1998, month: 12 }, volume: "11", issue: "2", pages: { start: "157", end: "170" }, url: "https://www.researchgate.net/publication/248968256_Towards_a_Hausa_verbal_aesthetic_aspects_of_language_about_using_language", meta: { sortKey: "text", grade: "B" } },
+      { id: "erlmann-1989-girkaa", type: "book", title: "Girkaa: Une cérémonie d'initiation au culte de possession bòorii des Hausa de la région de Maradi (Niger)", contributors: [ { firstName: "Veit", lastName: "Erlmann", role: "author" }, { firstName: "Habou", lastName: "Magagi", role: "author" } ], pubDate: { year: 1989 }, publisher: "Dietrich Reimer Verlag", location: "Berlin", url: "https://www.veiterlmann.net/texts--sounds/erlmann---magagi---girkaa.pdf", meta: { sortKey: "text", grade: "C" } }
+    ]
   },
   {
     id: "AMNOPMD",
@@ -3399,7 +3685,7 @@ export const presMusDrama = [
     textURL: [""]
   },
   {
-    id: "ASWEPMD",
+    id: "ASSWPMD",
     title: {original: "تعزیه", transliteration: "Ta‘zīeh"},
     century: 17,
     group: {people: "Persian", language: "Persian", location: "Iran"},
@@ -3416,6 +3702,55 @@ export const presMusDrama = [
     textURL: "",
     ref: [
       { id: "taghvai-2005", type: "video", title: "Dress Rehearsal: The Brave Hurr's Ta'zieh", shortTitle: "Dress Rehearsal", contributors: [ { firstName: "Nasser", lastName: "Taghvai", role: "director" } ], pubDate: { year: 2005 }, publisher: "Nasser Taghvai Productions", location: "Iran", medium: "Documentary Film", meta: { notes: "A study of the Ta'zieh of 'Hurr ibn Yazid al-Riyahi.' Focuses on the ritualistic aspects, the distinction between 'shabih-khani' (singing roles), and the interaction between performers and the community.", grade: "A", sortKey: "text", tags: ["Iranian Cinema", "Ta'zieh", "Persian Culture", "Ritual Theater"] } }
+    ]
+  },
+  {
+    id: "ASWEPMD",
+    title: {original: "رِغزِيت", transliteration: "Reǧzīt"}, /* {original: "رِغزِيت مَيدَانِي", transliteration: "Reǧzīt Maydānī", translation: "Collective Chant"} */
+    century: 6,
+    group: {people: "Mahri", language: "Mehri", location: "Yemen"},
+    info: [
+      `[The Arabian Peninsula is not widely regarded as a site of linguistic diversity. Arabic, the sacred language of Islam, the keystone of Arab nationalism, and the chief vehicle of colloquial and literary expression across the Middle East had already established itself as the primary language of the Arabian Peninsula by the early Islamic period, if not earlier. Yet pockets of non-Arabic, indigenous language speakers have persisted into the present era in small enclaves in southern Arabia.] In Yemen, speakers of the Mehri language maintain a rich performance tradition emblematic of oral transmission prior to the dissemination of written Arabic.`,
+      `Of the genres in this canon, none is held in higher regard than <i>reǧzīt</i>. There are two performative modes of <i>reǧzīt</i> <+>tristich[poetry arranged in three-line units]</+> couplets: <i>maydānī</i> (collective chants) and <i>maraddāt</i> (individual exchanges). These together are highly esteemed in al-Mahra for their formality and elegance, fulfilling important social and artistic functions. Historic pieces preserve the dialogues of master poets, while new compositions emerge regularly from live-devised call-and-response performances at weddings and celebrations.`
+    ],
+    excerpt: [
+      `<s>Bir Freg</s>—`,
+      `Let us now continue our journey<br>and cast our fishing net<br>where it may arrive at the sardine grounds`,
+      `The discerning skipper<br>keeps control wherever action is called for<br>and the skilled one has good sense.`,
+      `<s>Muhammad bir ʿAli</s>—`,
+      `The land and water are mine<br>by proofs and witnesses<br>that are free from fault`,
+      `Except for that which is beyond the law<br>on borders established before me<br>by bands of men and armies.`,
+      `<s>Bir Freg</s>—`,
+      `We don’t deny what belongs to the traders<br>and the property that he owns<br>we say that he deserves it`,
+      `But upon the dangerous, dark sea<br>the swimmer must turn back<br>or the waves in narrow places will smash him to pieces.`,
+      `<s>Muhammad bir ʿAli</s>—`,
+      `The bonds of time past<br>free from any uncertainty<br>whose terms were perfect and complete`,
+      `Now I don’t understand them<br>as though the swimmer is in the sea<br>but the heads are hidden.`,
+      `<s>Bir Freg</s>—`,
+      `The mindful fisherman knows his net<br>and the strength of its manufacture<br>and doesn’t overlook the fringes at the ends`,
+      `Where its weak points are most severe<br>he checks it over every day<br>and tries to limit any damage.`,
+      `<s>Muhammad bir ʿAli</s>—`,
+      `The grasping person is bound by nothing<br>his dorsal fin thrashes above the water line<br>his ill intentions do not lessen with time`,
+      `Except if a doctor attacks him<br>with a large bore instrument<br>and is busy against him, like an untreatable illness.`,
+      `<s>Bir Freg</s>—`,
+      `Now the communists have arisen<br>with an exchange of piercing iron<br>and their massive tools of war`,
+      `That one in the fortress<br>they strike it every day<br>and the percussions trouble the mind.`,
+      `<s>Muhammad bir ʿAli</s>—`,
+      `The one who acts without thinking about others<br>it burdens his conscience<br>woe unto the one who bears it!`,
+      `The weight of it sinks into his chest<br>his body’s strength is stricken with pain<br>and in the end, it fails him.`,
+      `<s>Bir Freg</s>—`,
+      `Even if the weight were increased<br>the beasts-of-burden could carry it<br>and the best camels would do it with ease`,
+      `Even if things are as they are<br>they are able to do it every day<br>though amongst them are wrong-doers.`,
+      `<s>Muhammad bir ʿAli</s>—`,
+      `It’s best we loosed the rope<br>with all the conditions agreed upon<br>and the tie bound twice over`,
+      `The storage rooms are closed<br>though they be spacious<br>they are blocked off and locked.`
+    ],
+    infoURL: "",
+    mediaURL: ["https://youtu.be/qpwl98OzpnU","https://youtu.be/ASbFQMKu30A"],
+    textURL: "",
+    coordinates: { x: 51.7333, y: 16.8000, name: "Mahra"},
+    ref: [
+      { id: "when-melodies-gather-waning-years", type: "webpage", contributors: [{ firstName: "Samuel", lastName: "Liebhaber", role: "author" }], title: "The Waning Years of the ʿAfrārī Sultanate", containerTitle: "When Melodies Gather: Oral Art of the Mahra", pubDate: { year: 2018 }, publisher: "Stanford University Press", location: "Stanford, CA", url: "https://whenmelodiesgather.supdigital.org/wmg/the-waning-years-of-the-afrr-sulnate?path=rezt", meta: { sortKey: "text", grade: "B" } }
     ]
   },
   {
@@ -3655,7 +3990,7 @@ export const presMusDrama = [
       `Of the multitudes of you gathered here, from whence have you journeyed? What are your names, and where do you originate?`,
       `<s>Hudoq Tonggaep—</s>`,
       `Behold, these are the ones who come from <+>Apao Lagan[epaue Legean, the ancestral spirit realm or mythical place of origin]</+>; those who come from the riverbed, those who come from the rocky mountains, and those who come from the deep wilderness. Yes, such are the origins of our arrival.`,
-      `<s>Hudoq Tonggaep—</s>`,
+      `<s>Sehun Taang—</s>`,
       `Yes, very well. I invite you to wait for a moment while I prepare a modest offering of food. After you have finished eating and drinking, please partake in <+>chewing betel nut and smoking[sign of hospitality and respect, serving to cement bonds between humans and spirits before the ritual task begins]</+>. Only then shall you assist in setting things right and come to our aid. You shall restore the harmony and prosperity of our lives, fulfill the needs of the community, and uplift the spirit of life.`,
       `<s>Hudoq Tonggaep—</s>`,
       `Here I wish to reach out, to grasp, I wish to gather all the necessities of life—to bring success, fortune, and prosperity into the life of the community. May all the fruits of their endeavors be gathered, directed, and achieved.`,
@@ -4965,6 +5300,60 @@ export const foundRelTexts = [
       {id: "kashyap-2003", type: "book", title: "Secrets of Rig Veda: First 121 Suktas", contributors: [{lastName: "Kashyap", firstName: "Rangasami Lakshminarayan", role: "author"}], pubDate: {year: 2003}, publisher: "Sri Aurobindo Kapali Sastry Institute of Vedic Culture", location: "Bengaluru", url: "https://archive.org/details/MmFD_secrets-of-rig-veda-first-121-suktas-by-r.-l.-kashyap-bengaluru-2003-sri-aurobin", meta: {sortKey: "text", grade: "A"}},
       {id: "swami-1938", type: "book", title: "The Ten Principal Upanishads", contributors: [{lastName: "Swāmi", firstName: "Shree Purohit", role: "author"}, {lastName: "Yeats", firstName: "William Butler", role: "author"}], pubDate: {year: 1938}, publisher: "Faber and Faber", url: "https://archive.org/details/in.ernet.dli.2015.238029", meta: {sortKey: "text", grade: "A"}},
       {id: "vivekjivandas-2013", type: "book", title: "Hinduism: Sacred texts: Vedas, Upanishads, Agamas, Puranas", contributors: [{lastName: "Vivekjivandas", firstName: "Sadhu", role: "author"}, {lastName: "Dave", firstName: "Janakbhai", role: "author"}], pubDate: {year: 2013}, publisher: "Swaminarayan Aksharpith", meta: {sortKey: "info", grade: "A"}}
+    ]
+  },
+  {
+    id: "ASSWFRT",
+    title: {original: "𐬫𐬀𐬯𐬥𐬀", transliteration: "Yasna", translation: "Worship"},
+    group: {people: "Airya", language: "Avestan", religion: "Zoroastrianism", location: "Bactria"},
+    info: [
+      `The corpus of all religious texts in the Avestan language on the topic of the Zoroastrian religion is called the Avesta, composed from 1500–400 BCE during the Avestan period. The most important of these texts is the Yasna, recited during the ceremony of the same name. The fundamental reason for celebrating the Yasna liturgy is to please the exalted Lord of Wisdom, Ahura Mazda, and all spirit beings of his good creation. Found within the larger Yasna, the Gathas hymns were composed by Zarathushtra himself.`,
+      `<b>ZARATHUSTRA SPITAMA</b> was a prophet and founder of a reform movement to the Ancient Iranian religion renowned for his eloquence and ethical teachings. He said, “I shall declare to you in verse, not in non-verse, in total inspiration,” and in this way his words have resonated through centuries of human experience.`
+    ],
+    excerpt: [
+      `<+>Righteousness[the universal law that stands for order, evolution, progress, and perfection as established by the Creator for creation; one becomes righteous by doing the right thing, at the right time, in the right place, and with the right means to obtain the right result; it means precision in every thought, word, and deed as to the perfect, ideal, ordering of things; it means constant improvement and continuous renovation]</+> is the best good. It is radiant happiness.<br>Radiant happiness comes to the person to whom<br>righteousness is for the sake of the best righteousness alone.`,
+      `>>(Ashem Vohu)`,
+      `<...>`,
+      `Both the lord and the leader are to be chosen<br>because of their righteousness.<br>These two appointments are made with good mind<br>so that acts of life are done for the Wise One,<br>and the dominion of the Lord is well established,<br>in which the chosen person becomes<br>the rehabilitator of the rightful who are oppressed.`,
+      `>>(Yathu Ahu)`,
+      `<...>`,
+      `The <+>Soul[the Living World of ours questions the reason she was created]</+> of the Living World lamented to You:<br>Why did You create me? Who fashioned me this way?<br>I am oppressed by fury, rapine, outrage, and aggression.<br>I have no one to rehabilitate me other than<br>You. Lead me to true civilization.`,
+      `Then the Creator of the Living World asked <+>Righteousness[Asha, the Universal Law of Righteousness, regulates creation; God asks it to attend to the complaint and appoint a leader who could rehabilitate the Living World]</+>:<br>Who is Your leader of the World,<br>who can offer her civilization,<br>nourishment, and strength?<br>Whom do you wish to be her lord;<br>one who shall repel the fury of the wrongful?`,
+      `Righteousness replied:<br>There is no authority in the world<br>who is free from <+>malice[absolute might is not without malice; those who strive for might would never help the weak]</+>.<br>Of those yonder, I know none<br>who would activate the noble to help the meek.<br>Had there been one person strong enough among them,<br>I would have hurried to his call.`,
+      `The Wise Lord knows best<br>what the divines and their people<br>have been doing in the past and shall do in the future.<br>The Lord alone is the judge.<br>Let it be so as He wishes us to be.`,
+      `It is better for us two, the Soul of the fruitful World and me,<br>to raise our hands for the divine grace<br>and ask the Wise One:<br>Will there be no livelihood for the honest?<br>Will there be no reformer among the wrongful?`,
+      `The Wise Lord, the Knowing,<br>spoke in a loving form:<br>So you do not know any lord or leader<br>who acts in righteousness.<br>But, were you not fashioned by the Creator<br>to look after the promoter as well as the settler?`,
+      `The Wise Lord, of one accord with Righteousness,<br>prepared His thought-provoking message<br>in response to the sweet plea made by the World,<br>because with His doctrine, He is the promoter<br>for those who wish to be protected.<br>He asked: <+>Good Mind[another divine Principle of Life]</+>, do you know any person<br>who can help the mortals?`,
+      `Yes I do. There is only one person<br>who has listened to our teachings.<br>He is Zarathushtra Spitama.<br>Wise One, he is prepared to proclaim the message<br>through his Songs for the sake of Righteousness.<br>Grant him sweetness of speech.`,
+      `The Soul of the World cried again:<br>Am I to accept a powerless man<br>with a feeble voice as my caretaker?<br>I want a powerful ruler.<br>Will such a time come<br>when will he give me his helping hand?`,
+      `Lord, Grant him and his people,<br>strength and power<br>through righteousness and good mind,<br>so that he leads me to peace and tranquility.<br>I also, Wise One, recognize him<br>as Your foremost discovery.`,
+      `When shall Righteousness, Good Mind,<br>and the <+>Divine Dominion[under the Divine Dominion, all humanity would enter into a Grand Fellowship, empowered by our differences, unified in our desire to actualize an ideal existence]</+> hasten to me?<br>Wise One, do acknowledge, with Your discernment,<br>the order of the Great Fellowship.<br>Lord, help us now.<br>We look to Your kindness.`,
+      `>>(Song 2.1-11 / Yasna 29.1-11)`,
+      `<...>`,
+      `May the desired Fellowship come<br>for the support of the men and women of Zarathushtra,<br>for the support of good mind,<br>so that the conscience of every person earns<br>the choice reward, the reward of righteousness,<br>a wish regarded by the Wise Lord.`,
+      `>>(Yasna 54.1)`
+    ],
+    infoURL: ["https://en.wikipedia.org/wiki/Zoroastrianism"],
+    mediaURL: [],
+    textURL: "",
+    ref: [
+      {
+  id: "jafarey-gathas-thought",
+  type: "webpage",
+  title: "Gathas: A Thought a Day to Practice, Say, and Pray",
+  containerTitle: "Zarathushtrian Assembly",
+  contributors: [
+    { firstName: "Ali A.", lastName: "Jafarey", role: "author" },
+    { firstName: "Caleb S.", lastName: "Goodfellow", role: "author" }
+  ],
+  pubDate: { 
+    year: 1996
+  },
+  publisher: "Zarathushtrian Assembly",
+  url: "https://zoroastrian.org/the-gathas/",
+  meta: { grade: "A", sortKey: "info" }
+},
+      { id: "jafarey-1994-gathas", type: "article", title: "The Gathas and Translation, Explanation, Interpretation, and Imagination", containerTitle: "SPENTA", contributors: [ { firstName: "Ali A.", lastName: "Jafarey", role: "author" } ], pubDate: { year: 1994, month: 4 }, volume: "4", publisher: "The Zarathushtrian Assembly", location: "Los Angeles, CA", url: "https://zoroastrian.org/wp-content/uploads/2024/11/Jafarey-The-Gathas-and-Translation.pdf", meta: { grade: "A", sortKey: "info" } }
     ]
   },
   {

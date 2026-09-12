@@ -69,7 +69,7 @@ export default function CollectionShelfItems({
                                 <Image src={posterUrl(entry.id)} alt="Media Image" width="300" height="400" className="absolute top-0 left-0 w-full" unoptimized />
                             </div>
                             <h2 className={`shrink-0 ${syncopate.className} leading-none uppercase font-bold text-[0.47rem] opacity-50 pt-1`}>{subregions.find(subr => subr.id===entry.id.slice(0,4))?.name}</h2>
-                            <h1 className={`shrink-0 text-[0.84rem] mt-[-0.3rem] leading-[1.5rem] mb-[-0.25rem] font-semibold truncate`}><span className={`${checkFont(getTitle(entry))}`}>{getTitle(entry)}</span></h1>
+                            <h1 className={`shrink-0 text-[0.84rem] mt-[-0.3rem] leading-[1.5rem] h-[1.75rem] mb-[-0.65rem] font-semibold truncate`}><span className={`${checkFont(getTitle(entry))}`}>{getTitle(entry)}</span></h1>
                         </div>
                     </Link>
                 ))}

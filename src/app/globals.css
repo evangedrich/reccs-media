@@ -52,14 +52,41 @@ body {
 }
 
 /* Per-script font classes returned by checkFont() in functions/text.ts. Each reads a
-   --font-noto-* variable registered on <html> in layout.tsx, falling back to the body
-   stack. Stable names (no next/font hash) so they render identically on server/client. */
-.font-malayalam { font-family: var(--font-noto-malayalam), var(--font-julia-mono), monospace, sans-serif; }
-.font-tibetan   { font-family: var(--font-noto-tibetan),   var(--font-julia-mono), monospace, sans-serif; }
-.font-canadian  { font-family: var(--font-noto-canadian),  var(--font-julia-mono), monospace, sans-serif; }
-.font-arabic    { font-family: var(--font-noto-arabic),    var(--font-julia-mono), monospace, sans-serif; }
-.font-tamil     { font-family: var(--font-noto-tamil),     var(--font-julia-mono), monospace, sans-serif; }
-.font-telugu    { font-family: var(--font-noto-telugu),    var(--font-julia-mono), monospace, sans-serif; }
+   font variable registered on <html> in layout.tsx, falling back to the body stack.
+   Stable names (no next/font hash) so they render identically on server/client. */
+.font-malayalam  { font-family: var(--font-noto-malayalam), var(--font-julia-mono), monospace, sans-serif; }
+.font-tibetan    { font-family: var(--font-misans-tibetan), var(--font-julia-mono), monospace, sans-serif; }
+.font-canadian   { font-family: var(--font-noto-canadian),  var(--font-julia-mono), monospace, sans-serif; }
+.font-arabic     { font-family: var(--font-noto-arabic),    var(--font-julia-mono), monospace, sans-serif; }
+.font-tamil      { font-family: var(--font-noto-tamil),     var(--font-julia-mono), monospace, sans-serif; }
+.font-telugu     { font-family: var(--font-noto-telugu),    var(--font-julia-mono), monospace, sans-serif; }
+.font-ethiopic   { font-family: var(--font-noto-ethiopic),  var(--font-julia-mono), monospace, sans-serif; }
+.font-devanagari { font-family: var(--font-noto-devanagari),var(--font-julia-mono), monospace, sans-serif; }
+.font-tifinagh   { font-family: var(--font-ingeo-tifinagh), var(--font-julia-mono), monospace, sans-serif; }
+.font-bamum      { font-family: var(--font-noto-bamum),     var(--font-julia-mono), monospace, sans-serif; }
+.font-thai       { font-family: var(--font-noto-thai),      var(--font-julia-mono), monospace, sans-serif; }
+.font-khmer      { font-family: var(--font-noto-khmer),     var(--font-julia-mono), monospace, sans-serif; }
+.font-balinese   { font-family: var(--font-noto-balinese),  var(--font-julia-mono), monospace, sans-serif; }
+
+/* Wrap excerpt text in this to render it with the whole, unsubset script fonts instead
+   of the title subsets. The .font-<script> classes above are unchanged — this just
+   rebinds what their variable points at for the subtree, so checkFont() needs no special
+   case. Requires the element to also carry `fullScriptFontVars` from fonts/fontsFull.ts,
+   which is imported only by the entry page. Only the script actually present on the page
+   is ever downloaded; see fontsFull.ts for why these are deliberately not subset. */
+.excerpt-scope {
+  --font-noto-malayalam:  var(--font-noto-malayalam-full);
+  --font-noto-canadian:   var(--font-noto-canadian-full);
+  --font-noto-arabic:     var(--font-noto-arabic-full);
+  --font-noto-tamil:      var(--font-noto-tamil-full);
+  --font-noto-telugu:     var(--font-noto-telugu-full);
+  --font-noto-ethiopic:   var(--font-noto-ethiopic-full);
+  --font-noto-devanagari: var(--font-noto-devanagari-full);
+  --font-noto-bamum:      var(--font-noto-bamum-full);
+  --font-noto-thai:       var(--font-noto-thai-full);
+  --font-noto-khmer:      var(--font-noto-khmer-full);
+  --font-noto-balinese:   var(--font-noto-balinese-full);
+}
 
 @keyframes map-scroll {
 	from { margin-left: -8px; }
