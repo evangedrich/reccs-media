@@ -12,8 +12,8 @@ import { parseWithAbbr } from "../functions/abbr";
 const allTabs: { id: string, keys: string[] }[] = [
     { id: "info", keys: ["info"] },
     { id: "excerpt", keys: ["excerpt"] },
-    { id: "media", keys: ["mediaURL"] },
     { id: "trailer", keys: ["trailer"] },
+    { id: "media", keys: ["mediaURL"] },
     { id: "watch", keys: ["watch"] },
     { id: "playlist", keys: ["playlistURL"] },
     { id: "sources", keys: ["ref", /*"infoURL", "bioURL", "mediaURL", "textURL"*/] },

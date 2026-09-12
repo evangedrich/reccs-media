@@ -130,23 +130,61 @@ export function PrepVideo({ vid }: { vid: string | string[] }) {
     const currIndexRef = useRef(0);
     const [edges, setEdges] = useState<{ atStart: boolean; atEnd: boolean }>({ atStart: true, atEnd: false });
 
+    // Indices we've scrolled away from that still need their video stopped.
+    const pendingStopRef = useRef<Set<number>>(new Set());
+    const settleTimerRef = useRef<number | null>(null);
+
+    // Reloading an iframe is main-thread work heavy enough to stutter the
+    // in-flight smooth scroll, so it waits until scrolling has settled.
+    const stopPending = () => {
+        const el = seriesRef.current;
+        if (!el) return;
+        const iframes = el.querySelectorAll("iframe");
+        for (const i of pendingStopRef.current) {
+            const frame = iframes[i];
+            if (!frame || i === currIndexRef.current) continue;
+            // Assigning to iframe.src navigates the frame with *push* semantics,
+            // which appends an entry to the top-level session history and makes
+            // the browser Back button appear to do nothing. location.replace()
+            // does the same navigation with replace semantics; it is one of the
+            // few Location members callable across origins, so it works on the
+            // YouTube/Vimeo/etc. frames.
+            try {
+                frame.contentWindow?.location.replace(frame.src);
+            } catch {
+                frame.src = frame.src;
+            }
+        }
+        pendingStopRef.current.clear();
+    };
+    // Re-armed on every scroll event, so it only fires once scrolling stops.
+    const armSettle = () => {
+        if (pendingStopRef.current.size === 0) return;
+        if (settleTimerRef.current !== null) clearTimeout(settleTimerRef.current);
+        settleTimerRef.current = window.setTimeout(() => {
+            settleTimerRef.current = null;
+            stopPending();
+        }, 150);
+    };
+
     const measure = () => {
         const el = seriesRef.current;
         if (!el) return;
-        setEdges({
-            atStart: el.scrollLeft <= 0,
-            atEnd: el.scrollLeft + el.clientWidth >= el.scrollWidth - 1,
-        });
-        const iframes = el.querySelectorAll("iframe");
+        const atStart = el.scrollLeft <= 0;
+        const atEnd = el.scrollLeft + el.clientWidth >= el.scrollWidth - 1;
+        // Keep the same object when nothing changed; this runs on every scroll
+        // event, and a fresh object would re-render on every animation frame.
+        setEdges(prev => (prev.atStart === atStart && prev.atEnd === atEnd ? prev : { atStart, atEnd }));
         const entryWidth = (el.querySelector<HTMLElement>(":scope > div")?.offsetWidth ?? el.clientWidth);
-        if (entryWidth === 0) return;
-        const newIndex = Math.max(0, Math.min(iframes.length - 1, Math.round(el.scrollLeft / entryWidth)));
-        if (newIndex !== currIndexRef.current) {
-            // Stop the video we scrolled away from by reloading its iframe.
-            const prev = iframes[currIndexRef.current];
-            if (prev) prev.src = prev.src;
-            currIndexRef.current = newIndex;
+        if (entryWidth > 0) {
+            const count = el.querySelectorAll("iframe").length;
+            const newIndex = Math.max(0, Math.min(count - 1, Math.round(el.scrollLeft / entryWidth)));
+            if (newIndex !== currIndexRef.current) {
+                pendingStopRef.current.add(currIndexRef.current);
+                currIndexRef.current = newIndex;
+            }
         }
+        armSettle();
     };
     const scroll = (dir: -1 | 1) => {
         const el = seriesRef.current;
@@ -160,7 +198,10 @@ export function PrepVideo({ vid }: { vid: string | string[] }) {
         if (!el) return;
         const ro = new ResizeObserver(measure);
         ro.observe(el);
-        return () => ro.disconnect();
+        return () => {
+            ro.disconnect();
+            if (settleTimerRef.current !== null) clearTimeout(settleTimerRef.current);
+        };
     }, [urls.length]);
 
     if (urls.length === 1) {

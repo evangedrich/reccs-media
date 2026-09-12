@@ -8,8 +8,8 @@ export default function Footer() {
                 <div className="flex flex-col">
                     <h1 className={`opacity-50 uppercase text-xs mb-1 block`}>Info</h1>
                     <ColorLink to="/about" text="About" c="r"/>
-                    <ColorLink to="/privacy-policy" text="Privacy" c="p"/>
                     <ColorLink to="/landing" text="Landing" c="o"/>
+                    <ColorLink to="/privacy-policy" text="Privacy" c="p"/>
                 </div>
                 <div className="flex flex-col">
                     <h1 className={`opacity-50 uppercase text-xs mb-1 block`}>More</h1>

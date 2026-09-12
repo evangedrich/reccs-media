@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { juliaMonoSubset, notoMalayalam, notoTibetan, notoCanadian, notoArabic, notoTamil, notoTelugu } from "./fonts/fonts";
+import { juliaMonoSubset, notoMalayalam, miSansTibetan, notoCanadian, notoArabic, notoTamil, notoTelugu, notoEthiopic, notoDevanagari, ingeoTifinagh, notoBamum, notoThai, notoKhmer, notoBalinese } from "./fonts/fonts";
 import "./globals.css";
 
 // Every conditional script font's CSS variable is registered once on <html>, so its
-// @font-face + `--font-noto-*` variable exist site-wide. checkFont() returns utility
+// @font-face + `--font-*` variable exist site-wide. checkFont() returns utility
 // classes (globals.css) that read these; the woff2 files stay lazy (preload: false).
-const scriptFontVars = [notoMalayalam, notoTibetan, notoCanadian, notoArabic, notoTamil, notoTelugu]
+const scriptFontVars = [notoMalayalam, miSansTibetan, notoCanadian, notoArabic, notoTamil, notoTelugu, notoEthiopic, notoDevanagari, ingeoTifinagh, notoBamum, notoThai, notoKhmer, notoBalinese]
   .map((f) => f.variable)
   .join(" ");
 

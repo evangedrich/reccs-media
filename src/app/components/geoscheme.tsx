@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import dynamic from "next/dynamic";
 import Map, { HoverMap } from "@/app/components/map";
 import { subregions } from "@/app/lib/subregions";
@@ -48,8 +48,53 @@ export default function Geoscheme({ reccs }: { reccs: ReccLite[] }) {
     }, [currSubr]);
 
     const entries = reccs.filter(itm => itm.id.startsWith(currSubr));
+
+    // One title per writing system, rendered off-screen purely to make the browser fetch
+    // that script's font. Selecting a subregion is a client-side state change: the cards
+    // paint on the next frame (~7ms) but the font they need is only discovered then, so it
+    // arrived ~90ms later and every non-Latin title flashed in the fallback first. There is
+    // no navigation to hang a preload off, so the fonts have to be pulled in ahead of time.
+    //
+    // Deliberately ALL of them rather than just the subregion being pointed at: a hover
+    // trigger would do nothing on touch, where a tap gives no warning before the click.
+    // The cost is ~490KB, which is why it waits for `load` and then for an idle moment —
+    // by then the page is interactive and the images (~570KB) are already done, so this
+    // competes with nothing and is cached well before anyone picks a region.
+    //
+    // The spans must be real laid-out text: `display: none` would not trigger the fetch.
+    // The weights have to match the cards too, since weight is part of what identifies a
+    // face — warming at the default 400 would pull the wrong JuliaMono file and leave the
+    // Latin half of the titles flashing.
+    const [warm, setWarm] = useState(false);
+    useEffect(() => {
+        let idle: number | undefined;
+        const schedule = () => {
+            const ric = (window as typeof window & { requestIdleCallback?: (cb: () => void, o?: { timeout: number }) => number }).requestIdleCallback;
+            idle = ric ? ric(() => setWarm(true), { timeout: 3000 }) : window.setTimeout(() => setWarm(true), 1200);
+        };
+        if (document.readyState === "complete") schedule();
+        else { window.addEventListener("load", schedule); return () => window.removeEventListener("load", schedule); }
+        return () => { if (idle !== undefined) window.clearTimeout(idle); };
+    }, []);
+    const warmSamples = useMemo(() => {
+        // plain object, not a Map — `Map` is this module's imported dot-map component
+        const seen: Record<string, string> = {};
+        for (const itm of reccs) {
+            const title = getTitle(itm);
+            const cls = checkFont(title);            // "" is the Latin/JuliaMono case
+            if (!(cls in seen)) seen[cls] = title;
+        }
+        return Object.entries(seen);
+    }, [reccs]);
     return (
         <div>
+            <div aria-hidden="true" className="pointer-events-none absolute w-0 h-0 overflow-hidden opacity-0">
+                {warm && warmSamples.map(([cls, title]) => (
+                    <span key={`warm_${cls || "latin"}`} className={`text-xs font-semibold ${cls}`}>{title}</span>
+                ))}
+                {/* the card's collection label is font-bold, a different JuliaMono face */}
+                {warm && <span className="text-[0.55rem] font-bold uppercase">Reccs</span>}
+            </div>
             <div className={`${showGlobe ? "hidden max-sm:block max-sm:w-full max-sm:aspect-2/1" : "max-sm:hidden"} relative border-b-2 p-4`}>
 				<div className="relative max-w-[900px] mx-auto">
 					<div className=""><Map /></div>
@@ -84,7 +129,7 @@ export default function Geoscheme({ reccs }: { reccs: ReccLite[] }) {
                             <div className="absolute top-0 left-0 w-full h-full -z-10 flex items-center justify-center"><LoadingIcon /></div>
                         </div>
                         <h2 className="uppercase text-[0.55rem] leading-none mt-1 opacity-50 font-bold">{collections.find(coll => coll.id===entry.id.slice(4,7))?.shortName}</h2>
-                        <h1 className="text-xs font-semibold truncate mt-[-0.25rem] leading-[1.5rem] mb-[-0.4rem]"><span className={`${checkFont(getTitle(entry))}`}>{getTitle(entry)}</span></h1>
+                        <h1 className="text-xs font-semibold truncate mt-[-0.25rem] leading-[1.5rem] h-[1.75rem] mb-[-0.75rem]"><span className={`${checkFont(getTitle(entry))}`}>{getTitle(entry)}</span></h1>
                     </Link>
                 ))}</div>
             </div>
