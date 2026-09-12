@@ -5337,23 +5337,9 @@ export const foundRelTexts = [
     mediaURL: [],
     textURL: "",
     ref: [
-      {
-  id: "jafarey-gathas-thought",
-  type: "webpage",
-  title: "Gathas: A Thought a Day to Practice, Say, and Pray",
-  containerTitle: "Zarathushtrian Assembly",
-  contributors: [
-    { firstName: "Ali A.", lastName: "Jafarey", role: "author" },
-    { firstName: "Caleb S.", lastName: "Goodfellow", role: "author" }
-  ],
-  pubDate: { 
-    year: 1996
-  },
-  publisher: "Zarathushtrian Assembly",
-  url: "https://zoroastrian.org/the-gathas/",
-  meta: { grade: "A", sortKey: "info" }
-},
-      { id: "jafarey-1994-gathas", type: "article", title: "The Gathas and Translation, Explanation, Interpretation, and Imagination", containerTitle: "SPENTA", contributors: [ { firstName: "Ali A.", lastName: "Jafarey", role: "author" } ], pubDate: { year: 1994, month: 4 }, volume: "4", publisher: "The Zarathushtrian Assembly", location: "Los Angeles, CA", url: "https://zoroastrian.org/wp-content/uploads/2024/11/Jafarey-The-Gathas-and-Translation.pdf", meta: { grade: "A", sortKey: "info" } }
+      { id: "jafarey-gathas-thought", type: "webpage", title: "Gathas: A Thought a Day to Practice, Say, and Pray", containerTitle: "Zarathushtrian Assembly", contributors: [ { firstName: "Ali A.", lastName: "Jafarey", role: "author" }, { firstName: "Caleb S.", lastName: "Goodfellow", role: "author" } ], pubDate: { year: 1996 }, publisher: "Zarathushtrian Assembly", url: "https://zoroastrian.org/the-gathas/", meta: { grade: "A", sortKey: "info" } },
+      { id: "jafarey-1994-gathas", type: "article", title: "The Gathas and Translation, Explanation, Interpretation, and Imagination", containerTitle: "SPENTA", contributors: [ { firstName: "Ali A.", lastName: "Jafarey", role: "author" } ], pubDate: { year: 1994, month: 4 }, volume: "4", publisher: "The Zarathushtrian Assembly", location: "Los Angeles, CA", url: "https://zoroastrian.org/wp-content/uploads/2024/11/Jafarey-The-Gathas-and-Translation.pdf", meta: { grade: "A", sortKey: "info" } },
+      { id: "kotwal-1991-persian", type: "book", title: "A Persian offering: the Yasna: a Zoroastrian high liturgy", contributors: [ { firstName: "Firoze M. P.", lastName: "Kotwal", role: "author" }, { firstName: "James W.", lastName: "Boyd", role: "author" } ], pubDate: { year: 1991 }, publisher: "Association pour l'avancement des études iraniennes", location: "Paris", meta: { grade: "A", sortKey: "text", note: "Series: Studia Iranica. Cahier 8" } }
     ]
   },
   {
