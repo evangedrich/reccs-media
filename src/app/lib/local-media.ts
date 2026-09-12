@@ -5424,8 +5424,8 @@ export const foundRelTexts = [
       `    Each <i>irk</i> is represented by three groups of circles at the head of each interpretation, the result of three throws of a dice-like wooden rod with one to four circles inscribed on each side. Each interpretation ends with a judgement as to whether the outcome is good, bad, very good, or very bad. Now, my dear sons, know thus: this book of divination is good. Thus, everyone is master of his own fate.`
     ],
     excerpt: [
-      `&emsp;&emsp;○ ○   ○ ○   ○ ○`,
-      `I am <+>Ten-si[”Son of Heaven”, Emperor of China]</+>. In the morning and evening, I enjoy sitting on the golden throne. Know thus: The omen is good.<sp>`,
+      `○ ○   ○ ○   ○ ○`,
+      `I am <+>Ten-si[“Son of Heaven”, Emperor of China]</+>. In the morning and evening, I enjoy sitting on the golden throne. Know thus: The omen is good.<sp>`,
       `○ ○ ○ ○   ○ ○ ○ ○   ○ ○ ○ ○`,
       `I am the road god with a dappled horse. Early in the morning and late in the evening I amble along. This road god apparently met two joyful human beings. The human beings were afraid. The road god said: “Do not be afraid! I will give you my divine favor.” Know thus: The omen is good.<sp>`,
       `○ ○ ○   ○ ○ ○   ○ ○ ○`,

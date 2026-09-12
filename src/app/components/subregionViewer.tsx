@@ -10,6 +10,7 @@ import { ReccLite } from "../types/recc";
 import Link from "next/link";
 import Image from "next/image";
 import LoadingIcon from "./loading";
+import FontWarmer from "./fontWarmer";
 
 // Client-only: three.js + drei + the contour/dot geometry (built at module load)
 // must never be imported into the server bundle, or SSR of this region page loads
@@ -81,6 +82,7 @@ export default function SubregionViewer({ regionID, reccs }: { regionID: string;
 
     return (
         <div className="flex flex-col h-full grow">
+            <FontWarmer reccs={reccs} />
             <ul className="flex shrink-0 justify-center-safe items-center h-[34px] border-b-2 overflow-x-auto overflow-y-hidden no-scrollbar">
                 {subrSet.map((subr,i) => (
                     <li 

@@ -19,27 +19,22 @@ const HASH_FILE = join(FONTS_DIR, ".subset-hash");
 // Self-hosted font families to subset: directory name -> weight files live directly
 // inside it; subsets are written to its `subset/` sub-directory.
 //
-// `remapAxis` rebuilds a variable font so its wght axis reads on the CSS scale. Neither
-// of the two faces that use it is drawn on that scale: MiSans Tibetan puts Semibold at
-// 520 and Heavy at 700, Ingeo SemiBold at 110 and Black at 204. Left alone, CSS
-// `font-weight: 600` asks for axis 600 — nine-tenths of the way from MiSans Semibold to
-// Bold — so Tibetan rendered visibly heavier than the Noto scripts beside it, and Ingeo
-// clamped everything above 204 to Black.
+// `instances` pins a variable source's wght axis, emitting one ordinary static font per
+// CSS weight. Only 600 and 900 are ever needed — cards draw titles at font-semibold,
+// entry headers at font-black.
 //
-// It works in two steps. hb-subset first limits the axis to the design range in use with
-// the low end as the new default, which rewrites the gvar deltas so normalised 0 is that
-// design and normalised 1 is the high one. The fvar axis record is then relabelled to the
-// CSS range. Normalised coordinates are what gvar is keyed to and they are untouched, so
-// CSS 600 resolves to the `design[0]` drawing and CSS 900 to `design[1]`, exactly as the
-// pinned statics did — verified pixel-identical, 0.00% ink difference at both weights.
+// Pinning rather than shipping the variable face is a compatibility decision, made after
+// a variable build rendered entry titles unbolded on iOS. These are subset, axis-limited,
+// STAT-stripped fonts — several steps removed from anything a browser vendor tests
+// against — and a static instance has no axis left to misapply. The cost of two files is
+// that the 900 one is absent when you click a card through to its entry page; that is
+// handled by warming both weights on the listing pages instead (see geoscheme.tsx).
 //
-// The alternative, pinning one static per weight, is what this replaces: cards draw
-// titles at 600 and entry headers at 900, so two files meant clicking a card through to
-// its entry page fetched a file the listing page never loaded, and the entry title
-// flashed on every navigation. One file covering both weights is already cached by then.
-// (Doing this with a `font-variation-settings` @font-face descriptor would need one
-// family per weight, which breaks CSS weight fall-through; remapping the axis needs no
-// descriptor support at all.)
+// The axis values are each foundry's own, which is why they are not all 600/900: MiSans
+// Tibetan draws Semibold at 520 and Heavy at 700, Ingeo SemiBold at 110 and Black at 204.
+// Mapping CSS 600/900 onto those keeps Tibetan and Tifinagh from rendering heavier than
+// the Noto scripts beside them. The Noto sources were already axis-limited to 600-900 on
+// download, so for those the CSS weight and the axis value coincide.
 //
 // Both variable sources here deliberately have NO `STAT` table. hb-subset emits STAT
 // as a zero-length table, and OTS (the sanitizer in Chrome/Firefox) rejects the entire
@@ -49,23 +44,18 @@ const HASH_FILE = join(FONTS_DIR, ".subset-hash");
 // If either is regenerated from its original .ttf (both ship a valid STAT, and Ingeo
 // a DSIG that is meaningless once subset), strip those tables first —
 // `assertNoEmptyTables` below fails the build if this regresses.
-type FontFamily = {
-  dir: string;
-  /** design: the font's own wght values to keep. css: the range they are relabelled to. */
-  remapAxis?: { design: [number, number]; css: [number, number] };
-};
+/** instances: CSS weight -> the wght axis value of the design that weight should use. */
+type FontFamily = { dir: string; instances?: Record<string, number> };
 const FONT_FAMILIES: FontFamily[] = [
   { dir: "JuliaMono" },
   { dir: "NotoEmoji" },
   {
     dir: "MiSansTibetan",
-    // MiSans Semibold (520) -> CSS 600, MiSans Heavy (700) -> CSS 900
-    remapAxis: { design: [520, 700], css: [600, 900] },
+    instances: { "600": 520, "900": 700 },   // Semibold, Heavy
   },
   {
     dir: "Ingeo",
-    // Ingeo SemiBold (110) -> CSS 600, Ingeo Black (204) -> CSS 900
-    remapAxis: { design: [110, 204], css: [600, 900] },
+    instances: { "600": 110, "900": 204 },   // SemiBold, Black
   },
   // The per-script Noto fonts, self-hosted rather than pulled through next/font/google.
   // Served whole they were the single worst thing on the site's critical path: 50-190 KB
@@ -73,28 +63,25 @@ const FONT_FAMILIES: FontFamily[] = [
   // had laid the text out, so the title visibly flashed in the fallback first. Subset to
   // the characters the site actually uses they are 2-20 KB.
   //
-  // Each source is a single VARIABLE font spanning the weights in use (600-900; Bamum
-  // and Balinese 600-700, where Google's axis ends), with the wdth axis pinned out. One
-  // file has to cover both weights: cards render titles at 600 and entry headers at 900,
-  // so as separate statics, clicking a card through to its entry page needed a file the
-  // listing page had never loaded, and the entry title flashed on every navigation. See
-  // fonts.ts. hb-subset keeps fvar/gvar, so these stay variable through subsetting.
+  // Each source is Google's variable TTF with the wdth axis pinned out and wght limited
+  // to 600-900 (Bamum and Balinese 600-700, where Google's axis ends); `instances` above
+  // then pins one static per CSS weight out of it.
   //
   // The weight-400 whole-font files in each `full/` directory are for entry-page excerpts
   // in the original script and are deliberately NOT subset (see fontsFull.ts); this loop
   // only reads files sitting directly in the family directory, so `full/` and `subset/`
   // are both skipped.
-  { dir: "noto/Malayalam" },
-  { dir: "noto/Canadian" },
-  { dir: "noto/Arabic" },
-  { dir: "noto/Tamil" },
-  { dir: "noto/Telugu" },
-  { dir: "noto/Ethiopic" },
-  { dir: "noto/Devanagari" },
-  { dir: "noto/Bamum" },
-  { dir: "noto/Thai" },
-  { dir: "noto/Khmer" },
-  { dir: "noto/Balinese" },
+  { dir: "noto/Malayalam", instances: { "600": 600, "900": 900 } },
+  { dir: "noto/Canadian", instances: { "600": 600, "900": 900 } },
+  { dir: "noto/Arabic", instances: { "600": 600, "900": 900 } },
+  { dir: "noto/Tamil", instances: { "600": 600, "900": 900 } },
+  { dir: "noto/Telugu", instances: { "600": 600, "900": 900 } },
+  { dir: "noto/Ethiopic", instances: { "600": 600, "900": 900 } },
+  { dir: "noto/Devanagari", instances: { "600": 600, "900": 900 } },
+  { dir: "noto/Bamum", instances: { "600": 600, "700": 700 } },   // Google draws nothing heavier
+  { dir: "noto/Thai", instances: { "600": 600, "900": 900 } },
+  { dir: "noto/Khmer", instances: { "600": 600, "900": 900 } },
+  { dir: "noto/Balinese", instances: { "600": 600, "700": 700 } },   // Google draws nothing heavier
 ];
 
 // Scan EVERY .ts/.tsx under src/app (not a hardcoded file list): reading raw file
@@ -165,36 +152,6 @@ function assertNoEmptyTables(woff2: Buffer, label: string): void {
   }
 }
 
-// Rewrites the wght axis record in `fvar` to a new min/default/max. Only the labels the
-// CSS engine reads change: gvar deltas live in normalised coordinate space, which this
-// leaves alone, so the drawings stay put and only the numbers used to address them move.
-// Named instances are dropped — their coordinates are in the old units and would now be
-// wrong; nothing in the browser's weight matching consults them.
-function relabelWghtAxis(font: Buffer, min: number, max: number): Buffer {
-  const numTables = font.readUInt16BE(4);
-  let fvar = -1;
-  for (let i = 0; i < numTables; i++) {
-    const o = 12 + i * 16;
-    if (font.toString("ascii", o, o + 4) === "fvar") fvar = font.readUInt32BE(o + 8);
-  }
-  if (fvar < 0) throw new Error("relabelWghtAxis: no fvar table (not a variable font?)");
-
-  const axesOffset = font.readUInt16BE(fvar + 4);
-  const axisCount = font.readUInt16BE(fvar + 8);
-  const axisSize = font.readUInt16BE(fvar + 10);
-  const out = Buffer.from(font);
-  for (let i = 0; i < axisCount; i++) {
-    const a = fvar + axesOffset + i * axisSize;
-    if (font.toString("ascii", a, a + 4) !== "wght") continue;
-    out.writeInt32BE(Math.round(min * 65536), a + 4);  // minValue, as Fixed 16.16
-    out.writeInt32BE(Math.round(min * 65536), a + 8);  // defaultValue == normalised 0
-    out.writeInt32BE(Math.round(max * 65536), a + 12); // maxValue    == normalised 1
-    out.writeUInt16BE(0, fvar + 12);                   // instanceCount
-    return out;
-  }
-  throw new Error("relabelWghtAxis: no wght axis");
-}
-
 function collectUsedText(): string {
   let raw = "";
   for (const file of walkSource(join(process.cwd(), "src/app"))) {
@@ -237,33 +194,30 @@ async function main() {
     for (const file of readdirSync(familyDir)) {
       if (!file.endsWith(".woff2")) continue;
 
-      jobs.push(
-        (async () => {
-          const input = readFileSync(join(familyDir, file));
-          // Each font keeps only the glyphs it actually has among `text`, so passing
-          // the full character set to NotoEmoji yields just the used emoji, etc.
-          let output: Buffer;
-          if (family.remapAxis) {
-            const { design, css } = family.remapAxis;
-            const limited = await subsetFont(input, text, {
-              targetFormat: "sfnt",
-              variationAxes: { wght: { min: design[0], max: design[1], default: design[0] } },
-            });
-            output = await subsetFont(relabelWghtAxis(limited, css[0], css[1]), text, {
-              targetFormat: "woff2",
-            });
-          } else {
-            output = await subsetFont(input, text, { targetFormat: "woff2" });
-          }
-          assertNoEmptyTables(output, `${family.dir}/${file}`);
-          writeFileSync(join(outDir, file), output);
-          const pct = ((1 - output.length / input.length) * 100).toFixed(1);
-          console.log(
-            `  ${family.dir}/subset/${basename(file)}: ` +
-              `${(input.length / 1024).toFixed(0)} KB -> ${(output.length / 1024).toFixed(0)} KB (-${pct}%)`,
-          );
-        })(),
-      );
+      const outputs = family.instances
+        ? Object.entries(family.instances).map(([cssWeight, axis]) => ({
+            name: `${basename(file, ".woff2")}-${cssWeight}.woff2`,
+            variationAxes: { wght: axis },
+          }))
+        : [{ name: file, variationAxes: undefined }];
+
+      for (const { name, variationAxes } of outputs) {
+        jobs.push(
+          (async () => {
+            const input = readFileSync(join(familyDir, file));
+            // Each font keeps only the glyphs it actually has among `text`, so passing
+            // the full character set to NotoEmoji yields just the used emoji, etc.
+            const output = await subsetFont(input, text, { targetFormat: "woff2", variationAxes });
+            assertNoEmptyTables(output, `${family.dir}/${name}`);
+            writeFileSync(join(outDir, name), output);
+            const pct = ((1 - output.length / input.length) * 100).toFixed(1);
+            console.log(
+              `  ${family.dir}/subset/${name}: ` +
+                `${(input.length / 1024).toFixed(0)} KB -> ${(output.length / 1024).toFixed(0)} KB (-${pct}%)`,
+            );
+          })(),
+        );
+      }
     }
   }
 

@@ -19,104 +19,128 @@ export const syncopate = Syncopate({ weight: ['400','700'], subsets: ['latin'] }
 // next/font/google. Whole, these were 50-190 KB apiece — and because `preload: false`
 // means the browser only discovers them once it has laid the title out, that download
 // started after first paint and the title visibly flashed in the fallback first.
-// Subset to the characters the site actually uses they are 17-57 KB and land in time.
+// Subset to the characters the site actually uses they are 5-25 KB and land in time.
 //
-// Each is ONE VARIABLE file spanning the weights in use rather than a static per weight,
-// and that is the point: `.font-<script>` resolves to 600 on cards and 900 on entry
-// headers, so as two statics, clicking a card through to its entry page needed a file the
-// listing page had never loaded. Client-side navigation paints the new title immediately
-// from cached RSC and only then requests it, so the entry title flashed every single
-// time — a ~16 ms fetch, but one that starts after the paint, and unmissable at text-6xl.
-// One file covering both weights is already in cache by then, so there is no second
-// request and nothing to flash. It costs roughly double per listing page (Ethiopic 19 ->
-// 52 KB) which is the deliberate trade: the axis is clamped to the used range and the
-// wdth axis pinned out to keep the gvar deltas down.
+// Two ordinary STATIC faces each, 600 (card titles) and 900 (entry headers). An earlier
+// build shipped one variable face per script covering 600-900, which is tidier — one file
+// serves both weights, so nothing is fetched when you click a card through to its entry
+// page. It was reverted because iOS rendered those entry titles unbolded: these are
+// subset, axis-limited, STAT-stripped variable fonts, well outside what browsers are
+// tested against, and a static instance has no axis left to misapply. Do not reintroduce
+// a variable build without checking a real iOS device — Chrome and CoreText both applied
+// the axis correctly, so neither reproduces it.
 //
-// Bamum and Balinese stop at 700 — Google's axis goes no further, so CSS 900 clamps to
-// 700 exactly as it did when these came from next/font/google.
+// The gap that closed is handled instead by warming both weights during idle on the pages
+// that link to entries (geoscheme.tsx, subregionViewer.tsx), so the 900 file is already
+// cached before any click.
+//
+// Bamum and Balinese stop at 700 — Google's axis goes no further, so CSS 900 matches the
+// 700 face exactly as it did when these came from next/font/google.
 //
 // (The options are repeated in full on each call rather than spread from a shared
 // object: next/font requires every option to be a statically-analysable literal.)
 export const notoMalayalam = localFont({
-  src: './noto/Malayalam/subset/NotoSansMalayalam.woff2',
-  weight: '600 900', style: 'normal',
+  src: [
+    { path: './noto/Malayalam/subset/NotoSansMalayalam-600.woff2', weight: '600', style: 'normal' },
+    { path: './noto/Malayalam/subset/NotoSansMalayalam-900.woff2', weight: '900', style: 'normal' },
+  ],
   variable: '--font-noto-malayalam', display: 'swap', preload: false, adjustFontFallback: false,
 });
 export const notoCanadian = localFont({
-  src: './noto/Canadian/subset/NotoSansCanadian.woff2',
-  weight: '600 900', style: 'normal',
+  src: [
+    { path: './noto/Canadian/subset/NotoSansCanadian-600.woff2', weight: '600', style: 'normal' },
+    { path: './noto/Canadian/subset/NotoSansCanadian-900.woff2', weight: '900', style: 'normal' },
+  ],
   variable: '--font-noto-canadian', display: 'swap', preload: false, adjustFontFallback: false,
 });
 export const notoArabic = localFont({
-  src: './noto/Arabic/subset/NotoSansArabic.woff2',
-  weight: '600 900', style: 'normal',
+  src: [
+    { path: './noto/Arabic/subset/NotoSansArabic-600.woff2', weight: '600', style: 'normal' },
+    { path: './noto/Arabic/subset/NotoSansArabic-900.woff2', weight: '900', style: 'normal' },
+  ],
   variable: '--font-noto-arabic', display: 'swap', preload: false, adjustFontFallback: false,
 });
 export const notoTamil = localFont({
-  src: './noto/Tamil/subset/NotoSansTamil.woff2',
-  weight: '600 900', style: 'normal',
+  src: [
+    { path: './noto/Tamil/subset/NotoSansTamil-600.woff2', weight: '600', style: 'normal' },
+    { path: './noto/Tamil/subset/NotoSansTamil-900.woff2', weight: '900', style: 'normal' },
+  ],
   variable: '--font-noto-tamil', display: 'swap', preload: false, adjustFontFallback: false,
 });
 export const notoTelugu = localFont({
-  src: './noto/Telugu/subset/NotoSansTelugu.woff2',
-  weight: '600 900', style: 'normal',
+  src: [
+    { path: './noto/Telugu/subset/NotoSansTelugu-600.woff2', weight: '600', style: 'normal' },
+    { path: './noto/Telugu/subset/NotoSansTelugu-900.woff2', weight: '900', style: 'normal' },
+  ],
   variable: '--font-noto-telugu', display: 'swap', preload: false, adjustFontFallback: false,
 });
 export const notoEthiopic = localFont({
-  src: './noto/Ethiopic/subset/NotoSansEthiopic.woff2',
-  weight: '600 900', style: 'normal',
+  src: [
+    { path: './noto/Ethiopic/subset/NotoSansEthiopic-600.woff2', weight: '600', style: 'normal' },
+    { path: './noto/Ethiopic/subset/NotoSansEthiopic-900.woff2', weight: '900', style: 'normal' },
+  ],
   variable: '--font-noto-ethiopic', display: 'swap', preload: false, adjustFontFallback: false,
 });
 export const notoDevanagari = localFont({
-  src: './noto/Devanagari/subset/NotoSansDevanagari.woff2',
-  weight: '600 900', style: 'normal',
+  src: [
+    { path: './noto/Devanagari/subset/NotoSansDevanagari-600.woff2', weight: '600', style: 'normal' },
+    { path: './noto/Devanagari/subset/NotoSansDevanagari-900.woff2', weight: '900', style: 'normal' },
+  ],
   variable: '--font-noto-devanagari', display: 'swap', preload: false, adjustFontFallback: false,
 });
 export const notoBamum = localFont({
-  src: './noto/Bamum/subset/NotoSansBamum.woff2',
-  weight: '600 700', style: 'normal',
+  src: [
+    { path: './noto/Bamum/subset/NotoSansBamum-600.woff2', weight: '600', style: 'normal' },
+    { path: './noto/Bamum/subset/NotoSansBamum-700.woff2', weight: '700', style: 'normal' },
+  ],
   variable: '--font-noto-bamum', display: 'swap', preload: false, adjustFontFallback: false,
 });
 export const notoThai = localFont({
-  src: './noto/Thai/subset/NotoSansThai.woff2',
-  weight: '600 900', style: 'normal',
+  src: [
+    { path: './noto/Thai/subset/NotoSansThai-600.woff2', weight: '600', style: 'normal' },
+    { path: './noto/Thai/subset/NotoSansThai-900.woff2', weight: '900', style: 'normal' },
+  ],
   variable: '--font-noto-thai', display: 'swap', preload: false, adjustFontFallback: false,
 });
 export const notoKhmer = localFont({
-  src: './noto/Khmer/subset/NotoSansKhmer.woff2',
-  weight: '600 900', style: 'normal',
+  src: [
+    { path: './noto/Khmer/subset/NotoSansKhmer-600.woff2', weight: '600', style: 'normal' },
+    { path: './noto/Khmer/subset/NotoSansKhmer-900.woff2', weight: '900', style: 'normal' },
+  ],
   variable: '--font-noto-khmer', display: 'swap', preload: false, adjustFontFallback: false,
 });
 export const notoBalinese = localFont({
-  src: './noto/Balinese/subset/NotoSansBalinese.woff2',
-  weight: '600 700', style: 'normal',
+  src: [
+    { path: './noto/Balinese/subset/NotoSansBalinese-600.woff2', weight: '600', style: 'normal' },
+    { path: './noto/Balinese/subset/NotoSansBalinese-700.woff2', weight: '700', style: 'normal' },
+  ],
   variable: '--font-noto-balinese', display: 'swap', preload: false, adjustFontFallback: false,
 });
 
-// Tibetan: MiSans Tibetan, whose wght axis runs on the foundry's own scale (Semibold
-// 520, Bold 630, Heavy 700) rather than the CSS one — so shipped as-is, CSS 600 selected
-// axis 600, all but MiSans Bold, and Tibetan looked heavier than the Noto scripts sharing
-// a line with it. scripts/subset-fonts.ts rebuilds the axis so 600-900 addresses
-// Semibold-Heavy directly (`remapAxis`), which keeps `font-semibold` on Semibold and
-// `font-black` on Heavy while leaving it a SINGLE file for both — the pinned-per-weight
-// build that preceded this rendered identically but split into two files, which made the
-// entry-page title flash on every click-through from a card. 148 KB, the largest of the
-// script fonts: its glyph set is mostly precomposed consonant stacks reached through
-// GSUB, which subsets poorly. `adjustFontFallback: false` keeps the variable a single
-// family name so globals.css composes the fallback chain.
+// Tibetan: MiSans Tibetan, whose wght axis runs on the foundry's own scale (Semibold 520,
+// Bold 630, Heavy 700) rather than the CSS one, so subset-fonts.ts pins CSS 600 to axis
+// 520 and CSS 900 to axis 700. Left on the CSS scale, 600 would select axis 600 — all but
+// MiSans Bold — and Tibetan looked visibly heavier than the Noto scripts beside it.
+// At 78/71 KB it is much the largest of the script fonts: its glyph set is mostly
+// precomposed consonant stacks reached through GSUB, which subsets poorly.
+// `adjustFontFallback: false` keeps it a single family name so globals.css composes the
+// fallback chain.
 export const miSansTibetan = localFont({
-  src: './MiSansTibetan/subset/MiSansTibetan.woff2',
-  weight: '600 900', style: 'normal',
+  src: [
+    { path: './MiSansTibetan/subset/MiSansTibetan-600.woff2', weight: '600', style: 'normal' },
+    { path: './MiSansTibetan/subset/MiSansTibetan-900.woff2', weight: '900', style: 'normal' },
+  ],
   variable: '--font-misans-tibetan', display: 'swap', preload: false, adjustFontFallback: false,
 });
 
-// Tifinagh (Amazigh): Ingeo-T, on a scale of its own too — its wght axis runs 22-204
-// with SemiBold at 110 and Black at 204, so untouched, every CSS weight from 204 up would
-// clamp to Black. Axis-remapped to 600-900 by scripts/subset-fonts.ts the same way MiSans
-// Tibetan is. The family is small (59 Tifinagh glyphs plus Latin), so it subsets to 8 KB.
+// Tifinagh (Amazigh): Ingeo-T, on a scale of its own too — its wght axis runs 22-204 with
+// SemiBold at 110 and Black at 204, pinned to CSS 600/900 the same way MiSans Tibetan is.
+// The family is small (59 Tifinagh glyphs plus Latin), so each weight subsets to ~5 KB.
 export const ingeoTifinagh = localFont({
-  src: './Ingeo/subset/Ingeo.woff2',
-  weight: '600 900', style: 'normal',
+  src: [
+    { path: './Ingeo/subset/Ingeo-600.woff2', weight: '600', style: 'normal' },
+    { path: './Ingeo/subset/Ingeo-900.woff2', weight: '900', style: 'normal' },
+  ],
   variable: '--font-ingeo-tifinagh', display: 'swap', preload: false, adjustFontFallback: false,
 });
 
