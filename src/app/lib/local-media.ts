@@ -1254,6 +1254,14 @@ export const stirrPoetry = [
       `Because of this gift<br>They call me Mririda,<br>And he who will come for me<br>Will feel my heart beat in his hand<br>As I have felt the racing hearts of frogs<br>Beneath my fingertips.`,
       `In the nights bathed in moonlight<br>He will call me, <i>Mririda</i>, <i>Mririda</i>,<br>Sweet nickname that I love,<br>And for him I will release my piercing call,<br>Shrill and drawn out,<br>Bringing wonder from men<br>And jealousy from women,<br>Nothing like it ever heard in this valley.`
     ],
+    excerptSrc: [
+      `<b>ⵎⵔⵉⵔⵉⴷⴰ</b>`,
+      `ⵙⵙⴻⵎⵎⴰⵏⵉⵢⵉⴷ ⵎⵔⵉⵔⵉⴷⴰ.<br>ⵎⵔⵉⵔⵉⴷⴰ, ⴰⵇⴻⵔⵔⵓⵢ ⵏ ⵜⵥⴻⴳⵡⴰ ⵏ ⵜⵥⴻⴳⵡⴰ.<br>ⵓⵔ ⵙⵄⵉⵖ ⴰⵔⴰ ⴰⵍⵍⴻⵏⵉⵙ ⵏ ⵡⵓⵔⴻⵖ,<br>ⵓⵔ ⵙⵄⵉⵖ ⴰⵔⴰ ⵜⴰⵖⴻⵛⵜⵉⵙ ⵜⴰⵎⴻⵍⵍⴰⵍⵜ<br>ⵏⴻⵖ ⵜⵓⵏⵉⴽ ⵜⴰⵣⴻⴳⵣⴰⵡⵜ.<br>ⵎⴰⵛⴰ ⴰⵢⴻⵏ ⵙⵄⵉⵖ, ⴰⵎ ⵎⵔⵉⵔⵉⴷⴰ,<br>ⴷ ⵣⴰⵖⵔⵓⵜⴰ, ⴷ ⵜⵉⵖⵔⵉⵉⵏⵓ<br>ⴷ ⴰⵢⴻⵏ ⵉ ⴷⵢⴻⵜⵜⴰⵡⵉⵏ ⴰⵍⴰⵎⵎⴰ ⴷ ⵍⵎⴰⵍ—<br>ⵜⴰⵍⴰⵏⵏⵉ ⴰⴽⴽ<br>ⵓ ⵜⴰⵎⴰ ⵏⵏⵉⴹⴻⵏ ⵏ ⵡⴻⴷⵔⴰⵔ<br>ⵎⵎⴻⵙⵍⴰⵢⴷ ⴼⴻⵍⵍⴰⵙ...<br>ⵜⵉⵖⵔⵉⵉⵏⵓ, ⵉ ⴷⵢⴻⵜⵜⴰⵡⵉⵏ ⵍⴼⴻⵕⵃ ⴷ ⵜⵉⵙⵎⵉⵏ.`,
+      `ⵙⴻⵎⵎⴰⵏⵉⵢⵉ ⵎⵔⵉⵔⵉⴷⴰ<br>ⴰⵛⴽⵓ ⵜⵉⴽⴽⴻⵍⵜ ⵜⴰⵎⴻⵣⵡⴰⵔⵓⵜ ⵉ ⵍⵍⵉⵖ ⵜⵜⴻⴷⴷⵓⵖ ⴷⴻⴳ ⵢⵉⴳⵔⴰⵏ<br>ⵟⵟⴼⴻⵖ ⵙ ⵍⴻⵎⵖⴰⵡⵍⴰ ⴰⵎⵇⴻⵕⵇⵓⵕ ⵏ ⵜⵜⴻⴵⵔⴰ<br>ⵜⵓⴳⴷⵉ ⴷ ⵔⵅⴻⴷⵎⴻⵜ ⴷⴻⴳ ⵉⴼⴰⵙⵙⴻⵏⵉⵡ,<br>ⵓ ⵢⴻⵥⵥⴻⵍ ⵜⴰⵖⴻⵛⵜⵉⵙ ⵜⴰⵎⴻⵍⵍⴰⵍⵜ<br>ⵉ ⵉⵖⴻⵙⵉⵡ ⵏ ⵓⴳⵔⵓⴷ,<br>ⵓ ⵙⵢⴻⵏ ⵏ ⵢⵉⵡⴻⵜ ⵏ ⵜⴻⵇⵛⵉⵛⵜ.`,
+      `ⵓ ⴰⴽⴽⴰ ⵉ ⵢⵉⴷ-ⴼⴽⴰⵏ ⴱⴰⵔⴰⴽⴰ,<br>ⵙⵃⵓⵔ ⵉ ⵙⴻⵏⴷ-ⵢⴻⴼⴽⴰⵏ ⵜⵉⵣⵍⵉⵜⵏⵙⴻⵏ<br>ⴰⵏⵡⴰ ⵉ ⴷⵢⴻⵞⵞⵓⵔⴻⵏ ⵉⴹⴰⵏ ⵏ ⵓⵏⴻⴱⴷⵓ,<br>ⵜⵉⵣⵍⵉⵜ ⵉⴱⴰⵏⴻⵏ ⴰⵎ ⵙⵙⴻⴵⴵⴰⴵ,<br>ⵉⵇⴻⵙⵃⴻⵏ ⴰⵎ ⵚⵚⵓⵜ ⵏ ⵜⵎⴻⵥⵥⵓⵖⵜ<br>ⴷⴻⴳ ⵍⵀⴰⵡⴰ ⵢⴻⵜⵜⵃⴻⵔⵔⵉⵇⴻⵏ ⵙⴻⵏⴷ ⴰⴷⴼⴻⵍ...`,
+      `ⵖⴻⴼ ⵙⵙⴻⴱⴰ ⵏ ⵜⵉⴽⵛⵉⴰⴳⵉ<br>ⵙⵙⴰⵡⴰⵍⴻⵏⵉⵢⵉⴷ Mririda,<br>ⵓ ⵡⵉⵏ ⴰⵔⴰ ⴷⵢⴰⵙⴻⵏ ⴼⴻⵍⵍⵉ<br>ⴰⴷ ⵃⵓⵍⴼⵓⵖ ⵙ ⵡⵓⵍⵉⵡ ⵢⴻⵜⵜⴱⴻⵄ ⴷⴻⴳ ⵓⴼⵓⵙⵉⵙ.<br>ⴰⴽⴽⴻⵏ ⵃⵓⵍⴼⴰⵖ ⵉ ⵓⵍⴰⵡⴻⵏ ⵏ ⵢⵉⵇⵊⴰⵏ ⵢⴻⵜⵜⵇⴰⴱⴰⵍⴻⵏ.<br>ⴷⴷⴰⵡ ⵏ ⵢⵉⴼⴰⵙⵙⴻⵏⵉⵡ.`,
+      `ⴷⴻⴳ ⵢⵉⴹⴰⵏ ⵢⴻⵜⵜⵡⴰⵄⴻⵔⴹⴻⵏ ⴷⴻⴳ ⵜⴰⴼⴰⵜ ⵏ ⵡⴰⴳⴳⵓⵔ<br>ⴰⴷ ⵉⵢⵉ-ⵉⵙⵉⵡⴻⵍ, ⵎⵔⵉⵔⵉⴷⴰ, ⵎⵔⵉⵔⵉⴷⴰ,<br>ⵉⵙⴻⵎ ⵥⵉⴷⴻⵏ ⵉ ⵃⴻⵎⵎⵍⴻⵖ,<br>ⵓ ⴼⴻⵍⵍⴰⵙ ⴰⴷ ⵙⵙⵓⴼⵖⴻⵖ ⵜⵉⵖⵔⵉⵉⵏⵓ ⵏ ⵜⵎⴻⵥⵥⵓⵖⵜ,<br>ⵙⵀⵔⵉⵍⵍ ⵓ ⵢⴻⵜⵜⵡⴰⵊⴻⵔⵔⴻⴷ,<br>ⴰⴳⴳⴰⵢ ⵏ ⵓⵙⵡⴻⵀⵎⴻⵏ ⵙⴻⴳ ⵢⵉⵔⴳⴰⵣⴻⵏ<br>ⵓ ⵜⵉⵙⵎⵉⵏ ⵙⴻⴳ ⵜⵍⴰⵡⵉⵏ,<br>ⵓⵍⴰⵛ ⴰⵎ ⵡⴰ ⵉ ⵙⴷ-ⵙⵍⴰⵏ ⴷⴻⴳ ⵡⴰⵙⵙⵉⴼⴰⴳⵉ.`
+    ],
     infoURL: "https://en.wikipedia.org/wiki/Mririda_n%27Ait_Attik",
     mediaURL: ["https://youtu.be/WWDjS_xWyr0"],
     textURL: "",
@@ -5308,7 +5316,7 @@ export const foundRelTexts = [
     group: {people: "Airya", language: "Avestan", religion: "Zoroastrianism", location: "Bactria"},
     info: [
       `The corpus of all religious texts in the Avestan language on the topic of the Zoroastrian religion is called the Avesta, composed from 1500–400 BCE during the Avestan period. The most important of these texts is the Yasna, recited during the ceremony of the same name. The fundamental reason for celebrating the Yasna liturgy is to please the exalted Lord of Wisdom, Ahura Mazda, and all spirit beings of his good creation. Found within the larger Yasna, the Gathas hymns were composed by Zarathushtra himself.`,
-      `<b>ZARATHUSTRA SPITAMA</b> was a prophet and founder of a reform movement to the Ancient Iranian religion renowned for his eloquence and ethical teachings. He said, “I shall declare to you in verse, not in non-verse, in total inspiration,” and in this way his words have resonated through centuries of human experience.`
+      `<b>ZARATHUSTRA SPITAMA</b> was prophet and founder of a reform movement to the Ancient Iranian religion renowned for his eloquence and ethical teachings. He said, “I shall declare to you in verse, not in non-verse, in total inspiration,” and in this way his words have resonated through centuries of human experience.`
     ],
     excerpt: [
       `<+>Righteousness[the universal law that stands for order, evolution, progress, and perfection as established by the Creator for creation; one becomes righteous by doing the right thing, at the right time, in the right place, and with the right means to obtain the right result; it means precision in every thought, word, and deed as to the perfect, ideal, ordering of things; it means constant improvement and continuous renovation]</+> is the best good. It is radiant happiness.<br>Radiant happiness comes to the person to whom<br>righteousness is for the sake of the best righteousness alone.`,
