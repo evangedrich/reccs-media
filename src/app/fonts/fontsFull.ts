@@ -76,6 +76,13 @@ export const notoBalineseFull = localFont({
   weight: '400', style: 'normal',
   variable: '--font-noto-balinese-full', display: 'swap', preload: false, adjustFontFallback: false,
 });
+// Korean is by far the largest (643 KB) — every one of the 11,172 modern Hangul syllables,
+// since an excerpt can use any of them. Still click-gated like the rest.
+export const notoKoreanFull = localFont({
+  src: './noto/Korean/full/NotoSansKorean-400.woff2',
+  weight: '400', style: 'normal',
+  variable: '--font-noto-korean-full', display: 'swap', preload: false, adjustFontFallback: false,
+});
 
 // Apply to the element wrapping excerpt text. Every `--font-noto-*` variable is rebound
 // to its whole-font counterpart, so the `.font-<script>` class checkFont() already returns
@@ -84,5 +91,5 @@ export const notoBalineseFull = localFont({
 export const fullScriptFontVars = [
   notoMalayalamFull, notoCanadianFull, notoArabicFull, notoTamilFull, notoTeluguFull,
   notoEthiopicFull, notoDevanagariFull, notoBamumFull, notoThaiFull, notoKhmerFull,
-  notoBalineseFull,
+  notoBalineseFull, notoKoreanFull,
 ].map((f) => f.variable).join(' ');

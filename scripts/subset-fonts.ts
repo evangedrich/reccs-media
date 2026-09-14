@@ -45,7 +45,12 @@ const HASH_FILE = join(FONTS_DIR, ".subset-hash");
 // a DSIG that is meaningless once subset), strip those tables first —
 // `assertNoEmptyTables` below fails the build if this regresses.
 /** instances: CSS weight -> the wght axis value of the design that weight should use. */
-type FontFamily = { dir: string; instances?: Record<string, number> };
+type FontFamily = {
+  dir: string;
+  instances?: Record<string, number>;
+  /** Skip GSUB closure — only for scripts whose glyphs are precomposed in Unicode. */
+  noLayoutClosure?: boolean;
+};
 const FONT_FAMILIES: FontFamily[] = [
   { dir: "JuliaMono" },
   { dir: "NotoEmoji" },
@@ -82,6 +87,18 @@ const FONT_FAMILIES: FontFamily[] = [
   { dir: "noto/Thai", instances: { "600": 600, "900": 900 } },
   { dir: "noto/Khmer", instances: { "600": 600, "900": 900 } },
   { dir: "noto/Balinese", instances: { "600": 600, "700": 700 } },   // Google draws nothing heavier
+  // Korean is the exception in two ways, both forced by Noto Sans KR's size (10 MB, ~11k
+  // Hangul syllables):
+  //   - Its sources are two already-pinned STATICS rather than a range-limited variable
+  //     font. Limiting this font's axis silently discarded all of its gvar data — it has a
+  //     non-trivial `avar` mapping that harfbuzz's partial instancing does not carry — so
+  //     600 and 900 came out identical. Pinning straight from Google's full VF works.
+  //   - `noLayoutClosure`: the GSUB closure over even 11 syllables pulls in 473 glyphs
+  //     (jamo composition variants for old Hangul), making a 26 KB file. Modern Hangul is
+  //     precomposed in Unicode and never shaped through those lookups; without the closure
+  //     it is 107 glyphs / 7 KB and renders pixel-identically. Excerpts use the full font
+  //     in `full/`, which keeps everything.
+  { dir: "noto/Korean", noLayoutClosure: true },
 ];
 
 // Scan EVERY .ts/.tsx under src/app (not a hardcoded file list): reading raw file
@@ -207,7 +224,9 @@ async function main() {
             const input = readFileSync(join(familyDir, file));
             // Each font keeps only the glyphs it actually has among `text`, so passing
             // the full character set to NotoEmoji yields just the used emoji, etc.
-            const output = await subsetFont(input, text, { targetFormat: "woff2", variationAxes });
+            const output = await subsetFont(input, text, {
+              targetFormat: "woff2", variationAxes, noLayoutClosure: family.noLayoutClosure,
+            });
             assertNoEmptyTables(output, `${family.dir}/${name}`);
             writeFileSync(join(outDir, name), output);
             const pct = ((1 - output.length / input.length) * 100).toFixed(1);

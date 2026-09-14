@@ -6089,6 +6089,25 @@ export const globFeatFilms = [
     color: "#81777b"
   },
   {
+    id: "ASEAGFF",
+    title: {original: "지금은 맞고 그때는 틀리다", transliteration: "Jigeumeun matgo geuttaeneun teullida", translation: "Right Now, Wrong Then"},
+    year: 2015,
+    group: {people: "Korean", language: "Korean", location: "South Korea"},
+    info: [
+      `When film director Ham Chun-su arrives in Suwon a day early, he has time to kill and ends up meeting a young artist named Yoon Hee-jung. They spend time together visiting her studio, having soju and meeting her friends, but when she asks if he is married, he has no choice but to reveal the truth.`,
+      `Dir/Scr <b>HONG SANG-SOO</b> eradicates the boundary between art and life—with an utterly unique filmmaking process and impossibly swift release schedule, his films attempt to look at things as they are, incapable of generalization and complete unto themselves.`
+    ],
+    infoURL: "",
+    mediaURL: "https://youtu.be/DefSAk-lnkg",
+    watch: ["https://www.kanopy.com/en/product/justwatch-15796673","https://www.hoopladigital.com/movie/12340511","https://www.amazon.com/gp/video/detail/B0GW6Z445R"],
+    trailer: "https://youtu.be/fbCvHJ8WU0g",
+    coordinates: {x: 127.016667, y: 37.266667, name: "Suwon City"},
+    runtime: 121,
+    genre: ["Drama","Romance","Arthouse"],
+    tags: [""],
+    color: "#E74B8F"
+  },
+  {
     id: "ASSEGFF",
     title: {original: "Mùi đu đủ xanh", translation: "The Scent of Green Papaya"},
     year: 1993,

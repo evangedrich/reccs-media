@@ -116,6 +116,15 @@ export const notoBalinese = localFont({
   ],
   variable: '--font-noto-balinese', display: 'swap', preload: false, adjustFontFallback: false,
 });
+// Korean. Its sources are pre-pinned statics rather than subset-fonts.ts `instances` —
+// see the note on noto/Korean there for why.
+export const notoKorean = localFont({
+  src: [
+    { path: './noto/Korean/subset/NotoSansKorean-600.woff2', weight: '600', style: 'normal' },
+    { path: './noto/Korean/subset/NotoSansKorean-900.woff2', weight: '900', style: 'normal' },
+  ],
+  variable: '--font-noto-korean', display: 'swap', preload: false, adjustFontFallback: false,
+});
 
 // Tibetan: MiSans Tibetan, whose wght axis runs on the foundry's own scale (Semibold 520,
 // Bold 630, Heavy 700) rather than the CSS one, so subset-fonts.ts pins CSS 600 to axis

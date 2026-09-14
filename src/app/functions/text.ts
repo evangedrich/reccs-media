@@ -37,6 +37,7 @@ export const checkFont = (str: string): string => {
         : (/\p{Script=Thai}/u.test(str)) ? "font-thai"
         : (/\p{Script=Khmer}/u.test(str)) ? "font-khmer"
         : (/\p{Script=Balinese}/u.test(str)) ? "font-balinese"
+        : (/\p{Script=Hangul}/u.test(str)) ? "font-korean"
         : "";
     return fontClass;
 };

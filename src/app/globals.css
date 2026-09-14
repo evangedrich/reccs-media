@@ -67,6 +67,7 @@ body {
 .font-thai       { font-family: var(--font-noto-thai),      var(--font-julia-mono), monospace, sans-serif; }
 .font-khmer      { font-family: var(--font-noto-khmer),     var(--font-julia-mono), monospace, sans-serif; }
 .font-balinese   { font-family: var(--font-noto-balinese),  var(--font-julia-mono), monospace, sans-serif; }
+.font-korean     { font-family: var(--font-noto-korean),    var(--font-julia-mono), monospace, sans-serif; }
 
 /* Wrap excerpt text in this to render it with the whole, unsubset script fonts instead
    of the title subsets. The .font-<script> classes above are unchanged — this just
@@ -86,6 +87,7 @@ body {
   --font-noto-thai:       var(--font-noto-thai-full);
   --font-noto-khmer:      var(--font-noto-khmer-full);
   --font-noto-balinese:   var(--font-noto-balinese-full);
+  --font-noto-korean:     var(--font-noto-korean-full);
 }
 
 @keyframes map-scroll {
