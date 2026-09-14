@@ -19,6 +19,7 @@ export type Recc = {
   };
   info: string[];
   excerpt?: string[];
+  excerptOrig?: string[];
   mediaURL?: string[];
   watch?: string[];
   genre?: string[];

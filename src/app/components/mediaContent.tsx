@@ -5,7 +5,7 @@ import styles from "@/app/ui/main.module.css";
 import MarkdownCitation from "./markdownCitation";
 import Share from "./share"
 import { getCitations } from "../functions/citations";
-import { getTitle } from "../functions/text";
+import { getTitle, checkFont } from "../functions/text";
 import { PrepVideo, PrepWatch } from "../functions/video";
 import { parseWithAbbr } from "../functions/abbr";
 
@@ -19,10 +19,32 @@ const allTabs: { id: string, keys: string[] }[] = [
     { id: "sources", keys: ["ref", /*"infoURL", "bioURL", "mediaURL", "textURL"*/] },
 ];
 const citationFormats: string[] = [ "APA", "MLA", "Chicago" ];
+// Excerpt language switch labels that differ from group.language (which is used as-is otherwise).
+const excerptLangLabels: Record<string, string> = {
+    "Classical Chinese": "Chinese",
+    "Mandarin Chinese": "Mandarin",
+};
+
+// The small all-caps option row atop a tab (citation formats, excerpt language). Shared so
+// every such switch looks identical. `onWarm` fires on hover of a non-selected option.
+function FormatSwitch({ options, labels, value, onChange, onWarm }: { options: string[], labels?: string[], value: string, onChange: (o: string) => void, onWarm?: () => void }) {
+    return (
+        <ul className="flex gap-4 text-xs uppercase mb-3">
+            {options.map((o,i) => <li key={`opt${i}`} onClick={() => onChange(o)} onPointerEnter={o!==value ? onWarm : undefined} className={`hover:opacity-80 ${o===value?"font-extrabold hover:opacity-100":""} cursor-pointer`}>{labels?.[i] ?? o}</li>)}
+        </ul>
+    );
+}
 
 export default function MediaContent({ entry }: { entry: any }) {
     const [currentTab, setCurrentTab] = useState("info");
     const [citeFormat, setCiteFormat] = useState(citationFormats[0]);
+    // Excerpt language: always opens on the English translation.
+    const [excerptLang, setExcerptLang] = useState<"english" | "orig">("english");
+    const [warmOrig, setWarmOrig] = useState(false);
+    const hasOrig = Array.isArray(entry.excerptOrig) && !!entry.excerptOrig[0];
+    // Same script detection as the entry title; inside `excerpt-scope` the class resolves
+    // to the whole (unsubset) font rather than the title subset — see fonts/fontsFull.ts.
+    const origFont = hasOrig ? checkFont(entry.excerptOrig.join(" ")) : "";
     const [abbrOpen, setAbbrOpen] = useState(false);
     const [currAbbr, setCurrAbbr] = useState(['',''])
     const tabs: string[] = allTabs.map(cat => cat.id).filter((cat,i) => (
@@ -32,9 +54,22 @@ export default function MediaContent({ entry }: { entry: any }) {
     ));
     const getContent = () => {
         let content;
-        if (currentTab==="info" || currentTab==="excerpt") {
+        // `dir="auto"` only for original-language text, so a right-to-left script lays out correctly
+        const paragraphs = (text: string[], dir?: "auto") => text.map((x: string, i: number) => <p key={`p${i}`} dir={dir}>{parseWithAbbr(x, (title, content) => { setCurrAbbr([content, title]); setAbbrOpen((abbrOpen && currAbbr[1]===title) ? false : true); })}</p>);
+        if (currentTab==="excerpt" && hasOrig) {
+            const showOrig = excerptLang==="orig";
+            content = <>
+                <FormatSwitch options={["english", "orig"]} labels={["english", excerptLangLabels[entry.group.language] ?? entry.group.language]} value={excerptLang} onChange={(o) => setExcerptLang(o as "english" | "orig")} onWarm={() => setWarmOrig(true)} />
+                {showOrig
+                    ? <div className={`excerpt-scope ${origFont}`}>{paragraphs(entry.excerptOrig, "auto")}</div>
+                    : (entry.excerpt[0].includes("youtu.be")) ? <PrepVideo vid={entry.excerpt} /> : paragraphs(entry.excerpt)}
+                {/* Pull the original-script font into cache on hover so the first toggle doesn't
+                    flash the fallback. Must be laid-out text (display:none fetches nothing). */}
+                {warmOrig && !showOrig && <span aria-hidden="true" className={`pointer-events-none absolute w-0 h-0 overflow-hidden opacity-0 excerpt-scope ${origFont}`}>{entry.excerptOrig[0]}</span>}
+            </>;
+        } else if (currentTab==="info" || currentTab==="excerpt") {
             const text = entry[currentTab];
-            content = (entry[currentTab][0].includes("youtu.be")) ? <PrepVideo vid={text} /> : <>{text.map((x: string, i: number) => <p key={`p${i}`}>{parseWithAbbr(x, (title, content) => { setCurrAbbr([content, title]); setAbbrOpen((abbrOpen && currAbbr[1]===title) ? false : true); })}</p>)}</>;
+            content = (entry[currentTab][0].includes("youtu.be")) ? <PrepVideo vid={text} /> : <>{paragraphs(text)}</>;
         } else if (currentTab==="media" || currentTab==="trailer") {
             content = <PrepVideo vid={entry[currentTab==="media"?"mediaURL":"trailer"]} />;
         } else if (currentTab==="watch") {
@@ -44,9 +79,7 @@ export default function MediaContent({ entry }: { entry: any }) {
         } else if (currentTab==="sources") {
             if (Object.keys(entry).includes("ref")) {
                 content = <div className={styles.citationContainer}>
-                    <ul className="flex gap-4 text-xs uppercase mb-3">
-                        {citationFormats.map((c,i) => <li key={`cite${i}`} onClick={() => setCiteFormat(c)} className={`hover:opacity-80 ${c===citeFormat?"font-extrabold hover:opacity-100":""} cursor-pointer`}>{c}</li>)}
-                    </ul>
+                    <FormatSwitch options={citationFormats} value={citeFormat} onChange={setCiteFormat} />
                     {getCitations(entry.ref,citeFormat).map((src,i) => <MarkdownCitation key={`cit${i}`} markdownContent={src.citation} url={src.url}></MarkdownCitation>)}
                 </div>; 
             }

@@ -88,6 +88,8 @@ body {
   --font-noto-khmer:      var(--font-noto-khmer-full);
   --font-noto-balinese:   var(--font-noto-balinese-full);
   --font-noto-korean:     var(--font-noto-korean-full);
+  --font-ingeo-tifinagh:  var(--font-ingeo-tifinagh-full);
+  --font-misans-tibetan:  var(--font-misans-tibetan-full);
 }
 
 @keyframes map-scroll {
