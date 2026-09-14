@@ -117,7 +117,8 @@ export default function SubregionViewer({ regionID, reccs }: { regionID: string;
                     <div className={`relative ${entries.length>0?"border-b-2":""}`}>
                         <div ref={scrollRef} onScroll={measure} className="max-w-full flex overflow-x-auto overflow-y-hidden no-scrollbar snap-x snap-mandatory">
                             {entries.map((entry,i) => (
-                                <Link className={`w-40 max-sm:w-30 h-auto shrink-0 p-3 hover:bg-[var(--color-mid)]/75 active:opacity-90 group sm:snap-start ${i<entries.length-1||entries.length<5 ?"border-r-2":""}`} href={`/${entry.id}`} key={`item${entry.id}`}>
+                                <Link className={`${i<entries.length-1||entries.length<5 ? "w-40 max-sm:w-30 border-r-2" : "w-[calc(10rem-2px)] max-sm:w-[calc(7.5rem-2px)]"} h-auto shrink-0 p-3 hover:bg-[var(--color-mid)]/75 active:opacity-90 group sm:snap-start`} href={`/${entry.id}`} key={`item${entry.id}`}>
+                                    {/* the borderless last card is 2px narrower, so its inner width (and poster) matches the rest */}
                                     <div className="relative w-full aspect-3/4 bg-[var(--color-mid)] group-hover:opacity-90">
                                         <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center"><LoadingIcon /></div>
                                         <Image src={posterUrl(entry.id)} alt="Media Image" width="300" height="400" className="absolute top-0 left-0 w-full" unoptimized />

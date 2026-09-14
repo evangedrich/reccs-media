@@ -25,6 +25,19 @@ export const modTradNovels = [
       `I’ve always believed that one of the greatest delights for a young lad, akin to the pleasure of a well-prepared couscous with butter, is to be asked about his homeland by a visitor passing through for the first time. It’s a simple joy, but one that holds immense significance.`,
       `Reflecting on that encounter even now, I can’t help but reminisce about the passing days... those days... each of them filled with contentment. Oh, if only today were as delightful as those bygone times...`
     ],
+    excerptSrc: [
+      `ⵡⴻⵍⵍⴻⵀ, ⴰ ⵙⵉⴷⵉ, ⴰⵔ ⴷ ⵜⵉⴷⴻⵜ: ⵙⴻⴱⵄⴰ ⵓ ⵙⴻⴱⵄⵉⵏ ⵏ ⵚⵚⴻⵍⵍⴰⵃ ⵉ ⵢⴰⵖ-ⴷ-ⵢⴻⵣⵣⵉⵏ ⴷⴰⴳⵉ ⴷⵉ ⵍⵄⴻⵕⵛ-ⴰⴳⵉ-ⵏⵏⴻⵖ ⵉ ⵙⵙⵏⴻⵖ, ⵉ ⵢⵉ-ⴷ-ⵜⵜⴰⴷⵔⴻⵏ, ⵉⵙⵙ ⵉ ⵜⵜⴳⴰⵍⵍⴰⵖ ⴷⵉ ⵚⵚⴱⴻⵃ ⴰⵍⴰⵎⵎⴰ ⴷ ⵜⴰⵎⴻⴷⴷⵉⵜ, ⵍⴻⵄⵎⴻⵔ ⵢⴻⵍⵍⵉ ⵡ’ⵉⵢⵉ-ⵃⴽⴰⵏ ⵜⴰⵎⴰⵛⴰⵀⵓⵜ ⵏ ⵢⵉⵡⴻⵏ ⴷⴻⴳ-ⵙⴻⵏ, ⵏⴻⵖ ⵉ ⵢⵉ-ⵏⵏⴰⵏ ⵓⵍⴰ ⴷ ⴰⵡⴰⵍ ⵖⴻⴼ ⵍⴻⵃⵢⴰⵜ-ⵏⵙⴻⵏ ⵙ ⵜⵉⴷⴻⵜ ! ⵎⴰ ⵢⴻⵀⵡⴰ-ⵢⴰⴽ, ⴱⵏⴰⴷⴻⵎ, ⵎⵉ ⵢⴻⴳⴳⵓⵍⵍ : ⵃⴻⵇ ⵛⵛⵉⵅ ⴼⵍⴰⵏⵉ ! ⵉⵄⴻⴷⴷⴰ ⵍⵉⵎⵉⵏ-ⵏⵏⵉ, ⵏⴻⵖ ⵢⴻⵃⵏⴻⵜ : ⵓⵎⴱⴻⵄⴷ ⴰ ⴷ-ⵢⴻⵍⵀⵉ ⴷ ⵡⴰⵢⴻⵏ ⵏⵏⵉⴹⴻⵏ : ⵓⵔ ⵢⴻⵜⵜⵏⴰⴷⵉ ⴰⵔⴰ ⵖⴻⴼ ⵍⴻⴼⵍⴰⵏⵉ-ⵏⵏⵉ ⴷ ⴰⵛⵓ-ⵜ, ⵏⴻⵖ ⴰⵎⴻⴽ ⵉⵄⴰⵛ, ⵏⴻⵖ ⴰⵎⴻⴽ ⵢⴻⵎⵎⵓⵜ : ⴷ ⵛⵛⵉⵅ ⴽⴰⵏ ⵓ ⵀⴰⴷⴰⴽ ⵎⴰ ⴽⴰⵏ. ⴰⵡⵉ-ⴷ ⴰⵢⴻⵏ ⴷ-ⵉⵜⴻⴷⴷⵓⵏ, ⵎⴰ ⴷ ⴰⵢⴻⵏ ⵉⵄⴻⴷⴷⴰⵏ, ⴷⵖⴰ ⴰⴽⴽⴻⵏ ⵇⵇⴰⵔⴻⵏ ⵡⴰⵔⴰⴱⴻⵏ : ⵍⵍⵉ−ⴼⴰⵜ−ⵎⴰⵜ!`,
+      `ⵍⵀⴰⵚⵓⵏ, ⵣⵉⵖ, ⴰⵔ ⵢⴻⴽⵜⴻⴱ ⴷ ⵙⵉⴷⵉ ⵔⴻⴱⴱⵉ ⴰⵔ ⴷ-ⵙⵍⴻⵖ ⵉ ⵜⵎⴰⵛⴰⵀⵓⵜ ⴰⴽⴽⴰ ⵏ ⵢⵉⵡⴻⵏ ⵛⵛⵉⵅ, ⵢⴻⵔⵏⴰ ⴷ ⵍⵡⴰⵍⵉ ⴰⵎⴻⵇⵔⴰⵏ ⴷⴻⴳ ⵉⴷⵓⵔⴰⵔ-ⴰⴳⵉ ⵏⵏⴻⵖ ⵢⴰⴽⴽ, ⴰⵔⴷ ⴰⴼⴻⵖ ⴷ ⵡⵉⵏ ⴰⵔⴰ ⵢⵉ ⴷ-ⵢⴻⵃⴽⵓⵏ ⴼⴻⵍⵍ-ⴰⵙ, ⵓⵔ ⴱⵏⵉⵖ ⵖⴻⴼ ⵢⵉⵎⴰⵏ-ⵉⵡ.`,
+      `ⵍⴻⵅⵎⵉⵙ ⵏ ⵡⴻⴷⵔⴰⵔ-ⴰⴳⵉ, (ⴷⵖⴰ ⵣⴷⴻⴼⴼⵉⵔ ⵡⴻⴷⵔⴰⵔ), ⵓⵍⴰⵎⵎⴰ ⴷ ⵜⴰⵎⴷⵉⵏⵜ, ⵜⵎⴻⴷ, ⵙⴻⵍⵍⴻⵖ ⴽⴰⵏ ⵢⵉⵙ-ⵙ, ⵍⴻⵄⵎⴻⵔ ⵜⵜ-ⴽⵛⵉⵎⴻⵖ, ⵍⴻⵄⵎⴻⵔ ⵜⵜ-ⵙⵙⵉⵏⴻⵖ ⵢⴰⴽⴽ ⴷⵉ ⴷⴷⵓⵏⵉⵜ-ⵉⵡ. ⴰⵟⴰⵙ ⵏ ⴰⵜ ⵜⵎⵓⵔⵜ-ⴰⴳⵉ-ⵏⵏⴻⵖ ⵉ ⵜⵜⵢⴻⵜⵜⵙⴻⵡⵡⵉⵇⴻⵏ ⴷⵖⴰ ⴷ ⵍⴻⵅⵎⵉⵙ, ⵜⵜⴰⴷⵔⴻⵏ-ⵜⵜ-ⵉⴷ ⴽⴰⵏ ⴰⴽⴽⴰ ⵎⴰ ⵢⴻⴱⴱⵉ-ⵜⵜ-ⵉⴷ ⵡⴰⵡⴰⵍ.`,
+      `ⵏⴻⴽ, ⵍⴻⵄⵎⴻⵔ ⵙⵄⵉⵖ ⵙⵙⴻⴱⴱⴰ ⵉⵙⵙ ⴰⵔⴰ ⵜⵜ-ⵉⵙⵙⵉⵏⴻⵖ: ⵜⴰⴱⴻⵄ ⵎⴰⵞⵞⵉ ⴰⵍⴰ ⵏⴻⴽ ⴰⴽⴽⴰ ⵉ ⴷ-ⵉⵏⵓⴷⴰⵏ ⵎⴽⵓⵍ ⵜⴰⵎⵓⵔⵜ, ⵢⴻⵣⴳⴻⵔ ⵍⴻⴱⵃⵓⵕ, ⵢⵓⵏⴰⴳ ⵖⴻⵔ ⵎⴽⵓⵍ ⵍⴱⴻⵔⵔ, ⴷⵉ ⵜⵎⵓⵔⵜ-ⵉⵙ ⵓⵔ ⵢⴻⵙⵙⵉⵏ ⴰⵔⴰ ⴷⵉ ⵍⵄⴻⵕⵛ-ⵉⵙ ⴰⴽⴽⵉⵏ. ⵓⵍⴰ ⴷ ⵍⵄⴻⵕⵛ-ⵏⵏⵉ... ⵡⵉⵙⵙⴻⵏ ⴰ ⵔⴻⴱⴱⵉ!`,
+      `ⵓⵙⵙⴰⵏ-ⴰⴳⵉ ⵉⵄⴻⴷⴷⴰⵏ, ⵏⵏⵉⵖ-ⴰⵙ: ⵡⴻⵍⵍⴻⵀ ⴰⵔⴷ ⴰⵡⴹⴻⵖ ⴰⵔ ⴷⵉⵏ ⵣⵉⵖ ⴰⴷ ⵥⵔⴻⵖ.`,
+      `ⴽⴽⵔⴻⵖ-ⴷ ⴷⴻⴳ ⵡⴰⵙⵙ ⵏ ⵍⴰⵔⴻⴱⵄⴰ ⵚⵚⴱⴻⵃ ⵣⵉⴽ, ⵟⵟⴼⴻⵖ ⴰⴱⵔⵉⴷ. ⵏⵏⵉⵖ-ⴰⵙ ⴰⴷ ⵏⵏⵙⴻⵖ ⴷⵉⵏ ⴰⵅⵉⵔ : ⴰⴽⴽⴻⵏ, ⴰⵣⴻⴽⴽⴰ-ⵏⵏⵉ ⴰ ⴷ-ⴽⴽⵔⴻⵖ ⵎⴻⵇⵇⴰⵔ ⵉⵎⵉ ⴰⵔⴰ ⵢⴻⴱⴷⵓ ⵙⵙⵓⵇ. ⵅⴰⵙ ⵖⴻⴼ ⵓⴹⴰⵔ, ⵍⴰⴽⵉⵏ ⵓⵍⴰⵎⵎⴰ ⵍⵃⵉⵖ ⵙ ⵍⴻⵄⵇⴻⵍ, ⵥⵔⵉⵖ ⴰⵏⴷⴰ ⵓⵍⴰⵛ ⵢⴰⴽⴽ ⵜⴰⵎⴻⴷⴷⵉⵜ ⴰⴷ ⵙⵙⵉⵡⴹⴻⵖ.`,
+      `ⵕⵓⵃⴻⵖ. ⵏⴻⴽ, ⵍⴰⴷⵖⴰ, ⵜⵉⴽⵍⵉ ⵓⵔ ⵜⵜ-ⵜⵜⴰⴳⴰⴷⴻⵖ ⴰⵔⴰ : ⵎ’ⴰⵔⴰ ⴱⴷⵓⵖ ⵜⵉⴽⵍⵉ, ⵄⴰⴷ ⵉ ⵙⵉⵎⵎⴰⵍ ⵜⵜⵙⴻⵔⵔⵉⵃⴻⵏ ⵉⴹⴰⵔⵔⴻⵏ-ⵉⵡ, ⵍⴰⴷⵖⴰ ⵙ ⵍⴱⴻⵄⴷ. ⴷ ⵜⴰⵏⵏⵓⵎⵉ. ⴷ ⴰⵢⴻⵏ ⴽⴰⵏ ⵡⴰⵇⵉⵍⴰ ⵉ ⵢⵉ-ⴷ-ⵢⴻⵇⵇⵉⵎⴻⵏ ⴷ ⵍⴼⴰⵢⴷⴰ ⴷⴻⴳ ⵡⴰⵢⴻⵏ ⵅⴻⴷⵎⴻⵖ ⵏ ⵙⴻⵔⴱⵉⵙ ⵎⵉⵍⵉⵟⵉⵔ : ⴷ ⴰⵟⴰⵙ ! ⵍⴻⴵⵡⴰⵀⵉ ⵓⵣⵉⵣⴱⵓ, ⵢⴻⵜⵜⴰⵖ-ⵉⵢⵉ ⵍⵃⴰⵍ ⵡⵡⴹⴻⵖ ⵜⵉⵖⵉⵍⵍⴰ-ⵏⵏⵉ ⵏ ⵡⴻⴷⵔⴰⵔ ⵉⴷⴻⴳ ⴰⵔⴰ ⵙ-ⵢⴻⵊⴱⵓ ⴱⵏⴰⴷⴻⵎ ⴷⵉ ⵍⴵⵉⵀⴰ-ⵢⴰ ⵖⴻⵔ ⵍⴵⵉⵀⴰ ⵏ ⵡⴰⴽⴽⵉⵏ. ⵍⴰⴽⵉⵏ ⴷⵖⴰ ⴰⴽⴽⴻⵏ ⴷⵉⵎⵉ ⵜⵜⵇⴰⵔⵉⴱ ⴰⴷ ⴰⵙ-ⴹⵉⵍⵍⴻⵖ, ⵢⴰⵡⵉ-ⵢⵉ ⵔⴻⴱⴱⵉ ⵙⵙⴽⴰⴷⴻⵖ ⴰⴽⴽⴰ ⴷ ⴰⴽⴻⵙⵙⴰⵔ, ⵍⴰⴽⵉⵏ, ⴰⴽⴽⵉⵏ, ⴰⴳⴻⵎⵎⴰⴹ ⵉ ⵡⴰⵙⵉⴼ, ⵙⴻⴷⴷⴰⵡ ⴷⵖⴰ ⵜⴰⵍⴻⵎⵎⴰⵙⵜ ⵏ ⵡⴻⴷⵔⴰⵔ, ⴰⵍⵎⵉ ⵉ ⵢⵉ-ⵉⴹⵀⴻⵔ, ⴰ ⵔⴻⴱⴱⵉ! ⵎⴰ ⴷ ⵙⴻⴱⵄⴰ ⵍⴻⵙⵡⴰⵇ ⵉ ⵢⵄⴻⵎⵕⴻⵏ ⵓⵔ ⵅⴻⴷⴷⵎⴻⵏ ⴰⵔⴰ ⴰⴽⴽⴻⵏ ⵙ ⵍⵖⴰⵛⵉ! ⵓⵍⴰⵎⵎⴰ ⵢⴻⴱⵄⴻⴷ ⴼⴻⵍⵍ-ⵉ ⴷ ⴷⴷⴻⵇⵙ, ⵍⴰⴽⵉⵏ ⵡⴰⵍⵉⵖ: ⴷ ⵜⴰⴷⴷⴰⵔⵜ. ⵎⴻⵇⵇⵔⴻⵜ ⵎⴰⵞⵞⵉ ⴷ ⴽⵔⴰ. ⵜⵕⵓⵃ ⴰⴽⴽⴻⵏ ⴷ ⵜⴰⵖⴻⵣⴼⴰⵏⵜ : ⵜⴻⴱⴷⴰ ⴰⴽⴽⴰ ⵛⵡⵉⵟ ⴷⵉ ⵍⴻⵎⵇⴰⵄⴷⴰ ⵜⴰⵎⴰ ⵏ ⵡⴰⵙⵉⴼ, ⵙⵢⵉⵏ ⴰⵔ ⵜⵜⴰⵍⵉⵏ ⵢⴻⵅⵅⴰⵎⴻⵏ-ⵉⵙ ⴰⵍⵎⵉ ⴷ ⴽⵔⴰ ⵏ ⵜⵇⵉⵛⵛⵓⵔⵜ ⵉⵡⵓⵎⵉ ⵜⴹⴰⵍⵍ ⴰⵀⴰⵜ ⴰⴽⴽⵉⵏ.`,
+      `ⵍⴰⴽⵉⵏ, ⵎ’ⴰⴽⴽⴻⵏ ⵜⴻⴱⴷⴰ ⵄⴻⵇⵍⴻⵖ ⵜⴰⵇⵓⴱⴱⴻⵜ ⵜⴹⵓⵔⴻⴼ ⴰⴽⴽⴰ ⵛⵡⵉⵟ, ⵎⴻⵃⵙⵓⴱ ⵜⵜⴰⵇⴻⵔⵏⵉⵜ ⵖⴻⵔ ⴷⴰ. ⵙⴰⴽⵉⵏ,... ⵙⴰⴽⵉⵏ, ⵜⴰⴱⴻⵄ, ⴷ ⴰⵢⴻⵏ ⵉⵙⵙ ⵉ ⴱⴻⴷⴷⴻⵖ ⴷⴻⵀⵛⴻⵖ. ⵢⴻⵡⵡⴻⴹ-ⵉⵢⵉ-ⴷ ⵙⵉ ⵜⵍⴻⵎⵎⴰⵙⵜ ⵏ ⵍⵖⴰⵛⵉ-ⵏⵏⵉ ⵚⵚⵓⵜ ⵏ ⵟⵟⴱⴻⵍ ⴰⵎ ⴰⵛⴻⵎⵎⴰ ⴽⴰⵏ. ⵡⴰⵍⴰⴽⵉⵏ, ⵓⵔ ⵢⴻⵜⵜⵉⵍⵉ ⴰⵔⴰ ⵡⴰⵏⴻⵛⵜ-ⴻⵏ ⵏ ⵍⵄⵉⴱⴰⴷ ⴷⵉ ⵜⵎⴻⵖⵔⴰ, ⵢⴰ ⵍⵓⴽⴰⵏ ⵏ ⵡⴰⵍⴱⴻⵄⴹ ⵏ ⵍⵇⵓⵢⵢⴰⴷ ⵏⴻⵖ ⵏ ⵡⴰⵢⴻⵏ ⵉ ⵙ-ⵢⴻⵀⵡⴰⵏ.`,
+      `ⵎ’ⴰⵔⴰ ⵙⵙⴻⴽⴷⴻⵖ, ⵜⴰⵇⵓⴱⴱⴻⵜ-ⵏⵏⵉ ⵉⵡⵓⵎⵉ ⵣⵣⵉⵏ ⵙⵢⴰ ⴷ ⵙⵢⴰ, ⴰⵎ ⵓⵡⴻⵟⵟⵓⴼ ⵎ’ⴰⵔⴰ ⴷ-ⵢⴻⵏⵏⵖⴻⵍ, ⵍⴰⴽⵉⵏ, ⵍⴻⵄⵎⴻⵔ ⵥⵔⵉⵖ ⵣⵣⵢⴰⵕⴰ ⵏⴻⵖ ⵣⵣⴻⵔⴷⴰ ⵜⴻⵅⴷⴻⵎ ⴰⴽⴽⴻⵏ ⵙ ⵍⵖⴰⵛⵉ. ⵃⴻⴷⴷⵔⴻⵖ ⴷⴰⴳⵉ ⵖⵓⵔ-ⵏⵏⴻⵖ ⵉ ⵣⵣⵢⴰⵕⴰ ⵏ ⵜⵄⴰⵛⵓⵔⵜ ⵖⵓⵔ ⵊⴻⴷⴷⵉ ⴱⵓ ⵉⴼⴻⵍⵍⴰⵃⴻⵏ, ⵍⴰⴽⵉⵏ ⴰⵢⴻⵏ ⵍⴰ ⵜⵜⵡⴰⵍⵉⵖ ⴰⵙⵙ-ⴻⵏ, ⵓⵔ ⴰⵙ-ⵛⴼⵉⵖ ⴰⵔⴰ ⵥⵔⵉⵖ-ⵜ ⴷⵉ ⴷⴷⵓⵏⵉⵜ-ⵉⵡ. ⴷ ⴰⵢⴻⵏ ⵉⵙⵙ ⵉ ⴱⴻⴷⴷⴻⵖ ⵡⴻⵀⵎⴻⵖ.`,
+      `ⵢⴻⵜⵜⴰⴽ-ⴷ ⵔⴻⴱⴱⵉ ⵍⵎⵓⵎⴻⵏ ⵉ ⵍⵎⵓⵎⴻⵏ. ⴰⵜⵜⴰ ⵜⵇⴻⴹⵄⵉⵜ ⵏ ⵍⵎⴰⵍ ⴷ-ⵡⴻⴱⵔⵉⴷ ⴰⴱⵔⵉⴷ ⵓⴽⴻⵕⵕⵓⵙ ⵉⵏⵀⴻⵕ-ⵉⵜⵜ-ⵉⴷ ⵢⵉⵡⴻⵏ ⵡⴻⵇⵛⵉⵛ. ⵢⴰⵡⴻⴹ-ⴷ ⵖⵓⵔ-ⵉ, ⵉⵙⴻⵍⵍⴻⵎ-ⴷ ⴼⴻⵍⵍ-ⵉ, ⵔⵔⵉⵖ-ⴰⵙ ; ⵙⵜⴻⵇⵙⴰⵖ-ⵜ ⵏⴻⵜⵜⴰ ⵍⴰⴷⵖⴰ ⵍⵅⵉⵔ ⵢⴰⴽⴽ ⴰⵎⴻⵇⵔⴰⵏ ⴰⵔⴰ ⵜⵅⴻⴷⵎⴻⴹ ⴷⴻⴳ ⵡⴻⵇⵛⵉⵛ, ⵍⴻⵎⵣⴻⵢⵢⴰ ⴷ ⵍⴼⴻⵕⵃ ⴰⵔⴰ ⵜ-ⵜⴻⵙⴼⴻⵕⵃⴻⴹ, ⴰⵎ ⴰⴽⴽⴻⵏ ⵢⴻⵞⵞⴰ ⵙⴻⴽⵙⵓ ⴷ ⵡⵓⴷⵉ, ⴷ ⵎ’ⴰⵔⴰ ⴽ-ⵜⴰⵖ ⴷ ⴰⴱⴻⵕⵕⴰⵏⵉ ⴷⵉ ⵜⵡⵓⵔⵜ-ⵉⵙ, ⵜⴻⵙⵜⴻⵇⵙⵉⴹ-ⵜ ⵖⴻⴼ ⵉⴱⴻⵔⴷⴰⵏ ⵏⴻⵖ ⴷ ⴰⵢⴻⵏ ⵢⴰⴽⴽ ⵢⴻⵙⵙⴻⵏ ⴷⵉⵏ. ⵍⵃⴰⵚⵓⵏ, ⴷ ⴰⵢⴻⵏ ⵊⴻⵕⵕⴱⴻⵖ ⵏⴻⴽ. ⴷⴰⵖ ⵏⴻⵜⵜⴰ ⵜⵓⵔⴰ... ⵜⵓⵔⴰ...`,
+      `ⵜⵓⵔⴰ, ⵎⵉ ⵄⴻⴷⴷⴰⵏ ⵡⵓⵙⵙⴰⵏ,<br>ⴷ ⴰⴽⴽⴻⵏ ⵍⵍⴰⵏ ⵍⵀⴰⵏ:<br>ⴰ ⵡⵉ ⵢⵓⴼⴰⵏ ⴰⵎ ⴰⵙⵙ-ⴰⴳⵉ!...`
+    ],
     infoURL: "",
     bioURL: "",
     textURL: "",
@@ -1254,14 +1267,6 @@ export const stirrPoetry = [
       `Because of this gift<br>They call me Mririda,<br>And he who will come for me<br>Will feel my heart beat in his hand<br>As I have felt the racing hearts of frogs<br>Beneath my fingertips.`,
       `In the nights bathed in moonlight<br>He will call me, <i>Mririda</i>, <i>Mririda</i>,<br>Sweet nickname that I love,<br>And for him I will release my piercing call,<br>Shrill and drawn out,<br>Bringing wonder from men<br>And jealousy from women,<br>Nothing like it ever heard in this valley.`
     ],
-    excerptSrc: [
-      `<b>ⵎⵔⵉⵔⵉⴷⴰ</b>`,
-      `ⵙⵙⴻⵎⵎⴰⵏⵉⵢⵉⴷ ⵎⵔⵉⵔⵉⴷⴰ.<br>ⵎⵔⵉⵔⵉⴷⴰ, ⴰⵇⴻⵔⵔⵓⵢ ⵏ ⵜⵥⴻⴳⵡⴰ ⵏ ⵜⵥⴻⴳⵡⴰ.<br>ⵓⵔ ⵙⵄⵉⵖ ⴰⵔⴰ ⴰⵍⵍⴻⵏⵉⵙ ⵏ ⵡⵓⵔⴻⵖ,<br>ⵓⵔ ⵙⵄⵉⵖ ⴰⵔⴰ ⵜⴰⵖⴻⵛⵜⵉⵙ ⵜⴰⵎⴻⵍⵍⴰⵍⵜ<br>ⵏⴻⵖ ⵜⵓⵏⵉⴽ ⵜⴰⵣⴻⴳⵣⴰⵡⵜ.<br>ⵎⴰⵛⴰ ⴰⵢⴻⵏ ⵙⵄⵉⵖ, ⴰⵎ ⵎⵔⵉⵔⵉⴷⴰ,<br>ⴷ ⵣⴰⵖⵔⵓⵜⴰ, ⴷ ⵜⵉⵖⵔⵉⵉⵏⵓ<br>ⴷ ⴰⵢⴻⵏ ⵉ ⴷⵢⴻⵜⵜⴰⵡⵉⵏ ⴰⵍⴰⵎⵎⴰ ⴷ ⵍⵎⴰⵍ—<br>ⵜⴰⵍⴰⵏⵏⵉ ⴰⴽⴽ<br>ⵓ ⵜⴰⵎⴰ ⵏⵏⵉⴹⴻⵏ ⵏ ⵡⴻⴷⵔⴰⵔ<br>ⵎⵎⴻⵙⵍⴰⵢⴷ ⴼⴻⵍⵍⴰⵙ...<br>ⵜⵉⵖⵔⵉⵉⵏⵓ, ⵉ ⴷⵢⴻⵜⵜⴰⵡⵉⵏ ⵍⴼⴻⵕⵃ ⴷ ⵜⵉⵙⵎⵉⵏ.`,
-      `ⵙⴻⵎⵎⴰⵏⵉⵢⵉ ⵎⵔⵉⵔⵉⴷⴰ<br>ⴰⵛⴽⵓ ⵜⵉⴽⴽⴻⵍⵜ ⵜⴰⵎⴻⵣⵡⴰⵔⵓⵜ ⵉ ⵍⵍⵉⵖ ⵜⵜⴻⴷⴷⵓⵖ ⴷⴻⴳ ⵢⵉⴳⵔⴰⵏ<br>ⵟⵟⴼⴻⵖ ⵙ ⵍⴻⵎⵖⴰⵡⵍⴰ ⴰⵎⵇⴻⵕⵇⵓⵕ ⵏ ⵜⵜⴻⴵⵔⴰ<br>ⵜⵓⴳⴷⵉ ⴷ ⵔⵅⴻⴷⵎⴻⵜ ⴷⴻⴳ ⵉⴼⴰⵙⵙⴻⵏⵉⵡ,<br>ⵓ ⵢⴻⵥⵥⴻⵍ ⵜⴰⵖⴻⵛⵜⵉⵙ ⵜⴰⵎⴻⵍⵍⴰⵍⵜ<br>ⵉ ⵉⵖⴻⵙⵉⵡ ⵏ ⵓⴳⵔⵓⴷ,<br>ⵓ ⵙⵢⴻⵏ ⵏ ⵢⵉⵡⴻⵜ ⵏ ⵜⴻⵇⵛⵉⵛⵜ.`,
-      `ⵓ ⴰⴽⴽⴰ ⵉ ⵢⵉⴷ-ⴼⴽⴰⵏ ⴱⴰⵔⴰⴽⴰ,<br>ⵙⵃⵓⵔ ⵉ ⵙⴻⵏⴷ-ⵢⴻⴼⴽⴰⵏ ⵜⵉⵣⵍⵉⵜⵏⵙⴻⵏ<br>ⴰⵏⵡⴰ ⵉ ⴷⵢⴻⵞⵞⵓⵔⴻⵏ ⵉⴹⴰⵏ ⵏ ⵓⵏⴻⴱⴷⵓ,<br>ⵜⵉⵣⵍⵉⵜ ⵉⴱⴰⵏⴻⵏ ⴰⵎ ⵙⵙⴻⴵⴵⴰⴵ,<br>ⵉⵇⴻⵙⵃⴻⵏ ⴰⵎ ⵚⵚⵓⵜ ⵏ ⵜⵎⴻⵥⵥⵓⵖⵜ<br>ⴷⴻⴳ ⵍⵀⴰⵡⴰ ⵢⴻⵜⵜⵃⴻⵔⵔⵉⵇⴻⵏ ⵙⴻⵏⴷ ⴰⴷⴼⴻⵍ...`,
-      `ⵖⴻⴼ ⵙⵙⴻⴱⴰ ⵏ ⵜⵉⴽⵛⵉⴰⴳⵉ<br>ⵙⵙⴰⵡⴰⵍⴻⵏⵉⵢⵉⴷ Mririda,<br>ⵓ ⵡⵉⵏ ⴰⵔⴰ ⴷⵢⴰⵙⴻⵏ ⴼⴻⵍⵍⵉ<br>ⴰⴷ ⵃⵓⵍⴼⵓⵖ ⵙ ⵡⵓⵍⵉⵡ ⵢⴻⵜⵜⴱⴻⵄ ⴷⴻⴳ ⵓⴼⵓⵙⵉⵙ.<br>ⴰⴽⴽⴻⵏ ⵃⵓⵍⴼⴰⵖ ⵉ ⵓⵍⴰⵡⴻⵏ ⵏ ⵢⵉⵇⵊⴰⵏ ⵢⴻⵜⵜⵇⴰⴱⴰⵍⴻⵏ.<br>ⴷⴷⴰⵡ ⵏ ⵢⵉⴼⴰⵙⵙⴻⵏⵉⵡ.`,
-      `ⴷⴻⴳ ⵢⵉⴹⴰⵏ ⵢⴻⵜⵜⵡⴰⵄⴻⵔⴹⴻⵏ ⴷⴻⴳ ⵜⴰⴼⴰⵜ ⵏ ⵡⴰⴳⴳⵓⵔ<br>ⴰⴷ ⵉⵢⵉ-ⵉⵙⵉⵡⴻⵍ, ⵎⵔⵉⵔⵉⴷⴰ, ⵎⵔⵉⵔⵉⴷⴰ,<br>ⵉⵙⴻⵎ ⵥⵉⴷⴻⵏ ⵉ ⵃⴻⵎⵎⵍⴻⵖ,<br>ⵓ ⴼⴻⵍⵍⴰⵙ ⴰⴷ ⵙⵙⵓⴼⵖⴻⵖ ⵜⵉⵖⵔⵉⵉⵏⵓ ⵏ ⵜⵎⴻⵥⵥⵓⵖⵜ,<br>ⵙⵀⵔⵉⵍⵍ ⵓ ⵢⴻⵜⵜⵡⴰⵊⴻⵔⵔⴻⴷ,<br>ⴰⴳⴳⴰⵢ ⵏ ⵓⵙⵡⴻⵀⵎⴻⵏ ⵙⴻⴳ ⵢⵉⵔⴳⴰⵣⴻⵏ<br>ⵓ ⵜⵉⵙⵎⵉⵏ ⵙⴻⴳ ⵜⵍⴰⵡⵉⵏ,<br>ⵓⵍⴰⵛ ⴰⵎ ⵡⴰ ⵉ ⵙⴷ-ⵙⵍⴰⵏ ⴷⴻⴳ ⵡⴰⵙⵙⵉⴼⴰⴳⵉ.`
-    ],
     infoURL: "https://en.wikipedia.org/wiki/Mririda_n%27Ait_Attik",
     mediaURL: ["https://youtu.be/WWDjS_xWyr0"],
     textURL: "",
@@ -2276,7 +2281,7 @@ export const cultFeatFilms = [
     runtime: 96,
     genre: ["Drama","Romance"],
     tags: [""],
-    color: "#2888a9"
+    color: "#406096"
   },
   {
     id: "AFNCCFF1",
@@ -2657,7 +2662,7 @@ export const cultFeatFilms = [
     runtime: 118,
     genre: ["Drama"],
     tags: [""],
-    color: "#237b93"
+    color: "#416f7d"
   },
   {
     id: "ASWECFF",
@@ -5425,28 +5430,28 @@ export const foundRelTexts = [
   },
   {
     id: "ASCEFRT",
-    title: {original: "𐰃𐰺𐰴 𐰋𐰃𐱅𐰃𐰏", transliteration: "Irk Bitig", translation: "Book of Omens"},
+    title: {original: "𐰃𐰺𐰴⁚𐰋𐰃𐱅𐰃𐰏", transliteration: "Irk Bitig", translation: "Book of Omens"},
     group: {people: "Uyghur", language: "Old Turkic", religion: "Tengrism", location: "Xinjiang, CN"},
     info: [
-      `Near the Silk Road oasis city of Dunhuang, deep in the temple libraries of Magao Caves, the only known book written in the Old Turkic script was found at the bottom of a deposit of religious and secular manuscripts, where it had been preserved since the sealing of the caves in the 11th century. The <i>Irk Bitig</i> is a divination book containing 65 <i>irk</i> omens with accompanying poetic interpretations.`,
-      `    Each <i>irk</i> is represented by three groups of circles at the head of each interpretation, the result of three throws of a dice-like wooden rod with one to four circles inscribed on each side. Each interpretation ends with a judgement as to whether the outcome is good, bad, very good, or very bad. Now, my dear sons, know thus: this book of divination is good. Thus, everyone is master of his own fate.`
+      `Near the Silk Road oasis city of Dunhuang, deep in the temple libraries of the Magao Caves, the only known book written in the Old Turkic script was found at the bottom of a deposit of religious and secular manuscripts where it had been preserved since the sealing of the caves in the 11th century. That manuscript, the <i>Irk Bitig</i>, is a divination book containing 65 <i>irk</i> omens with accompanying poetic interpretations.`,
+      `Each <i>irk</i> is represented by three groups of circles at the head of each interpretation, the result of three throws of a dice-like wooden rod with one to four circles inscribed on each side. Each interpretation ends with a judgement as to whether the outcome is good, bad, very good, or very bad. Now, my dear sons, know thus: this book of divination is good. Thus, everyone is master of his own fate.`
     ],
     excerpt: [
-      `○ ○   ○ ○   ○ ○`,
+      `○ ○ &nbsp; ○ ○ &nbsp; ○ ○`,
       `I am <+>Ten-si[“Son of Heaven”, Emperor of China]</+>. In the morning and evening, I enjoy sitting on the golden throne. Know thus: The omen is good.<sp>`,
-      `○ ○ ○ ○   ○ ○ ○ ○   ○ ○ ○ ○`,
+      `○ ○ ○ ○ &nbsp; ○ ○ ○ ○ &nbsp; ○ ○ ○ ○`,
       `I am the road god with a dappled horse. Early in the morning and late in the evening I amble along. This road god apparently met two joyful human beings. The human beings were afraid. The road god said: “Do not be afraid! I will give you my divine favor.” Know thus: The omen is good.<sp>`,
-      `○ ○ ○   ○ ○ ○   ○ ○ ○`,
+      `○ ○ ○ &nbsp; ○ ○ ○ &nbsp; ○ ○ ○`,
       `I am a predatory eagle with golden wings. Although the feathers of my body are not yet fully grown, lying down by the sea, I catch what I please and I eat what I like. That powerful am I. Know thus: The omen is good.<sp>`,
-      `○ ○   ○ ○ ○ ○   ○ ○`,
+      `○ ○ &nbsp; ○ ○ ○ ○ &nbsp; ○ ○`,
       `A <+><i>beg</i>[prince]</+> went to look at his horses and saw that his white mare had just foaled. He thought: “it would fit to be a golden-hoofed stallion.” He went to look at his camels and saw that his white she-camel had just given birth to a colt. He thought: “it would fit to be a camel stallion with a golden nose peg.” He went to look at his house and saw that his third princess had just given birth to a son. He thought: “he would fit to be a <i>beg</i>,” it says. Apparently he was a happy <i>beg</i>. Know thus: The omen is extremely good.<sp>`,
-      `○   ○ ○ ○ ○   ○`,
+      `○ &nbsp; ○ ○ ○ ○ &nbsp; ○`,
       `The fog was hanging above and the dust was rising below. The young birds lost their way flying, the young deer lost their way running, and the children lost their way walking. And again, by the grace of Heaven, they all met in the third year, safe and sound. They all rejoiced and were glad, it says. Know thus: The omen is good.<sp>`,
-      `○ ○ ○ ○   ○   ○ ○`,
+      `○ ○ ○ ○ &nbsp; ○ &nbsp; ○ ○`,
       `A lean horse fattened itself on a pasture. Then, thinking of its place, it went running towards it. On its way home a thief came across. He caught and mounted it. The horse, having galled up to its mane and its tail, stands still without being able to move, it says. Know thus: The omen is bad.<sp>`,
-      `○ ○ ○   ○ ○ ○   ○ ○`,
+      `○ ○ ○ &nbsp; ○ ○ ○ &nbsp; ○ ○`,
       `A favorite horse came to a standstill in a desert exhausted and wilting. Thanks to the strength given by Heaven, having seen way and water on a mountain and having seen fresh grass on a mountain pasture, it went there walking. Thus, drinking the water and eating the fresh grass it escaped death, it says. Know thus: The omen is good.<sp>`,
-      `○   ○ ○ ○ ○   ○ ○`,
+      `○ &nbsp; ○ ○ ○ ○ &nbsp; ○ ○`,
       `What is the inside of the tent frame like? What is its smoke hole like? What is its window like? It can be seen through. How is its roof? It is good. How are its ropes? They are all there, it says. Know thus: The omen is very good.`,
       `>>(Irk Bitig 1-3, 5, 15-18)`
     ],
@@ -6095,7 +6100,7 @@ export const globFeatFilms = [
     group: {people: "Korean", language: "Korean", location: "South Korea"},
     info: [
       `When film director Ham Chun-su arrives in Suwon a day early, he has time to kill and ends up meeting a young artist named Yoon Hee-jung. They spend time together visiting her studio, having soju and meeting her friends, but when she asks if he is married, he has no choice but to reveal the truth.`,
-      `Dir/Scr <b>HONG SANG-SOO</b> eradicates the boundary between art and life—with an utterly unique filmmaking process and impossibly swift release schedule, his films attempt to look at things as they are, incapable of generalization and complete unto themselves.`
+      `Dir/Scr <b>HONG SANG-SOO</b> transgresses the boundary between art and life—with an utterly unique filmmaking process and impossibly swift release schedule, his films attempt to look at things as they are, incapable of generalization and complete unto themselves.`
     ],
     infoURL: "",
     mediaURL: "https://youtu.be/DefSAk-lnkg",
@@ -6103,9 +6108,9 @@ export const globFeatFilms = [
     trailer: "https://youtu.be/fbCvHJ8WU0g",
     coordinates: {x: 127.016667, y: 37.266667, name: "Suwon City"},
     runtime: 121,
-    genre: ["Drama","Romance","Arthouse"],
+    genre: ["Arthouse","Drama","Romance"],
     tags: [""],
-    color: "#E74B8F"
+    color: "#7A445B"
   },
   {
     id: "ASSEGFF",

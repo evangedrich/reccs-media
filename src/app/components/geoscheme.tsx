@@ -80,7 +80,14 @@ export default function Geoscheme({ reccs }: { reccs: ReccLite[] }) {
                     <Link 
                         key={`card_${entry.id}`} 
                         href={`/${entry.id}`}
-                        className={`shrink-0 flex flex-col gap-1 sm:w-[9rem] w-[7.7rem] p-3 ${i<entries.length-1 ? "border-r-2" : "sm:border-r-2"} ${i===0 ? "border-l-2 ml-[-2px]" : ""} hover:bg-[var(--color-mid)] active:opacity-85 group`}
+                        // Widths track the borders toggled here so every card's inner width (and so its
+                        // poster, and its 12px padding either side) comes out identical: the first
+                        // card's extra border-l adds 2px, the borderless last card on mobile sheds 2px.
+                        className={`shrink-0 flex flex-col gap-1 p-3 ${i<entries.length-1 ? "border-r-2" : "sm:border-r-2"} ${i===0 ? "border-l-2 ml-[-2px]" : ""} ${
+                            i===0 && i<entries.length-1 ? "w-[calc(7.7rem+2px)] sm:w-[calc(9rem+2px)]"
+                            : i===0 ? "w-[7.7rem] sm:w-[calc(9rem+2px)]"
+                            : i===entries.length-1 ? "w-[calc(7.7rem-2px)] sm:w-[9rem]"
+                            : "w-[7.7rem] sm:w-[9rem]"} hover:bg-[var(--color-mid)] active:opacity-85 group`}
                     >
                         <div className="relative bg-[var(--color-mid)] group-hover:opacity-90 aspect-3/4">
                             <Image src={posterUrl(entry.id)} alt="Media Image" width="300" height="400" className="w-full h-full" unoptimized />
