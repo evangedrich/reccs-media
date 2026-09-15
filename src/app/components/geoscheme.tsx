@@ -99,7 +99,7 @@ export default function Geoscheme({ reccs }: { reccs: ReccLite[] }) {
                 ))}</div>
             </div>
             <div className={`${currSubr==="X" ? "hidden" : ""} sm:hidden border-b-2 p-4`}>
-                <p className="max-w-[800px] mx-auto text-sm">{preParse(subregions.find(subr => subr.id===currSubr)?.description ?? "")}</p>
+                <p className="max-w-[800px] mx-auto text-sm">{subregions.find(subr => subr.id===currSubr)?.description ?? ""}</p>
             </div>
         </div>
     )

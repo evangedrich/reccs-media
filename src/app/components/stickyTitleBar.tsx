@@ -51,7 +51,7 @@ export default function StickyTitleBar({ title, titleFont, children }: { title: 
                 <div ref={innerRef} style={{ opacity: 0, pointerEvents: 'none' }}
                     className="absolute -top-[34px] left-0 w-full h-[34px] border-b-2 border-solid border-[var(--color-front)] pl-4 pr-2 bg-[var(--color-back)] flex items-center justify-between overflow-hidden"
                 >
-                    <span className={`font-black truncate ${titleFont}`}>{title}</span>
+                    <span className={`font-black truncate ${titleFont} h-full flex items-center`}>{title}</span>
                     <ScrollTop />
                 </div>
             </div>

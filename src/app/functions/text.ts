@@ -96,7 +96,7 @@ const strip = (txt: string): string => {
 const addIndents = (txt: string): string => {
     /*
     Split the text on <br> into separate lines and wrap each in an indented block span.
-    padding-left starts at `base` (0.6em) and grows by 1em for every leading &emsp;, each of which is consumed.
+    padding-inline-start starts at `base` (0.6em) and grows by 1em for every leading &emsp;, each of which is consumed.
 
     <v>/<V> tags are normalized into the same <br> + &emsp; markers first, so this fully replaces indent():
       - <v>X</v> becomes its own line at the base indent (equivalent to 0 &emsp;)
@@ -119,7 +119,9 @@ const addIndents = (txt: string): string => {
                 padding += 0.9;
                 inner = inner.slice("&emsp;".length);
             }
-            return `<span style="display:block;padding-left:${padding}em;text-indent:-${base}em">${inner}</span>`;
+            // padding-inline-start (not padding-left) so the padding sits on the same side as text-indent,
+            // which is always the line's start edge — the right edge in right-to-left scripts like Arabic
+            return `<span style="display:block;padding-inline-start:${padding}em;text-indent:-${base}em">${inner}</span>`;
         })
         .join("");
 };

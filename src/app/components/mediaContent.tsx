@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "@/app/ui/main.module.css";
 import MarkdownCitation from "./markdownCitation";
 import Share from "./share"
@@ -23,14 +23,16 @@ const citationFormats: string[] = [ "APA", "MLA", "Chicago" ];
 const excerptLangLabels: Record<string, string> = {
     "Classical Chinese": "Chinese",
     "Mandarin Chinese": "Mandarin",
+    "Classical Nahuatl": "Nahuatl",
+    "Classical Quechua": "Quechua",
 };
 
 // The small all-caps option row atop a tab (citation formats, excerpt language). Shared so
-// every such switch looks identical. `onWarm` fires on hover of a non-selected option.
-function FormatSwitch({ options, labels, value, onChange, onWarm }: { options: string[], labels?: string[], value: string, onChange: (o: string) => void, onWarm?: () => void }) {
+// every such switch looks identical.
+function FormatSwitch({ options, labels, value, onChange }: { options: string[], labels?: string[], value: string, onChange: (o: string) => void }) {
     return (
         <ul className="flex gap-4 text-xs uppercase mb-3">
-            {options.map((o,i) => <li key={`opt${i}`} onClick={() => onChange(o)} onPointerEnter={o!==value ? onWarm : undefined} className={`hover:opacity-80 ${o===value?"font-extrabold hover:opacity-100":""} cursor-pointer`}>{labels?.[i] ?? o}</li>)}
+            {options.map((o,i) => <li key={`opt${i}`} onClick={() => onChange(o)} className={`hover:opacity-80 ${o===value?"font-extrabold hover:opacity-100":""} cursor-pointer`}>{labels?.[i] ?? o}</li>)}
         </ul>
     );
 }
@@ -44,7 +46,28 @@ export default function MediaContent({ entry }: { entry: any }) {
     const hasOrig = Array.isArray(entry.excerptOrig) && !!entry.excerptOrig[0];
     // Same script detection as the entry title; inside `excerpt-scope` the class resolves
     // to the whole (unsubset) font rather than the title subset — see fonts/fontsFull.ts.
+    // "" means Latin script, which the already-loaded body font draws: nothing to warm.
     const origFont = hasOrig ? checkFont(entry.excerptOrig.join(" ")) : "";
+    const origBold = hasOrig && /<(b|strong)>/.test(entry.excerptOrig.join(" "));
+
+    // Warm the original-script font so switching languages doesn't flash the fallback, without
+    // competing with the page load: after `load`, once the browser is idle, render an invisible
+    // sample (the div at the bottom) so the font downloads in the background — same technique
+    // as fontWarmer.tsx. Opening the excerpt tab starts it too, if idle hasn't come yet.
+    useEffect(() => {
+        if (!origFont) return;
+        let idle: number | undefined;
+        const hasRic = "requestIdleCallback" in window;
+        const schedule = () => {
+            idle = hasRic ? window.requestIdleCallback(() => setWarmOrig(true), { timeout: 3000 }) : window.setTimeout(() => setWarmOrig(true), 1200);
+        };
+        if (document.readyState === "complete") schedule();
+        else window.addEventListener("load", schedule, { once: true });
+        return () => {
+            window.removeEventListener("load", schedule);
+            if (idle !== undefined) { if (hasRic) window.cancelIdleCallback(idle); else window.clearTimeout(idle); }
+        };
+    }, [origFont]);
     const [abbrOpen, setAbbrOpen] = useState(false);
     const [currAbbr, setCurrAbbr] = useState(['',''])
     const tabs: string[] = allTabs.map(cat => cat.id).filter((cat,i) => (
@@ -59,13 +82,10 @@ export default function MediaContent({ entry }: { entry: any }) {
         if (currentTab==="excerpt" && hasOrig) {
             const showOrig = excerptLang==="orig";
             content = <>
-                <FormatSwitch options={["english", "orig"]} labels={["english", excerptLangLabels[entry.group.language] ?? entry.group.language]} value={excerptLang} onChange={(o) => setExcerptLang(o as "english" | "orig")} onWarm={() => setWarmOrig(true)} />
+                <FormatSwitch options={["english", "orig"]} labels={["english", excerptLangLabels[entry.group.language] ?? entry.group.language]} value={excerptLang} onChange={(o) => setExcerptLang(o as "english" | "orig")} />
                 {showOrig
                     ? <div className={`excerpt-scope ${origFont}`}>{paragraphs(entry.excerptOrig, "auto")}</div>
                     : (entry.excerpt[0].includes("youtu.be")) ? <PrepVideo vid={entry.excerpt} /> : paragraphs(entry.excerpt)}
-                {/* Pull the original-script font into cache on hover so the first toggle doesn't
-                    flash the fallback. Must be laid-out text (display:none fetches nothing). */}
-                {warmOrig && !showOrig && <span aria-hidden="true" className={`pointer-events-none absolute w-0 h-0 overflow-hidden opacity-0 excerpt-scope ${origFont}`}>{entry.excerptOrig[0]}</span>}
             </>;
         } else if (currentTab==="info" || currentTab==="excerpt") {
             const text = entry[currentTab];
@@ -121,6 +141,14 @@ export default function MediaContent({ entry }: { entry: any }) {
                     <p className="px-2 pt-1 pb-3 min-w-30">{currAbbr[1]}</p>
                 </div>
             </div>
+            {/* Original-script font warmer (see the effect above). Must be laid-out text —
+                `display: none` fetches nothing. Bold is warmed only if the excerpt uses it. */}
+            {origFont && (warmOrig || currentTab==="excerpt") && (
+                <div aria-hidden="true" className={`pointer-events-none fixed w-0 h-0 overflow-hidden opacity-0 excerpt-scope ${origFont}`}>
+                    <span>{entry.excerptOrig[0].replace(/<[^>]+>/g, "").slice(0, 60)}</span>
+                    {origBold && <span className="font-bold">{entry.excerptOrig[0].replace(/<[^>]+>/g, "").slice(0, 60)}</span>}
+                </div>
+            )}
         </>
     )
 }
