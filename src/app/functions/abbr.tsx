@@ -8,10 +8,12 @@ const extractText = (children: any[]): string =>
         return '';
     }).join('');
 
-export const parseWithAbbr = (
-    txt: string,
+// Parses markup that has already been through a string transform — mongolExcerpt(), which
+// builds its own markup and must not be run through preParse() on top of it.
+export const parseHtmlWithAbbr = (
+    html: string,
     onAbbrClick: (title: string, content: string) => void,
-) => parse(preParse(txt), {
+) => parse(html, {
     replace: (node: any) => {
         if (node.type === 'tag' && node.name === 'abbr') {
             const title = node.attribs?.title ?? '';
@@ -29,3 +31,8 @@ export const parseWithAbbr = (
         }
     },
 });
+
+export const parseWithAbbr = (
+    txt: string,
+    onAbbrClick: (title: string, content: string) => void,
+) => parseHtmlWithAbbr(preParse(txt), onAbbrClick);

@@ -55,7 +55,7 @@ export default async function DetailPage({ params }: { params: Promise<{ mediaID
                         <h1 className={`sm:text-6xl text-4xl font-black leading-none hyphens-auto break-words mb-2 max-w-[800px] ${isMongol(title) ? "[writing-mode:vertical-rl] h-fit" : ""}`} lang="en">
                             {isMongol(title) ? title.split(/\s+/).toReversed().map((w: string, i: number) => <span key={i} className="block">{w}</span>) : <span className={`${titleFont}`}>{title}</span>}
                         </h1>
-                        <h2 className={`${(transliteration || translation) ? "" : "hidden"} leading-none text-2xl mb-4 opacity-50`}>
+                        <h2 className={`${(transliteration || translation) ? "" : "hidden"} leading-none text-2xl mb-4 max-w-[800px] opacity-50`}>
                             {(transliteration && translation)
                             ? <span>{`${transliteration} (${translation})`}</span>
                             : (transliteration || translation)

@@ -92,6 +92,50 @@ body {
   --font-misans-tibetan:  var(--font-misans-tibetan-full);
 }
 
+/* Traditional Mongolian (bichig) excerpt field, built by mongolExcerpt() in functions/text.ts.
+
+   A wrapping flex row of vertical columns. Each .mongol-col is one line of the source set in
+   `writing-mode: vertical-lr`, so it runs top-to-bottom; `max-height` caps its *inline* size,
+   which makes a line longer than --mongol-col-h wrap into a second column to its right rather
+   than overflow. The flex row then keeps placing columns left to right until the container's
+   width is used up, at which point the next column starts a new row — and because the row's
+   cross size is its tallest item and items are top-aligned, that row begins at the lowest
+   point of the longest column above it.
+
+   column-gap is 0 on purpose: the space between two separate lines should be the same space
+   `line-height` puts between the wrapped columns of a single long line, so a stanza reads as
+   one even surface whether or not any of its lines happened to wrap. Adjust spacing with
+   line-height, not gap. */
+.mongol-field {
+	--mongol-col-h: 600px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	align-content: flex-start;
+	column-gap: 0;
+	row-gap: 1.5rem;
+	/* Vertical text starts flush against the top of its box, higher than the first Latin
+	   baseline sits in a <p>. Nudges the field down so switching languages doesn't shift
+	   the first line of the excerpt. */
+	padding-top: 5px;
+	padding-bottom: 0.5em;
+}
+.mongol-field .mongol-col {
+	flex: 0 0 auto;
+	writing-mode: vertical-lr;
+	height: max-content;                 /* with max-height below: wrap at the cap, shrink to fit under it */
+	max-height: var(--mongol-col-h);
+	line-height: 1.9;                    /* in vertical text this is the column pitch, not the leading */
+}
+/* Stands in for the paragraph break that block layout used to give a stanza, for stanzas that
+   no ᠅ already separates. */
+.mongol-field .mongol-stanza { margin-left: 0.75em; }
+/* ᠅ stanza break — hung from the top of its row, in line with the columns either side of it. */
+.mongol-field .mongol-break {
+	align-self: flex-start;
+	margin: 0 0.6em;
+}
+
 @keyframes map-scroll {
 	from { margin-left: -8px; }
 	to   { margin-left: -58px; }

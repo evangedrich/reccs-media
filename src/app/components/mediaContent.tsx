@@ -5,9 +5,9 @@ import styles from "@/app/ui/main.module.css";
 import MarkdownCitation from "./markdownCitation";
 import Share from "./share"
 import { getCitations } from "../functions/citations";
-import { getTitle, checkFont } from "../functions/text";
+import { getTitle, checkFont, isMongol, mongolExcerpt } from "../functions/text";
 import { PrepVideo, PrepWatch } from "../functions/video";
-import { parseWithAbbr } from "../functions/abbr";
+import { parseWithAbbr, parseHtmlWithAbbr } from "../functions/abbr";
 
 const allTabs: { id: string, keys: string[] }[] = [
     { id: "info", keys: ["info"] },
@@ -25,6 +25,10 @@ const excerptLangLabels: Record<string, string> = {
     "Mandarin Chinese": "Mandarin",
     "Classical Nahuatl": "Nahuatl",
     "Classical Quechua": "Quechua",
+    "Quechua II-C": "Quechua",
+    "Yoem Noki": "Yaqui",
+    "Sadhukkari": "Hindi",
+    "Northern Thai": "Thai",
 };
 
 // The small all-caps option row atop a tab (citation formats, excerpt language). Shared so
@@ -49,6 +53,9 @@ export default function MediaContent({ entry }: { entry: any }) {
     // "" means Latin script, which the already-loaded body font draws: nothing to warm.
     const origFont = hasOrig ? checkFont(entry.excerptOrig.join(" ")) : "";
     const origBold = hasOrig && /<(b|strong)>/.test(entry.excerptOrig.join(" "));
+    // Traditional Mongolian is laid out as one field of vertical columns rather than as
+    // paragraphs — see mongolExcerpt() in functions/text.ts.
+    const origMongol = hasOrig && entry.excerptOrig.some((x: string) => isMongol(x));
 
     // Warm the original-script font so switching languages doesn't flash the fallback, without
     // competing with the page load: after `load`, once the browser is idle, render an invisible
@@ -77,14 +84,19 @@ export default function MediaContent({ entry }: { entry: any }) {
     ));
     const getContent = () => {
         let content;
+        const onAbbr = (title: string, content: string) => { setCurrAbbr([content, title]); setAbbrOpen((abbrOpen && currAbbr[1]===title) ? false : true); };
         // `dir="auto"` only for original-language text, so a right-to-left script lays out correctly
-        const paragraphs = (text: string[], dir?: "auto") => text.map((x: string, i: number) => <p key={`p${i}`} dir={dir}>{parseWithAbbr(x, (title, content) => { setCurrAbbr([content, title]); setAbbrOpen((abbrOpen && currAbbr[1]===title) ? false : true); })}</p>);
+        const paragraphs = (text: string[], dir?: "auto") => text.map((x: string, i: number) => <p key={`p${i}`} dir={dir}>{parseWithAbbr(x, onAbbr)}</p>);
         if (currentTab==="excerpt" && hasOrig) {
             const showOrig = excerptLang==="orig";
             content = <>
                 <FormatSwitch options={["english", "orig"]} labels={["english", excerptLangLabels[entry.group.language] ?? entry.group.language]} value={excerptLang} onChange={(o) => setExcerptLang(o as "english" | "orig")} />
                 {showOrig
-                    ? <div className={`excerpt-scope ${origFont}`}>{paragraphs(entry.excerptOrig, "auto")}</div>
+                    ? <div className={`excerpt-scope ${origFont}`}>
+                        {origMongol
+                            ? parseHtmlWithAbbr(mongolExcerpt(entry.excerptOrig), onAbbr)
+                            : paragraphs(entry.excerptOrig, "auto")}
+                      </div>
                     : (entry.excerpt[0].includes("youtu.be")) ? <PrepVideo vid={entry.excerpt} /> : paragraphs(entry.excerpt)}
             </>;
         } else if (currentTab==="info" || currentTab==="excerpt") {

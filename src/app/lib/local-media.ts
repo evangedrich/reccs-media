@@ -295,7 +295,8 @@ export const modTradNovels = [
     textURL: "",
     playlistURL: "https://open.spotify.com/playlist/3LXFVWrK6bttZnfUkf5Vvw",
     ref: [
-      {id: "nappaaluk-1987", type: "book", title: "ᓴᓈᖅ (Sanaaq)", contributors: [{firstName: "Mitiarjuk", lastName: "Nappaaluk", role: "author"}], url: "https://archive.org/details/sanaaqinuitnovel0000napp", pubDate: {year: 1987}, publisher: "Association Inuksiutiit Katimajiit", location: "Québec", meta: {sortKey: "text", notes: "First novel in Inuktitut syllabics."}}
+      {id: "nappaaluk-1987", type: "book", title: "ᓴᓈᖅ: ᓴᓈᒃᑯᑦ ᐱᐅᓯᕕᓂᖏᑕ ᐅᓂᒃᑲᐅᓯᙳᐊᖓᑦ (Sanaaq: Sanaakkut Piusiviningita Unikkausinnguangat)", contributors: [{firstName: "Mitiarjuk", lastName: "Nappaaluk", role: "author"}], pubDate: {year: 1984}, publisher: "Association Inuksiutiit Katimajiit", location: "Québec", meta: {sortKey: "text", notes: "First novel in Inuktitut syllabics."}},
+      { id: "nappaaluk-2014-sanaaq", type: "book", title: "Sanaaq", contributors: [ { firstName: "Mitiarjuk", lastName: "Nappaaluk", role: "author" }, { firstName: "Peter", lastName: "Frost", role: "translator" }, { firstName: "Bernard", lastName: "Saladin d'Anglure", role: "translator" } ], url: "https://archive.org/details/sanaaqinuitnovel0000napp", pubDate: { year: 2014 }, publisher: "University of Manitoba Press", location: "Winnipeg", meta: { grade: "B", sortKey: "text", isbn: "9780887557484", note: "First English edition. Translated into English by Peter Frost from Bernard Saladin d'Anglure's 2002 French translation of the original Inuktitut text." } }
     ]
   },
   {
@@ -419,7 +420,7 @@ export const modTradNovels = [
     infoURL: "",
     textURL: "",
     ref: [
-      {id: "wildschut-1919", type: "book", title: "[Field manuscript of Two Leggings]", contributors: [{lastName: "Issaatxalúash", role: "author"},{lastName: "Yellowtail", firstName: "Robert", role: "translator"},{lastName: "Wildschut", firstName: "William", role: "editor"},{lastName: "Nabokov", firstName: "Peter", role: "editor"}], pubDate: {year: 1919}, publisher: "National Museum of the American Indian Archive Center", location: "Smithsonian Institution, Washington, DC", medium: "[Field manuscript]", url: "https://biblioteca.trabalhoindigenista.org.br/wp-content/uploads/2018/06/AYVU-RAPYTA-Textos-Misticos-de-los.pdf", meta: {sortKey: "text"}},
+      {id: "wildschut-1919", type: "book", title: "[Field manuscript of Two Leggings]", contributors: [{lastName: "Issaatxalúash", role: "author"},{lastName: "Yellowtail", firstName: "Robert", role: "translator"},{lastName: "Wildschut", firstName: "William", role: "editor"},{lastName: "Nabokov", firstName: "Peter", role: "editor"}], pubDate: {year: 1919}, publisher: "National Museum of the American Indian Archive Center", location: "Smithsonian Institution, Washington, DC", medium: "[Field manuscript]", meta: {sortKey: "text"}},
       {id: "nabokov-1967", type: "book", title: "Two Leggings: The Making of a Crow Warrior", contributors: [{lastName: "Nabokov", firstName: "Peter", role: "author"}], url: "https://archive.org/details/twoleggingsthema008451mbp", pubDate: {year: 1967}, publisher: "Thomas Y. Crowell Co.", location: "New York", meta: {sortKey: "text", notes: "Apitisée (Two Leggings) was the Crow narrator."}}
     ]
   },
@@ -517,7 +518,7 @@ export const modTradNovels = [
       `<b>GLADYS CAMACHO RIOS</b> is a Bolivian linguist, writer, and translator born in Anzaldo, Bolivia. She promotes language and culture through her writing and academic work, with the aim of spreading the richly expressive monolingual Quechua of rural speakers to urban bilngual speakers of simplified Quechua.`
     ],
     excerpt: [
-      `Tata Francisco and little Faustino were walking quickly back home after having gone to weed potatoes on <i>Chullpa Muqu</i> all day long. When they were on the road heading back, lots of the townspeople were drinking chicha at Kumpa Philip’s place. Just as Kumpa Philip came out of his house, he looked out and saw Tata Francisco coming down the road together with his child.`,
+      `Tata Francisco and little Faustino were walking quickly back home after having gone to weed potatoes on <+><i>Chullpa Muqu</i>[this is where tata Francisco grew his potatoes well]</+> all day long. When they were on the road heading back, lots of the townspeople were drinking chicha at Kumpa Philip’s place. Just as Kumpa Philip came out of his house, he looked out and saw Tata Francisco coming down the road together with his child.`,
       `“Come on in, Francisco!” he said, calling out loudly.`,
       `In the little community of Kalallusta, Tata Francisco was a well respected person. He had a lot of money. He also had a lot of land, and grew everything very well. “He talks to the devil”, all the townspeople said. He was a very mean man.`,
       `Tata Phillip was a skinny little guy, with a chichería on the main road in the town of Kalallusta. Since his wife died, he had been making chicha on his own and selling it to everyone in town. That day, Tata Phillip went up to Tata Francisco, grabbed him by the hand and pulled him into his house. Faustino, not wanting to leave his father, also went in after him, carrying his load of wood.`,
@@ -527,7 +528,7 @@ export const modTradNovels = [
       `The child silently left the house and went on towards home, carrying the wood. There was a still a long way to go from Tata Phillip’s house to get to Faustino’s house, and he still had to cross the <i>P’uqru Pata</i> river.`,
       `Faustino was heading back alone, and when he had already walked very far, all of a sudden, rain started to drip down. The child looked up, the full black clouds moved back and forth, looking as though they were were about to fall down.`,
       `He suddenly heard the crash! boom! of thunder from the sky, and saw the flash of lightning.`,
-      `The rain started to pour down even harder. Faustino kept walking quickly, afraid. He may have known that every time it rained, a lot of water filled the <i>P’uqru Pata</i> river. And to get home, he had to cross that river. There was no bridge over the river.`,
+      `The rain started to pour down even harder. Faustino kept walking quickly, afraid. He may have known that every time it rained, a lot of water filled the <+><i>P’uqru Pata</i>[this river is in Kalallusta, a big river in between huge rocks]</+> river. And to get home, he had to cross that river. There was no bridge over the river.`,
       `The child came around a mountain, and the river came into view. Murky water was flowing rapidly, filling the river. The young boy saw this and got very scared.`,
       `“How will I cross the river with so much water? With that much water, it could kill me.” He thought and then continued walking`,
       `He got to the river, but the rain was still not weakening. It started to rain even harder. At the river bank, Faustino kept himself and all the wood he was carrying covered from the rain under a small tree.`,
@@ -536,8 +537,29 @@ export const modTradNovels = [
       `At Faustino’s house, right after she prepared the evening meal, Mama Inkarna was thinking about her poor fifth child.`,
       `“Maybe the water stopped your father and Faustino. Perhaps we should go find them.” She said.`,
       `“Yes Mama, let’s go. Let’s take dry ponchos, the rain may have completely soaked them.” Libirata, the eldest daughter, responded.`,
-      `Mama Inkarna, Libirata, Apolonio and Julia headed off on foot. They took out the lantern that night, they walked along a well-lit road. When they were getting to the <i>P’uqru Pata</i> river, Faustino saw the lantern glow and immediately called out in distress.`,
-      ``
+      `Mama Inkarna, Libirata, Apolonio and Julia headed off on foot. They took out the lantern that night, they walked along a well-lit road. When they were getting to the <i>P’uqru Pata</i> river, Faustino saw the lantern glow and immediately called out in distress.`
+    ],
+    excerptOrig: [
+      `Tata Fransiskuwan Faustinituwanqa chakipi utqhayta wasinkuman kutirimuchkasqanku, p’unchawnintinta <+><i>Chullpa Muqu</i>pi[kay chirupi tata Fransisku papata sumaqta puquchiq]</+> papata qhuramusqankumanta. Jampuchkaptinkuqa, ñan patapi, kumpa Philipip wasinpi achkha ayllumasikuna aqhata upyarichkasqanku, chayllapi kumpa Philipiqa wasinmanta lluqsimuspa, tata Fransiskutaqa wawantin ñanta jamurichkaqta rikumusqa pacha.`,
+      `-“¡Jamuy Fransisku!” – ñispa sinchimanta qhaparimusqa.`,
+      `Kalallusta juch’uy ayllupiqa tata Fransiskuqa sumaq yuyaychasqa runa kaq kasqa. Payqa achkha qullqiyuq kaq kasqa. Jallp’anpis may chhikan tukuy imata sumaqta puqurichiq kasqa. –“Supaywan parlan” – tukuy ayllumasikunaqa ñiq kasqanku. Sumaq lisu runataq kaq kasqa.`,
+      `Tata Philipiqa juk tullu runalla, Kalallusta ayllupi ñan patapi aqha wasiyuq karqa. Warmin wañupusqanmanta pacha sapan aqhaspa tukuy ayllumasikunaman aqhata ranqhaq. Chay p’unchawqa tata Philipiqa tata Fransiskuman qayllaspa makinmanta jap’ispa wasin ukhuman aysaykusqa. Faustinuqa mana tatanta saqiyta munaspa qhipanta, llamt’a q’ipirisqa pacha, yaykuykullasqataq.`,
+      `-“¡Tatay ama aqhata upyankichu! ¡tutayawasunman ripunallaña tatay!” - ñispa, Faustinuqa tatanman parlasqa.`,
+      `-“¡Karaju! ¡Mana kaypi wawakuna aqhata upyankuchu! Qamqa ¡utqhayta wasiman ripuy! ¡chay llamt’ata mamayki wayk’unanpaq, utqhayta apay!” - ñispa tata Fransiskuqa wawanta ch’inyarparichisqa.`,
+      `-“Arí Faustinitu, ripullayña, ¿yachu? Ñuqaykuqa tataykiwan juk juch’uy p’uyñu aqhitataraq upyarqusqayku, chanta tataykiqa jampullanqa”- kumpa Philipiqa ñisqa.`,
+      `Wawaqa ch’insitumanta llamt’a q’ipirisqa pacha lluqsimuytawan wasinman kachaykakapusqa. Tata Philipip wasinmanta Faustinup wasinman chayamunapaqqa karutaraq thatkimuna kasqa, <+><i>P’uqru Pata</i>[kay mayuqa Kalallusta ayllupi, jatun mayu jatuchaq chhanka chawpipi]</+> mayutapis chimpamunaraq kasqa.`,
+      `Sapitan Faustinuqa jampuchkasqa, karutañamin thatkimusqa, jinallapi jukta paraqa sut’uykachariyta qallarisqa pacha. Wawaqa patata qhawarisqa, yana phuyukuna junt’ita urmaykurimuchkankumanpis jina tukuy chiruman kuyuykacharisqanku.`,
+      `-“¡Lliphiq! ¡Lliphiq! ¡Qhururun! ¡Qhururun!” - patapiqa sinchita uyaririkusqa.`,
+      `Astawan paraqa sinchimanta jich’akuyta qallarisqa. Faustinutaq mancharisqa utqhayta thatkillasqapuni. Ichapis payqa yachasqaña <i>P’uqru Pata</i> mayuman sapa paraptin achkha yaku chayamunantaqa. Wasinman chayapunanpaqtaq chay mayutaqa chimpananpuni kasqa. Mana chay mayupi chaka tiyaqchu.`,
+      `Wawa urquta muyuykamusqataq, mayuta qhawarimusqataq. Mayutaqa qunchu yaku junt’ita ririchkasqa. Chayta rikuytawan uña yuqallituqa astawan mancharikusqa.`,
+      `-“¿Imaynallata kunan mayuta chay chhika yakuyuqta chimpasaqri? Chay chhika yaku apaspa wañuchiwanmanpischá”- ñisqa t’ukurisqa, chanta thatkillasqapuni.`,
+      `Mayuman chayamusqataq, parataq manapuni pisiyasqachu, astawan sinchita parayta qallarisqa. Faustinuqa mayu kantupi llamt’a q’ipisituntin ima juk juch’uy sach’a uritapi paramanta pakakuspa qhipakusqa.`,
+      `Mayumanqa yakuqa yapakamullasqapuni, sinchita mancharikunapaqjinapuni. “¡Luqhuqun! ¡Luqhuqun!” ñispa rumikunataqa yakuqa uraman, uraman chinkaykuchisqa. Chay chhika yakuqa mayu kantupi sach’akunatapis t’iraytawan chinkaykuchillasqataq.`,
+      `Para tumpata ch’inyaptinqa, chiriñataq qallarisqa, Faustinup p’achanqa ch’aritan, yakulla sut’urichkasqa. Chiriqa juq’u p’achayuqtaqa kharkatichiyta qallarichisqa, laqhataq mancharichisqa. Mana ni imata ruwayta atispa wawaqa sapan mayu kantupi llakiyta waqaq churakusqa. Tatan chayman kutinanpaqqa karu, mayuta chimpananpaqtaq yaku junt’ita. Ni imanayta atispa chayjina laqhapi llakiyta waqallasqapuni, ni killapis chay ch’isiyaytaqa k’anchamuchkasqachu. Chimpanta qhawarisqa, jatun yana chhankallata rikusqa; urata qhawarisqa, sach’akunallata runakunapis maqanarikuchkankuman jinata rikusqa. Astawan mancharikuspa, -“jik’un jik’un”- ñispa, chayjina ch’in mayu kantupi phutiyta waqallasqapuni.`,
+      `Faustinup wasinpiqa mama Inkarnaqa ch’isi mikhunata chayachiytawankamaqa, llakisqa phichqa wawanwan ima t’ukurisqa.`,
+      `-“Yakuchá tataykichiktawan Faustinuytawan jark’aykun. Ichapis taripamuq risunman”- ñisqa.`,
+      `-“Arí mamay jaku rinachik kay ch’aki punchukunatawan apanachik q’alitutachá para juq’uykun”- kuraq warmi-wawan Libirata sutiyuq kutichisqa.`,
+      `Mama Inkarnawan, Libiratawan, Apoloniowan, Juliawan imaqa chakipi kachaykukusqanku. Chay ch’isiqa michiru juqharisqa, ñanta k’ancharispa thatkisqanku. <i>P’uqru Pata</i> mayuman chayachkaptinkuña Faustinuqa michiru k’anchata rikumuytawankamaqa phutiyta ñisqa.`
     ],
     infoURL: "https://www.goodreads.com/book/show/44413330-phuyup-yawar-waqaynin-the-bloody-tear-of-a-cloud",
     bioURL: "https://arts-sciences.buffalo.edu/linguistics/faculty/gladys-camacho-rios.html",
@@ -1031,6 +1053,17 @@ export const modTradNovels = [
       `VII<br>Lacking the lofty passion<br>not to spare life for the sake of sounds,<br>an iamb from a trochee he could not—<br>no matter how we strove—distinguish;<br>dispraised Homer, Theocritus,<br>but read, in compensation, Adam Smith,<br>and was a deep economist:<br>that is, he could assess the way<br>a state grows rich,<br>and what it lives upon,<br>and why it needs not gold<br>when it has got the simple product.<br>His father could not understand him,<br>and mortgaged his lands.`,
       `VIII<br>All Eugene knew besides<br>I have no leisure to recount;<br>but where he was a veritable genius,<br>what he more firmly knew than all the arts,<br>what since his prime had been to him<br>toil, anguish, joy,<br>what occupied the livelong day<br>his fretting indolence—<br>was the art of soft passion<br>which Naso sang,<br>wherefore a sufferer he ended<br>his brilliant and tumultuous span<br>in Moldavia, in the wild depth of steppes,<br>far from his Italy.`
     ],
+    excerptOrig: [
+      `Не мысля гордый свет забавить,<br>Вниманье дружбы возлюбя,<br>Хотел бы я тебе представить<br>Залог достойнее тебя,<br>Достойнее души прекрасной,<br>Святой исполненной мечты,<br>Поэзии живой и ясной,<br>Высоких дум и простоты;<br>Но так и быть—рукой пристрастной<br>Прими собранье пестрых глав,<br>Полусмешных, полупечальных,<br>Простонародных, идеальных,<br>Небрежный плод моих забав,<br>Бессонниц, легких вдохновений,<br>Незрелых и увядших лет,<br>Ума холодных наблюдений<br>И сердца горестных замет.`,
+      `I<br>«Мой дядя самых честных правил,<br>Когда не в шутку занемог,<br>Он уважать себя заставил<br>И лучше выдумать не мог.<br>Его пример другим наука;<br>Но, боже мой, какая скука<br>С больным сидеть и день и ночь,<br>Не отходя ни шагу прочь!<br>Какое низкое коварство<br>Полуживого забавлять,<br>Ему подушки поправлять,<br>Печально подносить лекарство,<br>Вздыхать и думать про себя:<br>Когда же черт возьмет тебя!»`,
+      `II<br>Так думал молодой повеса,<br>Летя в пыли на почтовых,<br>Всевышней волею Зевеса<br>Наследник всех своих родных.<br>Друзья Людмилы и Руслана!<br>С героем моего романа<br>Без предисловий, сей же час<br>Позвольте познакомить вас:<br>Онегин, добрый мой приятель,<br>Родился на брегах Невы,<br>Где, может быть, родились вы<br>Или блистали, мой читатель;<br>Там некогда гулял и я:<br>Но вреден север для меня.`,
+      `III<br>Служив отлично благородно,<br>Долгами жил его отец,<br>Давал три бала ежегодно<br>И промотался наконец.<br>Судьба Евгения хранила:<br>Сперва <i>Madame</i> за ним ходила,<br>Потом <i>Monsieur</i> ее сменил.<br>Ребенок был резов, но мил.<br><i>Monsieur l'Abbé</i>, француз убогой,<br>Чтоб не измучилось дитя,<br>Учил его всему шутя,<br>Не докучал моралью строгой,<br>Слегка за шалости бранил<br>И в Летний сад гулять водил.`,
+      `IV<br>Когда же юности мятежной<br>Пришла Евгению пора,<br>Пора надежд и грусти нежной,<br>Monsieur прогнали со двора.<br>Вот мой Онегин на свободе;<br>Острижен по последней моде,<br>Как <i>dandy</i> лондонский одет—<br>И наконец увидел свет.<br>Он по-французски совершенно<br>Мог изъясняться и писал;<br>Легко мазурку танцевал<br>И кланялся непринужденно;<br>Чего ж вам больше? Свет решил,<br>Что он умен и очень мил.`,
+      `V<br>Мы все учились понемногу<br>Чему-нибудь и как-нибудь,<br>Так воспитаньем, слава богу,<br>У нас немудрено блеснуть.<br>Онегин был по мненью многих<br>(Судей решительных и строгих)<br>Ученый малый, но педант:<br>Имел он счастливый талант<br>Без принужденья в разговоре<br>Коснуться до всего слегка,<br>С ученым видом знатока<br>Хранить молчанье в важном споре<br>И возбуждать улыбку дам<br>Огнем нежданных эпиграмм.`,
+      `VI<br>Латынь из моды вышла ныне:<br>Так, если правду вам сказать,<br>Он знал довольно по-латыне,<br>Чтоб эпиграфы разбирать,<br>Потолковать об Ювенале,<br>В конце письма поставить <i>vale</i>,<br>Да помнил, хоть не без греха,<br>Из Энеиды два стиха.<br>Он рыться не имел охоты<br>В хронологической пыли<br>Бытописания земли:<br>Но дней минувших анекдоты<br>От Ромула до наших дней<br>Хранил он в памяти своей.`,
+      `VII<br>Высокой страсти не имея<br>Для звуков жизни не щадить,<br>Не мог он ямба от хорея,<br>Как мы ни бились, отличить.<br>Бранил Гомера, Феокрита;<br>Зато читал Адама Смита<br>И был глубокой эконом,<br>То есть умел судить о том,<br>Как государство богатеет,<br>И чем живет, и почему<br>Не нужно золота ему,<br>Когда <i>простой продукт</i> имеет.<br>Отец понять его не мог<br>И земли отдавал в залог.`,
+      `VIII<br>Всего, что знал еще Евгений,<br>Пересказать мне недосуг;<br>Но в чем он истинный был гений,<br>Что знал он тверже всех наук,<br>Что было для него измлада<br>И труд, и мука, и отрада,<br>Что занимало целый день<br>Его тоскующую лень,—<br>Была наука страсти нежной,<br>Которую воспел Назон,<br>За что страдальцем кончил он<br>Свой век блестящий и мятежный<br>В Молдавии, в глуши степей,<br>Вдали Италии своей.`
+    ],
     bioURL: "https://en.wikipedia.org/wiki/Alexander_Pushkin",
     infoURL: "https://en.wikipedia.org/wiki/Eugene_Onegin",
     textURL: "",
@@ -1123,7 +1156,7 @@ export const modTradNovels = [
       `<v>“Yes, there will be winter, the leaves will wither.</v><v>There will be spring full of flowers…”</v>`,
       `<...>`,
       `If I was nearly kept awake tonight, it was for one overwhelming reason: I had just come home from work, and the rain was heavy, pouring relentlessly. Our yard had turned to mud, making my shoes heavy, so I took them off at the threshold... I had the house keys, so I unlocked the door. I carefully picked up my shoes and placed them in the corner of the hallway. I closed the door behind me. I arrived home early today, unlike other days.`,
-      `The drumming of the rain on the tin roof was deafening, so even if I had clomped up the stairs in my shoes, my ascent wouldn't have been heard at all.`,
+      `The drumming of the rain on the tin roof was deafening, so even if I had clomped up the stairs in my shoes, my ascent wouldn’t have been heard at all.`,
       `When I entered our room, I noticed my journal was in her hands. I instantly recognized its bluish cover, slightly larger than a student’s notebook. My heart skipped a beat. She was incredibly quick, appearing completely unfazed as she slipped my private writings into her sewing basket.`,
       `She was already in her nightwear, sitting on the edge of the bed. Her legs were bare, revealing a glimpse of her smooth, shapely thighs. I looked at her curly hair, slightly messy and cut short at the top, half-covering her forehead like waves of a dark sea.`,
       `Her deep eyes locked onto me boldly... a gaze so confident, not at all like someone who had just stolen my secrets.`,
@@ -1131,18 +1164,18 @@ export const modTradNovels = [
       `She asked, as she did every day, what news and gossip there was outside, before lazily standing up, covering her nightgown with a pink robe, tying the knot at her neck, and slipping into reddish woolen slippers.`,
       `She stood in front of the mirror, and I could see her tall, slender silhouette. I knew she could see me watching her every move. She knew I was utterly bewildered... She smiled at me through the mirror. I quickly averted my gaze... letting it fall right onto her sewing basket. I ate my dinner half-heartedly, wanting nothing to do with exchanging words with her.`,
       `I could not sleep. Everything written in my journal dances before me. It is in her hands. There are certain lines I thought I had forgotten, yet here they are, surging up from the depths where I buried them, lashing at my thoughts. I am ashamed. Angry...`,
-      `In her hands is the book of my life, which began the very moment I first saw her. I dare not snatch it back, leaving my story completely exposed! Blazing tongues of fire illuminate what I wrote there, and my mind's eye reads it... without missing a single word.`,
+      `In her hands is the book of my life, which began the very moment I first saw her. I dare not snatch it back, leaving my story completely exposed! Blazing tongues of fire illuminate what I wrote there, and my mind’s eye reads it... without missing a single word.`,
       `<...>`,
       `PART ONE: <+><i>Izy</i>[Him/her/them; singular and plural neuter third-person pronoun]</+>`,
       `I saw a girl who completely caught my eye. Let’s just say she only caught my eye for now, because I cannot yet say whether my heart was struck as well or not.`,
-      `The truth is this: she will not leave my sight. To distract myself, I read a book, but my reading does not progress at all. She is right there, between my eyes and the text. I smoke a cigarette: her face and her figure swirl together with the smoke, and when the smoke clears... she is still right there. I am so captivated that I almost burned my fingertips because my cigarette was completely finished, yet I didn't even realize it.`,
+      `The truth is this: she will not leave my sight. To distract myself, I read a book, but my reading does not progress at all. She is right there, between my eyes and the text. I smoke a cigarette: her face and her figure swirl together with the smoke, and when the smoke clears... she is still right there. I am so captivated that I almost burned my fingertips because my cigarette was completely finished, yet I didn’t even realize it.`,
       `I long to see her again. It has been some time now since I first saw her, and my heart still flutters every single time we cross paths. Even if she is not yet enveloped by my love, I must admit she has already completely captured my gaze.`,
       `The way she walks? This girl is so graceful in her movements... Her gaze: stealing fleeting glances rather than a fixed stare... Her smile: just the faintest hint.`,
       `<...>`,
       `I am perpetually lost in daydreams: who is this girl I keep crossing paths with, and what exactly is it about her that draws me, making me long to see her?`,
       `I am here at the full bloom of my youth, at the budding of love... Budding? I would be lying if I said this was the first time I have ever desired a girl. No! I am not a reckless young man, yet I know how to value a woman’s beauty. Neither do I intend to dedicate myself to a lifetime of bachelorhood. I look favorably upon building a home, and I accept the truth of the words: “It is not good for man to be alone; I will make a partner suitable for him.” I favor it, yes—but I am in no rush.`,
       `<...>`,
-      `I note now that she is on her way to school when she frequently crosses paths with me; her bag is always with her. It is a little before eight o'clock when she passes by the Andohalo garden. She is heading uphill, while I am heading down. I am currently at the very end of my academic year.`,
+      `I note now that she is on her way to school when she frequently crosses paths with me; her bag is always with her. It is a little before eight o’clock when she passes by the Andohalo garden. She is heading uphill, while I am heading down. I am currently at the very end of my academic year.`,
       `She seems to consume my thoughts too much, so I intentionally tried to avoid crossing paths with her to give myself space to reflect. I tried to ignore her existence, tried not to glance at my watch as it ticked slowly closer... closer to eight... Yet, the five days without seeing her felt like an eternity, and my feet naturally guided themselves—instead of heading down Ambatoborodamba, I was drawn to walk straight down to Andohalo.`,
       `I smiled at her, and she gave a faint smile... just a tiny one, as fleeting as a stray cloud drifting through the scorching heat of spring... A small smile... just a little one, like a blossom unexpectedly found in the dead of winter. The wind blows the former away and it is gone; the frost claims the latter and it withers.`,
       `I felt completely embarrassed, believing she was amused by my foolishness, laughing at and mocking me as someone who just greets total strangers!`,
@@ -1173,8 +1206,8 @@ export const modTradNovels = [
       `<...>`,
       `FIZARANA VOALOHANY: Izy`,
       `Nahita zazavavy nanaitra loatra ny masoko aho. Aoka holazaina hoe nanaitra ny masoko fotsiny aloha satria tsy mbola afaka hilaza aho na haitra koa ny foko na tsia.`,
-      `Ny marina dia izao: tsy afaka eo imasoko Izy. Manary dia mamaky boky aho, kanefa, tsy mandroso akory ny vakiteniko. Eo anelanelan'ny masoko sy ny soratro Izy. Mifoka sigara aho: io mitambolona miaraka amin’ny setroka ny endriny sy ny bikany, ary raha nisinda ny setroka...Izy kosa eo ihany ka variana aho, saika may mbamin’ny loharantsako satria lany ny sigarako, kanefa, tsy tsaroako akory.`,
-      `Maniry hahita azy indray aho. Fotoana misimisy no efa nahitako azy sy nampiontana ahy hatrany isaky ny mifanena aminy. Na tsy mbola nofisin’ny fitiavako aza Izy dia ekeko kosa fa efa tinafin'ny ara-masoko.`,
+      `Ny marina dia izao: tsy afaka eo imasoko Izy. Manary dia mamaky boky aho, kanefa, tsy mandroso akory ny vakiteniko. Eo anelanelan’ny masoko sy ny soratro Izy. Mifoka sigara aho: io mitambolona miaraka amin’ny setroka ny endriny sy ny bikany, ary raha nisinda ny setroka...Izy kosa eo ihany ka variana aho, saika may mbamin’ny loharantsako satria lany ny sigarako, kanefa, tsy tsaroako akory.`,
+      `Maniry hahita azy indray aho. Fotoana misimisy no efa nahitako azy sy nampiontana ahy hatrany isaky ny mifanena aminy. Na tsy mbola nofisin’ny fitiavako aza Izy dia ekeko kosa fa efa tinafin’ny ara-masoko.`,
       `Ny fomba famindrany? Malakolako fihetsika ity zanakolona...Ny fomba fijeriny: hala-pijery fa tsy mifantoka...Ny fomba fitsikiny: ambana kely monja.`,
       `<...>`,
       `Lasamborona lava aho: iza ity zazavavy mpifanena amiko ity, ary inona marina ao aminy no manintona ahy haniry hahita azy?`,
@@ -1182,19 +1215,19 @@ export const modTradNovels = [
       `<...>`,
       `Marihiko izao fa mizotra hianatra Izy mifanena lava amiko io: eny aminy foana ny kitapony. Latsaka kely ny amin’ny valo ora no fandalovany eo amin’ny zaridainan’Andohalo. Miakatra ny diany, izaho kosa midina. Eto am-pamaranana ny taom-pianarako aho.`,
       `Toa manadala loatra ny eritreritro Izy ka nanao fanahy iniana tsy hifanena aminy aho hahazoako hidinika kokoa amin’ny tenako. Niezaka tsy hiraharaha ny fisiany aho, niezaka tsy hanopy ny famantaranandroko izay mipipika mora manatona...manatona ny amin’ny valo... Toy ny fahaelan’ny mandrakizay, anefa, ny dimy andro tsy nahitako azy, ary nizotra ho azy ny diako, tsy hidina an’Ambatoborodamba fa hanara-bodimirana hijotso ho any Andohalo.`,
-      `Nitsikiako Izy ka nitsiky kely…kely monja, miserana ihany toy ny salin-drahona diso lalana amin’ny migaingainan'ny lohataona... Tsiky kely... kely monja toy ny fitsikin’ny vony sendra hita amin’ny ati-ririnina. Tsofin’ny rivotra iry voalohany dia lasa; akarainkon’ny fanala ito faharoa dia malazo.`,
+      `Nitsikiako Izy ka nitsiky kely…kely monja, miserana ihany toy ny salin-drahona diso lalana amin’ny migaingainan’ny lohataona... Tsiky kely... kely monja toy ny fitsikin’ny vony sendra hita amin’ny ati-ririnina. Tsofin’ny rivotra iry voalohany dia lasa; akarainkon’ny fanala ito faharoa dia malazo.`,
       `Sakodiavatra ihany aho satria inoako fa variana amin’ny fahadalako Izy ka mihomehy sy maneso ahy, milaza ahy ho mpiarahaba olon-tsy fantatra!`,
-      `Tsy fantatro ve Izy? Haiko sahady lahy ny manavaka azy ao anatin’ny maro, toy ny ho fahaizako hanavaka ny lisy amin’ny ramiary, toy ny ho fahaizako hanondro ny fitarikandro eo anivon'ny sarambaben’ny kintana. Ny fiovaovan’ny volon’akanjony tsy hahasakana ahy hahay hanombana ny tsanganany avy ilavitra.`,
+      `Tsy fantatro ve Izy? Haiko sahady lahy ny manavaka azy ao anatin’ny maro, toy ny ho fahaizako hanavaka ny lisy amin’ny ramiary, toy ny ho fahaizako hanondro ny fitarikandro eo anivon’ny sarambaben’ny kintana. Ny fiovaovan’ny volon’akanjony tsy hahasakana ahy hahay hanombana ny tsanganany avy ilavitra.`,
       `<...>`,
       `Tonga ato amiko ve ny fitiavana? Nandrehitra ny afony ve izany, toy ny fandrehitry ny reny ny afo maraina ka hanantenana sakafon’ny mpianakavy. Fomba manao ahoana no hahazoan’ny tsipikan’ny fitiavana hitsaka anaty foko avy amin’ny alalan’ny fifanenana kely monja? Tsy novisavisaiko velively ny hitia tovovavy sendra hita eny amin’ny sakelidalana. Ny hanitra atopan’ny sendrasendra no mety hahababo ny fanamboloana avy hatrany, fa hafa kosa no niheverako ny fitiavana: voankazo kolokoloina ho masaka izany, fanorenana atao amim-pilaminana.`,
       `Eto ambany masoko ny tovovavy mpiara-mianatra amin’ny zandriko vavy. Misy izato zazavavy mpiara-mianatra amiko, kinga saina, antonona ny fisainako, azon’ny fitiavako irina. Betsaka ireo ankizivavy mpiray fiangonana amiko, mpiombona finoana sy mpandravaka ny alahadiko. Maro amin’izy ireny no tena fototr’olona. Tsy ao amin’ny iray amin’izy ireny ve ny sila-panahiko? Ny hifidy aho no ho sahirana raha te-haka vady tokoa... Saingy, angamba, manintona ahy toy ny faninton’ny zava-miafina rehetra Izy, toy ny faninton’ny voankazo tsy fantatra, vonto rano sy mahate-hihinana.`,
       `<...>`,
       `Niarahaba azy aho androany, namaly ny arahabako somary gaga Izy tsy niavona: loha mihatoka kely monja. Te-handre ny feony aho, te-hamantatra azy bebe kokoa, te-hahalala ny anarany, ny fianarana ataony, ny andro nahaterahany. Tiako ho safosafoina ny volony, ary tiako hamboloina ny hodiny izay fantatro sahady fa manitra. Tiako horaisina ny felatanany, tiako ho fihinina ny rantsany... Hatreo ihany aloha no tiako hatao alohan’ny handinihako na mety ho tia azy aho na tsia.`,
-      `Eny, betsaka ireo tovovavy izay efa mba nandalo ny eritreritro sy nanaitra ahy, kanefa, tsy nisy izay tena nahababo ny foko. Efa nisy iray ihany saika naharendrika ahy, saingy nony tafahaona matetika taminy aho, ka nahita ny fahabadoan'ny firesany dia nihemotra tsy nisy alahelo, satria aoka holazaiko fa tovolahy nahita fianarana aho ary manan-tsaina tia takatakatra.`,
+      `Eny, betsaka ireo tovovavy izay efa mba nandalo ny eritreritro sy nanaitra ahy, kanefa, tsy nisy izay tena nahababo ny foko. Efa nisy iray ihany saika naharendrika ahy, saingy nony tafahaona matetika taminy aho, ka nahita ny fahabadoan’ny firesany dia nihemotra tsy nisy alahelo, satria aoka holazaiko fa tovolahy nahita fianarana aho ary manan-tsaina tia takatakatra.`,
       `<...>`,
       `Nanaiky hifanakalo resaka tamiko Izy androany, ary diso aho raha milaza fa azo tsinjaraina ny vehivavy ka ho “tiako ny bikany, saingy, ho halako ny feony”. Niova tanteraka ny finoako; iray tsy mivaky Izy, tiako amin’izao. Ny fitambarany no mainka itiavako azy, toy ny fitambaran’ny volana sy ny habakabaka. Tsy ny volony mihofahofa ihany, na ny fijeriny mandry sy lalina, na ny ranjony maronjana, na ny feony ivaiva sy feno, na ny fihodirany mivolom-bolatsivaky no tiako fa Izy.`,
       `<...>`,
-      `Tia azy? maika loatra aho raha hilaza izany sahady. Ahoana no mety ho fiavin’ny fitiavana? Mitsoka amin'izay tiany fotsiny ve izy, toy ny fitsokan’ny rivotra tsy fanta-piaviana? Moa tsy nifantina ve ny Fanahy vao niteny hoe: “Ity no zanako malalako izay sitrako!” Moa tsy voa nokobonin’ny tany sy ny hafanana va ny fitiavana ka miandry oran-kilatsaka hitsimohana? Izay no tena lalànan’ny fiforonany, ary toy izany no niheverako ny fitiavana hatramin’izao. Raha mba nijerijery tovovavy iray izay aho dia noho ny fahalalàko fa tsy ho vahiny ato amin’ny fiainako izy, olona fanta-pianakaviana, fantatra hatramin’ny vohitry ny razany sy inoana fa ho sitraky ny ray aman-dreny.`,
+      `Tia azy? maika loatra aho raha hilaza izany sahady. Ahoana no mety ho fiavin’ny fitiavana? Mitsoka amin’izay tiany fotsiny ve izy, toy ny fitsokan’ny rivotra tsy fanta-piaviana? Moa tsy nifantina ve ny Fanahy vao niteny hoe: “Ity no zanako malalako izay sitrako!” Moa tsy voa nokobonin’ny tany sy ny hafanana va ny fitiavana ka miandry oran-kilatsaka hitsimohana? Izay no tena lalànan’ny fiforonany, ary toy izany no niheverako ny fitiavana hatramin’izao. Raha mba nijerijery tovovavy iray izay aho dia noho ny fahalalàko fa tsy ho vahiny ato amin’ny fiainako izy, olona fanta-pianakaviana, fantatra hatramin’ny vohitry ny razany sy inoana fa ho sitraky ny ray aman-dreny.`,
       `Mihozongozona ankehitriny ny foto-kevitro. Izao no marina: mety ho tonga tampoka ny fitiavana, tsy azo hidifiana, toy ny fifotroakan’ny afotroa amin’ny fotoana tsy ampoizina ka mitelina izay sendra azy, toy ny firiatran’ny varatra main’andro mamono izay tra-tehaka eo. Eny, tratran’ny herin’ny fitiavana aho, tsy hitako izay niavian’izany, kanefa, nahatrà-tehaka ahy. Ankonankona aho, mila tsy ho tompon’ny tenako... Tia aho... Izay ihany no fantatro.`
     ],
     bioURL: "https://en.wikipedia.org/wiki/Clarisse_Ratsifandrihamanana",
@@ -1434,6 +1467,9 @@ export const stirrPoetry = [
       `<b>XA:Ä-TIN</b>, Diä!kwain’s father, was the pupil of a shaman, !Nuin-/kuïten, who taught him such skills as how to lead the Rain Bull across the sky and how to make his enemies sick. Xa:ä-tin would hear his teacher calling him by plucking the strings of his bow, but with the teacher’s death the string of shamanic succession ended.`
     ],
     excerpt: [`&emsp;&emsp;People were those<br>who broke for me the string<br>&emsp;&emsp;therefore<br>the place became like this to me<br>&emsp;&emsp;on account of it<br>because they’ve broken the string<br>I no longer hear the ringing sound through the sky<br>&emsp;&emsp;therefore<br>the place does not feel to me<br>as the place used to feel to me<br>&emsp;&emsp;on account of it<br>&emsp;&emsp;&emsp;&emsp;for<br>the place feels as if it stood open before me<br>because the string has broken for me<br>&emsp;&emsp;therefore<br>the place feels strange to me<br>&emsp;&emsp;on account of it`],
+    excerptOrig: [
+      `ǃk’ĕ́ kăṅ́ ddóä ē,<br>ǃkḁńn ǃkwā kā ǃnū̃ï̆ṅ.<br>Hé̱ tíke̥n ē,<br>Tĭ́ ǀnĕ ( ) ǀkwĕ̃ úë̆ kkā,<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Ī̃,<br>Ŏ ǃnū̃ï̆ṅ ā ddóä ǃkwā kā.<br>Hĕ̱́ tíke̥n ē,<br>Tĭ́-g ǀnĕ áuki ttăṅ́-ă kkā,<br>Tĭ́ kă ssĭṅ́ ǀkwẽ́ï̃ ttā̃ kkā,<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Ī̃.<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Tā,<br>Tĭ́ ǀkŭ-g ǀnĕ ttẵ́ bbōke̥n ǃkhéyă kā,<br>Ŏ ǃnū̃ï̆ṅ ā ǃkwā kkā.<br>Hĕ̱́ tíke̥n ē,<br>Tĭ́ áuki ǃnĕ ttẵ́ ǂhăńnū̃wă kkā,<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Ī̃.`
+    ],
     infoURL: "",
     mediaURL: ["https://youtu.be/e12MUnOU5YI"],
     textURL: "https://africanpoems.net/relationships/the-broken-string/",
@@ -1490,7 +1526,7 @@ export const stirrPoetry = [
     group: {people: "Inuit", language: "Inuktitut", location: "Nunavut, CA"},
     info: [
       `Uvavnuk had gone outside one winter evening to make water. It was particularly dark that evening, as the moon was not visible. Then suddenly there appeared a glowing ball of fire in the sky, and it came rushing down to earth straight towards her. She would have got up and fled, but before she could move, the ball of fire struck her and entered into her. She perceived that all within her grew light, and she lost consciousness.`,
-      `When she came to, without knowing what she was doing, she ran into the house singing. There was nothing that was hidden from her now, and she began to reveal all the offences that had been committed by those in the house. Thus she purified them all. “I dive into the ocean” was the song she sang.`,
+      `When she came to, without knowing what she was doing, she ran into the house singing. There was nothing that was hidden from her now, and she began to reveal all the offences that had been committed by those in the house. Thus she purified them all. “Imavingmut sarvavunga” was the song she sang.`,
       `<b>UVAVNUK</b> was an Inuk <i>angakkuq</i> (spiritual healer) born in the 19th century. Her story was written down by Inuk–Danish anthropologist Knud Rasmussen in the early 1920s.`
     ],
     excerpt: [
@@ -1519,7 +1555,7 @@ export const stirrPoetry = [
       `In the old times, perhaps a thousand years ago, men of each Iroquois nation had these songs for contesting magic power. Only magicians belonged to this society, and only magicians danced. All the old songs which they used referred to their powers. While they were dancing they demonstrated these powers by “throwing,” or “shooting sharp objects,” such as “horns” [antler, which gives to part of the ritual the name of <i>gai”don’</i> (sharp point)], or one would sing “something [like a bear] is running around.” The magician would then transform himself into a bear and run around there in the room. Another would make a twig stand of itself in the center of the room while the other medicine men danced around it. Still another would in turn go to the fire and remove red hot stones and juggle them. A man lacking this kind of power could not do this.`,
       `Later they decided to abandon these songs. But the old songs kept continually molesting the people who felt compelled to do something about it; and so the old magicians held council. They decided that they cannot abandon the songs, and that they must carry on. They have continued through all the generations that followed. Now only the songs have power. Now only the one who wears the mask has the power to juggle live embers when he is impersonating the ancients. No one any longer tosses hot rocks.`
     ],
-    excerpt: [
+    /*excerpt: [
       `<i>Da onenh góhiiya’ enskenongóhden’</i><br>So now right here I shall sing for you`,
       `<i>nengén ne’ songwaniyosgo’yeni.</i><br>who have set down this feast for us.`,
       `<i>Da onen di’ engihwa’nee’ga’</i><br>So now moreover I will speak kindly`,
@@ -1544,6 +1580,35 @@ export const stirrPoetry = [
       `<i>da naaye’ di” skasawah’kwa’ nengen ne’ ongwaena’ deyenagaenhe’sta’.</i><br>And moreover it shall commence at the beginning of this our song (and go on) to the end of the song.`,
       `<i>wegondaya we’egondaya’a wegondaya yoohinen he é</i>`,
       `<i>gagwegongi’ he’keyadele’a’a wa’aga’anonhsayendondye’ a’a’</i><br>All my grandchildren’s houses stretched out in a row.`
+    ],*/
+    excerpt: [
+      `So now right here I shall sing for you<br>who have set down this feast for us.`,
+      `So now moreover I will speak kindly<br>to this one to help her, as <+>He[the Creator]</+> said, so that when the ceremony is finished<br>this one well disposed she shall be. So now<br>then I shall go through with it.`,
+      `<s>song text</s>:`,
+      `It is going to help her this mine my song<br>possibly if I myself shall sing it.`,
+      `<s>second member’s song</s>:`,
+      `<i>yohahahi (yohohohi) yohahahii :] (*)</i>`,
+      `<s>third member’s song:</s>`,
+      `He’s a witch that raccoon<br>He has supernatural power, that raccoon.`,
+      `The next song says, “I never knew that the raccoon was supernatural.”`,
+      `<s>fourth member’s song:</s>`,
+      `Male wolf runs, on the open fields he runs<br><i>yowi yowii yowi hi i</i>`,
+      `<s>the speaker says,</s>`,
+      `So now indeed this rests with you<br>to sing this the medicine dance.<br>And moreover it shall commence at the beginning of this our song (and go on) to the end of the song.<br><i>wegondaya we’egondaya’a wegondaya yoohinen he é</i><br>All my grandchildren’s houses stretched out in a row.`
+    ],
+    excerptOrig: [
+      `Da onenh góhiiya’ enskenongóhden’<br>nengén ne’ songwaniyosgo’yeni.`,
+      `Da onen di’ engihwa’nee’ga’<br>nengen’ne’ gaya’dagénha’ se’awaadon’ onenh enwadongoh’da’<br>nengen’ skenon’ nengen’ onsahenónhdonniyon’. Da’ nen<br>di’ enyenongóhdon’.`,
+      `<s>song text</s>:`,
+      `Enyagoya’dagenhaa ne’ho ne’i’ agenna’<br>hen’he ganyo’ ne’i’ engadennooden’ hen’enhe :] (*)`,
+      `<s>second member’s song</s>:`,
+      `yohahahi (yohohohi) yohahahii :] (*)`,
+      `<s>third member’s song:</s>`,
+      `hotgon ne’ho joegaa’<br>yowi’inen’en hee heyawinen yowi’innen’en he’enhe :] (*)`,
+      `<s>fourth member’s song:</s>`,
+      `hothayonii ha’adakée gahéntenshon’ hadakée<br>yowi yowii yowi hi i`,
+      `<s>the speaker says,</s>`,
+      `Da onenh go’hiiya’ nengen’ enskaiwayendah’kwa’<br>gadano’den’ nengen ne’ skanonniya”gwen’.<br>da naaye’ di” skasawah’kwa’ nengen ne’ ongwaena’ deyenagaenhe’sta’.<br>wegondaya we’egondaya’a wegondaya yoohinen he é<br>gagwegongi’ he’keyadele’a’a wa’aga’anonhsayendondye’ a’a’`
     ],
     infoURL: "",
     mediaURL: ["https://archive.org/details/78_the-creators-songs-the-great-feather-dance-ostowegowa_chancey-johnny-john-william-n_gbia0524825a"],
@@ -1565,6 +1630,10 @@ export const stirrPoetry = [
     excerpt: [
       `Aa look out,<br>&emsp;&emsp;to the light blue outside,<br>&emsp;&emsp;&emsp;&emsp;up to the light blue outside.<br>Look out,<br>&emsp;&emsp;to the light blue outside<br>&emsp;&emsp;&emsp;&emsp;up to the light blue outside.`,
       `Aa from that side,<br>&emsp;&emsp;to us, as he is walking.<br>From that side,<br>&emsp;&emsp;to us, as he is running.<br>Look out,<br>&emsp;&emsp;to the light blue outside,<br>&emsp;&emsp;&emsp;&emsp;up to the light blue outside.`
+    ],
+    excerptOrig: [
+      `Aa yeweli hiweka<br>&emsp;&emsp;tolo pakuni<br>&emsp;&emsp;&emsp;&emsp;tolo pakun hikawi<br>Yeweli hiweka<br>&emsp;&emsp;tolo pakuni<br>&emsp;&emsp;&emsp;&emsp;tolo pakun hikawiii`,
+      `Aa wainavo su<br>&emsp;&emsp;itou weyekai<br>Wainavo su<br>&emsp;&emsp;itou vuitema<br>Yeweli hiweka<br>&emsp;&emsp;tolo pakuni<br>&emsp;&emsp;&emsp;&emsp;tolo pakun hikawi`
     ],
     infoURL: "",
     mediaURL: ["https://youtu.be/CzxIdFlurYQ?start=85","https://youtu.be/EHF1qjJIOYA","https://youtu.be/doaFfzMbNeQ","https://youtu.be/OJ30MRdpvyc"],
@@ -1694,7 +1763,7 @@ export const stirrPoetry = [
   },
   {
     id: "AMWESTP",
-    title: { original: "Haray Harawi", translation: "Love Song" },
+    title: { original: "Haray Harawi", translation: "Song of Desperate Longing" },
     meta: { piece: true },
     intermediary: "Felipe Guamán Poma de Ayala",
     group: {people: "Quechua", language: "Classical Quechua", location: "Peru"},
@@ -1709,13 +1778,20 @@ export const stirrPoetry = [
       `Those bright eyes of yours,<br>&emsp;&emsp;as I remember, I admire them.<br>Those playful eyes of yours,<br>&emsp;&emsp;as I remember, I feel faint.<br>It is true, Inca;<br>it is true, lord.`,
       `You make me cry.<br>Is your heart a flower?<br>You are crying in the village.<br>On Cantur hill,<br>in Saphi ravine,<br>I await you, flower, my love.`
     ],
+    excerptOrig: [
+      `Aquyrakichu, quya, rakiriwanchik?<br>Tiyuyrakichu, ñusta, rakiriwanchik?<br>Sikllalláy, chinchirkuma kaptiykichu,<br>umallaypi, sunqu rurullaypi<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;apaykachaykiman.`,
+      `Unuyrirpu llullam kanki,<br>yakuyrirpu pallqum kanki.<br>Maytaq sallaywan qaynaykunichu?<br>Chay pallqu mamaykim wañuypaq<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;rakiqninchikqa.`,
+      `Chay awqa yayaykim wakchaqninchikqa.<br>Ichapas, quya, qapaq apu Dios niptinqa<br>wakitaq tinkusun, Diostaq tinkiwasun.<br>Chay asiq ñawiykita yuyarispa utinipuni.<br>Chay pukllaq ñawiykita yuyarispa<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;unquyman chayani.`,
+      `Chikalla, inka!<br>Chikalla Siñu!<br>Waqay niqlla waytaq, sunquyuqchu<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;tiyanki?<br>Yakuytamyakta waqaspa,<br>Qantut patapi Sapi wayqupi suyayki,<br>sikllallay.`
+    ],
     infoURL: "https://en.wikipedia.org/wiki/Harawi_(genre)",
     mediaURL: ["https://youtu.be/DtnzHxh5x38"],
     textURL: "",
     ref: [
       { id: "guaman-poma-1615-nueva-coronica", type: "manuscript", title: "El primer nueva corónica y buen gobierno", contributors: [ { firstName: "Felipe", lastName: "Guamán Poma de Ayala", role: "author" } ], pubDate: { year: 1615 }, publisher: "The Royal Library (Det Kongelige Bibliotek)", location: "Copenhagen, Denmark (Original Manuscript GKS 2232 4º)", medium: "Digital Manuscript Archive / 17th-century Autograph", meta: { notes: "A massive Quechua-Spanish hybrid text. Guamán Poma utilized Andean concepts of 'pacha' (time-space) to structure his history. The manuscript was lost for centuries until its rediscovery in the Royal Library of Denmark in 1908 by Richard Pietschmann.", grade: "A", tags: ["Inca", "Andean", "Peru", "Quechua", "Colonial History", "Indigenous Protest", "Visual Ethnography"], sortKey: "text" } },
       { id: "arguedas-stephan-1971-singing-mountaineers", type: "book", title: "The Singing Mountaineers: Songs and Tales of the Quechua People", contributors: [ { firstName: "José María", lastName: "Arguedas", role: "author" }, { firstName: "Ruth", lastName: "Stephan", role: "editor" }, { firstName: "María Lourdes", lastName: "Valladares", role: "author" } ], pubDate: { year: 1971 }, publisher: "University of Texas Press", location: "Austin, TX", medium: "Print (Paperback) / Translation", meta: { notes: "A vital collection of Quechua oral traditions. Includes thirty harvest songs and love songs, as well as nine folk tales. This work is significant for Arguedas's role in documenting the continuity between the Inca past and the 20th-century Quechua present.", grade: "B", isbn: "0292709943", tags: ["Quechua", "Andean", "Peru", "Oral Tradition", "José María Arguedas", "Ethnomusicology", "Folklore", "Indigenous Poetry"] } },
-      { id: "mazzi-2011-poesia-quechua-guaman-poma", type: "webpage", title: "Poesía Quechua en Guamán Poma de Ayala", containerTitle: "Víctor Mazzi Huaycucho (Blogspot)", contributors: [ { firstName: "Víctor", lastName: "Mazzi Huaycucho", role: "author" } ], pubDate: { year: 2011, month: 4 }, url: "https://victormazzihuaycucho-blogspot-com.translate.goog/2011/04/poesia-quechua-en-guaman-poma-de-ayala.html?_x_tr_sl=es&_x_tr_tl=en&_x_tr_hl=en", publisher: "Blogger", location: "Peru / Online", medium: "Digital Academic Essay", meta: { notes: "Analyzes the ritualistic and social functions of the Quechua verses found in the 1615 manuscript. Mazzi highlights the 'Harawi' (melancholic/love poetry) and the 'Haylli' (triumphant/agricultural songs), noting how Guamán Poma used these forms to maintain Andean memory against colonial erasure.", grade: "B", tags: ["Quechua Poetry", "Guamán Poma de Ayala", "Andean Literature", "Harawi", "Haylli", "Ethnolinguistics", "Victór Mazzi"] } }
+      { id: "mazzi-2011-poesia-quechua-guaman-poma", type: "webpage", title: "Poesía Quechua en Guamán Poma de Ayala", containerTitle: "Víctor Mazzi Huaycucho (Blogspot)", contributors: [ { firstName: "Víctor", lastName: "Mazzi Huaycucho", role: "author" } ], pubDate: { year: 2011, month: 4 }, url: "https://victormazzihuaycucho-blogspot-com.translate.goog/2011/04/poesia-quechua-en-guaman-poma-de-ayala.html?_x_tr_sl=es&_x_tr_tl=en&_x_tr_hl=en", publisher: "Blogger", location: "Peru / Online", medium: "Digital Academic Essay", meta: { notes: "Analyzes the ritualistic and social functions of the Quechua verses found in the 1615 manuscript. Mazzi highlights the 'Harawi' (melancholic/love poetry) and the 'Haylli' (triumphant/agricultural songs), noting how Guamán Poma used these forms to maintain Andean memory against colonial erasure.", grade: "B", tags: ["Quechua Poetry", "Guamán Poma de Ayala", "Andean Literature", "Harawi", "Haylli", "Ethnolinguistics", "Victór Mazzi"] } },
+      { id: "itier-nieto-qosqo-2001", type: "book", title: "Qosqo qhechwasimipi akllasqa rimaykuna: Antología quechua del Cusco", contributors: [ { firstName: "César", lastName: "Itier", role: "compiler" }, { firstName: "Luis", lastName: "Nieto Degregori", role: "compiler" } ], publisher: "Centro de Estudios Regionales Andinos \"Bartolomé de Las Casas\" (CBC)", location: "Cusco, Peru", pubDate: {year: 2001}, pages: {start: 247, end: 251}, meta: { grade: "B" } }
     ],
   },
   {
@@ -1730,10 +1806,10 @@ export const stirrPoetry = [
       `The female name-recipients are painted in their houses by their mothers with the <i>kuo ku ã ok</i> design, this painting being carried out entirely with a palm-rib stylet both on the body and the face. In the afternoon, the men gather in the men’s house in the middle of the plaza (<i>ngob</i>) and start singing the three first verses of the <i>nhiok</i> chant. After repeating this for a long time, they start to move outwards towards the female name-recipient’s house, dancing and singing.`
     ],
     excerpt: [
-      `<i>Góra me mrãm boi nе</i><br>Let us all walk and arrive`,
-      `<i>min kókótire ngo ató</i><br>Where the kokotire crocodile lies on the water`,
-      `<i>mãna nhiok kóré kuman ibô ne</i><br>With side warming up`,
-      `<i>eae eae eae gu ga</i><br>Nhiok goes bathing with her head bent`
+      `Let us all walk and arrive<br>Where the kokotire crocodile lies on the water<br>With side warming up<br>Nhiok goes bathing with her head bent`
+    ],
+    excerptOrig: [
+      `Góra me mrãm boi nе<br>min kókótire ngo ató<br>mãna nhiok kóré kuman ibô ne<br>eae eae eae gu ga`
     ],
     infoURL: "https://folkways.si.edu/traditional-music-of-the-world-vol-7-ritual-music-of-the-kayapo-xikrin-brazil/american-indian-world/album/smithsonian",
     bioURL: "https://pib.socioambiental.org/en/Povo:Kayap%C3%B3_Xikrin",
@@ -1843,7 +1919,7 @@ export const stirrPoetry = [
     id: "ASSESTP",
     title: {original: "โคลงนิราศหริภุญชัย", transliteration: "Khlong nirāt hariphunchai"},
     author: "Mueang Kaeo",
-    group: {people: "Thai", language: "Kam Mueang", location: "Thailand"},
+    group: {people: "Lanna", language: "Northern Thai", location: "Thailand"},
     info: [
       `In <i>Nirat hariphunchai</i>, written around 1517 in Northern Thailand, the narrator makes a pilgrimage to the great Buddhist reliquary at Lamphun to show his devotion to a lover and his religion. The genre <i>nirat</i> is a type of <i>khlong</i> (poetic verse) involving travel and longing for a separated lover, and Hariphunchai was an ancient kingdom centered on Lamphun in the Northern Thai kingdom of Lan Na.`,
       `<b>MUEANG KAEO</b>, the author of <i>Nirat hariphunchai</i> as proposed by Winai Pongsripian, was king of Chiang Mai, the capital of the Lanna Kingdom, at the start of the 16th century. Si Thip, the subject of the poem, is presumed to be his primary queen consort.`
@@ -1858,6 +1934,18 @@ export const stirrPoetry = [
       `The bombax forest looks beautiful in bloom.<br>Flames flare up through the branches, swirling round,<br>the tangled vetiver and fine sharp-edged lalang, kans,<br>spiky sugar, giant reeds engulfed—just like my heart.`,
       `The shoots and sprouts of trees are bent and bowed.<br>Green petals just unfurled are burnt in one eye-blink.<br>Love’s melancholies break my breast in bits.<br>The heat of parting’s magnified by heat of wood and hill.`,
       `The forest’s heart glows hot and bright with fire’s power,<br>because it sees me wait, dogged in distress.<br>I pity you, my parted partner—is it hard?<br>The river’s heart is dry, and so is mine.`,
+      `…`
+    ],
+    excerptOrig: [
+      `ประนมกรสโรชตั้ง ถัดเศียร นบพระพุทธธัมม์เถียร สงฆ์เจ้า<br>ปีฉลูขอมเขียน บอกบท ไว้เอย ไทยเรียกเมิงเป้าเค้า เงื่อนเบื้องบรรสาน`,
+      `เดือนอัสสยุชแรมค่ำ สิบเอ็ด วันภุมมาวารเมด มุ่นเศร้า<br>ทำสารโศกเสาวรจน์ ปองฝาก ไปเอย ห่างน้องหวนเห็นหน้า รสรักแรมหาย`,
+      `เริ่มสารประพาสเพี้ยง จริกาง หริภุญชัยธาตุชินราช เจ้า<br>แวะเวียนวะวังก์วาล ทุกทวีป เมามลักหยุดหย่อนเงี่ย โสตเต้าฟังสาร`,
+      `…`,
+      `ถึงยางหนุ่มหน่วงหน้า นานไป คะแนนทิพมาลัย ดอกฟ้า<br>ฤๅจุติสวรรคาลัย แดนเทพ ขานข่าวสารสักหน้อย ช่วยชุบใจข้า`,
+      `พรานไพรเผาป่าไม้ ลามเลิง ไฟพะพุพะพาน พุ่งปุ้ง<br>ใจป่าปานใจเพลิง ใจพี่ ผีป่าผีดงดุ้ง เดือดด้วยใจดล`,
+      `ป่างิ้วงามช่อช้อย ชูพวง ไฟวาบวิ่งตามทรวง กิ่งก้าน<br>แฝกแขมคมคาควง ลามลวก พงพ้อพฤกษ์พว้าวพว้าน ดั่งด้าวใจดล`,
+      `ยอดไม้ใบอ่อนค้อม คอพับ กลีบเขียวเพิ่งผลิยับ ไหม้หมอด<br>รอยรักร้าวรอนทอด ทรวงพี่ ร้อนนิราศร้อนไม้ ป่าร้าวรุมสุม`,
+      `ใจป่าสว่างร้อน แรงไฟ เห็นพี่คอยท่าไป ทุกข์ท้อ<br>สงสารแม่ทรามวัย หมองหม่น ใจฝั่งชลแห้งขอด แดพี่ฉันนั้น`,
       `…`
     ],
     infoURL: "https://en.wikipedia.org/wiki/Nirat_Hariphunchai",
@@ -1897,6 +1985,10 @@ export const stirrPoetry = [
     excerpt: [
       `Brother, I’ve seen some<br>&emsp;&emsp;astonishing sights:<br>a lion keeping watch<br>&emsp;&emsp;over pasturing cows;<br>a mother delivered<br>&emsp;&emsp;after her son was;<br>a guru prostrated<br>&emsp;&emsp;before his disciple;<br>fish spawning<br>&emsp;&emsp;on treetops;<br>a cat carrying away<br>&emsp;&emsp;a dog;<br>a gunny-sack<br>&emsp;&emsp;driving a bullock-cart;<br>a buffalo going out to graze,<br>&emsp;&emsp;sitting on a horse;<br>a tree with its branches in the earth,<br>&emsp;&emsp;its roots in the sky;<br>a tree with flowering roots.`,
       `This verse, says Kabir,<br>&emsp;&emsp;is your key to the universe.<br>If you can figure it out.`
+    ],
+    excerptOrig: [
+      /* `धरति उलटि आकासहि जाई। चिउटी के मुख हस्ति समाई॥<br>बिन पौने जहं परबत उड़ै। जीव जन्तु सब बिरछा बुड़ै॥<br>सुखे सरवर उठै हिलोर। बिन जल चकबा करै किलोल॥`, */
+      `एक अचम्भा देखा रे भाई, ठाड़ा सिंह चरावै गाई।<br>पहले पूत पीछे भई माई, चेला के गुरु लगै पाई॥<br>जल की मछली तरूवर व्याई, कुत्ता कूँ लै गई बिलाई॥<br>बैलहि डारि गूँनि घरि आई, घोरै चढ़ि भैंस चरावन जाई॥<br>तलि करि साषा उपरि करि मूल। बहुत भांति जड़ लागै फूल॥<br>कहै कबीर या पद कूं बूझै। ताकूं तीन्यूं त्रीभुवन सूझै॥`
     ],
     infoURL: "https://en.wikipedia.org/wiki/Kabir",
     mediaURL: ["https://youtu.be/efxTQCTSD2Y","https://youtu.be/zRuOAjnY5aQ"],
@@ -1971,6 +2063,24 @@ export const stirrPoetry = [
       `The light pleased<br>her. She spread joy<br>and beamed with a<br>passionate delight,<br>like a downpour of<br>moonlight, wrapped<br>in charm. Nanna<br>extolled her, Ningal<br>blessed her, and the<br>temple’s thresholds<br>welcomed her home.<br>What she said to her<br>holy woman was<br>magnificent.`,
       `You who crush the<br>mountains, you who<br>were given powers<br>by An. My queen<br>cloaked in charm:<br>All praise Inana!`
     ],
+    excerptOrig: [
+      `𒊩𒌆 𒈨 𒄭 𒊏 𒌓 𒈦𒄘𒃼 𒌓𒁺 𒀀<br>𒊩 𒍣 𒈨 𒉈 𒅍 𒊒 𒆠 𒉘 𒀭 𒅁 𒀀<br>𒉡 𒈪𒉭 𒀭 𒈾 𒊑 𒆟 𒃲 𒃲 𒆷<br>𒂇 𒍣 𒉈 𒆠 𒉘 𒉆 𒂗 𒈾 𒁺 𒈠<br>𒈨 𒅓 𒁉 𒋗 𒁲 𒅗 𒂵`,
+      `<sp>`,
+      `𒊩𒌆 𒈬 𒈨 𒃲 𒃲 𒆷 𒊕 𒆟 𒁉 𒍝 𒂊 𒈨 𒂗<br>𒈨 𒈬 𒂊 𒅍 𒈨 𒋗 𒍪 𒂠 𒈬 𒂊 𒇲<br>𒈨 𒈬 𒂊 𒌴 𒈨 𒃮 𒍝 𒉈 𒋰<br>𒃲𒁔 𒁶 𒆳 𒊏 𒅜 𒁀 𒂊 𒋧<br>𒀭 𒅎 𒁶 𒆠 𒅲 𒄄 𒀀 𒍝 𒀭 𒊺𒊺𒉪 𒆷 𒁀 𒂊 𒅆 𒅅<br>𒀀 𒈠 𒊒 𒆳 𒁉 𒋫 𒇯𒁺 𒉈<br>𒊕 𒆗 𒀭 𒆠 𒀀 𒀭 𒈹 𒁉 𒈨 𒂗`,
+      `𒉈 𒉈 𒉈 𒊏 𒌦 𒂊 𒀀𒀭 𒂷<br>𒀭 𒉌 𒈨 𒋧 𒈠 𒊩𒌆 𒌨 𒊏 𒄷𒋛 𒀀<br>𒅗 𒆬 𒀭 𒈾 𒋫 𒅗 𒅗 𒅗<br>𒉺𒀭 𒃲 𒃲 𒆷 𒃻 𒍪 𒀀 𒁀 𒀀 𒈬 𒌦 𒍪<br>𒆳 𒄢 𒄢 𒌓 𒉈 𒀉 𒁀 𒂊 𒋧<br>𒆠 𒉘 𒀭 𒂗 𒆤 𒇲 𒌦 𒈠 𒉎 𒈪 𒅔 𒊑<br>𒀉 𒉘 𒂷 𒀭 𒈾 𒆤 𒁀 𒁺 𒁉 𒂗`,
+      `𒊩𒌆 𒈬 𒍝 𒉺 𒉘 𒍪 𒂠 𒆳 𒉌 𒃵𒃵 𒂊<br>𒉎 𒈨 𒉈 𒍇 𒇻 𒁕 𒉆 𒇽 𒍇 𒇻<br>𒃻 𒈨 𒃻 𒄊 𒁉 𒅇 𒈬 𒊑 𒁺<br>𒈨 𒋫 𒈨 𒄭𒄊 𒁉 𒋗 𒁀 𒂊 𒊑 𒋾<br>𒄿 𒁾 𒀀𒅆 𒊏 𒆤 𒅅 𒈠 𒊏 𒀊 𒋺<br>𒂍 𒀀 𒉪 𒃲 𒃲 𒆷 𒋻 𒁀 𒈬 𒊑 𒁺<br>𒅆 𒀞 𒋫 𒃻 𒈠 𒊏 𒋫 𒋛 𒅅`,
+      `𒊩𒌆 𒈬 𒀉 𒉎 𒍝 𒅗 𒅗 𒉌 𒅥 𒂊<br>𒌓 𒌌 𒌌 𒁶 𒉌 𒌌 𒌌 𒉈 𒂗<br>𒌓 𒅗 𒊏 𒊏 𒁕 𒅗 𒅎 𒁕 𒀊 𒊏 𒊏 𒀭<br>𒀭 𒅎 𒁕 𒅲 𒈬 𒁕 𒀭 𒄄 𒄄 𒅔<br>𒅎 𒅆𒌨 𒅎 𒅆𒌨 𒁕 𒅎 𒁕 𒊨 𒅇 𒉈 𒂗<br>𒄊 𒍝 𒉡 𒊨 𒅇 𒅎 𒋛𒁆 𒀀 𒉪 𒊏 𒋫 𒄿 𒇻 𒅎 𒁕 𒀊 𒁉`,
+      `𒊩𒌆 𒈬 𒀭 𒀀 𒉣 𒈾 𒀭 𒃲 𒃲 𒂊 𒉈<br>𒋢 𒁷 𒄷 𒊑 𒀀 𒁶 𒇯 𒉈 𒈬 𒂊 𒅆 𒅁 𒊏 𒀸<br>𒅆 𒄭𒄊 𒀀 𒍝 𒆷 𒁀 𒁻 𒄀 𒌍 𒀀𒀭<br>𒊕 𒆠 𒄭𒄊 𒀀 𒍝 𒊕 𒉡 𒈬 𒌦 𒉈 𒂷 𒂷<br>𒊮 𒌈 𒁀 𒍝 𒀀 𒁀 𒀀 𒌈 𒋼 𒂗 𒋼 𒂗<br>𒊮 𒅆𒌨 𒅅 𒆷 𒍝 𒋼 𒂗 𒋼 𒁉 𒈤 𒀀𒀭<br>𒊩𒌆 𒄯 𒉌 𒊷 𒊩𒌆 𒊮 𒉌 𒄾`,
+      `<sp>`,
+      `𒌈 𒁀 𒉡 𒋼 𒂗 𒋼 𒂗 𒌉 𒃲 𒀭 𒂗𒍪 𒈾<br>𒊩𒌆 𒆳 𒊏 𒋛𒀀 𒂵 𒀀 𒁀 𒀀 𒆠 𒍝 𒁀 𒀭 𒉐`,
+      `𒄯 𒊕 𒆠 𒍝 𒁀 𒂊 𒉈 𒁍 𒉈 𒀭 𒊺𒊺𒉪 𒃻 𒈪𒉭 𒁉<br>𒆍𒃲 𒀀 𒁀 𒉈 𒈬 𒂊 𒊑 𒊑<br>𒀀𒇉 𒁀 𒌀 𒈠 𒊏 𒀭 𒌤 𒌦 𒁉 𒈠 𒊏 𒅘 𒅘<br>𒆠 𒋢 𒇻 𒂠 𒃻 𒁉 𒉎 𒁉 𒀀 𒈠 𒊏 𒀊 𒁺𒁺 𒂊<br>𒅗 𒆟 𒁉 𒉎 𒁉 𒀀 𒈠 𒊏 𒀊 𒋛 𒅋 𒇷<br>𒄨 𒀉 𒌇 𒁉 𒉎 𒁉 𒀀 𒈠 𒊏 𒀊 𒁻 𒄀 𒌍`,
+      `...`,
+      `𒊩𒌆 𒆠 𒉘 𒀭 𒈾 𒈬 𒂇 𒂇 𒍝 𒂵 𒀀𒀭 𒅗<br>𒉈 𒄯 𒈬 𒁾 𒋗 𒈛 𒋛 𒉈 𒅔 𒁲<br>𒂠 𒁮 𒆬 𒈠 𒊏 𒀭 𒅅 𒊮 𒍪 𒈾 𒈠 𒈻 𒉈<br>𒅎 𒈠 𒋛 𒅎 𒈠 𒋛𒀀 𒂵 𒋫 𒊩𒌆 𒌦 𒃲 𒈠 𒊏 𒌅 𒌓<br>𒃻 𒈪 𒅇 𒈾 𒈠 𒊏 𒀭 𒅗 𒂵 𒀀𒀭<br>𒍑𒆪 𒀭 𒉈 𒆤 𒋗 𒄷 𒈬 𒊏 𒀊 𒄄 𒄄<br>𒁮 𒆪 𒁀 𒍝 𒆤 𒌍 𒌉 𒆪 𒁀 𒍝 𒆤 𒌍<br>𒌈 𒁀 𒍪 𒌈 𒄖 𒌌 𒊮 𒍪 𒉡 𒋼 𒂗 𒋼 𒂗`,
+      `<sp>`,
+      `𒊩𒌆 𒄘 𒌇 𒉪 𒅅 𒄘 𒂗 𒈾 𒆤<br>𒀬𒀬 𒊏 𒈾 𒋗 𒁀 𒀭 𒅆 𒅔 𒋾<br>𒊮 𒆬 𒀭 𒈹 𒆠 𒁉 𒁀 𒀭 𒈾 𒀊 𒄄`,
+      `𒌓 𒁀 𒀭 𒈾 𒄭 𒆷 𒆷 𒁀 𒀭 𒋤 𒋤 𒄭 𒇷 𒈠 𒊍 𒁀 𒀭 𒃮 𒃮<br>𒌓𒀭𒋀𒆠 𒌓𒁺 𒀀 𒁶 𒆷 𒆷 𒁀 𒀭 𒅍<br>𒀭 𒋀𒆠 𒅆𒂍 𒍣 𒉈 𒌍 𒈬 𒌦 𒌓𒁺<br>𒂼 𒉌 𒀭 𒊩𒌆 𒃲 𒆷 𒊏 𒆃 𒈬 𒈾 𒀭 𒊮 𒀸<br>𒄑 𒆍 𒈾 𒆤 𒁲 𒈠 𒈬 𒈾 𒀊 𒁉<br>𒉡 𒈪𒉭 𒊏 𒅗 𒂵 𒉌 𒈤 𒀀𒀭`,
+      `𒆳 𒄢 𒄢 𒀭 𒁕 𒈨 𒁀 𒀀<br>𒊩𒌆 𒈬 𒄭 𒇷 𒄘 𒌓𒁺 𒀭 𒈹 𒍠 𒊩`
+    ],
     infoURL: "",
     mediaURL: [""],
     textURL: "",
@@ -1991,6 +2101,9 @@ export const stirrPoetry = [
       `<i>7.</i>`,
       `My soul is dead but on the outside I’m well.<br>I repeat to everyone I meet—<br>friend today, enemy tomorrow.<br>Oh my God, what can I do?<br>Arguments in your home<br>thunder like a waterfall.<br>In front of strangers you’re timid and quiet,<br>confused, submissive, inert.<br>Is that what you were like last time?<br>How’s this for a champion?<br>Three days only you’ve been free<br>and you’re already unusually restive.<br>When need presses down,<br>you are loving, you will melt any heart.<br>But why are you so inaccessible and sullen,<br>when your soul again acquires peace?<br>You decided, without a backward look,<br>on robbery and cunning.<br>If you give, you give five,<br>if you take, you take six.<br>Under serious tests,<br>where the arguments are waged in a hundred ways,<br>those like you, as a result,<br>fall into bloody discord.<br>Don’t slam the door<br>through which you have to return.<br>Whether you bloom or fall into disaster,<br>a day will come when you need it.`
     ],
+    excerptOrig: [
+      `Ішім өлген, сыртым сау,<br>Көрінгенге деймін-ау:<br>Бүгінгі дос—ертең жау,<br>Мен не қылдым, япырмау?!<br>Өз үйінде өзендей,<br>Күркірейді, айтса дау.<br>Кісі алдында кірбеңдеп,<br>Шабан, шардақ және шау.<br>Мұндай ма едің ана күн,<br>Мұның қалай, батыр-ау?<br>Үш күн арқаң босаса,<br>Бола қалдың бас асау.<br>Жан қысылса, жайтаңдап,<br>Жанды еріткен жайдары-ау.<br>Жан жай тапса, сен неге<br>Жат мінезсің жабырқау?<br>Ұрлық пенен қулыққа,<br>Байлағанда, кестің бау.<br>Берерменде бесеусің,<br>Аларманда және алтау.<br>Топ болғанда көрерсің<br>Түрлі дауды жүз тарау.<br>Аяғында сендейлер,<br>Көрмей жүр ме қанталау?<br>Қайтып келер есікті,<br>Қатты серіппе, жарқын-ау!<br>Жетілсең де, жетсең де,<br>Керек күні бір бар-ау.`
+    ],
     infoURL: "",
     mediaURL: ["https://youtu.be/8O0rq3UZbVI"],
     textURL: "",
@@ -2007,19 +2120,41 @@ export const stirrPoetry = [
     author: "Vanchinbalyn Injinash",
     group: {people: "Tümed", language: "Mongolian", location: "Liaoning, CN"},
     info: [
-      `Before the 13th century, when the boundaries between written history and literature were less clear in the Mongol Empire, the practice of exaggerating historical events with artful embellishments was widespread among the Mongols. One of the people who worked within this tradition and initiated the development of Mongolian historical literature was the great Mongolian writer Vanchinbal Injinash.`,
-      `<b>VANCHINBALYN INJINASH</b>, born 1837, was a Mongolian poet, novelist, and historian from a Mongol area in modern-day Liaoning, China. He was a descendant of the 28th generation of Bogd Genghis Khan. He wrote hundreds of poems, but is perhaps best known for his historical novel <i>The Blue Chronicle</i>, set in the 13th-century Yuan dynasty. His works remained unpublished during his lifetime, but were copied and passed down through Mongolian peasant and noble families in manuscript form until their publishing in the 20th century.`
+      `Before the 13th century in the Mongol Empire, when the boundaries between written history and creative literature were less clear, the practice of exaggerating historical events with artful embellishments was widespread. One of the people who championed this tradition, initiating the development of 19th-century Mongolian historical literature, was the great writer Vanchinbalyn Injinash.`,
+      `<b>VANCHINBALYN INJINASH</b>, born 1837, was a poet, novelist, and historian from a Mongol area in modern-day Liaoning, China. He was a descendant of the 28th generation of Bogd Genghis Khan. He wrote hundreds of poems, but is perhaps best known for his historical novel <i>The Blue Chronicle</i>, set in the 13th-century Yuan dynasty. His works remained unpublished during his lifetime, but were copied and passed down through Mongolian peasant and noble families in manuscript form until their publishing in the 20th century.`
     ],
     excerpt: [
       `White clouds rise to the limit of the sky<br>With their bodies constantly intertwined<br>With their bodies folded up and blown away by the wind<br>Immersed in the vast blue ocean`,
       `<...>`,
-      `A beautiful melody with a longing for meaning<br>Like blue clouds turning into the wind<br>If they can’t touch people’s hearts<br>What can they do to stiffen the light brush?`,
+      `A beautiful melody longing for meaning<br>Like blue clouds turning in the wind<br>If it can’t touch people’s hearts<br>What’s the use lifting a light brush?`,
       `<...>`,
       `I want to give a speech to the high minister.<br>Let’s build a grass house in the western mountains.<br>The flower will not bloom again after its color has faded.<br>Once your hair turns white, it won’t turn black again.`,
       `<...>`,
       `Let the morning breeze enter the room,<br>Let your hands and feet rest in the room.<br>Let your hair be tangled after sleeping soundly,<br>Get up and close the mirror box.`,
-      `Girls, girls, quickly close the high door,<br>Let the wide path open slowly.<br>Why do the beautiful, light butterflies fly like this,<br>Why do the bees fly like this, and why do they open the window?`,
-      `Let the passing east wind blow at its own will,<br>Let the passing east wind blow at its own will.`
+      `Girls, girls, quickly close the tall gate,<br>Carefully clear the wide path.<br>For whom do delicate butterflies flutter about the screen?<br>Why do stubborn bees batter against the window?`,
+      `Let the passing east wind blow of its own accord,<br>Let the passing east wind blow of its own accord.`
+    ],
+    /*excerptOrig: [
+      `Огторгуйн хязгаараа цагаан үүл дэгдэж<br>Улам шинжихүйеэ тасрашгүй залгалдан<br>Ороон эвхрэлдэн умраа салхинаа хийсч<br>Оломгүй хөх далайд шингэвэй`,
+      `<...>`,
+      `Хүсэлтэй сайхан утга уянга хэмээгч<br>Хөх үүлэн салхинаа хөрвөх мэт<br>Хүмүүний сэтгэлийг хөдөлгөн эс чадваас<br>Хөнгөн бийрийг хөшиж юу хийнэ?`,
+      `<...>`,
+      `Өндөр яамнаа үг өргөхийг байсу<br>Өрнө уулнаа өвсөн гэр байгуулъя<br>Өнгө буурваас цэцэг дахин дэлгэрмүй<br>Үс цайваас дахин харлах үгүй`,
+      `<...>`,
+      `Өглөөн жихүүн ханцуйнд нэвтэрвэй,<br>Өрөөний хоовонд гараа хөлчөөмүй.<br>Үүрэглэн унтсанаар зажны үс садарвай,<br>Өөрөө босож толийн хайрцгийг хаамуй.`,
+      `Охид оо, охид, өндөр үүдийг түргэн хаа,<br>Өргөн замыг алгуур дэлгэ.<br>Үзэсгэлэн хөнгөн эрвээхэй хэний тул ийнхүү хэрээсгийг тойрмуй,<br>Өргүү балмад зөгий юуны учир бас цонхыг дэлдмүй.`,
+      `Өнгөрөх дорно салхи өөрийн дураар хийстүгэй,<br>Өнгөрөх дорно салхи өөрийн дураар хийстүгэй.`
+    ],*/
+    excerptOrig: [
+      `ᠣᠭᠲᠣᠷᠭᠤᠢ ᠶᠢᠨ ᠬᠢᠵᠠᠭᠠᠷ ᠠ ᠴᠠᠭᠠᠨ ᠡᠭᠦᠯᠡ ᠳᠡᠭᠳᠡᠵᠦ<br>ᠤᠯᠠᠮ ᠰᠢᠨᠵᠢᠬᠦᠶᠡ᠌ ᠲᠠᠰᠤᠷᠠᠰᠢ ᠦᠭᠡᠢ ᠵᠠᠯᠭᠠᠯᠳᠤᠨ<br>ᠣᠷᠣᠶᠠᠨ ᠡᠪᠬᠡᠷᠡᠯᠳᠦᠨ ᠤᠮᠠᠷ᠎ᠠ ᠰᠠᠯᠬᠢᠨ ᠠ ᠬᠡᠶᠢᠰᠴᠦ<br>ᠣᠯᠣᠮ ᠦᠭᠡᠢ ᠬᠥᠬᠡ ᠳᠠᠯᠠᠢ ᠳᠤ ᠰᠢᠩᠭᠡᠪᠡᠢ`,
+      `<...>`,
+      `ᠬᠦᠰᠡᠯ ᠲᠡᠢ ᠰᠠᠶᠢᠬᠠᠨ ᠤᠳᠬ᠎ᠠ ᠤᠶᠠᠩᠭ᠎ᠠ ᠬᠡᠮᠡᠭᠡᠴᠢ<br>ᠬᠥᠬᠡ ᠡᠭᠦᠯᠡᠨ ᠰᠠᠯᠬᠢᠨ ᠠ ᠬᠥᠷᠪᠡᠬᠦ ᠮᠡᠲᠦ<br>ᠬᠦᠮᠦᠨ ᠦ ᠰᠡᠳᠬᠢᠯ ᠢ ᠬᠥᠳᠡᠯᠭᠡᠨ ᠡᠰᠡ ᠴᠢᠳᠠᠪᠠᠰᠤ<br>ᠬᠥᠩᠭᠡᠨ ᠪᠢᠷ ᠢ ᠬᠥᠰᠢᠵᠦ ᠶᠠᠭᠤ ᠬᠢᠨ᠎ᠡ`,
+      `<...>`,
+      `ᠥᠨᠳᠥᠷ ᠶᠠᠮᠤᠨ ᠠ ᠦᠭᠡ ᠥᠷᠭᠥᠬᠦ ᠶᠢ ᠪᠠᠶᠢᠰᠤ<br>ᠥᠷᠦᠨ᠎ᠡ ᠠᠭᠤᠯᠠᠨ ᠠ ᠡᠪᠡᠰᠦᠨ ᠭᠡᠷ ᠪᠠᠶᠢᠭᠤᠯᠤᠶ᠎ᠠ<br>ᠥᠩᠭᠡ ᠪᠠᠭᠤᠷᠠᠪᠠᠰᠤ ᠴᠡᠴᠡᠭ ᠳᠠᠬᠢᠨ ᠳᠡᠯᠭᠡᠷᠡᠮᠦᠢ<br>ᠦᠰᠦ ᠴᠠᠶᠢᠪᠠᠰᠤ ᠳᠠᠬᠢᠨ ᠬᠠᠷᠠᠯᠠᠬᠤ ᠦᠭᠡᠢ`,
+      `<...>`,
+      `ᠥᠭᠯᠥᠭᠡᠨ ᠵᠢᠬᠦᠭᠦᠨ ᠬᠠᠨᠴᠤᠢ ᠳᠤ ᠨᠡᠪᠲᠡᠷᠡᠪᠡᠢ᠂<br>ᠥᠷᠢᠶᠡᠨ ᠦ ᠬᠣᠭᠣᠪᠠ ᠳᠤ ᠭᠠᠷ ᠢᠶᠠᠨ ᠬᠥᠯᠴᠡᠭᠡᠮᠦᠢ᠃<br>ᠡᠭᠦᠷᠡᠭᠯᠡᠨ ᠤᠩᠲᠠᠭᠰᠠᠨ ᠢᠶᠠᠷ ᠵᠠᠵᠢ ᠶᠢᠨ ᠦᠰᠦ ᠰᠠᠳᠠᠷᠠᠪᠠᠢ᠂<br>ᠥᠪᠡᠷ ᠢᠶᠡᠨ ᠪᠣᠰᠴᠤ ᠲᠣᠯᠢ ᠶᠢᠨ ᠬᠠᠶᠢᠷᠴᠠᠭ ᠢ ᠬᠠᠭᠠᠮᠤᠢ᠃`,
+      `ᠣᠬᠢᠳ ᠠ᠋᠂ ᠣᠬᠢᠳ᠂ ᠥᠨᠳᠥᠷ ᠡᠭᠦᠳᠡ ᠶᠢ ᠲᠦᠷᠭᠡᠨ ᠬᠠᠭᠠ᠂<br>ᠥᠷᠭᠡᠨ ᠵᠠᠮ ᠢ ᠠᠯᠭᠤᠷ ᠳᠡᠯᠭᠡ᠃<br>ᠦᠵᠡᠰᠬᠡᠯᠡᠩ ᠬᠥᠩᠭᠡᠨ ᠡᠷᠪᠡᠬᠡᠢ ᠬᠡᠨ ᠦ ᠲᠤᠯᠠ ᠡᠶᠢᠨᠬᠦᠦ ᠬᠡᠷᠡᠭᠡᠰᠡᠭ ᠢ ᠲᠣᠶᠢᠷᠠᠮᠤᠢ᠂<br>ᠥᠷᠭᠡᠭᠦ ᠪᠠᠯᠮᠠᠳ ᠵᠥᠭᠡᠢ ᠶᠠᠭᠤᠨ ᠤ ᠤᠴᠢᠷ ᠪᠠᠰᠠ ᠴᠣᠩᠬᠣ ᠶᠢ ᠳᠡᠯᠳᠡᠮᠦᠢ᠃`,
+      `ᠥᠩᠭᠡᠷᠡᠬᠦ ᠳᠣᠷᠣᠨ᠎ᠠ ᠰᠠᠯᠬᠢ ᠥᠪᠡᠷ ᠦᠨ ᠳᠤᠷᠠᠪᠠᠷ ᠬᠡᠶᠢᠰᠦᠲᠦᠭᠡᠢ᠂<br>ᠥᠩᠭᠡᠷᠡᠬᠦ ᠳᠣᠷᠣᠨ᠎ᠠ ᠰᠠᠯᠬᠢ ᠥᠪᠡᠷ ᠦᠨ ᠳᠤᠷᠠᠪᠠᠷ ᠬᠡᠶᠢᠰᠦᠲᠦᠭᠡᠢ᠃`
     ],
     infoURL: "",
     mediaURL: ["https://youtu.be/krScqkiu6cY"],
@@ -2049,13 +2184,25 @@ export const stirrPoetry = [
       `How can darkness receive within itself a light<br>and, without being dissipated by light<br>it still remains in the middle of the light?<br>`,
       `O awesome wonder which I see doubly,<br>with my two sets of eyes,<br>of the body and of the soul.`
     ],
+    excerptOrig: [
+      `Ἀλλ᾿ ὤ φωτός γαυρίαμα,<br>ἀλλ᾿ ὤ πυρός κινήσεις<br>ἀλλ᾿ ὤ φλογός περιδρομαί ἐν ἐμοί,<br>τῷ ἀθλίῳ<br>παρά σῆς σῆς καί παρά σοῦ ἐνεργούμεναι δόξης!`,
+      `∆όξαν δ᾿ ἐγώ τό Πνεῦμά σου ἐπίσταμαι καί λέγω,<br>τό Ἅγιον, τό συμφυές καί ὁμότιμον,<br>Λόγε, ὁμογενές, ὁμόδοξον,<br>ὁμοούσιον, μόνον τῷ σῷ Πατρί<br>καί σοί, Χριστέ, ὦ Θεέ τῶν ἁπάντων.`,
+      `Σοί προσκυνῶν<br>εὐχαριστῶ, ὅτι ἠξίωσάς με,<br>κἄν ποσῶς ἐπιγνῶναί<br>σου θεότητος τό κράτος.`,
+      `Εὐχαριστῶ, ὅτι αὐτός καθημένῳ ἐν σκότει<br>ἀπεκαλύφθης μοι, ἔλαμψας,<br>ἰδεῖν ἠξίωσάς με τό φῶς τό τοῦ προσώπου σου,<br>τό ἄστεκτον τοῖς πᾶσιν.`,
+      `Ἔμεινα καθεζόμενος ἐν σκότει μέσον, οἶδα,<br>μέσον δέ τούτου ὄντι μοι κεκαλυμμένῳ σκότει<br>ἐφάνης φῶς,<br>ἐφώτισας ὅλον ὅλῳ φωτί με<br>καί γέγονα φῶς ἐν νυκτί,<br>μέσον σκότους τυγχάνων.`,
+      `Οὔτε τό σκότος τό σόν φῶς κατέλαβεν εἰς ἅπαν,<br>οὔτε τό φῶς ἐδίωξε τό ὁρώμενον σκότος,<br>ἀλλ᾿ ἀναμίξ, ἀσύγχυτα πάντῃ μεμερισμένα<br>μακράν ἀλλήλων,<br>ὡς εἰκός, οὐ κεκραμένα ὅλως,<br>πλήν ἐν ταὐτῷ τά σύμπαντα πληροῦσιν, ὡς νομίζω.`,
+      `Οὕτως εἰμί ἐν τῷ φωτί,<br>μέσον τυγχάνων σκότους,<br>οὕτως ἐν σκότει πάλιν<br>δέ μέσον φωτός διάγων,<br>ἰδού καί μέσον ἐν φωτί, ἰδού καί μέσον σκότους˙<br>καί λέγω˙ τίς ἐν σκότει μοι φῶς εὑρεῖν μέσον δώσει, ὅ οὐ χωρεῖ εἰσδέξασθαι;`,
+      `Πῶς γάρ χωρήσει σκότος φῶς ἐντός<br>καί μή φεύξεται,<br>ἀλλά μενεῖ ἐν μέσῳ φωτός τό σκότος;`,
+      `Ὤ φρικτοῦ θαύματος, ὁρωμένου διττῶς<br>διττοῖς τοῖς ὀφθαλμοῖς,<br>σώματος καί ψυχῆς τε!`
+    ],
     infoURL: "https://en.wikipedia.org/wiki/Symeon_the_New_Theologian",
     mediaURL: ["https://youtu.be/Y3g2AJk-lwU"],
     textURL: "",
     coordinates: { x: 32.854722, y: 39.928889, name: "Ankara" },
     ref: [
       { id: "symeon-1980-discourses-paulist", type: "book", title: "The Discourses", containerTitle: "The Classics of Western Spirituality", contributors: [ { firstName: "Symeon the New", lastName: "Theologian", role: "author" }, { firstName: "C.J.", lastName: "de Catanzaro", role: "translator" }, { firstName: "George A.", lastName: "Maloney", role: "introduction" } ], url: "https://godaftergod.wordpress.com/2012/03/17/hymn-25-symeon-the-new-theologian/", pubDate: { year: 1980 }, publisher: "Paulist Press", location: "New York, NY", medium: "Print (Hardcover/Paperback)", meta: { notes: "A primary source for Hesychastic theology. Symeon's 'Discourses' (Katecheseis) focus on the necessity of tears, repentance, and the vision of the Uncreated Light. This volume is essential for understanding the transition of Eastern monastic spirituality into the later Palamite synthesis.", grade: "A", tags: ["Byzantine", "Mysticism", "Hesychasm", "Symeon the New Theologian", "Orthodox", "Constantinople", "Patristics"] } },
-      { id: "symeon-1976-hymns-dimension", type: "book", title: "Hymns of Divine Love", contributors: [ { firstName: "St. Symeon the New", lastName: "Theologian", role: "author" }, { firstName: "George A.", lastName: "Maloney", role: "translator" } ], pubDate: { year: 1976 }, publisher: "Dimension Books", location: "Denville, NJ", medium: "Print (Octavo)", meta: { notes: "A collection of 58 hymns. These poems are radical for their time, emphasizing the physical sensation of the Divine Light and the emotional 'baptism of tears.' The octavo format of this edition is a staple of mid-century Catholic/Orthodox mystical scholarship in America.", grade: "A", tags: ["Byzantine", "Poetry", "Mysticism", "Hesychasm", "St. Symeon", "Eastern Orthodoxy", "Divine Light", "Erotikon"] } }
+      { id: "symeon-1976-hymns-dimension", type: "book", title: "Hymns of Divine Love", contributors: [ { firstName: "St. Symeon the New", lastName: "Theologian", role: "author" }, { firstName: "George A.", lastName: "Maloney", role: "translator" } ], pubDate: { year: 1976 }, publisher: "Dimension Books", location: "Denville, NJ", medium: "Print (Octavo)", meta: { notes: "A collection of 58 hymns. These poems are radical for their time, emphasizing the physical sensation of the Divine Light and the emotional 'baptism of tears.' The octavo format of this edition is a staple of mid-century Catholic/Orthodox mystical scholarship in America.", grade: "A", tags: ["Byzantine", "Poetry", "Mysticism", "Hesychasm", "St. Symeon", "Eastern Orthodoxy", "Divine Light", "Erotikon"] } },
+      { id: "symeon-new-theologian-letters", type: "webpage", title: "Letters", containerTitle: "Catholic Library", contributors: [ { firstName: "", lastName: "Symeon the New Theologian", role: "author" } ], publisher: "CatholicLibrary.org", url: "https://catholiclibrary.org/library/view?docId=/Fathers-Synchronized-EN/Symeonis_Junioris__Epistulae.en.html;chunk.id=00000263", pubDate: { year: 2002 }, meta: { sortKey: "text", originalTitle: "Epistulae", note: "Synchronized bilingual patristic text edition hosted on Catholic Library." } }
     ]
   },
   {
@@ -2122,8 +2269,8 @@ export const stirrPoetry = [
     ],
     excerpt: [
       `<i>8.</i>`,
-      `That tree there, on the crest of dreams; its leaves are intertwined, its branches are joined, its twisted roots are not visible, and its fruits are fragrant with memory; I have been thinking of you, my Lasy, since we parted, long ago.`,
-      `<sp><i>21.</i><br>`,
+      `That tree there, on the crest of dreams; its leaves are intertwined, its branches are joined, its twisted roots are not visible, and its fruits are fragrant with memory; I have been thinking of you, my Lasy, since we parted, long ago.<sp>`,
+      `<i>21.</i><br>`,
       `Love, o my kin, has the perfume of the forest, like the lemon. And it is neither from <+>coquetry[flirtatious behavior]</+> nor from <+>caprice[a sudden and unaccountable change of mood]</+> that I say this to you, but because I want to possess you completely.`
     ],
     infoURL: "https://en.wikipedia.org/wiki/Jean-Joseph_Rabearivelo",
@@ -2194,6 +2341,12 @@ export const stirrPoetry = [
       `<b>incantation to round up a herd of wild pigs</b>`,
       `What do I say?<br>The maiden who fetches salt water runs an errand<br>she runs to the ridges of Anangari<br>She’ll bring back a herd of pigs.<br>What do I say?<br>The boy who shapes spears runs an errand<br>he runs to the mountain ridges;<br>you bring me a herd of pigs.<br>A herd of pigs, of prize pigs, a herd for slaughter.`
     ],
+    excerptOrig: [
+      `<b>heiaru anai irara</b>`,
+      `Au karia nagua taha? Mau karia nagua makari diri wawawa i aidangi,<br>Ai boi taboria ana mwane wara’angi saea omeome i dangi.<br>Au karia nagua taha? Mau karia nagua diri wawawa i rodo,<br>Ai boi taboria ana mwane wawaitoto saena omeome i rodo. `,
+      `<b>heiaru anai ha’agagu bwoo</b>`,
+      `&emsp;&emsp;Au unu ai taha?<br>Mau unuai eba iana geregare tataru asi,<br>Na eba iana geregare tataru asi, a eba tarahanei Anangari, ai bu aia mai ta barai bwoo wasi, e barai bwoo tori.<br>&emsp;&emsp;Au unu oi taha?<br>Mau unuai eba iana geregare a’arasi o’o;<br>Mana eba iana geregare a’arasi o’o, a eba hanei tara haneitoro,<br>Ei buaia mai tagua barai bwoo,<br>E barai bwoo goro,<br>E barai bwoo ni o’o. `
+    ],
     infoURL: ["https://en.wikipedia.org/wiki/John_Saunana"],
     mediaURL: ["https://youtu.be/Z0env3FI9Y0?start=201"],
     textURL: "",
@@ -2256,6 +2409,9 @@ export const stirrPoetry = [
       `<b>DAVIDA MALO</b>, born 1795 in the Kingdom of Hawaiʻi, was a <i>Kānaka Maoli</i> (Native Hawaiian) intellectual, educator, politician, minister, royal counselor, and historian. His kanikau for the death of Queen Kaʻahumanu, published in the newspaper <i>Ka Lama Hawaiʻi</i> on August 8, 1834, is well known for its striking elegance.`
     ],
     excerpt: [`Silently borne by the current, spinning beyond the known realms<br>Passing in spiritual departure, readied<br>Dizzied and stricken, ethereal<br>For the great beyond, the furthest reaches<br>Swept off to the far bowers of Kāne’s realm<br>On the clipped, scarlet-streaked path of Kanaloa<br>Stepping forth into the heavens<br>O Malolokihakahakuleiohua<br>The royal who has passed into sleep, drifting off<br>Who leapt into the breaking of dawn<br>Into the solemn, silent separation of the night<br>The loss of the life breath, ’tis<br>&emsp;&emsp;’Tis her, ō-ī-ē.<br>So it is, a cry, an expression of love for you,<br>A tight, dizzying feeling of the heart in mourning<br>Deep love throbbing and aching inside<br>Cleaving open the heart’s bond<br>The secure covenant, the human burden, is broken<br>Tears flow forth, streaming down<br>Inside is a flurry, a wild flurry of regret<br>Sadness for the splendor of my true liege<br>That love being completely gone<br>A farewell for the fellow congregation member<br>Not a blood cousin of mine<br>But a separate fellowship transformed by the Lord<br>Born of the Holy Spirit<br>By the one Father of us all<br>To make family ties to bond therein<br>Gifted with the right to call you my sister<br>Alas, my beloved sister<br>My beloved fellow striver in spreading the word, yes<br>&emsp;&emsp;’Tis her, ō-ī-ē<br>Truly, you are the love, the heart’s lament<br>Ah, beloved are you, always in mind<br>The support that drives the voice<br>To search together, virtue being the treasure, ’tis<br>&emsp;&emsp;’Tis her, ō-ī-ē.<br>The woman who endures the Waʻahila rain of Kona<br>Moves in the wind, faces the Kūkalahale rain<br>To dwell on the arid plain of Pahua<br>Woman who traverses the cold rain of enlightening<br>Goes forth into the lack of virtue, unsuccessful<br>A lack of regard tangles all sides<br>No virtue, dwelling among enemies, ’tis<br>Aha, ’tis there in heaven<br>The Holy Spirit and the spirit’s essence<br>Amazing transfiguring form<br>Form divested of features<br>A spectral image, a heavenly body<br>Fellow angel of those in heaven<br>In repose there in heaven<br>A comfortable existence<br>Where praises are sung<br>In the beautiful paradise<br>In the eternal realm of the Lord, ’tis<br>He is Lord of us all<br>He is the eternal Lord, truly so<br>That is the hope for which the heart yearns<br>Yearning, yes.`],
+    excerptOrig: [
+      `Mihalanaau i kuakahiki ka newa ʻana,<br>Ke kahana ka leina aku nei liuliu,<br>Liua paʻia aku nei i kū analia,<br>I analipo i analio<br>Lilo akula i ka paia kua a kāne,<br>I ke ala muku maʻawe ʻula a Kanaloa,<br>Keʻehi kūlani akula ka hele ʻana,<br>E Malolokihakahakuleiohua,<br>Ke aliʻi i kulu hiʻolani a i newa aku nei,<br>I lele akula i ke kohi ʻana o ka pawa,<br>I ke anohia kōhikōhi ano o ka pō,<br>Ka lilo ane, ia;<br>&emsp;&emsp;iala, ō-ī-ē.<br>ʻOia hoʻi, he uē, he aloha iā ʻoe, ā<br>A aloha liua lio paʻiauma ka manawa,<br>Pākoni huʻi ke aloha loku i ke ake,<br>Wehe wāhi ka pilipaʻa o ka houpo,<br>Nahā ka paʻa, ka peʻa kua o ke kanaka,<br>Heleleʻi, hiolo ka pua o ka waimaka,<br>Lele leiʻō, līʻō loko i ka mihi,<br>Mihi o ke ʻalohi o kuʻu haku maoli,<br>A kaʻawale ʻokoʻa ia aloha ʻana,<br>Aloha aku o ke aloha hoahānau,<br>ʻAʻole he hoahānau ponoʻī noʻu,<br>He hanauna kūʻokoʻa i loli i ka Haku,<br>I hānau ʻia e ka ʻUhane Hemolele,<br>E ka Makua hoʻokahi o mākou,<br>I pilikana i laila e wena aku ai,<br>Ilina inoa kaikuahine noʻu,<br>Auē nō hoʻi kuʻu kaikuahine,<br>Kuʻu hoa hoʻoikaika a ka luhi leo ē, ia,<br>&emsp;&emsp;iala, o-i-e.<br>ʻOia nō, ʻo ʻoe ke aloha, ka ʻū a loko ā,<br>Ā, aloha ʻoe, ka hakukau o ka manaʻo,<br>Ke koʻokoʻo o ka leo e ili aku ai,<br>E ʻimi pū ai, ʻo ka waiwai ka pono ē, ia,<br>&emsp;&emsp;iala, o-i-e.<br>ʻO ka wahine ʻalo ua Waʻahila o Kona,<br>Nihi makani, ʻalo ua Kūkalahale,<br>Noho ānea kula wela o Pahua,<br>Wahine holo ua hoʻāo [a]nuanu e, ia,<br>Holo a nele i ka pono, ua paoa,<br>Ua hihi aku hihi mai, ke aloha ʻole,<br>ʻAʻole pono, he ʻenemi noho pū ē, ia.<br>ʻAhā, aia akula i [ka] lani,<br>Ka ʻUhane a ke kino wailua,<br>Kinoakalau pāhaʻohaʻo,<br>ʻŌiwi haona hiʻona ē,<br>Haili aka, kino ʻano lani,<br>Hoa ʻānela o ka lani mā,<br>Ke luana wale lā i ka lani,<br>Ua luakaha ka noho ʻana,<br>Ke halelū ʻia lā i laila,<br>I loko o ka paredaiso nani,<br>I ke ao mau loa o ka Haku ē, ia,<br>ʻO ko kākou mau Haku nō ia,<br>ʻO ka Haku mau nō ia, ʻoia nō,<br>ʻO ka manaʻo ia [a] loko e ake nei,<br>E ake aku nei ē, ē.`
+    ],
     infoURL: ["https://kealopiko.shorthandstories.com/Puakea/index.html","https://kawaiola.news/kaiaulu/hehoomanao/kanikau-lament-loss-loved-ones"],
     mediaURL: ["https://youtu.be/qTp4WreEWoE","https://youtu.be/2W1d1UzQGyI"],
     textURL: "https://kealopiko.shorthandstories.com/Kaahumanu/index.html",
@@ -3596,6 +3752,50 @@ export const presMusDrama = [
       `O giver of all warmth and light<br>O Sun! I fall and worship thee.<br>For thee the victims are prepared,<br>A thousand llamas and their lambs<br>Are ready for thy festal day.<br>The sacred fire’ll lap their blood,<br>In thy dread presence, mighty one,<br>After long fast thy victims fall.`,
       `<s>OLLANTAY—</s>`,
       `...I hate that ancient conjurer<br>Who prophesies of evil things,<br>I feel the evils he predicts;<br>It’s he who always brings bad luck.`
+    ],
+    excerptOrig: [
+      `<i>(</i><s>Ollantay</s><i> kori k’ait’uhuan t’ikachaska yacollantin, kori champita rijrampi apaspa ri‘kurin, </i><s>Piqui Chaquihuan</s><i> cusca.)</i>`,
+      `<s>OLLANTAY—</s>`,
+      `Piqui Chaqui, ricunquichu<br>Cusi ccoyllorta huasinpi?`,
+      `<s>PIQUI CHAQUI—</s>`,
+      `Ama yntin munachunchu<br>chayman churacunaitacca!<br>manachu ccanca manchanqui<br>ynccacc ususin casccantacca?`,
+      `<s>OLLANTAY—</s>`,
+      `Chaipas cachun; munasaccmi<br>chay lulucusccay urpita, ñan<br>cay sonccoy paipacc chita<br>paillallatan munascani!`,
+      `<s>PIQUI CHAQUI—</s>`,
+      `Supaichá raicuscasunqui,<br>icha ccancca musphanquipas:<br>Hinantinpin huarma, sipas,<br>anchantan rucupacunqui:<br>yma ppunchaicha yachancca<br>ynca, yuiaycusccayquita,<br>ccorochinccan umayquita,<br>ccantacc canqui aicha canca.`,
+      `<s>OLLANTAY—</s>`,
+      `Ama, runa, harccahuaichu,<br>caipitacc sipirccoyquiman:<br>ama rimapaiahuaichu,<br>maquiyhuantacc lliqquiqman.`,
+      `<s>PIQUI CHAQUI—</s>`,
+      `Puriy ari aysarccamuy<br>allcco huañuscca hinata;<br>ychacca ama ñoccata<br>puriy, piqui, mascarccamuy<br>ñihuanquichu sapa huata, <br>sapa ppunchay, sapa tuta.`,
+      `<s>OLLANTAY—</s>`,
+      `Ñan ñiquiña, Piqui Chaqui,<br>quiquin huañuy ichunantin, <br>hinantin orcco, hinantin<br>saiairinman auccahuaqui<br>chaypachapas, saiaymanmi<br>paycunahuan churacuspa:<br>ñoccan, y, causay huañuspa<br>ccoyllorñiypi mitccascani!`,
+      `<s>PIQUI CHAQUI—</s>`,
+      `Supay lloccsimunman chairi?`,
+      `<s>OLLANTAY—</s>`,
+      `Paita huanpas ttustuymanmi!`,
+      `<s>PIQUI CHAQUI—</s>`,
+      `Mana canccanta ricuspan<br>cunan ccama rimascunqui.`,
+      `<s>OLLANTAY—</s>`,
+      `Chaipas, Piqui, huillallahuay,<br>ama imata pacaspayqui,<br>manachu ccoyllor ricusccaiqui<br>llapacc ttican? Y, ñillahuay.`,
+      `<s>PIQUI CHAQUI—</s>`,
+      `Ccoillorllahuan musphascanqui.<br>Manan ñocca ricunichu;<br>paychá carccan, icha pichu,<br>ccaima ppunchay ranquini ranqui<br>purun tasqquecuna uccupi<br>llocsimurccan chai suiupi:<br>yntimanmi ricchacurccan;<br>quillamantacc tucupurccan.`,
+      `<s>OLLANTAY—</s>`,
+      `Paipunin chaicca riccsinqui.<br>Ima Sumacc, ima cusi!<br>Cunallanmi puririnqui<br>cunaiñiyhuan cusi cusi.`,
+      `<s>PIQUI CHAQUI—</s>`,
+      `Manan ñoccacca riymanchu<br>ppunchaicca hatun huasita,<br>chaipiñatacc qquepintinta<br>mana pita reccsiymanchu.`,
+      `<s>OLLANTAY—</s>`,
+      `Reccsiniñan ñinquitaccmi?`,
+      `<s>PIQUI CHAQUI—</s>`,
+      `Chaitacca ñiyllanía ñini,<br>tutallan Ccoyllorcca ccanchan,<br>tutallataccmi reccsini.`,
+      `<s>OLLANTAY—</s>`,
+      `Lloccsihuay caimanta laicca,<br>chai Ccoillor munacusccaicca<br>Ynticc ccaillanpi ashuanta<br>ccanchan, chipchin sapanmanta.`,
+      `<s>PIQUI CHAQUI—</s>`,
+      `Chaicca cunan lloccsimuscan<br>huc machu, icha payachu,<br>huarmimanmi ricchacuscan:<br>icha cunaiñiqui apacchu,<br>paihuan cunay; ñoccatacca<br>cachapuri ñihuanmanmi<br>pi, may caccpas huacchatacca?`,
+      `<i>(Ñaupaj caipi cajcuna, ‘Hatun ‘Hamaut’a yana ajsuntin, tumita maquiupi ‘hap’ispa yaicumun, intita ‘kahuaspa.)</i>`,
+      `<s>UILLAC UMA—</s>`,
+      `Causacc Ynti, yupiquitan<br>ullpuycuspa yupaychani,<br>ccan pacctaccmi huaccaychani<br>Huarancca llama hinatan:<br>Ppunchayñiquipi ccorospa<br>yahuarñinta ccaillaiquipi<br>ninapi canaspa llipi<br>rupachincca mana accospa.`,
+      `<s>OLLANTAY—</s>`,
+      `Piqui, caycca hamuscan<br>chay hamautta Uillac Umu!<br>Yma qquenchas mana ccumu<br>paihuan cusca purimuscan.<br>Checcnicunin cay laiccata<br>ancha llaquita huatucctin,<br>tucuy phutita huantucctin<br>pay rimarin chaypacchacca.`
     ],
     infoURL: "",
     mediaURL: ["https://youtu.be/KCYg801U_Ps?start=7"],
@@ -5175,7 +5375,7 @@ export const foundRelTexts = [
       `“A’évare che e aroñemongeta va’erã<br>che ra’y mbovy katu’eỹ chee ano’ã va’égui”.`,
       `“Mby’a guachu apoa,<br>mba’e mbojaitya chee ano’ãvagui<br>jipói va’erã yvy rupáre rei,<br>che ra’y mbovy’eỹ reko acha arã”.`,
       `“A’évare ndee, yvýpyma reikóvy,<br>che amba porãre ne ma’endu’a va’erã.<br>Chee aroñemongetáramo nd’apytére,<br>nde reko mboovái ara jipói va’erã<br>yvy rupa reko achýre”.`,
-      `>>(Ayvu Rapyta 3:5-12)`
+      `>>(Ayvu Rapyta 4:3–6)`
     ],
     infoURL: ["https://en.wikipedia.org/wiki/Ayvu_Rapyta","https://en.wikipedia.org/wiki/Guarani_mythology","https://pib.socioambiental.org/en/Povo:Guarani_Mbya"],
     mediaURL: [],
@@ -5751,11 +5951,11 @@ export const foundRelTexts = [
       `>>(Hávamál 1-21, 164)`,
       `<...>`,
       `“Tell me this, Eldir, before you take<br>another step forward:<br>what do the sons of the victory-gods<br>have as their ale-talk inside here?”`,
-      `Eldir said:<“The sons of the victory-gods converse about their weapons<br>and their battle-prowess;<br>of the Æsir and elves who are in here,<br>not one is a friend to you in words!”`,
+      `Eldir said:<br>“The sons of the victory-gods converse about their weapons<br>and their battle-prowess;<br>of the Æsir and elves who are in here,<br>not one is a friend to you in words!”`,
       `Loki said:<br>“I shall go inside, into Ægir’s halls<br>to gaze upon that feast;<br>discord and dissension I’ll bring to the sons of the Æsir,<br>and thus I’ll mix their mead with harm!”`,
       `Eldir said:<br>“Know [this, that] if you go inside, into Ægir’s halls<br>to gaze upon that feast,<br>if you pour slander and scorn on the gracious powers,<br>they’ll wipe it off on you!”`,
       `Loki said:<br>“Know this, Eldir, if we two alone<br>shall argue with wounding words,<br>I shall be rich in answers,<br>if you talk too much!”`,
-      `&emsp;&emsp;Then Loki went into the hall. And when those who were there saw who had come in, they all fell silent.`,
+      `Then Loki went into the hall. And when those who were there saw who had come in, they all fell silent.<br>`,
       `Loki said:<br>“Thirsty, I came to this hall,<br>Loptr, from a long way off,<br>to ask the Æsir to give me<br>one magnificent drink of mead.`,
       `“Why are you so silent, puffed-up gods,<br>that you cannot speak?<br>Select a seat and a place for me at the feast,<br>or order me out of here!”`,
       `Bragi said:<br>“A seat and a place at the feast<br>the Æsir will never select for you,<br>because the Æsir know the type of people they should<br>provide a tribute-feast for!”`,
@@ -5975,7 +6175,7 @@ export const foundRelTexts = [
       `“Where is Lone-Man?”`,
       `“We left him behind, he stayed behind working on something with his ax.”`,
       `And the eight sons went about their business. And the mother went about hers. And when after a lot of time had passed and Lone-Man still had not returned, his mother went off to find him. She walked and walked. And when she got to the pond she sang out, she sang out to her child in the water. And she sung to her child. And then she went to get the owner of the pond. And he took action, the owner of the water plugged his anus with a sticky clump of vines plugged his anus with a sticky clump of vines. And he slurped up all the water in the pond until it was dry. And they found the coffin and undid the ropes. And she took her child back home, she took him back to the village. And when they got there, they speared [the Eight-Men] until there was nothing left of them.`,
-      `...That’s so. It’s not my tale, but a tale from the people of old. Whover cannot tell one in turn is an ugly bald head.`,
+      `...That’s so. It’s not my tale, but a tale from the people of old. Whoever cannot tell one in turn is an ugly bald head.`,
       `>>(Tokondahy A:1-17)`,
     ],
     infoURL: "https://en.wikipedia.org/wiki/Malagasy_mythology",
@@ -6324,6 +6524,26 @@ export const globFeatFilms = [
     color: "#9e603a"
   },
   {
+    id: "ASSOGFF",
+    title: { original: "दिलवाले दुल्हनिया ले जाएंगे", transliteration: "Dilwale Dulhania Le Jayenge", translation: "The Brave-Hearted Will Take the Bride" },
+    year: 1995,
+    group: { people: "Punjabi", language: "Hindi", location: "India" },
+    info: [
+      `From picturesque cityscapes in Europe to fields of vibrant yellow flowers in Punjab, Raj and Simran’s soul-stirring love conquers everything—except for a disapproving patriarch’s heart.`,
+      `Dir/Scr <b>ADITYA CHOPRA</b> is the son of film executive Yash Chopra and current chairman of his father’s entertainment conglomerate. The films he produced make him the highest grossing Indian film producer of all time. His first film, <i>DDLJ</i>, is widely recognized as a definitive cinematic turning point following India’s 1991 economic liberalization, fusing Bollywood with the broader forces of 1990s globalization.`
+    ],
+    watch: ["https://www.netflix.com/title/60036747","https://tv.apple.com/us/movie/dilwale-dulhania-le-jayenge/umc.cmc.6t9qnxg3qu80p75jk40sd8m1m"],
+    trailer: "https://youtu.be/oIZ4U21DRlM",
+    coordinates: {x: 77.0400, y: 28.4000, name: "Haryana"},
+    runtime: 189,
+    genre: ["Romance","Musical","Drama"],
+    tags: ["NRI"],
+    color: "#895647",
+    ref: [
+      { id: "chatterjee-2022-dilwale", type: "article", title: "Dilwale Dulhania Le Jayenge and the Consumerist Utopia", containerTitle: "History of Retailing and Consumption", contributors: [ { firstName: "Arup K.", lastName: "Chatterjee", role: "author" } ], pubDate: { year: 2022, month: 10 }, volume: "8", issue: "2", pages: { start: "130", end: "150" }, url: "https://www.researchgate.net/publication/364348247_Dilwale_Dulhania_Le_Jayenge_and_the_Consumerist_Utopia", meta: { sortKey: "text", grade: "A" } }
+    ]
+  },
+  {
     id: "OCAUGFF",
     title: {original: "Samson and Delilah"},
     year: 2009,
@@ -6373,7 +6593,7 @@ export const globFeatFilms = [
     runtime: 104,
     genre: ["Comedy","Sport","Feel-Good","LGBTQ-inclusive"],
     tags: ["trans","non-binary","funny movies"],
-    color: "#366e37"
+    color: "#376638"
   }
 ];
 
