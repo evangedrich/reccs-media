@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, Suspense, Dispatch, SetStateAction } from "react";
 import dynamic from "next/dynamic";
 import Map, { HoverMap } from "@/app/components/map";
 import { subregions } from "@/app/lib/subregions";
@@ -24,20 +24,27 @@ import { useView } from "@/app/lib/viewContext";
 import { posterUrl } from "../lib/images";
 import SubrInfoWindow from "./subrInfoWindow";
 
-export default function Geoscheme({ reccs }: { reccs: ReccLite[] }) {
+// `useSearchParams` opts its whole Suspense boundary out of prerendering, so keeping it
+// here would leave the home page's HTML empty where the geoscheme belongs: the map, the
+// globe's circle and the space they occupy would all arrive at hydration, shoving the
+// copy below down the page. Isolated in its own boundary, only this (renderless) bit is
+// skipped at build time and the geoscheme itself ships in the HTML.
+function SubrParams({ currSubr, setCurrSubr }: { currSubr: string, setCurrSubr: Dispatch<SetStateAction<string>> }) {
     const router = useRouter();
     const pathname = usePathname();
     const searchParams = useSearchParams();
-    const initialSubr = searchParams.get("subr") ?? "X";
+    // The prerender can't know ?subr=, so the selection is adopted from the URL once on
+    // mount; writing back has to wait for that, or it would strip the param first.
+    const [adopted,setAdopted] = useState(false);
 
-    const { showGlobe } = useView();
-    const [currSubr,setCurrSubr] = useState<string>(initialSubr);
-    const [hovered,setHovered] = useState<string>("");
-    const entriesRef = useRef<HTMLDivElement>(null);
-    const hoveredSubr = subregions.find(subr => subr.id===hovered)?.name;
-    
     useEffect(() => {
-        //entriesRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' });
+        const fromUrl = searchParams.get("subr");
+        if (fromUrl) setCurrSubr(fromUrl);
+        setAdopted(true);
+    }, []);
+
+    useEffect(() => {
+        if (!adopted) return;
         const params = new URLSearchParams(searchParams.toString());
         if (currSubr === "X") {
             params.delete("subr");
@@ -46,12 +53,23 @@ export default function Geoscheme({ reccs }: { reccs: ReccLite[] }) {
         }
         const qs = params.toString();
         router.replace(qs ? `${pathname}?${qs}` : pathname, { scroll: false });
-    }, [currSubr]);
+    }, [currSubr, adopted]);
+
+    return null;
+}
+
+export default function Geoscheme({ reccs }: { reccs: ReccLite[] }) {
+    const { showGlobe } = useView();
+    const [currSubr,setCurrSubr] = useState<string>("X");
+    const [hovered,setHovered] = useState<string>("");
+    const entriesRef = useRef<HTMLDivElement>(null);
+    const hoveredSubr = subregions.find(subr => subr.id===hovered)?.name;
 
     const entries = reccs.filter(itm => itm.id.startsWith(currSubr));
 
     return (
         <div>
+            <Suspense fallback={null}><SubrParams currSubr={currSubr} setCurrSubr={setCurrSubr} /></Suspense>
             <FontWarmer reccs={reccs} />
             <div className={`${showGlobe ? "hidden max-sm:block max-sm:w-full max-sm:aspect-2/1" : "max-sm:hidden"} relative border-b-2 p-4`}>
 				<div className="relative max-w-[900px] mx-auto">
@@ -80,7 +98,14 @@ export default function Geoscheme({ reccs }: { reccs: ReccLite[] }) {
                     <Link 
                         key={`card_${entry.id}`} 
                         href={`/${entry.id}`}
-                        className={`shrink-0 flex flex-col gap-1 sm:w-[9rem] w-[7.7rem] p-3 ${i<entries.length-1 ? "border-r-2" : "sm:border-r-2"} ${i===0 ? "border-l-2 ml-[-2px]" : ""} hover:bg-[var(--color-mid)] active:opacity-85 group`}
+                        // Widths track the borders toggled here so every card's inner width (and so its
+                        // poster, and its 12px padding either side) comes out identical: the first
+                        // card's extra border-l adds 2px, the borderless last card on mobile sheds 2px.
+                        className={`shrink-0 flex flex-col gap-1 p-3 ${i<entries.length-1 ? "border-r-2" : "sm:border-r-2"} ${i===0 ? "border-l-2 ml-[-2px]" : ""} ${
+                            i===0 && i<entries.length-1 ? "w-[calc(7.7rem+2px)] sm:w-[calc(9rem+2px)]"
+                            : i===0 ? "w-[7.7rem] sm:w-[calc(9rem+2px)]"
+                            : i===entries.length-1 ? "w-[calc(7.7rem-2px)] sm:w-[9rem]"
+                            : "w-[7.7rem] sm:w-[9rem]"} hover:bg-[var(--color-mid)] active:opacity-85 group`}
                     >
                         <div className="relative bg-[var(--color-mid)] group-hover:opacity-90 aspect-3/4">
                             <Image src={posterUrl(entry.id)} alt="Media Image" width="300" height="400" className="w-full h-full" unoptimized />
@@ -92,7 +117,7 @@ export default function Geoscheme({ reccs }: { reccs: ReccLite[] }) {
                 ))}</div>
             </div>
             <div className={`${currSubr==="X" ? "hidden" : ""} sm:hidden border-b-2 p-4`}>
-                <p className="max-w-[800px] mx-auto text-sm">{preParse(subregions.find(subr => subr.id===currSubr)?.description ?? "")}</p>
+                <p className="max-w-[800px] mx-auto text-sm">{subregions.find(subr => subr.id===currSubr)?.description ?? ""}</p>
             </div>
         </div>
     )

@@ -24,6 +24,7 @@ type Row = {
   group_religion: string | null;
   info: string;
   excerpt: string | null;
+  excerpt_orig: string | null;
   media_urls: string | null;
   watch_urls: string | null;
   playlist_url: string | null;
@@ -68,6 +69,8 @@ function rowToRecc(row: Row): Recc {
 
   const excerpt = parseJson<string[]>(row.excerpt);
   if (excerpt) recc.excerpt = excerpt;
+  const excerptOrig = parseJson<string[]>(row.excerpt_orig);
+  if (excerptOrig) recc.excerptOrig = excerptOrig;
   const mediaURL = parseJson<string[]>(row.media_urls);
   if (mediaURL) recc.mediaURL = mediaURL;
   const watch = parseJson<string[]>(row.watch_urls);
@@ -184,7 +187,7 @@ export const toSearchEntry = (r: Recc): ReccSearch => {
   const s: ReccSearch = { ...toLite(r), group: r.group, info: r.info };
   if (r.author) s.author = r.author;
   if (r.intermediary) s.intermediary = r.intermediary;
-  if (r.excerpt) s.excerpt = r.excerpt;
+  // if (r.excerpt) s.excerpt = r.excerpt;
   if (r.tags) s.tags = r.tags;
   if (r.genre) s.genre = r.genre;
   return s;

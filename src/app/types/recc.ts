@@ -19,6 +19,7 @@ export type Recc = {
   };
   info: string[];
   excerpt?: string[];
+  excerptOrig?: string[];
   mediaURL?: string[];
   watch?: string[];
   genre?: string[];
@@ -45,4 +46,4 @@ export type ReccLite = {
 
 // ReccLite + the fields functions/search.ts matches on and filters group by.
 export type ReccSearch = ReccLite &
-  Pick<Recc, "author" | "intermediary" | "group" | "info" | "excerpt" | "tags" | "genre">;
+  Pick<Recc, "author" | "intermediary" | "group" | "info" | /* "excerpt" | */ "tags" | "genre">;

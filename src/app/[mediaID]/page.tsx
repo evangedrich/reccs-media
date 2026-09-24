@@ -41,10 +41,10 @@ export default async function DetailPage({ params }: { params: Promise<{ mediaID
     const byline = getByline(entry);
     const sortedGroup = entry?.group.people ? { people: entry?.group.people, ...entry?.group } : entry?.group;
     return (
-        // `fullScriptFontVars` registers the whole-font `--font-noto-*-full` variables for
-        // this route only. Nothing downloads until an element inside carries `excerpt-scope`
-        // (globals.css), which rebinds the `.font-<script>` classes onto them — put that on
-        // the original-script excerpt when it lands. The title below keeps the subset.
+        // `fullScriptFontVars` registers the whole-font `--font-*-full` variables for this
+        // route only. Nothing downloads until an element inside carries `excerpt-scope`
+        // (globals.css), which rebinds the `.font-<script>` classes onto them — the
+        // original-language excerpt in MediaContent does. The title below keeps the subset.
         <div className={`${fullScriptFontVars} w-full h-full flex flex-wrap border-b-2 grow-1`}>
             <div className="basis-full sm:basis-1/3 px-4 pt-4 sm:pb-4 sm:border-r-2 border-solid border-[var(--color-front)] flex flex-col items-end">
                 <Image src={posterUrl(entry!.id)} alt="Media Image" width="300" height="400" className="w-full sm:w-[300px] h-auto sm:sticky sm:top-[calc(var(--header-h)+1rem)] transition-[top] aspect-3/4 bg-[var(--color-mid)]" priority unoptimized />
@@ -55,7 +55,7 @@ export default async function DetailPage({ params }: { params: Promise<{ mediaID
                         <h1 className={`sm:text-6xl text-4xl font-black leading-none hyphens-auto break-words mb-2 max-w-[800px] ${isMongol(title) ? "[writing-mode:vertical-rl] h-fit" : ""}`} lang="en">
                             {isMongol(title) ? title.split(/\s+/).toReversed().map((w: string, i: number) => <span key={i} className="block">{w}</span>) : <span className={`${titleFont}`}>{title}</span>}
                         </h1>
-                        <h2 className={`${(transliteration || translation) ? "" : "hidden"} leading-none text-2xl mb-4 opacity-50`}>
+                        <h2 className={`${(transliteration || translation) ? "" : "hidden"} leading-none text-2xl mb-4 max-w-[800px] opacity-50`}>
                             {(transliteration && translation)
                             ? <span>{`${transliteration} (${translation})`}</span>
                             : (transliteration || translation)

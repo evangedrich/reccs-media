@@ -37,6 +37,7 @@ export const checkFont = (str: string): string => {
         : (/\p{Script=Thai}/u.test(str)) ? "font-thai"
         : (/\p{Script=Khmer}/u.test(str)) ? "font-khmer"
         : (/\p{Script=Balinese}/u.test(str)) ? "font-balinese"
+        : (/\p{Script=Hangul}/u.test(str)) ? "font-korean"
         : "";
     return fontClass;
 };
@@ -74,7 +75,7 @@ const spacer = (txt: string): string => {
     return txt.replace(/<sp>/g, `<span style="display:block;width:100%;height:0.5rem"></span>`);
 };
 const threeDots = (txt: string): string => {
-    return txt.replace(/<\.\.\.>/g, `<span style="display:block;text-align:center;margin-bottom:0.5rem">·&emsp;·&emsp;·</span>`);
+    return txt.replace(/<\.\.\.>/g, `<span style="display:block;text-align:center;margin-bottom:0.5rem">·&emsp;·&emsp;·</span>`).replace(/<\.\.\.\.>/g, `<span style="writing-mode:vertical-lr;height:max-content;">᠅</span>`);
 };
 const rightAlign = (txt: string): string => {
     if (!txt.startsWith(">>")) return txt;
@@ -95,7 +96,7 @@ const strip = (txt: string): string => {
 const addIndents = (txt: string): string => {
     /*
     Split the text on <br> into separate lines and wrap each in an indented block span.
-    padding-left starts at `base` (0.6em) and grows by 1em for every leading &emsp;, each of which is consumed.
+    padding-inline-start starts at `base` (0.6em) and grows by 1em for every leading &emsp;, each of which is consumed.
 
     <v>/<V> tags are normalized into the same <br> + &emsp; markers first, so this fully replaces indent():
       - <v>X</v> becomes its own line at the base indent (equivalent to 0 &emsp;)
@@ -118,7 +119,9 @@ const addIndents = (txt: string): string => {
                 padding += 0.9;
                 inner = inner.slice("&emsp;".length);
             }
-            return `<span style="display:block;padding-left:${padding}em;text-indent:-${base}em">${inner}</span>`;
+            // padding-inline-start (not padding-left) so the padding sits on the same side as text-indent,
+            // which is always the line's start edge — the right edge in right-to-left scripts like Arabic
+            return `<span style="display:block;padding-inline-start:${padding}em;text-indent:-${base}em">${inner}</span>`;
         })
         .join("");
 };
@@ -128,8 +131,52 @@ export const preParse = (txt: string): string => {
     txt = smallCaps(txt);  // <s> smallcaps
     txt = abbrDef(txt);    // <+> abbr defs
     txt = spacer(txt);     // <sp> spacer
-    txt = threeDots(txt);  // <...> 3dot break
+    txt = threeDots(txt);  // <...> 3dot and <....> 4dot break
     txt = rightAlign(txt); // >> right align
     txt = doubleDash(txt); // — double emdash
     return txt;
+};
+
+/* ─── Traditional Mongolian (bichig) ────────────────────────────────────────────────────
+Bichig runs top-to-bottom in columns that advance left to right, so an excerpt can't go
+through preParse(): that pipeline builds a stack of blocks (a <p> per array entry, a
+`display:block` span per <br> inside it), and a block in vertical writing mode is a *row* of
+columns. Every paragraph therefore started a new row and the field broke after four columns
+— the four <br> lines of a stanza — instead of filling the container's width.
+
+mongolExcerpt() flattens the whole excerpt into one flat field of columns instead: one item
+per <br>-separated line, plus an item for each <....> stanza break. Each item is set
+`writing-mode: vertical-lr` and capped at --mongol-col-h (600px), so a line longer than the
+cap wraps into a second column beside it; the field is a wrapping flex row, so columns keep
+filling left to right until the container's width is used up and the next one drops to a new
+row starting below the tallest column above it. See `.mongol-field` in globals.css.
+*/
+const MONGOL_BREAK = /^\s*<\.{3,4}>\s*$/;
+// The inline-level half of preParse — the transforms that decorate text *within* a line, with
+// none of the block scaffolding (indent spans, spacers, breaks) that a column can't contain.
+const inlineParse = (txt: string): string => abbrDef(smallCaps(txt));
+
+export const mongolExcerpt = (paragraphs: string[]): string => {
+    const cols: string[] = [];
+    paragraphs.forEach((para, i) => {
+        if (MONGOL_BREAK.test(para)) {
+            cols.push(`<span class="mongol-col mongol-break">᠅</span>`);
+            return;
+        }
+        const lines = para
+            .replace(/<\/?[vV]>/g, "<br>")                  // verse markers are just line breaks here
+            .replace(/<sp>/g, "")                           // block spacer: nothing to space between columns
+            .split(/<br\s*\/?>/)
+            .map((line) => line.trim())
+            .filter(Boolean);
+        lines.forEach((line, j) => {
+            // A stanza that no ᠅ already separates gets a little air before its first column,
+            // standing in for the paragraph break the block layout used to give it.
+            const stanza = (j === 0 && cols.length > 0 && !MONGOL_BREAK.test(paragraphs[i - 1] ?? "")) ? " mongol-stanza" : "";
+            cols.push(`<span class="mongol-col${stanza}">${inlineParse(line)}</span>`);
+        });
+    });
+    // dir is pinned rather than left to `auto`: the field must run left-to-right even if a
+    // line happens to start with a neutral or right-to-left character.
+    return `<div class="mongol-field" dir="ltr">${cols.join("")}</div>`;
 };

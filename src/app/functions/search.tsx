@@ -12,9 +12,9 @@ const checkTitle = ( query: string, entry: ReccSearch ) => {
 const checkInfo = ( query: string, entry: ReccSearch ) => {
     return entry.info?.join(" ").toLowerCase().includes(query.toLowerCase());
 };
-const checkExcerpt = ( query: string, entry: ReccSearch ) => {
-    return entry.excerpt?.join(" ").toLowerCase().includes(query.toLowerCase());
-};
+// const checkExcerpt = ( query: string, entry: ReccSearch ) => {
+//     return entry.excerpt?.join(" ").toLowerCase().includes(query.toLowerCase());
+// };
 const checkAuthor = ( query: string, entry: ReccSearch ) => {
     return entry.author || entry.intermediary ? norm(entry.author??"").includes(norm(query)) || norm(entry.intermediary??"").includes(norm(query)) : false;
 };
@@ -57,7 +57,7 @@ const checkTags = ( query: string, entry: ReccSearch ) => {
     return entry.tags?.join(" ").toLowerCase().includes(query.toLowerCase()) || entry.genre?.join(" ").toLowerCase().includes(query.toLowerCase());
 };
 const checkAll = ( query: string, entry: ReccSearch ) => {
-    const checks = [checkTitle,checkInfo,checkExcerpt,checkAuthor,checkSubregion,checkTags];
+    const checks = [checkTitle,checkInfo,/* checkExcerpt, */checkAuthor,checkSubregion,checkTags];
     let match: boolean|undefined = false;
     checks.forEach(check => match = match ? true : check(query,entry));
     return match;
@@ -66,7 +66,7 @@ export const searchTypes = [
     { type: "all", check: checkAll },
     { type: "title", check: checkTitle },
     { type: "info", check: checkInfo },
-    { type: "excerpt", check: checkExcerpt },
+    // { type: "excerpt", check: checkExcerpt },
     { type: "author", check: checkAuthor },
     { type: "region", check: checkSubregion },
     { type: "tags", check: checkTags }

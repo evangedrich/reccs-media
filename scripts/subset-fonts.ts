@@ -20,8 +20,9 @@ const HASH_FILE = join(FONTS_DIR, ".subset-hash");
 // inside it; subsets are written to its `subset/` sub-directory.
 //
 // `instances` pins a variable source's wght axis, emitting one ordinary static font per
-// CSS weight. Only 600 and 900 are ever needed — cards draw titles at font-semibold,
-// entry headers at font-black.
+// CSS weight. Only 600 and 900 are ever needed for subsets — cards draw titles at
+// font-semibold, entry headers at font-black. (Excerpt body text at 400/700 uses the
+// unsubset instances in each `full/` directory instead; see FULL_INSTANCES below.)
 //
 // Pinning rather than shipping the variable face is a compatibility decision, made after
 // a variable build rendered entry titles unbolded on iOS. These are subset, axis-limited,
@@ -45,7 +46,12 @@ const HASH_FILE = join(FONTS_DIR, ".subset-hash");
 // a DSIG that is meaningless once subset), strip those tables first —
 // `assertNoEmptyTables` below fails the build if this regresses.
 /** instances: CSS weight -> the wght axis value of the design that weight should use. */
-type FontFamily = { dir: string; instances?: Record<string, number> };
+type FontFamily = {
+  dir: string;
+  instances?: Record<string, number>;
+  /** Skip GSUB closure — only for scripts whose glyphs are precomposed in Unicode. */
+  noLayoutClosure?: boolean;
+};
 const FONT_FAMILIES: FontFamily[] = [
   { dir: "JuliaMono" },
   { dir: "NotoEmoji" },
@@ -67,8 +73,9 @@ const FONT_FAMILIES: FontFamily[] = [
   // to 600-900 (Bamum and Balinese 600-700, where Google's axis ends); `instances` above
   // then pins one static per CSS weight out of it.
   //
-  // The weight-400 whole-font files in each `full/` directory are for entry-page excerpts
-  // in the original script and are deliberately NOT subset (see fontsFull.ts); this loop
+  // The 400/700 whole-font files in each `full/` directory are for entry-page excerpts
+  // in the original script and are deliberately NOT subset (see fontsFull.ts and
+  // FULL_INSTANCES below); this loop
   // only reads files sitting directly in the family directory, so `full/` and `subset/`
   // are both skipped.
   { dir: "noto/Malayalam", instances: { "600": 600, "900": 900 } },
@@ -82,6 +89,18 @@ const FONT_FAMILIES: FontFamily[] = [
   { dir: "noto/Thai", instances: { "600": 600, "900": 900 } },
   { dir: "noto/Khmer", instances: { "600": 600, "900": 900 } },
   { dir: "noto/Balinese", instances: { "600": 600, "700": 700 } },   // Google draws nothing heavier
+  // Korean is the exception in two ways, both forced by Noto Sans KR's size (10 MB, ~11k
+  // Hangul syllables):
+  //   - Its sources are two already-pinned STATICS rather than a range-limited variable
+  //     font. Limiting this font's axis silently discarded all of its gvar data — it has a
+  //     non-trivial `avar` mapping that harfbuzz's partial instancing does not carry — so
+  //     600 and 900 came out identical. Pinning straight from Google's full VF works.
+  //   - `noLayoutClosure`: the GSUB closure over even 11 syllables pulls in 473 glyphs
+  //     (jamo composition variants for old Hangul), making a 26 KB file. Modern Hangul is
+  //     precomposed in Unicode and never shaped through those lookups; without the closure
+  //     it is 107 glyphs / 7 KB and renders pixel-identically. Excerpts use the full font
+  //     in `full/`, which keeps everything.
+  { dir: "noto/Korean", noLayoutClosure: true },
 ];
 
 // Scan EVERY .ts/.tsx under src/app (not a hardcoded file list): reading raw file
@@ -172,8 +191,65 @@ function collectUsedText(): string {
   return [...chars].sort().join("");
 }
 
+// Whole-font (NOT subset) static instances for original-language excerpts on entry pages;
+// see fontsFull.ts. They don't depend on the site's content, so they are generated once,
+// committed, and skipped whenever the output already exists — delete a file to rebuild it.
+//
+// `weights` maps CSS weight -> wght axis value, on each foundry's own scale like
+// `instances` above: 400 is the design's Regular, 700 its Bold. The Noto 400s were cut
+// from Google's full-range variable fonts before this phase existed and aren't listed; the
+// in-repo Noto sources start at 600, but 700 is inside that range. Korean has no 700 here:
+// its sources are pinned 600/900 statics (see above), so bold Hangul is synthesized until
+// a 700 is cut from Google's full VF. None of these fonts has an italic axis or face, so
+// italics are always synthesized.
+const FULL_INSTANCES: { dir: string; src: string; weights: Record<string, number> }[] = [
+  ...["Malayalam", "Canadian", "Arabic", "Tamil", "Telugu", "Ethiopic", "Devanagari", "Bamum",
+    "Thai", "Khmer", "Balinese"].map((s) => ({
+    dir: `noto/${s}`, src: `NotoSans${s}.woff2`, weights: { "700": 700 },
+  })),
+  { dir: "Ingeo", src: "Ingeo.woff2", weights: { "400": 90, "700": 135 } },            // Regular, Bold
+  { dir: "MiSansTibetan", src: "MiSansTibetan.woff2", weights: { "400": 330, "700": 630 } }, // Regular, Bold
+];
+
+// Every codepoint in Unicode planes 0-2. hb-subset keeps only what the font actually maps
+// (plus everything reachable from those through GSUB), so this retains the whole font.
+function allCodepoints(): string {
+  let s = "";
+  for (let cp = 0x20; cp <= 0x2ffff; cp++) {
+    if (cp >= 0xd800 && cp <= 0xdfff) continue; // lone surrogates aren't characters
+    s += String.fromCodePoint(cp);
+  }
+  return s;
+}
+
+async function instanceFullFonts(): Promise<void> {
+  const pending = FULL_INSTANCES.flatMap(({ dir, src, weights }) =>
+    Object.entries(weights)
+      .map(([cssWeight, wght]) => ({
+        dir, src, wght,
+        name: `${basename(src, ".woff2")}-${cssWeight}.woff2`,
+      }))
+      .filter(({ dir, name }) => !existsSync(join(FONTS_DIR, dir, "full", name))),
+  );
+  if (!pending.length) return;
+
+  console.log(`[subset-fonts] cutting ${pending.length} whole-font excerpt instance(s)...`);
+  const text = allCodepoints();
+  await Promise.all(
+    pending.map(async ({ dir, src, wght, name }) => {
+      const input = readFileSync(join(FONTS_DIR, dir, src));
+      const output = await subsetFont(input, text, { targetFormat: "woff2", variationAxes: { wght } });
+      assertNoEmptyTables(output, `${dir}/full/${name}`);
+      mkdirSync(join(FONTS_DIR, dir, "full"), { recursive: true });
+      writeFileSync(join(FONTS_DIR, dir, "full", name), output);
+      console.log(`  ${dir}/full/${name}: ${(output.length / 1024).toFixed(0)} KB`);
+    }),
+  );
+}
+
 async function main() {
   const force = process.argv.includes("--force");
+  await instanceFullFonts();
   const text = collectUsedText();
   const hash = createHash("sha256").update(text).digest("hex");
   const codepoints = [...new Set([...text].map((c) => c.codePointAt(0)))].length;
@@ -207,7 +283,9 @@ async function main() {
             const input = readFileSync(join(familyDir, file));
             // Each font keeps only the glyphs it actually has among `text`, so passing
             // the full character set to NotoEmoji yields just the used emoji, etc.
-            const output = await subsetFont(input, text, { targetFormat: "woff2", variationAxes });
+            const output = await subsetFont(input, text, {
+              targetFormat: "woff2", variationAxes, noLayoutClosure: family.noLayoutClosure,
+            });
             assertNoEmptyTables(output, `${family.dir}/${name}`);
             writeFileSync(join(outDir, name), output);
             const pct = ((1 - output.length / input.length) * 100).toFixed(1);
