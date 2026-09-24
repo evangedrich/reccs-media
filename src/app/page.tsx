@@ -1,4 +1,3 @@
-import { Suspense } from "react";
 import Geoscheme from "./components/geoscheme";
 import { preParse } from "./functions/text";
 import { getReccsLite } from "./lib/reccs";
@@ -17,9 +16,11 @@ export default async function Home() {
 	const reccs = await getReccsLite();
 	return (
 		<div>
-			<Suspense>
-				<Geoscheme reccs={reccs} />
-			</Suspense>
+			{/* No Suspense boundary here on purpose: one would stream the geoscheme into a
+			    hidden div and slot it in afterwards, so the copy below would paint first and
+			    then get pushed down. Geoscheme keeps its own boundary around the one part
+			    (the ?subr= sync) that can't be prerendered. */}
+			<Geoscheme reccs={reccs} />
 			<div className="p-4 border-b-2 border-solid border-[var(--color-front)]">
 				<div className="max-w-[1000px] m-auto">
 					<p className="mb-2">{preParse("Reccs is a compilation of collections of literary, cinematic, theatrical, and analytical achievements from each of the United Nations geoscheme subregions (modified slightly to better conform the subregions, devised for statistical purposes, to their corresponding culturally-affiliated regions). Click around the geoscheme above to explore works by region, or browse the complete collections from the navigation bar at the top of the page.")}</p>

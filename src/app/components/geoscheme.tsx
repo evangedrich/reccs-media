@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, Suspense, Dispatch, SetStateAction } from "react";
 import dynamic from "next/dynamic";
 import Map, { HoverMap } from "@/app/components/map";
 import { subregions } from "@/app/lib/subregions";
@@ -24,20 +24,27 @@ import { useView } from "@/app/lib/viewContext";
 import { posterUrl } from "../lib/images";
 import SubrInfoWindow from "./subrInfoWindow";
 
-export default function Geoscheme({ reccs }: { reccs: ReccLite[] }) {
+// `useSearchParams` opts its whole Suspense boundary out of prerendering, so keeping it
+// here would leave the home page's HTML empty where the geoscheme belongs: the map, the
+// globe's circle and the space they occupy would all arrive at hydration, shoving the
+// copy below down the page. Isolated in its own boundary, only this (renderless) bit is
+// skipped at build time and the geoscheme itself ships in the HTML.
+function SubrParams({ currSubr, setCurrSubr }: { currSubr: string, setCurrSubr: Dispatch<SetStateAction<string>> }) {
     const router = useRouter();
     const pathname = usePathname();
     const searchParams = useSearchParams();
-    const initialSubr = searchParams.get("subr") ?? "X";
+    // The prerender can't know ?subr=, so the selection is adopted from the URL once on
+    // mount; writing back has to wait for that, or it would strip the param first.
+    const [adopted,setAdopted] = useState(false);
 
-    const { showGlobe } = useView();
-    const [currSubr,setCurrSubr] = useState<string>(initialSubr);
-    const [hovered,setHovered] = useState<string>("");
-    const entriesRef = useRef<HTMLDivElement>(null);
-    const hoveredSubr = subregions.find(subr => subr.id===hovered)?.name;
-    
     useEffect(() => {
-        //entriesRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' });
+        const fromUrl = searchParams.get("subr");
+        if (fromUrl) setCurrSubr(fromUrl);
+        setAdopted(true);
+    }, []);
+
+    useEffect(() => {
+        if (!adopted) return;
         const params = new URLSearchParams(searchParams.toString());
         if (currSubr === "X") {
             params.delete("subr");
@@ -46,12 +53,23 @@ export default function Geoscheme({ reccs }: { reccs: ReccLite[] }) {
         }
         const qs = params.toString();
         router.replace(qs ? `${pathname}?${qs}` : pathname, { scroll: false });
-    }, [currSubr]);
+    }, [currSubr, adopted]);
+
+    return null;
+}
+
+export default function Geoscheme({ reccs }: { reccs: ReccLite[] }) {
+    const { showGlobe } = useView();
+    const [currSubr,setCurrSubr] = useState<string>("X");
+    const [hovered,setHovered] = useState<string>("");
+    const entriesRef = useRef<HTMLDivElement>(null);
+    const hoveredSubr = subregions.find(subr => subr.id===hovered)?.name;
 
     const entries = reccs.filter(itm => itm.id.startsWith(currSubr));
 
     return (
         <div>
+            <Suspense fallback={null}><SubrParams currSubr={currSubr} setCurrSubr={setCurrSubr} /></Suspense>
             <FontWarmer reccs={reccs} />
             <div className={`${showGlobe ? "hidden max-sm:block max-sm:w-full max-sm:aspect-2/1" : "max-sm:hidden"} relative border-b-2 p-4`}>
 				<div className="relative max-w-[900px] mx-auto">

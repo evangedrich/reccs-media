@@ -143,7 +143,7 @@ export default function SubregionViewer({ regionID, reccs }: { regionID: string;
                         <h3 className="text-xs opacity-50 mb-1">Related:</h3>
                         <p className="-ml-1">
                             {neighbors?.map((neighborID,i) => (
-                                <Link className="mr-1 p-1 px-1 leading-1 hover:bg-[var(--color-mid)]/75" href={`/regions/${regions.find(reg => reg.code?.includes(neighborID.slice(0,2)))?.id}?subr=${neighborID}`} key={`neighbor${neighborID}`}>
+                                <Link className="mr-1 p-1 px-1 leading-1 hover:bg-[var(--color-mid)]/75" href={`/regions/${pathname.slice(-3)==="all" ? "all" : regions.find(reg => reg.code?.includes(neighborID.slice(0,2)))?.id}?subr=${neighborID}`} key={`neighbor${neighborID}`}>
                                     <span className="inline-block">{subregions.find(subr => subr.id===neighborID)?.name.replace(" North "," N ").replace(" South "," S ").replace(" Southeast "," SE ")}{i<neighbors.length-1?",":""}</span>
                                 </Link>
                             ))}

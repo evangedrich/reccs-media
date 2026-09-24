@@ -187,7 +187,7 @@ export const toSearchEntry = (r: Recc): ReccSearch => {
   const s: ReccSearch = { ...toLite(r), group: r.group, info: r.info };
   if (r.author) s.author = r.author;
   if (r.intermediary) s.intermediary = r.intermediary;
-  if (r.excerpt) s.excerpt = r.excerpt;
+  // if (r.excerpt) s.excerpt = r.excerpt;
   if (r.tags) s.tags = r.tags;
   if (r.genre) s.genre = r.genre;
   return s;

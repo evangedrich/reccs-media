@@ -1489,6 +1489,9 @@ export const stirrPoetry = [
       `<b>SAMUEL CALVIN GBETNKOM</b> is a poet and codicologist with extensive knowledge of manuscripts written in Bamum, having worked on the Bamum Scripts and Archives Project housed in the Foumban Royal Palace. He wasn’t content to just study and archive manuscripts, however, and he saw creative potential in using the Bamum script to produce new, original literature, as a tool for creating work that captured diverse aspects of contemporary Bamum life.`
     ],
     excerpt: [`A dark night has fallen on the world!<br>A veil of sadness covers humanity;<br>But I have hope.<br>I have hope<br>That the earth will return from death to life,<br>To give back to humans the strength and joy<br>of laughing out loud again,<br>When the evil, which strikes almose all hearts,<br>will be taken prisoner<br>to be annihilated, by the divine will.<br>And when a new day dawns,<br>its Sun will shine brighter than ever.<br>And if a new night falls,<br>It would no longer be moonless,<br>And its stars would twinkle,<br>to make all this dark globe luminous.<br>Then life will come back to life,<br>The air will become pure again;<br>Because I keep Hope in the torment of horror<br>That the sea of difficulties imposes on us,<br>Where every human being swims today,<br>That the future days<br>Are likely to be happier.`],
+    excerptOrig: [
+      `ꚳ꛰ꚱꚠ ꚳ꛰ꚱꚠ ꚶꛉ꛰ ꚳꚲ ꛋꚤ ꛗ ꚷꚳ꛰ ꛤ꛰ ꚳꚣꚢ ꛜ꛰ ꛦꚧꛪ ꚳ꛰ꛫꚢꚳ꛰ ꚳ꛰ꚷꚩꚤ<br>ꚪꚠ ꚸꚧ꛱ ꚳ꛰ꛫꚢꛅꛎ ꛗꚠ ꚹꚧꛅꛦꚧ ꛬꚠꛖ ꚼ꛰ꚬ ꛤ꛰ ꚳꚸ꛰ꛄ꛰ ꛣꚳ꛰ꚷꚩꚤ<br>ꚢꛄ꛰ ꛇ ꛛ ꚳꛧꚧ ꛀꚢꛅꚺ ꚦꚧꚳ꛰ ꛝꛤ<br>ꛛ ꚳꛗꚢꚠ ꛛꚧ꛱ ꚥꛫ ꛣꚳ꛰ꛆ<br>ꚳꛗꚢꚠ ꛛꚧ ꚥꛫ ꛣꚳ꛰ꛆ<br>ꛎ ꚫ ꛤ꛰ ꚳꚸ꛰ꛄ꛰ ꛣꚳ꛰ꚷꚩꚤ ꚡ꛰ ꛞ꛰ ꛝ ꛄ ꚢꚳꛦꚧ ꛂꚩ ꛈꚻ ꛘꛄ꛰ꛘꛄ꛰ꚧ꛱ꛤ ꛝ ꛂ꛰ ꛟ<br>ꚠ ꚮꚦ ꛕꚤꛑ ꚫ ꛤ ꚳ꛰ꚸ꛰ꛄ꛰ ꛝꛤ ꚳꚣ꛰ꛖ ꚩ ꚳꛧꚧ ꛂꚩꚤꚳ꛰ꚣꛑ ꛛ<br>ꛘꛄ꛰ ꚡ ꛈ ꚸꚧ ꚠꛇ ꛕꚤꛑ ꛤꛄ꛰ꚳ ꛣ<br>ꛇ ꚳꛫꚧ ꚨ ꚳꚱꚠ ꚳ꛰ꚲ ꛄ ꛤ꛰ꛄ꛰ꚳ<br>ꚳꛘꛄ꛰ꚧ꛱ ꚳꚱꚧꛤ ꛞ꛰ ꛗ ꛲ꚨꚨ ꛇ ꚳ꛰ꛫꚧ ꛘꛄ꛰ꚧꚬ ꛛ<br>ꚠ ꛛ ꛅꚧ ꛕꚤꛑ ꛘꛄ꛰ ꚡ ꛦ ꚸꛄ꛰ ꚳꛋ ꛇ ꚳ꛰ꛫꚧ꛱ ꛡ ꛕꚧꚳ ꚰ ꚳ꛰ꛃꚠ꛰ ꚶꚤ ꛑꚠꛛꚧ ꛛ<br>ꚠ ꛝ ꛅꚧ ꛫꚧ ꛦ ꚶꛉ꛰<br>ꚳꛗꚢ ꚩ ꚦꚧ ꛝ ꛅꛄ꛰ ꚩ ꛅꚧ ꚶꛉ꛰ ꚶ ꚵꛄ꛰ꛤ<br>ꚳꛗꚢ ꛅꚧꚳ꛰ ꚵꛄ꛰ꛤ ꚼ꛰ꚠ꛰ꛛꚧ ꛕꚤꛑ ꛎ ꛑꚠꛛꚧ ꛬꚳ ꛤ꛰ ꚳꚸ꛰ꛄ꛰<br>ꚠ ꛛ ꛅꚧ ꛕꚤꛑ ꚢꛦꚧ ꛝꛤ ꚳꛄ ꚳꚶꚩꚤ ꚢꛦꚧ<br>ꛘꛄ꛰ꚧ꛱ꛖ ꛂꚩꚤꛛꚧ ꛝꛤ ꚳ꛰ꛄ꛰ ꚳꚶꚩꚤ ꛂꚩ ꛡꛛꚧ꛱<br>ꛦꚧꛔꚡ ꚳꛗꚢꚠ ꛛꚧ ꚥꛫ ꛣꚳ꛰ꛆ ꛎ ꛘꛉ꛰ꚳ ꚳꛈꛉ꛰ꚻ<br>ꚸ꛰ꚧ ꚠ ꛇ ꚨꚤꛑ ꚢ ꛗ ꛗ ꚳ꛰ꚰꚳ ꛀ꛰ ꛤ꛰ ꚬꚫ ꛕꚠꚳꛦꚧ ꚳꚶꚤ ꚵꛄ꛰ꚳ꛰ ꛦꚧ ꛗ ꛅꛄ꛰ꚧꚳ꛰ ꚨꛉ꛰ꛫ ꛛ<br>ꛚꛫ ꛣꚳ꛰ꛆ ꛗꚠ ꛎ ꛜꚤꚳ꛰ꚸ꛰ ꛘꚧꚳꚳ꛰ꚸ꛰ꛄ꛰ ꛛ ꚳ꛰ꚱꚧ꛰ ꛅꚧ ꛅꚧ ꛛꚧ ꛑꚠꛂꚤ ꛤ꛰ ꚳ꛰ꛀ ꚳꛗꚧꚻ`
+    ],
     infoURL: "https://brittlepaper.com/2022/08/poetry-collection-written-in-cameroons-bamum-script-translated-in-english-and-french/",
     mediaURL: ["https://youtu.be/PrlWF8hv4Zw"],
     textURL: "",
@@ -1677,7 +1680,7 @@ export const stirrPoetry = [
     id: "AMINSTP",
     title: {original: "Eháŋk’ehaŋ lakȟóta olówaŋ", translation: "Traditional Lakota Songs"},
     intermediary: "Ben Black Bear Sr.",
-    group: {people: "Lakȟóta", language: "Lakȟótiyapi", location: "South Dakota, US"},
+    group: {people: "Lakota", language: "Lakota", location: "South Dakota, US"},
     info: [`The traditional Lakota songbook <i>Eháŋk’ehaŋ lakȟóta olówaŋ</i> comes out of a legacy that began in Rose Bud, South Dakota at Sinte Gleska University in the 1970s, where Ben Black Bear Jr. and Dr. Ron Theisz hosted a traditional Lakota song and dance class. The class was created as a demonstration of the potential of the Lakota Studies Department in the early years of Sinte Gleska, and its success resulted in the course becoming a part of the curriculum and the production of the book of traditional songs. The goal of the bilingual text was to provide instruction about the various dance styles and songs that are essential parts of Lakota culture.`],
     excerpt: [
       `<i>31.</i>`,
@@ -1685,6 +1688,13 @@ export const stirrPoetry = [
       `Friends are yelling. (x6)<br>They are coming to see me.<br>When I scratch the earth, men and women smilingly remarry.`,
       `I return announcing news. (x4)<br>I am looking for a large, wealthy family and have returned with news.<br>I return announcing news.<br>It is you I am looking for and return announcing news.`,
       `Give me something to remember you by. (x4)<br>I will keep it to remember you by.<br>Give me something to remember you by. (x2)<br>Give me a ring.<br>I will keep it to remember you.`
+    ],
+    excerptOrig: [
+      `<i>31.</i>`,
+      `Iktomi tunkašila, nanmaȟunye. (x6)<br>Wicakeya Iwayinkte.`,
+      `Kola panpanpelo. (x6)<br>Wanmanyanka a uwe.<br>Maka yuǧoǧo wec’un cana winyan nan wica ko iȟa kiyuze.`,
+      `Ho’okawinȟ wakuwe. (x4)<br>Tiwahe tanka ca omic’iye nan ho’okawinȟ waglihuniye.<br>Ho’okawinh wakuwe.<br>Niye ca ocicile nan ho’okawinȟ waglihuniye.`,
+      `Wokik’suye wanji mak’uwe. (x4)<br>Uha cik’suya waun kte.<br>Wokisksuye wanji mak’uwe. (x2)<br>Napsžoȟli mak’uwe.<br>Yuha cik’suya waun kte.`
     ],
     infoURL: "https://lakhota.org/history-of-ehankehan-lak%C8%9Fota-olowan-traditional-lakota-songs-book/",
     mediaURL: ["https://www.sintegleska.edu/songs--dances-music.html"],
@@ -2708,7 +2718,7 @@ export const cultFeatFilms = [
     id: "AMINCFF",
     title: {original: "The Unknown Country"},
     year: 2022,
-    group: {people: "Oglala", language: "English", location: "South Dakota, US"},
+    group: {people: "Lakota", language: "English", location: "South Dakota, US"},
     info: [
       `A grieving woman embarks on a road trip through the American Midwest after receiving an unexpected invitation to reunite with her estranged Oglala Lakota family. Along the way, she uncovers her family history and a path to closure.`,
       `In this poetic romance-for-life, a path is forged not only for the construction of contemporary cinema but also the experience of life’s journey on the whole.`,
